@@ -385,6 +385,9 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) TerraformResourceType() *stri
 func NewCloudWorkloadSecurityAgentRule(scope constructs.Construct, id *string, config *CloudWorkloadSecurityAgentRuleConfig) CloudWorkloadSecurityAgentRule {
 	_init_.Initialize()
 
+	if err := validateNewCloudWorkloadSecurityAgentRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudWorkloadSecurityAgentRule{}
 
 	_jsii_.Create(
@@ -407,7 +410,10 @@ func NewCloudWorkloadSecurityAgentRule_Override(c CloudWorkloadSecurityAgentRule
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -415,7 +421,7 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetCount(val *float64) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -423,7 +429,7 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -431,7 +437,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetDescription(val *string) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -439,7 +448,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetEnabled(val interface{}) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -447,7 +459,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetExpression(val *string) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetExpression(val *string) {
+	if err := j.validateSetExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expression",
@@ -455,7 +470,7 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -463,7 +478,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetId(val *string) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -471,7 +489,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -479,7 +500,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetName(val *string) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -487,7 +511,7 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +519,10 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudWorkloadSecurityAgentRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -523,6 +550,9 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) SetProvisioners(val *[]interf
 func CloudWorkloadSecurityAgentRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudWorkloadSecurityAgentRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -547,6 +577,9 @@ func CloudWorkloadSecurityAgentRule_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -555,6 +588,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) AddOverride(path *string, val
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -568,6 +604,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetAnyMapAttribute(terraformA
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -581,6 +620,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetBooleanAttribute(terraform
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -594,6 +636,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetBooleanMapAttribute(terraf
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -607,6 +652,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetListAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -620,6 +668,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberAttribute(terraformA
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -633,6 +684,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberListAttribute(terraf
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +700,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetNumberMapAttribute(terrafo
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -659,6 +716,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetStringAttribute(terraformA
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -672,6 +732,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) GetStringMapAttribute(terrafo
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -685,6 +748,9 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) InterpolationForAttribute(ter
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

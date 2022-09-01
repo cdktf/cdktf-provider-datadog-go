@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) WrapsSet()
 func NewDataDatadogSecurityMonitoringRulesRulesFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesFilterList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogSecurityMonitoringRulesRulesFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogSecurityMonitoringRulesRulesFilterList_Override(d DataDatadog
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) ComputeFqn
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) Get(index *float64) DataDatadogSecurityMonitoringRulesRulesFilterOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogSecurityMonitoringRulesRulesFilterOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) Get(index 
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

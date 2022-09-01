@@ -221,6 +221,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 func NewDashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewDashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputRef
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetAggregation(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetAggregation(val *string) {
+	if err := j.validateSetAggregationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregation",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetInternalValue(val *DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetInternalValue(val *DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetOrder(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"order",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -320,6 +347,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQue
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

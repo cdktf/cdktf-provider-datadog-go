@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 func NewDashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList_Ove
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) Get(index *float64) DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComp
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

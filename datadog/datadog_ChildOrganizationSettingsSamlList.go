@@ -99,6 +99,9 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlList) WrapsSet() *bool {
 func NewChildOrganizationSettingsSamlList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlList {
 	_init_.Initialize()
 
+	if err := validateNewChildOrganizationSettingsSamlListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ChildOrganizationSettingsSamlList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewChildOrganizationSettingsSamlList_Override(c ChildOrganizationSettingsSa
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlList) Get(index *float64) ChildOrganizationSettingsSamlOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ChildOrganizationSettingsSamlOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlList) Get(index *float64) ChildO
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

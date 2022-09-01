@@ -294,6 +294,9 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) TitleS
 func NewDashboardWidgetEventTimelineDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetEventTimelineDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetEventTimelineDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -315,7 +318,10 @@ func NewDashboardWidgetEventTimelineDefinitionOutputReference_Override(d Dashboa
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -323,7 +329,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -331,7 +340,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetInternalValue(val *DashboardWidgetEventTimelineDefinition) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetInternalValue(val *DashboardWidgetEventTimelineDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -339,7 +351,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetLiveSpan(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetLiveSpan(val *string) {
+	if err := j.validateSetLiveSpanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"liveSpan",
@@ -347,7 +362,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetLiv
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetQuery(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetQuery(val *string) {
+	if err := j.validateSetQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"query",
@@ -355,7 +373,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTagsExecution(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTagsExecution(val *string) {
+	if err := j.validateSetTagsExecutionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagsExecution",
@@ -363,7 +384,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTag
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -371,7 +395,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -379,7 +406,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -387,7 +417,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTit
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTitleAlign(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTitleAlign(val *string) {
+	if err := j.validateSetTitleAlignParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleAlign",
@@ -395,7 +428,10 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTit
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) SetTitleSize(val *string) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTitleSize(val *string) {
+	if err := j.validateSetTitleSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleSize",
@@ -417,6 +453,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Comput
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -430,6 +469,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetAny
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -443,6 +485,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -456,6 +501,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -469,6 +517,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetLis
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -482,6 +533,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -495,6 +549,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -508,6 +565,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -521,6 +581,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetStr
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -547,6 +610,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Interp
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -600,6 +666,9 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) ResetT
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

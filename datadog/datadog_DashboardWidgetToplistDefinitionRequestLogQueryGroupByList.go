@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) W
 func NewDashboardWidgetToplistDefinitionRequestLogQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetToplistDefinitionRequestLogQueryGroupByList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetToplistDefinitionRequestLogQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetToplistDefinitionRequestLogQueryGroupByList_Override(d Da
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) C
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) Get(index *float64) DashboardWidgetToplistDefinitionRequestLogQueryGroupByOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetToplistDefinitionRequestLogQueryGroupByOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) G
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryGroupByList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

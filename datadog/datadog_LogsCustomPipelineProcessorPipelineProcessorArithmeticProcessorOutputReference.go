@@ -269,6 +269,9 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 func NewLogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference{}
 
 	_jsii_.Create(
@@ -290,7 +293,10 @@ func NewLogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputRef
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -298,7 +304,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -306,7 +315,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetExpression(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetExpression(val *string) {
+	if err := j.validateSetExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expression",
@@ -314,7 +326,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetInternalValue(val *LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetInternalValue(val *LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -322,7 +337,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -330,7 +348,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetIsReplaceMissing(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetIsReplaceMissing(val interface{}) {
+	if err := j.validateSetIsReplaceMissingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isReplaceMissing",
@@ -338,7 +359,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetName(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -346,7 +370,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetTarget(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetTarget(val *string) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -354,7 +381,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -362,7 +392,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -384,6 +417,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -397,6 +433,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -410,6 +449,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -423,6 +465,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -436,6 +481,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -449,6 +497,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -462,6 +513,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -475,6 +529,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -488,6 +545,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -514,6 +574,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcess
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

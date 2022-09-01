@@ -271,6 +271,9 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 func NewDashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewDashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputRe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -346,6 +364,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -359,6 +380,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -372,6 +396,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -385,6 +412,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -398,6 +428,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -411,6 +444,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -424,6 +460,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -437,6 +476,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -450,6 +492,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutApmDependencyStatsQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery) {
+	if err := d.validatePutApmDependencyStatsQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putApmDependencyStatsQuery",
@@ -497,6 +548,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutApmResourceStatsQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery) {
+	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putApmResourceStatsQuery",
@@ -505,6 +559,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutEventQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery) {
+	if err := d.validatePutEventQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEventQuery",
@@ -513,6 +570,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutMetricQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery) {
+	if err := d.validatePutMetricQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMetricQuery",
@@ -521,6 +581,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutProcessQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery) {
+	if err := d.validatePutProcessQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putProcessQuery",
@@ -569,6 +632,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

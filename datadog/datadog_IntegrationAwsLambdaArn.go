@@ -337,6 +337,9 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) TerraformResourceType() *string {
 func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) IntegrationAwsLambdaArn {
 	_init_.Initialize()
 
+	if err := validateNewIntegrationAwsLambdaArnParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IntegrationAwsLambdaArn{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewIntegrationAwsLambdaArn_Override(i IntegrationAwsLambdaArn, scope constr
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetAccountId(val *string) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -367,7 +373,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -375,7 +384,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -383,7 +392,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +400,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetId(val *string) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetLambdaArn(val *string) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetLambdaArn(val *string) {
+	if err := j.validateSetLambdaArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lambdaArn",
@@ -415,7 +430,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetLambdaArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -423,7 +441,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) SetProvisioners(val *[]interface{}) 
 func IntegrationAwsLambdaArn_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIntegrationAwsLambdaArn_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func IntegrationAwsLambdaArn_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -491,6 +518,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) AddOverride(path *string, value inte
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetAnyMapAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetBooleanAttribute(terraformAttribu
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetBooleanMapAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetListAttribute(terraformAttribute 
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberListAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetNumberMapAttribute(terraformAttri
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetStringAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetStringMapAttribute(terraformAttri
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) InterpolationForAttribute(terraformA
 }
 
 func (i *jsiiProxy_IntegrationAwsLambdaArn) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",

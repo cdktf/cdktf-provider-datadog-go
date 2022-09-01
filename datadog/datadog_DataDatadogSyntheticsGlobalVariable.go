@@ -297,6 +297,9 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) TerraformResourceType() 
 func NewDataDatadogSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *DataDatadogSyntheticsGlobalVariableConfig) DataDatadogSyntheticsGlobalVariable {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogSyntheticsGlobalVariableParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogSyntheticsGlobalVariable{}
 
 	_jsii_.Create(
@@ -319,7 +322,7 @@ func NewDataDatadogSyntheticsGlobalVariable_Override(d DataDatadogSyntheticsGlob
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -327,7 +330,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -335,7 +338,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -343,7 +346,10 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetId(val *string) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -351,7 +357,10 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -359,7 +368,10 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetName(val *string) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -367,7 +379,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,6 +407,9 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) SetProvider(val cdktf.Te
 func DataDatadogSyntheticsGlobalVariable_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatadogSyntheticsGlobalVariable_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -419,6 +434,9 @@ func DataDatadogSyntheticsGlobalVariable_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -427,6 +445,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) AddOverride(path *string
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -440,6 +461,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetAnyMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -453,6 +477,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetBooleanAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -466,6 +493,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetBooleanMapAttribute(t
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -479,6 +509,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetListAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -492,6 +525,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberAttribute(terra
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -505,6 +541,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberListAttribute(t
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -518,6 +557,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetNumberMapAttribute(te
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -531,6 +573,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetStringAttribute(terra
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -544,6 +589,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) GetStringMapAttribute(te
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -557,6 +605,9 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) InterpolationForAttribut
 }
 
 func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

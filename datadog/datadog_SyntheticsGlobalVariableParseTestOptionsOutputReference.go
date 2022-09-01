@@ -221,6 +221,9 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Type
 func NewSyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableParseTestOptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsGlobalVariableParseTestOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewSyntheticsGlobalVariableParseTestOptionsOutputReference_Override(s Synth
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetField(val *string) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetField(val *string) {
+	if err := j.validateSetFieldParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"field",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetF
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetInternalValue(val *SyntheticsGlobalVariableParseTestOptions) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetInternalValue(val *SyntheticsGlobalVariableParseTestOptions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) SetType(val *string) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -312,6 +336,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Comp
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -325,6 +352,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetA
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -338,6 +368,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetB
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -351,6 +384,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetB
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -364,6 +400,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetL
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -377,6 +416,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetN
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -390,6 +432,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetN
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -403,6 +448,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetN
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -416,6 +464,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetS
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Inte
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -455,6 +509,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Inte
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) PutParser(value *SyntheticsGlobalVariableParseTestOptionsParser) {
+	if err := s.validatePutParserParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putParser",
@@ -471,6 +528,9 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Rese
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

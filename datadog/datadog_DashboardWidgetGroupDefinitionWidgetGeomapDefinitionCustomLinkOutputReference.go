@@ -247,6 +247,9 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetIsHidden(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetIsHidden(val interface{}) {
+	if err := j.validateSetIsHiddenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isHidden",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetLabel(val *string) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetLink(val *string) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetLink(val *string) {
+	if err := j.validateSetLinkParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"link",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetOverrideLabel(val *string) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetOverrideLabel(val *string) {
+	if err := j.validateSetOverrideLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"overrideLabel",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLin
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

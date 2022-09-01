@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 func NewDashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetToplistDefinitionRequestQueryEventQueryComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList_Overri
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) Get(index *float64) DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

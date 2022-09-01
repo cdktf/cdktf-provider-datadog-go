@@ -349,6 +349,9 @@ func (j *jsiiProxy_Role) UserCount() *float64 {
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
+	if err := validateNewRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Role{}
 
 	_jsii_.Create(
@@ -371,7 +374,10 @@ func NewRole_Override(r Role, scope constructs.Construct, id *string, config *Ro
 	)
 }
 
-func (j *jsiiProxy_Role) SetConnection(val interface{}) {
+func (j *jsiiProxy_Role)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -379,7 +385,7 @@ func (j *jsiiProxy_Role) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetCount(val *float64) {
+func (j *jsiiProxy_Role)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -387,7 +393,7 @@ func (j *jsiiProxy_Role) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Role)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -395,7 +401,7 @@ func (j *jsiiProxy_Role) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Role)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -403,7 +409,10 @@ func (j *jsiiProxy_Role) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetId(val *string) {
+func (j *jsiiProxy_Role)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -411,7 +420,10 @@ func (j *jsiiProxy_Role) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Role)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -419,7 +431,10 @@ func (j *jsiiProxy_Role) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetName(val *string) {
+func (j *jsiiProxy_Role)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -427,7 +442,7 @@ func (j *jsiiProxy_Role) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Role)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -435,7 +450,10 @@ func (j *jsiiProxy_Role) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Role) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Role)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -463,6 +481,9 @@ func (j *jsiiProxy_Role) SetProvisioners(val *[]interface{}) {
 func Role_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -487,6 +508,9 @@ func Role_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_Role) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -495,6 +519,9 @@ func (r *jsiiProxy_Role) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -508,6 +535,9 @@ func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[str
 }
 
 func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -521,6 +551,9 @@ func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.I
 }
 
 func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -534,6 +567,9 @@ func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map
 }
 
 func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -547,6 +583,9 @@ func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string
 }
 
 func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -560,6 +599,9 @@ func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64
 }
 
 func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +615,9 @@ func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*
 }
 
 func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -586,6 +631,9 @@ func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[
 }
 
 func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -599,6 +647,9 @@ func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string 
 }
 
 func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +663,9 @@ func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[
 }
 
 func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -625,6 +679,9 @@ func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) c
 }
 
 func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
@@ -633,6 +690,9 @@ func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (r *jsiiProxy_Role) PutPermission(value interface{}) {
+	if err := r.validatePutPermissionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putPermission",

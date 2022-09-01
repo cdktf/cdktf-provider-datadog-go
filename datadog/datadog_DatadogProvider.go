@@ -329,6 +329,9 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() interface{} {
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
+	if err := validateNewDatadogProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatadogProvider{}
 
 	_jsii_.Create(
@@ -351,7 +354,7 @@ func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetAlias(val *string) {
+func (j *jsiiProxy_DatadogProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -359,7 +362,7 @@ func (j *jsiiProxy_DatadogProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetApiKey(val *string) {
+func (j *jsiiProxy_DatadogProvider)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -367,7 +370,7 @@ func (j *jsiiProxy_DatadogProvider) SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetApiUrl(val *string) {
+func (j *jsiiProxy_DatadogProvider)SetApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUrl",
@@ -375,7 +378,7 @@ func (j *jsiiProxy_DatadogProvider) SetApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetAppKey(val *string) {
+func (j *jsiiProxy_DatadogProvider)SetAppKey(val *string) {
 	_jsii_.Set(
 		j,
 		"appKey",
@@ -383,7 +386,10 @@ func (j *jsiiProxy_DatadogProvider) SetAppKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetHttpClientRetryEnabled(val interface{}) {
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryEnabled(val interface{}) {
+	if err := j.validateSetHttpClientRetryEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpClientRetryEnabled",
@@ -391,7 +397,7 @@ func (j *jsiiProxy_DatadogProvider) SetHttpClientRetryEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetHttpClientRetryTimeout(val *float64) {
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"httpClientRetryTimeout",
@@ -399,7 +405,10 @@ func (j *jsiiProxy_DatadogProvider) SetHttpClientRetryTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider) SetValidate(val interface{}) {
+func (j *jsiiProxy_DatadogProvider)SetValidate(val interface{}) {
+	if err := j.validateSetValidateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"validate",
@@ -427,6 +436,9 @@ func (j *jsiiProxy_DatadogProvider) SetValidate(val interface{}) {
 func DatadogProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDatadogProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -451,6 +463,9 @@ func DatadogProvider_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DatadogProvider) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -459,6 +474,9 @@ func (d *jsiiProxy_DatadogProvider) AddOverride(path *string, value interface{})
 }
 
 func (d *jsiiProxy_DatadogProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

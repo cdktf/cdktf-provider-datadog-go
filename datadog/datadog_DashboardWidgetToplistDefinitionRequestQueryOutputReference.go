@@ -271,6 +271,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 func NewDashboardWidgetToplistDefinitionRequestQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetToplistDefinitionRequestQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetToplistDefinitionRequestQueryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewDashboardWidgetToplistDefinitionRequestQueryOutputReference_Override(d D
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -346,6 +364,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -359,6 +380,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -372,6 +396,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -385,6 +412,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -398,6 +428,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -411,6 +444,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -424,6 +460,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -437,6 +476,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -450,6 +492,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutApmDependencyStatsQuery(value *DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery) {
+	if err := d.validatePutApmDependencyStatsQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putApmDependencyStatsQuery",
@@ -497,6 +548,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery) {
+	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putApmResourceStatsQuery",
@@ -505,6 +559,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutEventQuery(value *DashboardWidgetToplistDefinitionRequestQueryEventQuery) {
+	if err := d.validatePutEventQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEventQuery",
@@ -513,6 +570,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutMetricQuery(value *DashboardWidgetToplistDefinitionRequestQueryMetricQuery) {
+	if err := d.validatePutMetricQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMetricQuery",
@@ -521,6 +581,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutProcessQuery(value *DashboardWidgetToplistDefinitionRequestQueryProcessQuery) {
+	if err := d.validatePutProcessQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putProcessQuery",
@@ -569,6 +632,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

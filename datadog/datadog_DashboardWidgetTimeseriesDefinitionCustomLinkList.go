@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) WrapsSet()
 func NewDashboardWidgetTimeseriesDefinitionCustomLinkList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetTimeseriesDefinitionCustomLinkList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetTimeseriesDefinitionCustomLinkListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetTimeseriesDefinitionCustomLinkList_Override(d DashboardWi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetInterna
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) ComputeFqn
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) Get(index *float64) DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) Get(index 
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

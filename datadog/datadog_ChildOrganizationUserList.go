@@ -99,6 +99,9 @@ func (j *jsiiProxy_ChildOrganizationUserList) WrapsSet() *bool {
 func NewChildOrganizationUserList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationUserList {
 	_init_.Initialize()
 
+	if err := validateNewChildOrganizationUserListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ChildOrganizationUserList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewChildOrganizationUserList_Override(c ChildOrganizationUserList, terrafor
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationUserList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChildOrganizationUserList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ChildOrganizationUserList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationUserList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationUserList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ChildOrganizationUserList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationUserList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChildOrganizationUserList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_ChildOrganizationUserList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_ChildOrganizationUserList) Get(index *float64) ChildOrganizationUserOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ChildOrganizationUserOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_ChildOrganizationUserList) Get(index *float64) ChildOrganizat
 }
 
 func (c *jsiiProxy_ChildOrganizationUserList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

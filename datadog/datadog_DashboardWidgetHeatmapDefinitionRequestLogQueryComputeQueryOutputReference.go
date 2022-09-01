@@ -222,6 +222,9 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 func NewDashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewDashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetAggregation(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetAggregation(val *string) {
+	if err := j.validateSetAggregationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregation",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetInternalValue(val *DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetInternalValue(val *DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetInterval(val *float64) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOu
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

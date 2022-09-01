@@ -197,6 +197,9 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Ter
 func NewLogsCustomPipelineProcessorGrokParserGrokOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorGrokParserGrokOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineProcessorGrokParserGrokOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewLogsCustomPipelineProcessorGrokParserGrokOutputReference_Override(l Logs
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetInternalValue(val *LogsCustomPipelineProcessorGrokParserGrok) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetInternalValue(val *LogsCustomPipelineProcessorGrokParserGrok) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetMatchRules(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetMatchRules(val *string) {
+	if err := j.validateSetMatchRulesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchRules",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetSupportRules(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetSupportRules(val *string) {
+	if err := j.validateSetSupportRulesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"supportRules",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Com
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Get
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Int
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Int
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorGrokParserGrokOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

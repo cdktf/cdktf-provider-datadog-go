@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) WrapsSe
 func NewDataDatadogLogsIndexesLogsIndexesExclusionFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesExclusionFilterList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogLogsIndexesLogsIndexesExclusionFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogLogsIndexesLogsIndexesExclusionFilterList_Override(d DataData
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) Compute
 }
 
 func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) Get(index *float64) DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) Get(ind
 }
 
 func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

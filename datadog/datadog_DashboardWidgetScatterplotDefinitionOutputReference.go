@@ -367,6 +367,9 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) YaxisInp
 func NewDashboardWidgetScatterplotDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetScatterplotDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetScatterplotDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -388,7 +391,10 @@ func NewDashboardWidgetScatterplotDefinitionOutputReference_Override(d Dashboard
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetColorByGroups(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetColorByGroups(val *[]*string) {
+	if err := j.validateSetColorByGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"colorByGroups",
@@ -396,7 +402,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetColor
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -404,7 +413,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -412,7 +424,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetInternalValue(val *DashboardWidgetScatterplotDefinition) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetInternalValue(val *DashboardWidgetScatterplotDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -420,7 +435,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetLiveSpan(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetLiveSpan(val *string) {
+	if err := j.validateSetLiveSpanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"liveSpan",
@@ -428,7 +446,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetLiveS
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -436,7 +457,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -444,7 +468,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -452,7 +479,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTitle
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTitleAlign(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTitleAlign(val *string) {
+	if err := j.validateSetTitleAlignParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleAlign",
@@ -460,7 +490,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTitle
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) SetTitleSize(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTitleSize(val *string) {
+	if err := j.validateSetTitleSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleSize",
@@ -482,6 +515,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +531,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +547,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +563,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +579,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +595,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +611,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +627,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +643,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +672,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -625,6 +688,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutCustomLink(value interface{}) {
+	if err := d.validatePutCustomLinkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomLink",
@@ -633,6 +699,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutCusto
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutRequest(value *DashboardWidgetScatterplotDefinitionRequest) {
+	if err := d.validatePutRequestParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRequest",
@@ -641,6 +710,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutReque
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutXaxis(value *DashboardWidgetScatterplotDefinitionXaxis) {
+	if err := d.validatePutXaxisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putXaxis",
@@ -649,6 +721,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutXaxis
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) PutYaxis(value *DashboardWidgetScatterplotDefinitionYaxis) {
+	if err := d.validatePutYaxisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putYaxis",
@@ -729,6 +804,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ResetYax
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

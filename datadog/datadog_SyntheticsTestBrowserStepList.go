@@ -111,6 +111,9 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepList) WrapsSet() *bool {
 func NewSyntheticsTestBrowserStepList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserStepList {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestBrowserStepListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestBrowserStepList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSyntheticsTestBrowserStepList_Override(s SyntheticsTestBrowserStepList, 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepList) Get(index *float64) SyntheticsTestBrowserStepOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SyntheticsTestBrowserStepOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepList) Get(index *float64) Synthetics
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

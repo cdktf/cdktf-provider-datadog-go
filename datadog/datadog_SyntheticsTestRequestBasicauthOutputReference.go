@@ -391,6 +391,9 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) WorkstationInp
 func NewSyntheticsTestRequestBasicauthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestRequestBasicauthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestRequestBasicauthOutputReference{}
 
 	_jsii_.Create(
@@ -412,7 +415,10 @@ func NewSyntheticsTestRequestBasicauthOutputReference_Override(s SyntheticsTestR
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetAccessKey(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAccessKey(val *string) {
+	if err := j.validateSetAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessKey",
@@ -420,7 +426,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetAccessKey(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -428,7 +437,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -436,7 +448,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetDomain(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domain",
@@ -444,7 +459,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetDomain(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetInternalValue(val *SyntheticsTestRequestBasicauth) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetInternalValue(val *SyntheticsTestRequestBasicauth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -452,7 +470,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -460,7 +481,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetPassword(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetRegion(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -468,7 +492,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetRegion(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetSecretKey(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetSecretKey(val *string) {
+	if err := j.validateSetSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretKey",
@@ -476,7 +503,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetSecretKey(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetServiceName(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetServiceName(val *string) {
+	if err := j.validateSetServiceNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceName",
@@ -484,7 +514,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetServiceName
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetSessionToken(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetSessionToken(val *string) {
+	if err := j.validateSetSessionTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sessionToken",
@@ -492,7 +525,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetSessionToke
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -500,7 +536,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -508,7 +547,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetType(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -516,7 +558,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetType(val *s
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -524,7 +569,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetUsername(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SetWorkstation(val *string) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetWorkstation(val *string) {
+	if err := j.validateSetWorkstationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"workstation",
@@ -546,6 +594,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ComputeFqn() *
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -559,6 +610,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetAnyMapAttri
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -572,6 +626,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanAttr
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -585,6 +642,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanMapA
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -598,6 +658,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetListAttribu
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -611,6 +674,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberAttri
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -624,6 +690,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberListA
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -637,6 +706,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetNumberMapAt
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -650,6 +722,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetStringAttri
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -676,6 +751,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationA
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -769,6 +847,9 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetWorkstati
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

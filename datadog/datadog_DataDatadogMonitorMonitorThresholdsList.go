@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) WrapsSet() *bool {
 func NewDataDatadogMonitorMonitorThresholdsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorMonitorThresholdsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogMonitorMonitorThresholdsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogMonitorMonitorThresholdsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogMonitorMonitorThresholdsList_Override(d DataDatadogMonitorMon
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) Get(index *float64) DataDatadogMonitorMonitorThresholdsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogMonitorMonitorThresholdsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

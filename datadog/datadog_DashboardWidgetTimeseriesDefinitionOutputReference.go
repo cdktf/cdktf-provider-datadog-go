@@ -487,6 +487,9 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) YaxisInpu
 func NewDashboardWidgetTimeseriesDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTimeseriesDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetTimeseriesDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -508,7 +511,10 @@ func NewDashboardWidgetTimeseriesDefinitionOutputReference_Override(d DashboardW
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -516,7 +522,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -524,7 +533,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetInternalValue(val *DashboardWidgetTimeseriesDefinition) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetInternalValue(val *DashboardWidgetTimeseriesDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -532,7 +544,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegendColumns(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetLegendColumns(val *[]*string) {
+	if err := j.validateSetLegendColumnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"legendColumns",
@@ -540,7 +555,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegend
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegendLayout(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetLegendLayout(val *string) {
+	if err := j.validateSetLegendLayoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"legendLayout",
@@ -548,7 +566,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegend
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegendSize(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetLegendSize(val *string) {
+	if err := j.validateSetLegendSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"legendSize",
@@ -556,7 +577,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLegend
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLiveSpan(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetLiveSpan(val *string) {
+	if err := j.validateSetLiveSpanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"liveSpan",
@@ -564,7 +588,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetLiveSp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetShowLegend(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetShowLegend(val interface{}) {
+	if err := j.validateSetShowLegendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"showLegend",
@@ -572,7 +599,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetShowLe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -580,7 +610,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -588,7 +621,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -596,7 +632,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTitle(
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTitleAlign(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetTitleAlign(val *string) {
+	if err := j.validateSetTitleAlignParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleAlign",
@@ -604,7 +643,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTitleA
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) SetTitleSize(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference)SetTitleSize(val *string) {
+	if err := j.validateSetTitleSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleSize",
@@ -626,6 +668,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) ComputeFq
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -639,6 +684,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetAnyMap
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -652,6 +700,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -665,6 +716,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -678,6 +732,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetListAt
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -691,6 +748,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -704,6 +764,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -717,6 +780,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -730,6 +796,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetString
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -756,6 +825,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) Interpola
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -769,6 +841,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) Interpola
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutCustomLink(value interface{}) {
+	if err := d.validatePutCustomLinkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomLink",
@@ -777,6 +852,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutCustom
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutEvent(value interface{}) {
+	if err := d.validatePutEventParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEvent",
@@ -785,6 +863,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutEvent(
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutMarker(value interface{}) {
+	if err := d.validatePutMarkerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMarker",
@@ -793,6 +874,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutMarker
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutRequest(value interface{}) {
+	if err := d.validatePutRequestParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRequest",
@@ -801,6 +885,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutReques
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutRightYaxis(value *DashboardWidgetTimeseriesDefinitionRightYaxis) {
+	if err := d.validatePutRightYaxisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRightYaxis",
@@ -809,6 +896,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutRightY
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) PutYaxis(value *DashboardWidgetTimeseriesDefinitionYaxis) {
+	if err := d.validatePutYaxisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putYaxis",
@@ -929,6 +1019,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) ResetYaxi
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) WrapsSet
 func NewDashboardWidgetQueryValueDefinitionRequestQueryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetQueryValueDefinitionRequestQueryList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetQueryValueDefinitionRequestQueryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetQueryValueDefinitionRequestQueryList_Override(d Dashboard
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetInter
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) ComputeF
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) Get(index *float64) DashboardWidgetQueryValueDefinitionRequestQueryOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetQueryValueDefinitionRequestQueryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) Get(inde
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

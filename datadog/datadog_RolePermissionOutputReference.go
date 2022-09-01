@@ -185,6 +185,9 @@ func (j *jsiiProxy_RolePermissionOutputReference) TerraformResource() cdktf.IInt
 func NewRolePermissionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RolePermissionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRolePermissionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RolePermissionOutputReference{}
 
 	_jsii_.Create(
@@ -206,7 +209,10 @@ func NewRolePermissionOutputReference_Override(r RolePermissionOutputReference, 
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -214,7 +220,10 @@ func (j *jsiiProxy_RolePermissionOutputReference) SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -222,7 +231,10 @@ func (j *jsiiProxy_RolePermissionOutputReference) SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetId(val *string) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -230,7 +242,10 @@ func (j *jsiiProxy_RolePermissionOutputReference) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -238,7 +253,10 @@ func (j *jsiiProxy_RolePermissionOutputReference) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -246,7 +264,10 @@ func (j *jsiiProxy_RolePermissionOutputReference) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_RolePermissionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RolePermissionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,6 +289,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -281,6 +305,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetAnyMapAttribute(terraformAt
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -294,6 +321,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetBooleanAttribute(terraformA
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -307,6 +337,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetBooleanMapAttribute(terrafo
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -320,6 +353,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetListAttribute(terraformAttr
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -333,6 +369,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetNumberAttribute(terraformAt
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -346,6 +385,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetNumberListAttribute(terrafo
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +401,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetNumberMapAttribute(terrafor
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -372,6 +417,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) GetStringAttribute(terraformAt
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -398,6 +446,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) InterpolationAsList() cdktf.IR
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -411,6 +462,9 @@ func (r *jsiiProxy_RolePermissionOutputReference) InterpolationForAttribute(prop
 }
 
 func (r *jsiiProxy_RolePermissionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

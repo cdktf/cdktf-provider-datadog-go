@@ -588,6 +588,9 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
+	if err := validateNewDashboardParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Dashboard{}
 
 	_jsii_.Create(
@@ -610,7 +613,10 @@ func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetConnection(val interface{}) {
+func (j *jsiiProxy_Dashboard)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -618,7 +624,7 @@ func (j *jsiiProxy_Dashboard) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetCount(val *float64) {
+func (j *jsiiProxy_Dashboard)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -626,7 +632,10 @@ func (j *jsiiProxy_Dashboard) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetDashboardLists(val *[]*float64) {
+func (j *jsiiProxy_Dashboard)SetDashboardLists(val *[]*float64) {
+	if err := j.validateSetDashboardListsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dashboardLists",
@@ -634,7 +643,7 @@ func (j *jsiiProxy_Dashboard) SetDashboardLists(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Dashboard)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -642,7 +651,10 @@ func (j *jsiiProxy_Dashboard) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetDescription(val *string) {
+func (j *jsiiProxy_Dashboard)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -650,7 +662,7 @@ func (j *jsiiProxy_Dashboard) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Dashboard)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +670,10 @@ func (j *jsiiProxy_Dashboard) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetId(val *string) {
+func (j *jsiiProxy_Dashboard)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -666,7 +681,10 @@ func (j *jsiiProxy_Dashboard) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetIsReadOnly(val interface{}) {
+func (j *jsiiProxy_Dashboard)SetIsReadOnly(val interface{}) {
+	if err := j.validateSetIsReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isReadOnly",
@@ -674,7 +692,10 @@ func (j *jsiiProxy_Dashboard) SetIsReadOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetLayoutType(val *string) {
+func (j *jsiiProxy_Dashboard)SetLayoutType(val *string) {
+	if err := j.validateSetLayoutTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"layoutType",
@@ -682,7 +703,10 @@ func (j *jsiiProxy_Dashboard) SetLayoutType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Dashboard)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -690,7 +714,10 @@ func (j *jsiiProxy_Dashboard) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetNotifyList(val *[]*string) {
+func (j *jsiiProxy_Dashboard)SetNotifyList(val *[]*string) {
+	if err := j.validateSetNotifyListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notifyList",
@@ -698,7 +725,7 @@ func (j *jsiiProxy_Dashboard) SetNotifyList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Dashboard)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -706,7 +733,10 @@ func (j *jsiiProxy_Dashboard) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Dashboard)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -714,7 +744,10 @@ func (j *jsiiProxy_Dashboard) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetReflowType(val *string) {
+func (j *jsiiProxy_Dashboard)SetReflowType(val *string) {
+	if err := j.validateSetReflowTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"reflowType",
@@ -722,7 +755,10 @@ func (j *jsiiProxy_Dashboard) SetReflowType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetRestrictedRoles(val *[]*string) {
+func (j *jsiiProxy_Dashboard)SetRestrictedRoles(val *[]*string) {
+	if err := j.validateSetRestrictedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restrictedRoles",
@@ -730,7 +766,10 @@ func (j *jsiiProxy_Dashboard) SetRestrictedRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetTitle(val *string) {
+func (j *jsiiProxy_Dashboard)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -738,7 +777,10 @@ func (j *jsiiProxy_Dashboard) SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard) SetUrl(val *string) {
+func (j *jsiiProxy_Dashboard)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -766,6 +808,9 @@ func (j *jsiiProxy_Dashboard) SetUrl(val *string) {
 func Dashboard_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDashboard_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -790,6 +835,9 @@ func Dashboard_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_Dashboard) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -798,6 +846,9 @@ func (d *jsiiProxy_Dashboard) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_Dashboard) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -811,6 +862,9 @@ func (d *jsiiProxy_Dashboard) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (d *jsiiProxy_Dashboard) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -824,6 +878,9 @@ func (d *jsiiProxy_Dashboard) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (d *jsiiProxy_Dashboard) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -837,6 +894,9 @@ func (d *jsiiProxy_Dashboard) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_Dashboard) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -850,6 +910,9 @@ func (d *jsiiProxy_Dashboard) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (d *jsiiProxy_Dashboard) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -863,6 +926,9 @@ func (d *jsiiProxy_Dashboard) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (d *jsiiProxy_Dashboard) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -876,6 +942,9 @@ func (d *jsiiProxy_Dashboard) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_Dashboard) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -889,6 +958,9 @@ func (d *jsiiProxy_Dashboard) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (d *jsiiProxy_Dashboard) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -902,6 +974,9 @@ func (d *jsiiProxy_Dashboard) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (d *jsiiProxy_Dashboard) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -915,6 +990,9 @@ func (d *jsiiProxy_Dashboard) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (d *jsiiProxy_Dashboard) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -928,6 +1006,9 @@ func (d *jsiiProxy_Dashboard) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_Dashboard) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -936,6 +1017,9 @@ func (d *jsiiProxy_Dashboard) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_Dashboard) PutTemplateVariable(value interface{}) {
+	if err := d.validatePutTemplateVariableParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTemplateVariable",
@@ -944,6 +1028,9 @@ func (d *jsiiProxy_Dashboard) PutTemplateVariable(value interface{}) {
 }
 
 func (d *jsiiProxy_Dashboard) PutTemplateVariablePreset(value interface{}) {
+	if err := d.validatePutTemplateVariablePresetParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTemplateVariablePreset",
@@ -952,6 +1039,9 @@ func (d *jsiiProxy_Dashboard) PutTemplateVariablePreset(value interface{}) {
 }
 
 func (d *jsiiProxy_Dashboard) PutWidget(value interface{}) {
+	if err := d.validatePutWidgetParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putWidget",

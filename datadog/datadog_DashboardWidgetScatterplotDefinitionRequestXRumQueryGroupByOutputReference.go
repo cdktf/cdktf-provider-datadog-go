@@ -223,6 +223,9 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 func NewDashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewDashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetLimit(val *float64) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"limit",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -314,6 +338,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -327,6 +354,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -340,6 +370,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -353,6 +386,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -366,6 +402,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -379,6 +418,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -392,6 +434,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -405,6 +450,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -418,6 +466,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) PutSortQuery(value *DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery) {
+	if err := d.validatePutSortQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSortQuery",
@@ -489,6 +546,9 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOu
 }
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

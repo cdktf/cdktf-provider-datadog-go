@@ -222,6 +222,9 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Te
 func NewLogsCustomPipelineProcessorTraceIdRemapperOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorTraceIdRemapperOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineProcessorTraceIdRemapperOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewLogsCustomPipelineProcessorTraceIdRemapperOutputReference_Override(l Log
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetInternalValue(val *LogsCustomPipelineProcessorTraceIdRemapper) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetInternalValue(val *LogsCustomPipelineProcessorTraceIdRemapper) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetName(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetSources(val *[]*string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetSources(val *[]*string) {
+	if err := j.validateSetSourcesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sources",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Co
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Ge
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) In
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Re
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorTraceIdRemapperOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

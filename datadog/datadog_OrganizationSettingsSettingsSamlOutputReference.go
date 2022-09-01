@@ -175,6 +175,9 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) TerraformRes
 func NewOrganizationSettingsSettingsSamlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOrganizationSettingsSettingsSamlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OrganizationSettingsSettingsSamlOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewOrganizationSettingsSettingsSamlOutputReference_Override(o OrganizationS
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetInternalValue(val *OrganizationSettingsSettingsSaml) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetInternalValue(val *OrganizationSettingsSettingsSaml) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) ComputeFqn()
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetAnyMapAtt
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetBooleanAt
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetBooleanMa
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetListAttri
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberAtt
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberLis
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetNumberMap
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetStringAtt
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) Interpolatio
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) ResetEnabled
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

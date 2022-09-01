@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) WrapsSet() *
 func NewDashboardWidgetGeomapDefinitionRequestQueryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetGeomapDefinitionRequestQueryList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetGeomapDefinitionRequestQueryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetGeomapDefinitionRequestQueryList_Override(d DashboardWidg
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) ComputeFqn()
 }
 
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) Get(index *float64) DashboardWidgetGeomapDefinitionRequestQueryOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetGeomapDefinitionRequestQueryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) Get(index *f
 }
 
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

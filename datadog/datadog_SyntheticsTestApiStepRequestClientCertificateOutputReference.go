@@ -197,6 +197,9 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 func NewSyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestApiStepRequestClientCertificateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewSyntheticsTestApiStepRequestClientCertificateOutputReference_Override(s 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) SetInternalValue(val *SyntheticsTestApiStepRequestClientCertificate) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)SetInternalValue(val *SyntheticsTestApiStepRequestClientCertificate) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -272,6 +290,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -285,6 +306,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -298,6 +322,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -311,6 +338,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -324,6 +354,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -337,6 +370,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -350,6 +386,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -363,6 +402,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -376,6 +418,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -402,6 +447,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -415,6 +463,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) PutCert(value *SyntheticsTestApiStepRequestClientCertificateCert) {
+	if err := s.validatePutCertParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCert",
@@ -423,6 +474,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) PutKey(value *SyntheticsTestApiStepRequestClientCertificateKey) {
+	if err := s.validatePutKeyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putKey",
@@ -431,6 +485,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

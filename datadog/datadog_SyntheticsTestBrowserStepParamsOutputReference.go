@@ -607,6 +607,9 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) YInput() *flo
 func NewSyntheticsTestBrowserStepParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestBrowserStepParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference{}
 
 	_jsii_.Create(
@@ -628,7 +631,10 @@ func NewSyntheticsTestBrowserStepParamsOutputReference_Override(s SyntheticsTest
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetAttribute(val *string) {
+	if err := j.validateSetAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"attribute",
@@ -636,7 +642,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetAttribute(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetCheck(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetCheck(val *string) {
+	if err := j.validateSetCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"check",
@@ -644,7 +653,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetCheck(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetClickType(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetClickType(val *string) {
+	if err := j.validateSetClickTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clickType",
@@ -652,7 +664,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetClickType(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetCode(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetCode(val *string) {
+	if err := j.validateSetCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"code",
@@ -660,7 +675,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetCode(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -668,7 +686,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -676,7 +697,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetDelay(val *float64) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetDelay(val *float64) {
+	if err := j.validateSetDelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delay",
@@ -684,7 +708,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetDelay(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetElement(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetElement(val *string) {
+	if err := j.validateSetElementParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"element",
@@ -692,7 +719,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetElement(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetEmail(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"email",
@@ -700,7 +730,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetEmail(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetFile(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetFile(val *string) {
+	if err := j.validateSetFileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"file",
@@ -708,7 +741,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetFile(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetFiles(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetFiles(val *string) {
+	if err := j.validateSetFilesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"files",
@@ -716,7 +752,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetFiles(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetInternalValue(val *SyntheticsTestBrowserStepParams) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetInternalValue(val *SyntheticsTestBrowserStepParams) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -724,7 +763,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetModifiers(val *[]*string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetModifiers(val *[]*string) {
+	if err := j.validateSetModifiersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"modifiers",
@@ -732,7 +774,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetModifiers(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetPlayingTabId(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetPlayingTabId(val *string) {
+	if err := j.validateSetPlayingTabIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"playingTabId",
@@ -740,7 +785,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetPlayingTab
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetRequest(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetRequest(val *string) {
+	if err := j.validateSetRequestParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"request",
@@ -748,7 +796,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetRequest(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetSubtestPublicId(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetSubtestPublicId(val *string) {
+	if err := j.validateSetSubtestPublicIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subtestPublicId",
@@ -756,7 +807,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetSubtestPub
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -764,7 +818,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -772,7 +829,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -780,7 +840,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetValue(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetWithClick(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetWithClick(val interface{}) {
+	if err := j.validateSetWithClickParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"withClick",
@@ -788,7 +851,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetWithClick(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetX(val *float64) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetX(val *float64) {
+	if err := j.validateSetXParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"x",
@@ -796,7 +862,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetX(val *flo
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) SetY(val *float64) {
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetY(val *float64) {
+	if err := j.validateSetYParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"y",
@@ -818,6 +887,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ComputeFqn() 
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -831,6 +903,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetAnyMapAttr
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -844,6 +919,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetBooleanAtt
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -857,6 +935,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetBooleanMap
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -870,6 +951,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetListAttrib
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -883,6 +967,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberAttr
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -896,6 +983,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberList
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -909,6 +999,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetNumberMapA
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -922,6 +1015,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetStringAttr
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -948,6 +1044,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -961,6 +1060,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutElementUserLocator(value *SyntheticsTestBrowserStepParamsElementUserLocator) {
+	if err := s.validatePutElementUserLocatorParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putElementUserLocator",
@@ -969,6 +1071,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutElementUse
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutVariable(value *SyntheticsTestBrowserStepParamsVariable) {
+	if err := s.validatePutVariableParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putVariable",
@@ -1129,6 +1234,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetY() {
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

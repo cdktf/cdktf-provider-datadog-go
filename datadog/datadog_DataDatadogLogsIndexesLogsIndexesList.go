@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) WrapsSet() *bool {
 func NewDataDatadogLogsIndexesLogsIndexesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogLogsIndexesLogsIndexesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogLogsIndexesLogsIndexesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogLogsIndexesLogsIndexesList_Override(d DataDatadogLogsIndexesL
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) Get(index *float64) DataDatadogLogsIndexesLogsIndexesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogLogsIndexesLogsIndexesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

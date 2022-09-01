@@ -197,6 +197,9 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 func NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOut
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetName(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -280,6 +301,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -293,6 +317,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -306,6 +333,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -319,6 +349,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -332,6 +365,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -345,6 +381,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -358,6 +397,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -371,6 +413,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -384,6 +429,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) PutFilter(value *LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter) {
+	if err := l.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putFilter",
@@ -431,6 +485,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

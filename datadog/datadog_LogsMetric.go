@@ -384,6 +384,9 @@ func (j *jsiiProxy_LogsMetric) TerraformResourceType() *string {
 func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricConfig) LogsMetric {
 	_init_.Initialize()
 
+	if err := validateNewLogsMetricParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsMetric{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewLogsMetric_Override(l LogsMetric, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetConnection(val interface{}) {
+func (j *jsiiProxy_LogsMetric)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -414,7 +420,7 @@ func (j *jsiiProxy_LogsMetric) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetCount(val *float64) {
+func (j *jsiiProxy_LogsMetric)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -422,7 +428,7 @@ func (j *jsiiProxy_LogsMetric) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogsMetric)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -430,7 +436,7 @@ func (j *jsiiProxy_LogsMetric) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogsMetric)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -438,7 +444,10 @@ func (j *jsiiProxy_LogsMetric) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetId(val *string) {
+func (j *jsiiProxy_LogsMetric)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_LogsMetric) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogsMetric)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_LogsMetric) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetName(val *string) {
+func (j *jsiiProxy_LogsMetric)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -462,7 +477,7 @@ func (j *jsiiProxy_LogsMetric) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogsMetric)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -470,7 +485,10 @@ func (j *jsiiProxy_LogsMetric) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LogsMetric) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogsMetric)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -498,6 +516,9 @@ func (j *jsiiProxy_LogsMetric) SetProvisioners(val *[]interface{}) {
 func LogsMetric_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLogsMetric_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -522,6 +543,9 @@ func LogsMetric_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LogsMetric) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -530,6 +554,9 @@ func (l *jsiiProxy_LogsMetric) AddOverride(path *string, value interface{}) {
 }
 
 func (l *jsiiProxy_LogsMetric) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -543,6 +570,9 @@ func (l *jsiiProxy_LogsMetric) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (l *jsiiProxy_LogsMetric) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -556,6 +586,9 @@ func (l *jsiiProxy_LogsMetric) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (l *jsiiProxy_LogsMetric) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -569,6 +602,9 @@ func (l *jsiiProxy_LogsMetric) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogsMetric) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -582,6 +618,9 @@ func (l *jsiiProxy_LogsMetric) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (l *jsiiProxy_LogsMetric) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -595,6 +634,9 @@ func (l *jsiiProxy_LogsMetric) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (l *jsiiProxy_LogsMetric) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -608,6 +650,9 @@ func (l *jsiiProxy_LogsMetric) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogsMetric) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -621,6 +666,9 @@ func (l *jsiiProxy_LogsMetric) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (l *jsiiProxy_LogsMetric) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -634,6 +682,9 @@ func (l *jsiiProxy_LogsMetric) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (l *jsiiProxy_LogsMetric) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -647,6 +698,9 @@ func (l *jsiiProxy_LogsMetric) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (l *jsiiProxy_LogsMetric) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -660,6 +714,9 @@ func (l *jsiiProxy_LogsMetric) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (l *jsiiProxy_LogsMetric) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
@@ -668,6 +725,9 @@ func (l *jsiiProxy_LogsMetric) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (l *jsiiProxy_LogsMetric) PutCompute(value *LogsMetricCompute) {
+	if err := l.validatePutComputeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putCompute",
@@ -676,6 +736,9 @@ func (l *jsiiProxy_LogsMetric) PutCompute(value *LogsMetricCompute) {
 }
 
 func (l *jsiiProxy_LogsMetric) PutFilter(value *LogsMetricFilter) {
+	if err := l.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putFilter",
@@ -684,6 +747,9 @@ func (l *jsiiProxy_LogsMetric) PutFilter(value *LogsMetricFilter) {
 }
 
 func (l *jsiiProxy_LogsMetric) PutGroupBy(value interface{}) {
+	if err := l.validatePutGroupByParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putGroupBy",

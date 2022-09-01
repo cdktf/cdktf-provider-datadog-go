@@ -111,6 +111,9 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseList) WrapsSet() *bool {
 func NewSecurityMonitoringRuleCaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleCaseList {
 	_init_.Initialize()
 
+	if err := validateNewSecurityMonitoringRuleCaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SecurityMonitoringRuleCaseList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSecurityMonitoringRuleCaseList_Override(s SecurityMonitoringRuleCaseList
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityMonitoringRuleCaseList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityMonitoringRuleCaseList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityMonitoringRuleCaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SecurityMonitoringRuleCaseList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleCaseList) Get(index *float64) SecurityMonitoringRuleCaseOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SecurityMonitoringRuleCaseOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseList) Get(index *float64) SecurityM
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleCaseList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

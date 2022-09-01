@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) WrapsSet() *boo
 func NewDashboardWidgetSunburstDefinitionRequestList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetSunburstDefinitionRequestList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetSunburstDefinitionRequestListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetSunburstDefinitionRequestList_Override(d DashboardWidgetS
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) Get(index *float64) DashboardWidgetSunburstDefinitionRequestOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetSunburstDefinitionRequestOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) Get(index *floa
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

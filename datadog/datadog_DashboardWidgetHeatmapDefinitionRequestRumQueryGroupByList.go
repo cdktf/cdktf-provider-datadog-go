@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) W
 func NewDashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetHeatmapDefinitionRequestRumQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList_Override(d Da
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) S
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) C
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) Get(index *float64) DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) G
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestRumQueryGroupByList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

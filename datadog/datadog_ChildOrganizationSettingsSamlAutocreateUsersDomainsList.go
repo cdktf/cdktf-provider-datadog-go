@@ -99,6 +99,9 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) Wrap
 func NewChildOrganizationSettingsSamlAutocreateUsersDomainsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlAutocreateUsersDomainsList {
 	_init_.Initialize()
 
+	if err := validateNewChildOrganizationSettingsSamlAutocreateUsersDomainsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewChildOrganizationSettingsSamlAutocreateUsersDomainsList_Override(c Child
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) SetT
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) SetT
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) Comp
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) Get(index *float64) ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) Get(
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

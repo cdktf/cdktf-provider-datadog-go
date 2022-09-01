@@ -111,6 +111,9 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) WrapsSet() *bool {
 func NewLogsIndexExclusionFilterFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsIndexExclusionFilterFilterList {
 	_init_.Initialize()
 
+	if err := validateNewLogsIndexExclusionFilterFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsIndexExclusionFilterFilterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLogsIndexExclusionFilterFilterList_Override(l LogsIndexExclusionFilterFi
 	)
 }
 
-func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_LogsIndexExclusionFilterFilterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LogsIndexExclusionFilterFilterList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LogsIndexExclusionFilterFilterList) Get(index *float64) LogsIndexExclusionFilterFilterOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LogsIndexExclusionFilterFilterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LogsIndexExclusionFilterFilterList) Get(index *float64) LogsI
 }
 
 func (l *jsiiProxy_LogsIndexExclusionFilterFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

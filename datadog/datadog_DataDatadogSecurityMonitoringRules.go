@@ -381,6 +381,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) UserOnlyFilterInput() int
 func NewDataDatadogSecurityMonitoringRules(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringRulesConfig) DataDatadogSecurityMonitoringRules {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogSecurityMonitoringRulesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogSecurityMonitoringRules{}
 
 	_jsii_.Create(
@@ -403,7 +406,7 @@ func NewDataDatadogSecurityMonitoringRules_Override(d DataDatadogSecurityMonitor
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -411,7 +414,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetDefaultOnlyFilter(val interface{}) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetDefaultOnlyFilter(val interface{}) {
+	if err := j.validateSetDefaultOnlyFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultOnlyFilter",
@@ -419,7 +425,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetDefaultOnlyFilter(val 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +433,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +441,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetId(val *string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -443,7 +452,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -451,7 +463,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetNameFilter(val *string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetNameFilter(val *string) {
+	if err := j.validateSetNameFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameFilter",
@@ -459,7 +474,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetNameFilter(val *string
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -467,7 +482,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetTagsFilter(val *[]*string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetTagsFilter(val *[]*string) {
+	if err := j.validateSetTagsFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagsFilter",
@@ -475,7 +493,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetTagsFilter(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetUserOnlyFilter(val interface{}) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetUserOnlyFilter(val interface{}) {
+	if err := j.validateSetUserOnlyFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userOnlyFilter",
@@ -503,6 +524,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) SetUserOnlyFilter(val int
 func DataDatadogSecurityMonitoringRules_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatadogSecurityMonitoringRules_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -527,6 +551,9 @@ func DataDatadogSecurityMonitoringRules_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -535,6 +562,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) AddOverride(path *string,
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -548,6 +578,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetAnyMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -561,6 +594,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetBooleanAttribute(terra
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -574,6 +610,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetBooleanMapAttribute(te
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -587,6 +626,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -600,6 +642,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +658,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberListAttribute(te
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -626,6 +674,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetNumberMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -639,6 +690,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetStringAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -652,6 +706,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) GetStringMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -665,6 +722,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) InterpolationForAttribute
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

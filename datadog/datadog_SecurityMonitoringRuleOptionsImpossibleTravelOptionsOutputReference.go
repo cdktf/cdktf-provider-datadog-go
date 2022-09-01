@@ -175,6 +175,9 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference_Over
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetBaselineUserLocations(val interface{}) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetBaselineUserLocations(val interface{}) {
+	if err := j.validateSetBaselineUserLocationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baselineUserLocations",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetInternalValue(val *SecurityMonitoringRuleOptionsImpossibleTravelOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleOptionsImpossibleTravelOptions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

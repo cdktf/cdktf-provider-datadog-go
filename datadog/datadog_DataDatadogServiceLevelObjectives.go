@@ -370,6 +370,9 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) TerraformResourceType() *s
 func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogServiceLevelObjectivesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogServiceLevelObjectives{}
 
 	_jsii_.Create(
@@ -392,7 +395,7 @@ func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObje
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -400,7 +403,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -408,7 +411,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -416,7 +419,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetId(val *string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -424,7 +430,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetIds(val *[]*string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetIds(val *[]*string) {
+	if err := j.validateSetIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ids",
@@ -432,7 +441,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -440,7 +452,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetMetricsQuery(val *string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetMetricsQuery(val *string) {
+	if err := j.validateSetMetricsQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsQuery",
@@ -448,7 +463,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetMetricsQuery(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetNameQuery(val *string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetNameQuery(val *string) {
+	if err := j.validateSetNameQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameQuery",
@@ -456,7 +474,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetNameQuery(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -464,7 +482,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetTagsQuery(val *string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetTagsQuery(val *string) {
+	if err := j.validateSetTagsQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagsQuery",
@@ -492,6 +513,9 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) SetTagsQuery(val *string) 
 func DataDatadogServiceLevelObjectives_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatadogServiceLevelObjectives_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -516,6 +540,9 @@ func DataDatadogServiceLevelObjectives_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -524,6 +551,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) AddOverride(path *string, 
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -537,6 +567,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetAnyMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -550,6 +583,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetBooleanAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -563,6 +599,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetBooleanMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -576,6 +615,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetListAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -589,6 +631,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -602,6 +647,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberListAttribute(ter
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -615,6 +663,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetNumberMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -628,6 +679,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetStringAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -641,6 +695,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) GetStringMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -654,6 +711,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) InterpolationForAttribute(
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

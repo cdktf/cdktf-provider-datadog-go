@@ -222,6 +222,9 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 func NewDashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewDashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputRe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetAggregation(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetAggregation(val *string) {
+	if err := j.validateSetAggregationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregation",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetInterval(val *float64) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetMetric(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetMetric(val *string) {
+	if err := j.validateSetMetricParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metric",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComp
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

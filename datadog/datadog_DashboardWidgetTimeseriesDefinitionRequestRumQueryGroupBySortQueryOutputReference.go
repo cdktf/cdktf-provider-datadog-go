@@ -221,6 +221,9 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 func NewDashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewDashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetAggregation(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetAggregation(val *string) {
+	if err := j.validateSetAggregationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregation",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetInternalValue(val *DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetInternalValue(val *DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetOrder(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"order",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -320,6 +347,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 }
 
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

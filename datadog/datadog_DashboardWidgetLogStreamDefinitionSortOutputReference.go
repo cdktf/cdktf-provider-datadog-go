@@ -197,6 +197,9 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) Terraf
 func NewDashboardWidgetLogStreamDefinitionSortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetLogStreamDefinitionSortOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetLogStreamDefinitionSortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewDashboardWidgetLogStreamDefinitionSortOutputReference_Override(d Dashboa
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetColumn(val *string) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetColumn(val *string) {
+	if err := j.validateSetColumnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"column",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetCol
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetInternalValue(val *DashboardWidgetLogStreamDefinitionSort) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetInternalValue(val *DashboardWidgetLogStreamDefinitionSort) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetOrder(val *string) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"order",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetOrd
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) Comput
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetAny
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetLis
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetStr
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) Interp
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) Interp
 }
 
 func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionSortOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

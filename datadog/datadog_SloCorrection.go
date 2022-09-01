@@ -480,6 +480,9 @@ func (j *jsiiProxy_SloCorrection) TimezoneInput() *string {
 func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrectionConfig) SloCorrection {
 	_init_.Initialize()
 
+	if err := validateNewSloCorrectionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SloCorrection{}
 
 	_jsii_.Create(
@@ -502,7 +505,10 @@ func NewSloCorrection_Override(s SloCorrection, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetCategory(val *string) {
+func (j *jsiiProxy_SloCorrection)SetCategory(val *string) {
+	if err := j.validateSetCategoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"category",
@@ -510,7 +516,10 @@ func (j *jsiiProxy_SloCorrection) SetCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetConnection(val interface{}) {
+func (j *jsiiProxy_SloCorrection)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -518,7 +527,7 @@ func (j *jsiiProxy_SloCorrection) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetCount(val *float64) {
+func (j *jsiiProxy_SloCorrection)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -526,7 +535,7 @@ func (j *jsiiProxy_SloCorrection) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SloCorrection)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -534,7 +543,10 @@ func (j *jsiiProxy_SloCorrection) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetDescription(val *string) {
+func (j *jsiiProxy_SloCorrection)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -542,7 +554,10 @@ func (j *jsiiProxy_SloCorrection) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetDuration(val *float64) {
+func (j *jsiiProxy_SloCorrection)SetDuration(val *float64) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -550,7 +565,10 @@ func (j *jsiiProxy_SloCorrection) SetDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetEnd(val *float64) {
+func (j *jsiiProxy_SloCorrection)SetEnd(val *float64) {
+	if err := j.validateSetEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"end",
@@ -558,7 +576,7 @@ func (j *jsiiProxy_SloCorrection) SetEnd(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SloCorrection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -566,7 +584,10 @@ func (j *jsiiProxy_SloCorrection) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetId(val *string) {
+func (j *jsiiProxy_SloCorrection)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -574,7 +595,10 @@ func (j *jsiiProxy_SloCorrection) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SloCorrection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -582,7 +606,7 @@ func (j *jsiiProxy_SloCorrection) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SloCorrection)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +614,10 @@ func (j *jsiiProxy_SloCorrection) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SloCorrection)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -598,7 +625,10 @@ func (j *jsiiProxy_SloCorrection) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetRrule(val *string) {
+func (j *jsiiProxy_SloCorrection)SetRrule(val *string) {
+	if err := j.validateSetRruleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rrule",
@@ -606,7 +636,10 @@ func (j *jsiiProxy_SloCorrection) SetRrule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetSloId(val *string) {
+func (j *jsiiProxy_SloCorrection)SetSloId(val *string) {
+	if err := j.validateSetSloIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sloId",
@@ -614,7 +647,10 @@ func (j *jsiiProxy_SloCorrection) SetSloId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetStart(val *float64) {
+func (j *jsiiProxy_SloCorrection)SetStart(val *float64) {
+	if err := j.validateSetStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"start",
@@ -622,7 +658,10 @@ func (j *jsiiProxy_SloCorrection) SetStart(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection) SetTimezone(val *string) {
+func (j *jsiiProxy_SloCorrection)SetTimezone(val *string) {
+	if err := j.validateSetTimezoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timezone",
@@ -650,6 +689,9 @@ func (j *jsiiProxy_SloCorrection) SetTimezone(val *string) {
 func SloCorrection_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSloCorrection_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -674,6 +716,9 @@ func SloCorrection_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SloCorrection) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -682,6 +727,9 @@ func (s *jsiiProxy_SloCorrection) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SloCorrection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -695,6 +743,9 @@ func (s *jsiiProxy_SloCorrection) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SloCorrection) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -708,6 +759,9 @@ func (s *jsiiProxy_SloCorrection) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SloCorrection) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -721,6 +775,9 @@ func (s *jsiiProxy_SloCorrection) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SloCorrection) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -734,6 +791,9 @@ func (s *jsiiProxy_SloCorrection) GetListAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SloCorrection) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -747,6 +807,9 @@ func (s *jsiiProxy_SloCorrection) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SloCorrection) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -760,6 +823,9 @@ func (s *jsiiProxy_SloCorrection) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SloCorrection) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -773,6 +839,9 @@ func (s *jsiiProxy_SloCorrection) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SloCorrection) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -786,6 +855,9 @@ func (s *jsiiProxy_SloCorrection) GetStringAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SloCorrection) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -799,6 +871,9 @@ func (s *jsiiProxy_SloCorrection) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SloCorrection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -812,6 +887,9 @@ func (s *jsiiProxy_SloCorrection) InterpolationForAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SloCorrection) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

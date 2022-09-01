@@ -111,6 +111,9 @@ func (j *jsiiProxy_SyntheticsTestAssertionList) WrapsSet() *bool {
 func NewSyntheticsTestAssertionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestAssertionList {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestAssertionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestAssertionList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSyntheticsTestAssertionList_Override(s SyntheticsTestAssertionList, terr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestAssertionList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SyntheticsTestAssertionList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestAssertionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SyntheticsTestAssertionList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestAssertionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SyntheticsTestAssertionList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestAssertionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SyntheticsTestAssertionList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SyntheticsTestAssertionList) Get(index *float64) SyntheticsTestAssertionOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SyntheticsTestAssertionOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SyntheticsTestAssertionList) Get(index *float64) SyntheticsTe
 }
 
 func (s *jsiiProxy_SyntheticsTestAssertionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

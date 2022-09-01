@@ -223,6 +223,9 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetLimit(val *float64) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"limit",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -314,6 +338,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -327,6 +354,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -340,6 +370,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -353,6 +386,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -366,6 +402,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -379,6 +418,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -392,6 +434,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -405,6 +450,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -418,6 +466,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) PutSortQuery(value *DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery) {
+	if err := d.validatePutSortQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSortQuery",
@@ -489,6 +546,9 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOut
 }
 
 func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

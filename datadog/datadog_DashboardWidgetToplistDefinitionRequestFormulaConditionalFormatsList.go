@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 func NewDashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList_Ove
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) Get(index *float64) DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalForm
 }
 
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaConditionalFormatsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

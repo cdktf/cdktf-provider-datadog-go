@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) WrapsSet() *
 func NewDashboardWidgetSunburstDefinitionCustomLinkList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetSunburstDefinitionCustomLinkList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetSunburstDefinitionCustomLinkListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetSunburstDefinitionCustomLinkList_Override(d DashboardWidg
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) ComputeFqn()
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) Get(index *float64) DashboardWidgetSunburstDefinitionCustomLinkOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetSunburstDefinitionCustomLinkOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) Get(index *f
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionCustomLinkList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) WrapsSet() *bool
 func NewChildOrganizationSettingsSamlStrictModeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlStrictModeList {
 	_init_.Initialize()
 
+	if err := validateNewChildOrganizationSettingsSamlStrictModeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ChildOrganizationSettingsSamlStrictModeList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewChildOrganizationSettingsSamlStrictModeList_Override(c ChildOrganization
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) ComputeFqn() *st
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) Get(index *float64) ChildOrganizationSettingsSamlStrictModeOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ChildOrganizationSettingsSamlStrictModeOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) Get(index *float
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

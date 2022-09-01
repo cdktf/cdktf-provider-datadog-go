@@ -244,6 +244,9 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) TypeInput
 func NewSyntheticsTestApiStepExtractedValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestApiStepExtractedValueOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestApiStepExtractedValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference{}
 
 	_jsii_.Create(
@@ -265,7 +268,10 @@ func NewSyntheticsTestApiStepExtractedValueOutputReference_Override(s Synthetics
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -273,7 +279,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -281,7 +290,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetField(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetField(val *string) {
+	if err := j.validateSetFieldParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"field",
@@ -289,7 +301,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetField(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -297,7 +312,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -305,7 +323,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetName(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -313,7 +334,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,7 +345,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SetType(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -343,6 +370,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) ComputeFq
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -356,6 +386,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetAnyMap
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -369,6 +402,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -382,6 +418,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -395,6 +434,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetListAt
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -408,6 +450,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -421,6 +466,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -434,6 +482,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -447,6 +498,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetString
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -473,6 +527,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) Interpola
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -486,6 +543,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) Interpola
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) PutParser(value *SyntheticsTestApiStepExtractedValueParser) {
+	if err := s.validatePutParserParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putParser",
@@ -502,6 +562,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) ResetFiel
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

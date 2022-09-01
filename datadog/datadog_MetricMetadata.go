@@ -458,6 +458,9 @@ func (j *jsiiProxy_MetricMetadata) UnitInput() *string {
 func NewMetricMetadata(scope constructs.Construct, id *string, config *MetricMetadataConfig) MetricMetadata {
 	_init_.Initialize()
 
+	if err := validateNewMetricMetadataParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MetricMetadata{}
 
 	_jsii_.Create(
@@ -480,7 +483,10 @@ func NewMetricMetadata_Override(m MetricMetadata, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetConnection(val interface{}) {
+func (j *jsiiProxy_MetricMetadata)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -488,7 +494,7 @@ func (j *jsiiProxy_MetricMetadata) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetCount(val *float64) {
+func (j *jsiiProxy_MetricMetadata)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -496,7 +502,7 @@ func (j *jsiiProxy_MetricMetadata) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MetricMetadata)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +510,10 @@ func (j *jsiiProxy_MetricMetadata) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetDescription(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -512,7 +521,7 @@ func (j *jsiiProxy_MetricMetadata) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MetricMetadata)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -520,7 +529,10 @@ func (j *jsiiProxy_MetricMetadata) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetId(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -528,7 +540,10 @@ func (j *jsiiProxy_MetricMetadata) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MetricMetadata)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -536,7 +551,10 @@ func (j *jsiiProxy_MetricMetadata) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetMetric(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetMetric(val *string) {
+	if err := j.validateSetMetricParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metric",
@@ -544,7 +562,10 @@ func (j *jsiiProxy_MetricMetadata) SetMetric(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetPerUnit(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetPerUnit(val *string) {
+	if err := j.validateSetPerUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"perUnit",
@@ -552,7 +573,7 @@ func (j *jsiiProxy_MetricMetadata) SetPerUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MetricMetadata)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -560,7 +581,10 @@ func (j *jsiiProxy_MetricMetadata) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MetricMetadata)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -568,7 +592,10 @@ func (j *jsiiProxy_MetricMetadata) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetShortName(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetShortName(val *string) {
+	if err := j.validateSetShortNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shortName",
@@ -576,7 +603,10 @@ func (j *jsiiProxy_MetricMetadata) SetShortName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetStatsdInterval(val *float64) {
+func (j *jsiiProxy_MetricMetadata)SetStatsdInterval(val *float64) {
+	if err := j.validateSetStatsdIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statsdInterval",
@@ -584,7 +614,10 @@ func (j *jsiiProxy_MetricMetadata) SetStatsdInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetType(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -592,7 +625,10 @@ func (j *jsiiProxy_MetricMetadata) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricMetadata) SetUnit(val *string) {
+func (j *jsiiProxy_MetricMetadata)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unit",
@@ -620,6 +656,9 @@ func (j *jsiiProxy_MetricMetadata) SetUnit(val *string) {
 func MetricMetadata_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMetricMetadata_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -644,6 +683,9 @@ func MetricMetadata_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MetricMetadata) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -652,6 +694,9 @@ func (m *jsiiProxy_MetricMetadata) AddOverride(path *string, value interface{}) 
 }
 
 func (m *jsiiProxy_MetricMetadata) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -665,6 +710,9 @@ func (m *jsiiProxy_MetricMetadata) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MetricMetadata) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -678,6 +726,9 @@ func (m *jsiiProxy_MetricMetadata) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MetricMetadata) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -691,6 +742,9 @@ func (m *jsiiProxy_MetricMetadata) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MetricMetadata) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -704,6 +758,9 @@ func (m *jsiiProxy_MetricMetadata) GetListAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MetricMetadata) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -717,6 +774,9 @@ func (m *jsiiProxy_MetricMetadata) GetNumberAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MetricMetadata) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -730,6 +790,9 @@ func (m *jsiiProxy_MetricMetadata) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MetricMetadata) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -743,6 +806,9 @@ func (m *jsiiProxy_MetricMetadata) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MetricMetadata) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -756,6 +822,9 @@ func (m *jsiiProxy_MetricMetadata) GetStringAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MetricMetadata) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -769,6 +838,9 @@ func (m *jsiiProxy_MetricMetadata) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MetricMetadata) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -782,6 +854,9 @@ func (m *jsiiProxy_MetricMetadata) InterpolationForAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_MetricMetadata) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

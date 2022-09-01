@@ -267,6 +267,9 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) TerraformResource() c
 func NewLogsArchiveAzureArchiveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsArchiveAzureArchiveOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsArchiveAzureArchiveOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsArchiveAzureArchiveOutputReference{}
 
 	_jsii_.Create(
@@ -288,7 +291,10 @@ func NewLogsArchiveAzureArchiveOutputReference_Override(l LogsArchiveAzureArchiv
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetClientId(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -296,7 +302,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetClientId(val *stri
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -304,7 +313,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -312,7 +324,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetContainer(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetContainer(val *string) {
+	if err := j.validateSetContainerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"container",
@@ -320,7 +335,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetContainer(val *str
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetInternalValue(val *LogsArchiveAzureArchive) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetInternalValue(val *LogsArchiveAzureArchive) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -328,7 +346,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -336,7 +357,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetPath(val *string) 
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetStorageAccount(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetStorageAccount(val *string) {
+	if err := j.validateSetStorageAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageAccount",
@@ -344,7 +368,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetStorageAccount(val
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetTenantId(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -352,7 +379,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetTenantId(val *stri
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -360,7 +390,10 @@ func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsArchiveAzureArchiveOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -382,6 +415,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) ComputeFqn() *string 
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -395,6 +431,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetAnyMapAttribute(te
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -408,6 +447,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetBooleanAttribute(t
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -421,6 +463,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetBooleanMapAttribut
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -434,6 +479,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetListAttribute(terr
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -447,6 +495,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberAttribute(te
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -460,6 +511,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberListAttribut
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -473,6 +527,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetNumberMapAttribute
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -486,6 +543,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetStringAttribute(te
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -512,6 +572,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) InterpolationAsList()
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -533,6 +596,9 @@ func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) ResetPath() {
 }
 
 func (l *jsiiProxy_LogsArchiveAzureArchiveOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

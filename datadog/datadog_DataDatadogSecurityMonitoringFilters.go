@@ -285,6 +285,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) TerraformResourceType()
 func NewDataDatadogSecurityMonitoringFilters(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringFiltersConfig) DataDatadogSecurityMonitoringFilters {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogSecurityMonitoringFiltersParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogSecurityMonitoringFilters{}
 
 	_jsii_.Create(
@@ -307,7 +310,7 @@ func NewDataDatadogSecurityMonitoringFilters_Override(d DataDatadogSecurityMonit
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -315,7 +318,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -323,7 +326,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -331,7 +334,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetId(val *string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -339,7 +345,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -347,7 +356,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -375,6 +384,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) SetProvider(val cdktf.T
 func DataDatadogSecurityMonitoringFilters_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDatadogSecurityMonitoringFilters_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -399,6 +411,9 @@ func DataDatadogSecurityMonitoringFilters_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -407,6 +422,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) AddOverride(path *strin
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -420,6 +438,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetAnyMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -433,6 +454,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetBooleanAttribute(ter
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -446,6 +470,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetBooleanMapAttribute(
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -459,6 +486,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetListAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -472,6 +502,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -485,6 +518,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberListAttribute(
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -498,6 +534,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetNumberMapAttribute(t
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -511,6 +550,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetStringAttribute(terr
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -524,6 +566,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) GetStringMapAttribute(t
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -537,6 +582,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) InterpolationForAttribu
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

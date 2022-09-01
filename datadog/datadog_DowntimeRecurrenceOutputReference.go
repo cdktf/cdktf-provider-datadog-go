@@ -294,6 +294,9 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) WeekDaysInput() *[]*string
 func NewDowntimeRecurrenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DowntimeRecurrenceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDowntimeRecurrenceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DowntimeRecurrenceOutputReference{}
 
 	_jsii_.Create(
@@ -315,7 +318,10 @@ func NewDowntimeRecurrenceOutputReference_Override(d DowntimeRecurrenceOutputRef
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -323,7 +329,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -331,7 +340,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetInternalValue(val *DowntimeRecurrence) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetInternalValue(val *DowntimeRecurrence) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -339,7 +351,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetInternalValue(val *Down
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetPeriod(val *float64) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"period",
@@ -347,7 +362,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetRrule(val *string) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetRrule(val *string) {
+	if err := j.validateSetRruleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rrule",
@@ -355,7 +373,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetRrule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -363,7 +384,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -371,7 +395,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetType(val *string) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -379,7 +406,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetUntilDate(val *float64) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetUntilDate(val *float64) {
+	if err := j.validateSetUntilDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"untilDate",
@@ -387,7 +417,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetUntilDate(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetUntilOccurrences(val *float64) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetUntilOccurrences(val *float64) {
+	if err := j.validateSetUntilOccurrencesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"untilOccurrences",
@@ -395,7 +428,10 @@ func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetUntilOccurrences(val *f
 	)
 }
 
-func (j *jsiiProxy_DowntimeRecurrenceOutputReference) SetWeekDays(val *[]*string) {
+func (j *jsiiProxy_DowntimeRecurrenceOutputReference)SetWeekDays(val *[]*string) {
+	if err := j.validateSetWeekDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weekDays",
@@ -417,6 +453,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -430,6 +469,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -443,6 +485,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetBooleanAttribute(terraf
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -456,6 +501,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -469,6 +517,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetListAttribute(terraform
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -482,6 +533,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberAttribute(terrafo
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -495,6 +549,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberListAttribute(ter
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -508,6 +565,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetNumberMapAttribute(terr
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -521,6 +581,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetStringAttribute(terrafo
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -547,6 +610,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationAsList() cdkt
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -600,6 +666,9 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) ResetWeekDays() {
 }
 
 func (d *jsiiProxy_DowntimeRecurrenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

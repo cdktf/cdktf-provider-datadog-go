@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 func NewDashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList_Overrid
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 }
 
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) Get(index *float64) DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByL
 }
 
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 func NewDashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList_
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) Get(index *float64) DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

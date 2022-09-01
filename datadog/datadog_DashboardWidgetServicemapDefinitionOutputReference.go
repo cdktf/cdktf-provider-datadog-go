@@ -293,6 +293,9 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) TitleSize
 func NewDashboardWidgetServicemapDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetServicemapDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetServicemapDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -314,7 +317,10 @@ func NewDashboardWidgetServicemapDefinitionOutputReference_Override(d DashboardW
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -322,7 +328,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -330,7 +339,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetFilters(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetFilters(val *[]*string) {
+	if err := j.validateSetFiltersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filters",
@@ -338,7 +350,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetFilter
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetInternalValue(val *DashboardWidgetServicemapDefinition) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetInternalValue(val *DashboardWidgetServicemapDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -346,7 +361,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetService(val *string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"service",
@@ -354,7 +372,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetServic
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -362,7 +383,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -370,7 +394,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -378,7 +405,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTitle(
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTitleAlign(val *string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetTitleAlign(val *string) {
+	if err := j.validateSetTitleAlignParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleAlign",
@@ -386,7 +416,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTitleA
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) SetTitleSize(val *string) {
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference)SetTitleSize(val *string) {
+	if err := j.validateSetTitleSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"titleSize",
@@ -408,6 +441,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) ComputeFq
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -421,6 +457,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetAnyMap
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -434,6 +473,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -447,6 +489,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -460,6 +505,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetListAt
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -473,6 +521,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -486,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -499,6 +553,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -512,6 +569,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetString
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -538,6 +598,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) Interpola
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) Interpola
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) PutCustomLink(value interface{}) {
+	if err := d.validatePutCustomLinkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomLink",
@@ -591,6 +657,9 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) ResetTitl
 }
 
 func (d *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

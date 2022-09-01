@@ -385,6 +385,9 @@ func (j *jsiiProxy_LogsCustomPipeline) TerraformResourceType() *string {
 func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) LogsCustomPipeline {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipeline{}
 
 	_jsii_.Create(
@@ -407,7 +410,10 @@ func NewLogsCustomPipeline_Override(l LogsCustomPipeline, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetConnection(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipeline)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -415,7 +421,7 @@ func (j *jsiiProxy_LogsCustomPipeline) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetCount(val *float64) {
+func (j *jsiiProxy_LogsCustomPipeline)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -423,7 +429,7 @@ func (j *jsiiProxy_LogsCustomPipeline) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogsCustomPipeline)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -431,7 +437,7 @@ func (j *jsiiProxy_LogsCustomPipeline) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogsCustomPipeline)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -439,7 +445,10 @@ func (j *jsiiProxy_LogsCustomPipeline) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetId(val *string) {
+func (j *jsiiProxy_LogsCustomPipeline)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -447,7 +456,10 @@ func (j *jsiiProxy_LogsCustomPipeline) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipeline)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -455,7 +467,10 @@ func (j *jsiiProxy_LogsCustomPipeline) SetIsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogsCustomPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -463,7 +478,10 @@ func (j *jsiiProxy_LogsCustomPipeline) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetName(val *string) {
+func (j *jsiiProxy_LogsCustomPipeline)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -471,7 +489,7 @@ func (j *jsiiProxy_LogsCustomPipeline) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogsCustomPipeline)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -479,7 +497,10 @@ func (j *jsiiProxy_LogsCustomPipeline) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogsCustomPipeline)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -507,6 +528,9 @@ func (j *jsiiProxy_LogsCustomPipeline) SetProvisioners(val *[]interface{}) {
 func LogsCustomPipeline_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLogsCustomPipeline_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -531,6 +555,9 @@ func LogsCustomPipeline_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -539,6 +566,9 @@ func (l *jsiiProxy_LogsCustomPipeline) AddOverride(path *string, value interface
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -552,6 +582,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -565,6 +598,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -578,6 +614,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -591,6 +630,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetListAttribute(terraformAttribute *stri
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -604,6 +646,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetNumberAttribute(terraformAttribute *st
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -617,6 +662,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetNumberListAttribute(terraformAttribute
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -630,6 +678,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -643,6 +694,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetStringAttribute(terraformAttribute *st
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -656,6 +710,9 @@ func (l *jsiiProxy_LogsCustomPipeline) GetStringMapAttribute(terraformAttribute 
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -669,6 +726,9 @@ func (l *jsiiProxy_LogsCustomPipeline) InterpolationForAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
@@ -677,6 +737,9 @@ func (l *jsiiProxy_LogsCustomPipeline) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) PutFilter(value interface{}) {
+	if err := l.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putFilter",
@@ -685,6 +748,9 @@ func (l *jsiiProxy_LogsCustomPipeline) PutFilter(value interface{}) {
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) PutProcessor(value interface{}) {
+	if err := l.validatePutProcessorParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putProcessor",

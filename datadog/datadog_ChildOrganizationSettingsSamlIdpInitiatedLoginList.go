@@ -99,6 +99,9 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) WrapsSet(
 func NewChildOrganizationSettingsSamlIdpInitiatedLoginList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlIdpInitiatedLoginList {
 	_init_.Initialize()
 
+	if err := validateNewChildOrganizationSettingsSamlIdpInitiatedLoginListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewChildOrganizationSettingsSamlIdpInitiatedLoginList_Override(c ChildOrgan
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) ComputeFq
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) Get(index *float64) ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) Get(index
 }
 
 func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -510,6 +510,9 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TickEveryInput() *f
 func NewSyntheticsTestOptionsListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestOptionsListOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestOptionsListOutputReference{}
 
 	_jsii_.Create(
@@ -531,7 +534,10 @@ func NewSyntheticsTestOptionsListOutputReference_Override(s SyntheticsTestOption
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetAcceptSelfSigned(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAcceptSelfSigned(val interface{}) {
+	if err := j.validateSetAcceptSelfSignedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acceptSelfSigned",
@@ -539,7 +545,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetAcceptSelfSigned
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetAllowInsecure(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAllowInsecure(val interface{}) {
+	if err := j.validateSetAllowInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowInsecure",
@@ -547,7 +556,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetAllowInsecure(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetCheckCertificateRevocation(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetCheckCertificateRevocation(val interface{}) {
+	if err := j.validateSetCheckCertificateRevocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"checkCertificateRevocation",
@@ -555,7 +567,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetCheckCertificate
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -563,7 +578,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -571,7 +589,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetFollowRedirects(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(val interface{}) {
+	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"followRedirects",
@@ -579,7 +600,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetFollowRedirects(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetInternalValue(val *SyntheticsTestOptionsList) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInternalValue(val *SyntheticsTestOptionsList) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -587,7 +611,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMinFailureDuration(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinFailureDuration(val *float64) {
+	if err := j.validateSetMinFailureDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minFailureDuration",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMinFailureDurati
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMinLocationFailed(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinLocationFailed(val *float64) {
+	if err := j.validateSetMinLocationFailedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minLocationFailed",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMinLocationFaile
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMonitorName(val *string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorName(val *string) {
+	if err := j.validateSetMonitorNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monitorName",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMonitorName(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMonitorPriority(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorPriority(val *float64) {
+	if err := j.validateSetMonitorPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monitorPriority",
@@ -619,7 +655,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetMonitorPriority(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetNoScreenshot(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetNoScreenshot(val interface{}) {
+	if err := j.validateSetNoScreenshotParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noScreenshot",
@@ -627,7 +666,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetNoScreenshot(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetRestrictedRoles(val *[]*string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetRestrictedRoles(val *[]*string) {
+	if err := j.validateSetRestrictedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restrictedRoles",
@@ -635,7 +677,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetRestrictedRoles(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -643,7 +688,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -651,7 +699,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SetTickEvery(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTickEvery(val *float64) {
+	if err := j.validateSetTickEveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tickEvery",
@@ -673,6 +724,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComputeFqn() *strin
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -686,6 +740,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetAnyMapAttribute(
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -699,6 +756,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanAttribute
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -712,6 +772,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanMapAttrib
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -725,6 +788,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetListAttribute(te
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -738,6 +804,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberAttribute(
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -751,6 +820,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberListAttrib
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -764,6 +836,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberMapAttribu
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -777,6 +852,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringAttribute(
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -803,6 +881,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationAsList
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -816,6 +897,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationForAtt
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutCi(value *SyntheticsTestOptionsListCi) {
+	if err := s.validatePutCiParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCi",
@@ -824,6 +908,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutCi(value *Synthe
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutMonitorOptions(value *SyntheticsTestOptionsListMonitorOptions) {
+	if err := s.validatePutMonitorOptionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putMonitorOptions",
@@ -832,6 +919,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutMonitorOptions(v
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRetry(value *SyntheticsTestOptionsListRetry) {
+	if err := s.validatePutRetryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRetry",
@@ -840,6 +930,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRetry(value *Syn
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRumSettings(value *SyntheticsTestOptionsListRumSettings) {
+	if err := s.validatePutRumSettingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRumSettings",
@@ -960,6 +1053,9 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRumSettings() 
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

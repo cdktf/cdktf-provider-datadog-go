@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) WrapsSet() *bool {
 func NewDataDatadogServiceLevelObjectivesSlosList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogServiceLevelObjectivesSlosList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogServiceLevelObjectivesSlosListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogServiceLevelObjectivesSlosList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogServiceLevelObjectivesSlosList_Override(d DataDatadogServiceL
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) Get(index *float64) DataDatadogServiceLevelObjectivesSlosOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogServiceLevelObjectivesSlosOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataDatadogServiceLevelObjectivesSlosList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

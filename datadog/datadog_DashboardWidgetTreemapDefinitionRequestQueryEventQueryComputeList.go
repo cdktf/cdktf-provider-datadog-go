@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 func NewDashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList_Overri
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 }
 
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) Get(index *float64) DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 }
 
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

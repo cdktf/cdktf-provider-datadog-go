@@ -337,6 +337,9 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) TerraformResourceType() *string 
 func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) IntegrationAwsLogCollection {
 	_init_.Initialize()
 
+	if err := validateNewIntegrationAwsLogCollectionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IntegrationAwsLogCollection{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewIntegrationAwsLogCollection_Override(i IntegrationAwsLogCollection, scop
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetAccountId(val *string) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -367,7 +373,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -375,7 +384,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -383,7 +392,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +400,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetId(val *string) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -415,7 +430,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLogCollection) SetServices(val *[]*string) {
+func (j *jsiiProxy_IntegrationAwsLogCollection)SetServices(val *[]*string) {
+	if err := j.validateSetServicesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"services",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) SetServices(val *[]*string) {
 func IntegrationAwsLogCollection_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIntegrationAwsLogCollection_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func IntegrationAwsLogCollection_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -491,6 +518,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) AddOverride(path *string, value 
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetAnyMapAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetBooleanAttribute(terraformAtt
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetBooleanMapAttribute(terraform
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetListAttribute(terraformAttrib
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberListAttribute(terraform
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetNumberMapAttribute(terraformA
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringMapAttribute(terraformA
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) InterpolationForAttribute(terraf
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",

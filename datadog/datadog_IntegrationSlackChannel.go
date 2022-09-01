@@ -360,6 +360,9 @@ func (j *jsiiProxy_IntegrationSlackChannel) TerraformResourceType() *string {
 func NewIntegrationSlackChannel(scope constructs.Construct, id *string, config *IntegrationSlackChannelConfig) IntegrationSlackChannel {
 	_init_.Initialize()
 
+	if err := validateNewIntegrationSlackChannelParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IntegrationSlackChannel{}
 
 	_jsii_.Create(
@@ -382,7 +385,10 @@ func NewIntegrationSlackChannel_Override(i IntegrationSlackChannel, scope constr
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetAccountName(val *string) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetAccountName(val *string) {
+	if err := j.validateSetAccountNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountName",
@@ -390,7 +396,10 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetChannelName(val *string) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetChannelName(val *string) {
+	if err := j.validateSetChannelNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"channelName",
@@ -398,7 +407,10 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetChannelName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -406,7 +418,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -414,7 +426,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -422,7 +434,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +442,10 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetId(val *string) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -438,7 +453,10 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -446,7 +464,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -454,7 +472,10 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationSlackChannel)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -482,6 +503,9 @@ func (j *jsiiProxy_IntegrationSlackChannel) SetProvisioners(val *[]interface{}) 
 func IntegrationSlackChannel_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIntegrationSlackChannel_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -506,6 +530,9 @@ func IntegrationSlackChannel_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -514,6 +541,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) AddOverride(path *string, value inte
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -527,6 +557,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetAnyMapAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -540,6 +573,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetBooleanAttribute(terraformAttribu
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -553,6 +589,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetBooleanMapAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -566,6 +605,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetListAttribute(terraformAttribute 
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -579,6 +621,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetNumberAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -592,6 +637,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetNumberListAttribute(terraformAttr
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -605,6 +653,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetNumberMapAttribute(terraformAttri
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -618,6 +669,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetStringAttribute(terraformAttribut
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -631,6 +685,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) GetStringMapAttribute(terraformAttri
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -644,6 +701,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) InterpolationForAttribute(terraformA
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
@@ -652,6 +712,9 @@ func (i *jsiiProxy_IntegrationSlackChannel) OverrideLogicalId(newLogicalId *stri
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) PutDisplay(value *IntegrationSlackChannelDisplay) {
+	if err := i.validatePutDisplayParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"putDisplay",

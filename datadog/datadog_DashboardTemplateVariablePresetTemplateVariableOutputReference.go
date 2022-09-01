@@ -199,6 +199,9 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 func NewDashboardTemplateVariablePresetTemplateVariableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardTemplateVariablePresetTemplateVariableOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardTemplateVariablePresetTemplateVariableOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewDashboardTemplateVariablePresetTemplateVariableOutputReference_Override(
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -290,6 +314,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 }
 
 func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

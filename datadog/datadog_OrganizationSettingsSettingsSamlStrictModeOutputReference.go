@@ -175,6 +175,9 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Te
 func NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlStrictModeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOrganizationSettingsSettingsSamlStrictModeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewOrganizationSettingsSettingsSamlStrictModeOutputReference_Override(o Org
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetInternalValue(val *OrganizationSettingsSettingsSamlStrictMode) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetInternalValue(val *OrganizationSettingsSettingsSamlStrictMode) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Co
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) In
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Re
 }
 
 func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

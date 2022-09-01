@@ -111,6 +111,9 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) WrapsSet() *bool {
 func NewSyntheticsTestApiStepAssertionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepAssertionList {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestApiStepAssertionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestApiStepAssertionList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSyntheticsTestApiStepAssertionList_Override(s SyntheticsTestApiStepAsser
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepAssertionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionList) Get(index *float64) SyntheticsTestApiStepAssertionOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SyntheticsTestApiStepAssertionOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionList) Get(index *float64) Synth
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogRolesRolesList) WrapsSet() *bool {
 func NewDataDatadogRolesRolesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogRolesRolesList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogRolesRolesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogRolesRolesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogRolesRolesList_Override(d DataDatadogRolesRolesList, terrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRolesRolesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogRolesRolesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogRolesRolesList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRolesRolesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogRolesRolesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogRolesRolesList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRolesRolesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogRolesRolesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogRolesRolesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDatadogRolesRolesList) Get(index *float64) DataDatadogRolesRolesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogRolesRolesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogRolesRolesList) Get(index *float64) DataDatadogRol
 }
 
 func (d *jsiiProxy_DataDatadogRolesRolesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

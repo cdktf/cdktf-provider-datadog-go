@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 func NewDashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList_Override
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) Get(index *float64) DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByLi
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

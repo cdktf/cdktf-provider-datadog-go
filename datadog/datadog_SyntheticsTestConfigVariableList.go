@@ -111,6 +111,9 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableList) WrapsSet() *bool {
 func NewSyntheticsTestConfigVariableList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestConfigVariableList {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestConfigVariableListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestConfigVariableList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSyntheticsTestConfigVariableList_Override(s SyntheticsTestConfigVariable
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestConfigVariableList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestConfigVariableList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestConfigVariableList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestConfigVariableList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestConfigVariableList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SyntheticsTestConfigVariableList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SyntheticsTestConfigVariableList) Get(index *float64) SyntheticsTestConfigVariableOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SyntheticsTestConfigVariableOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SyntheticsTestConfigVariableList) Get(index *float64) Synthet
 }
 
 func (s *jsiiProxy_SyntheticsTestConfigVariableList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

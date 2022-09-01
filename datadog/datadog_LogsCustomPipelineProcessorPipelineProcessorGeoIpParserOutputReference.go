@@ -245,6 +245,9 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 func NewLogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewLogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference_O
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetInternalValue(val *LogsCustomPipelineProcessorPipelineProcessorGeoIpParser) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetInternalValue(val *LogsCustomPipelineProcessorPipelineProcessorGeoIpParser) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetName(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetSources(val *[]*string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetSources(val *[]*string) {
+	if err := j.validateSetSourcesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sources",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetTarget(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetTarget(val *string) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -352,6 +382,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutput
 }
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

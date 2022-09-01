@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) WrapsSet() *b
 func NewDashboardWidgetListStreamDefinitionRequestList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetListStreamDefinitionRequestList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetListStreamDefinitionRequestListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetListStreamDefinitionRequestList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetListStreamDefinitionRequestList_Override(d DashboardWidge
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) Get(index *float64) DashboardWidgetListStreamDefinitionRequestOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetListStreamDefinitionRequestOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) Get(index *fl
 }
 
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

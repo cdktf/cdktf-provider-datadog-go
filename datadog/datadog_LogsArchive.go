@@ -481,6 +481,9 @@ func (j *jsiiProxy_LogsArchive) TerraformResourceType() *string {
 func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveConfig) LogsArchive {
 	_init_.Initialize()
 
+	if err := validateNewLogsArchiveParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogsArchive{}
 
 	_jsii_.Create(
@@ -503,7 +506,10 @@ func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetConnection(val interface{}) {
+func (j *jsiiProxy_LogsArchive)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -511,7 +517,7 @@ func (j *jsiiProxy_LogsArchive) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetCount(val *float64) {
+func (j *jsiiProxy_LogsArchive)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -519,7 +525,7 @@ func (j *jsiiProxy_LogsArchive) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogsArchive)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -527,7 +533,7 @@ func (j *jsiiProxy_LogsArchive) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogsArchive)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -535,7 +541,10 @@ func (j *jsiiProxy_LogsArchive) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetId(val *string) {
+func (j *jsiiProxy_LogsArchive)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -543,7 +552,10 @@ func (j *jsiiProxy_LogsArchive) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetIncludeTags(val interface{}) {
+func (j *jsiiProxy_LogsArchive)SetIncludeTags(val interface{}) {
+	if err := j.validateSetIncludeTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeTags",
@@ -551,7 +563,10 @@ func (j *jsiiProxy_LogsArchive) SetIncludeTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogsArchive)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -559,7 +574,10 @@ func (j *jsiiProxy_LogsArchive) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetName(val *string) {
+func (j *jsiiProxy_LogsArchive)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -567,7 +585,7 @@ func (j *jsiiProxy_LogsArchive) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogsArchive)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +593,10 @@ func (j *jsiiProxy_LogsArchive) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogsArchive)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -583,7 +604,10 @@ func (j *jsiiProxy_LogsArchive) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetQuery(val *string) {
+func (j *jsiiProxy_LogsArchive)SetQuery(val *string) {
+	if err := j.validateSetQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"query",
@@ -591,7 +615,10 @@ func (j *jsiiProxy_LogsArchive) SetQuery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetRehydrationMaxScanSizeInGb(val *float64) {
+func (j *jsiiProxy_LogsArchive)SetRehydrationMaxScanSizeInGb(val *float64) {
+	if err := j.validateSetRehydrationMaxScanSizeInGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rehydrationMaxScanSizeInGb",
@@ -599,7 +626,10 @@ func (j *jsiiProxy_LogsArchive) SetRehydrationMaxScanSizeInGb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchive) SetRehydrationTags(val *[]*string) {
+func (j *jsiiProxy_LogsArchive)SetRehydrationTags(val *[]*string) {
+	if err := j.validateSetRehydrationTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rehydrationTags",
@@ -627,6 +657,9 @@ func (j *jsiiProxy_LogsArchive) SetRehydrationTags(val *[]*string) {
 func LogsArchive_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLogsArchive_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -651,6 +684,9 @@ func LogsArchive_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LogsArchive) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -659,6 +695,9 @@ func (l *jsiiProxy_LogsArchive) AddOverride(path *string, value interface{}) {
 }
 
 func (l *jsiiProxy_LogsArchive) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -672,6 +711,9 @@ func (l *jsiiProxy_LogsArchive) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (l *jsiiProxy_LogsArchive) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -685,6 +727,9 @@ func (l *jsiiProxy_LogsArchive) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (l *jsiiProxy_LogsArchive) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -698,6 +743,9 @@ func (l *jsiiProxy_LogsArchive) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (l *jsiiProxy_LogsArchive) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -711,6 +759,9 @@ func (l *jsiiProxy_LogsArchive) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (l *jsiiProxy_LogsArchive) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -724,6 +775,9 @@ func (l *jsiiProxy_LogsArchive) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (l *jsiiProxy_LogsArchive) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -737,6 +791,9 @@ func (l *jsiiProxy_LogsArchive) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (l *jsiiProxy_LogsArchive) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -750,6 +807,9 @@ func (l *jsiiProxy_LogsArchive) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogsArchive) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -763,6 +823,9 @@ func (l *jsiiProxy_LogsArchive) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (l *jsiiProxy_LogsArchive) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -776,6 +839,9 @@ func (l *jsiiProxy_LogsArchive) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogsArchive) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -789,6 +855,9 @@ func (l *jsiiProxy_LogsArchive) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (l *jsiiProxy_LogsArchive) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
@@ -797,6 +866,9 @@ func (l *jsiiProxy_LogsArchive) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (l *jsiiProxy_LogsArchive) PutAzureArchive(value *LogsArchiveAzureArchive) {
+	if err := l.validatePutAzureArchiveParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putAzureArchive",
@@ -805,6 +877,9 @@ func (l *jsiiProxy_LogsArchive) PutAzureArchive(value *LogsArchiveAzureArchive) 
 }
 
 func (l *jsiiProxy_LogsArchive) PutGcsArchive(value *LogsArchiveGcsArchive) {
+	if err := l.validatePutGcsArchiveParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putGcsArchive",
@@ -813,6 +888,9 @@ func (l *jsiiProxy_LogsArchive) PutGcsArchive(value *LogsArchiveGcsArchive) {
 }
 
 func (l *jsiiProxy_LogsArchive) PutS3Archive(value *LogsArchiveS3Archive) {
+	if err := l.validatePutS3ArchiveParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putS3Archive",

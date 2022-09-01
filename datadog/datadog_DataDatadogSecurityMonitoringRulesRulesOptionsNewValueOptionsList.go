@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList_Overri
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList) Get(index *float64) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 }
 
 func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

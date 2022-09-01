@@ -198,6 +198,9 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 func NewDashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewDashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference_O
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetInternalValue(val *DashboardWidgetQueryValueDefinitionTimeseriesBackground) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetInternalValue(val *DashboardWidgetQueryValueDefinitionTimeseriesBackground) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) SetType(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -281,6 +302,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -294,6 +318,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -307,6 +334,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -320,6 +350,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -333,6 +366,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -346,6 +382,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +398,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -372,6 +414,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -385,6 +430,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) PutYaxis(value *DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis) {
+	if err := d.validatePutYaxisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putYaxis",
@@ -440,6 +494,9 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutput
 }
 
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

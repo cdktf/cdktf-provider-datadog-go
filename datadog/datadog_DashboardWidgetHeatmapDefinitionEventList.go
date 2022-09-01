@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) WrapsSet() *bool {
 func NewDashboardWidgetHeatmapDefinitionEventList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetHeatmapDefinitionEventList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetHeatmapDefinitionEventListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetHeatmapDefinitionEventList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetHeatmapDefinitionEventList_Override(d DashboardWidgetHeat
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) Get(index *float64) DashboardWidgetHeatmapDefinitionEventOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetHeatmapDefinitionEventOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) Get(index *float64
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

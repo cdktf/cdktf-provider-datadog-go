@@ -222,6 +222,9 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 func NewDashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewDashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetAggregation(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetAggregation(val *string) {
+	if err := j.validateSetAggregationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregation",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetInterval(val *float64) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComput
 }
 
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

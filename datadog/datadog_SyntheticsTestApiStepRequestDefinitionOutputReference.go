@@ -535,6 +535,9 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) UrlInp
 func NewSyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestDefinitionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsTestApiStepRequestDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference{}
 
 	_jsii_.Create(
@@ -556,7 +559,10 @@ func NewSyntheticsTestApiStepRequestDefinitionOutputReference_Override(s Synthet
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetAllowInsecure(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetAllowInsecure(val interface{}) {
+	if err := j.validateSetAllowInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowInsecure",
@@ -564,7 +570,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetAll
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetBody(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetBody(val *string) {
+	if err := j.validateSetBodyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"body",
@@ -572,7 +581,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetBod
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -580,7 +592,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -588,7 +603,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetDnsServer(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDnsServer(val *string) {
+	if err := j.validateSetDnsServerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dnsServer",
@@ -596,7 +614,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetDns
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetDnsServerPort(val *float64) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDnsServerPort(val *float64) {
+	if err := j.validateSetDnsServerPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dnsServerPort",
@@ -604,7 +625,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetDns
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetFollowRedirects(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetFollowRedirects(val interface{}) {
+	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"followRedirects",
@@ -612,7 +636,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetFol
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetHost(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"host",
@@ -620,7 +647,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetHos
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetInternalValue(val *SyntheticsTestApiStepRequestDefinition) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetInternalValue(val *SyntheticsTestApiStepRequestDefinition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -628,7 +658,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetMessage(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetMessage(val *string) {
+	if err := j.validateSetMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"message",
@@ -636,7 +669,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetMes
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetMethod(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetMethod(val *string) {
+	if err := j.validateSetMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"method",
@@ -644,7 +680,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetMet
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetNoSavingResponseBody(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetNoSavingResponseBody(val interface{}) {
+	if err := j.validateSetNoSavingResponseBodyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noSavingResponseBody",
@@ -652,7 +691,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetNoS
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetNumberOfPackets(val *float64) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetNumberOfPackets(val *float64) {
+	if err := j.validateSetNumberOfPacketsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numberOfPackets",
@@ -660,7 +702,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetNum
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetPort(val *float64) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -668,7 +713,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetPor
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetServername(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetServername(val *string) {
+	if err := j.validateSetServernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"servername",
@@ -676,7 +724,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetSer
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetService(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"service",
@@ -684,7 +735,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetSer
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetShouldTrackHops(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetShouldTrackHops(val interface{}) {
+	if err := j.validateSetShouldTrackHopsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldTrackHops",
@@ -692,7 +746,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetSho
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -700,7 +757,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -708,7 +768,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -716,7 +779,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetTim
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -738,6 +804,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Comput
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -751,6 +820,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetAny
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -764,6 +836,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -777,6 +852,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -790,6 +868,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetLis
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -803,6 +884,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNum
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -816,6 +900,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNum
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -829,6 +916,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetNum
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -842,6 +932,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetStr
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -868,6 +961,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Interp
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1009,6 +1105,9 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetU
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

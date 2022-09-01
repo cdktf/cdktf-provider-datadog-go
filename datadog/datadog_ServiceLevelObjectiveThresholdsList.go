@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) WrapsSet() *bool {
 func NewServiceLevelObjectiveThresholdsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceLevelObjectiveThresholdsList {
 	_init_.Initialize()
 
+	if err := validateNewServiceLevelObjectiveThresholdsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceLevelObjectiveThresholdsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceLevelObjectiveThresholdsList_Override(s ServiceLevelObjectiveThre
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceLevelObjectiveThresholdsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) Get(index *float64) ServiceLevelObjectiveThresholdsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceLevelObjectiveThresholdsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) Get(index *float64) Serv
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

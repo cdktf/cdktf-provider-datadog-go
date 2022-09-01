@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 func NewDashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList_Override
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) Get(index *float64) DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeLi
 }
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
