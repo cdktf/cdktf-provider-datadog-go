@@ -52,6 +52,9 @@ type Monitor interface {
 	GroupbySimpleMonitor() interface{}
 	SetGroupbySimpleMonitor(val interface{})
 	GroupbySimpleMonitorInput() interface{}
+	GroupRetentionDuration() *string
+	SetGroupRetentionDuration(val *string)
+	GroupRetentionDurationInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -92,6 +95,9 @@ type Monitor interface {
 	NotifyNoData() interface{}
 	SetNotifyNoData(val interface{})
 	NotifyNoDataInput() interface{}
+	OnMissingData() *string
+	SetOnMissingData(val *string)
+	OnMissingDataInput() *string
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -141,6 +147,8 @@ type Monitor interface {
 	Validate() interface{}
 	SetValidate(val interface{})
 	ValidateInput() interface{}
+	Variables() MonitorVariablesOutputReference
+	VariablesInput() *MonitorVariables
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -168,11 +176,13 @@ type Monitor interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMonitorThresholds(value *MonitorMonitorThresholds)
 	PutMonitorThresholdWindows(value *MonitorMonitorThresholdWindows)
+	PutVariables(value *MonitorVariables)
 	ResetEnableLogsSample()
 	ResetEscalationMessage()
 	ResetEvaluationDelay()
 	ResetForceDelete()
 	ResetGroupbySimpleMonitor()
+	ResetGroupRetentionDuration()
 	ResetId()
 	ResetIncludeTags()
 	ResetLocked()
@@ -183,6 +193,7 @@ type Monitor interface {
 	ResetNoDataTimeframe()
 	ResetNotifyAudit()
 	ResetNotifyNoData()
+	ResetOnMissingData()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -195,6 +206,7 @@ type Monitor interface {
 	ResetTags()
 	ResetTimeoutH()
 	ResetValidate()
+	ResetVariables()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -385,6 +397,26 @@ func (j *jsiiProxy_Monitor) GroupbySimpleMonitorInput() interface{} {
 	_jsii_.Get(
 		j,
 		"groupbySimpleMonitorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) GroupRetentionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRetentionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) GroupRetentionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRetentionDurationInput",
 		&returns,
 	)
 	return returns
@@ -645,6 +677,26 @@ func (j *jsiiProxy_Monitor) NotifyNoDataInput() interface{} {
 	_jsii_.Get(
 		j,
 		"notifyNoDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) OnMissingData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onMissingData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) OnMissingDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onMissingDataInput",
 		&returns,
 	)
 	return returns
@@ -930,6 +982,26 @@ func (j *jsiiProxy_Monitor) ValidateInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Monitor) Variables() MonitorVariablesOutputReference {
+	var returns MonitorVariablesOutputReference
+	_jsii_.Get(
+		j,
+		"variables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
+	var returns *MonitorVariables
+	_jsii_.Get(
+		j,
+		"variablesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
@@ -1046,6 +1118,17 @@ func (j *jsiiProxy_Monitor)SetGroupbySimpleMonitor(val interface{}) {
 	_jsii_.Set(
 		j,
 		"groupbySimpleMonitor",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Monitor)SetGroupRetentionDuration(val *string) {
+	if err := j.validateSetGroupRetentionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupRetentionDuration",
 		val,
 	)
 }
@@ -1167,6 +1250,17 @@ func (j *jsiiProxy_Monitor)SetNotifyNoData(val interface{}) {
 	_jsii_.Set(
 		j,
 		"notifyNoData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Monitor)SetOnMissingData(val *string) {
+	if err := j.validateSetOnMissingDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onMissingData",
 		val,
 	)
 }
@@ -1561,6 +1655,17 @@ func (m *jsiiProxy_Monitor) PutMonitorThresholdWindows(value *MonitorMonitorThre
 	)
 }
 
+func (m *jsiiProxy_Monitor) PutVariables(value *MonitorVariables) {
+	if err := m.validatePutVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putVariables",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_Monitor) ResetEnableLogsSample() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1597,6 +1702,14 @@ func (m *jsiiProxy_Monitor) ResetGroupbySimpleMonitor() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetGroupbySimpleMonitor",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetGroupRetentionDuration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGroupRetentionDuration",
 		nil, // no parameters
 	)
 }
@@ -1681,6 +1794,14 @@ func (m *jsiiProxy_Monitor) ResetNotifyNoData() {
 	)
 }
 
+func (m *jsiiProxy_Monitor) ResetOnMissingData() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOnMissingData",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_Monitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1757,6 +1878,14 @@ func (m *jsiiProxy_Monitor) ResetValidate() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetValidate",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetVariables() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetVariables",
 		nil, // no parameters
 	)
 }

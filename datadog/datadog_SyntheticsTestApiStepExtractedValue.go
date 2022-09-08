@@ -9,7 +9,7 @@ type SyntheticsTestApiStepExtractedValue struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#parser SyntheticsTest#parser}
 	Parser *SyntheticsTestApiStepExtractedValueParser `field:"required" json:"parser" yaml:"parser"`
-	// Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`.
+	// Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`, `local_variable`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
 	Type *string `field:"required" json:"type" yaml:"type"`

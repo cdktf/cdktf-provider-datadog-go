@@ -37,6 +37,7 @@ type DataDatadogMonitor interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GroupbySimpleMonitor() cdktf.IResolvable
+	GroupRetentionDuration() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -63,6 +64,7 @@ type DataDatadogMonitor interface {
 	Node() constructs.Node
 	NotifyAudit() cdktf.IResolvable
 	NotifyNoData() cdktf.IResolvable
+	OnMissingData() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -239,6 +241,16 @@ func (j *jsiiProxy_DataDatadogMonitor) GroupbySimpleMonitor() cdktf.IResolvable 
 	_jsii_.Get(
 		j,
 		"groupbySimpleMonitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) GroupRetentionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRetentionDuration",
 		&returns,
 	)
 	return returns
@@ -429,6 +441,16 @@ func (j *jsiiProxy_DataDatadogMonitor) NotifyNoData() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"notifyNoData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) OnMissingData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"onMissingData",
 		&returns,
 	)
 	return returns

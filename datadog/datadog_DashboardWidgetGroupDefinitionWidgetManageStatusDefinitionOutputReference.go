@@ -45,6 +45,9 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	ShowLastTriggered() interface{}
 	SetShowLastTriggered(val interface{})
 	ShowLastTriggeredInput() interface{}
+	ShowPriority() interface{}
+	SetShowPriority(val interface{})
+	ShowPriorityInput() interface{}
 	Sort() *string
 	SetSort(val *string)
 	SortInput() *string
@@ -96,6 +99,7 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	ResetDisplayFormat()
 	ResetHideZeroCounts()
 	ResetShowLastTriggered()
+	ResetShowPriority()
 	ResetSort()
 	ResetSummaryType()
 	ResetTitle()
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	_jsii_.Get(
 		j,
 		"showLastTriggeredInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) ShowPriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showPriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) ShowPriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showPriorityInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +522,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	_jsii_.Set(
 		j,
 		"showLastTriggered",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference)SetShowPriority(val interface{}) {
+	if err := j.validateSetShowPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"showPriority",
 		val,
 	)
 }
@@ -793,6 +828,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	_jsii_.InvokeVoid(
 		d,
 		"resetShowLastTriggered",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) ResetShowPriority() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShowPriority",
 		nil, // no parameters
 	)
 }

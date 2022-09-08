@@ -7,7 +7,7 @@ type DashboardWidgetQueryTableDefinitionRequestQueryEventQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
 	Compute interface{} `field:"required" json:"compute" yaml:"compute"`
-	// The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+	// The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`

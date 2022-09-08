@@ -11,11 +11,11 @@ type MonitorMonitorThresholds struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#critical_recovery Monitor#critical_recovery}
 	CriticalRecovery *string `field:"optional" json:"criticalRecovery" yaml:"criticalRecovery"`
-	// The monitor `OK` threshold. Must be a number.
+	// The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#ok Monitor#ok}
 	Ok *string `field:"optional" json:"ok" yaml:"ok"`
-	// The monitor `UNKNOWN` threshold. Must be a number.
+	// The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#unknown Monitor#unknown}
 	Unknown *string `field:"optional" json:"unknown" yaml:"unknown"`

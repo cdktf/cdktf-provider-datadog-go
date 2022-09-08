@@ -70,6 +70,12 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 	GroupbySimpleMonitor interface{} `field:"optional" json:"groupbySimpleMonitor" yaml:"groupbySimpleMonitor"`
+	// The time span after which groups with missing data are dropped from the monitor state.
+	//
+	// The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#group_retention_duration Monitor#group_retention_duration}
+	GroupRetentionDuration *string `field:"optional" json:"groupRetentionDuration" yaml:"groupRetentionDuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#id Monitor#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -119,6 +125,12 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_no_data Monitor#notify_no_data}
 	NotifyNoData interface{} `field:"optional" json:"notifyNoData" yaml:"notifyNoData"`
+	// Controls how groups or monitors are treated if an evaluation does not return any data points.
+	//
+	// The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#on_missing_data Monitor#on_missing_data}
+	OnMissingData *string `field:"optional" json:"onMissingData" yaml:"onMissingData"`
 	// Integer from 1 (high) to 5 (low) indicating alert severity.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#priority Monitor#priority}
@@ -165,5 +177,9 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#validate Monitor#validate}
 	Validate interface{} `field:"optional" json:"validate" yaml:"validate"`
+	// variables block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#variables Monitor#variables}
+	Variables *MonitorVariables `field:"optional" json:"variables" yaml:"variables"`
 }
 

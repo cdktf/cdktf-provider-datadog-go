@@ -23,9 +23,13 @@ type DashboardWidgetManageStatusDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_last_triggered Dashboard#show_last_triggered}
 	ShowLastTriggered interface{} `field:"optional" json:"showLastTriggered" yaml:"showLastTriggered"`
+	// Whether to show the priorities column.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_priority Dashboard#show_priority}
+	ShowPriority interface{} `field:"optional" json:"showPriority" yaml:"showPriority"`
 	// The method to sort the monitors.
 	//
-	// Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`.
+	// Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`, `priority,asc`, `priority,desc`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
 	Sort *string `field:"optional" json:"sort" yaml:"sort"`

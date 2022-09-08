@@ -25,7 +25,7 @@ type DatadogProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 	HttpClientRetryEnabled interface{} `field:"optional" json:"httpClientRetryEnabled" yaml:"httpClientRetryEnabled"`
-	// The HTTP request retry timeout period.
+	// The HTTP request retry timeout period. Defaults to 60 seconds.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
 	HttpClientRetryTimeout *float64 `field:"optional" json:"httpClientRetryTimeout" yaml:"httpClientRetryTimeout"`

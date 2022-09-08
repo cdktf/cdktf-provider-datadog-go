@@ -82,6 +82,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) validateSetShowPriorityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) validateSetSortParameters(val *string) error {
 	return nil
 }

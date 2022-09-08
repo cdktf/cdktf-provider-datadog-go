@@ -62,6 +62,10 @@ func (m *jsiiProxy_Monitor) validatePutMonitorThresholdWindowsParameters(value *
 	return nil
 }
 
+func (m *jsiiProxy_Monitor) validatePutVariablesParameters(value *MonitorVariables) error {
+	return nil
+}
+
 func validateMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -87,6 +91,10 @@ func (j *jsiiProxy_Monitor) validateSetForceDeleteParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_Monitor) validateSetGroupbySimpleMonitorParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Monitor) validateSetGroupRetentionDurationParameters(val *string) error {
 	return nil
 }
 
@@ -131,6 +139,10 @@ func (j *jsiiProxy_Monitor) validateSetNotifyAuditParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_Monitor) validateSetNotifyNoDataParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Monitor) validateSetOnMissingDataParameters(val *string) error {
 	return nil
 }
 

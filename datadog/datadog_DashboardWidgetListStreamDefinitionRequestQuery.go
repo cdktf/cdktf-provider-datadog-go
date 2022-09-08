@@ -3,7 +3,7 @@ package datadog
 
 
 type DashboardWidgetListStreamDefinitionRequestQuery struct {
-	// Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`.
+	// Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`, `logs_pattern_stream`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`

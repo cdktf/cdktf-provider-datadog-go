@@ -7,7 +7,7 @@ type SyntheticsGlobalVariableParseTestOptions struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
 	Parser *SyntheticsGlobalVariableParseTestOptionsParser `field:"required" json:"parser" yaml:"parser"`
-	// Defines the source to use to extract the value. Valid values are `http_body`, `http_header`.
+	// Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `local_variable`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
