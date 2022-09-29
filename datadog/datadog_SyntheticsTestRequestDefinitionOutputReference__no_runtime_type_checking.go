@@ -54,6 +54,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetBo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetCertificateDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

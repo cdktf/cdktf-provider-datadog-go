@@ -150,6 +150,10 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutToplistDefinitionP
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutTopologyMapDefinitionParameters(value *DashboardWidgetTopologyMapDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutTraceServiceDefinitionParameters(value *DashboardWidgetTraceServiceDefinition) error {
 	return nil
 }

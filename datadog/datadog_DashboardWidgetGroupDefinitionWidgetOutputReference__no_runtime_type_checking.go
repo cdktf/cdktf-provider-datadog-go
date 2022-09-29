@@ -146,6 +146,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutTopologyMapDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetTopologyMapDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutTraceServiceDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition) error {
 	return nil
 }

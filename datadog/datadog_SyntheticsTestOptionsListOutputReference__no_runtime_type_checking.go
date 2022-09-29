@@ -86,7 +86,19 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetDisableCspParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetFollowRedirectsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetIgnoreServerCertificateErrorParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetInitialNavigationTimeoutParameters(val *float64) error {
 	return nil
 }
 

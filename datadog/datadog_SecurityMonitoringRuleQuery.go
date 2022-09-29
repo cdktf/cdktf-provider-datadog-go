@@ -11,7 +11,7 @@ type SecurityMonitoringRuleQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
 	AgentRule interface{} `field:"optional" json:"agentRule" yaml:"agentRule"`
-	// The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`.
+	// The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
 	Aggregation *string `field:"optional" json:"aggregation" yaml:"aggregation"`

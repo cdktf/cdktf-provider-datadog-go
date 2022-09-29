@@ -37,11 +37,20 @@ type SyntheticsTestOptionsListOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableCsp() interface{}
+	SetDisableCsp(val interface{})
+	DisableCspInput() interface{}
 	FollowRedirects() interface{}
 	SetFollowRedirects(val interface{})
 	FollowRedirectsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IgnoreServerCertificateError() interface{}
+	SetIgnoreServerCertificateError(val interface{})
+	IgnoreServerCertificateErrorInput() interface{}
+	InitialNavigationTimeout() *float64
+	SetInitialNavigationTimeout(val *float64)
+	InitialNavigationTimeoutInput() *float64
 	InternalValue() *SyntheticsTestOptionsList
 	SetInternalValue(val *SyntheticsTestOptionsList)
 	MinFailureDuration() *float64
@@ -111,7 +120,10 @@ type SyntheticsTestOptionsListOutputReference interface {
 	ResetAllowInsecure()
 	ResetCheckCertificateRevocation()
 	ResetCi()
+	ResetDisableCsp()
 	ResetFollowRedirects()
+	ResetIgnoreServerCertificateError()
+	ResetInitialNavigationTimeout()
 	ResetMinFailureDuration()
 	ResetMinLocationFailed()
 	ResetMonitorName()
@@ -246,6 +258,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CreationStack() *[]
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCsp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCsp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCspInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCspInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) FollowRedirects() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -271,6 +303,46 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertificateError() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreServerCertificateError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertificateErrorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreServerCertificateErrorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialNavigationTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialNavigationTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +661,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCsp(val interface{}) {
+	if err := j.validateSetDisableCspParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableCsp",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(val interface{}) {
 	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
 		panic(err)
@@ -596,6 +679,28 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(v
 	_jsii_.Set(
 		j,
 		"followRedirects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetIgnoreServerCertificateError(val interface{}) {
+	if err := j.validateSetIgnoreServerCertificateErrorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreServerCertificateError",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInitialNavigationTimeout(val *float64) {
+	if err := j.validateSetInitialNavigationTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialNavigationTimeout",
 		val,
 	)
 }
@@ -972,10 +1077,34 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCi() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCsp() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableCsp",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetFollowRedirects() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFollowRedirects",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetIgnoreServerCertificateError() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIgnoreServerCertificateError",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetInitialNavigationTimeout() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInitialNavigationTimeout",
 		nil, // no parameters
 	)
 }

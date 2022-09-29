@@ -71,6 +71,7 @@ type SecurityMonitoringDefaultRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -377,6 +378,16 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) TerraformResourceType() *strin
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns

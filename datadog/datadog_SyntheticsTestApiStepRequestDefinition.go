@@ -11,6 +11,12 @@ type SyntheticsTestApiStepRequestDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body SyntheticsTest#body}
 	Body *string `field:"optional" json:"body" yaml:"body"`
+	// By default, the client certificate is applied on the domain of the starting URL for browser tests.
+	//
+	// If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+	CertificateDomains *[]*string `field:"optional" json:"certificateDomains" yaml:"certificateDomains"`
 	// DNS server to use for DNS tests (`subtype = "dns"`).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#dns_server SyntheticsTest#dns_server}

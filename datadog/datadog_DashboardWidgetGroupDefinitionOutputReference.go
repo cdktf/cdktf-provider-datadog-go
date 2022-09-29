@@ -84,6 +84,7 @@ type DashboardWidgetGroupDefinitionOutputReference interface {
 	ResetBannerImg()
 	ResetShowTitle()
 	ResetTitle()
+	ResetWidget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -652,6 +653,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionOutputReference) ResetTitle() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTitle",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionOutputReference) ResetWidget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWidget",
 		nil, // no parameters
 	)
 }

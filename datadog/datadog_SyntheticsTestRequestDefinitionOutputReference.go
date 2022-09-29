@@ -14,6 +14,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
+	CertificateDomains() *[]*string
+	SetCertificateDomains(val *[]*string)
+	CertificateDomainsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -105,6 +108,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBody()
+	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
 	ResetHost()
@@ -148,6 +152,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) BodyInput() *
 	_jsii_.Get(
 		j,
 		"bodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) CertificateDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) CertificateDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateDomainsInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +542,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetBody(val *s
 	_jsii_.Set(
 		j,
 		"body",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetCertificateDomains(val *[]*string) {
+	if err := j.validateSetCertificateDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateDomains",
 		val,
 	)
 }
@@ -910,6 +945,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetBody() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetCertificateDomains() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCertificateDomains",
 		nil, // no parameters
 	)
 }

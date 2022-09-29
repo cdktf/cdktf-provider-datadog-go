@@ -70,6 +70,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validateSetLocalVariableNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -23,10 +23,22 @@ type SyntheticsTestOptionsList struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ci SyntheticsTest#ci}
 	Ci *SyntheticsTestOptionsListCi `field:"optional" json:"ci" yaml:"ci"`
+	// Disable Content Security Policy for browser tests.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+	DisableCsp interface{} `field:"optional" json:"disableCsp" yaml:"disableCsp"`
 	// Determines whether or not the API HTTP test should follow redirects.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	// Ignore server certificate error.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+	IgnoreServerCertificateError interface{} `field:"optional" json:"ignoreServerCertificateError" yaml:"ignoreServerCertificateError"`
+	// Timeout before declaring the initial step as failed (in seconds) for browser tests.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+	InitialNavigationTimeout *float64 `field:"optional" json:"initialNavigationTimeout" yaml:"initialNavigationTimeout"`
 	// Minimum amount of time in failure required to trigger an alert. Default is `0`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}

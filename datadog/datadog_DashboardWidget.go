@@ -107,6 +107,10 @@ type DashboardWidget struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#toplist_definition Dashboard#toplist_definition}
 	ToplistDefinition *DashboardWidgetToplistDefinition `field:"optional" json:"toplistDefinition" yaml:"toplistDefinition"`
+	// topology_map_definition block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#topology_map_definition Dashboard#topology_map_definition}
+	TopologyMapDefinition *DashboardWidgetTopologyMapDefinition `field:"optional" json:"topologyMapDefinition" yaml:"topologyMapDefinition"`
 	// trace_service_definition block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#trace_service_definition Dashboard#trace_service_definition}

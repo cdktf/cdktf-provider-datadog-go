@@ -91,6 +91,8 @@ type DashboardWidgetOutputReference interface {
 	TimeseriesDefinitionInput() *DashboardWidgetTimeseriesDefinition
 	ToplistDefinition() DashboardWidgetToplistDefinitionOutputReference
 	ToplistDefinitionInput() *DashboardWidgetToplistDefinition
+	TopologyMapDefinition() DashboardWidgetTopologyMapDefinitionOutputReference
+	TopologyMapDefinitionInput() *DashboardWidgetTopologyMapDefinition
 	TraceServiceDefinition() DashboardWidgetTraceServiceDefinitionOutputReference
 	TraceServiceDefinitionInput() *DashboardWidgetTraceServiceDefinition
 	TreemapDefinition() DashboardWidgetTreemapDefinitionOutputReference
@@ -147,6 +149,7 @@ type DashboardWidgetOutputReference interface {
 	PutSunburstDefinition(value *DashboardWidgetSunburstDefinition)
 	PutTimeseriesDefinition(value *DashboardWidgetTimeseriesDefinition)
 	PutToplistDefinition(value *DashboardWidgetToplistDefinition)
+	PutTopologyMapDefinition(value *DashboardWidgetTopologyMapDefinition)
 	PutTraceServiceDefinition(value *DashboardWidgetTraceServiceDefinition)
 	PutTreemapDefinition(value *DashboardWidgetTreemapDefinition)
 	PutWidgetLayout(value *DashboardWidgetWidgetLayout)
@@ -176,6 +179,7 @@ type DashboardWidgetOutputReference interface {
 	ResetSunburstDefinition()
 	ResetTimeseriesDefinition()
 	ResetToplistDefinition()
+	ResetTopologyMapDefinition()
 	ResetTraceServiceDefinition()
 	ResetTreemapDefinition()
 	ResetWidgetLayout()
@@ -789,6 +793,26 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) ToplistDefinitionInput() *Das
 	_jsii_.Get(
 		j,
 		"toplistDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) TopologyMapDefinition() DashboardWidgetTopologyMapDefinitionOutputReference {
+	var returns DashboardWidgetTopologyMapDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"topologyMapDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) TopologyMapDefinitionInput() *DashboardWidgetTopologyMapDefinition {
+	var returns *DashboardWidgetTopologyMapDefinition
+	_jsii_.Get(
+		j,
+		"topologyMapDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1409,6 +1433,17 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) PutToplistDefinition(value *D
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) PutTopologyMapDefinition(value *DashboardWidgetTopologyMapDefinition) {
+	if err := d.validatePutTopologyMapDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTopologyMapDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) PutTraceServiceDefinition(value *DashboardWidgetTraceServiceDefinition) {
 	if err := d.validatePutTraceServiceDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1646,6 +1681,14 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) ResetToplistDefinition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetToplistDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetOutputReference) ResetTopologyMapDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTopologyMapDefinition",
 		nil, // no parameters
 	)
 }

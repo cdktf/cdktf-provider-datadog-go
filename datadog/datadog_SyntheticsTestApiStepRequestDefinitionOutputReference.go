@@ -17,6 +17,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
+	CertificateDomains() *[]*string
+	SetCertificateDomains(val *[]*string)
+	CertificateDomainsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -112,6 +115,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowInsecure()
 	ResetBody()
+	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
 	ResetFollowRedirects()
@@ -176,6 +180,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) BodyIn
 	_jsii_.Get(
 		j,
 		"bodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CertificateDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CertificateDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateDomainsInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +601,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetBody
 	_jsii_.Set(
 		j,
 		"body",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCertificateDomains(val *[]*string) {
+	if err := j.validateSetCertificateDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateDomains",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		s,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetCertificateDomains() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCertificateDomains",
 		nil, // no parameters
 	)
 }
