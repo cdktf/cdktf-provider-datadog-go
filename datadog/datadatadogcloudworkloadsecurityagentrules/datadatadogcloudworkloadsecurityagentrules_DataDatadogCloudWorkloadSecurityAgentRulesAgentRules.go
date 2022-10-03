@@ -1,0 +1,6 @@
+package datadatadogcloudworkloadsecurityagentrules
+
+
+type DataDatadogCloudWorkloadSecurityAgentRulesAgentRules struct {
+}
+

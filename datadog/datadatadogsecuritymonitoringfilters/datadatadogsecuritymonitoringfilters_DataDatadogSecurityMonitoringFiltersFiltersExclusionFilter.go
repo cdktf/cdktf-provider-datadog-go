@@ -1,0 +1,6 @@
+package datadatadogsecuritymonitoringfilters
+
+
+type DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter struct {
+}
+
