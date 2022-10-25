@@ -44,6 +44,9 @@ type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQu
 	NameInput() *string
 	Search() DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference
 	SearchInput() *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch
+	Storage() *string
+	SetStorage(val *string)
+	StorageInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +85,7 @@ type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQu
 	ResetGroupBy()
 	ResetIndexes()
 	ResetSearch()
+	ResetStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -267,6 +271,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) Storage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) StorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -377,6 +401,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference)SetStorage(val *string) {
+	if err := j.validateSetStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storage",
 		val,
 	)
 }
@@ -642,6 +677,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) ResetStorage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorage",
 		nil, // no parameters
 	)
 }

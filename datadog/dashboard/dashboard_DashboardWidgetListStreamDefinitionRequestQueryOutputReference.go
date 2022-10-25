@@ -38,6 +38,9 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
+	Storage() *string
+	SetStorage(val *string)
+	StorageInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIndexes()
 	ResetQueryString()
+	ResetStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) Storage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) StorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -307,6 +331,17 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.Set(
 		j,
 		"queryString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference)SetStorage(val *string) {
+	if err := j.validateSetStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storage",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryString",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetStorage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorage",
 		nil, // no parameters
 	)
 }

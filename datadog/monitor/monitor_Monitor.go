@@ -91,6 +91,9 @@ type Monitor interface {
 	NotifyAudit() interface{}
 	SetNotifyAudit(val interface{})
 	NotifyAuditInput() interface{}
+	NotifyBy() *[]*string
+	SetNotifyBy(val *[]*string)
+	NotifyByInput() *[]*string
 	NotifyNoData() interface{}
 	SetNotifyNoData(val interface{})
 	NotifyNoDataInput() interface{}
@@ -191,6 +194,7 @@ type Monitor interface {
 	ResetNewHostDelay()
 	ResetNoDataTimeframe()
 	ResetNotifyAudit()
+	ResetNotifyBy()
 	ResetNotifyNoData()
 	ResetOnMissingData()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -656,6 +660,26 @@ func (j *jsiiProxy_Monitor) NotifyAuditInput() interface{} {
 	_jsii_.Get(
 		j,
 		"notifyAuditInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) NotifyBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notifyBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) NotifyByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notifyByInput",
 		&returns,
 	)
 	return returns
@@ -1242,6 +1266,17 @@ func (j *jsiiProxy_Monitor)SetNotifyAudit(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Monitor)SetNotifyBy(val *[]*string) {
+	if err := j.validateSetNotifyByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notifyBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Monitor)SetNotifyNoData(val interface{}) {
 	if err := j.validateSetNotifyNoDataParameters(val); err != nil {
 		panic(err)
@@ -1781,6 +1816,14 @@ func (m *jsiiProxy_Monitor) ResetNotifyAudit() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetNotifyAudit",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetNotifyBy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNotifyBy",
 		nil, // no parameters
 	)
 }

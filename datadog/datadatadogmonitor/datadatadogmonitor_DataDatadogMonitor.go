@@ -62,6 +62,7 @@ type DataDatadogMonitor interface {
 	// The tree node.
 	Node() constructs.Node
 	NotifyAudit() cdktf.IResolvable
+	NotifyBy() *[]*string
 	NotifyNoData() cdktf.IResolvable
 	OnMissingData() *string
 	// Experimental.
@@ -430,6 +431,16 @@ func (j *jsiiProxy_DataDatadogMonitor) NotifyAudit() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"notifyAudit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) NotifyBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notifyBy",
 		&returns,
 	)
 	return returns

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package syntheticstest
 
@@ -82,6 +81,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetDisableCorsParameters(val interface{}) error {
 	return nil
 }
 

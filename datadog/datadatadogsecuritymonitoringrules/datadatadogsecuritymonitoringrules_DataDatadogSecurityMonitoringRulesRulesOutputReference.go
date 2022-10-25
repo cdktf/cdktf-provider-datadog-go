@@ -37,6 +37,7 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	Name() *string
 	Options() DataDatadogSecurityMonitoringRulesRulesOptionsList
 	Query() DataDatadogSecurityMonitoringRulesRulesQueryList
+	SignalQuery() DataDatadogSecurityMonitoringRulesRulesSignalQueryList
 	Tags() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -211,6 +212,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Query
 	_jsii_.Get(
 		j,
 		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) SignalQuery() DataDatadogSecurityMonitoringRulesRulesSignalQueryList {
+	var returns DataDatadogSecurityMonitoringRulesRulesSignalQueryList
+	_jsii_.Get(
+		j,
+		"signalQuery",
 		&returns,
 	)
 	return returns

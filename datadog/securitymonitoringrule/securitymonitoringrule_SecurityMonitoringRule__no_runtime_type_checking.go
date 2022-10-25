@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package securitymonitoringrule
 
@@ -66,6 +65,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutOptionsParameters(value *S
 }
 
 func (s *jsiiProxy_SecurityMonitoringRule) validatePutQueryParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutSignalQueryParameters(value interface{}) error {
 	return nil
 }
 

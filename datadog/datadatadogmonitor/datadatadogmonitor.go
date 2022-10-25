@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noDataTimeframe", GoGetter: "NoDataTimeframe"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notifyAudit", GoGetter: "NotifyAudit"},
+			_jsii_.MemberProperty{JsiiProperty: "notifyBy", GoGetter: "NotifyBy"},
 			_jsii_.MemberProperty{JsiiProperty: "notifyNoData", GoGetter: "NotifyNoData"},
 			_jsii_.MemberProperty{JsiiProperty: "onMissingData", GoGetter: "OnMissingData"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

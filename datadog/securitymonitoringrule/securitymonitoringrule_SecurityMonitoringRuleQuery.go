@@ -10,7 +10,9 @@ type SecurityMonitoringRuleQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
 	AgentRule interface{} `field:"optional" json:"agentRule" yaml:"agentRule"`
-	// The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+	// The aggregation type.
+	//
+	// For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
 	Aggregation *string `field:"optional" json:"aggregation" yaml:"aggregation"`
@@ -22,11 +24,15 @@ type SecurityMonitoringRuleQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
 	GroupByFields *[]*string `field:"optional" json:"groupByFields" yaml:"groupByFields"`
-	// The target field to aggregate over when using the `sum`, `max`, or `new_value` aggregations.
+	// The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations.
+	//
+	// **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metric SecurityMonitoringRule#metric}
 	Metric *string `field:"optional" json:"metric" yaml:"metric"`
-	// Group of target fields to aggregate over when using the new value aggregations.
+	// Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations.
+	//
+	// The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
 	Metrics *[]*string `field:"optional" json:"metrics" yaml:"metrics"`

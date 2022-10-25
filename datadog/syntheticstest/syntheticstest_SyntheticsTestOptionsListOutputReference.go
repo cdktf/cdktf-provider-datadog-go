@@ -36,6 +36,9 @@ type SyntheticsTestOptionsListOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableCors() interface{}
+	SetDisableCors(val interface{})
+	DisableCorsInput() interface{}
 	DisableCsp() interface{}
 	SetDisableCsp(val interface{})
 	DisableCspInput() interface{}
@@ -119,6 +122,7 @@ type SyntheticsTestOptionsListOutputReference interface {
 	ResetAllowInsecure()
 	ResetCheckCertificateRevocation()
 	ResetCi()
+	ResetDisableCors()
 	ResetDisableCsp()
 	ResetFollowRedirects()
 	ResetIgnoreServerCertificateError()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCors() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCorsInput",
 		&returns,
 	)
 	return returns
@@ -656,6 +680,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCors(val interface{}) {
+	if err := j.validateSetDisableCorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableCors",
 		val,
 	)
 }
@@ -1072,6 +1107,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCi() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCi",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCors() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableCors",
 		nil, // no parameters
 	)
 }

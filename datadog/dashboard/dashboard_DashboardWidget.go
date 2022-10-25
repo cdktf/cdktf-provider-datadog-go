@@ -94,6 +94,10 @@ type DashboardWidget struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#servicemap_definition Dashboard#servicemap_definition}
 	ServicemapDefinition *DashboardWidgetServicemapDefinition `field:"optional" json:"servicemapDefinition" yaml:"servicemapDefinition"`
+	// slo_list_definition block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#slo_list_definition Dashboard#slo_list_definition}
+	SloListDefinition *DashboardWidgetSloListDefinition `field:"optional" json:"sloListDefinition" yaml:"sloListDefinition"`
 	// sunburst_definition block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sunburst_definition Dashboard#sunburst_definition}

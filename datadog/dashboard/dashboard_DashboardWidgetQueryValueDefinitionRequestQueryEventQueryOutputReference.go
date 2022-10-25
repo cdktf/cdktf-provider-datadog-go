@@ -44,6 +44,9 @@ type DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference in
 	NameInput() *string
 	Search() DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference
 	SearchInput() *DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch
+	Storage() *string
+	SetStorage(val *string)
+	StorageInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +85,7 @@ type DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference in
 	ResetGroupBy()
 	ResetIndexes()
 	ResetSearch()
+	ResetStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -267,6 +271,26 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutp
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) Storage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) StorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -377,6 +401,17 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutp
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference)SetStorage(val *string) {
+	if err := j.validateSetStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storage",
 		val,
 	)
 }
@@ -642,6 +677,14 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutp
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) ResetStorage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorage",
 		nil, // no parameters
 	)
 }

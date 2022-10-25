@@ -26,5 +26,9 @@ type DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery 
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
 	Search *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch `field:"optional" json:"search" yaml:"search"`
+	// Storage location (private beta).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+	Storage *string `field:"optional" json:"storage" yaml:"storage"`
 }
 

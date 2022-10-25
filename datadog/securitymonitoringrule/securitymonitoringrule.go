@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putOptions", GoMethod: "PutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putQuery", GoMethod: "PutQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "putSignalQuery", GoMethod: "PutSignalQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -64,8 +65,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptions", GoMethod: "ResetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSignalQuery", GoMethod: "ResetSignalQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberProperty{JsiiProperty: "signalQuery", GoGetter: "SignalQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "signalQueryInput", GoGetter: "SignalQueryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
@@ -498,6 +503,80 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleQueryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery",
+		reflect.TypeOf((*SecurityMonitoringRuleSignalQuery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryList",
+		reflect.TypeOf((*SecurityMonitoringRuleSignalQueryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SecurityMonitoringRuleSignalQueryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
+		reflect.TypeOf((*SecurityMonitoringRuleSignalQueryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "correlatedByFields", GoGetter: "CorrelatedByFields"},
+			_jsii_.MemberProperty{JsiiProperty: "correlatedByFieldsInput", GoGetter: "CorrelatedByFieldsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "correlatedQueryIndex", GoGetter: "CorrelatedQueryIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "correlatedQueryIndexInput", GoGetter: "CorrelatedQueryIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultRuleId", GoGetter: "DefaultRuleId"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultRuleIdInput", GoGetter: "DefaultRuleIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregation", GoMethod: "ResetAggregation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCorrelatedByFields", GoMethod: "ResetCorrelatedByFields"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCorrelatedQueryIndex", GoMethod: "ResetCorrelatedQueryIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRuleId", GoMethod: "ResetDefaultRuleId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "ruleId", GoGetter: "RuleId"},
+			_jsii_.MemberProperty{JsiiProperty: "ruleIdInput", GoGetter: "RuleIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

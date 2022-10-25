@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dashboard
 
@@ -82,6 +81,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionReque
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) validateSetStorageParameters(val *string) error {
 	return nil
 }
 

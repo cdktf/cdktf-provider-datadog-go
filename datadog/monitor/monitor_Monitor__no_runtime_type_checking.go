@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package monitor
 
@@ -134,6 +133,10 @@ func (j *jsiiProxy_Monitor) validateSetNoDataTimeframeParameters(val *float64) e
 }
 
 func (j *jsiiProxy_Monitor) validateSetNotifyAuditParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Monitor) validateSetNotifyByParameters(val *[]*string) error {
 	return nil
 }
 

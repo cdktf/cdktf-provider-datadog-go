@@ -120,6 +120,12 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_audit Monitor#notify_audit}
 	NotifyAudit interface{} `field:"optional" json:"notifyAudit" yaml:"notifyAudit"`
+	// Controls what granularity a monitor alerts on.
+	//
+	// Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_by Monitor#notify_by}
+	NotifyBy *[]*string `field:"optional" json:"notifyBy" yaml:"notifyBy"`
 	// A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_no_data Monitor#notify_no_data}

@@ -75,6 +75,8 @@ type SecurityMonitoringRule interface {
 	QueryInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	SignalQuery() SecurityMonitoringRuleSignalQueryList
+	SignalQueryInput() interface{}
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -116,6 +118,7 @@ type SecurityMonitoringRule interface {
 	PutFilter(value interface{})
 	PutOptions(value *SecurityMonitoringRuleOptions)
 	PutQuery(value interface{})
+	PutSignalQuery(value interface{})
 	ResetEnabled()
 	ResetFilter()
 	ResetHasExtendedTitle()
@@ -124,6 +127,8 @@ type SecurityMonitoringRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQuery()
+	ResetSignalQuery()
 	ResetTags()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -446,6 +451,26 @@ func (j *jsiiProxy_SecurityMonitoringRule) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule) SignalQuery() SecurityMonitoringRuleSignalQueryList {
+	var returns SecurityMonitoringRuleSignalQueryList
+	_jsii_.Get(
+		j,
+		"signalQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule) SignalQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"signalQueryInput",
 		&returns,
 	)
 	return returns
@@ -965,6 +990,17 @@ func (s *jsiiProxy_SecurityMonitoringRule) PutQuery(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) PutSignalQuery(value interface{}) {
+	if err := s.validatePutSignalQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSignalQuery",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringRule) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1009,6 +1045,22 @@ func (s *jsiiProxy_SecurityMonitoringRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) ResetQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) ResetSignalQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSignalQuery",
 		nil, // no parameters
 	)
 }

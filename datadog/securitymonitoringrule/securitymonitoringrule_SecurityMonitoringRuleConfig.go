@@ -31,10 +31,6 @@ type SecurityMonitoringRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// query block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
-	Query interface{} `field:"required" json:"query" yaml:"query"`
 	// Whether the rule is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
@@ -56,11 +52,19 @@ type SecurityMonitoringRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#options SecurityMonitoringRule#options}
 	Options *SecurityMonitoringRuleOptions `field:"optional" json:"options" yaml:"options"`
+	// query block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
+	Query interface{} `field:"optional" json:"query" yaml:"query"`
+	// signal_query block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+	SignalQuery interface{} `field:"optional" json:"signalQuery" yaml:"signalQuery"`
 	// Tags for generated signals.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#tags SecurityMonitoringRule#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
-	// The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`.
+	// The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`, `signal_correlation`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#type SecurityMonitoringRule#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`

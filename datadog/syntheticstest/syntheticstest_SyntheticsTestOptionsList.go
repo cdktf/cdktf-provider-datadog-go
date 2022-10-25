@@ -22,6 +22,10 @@ type SyntheticsTestOptionsList struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ci SyntheticsTest#ci}
 	Ci *SyntheticsTestOptionsListCi `field:"optional" json:"ci" yaml:"ci"`
+	// Disable Cross-Origin Resource Sharing for browser tests.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+	DisableCors interface{} `field:"optional" json:"disableCors" yaml:"disableCors"`
 	// Disable Content Security Policy for browser tests.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_csp SyntheticsTest#disable_csp}

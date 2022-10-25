@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dashboard
 
@@ -130,6 +129,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validate
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutServicemapDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetServicemapDefinition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutSloListDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetSloListDefinition) error {
 	return nil
 }
 

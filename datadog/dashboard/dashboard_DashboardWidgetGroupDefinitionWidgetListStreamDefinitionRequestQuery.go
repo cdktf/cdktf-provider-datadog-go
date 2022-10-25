@@ -14,5 +14,9 @@ type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuery struct
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query_string Dashboard#query_string}
 	QueryString *string `field:"optional" json:"queryString" yaml:"queryString"`
+	// Storage location (private beta).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+	Storage *string `field:"optional" json:"storage" yaml:"storage"`
 }
 

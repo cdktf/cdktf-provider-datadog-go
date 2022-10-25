@@ -74,6 +74,8 @@ type DashboardWidgetGroupDefinitionWidgetOutputReference interface {
 	ServiceLevelObjectiveDefinitionInput() *DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition
 	ServicemapDefinition() DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputReference
 	ServicemapDefinitionInput() *DashboardWidgetGroupDefinitionWidgetServicemapDefinition
+	SloListDefinition() DashboardWidgetGroupDefinitionWidgetSloListDefinitionOutputReference
+	SloListDefinitionInput() *DashboardWidgetGroupDefinitionWidgetSloListDefinition
 	SunburstDefinition() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReference
 	SunburstDefinitionInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinition
 	// Experimental.
@@ -142,6 +144,7 @@ type DashboardWidgetGroupDefinitionWidgetOutputReference interface {
 	PutScatterplotDefinition(value *DashboardWidgetGroupDefinitionWidgetScatterplotDefinition)
 	PutServiceLevelObjectiveDefinition(value *DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition)
 	PutServicemapDefinition(value *DashboardWidgetGroupDefinitionWidgetServicemapDefinition)
+	PutSloListDefinition(value *DashboardWidgetGroupDefinitionWidgetSloListDefinition)
 	PutSunburstDefinition(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinition)
 	PutTimeseriesDefinition(value *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition)
 	PutToplistDefinition(value *DashboardWidgetGroupDefinitionWidgetToplistDefinition)
@@ -171,6 +174,7 @@ type DashboardWidgetGroupDefinitionWidgetOutputReference interface {
 	ResetScatterplotDefinition()
 	ResetServiceLevelObjectiveDefinition()
 	ResetServicemapDefinition()
+	ResetSloListDefinition()
 	ResetSunburstDefinition()
 	ResetTimeseriesDefinition()
 	ResetToplistDefinition()
@@ -688,6 +692,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) Servicem
 	_jsii_.Get(
 		j,
 		"servicemapDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) SloListDefinition() DashboardWidgetGroupDefinitionWidgetSloListDefinitionOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSloListDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"sloListDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) SloListDefinitionInput() *DashboardWidgetGroupDefinitionWidgetSloListDefinition {
+	var returns *DashboardWidgetGroupDefinitionWidgetSloListDefinition
+	_jsii_.Get(
+		j,
+		"sloListDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1364,6 +1388,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) PutServi
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) PutSloListDefinition(value *DashboardWidgetGroupDefinitionWidgetSloListDefinition) {
+	if err := d.validatePutSloListDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSloListDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) PutSunburstDefinition(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinition) {
 	if err := d.validatePutSunburstDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1613,6 +1648,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) ResetSer
 	_jsii_.InvokeVoid(
 		d,
 		"resetServicemapDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) ResetSloListDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSloListDefinition",
 		nil, // no parameters
 	)
 }

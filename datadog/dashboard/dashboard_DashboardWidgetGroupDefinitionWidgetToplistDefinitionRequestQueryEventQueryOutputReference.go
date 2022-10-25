@@ -44,6 +44,9 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery
 	NameInput() *string
 	Search() DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference
 	SearchInput() *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch
+	Storage() *string
+	SetStorage(val *string)
+	StorageInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +85,7 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery
 	ResetGroupBy()
 	ResetIndexes()
 	ResetSearch()
+	ResetStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -267,6 +271,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQ
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) Storage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) StorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -377,6 +401,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQ
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference)SetStorage(val *string) {
+	if err := j.validateSetStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storage",
 		val,
 	)
 }
@@ -642,6 +677,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQ
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) ResetStorage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorage",
 		nil, // no parameters
 	)
 }
