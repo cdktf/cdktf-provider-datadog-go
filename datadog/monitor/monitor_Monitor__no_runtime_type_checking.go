@@ -60,6 +60,10 @@ func (m *jsiiProxy_Monitor) validatePutMonitorThresholdWindowsParameters(value *
 	return nil
 }
 
+func (m *jsiiProxy_Monitor) validatePutSchedulingOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Monitor) validatePutVariablesParameters(value *MonitorVariables) error {
 	return nil
 }

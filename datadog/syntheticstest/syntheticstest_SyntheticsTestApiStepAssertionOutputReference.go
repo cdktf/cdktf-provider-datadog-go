@@ -40,6 +40,8 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	TargetInput() *string
 	Targetjsonpath() SyntheticsTestApiStepAssertionTargetjsonpathOutputReference
 	TargetjsonpathInput() *SyntheticsTestApiStepAssertionTargetjsonpath
+	Targetxpath() SyntheticsTestApiStepAssertionTargetxpathOutputReference
+	TargetxpathInput() *SyntheticsTestApiStepAssertionTargetxpath
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,9 +78,11 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestApiStepAssertionTargetjsonpath)
+	PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath)
 	ResetProperty()
 	ResetTarget()
 	ResetTargetjsonpath()
+	ResetTargetxpath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -219,6 +223,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Targetjsonpath
 	_jsii_.Get(
 		j,
 		"targetjsonpathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Targetxpath() SyntheticsTestApiStepAssertionTargetxpathOutputReference {
+	var returns SyntheticsTestApiStepAssertionTargetxpathOutputReference
+	_jsii_.Get(
+		j,
+		"targetxpath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TargetxpathInput() *SyntheticsTestApiStepAssertionTargetxpath {
+	var returns *SyntheticsTestApiStepAssertionTargetxpath
+	_jsii_.Get(
+		j,
+		"targetxpathInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +612,17 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetjsonp
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath) {
+	if err := s.validatePutTargetxpathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetxpath",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetProperty() {
 	_jsii_.InvokeVoid(
 		s,
@@ -608,6 +643,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetjso
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetjsonpath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetxpath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetxpath",
 		nil, // no parameters
 	)
 }

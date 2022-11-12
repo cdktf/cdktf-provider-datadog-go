@@ -48,6 +48,10 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validatePutTar
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestApiStepAssertionTargetxpath) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -43,6 +43,9 @@ type DashboardTemplateVariablePresetTemplateVariableOutputReference interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	Values() *[]*string
+	SetValues(val *[]*string)
+	ValuesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type DashboardTemplateVariablePresetTemplateVariableOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetName()
 	ResetValue()
+	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) Values() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"values",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) ValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"valuesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDashboardTemplateVariablePresetTemplateVariableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardTemplateVariablePresetTemplateVariableOutputReference {
 	_init_.Initialize()
@@ -295,6 +319,17 @@ func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	_jsii_.Set(
 		j,
 		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference)SetValues(val *[]*string) {
+	if err := j.validateSetValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"values",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) ResetValues() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetValues",
 		nil, // no parameters
 	)
 }

@@ -77,6 +77,7 @@ type DataDatadogMonitor interface {
 	RenotifyStatuses() *[]*string
 	RequireFullWindow() cdktf.IResolvable
 	RestrictedRoles() *[]*string
+	SchedulingOptions() DataDatadogMonitorSchedulingOptionsList
 	Tags() *[]*string
 	TagsFilter() *[]*string
 	SetTagsFilter(val *[]*string)
@@ -541,6 +542,16 @@ func (j *jsiiProxy_DataDatadogMonitor) RestrictedRoles() *[]*string {
 	_jsii_.Get(
 		j,
 		"restrictedRoles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) SchedulingOptions() DataDatadogMonitorSchedulingOptionsList {
+	var returns DataDatadogMonitorSchedulingOptionsList
+	_jsii_.Get(
+		j,
+		"schedulingOptions",
 		&returns,
 	)
 	return returns

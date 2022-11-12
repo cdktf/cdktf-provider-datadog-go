@@ -31,6 +31,9 @@ type DashboardTemplateVariableOutputReference interface {
 	Default() *string
 	SetDefault(val *string)
 	DefaultInput() *string
+	Defaults() *[]*string
+	SetDefaults(val *[]*string)
+	DefaultsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -75,6 +78,7 @@ type DashboardTemplateVariableOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailableValues()
 	ResetDefault()
+	ResetDefaults()
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_DashboardTemplateVariableOutputReference) DefaultInput() *str
 	_jsii_.Get(
 		j,
 		"defaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardTemplateVariableOutputReference) Defaults() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"defaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardTemplateVariableOutputReference) DefaultsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"defaultsInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +333,17 @@ func (j *jsiiProxy_DashboardTemplateVariableOutputReference)SetDefault(val *stri
 	_jsii_.Set(
 		j,
 		"default",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardTemplateVariableOutputReference)SetDefaults(val *[]*string) {
+	if err := j.validateSetDefaultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaults",
 		val,
 	)
 }
@@ -566,6 +601,14 @@ func (d *jsiiProxy_DashboardTemplateVariableOutputReference) ResetDefault() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDefault",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardTemplateVariableOutputReference) ResetDefaults() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaults",
 		nil, // no parameters
 	)
 }

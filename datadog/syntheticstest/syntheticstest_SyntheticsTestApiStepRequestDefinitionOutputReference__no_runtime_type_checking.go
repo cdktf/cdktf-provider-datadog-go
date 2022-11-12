@@ -56,6 +56,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetBodyTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetCertificateDomainsParameters(val *[]*string) error {
 	return nil
 }

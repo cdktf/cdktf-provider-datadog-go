@@ -131,6 +131,8 @@ type Monitor interface {
 	RestrictedRoles() *[]*string
 	SetRestrictedRoles(val *[]*string)
 	RestrictedRolesInput() *[]*string
+	SchedulingOptions() MonitorSchedulingOptionsList
+	SchedulingOptionsInput() interface{}
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -178,6 +180,7 @@ type Monitor interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMonitorThresholds(value *MonitorMonitorThresholds)
 	PutMonitorThresholdWindows(value *MonitorMonitorThresholdWindows)
+	PutSchedulingOptions(value interface{})
 	PutVariables(value *MonitorVariables)
 	ResetEnableLogsSample()
 	ResetEscalationMessage()
@@ -206,6 +209,7 @@ type Monitor interface {
 	ResetRenotifyStatuses()
 	ResetRequireFullWindow()
 	ResetRestrictedRoles()
+	ResetSchedulingOptions()
 	ResetTags()
 	ResetTimeoutH()
 	ResetValidate()
@@ -890,6 +894,26 @@ func (j *jsiiProxy_Monitor) RestrictedRolesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"restrictedRolesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) SchedulingOptions() MonitorSchedulingOptionsList {
+	var returns MonitorSchedulingOptionsList
+	_jsii_.Get(
+		j,
+		"schedulingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) SchedulingOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"schedulingOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1689,6 +1713,17 @@ func (m *jsiiProxy_Monitor) PutMonitorThresholdWindows(value *MonitorMonitorThre
 	)
 }
 
+func (m *jsiiProxy_Monitor) PutSchedulingOptions(value interface{}) {
+	if err := m.validatePutSchedulingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putSchedulingOptions",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_Monitor) PutVariables(value *MonitorVariables) {
 	if err := m.validatePutVariablesParameters(value); err != nil {
 		panic(err)
@@ -1896,6 +1931,14 @@ func (m *jsiiProxy_Monitor) ResetRestrictedRoles() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRestrictedRoles",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetSchedulingOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSchedulingOptions",
 		nil, // no parameters
 	)
 }

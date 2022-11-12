@@ -166,6 +166,10 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}
 	RestrictedRoles *[]*string `field:"optional" json:"restrictedRoles" yaml:"restrictedRoles"`
+	// scheduling_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#scheduling_options Monitor#scheduling_options}
+	SchedulingOptions interface{} `field:"optional" json:"schedulingOptions" yaml:"schedulingOptions"`
 	// A list of tags to associate with your monitor.
 	//
 	// This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API

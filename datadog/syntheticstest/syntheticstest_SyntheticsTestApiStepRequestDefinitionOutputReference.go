@@ -16,6 +16,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
+	BodyType() *string
+	SetBodyType(val *string)
+	BodyTypeInput() *string
 	CertificateDomains() *[]*string
 	SetCertificateDomains(val *[]*string)
 	CertificateDomainsInput() *[]*string
@@ -114,6 +117,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowInsecure()
 	ResetBody()
+	ResetBodyType()
 	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
@@ -179,6 +183,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) BodyIn
 	_jsii_.Get(
 		j,
 		"bodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) BodyType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bodyType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) BodyTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bodyTypeInput",
 		&returns,
 	)
 	return returns
@@ -604,6 +628,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetBody
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetBodyType(val *string) {
+	if err := j.validateSetBodyTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bodyType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCertificateDomains(val *[]*string) {
 	if err := j.validateSetCertificateDomainsParameters(val); err != nil {
 		panic(err)
@@ -1022,6 +1057,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		s,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetBodyType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBodyType",
 		nil, // no parameters
 	)
 }

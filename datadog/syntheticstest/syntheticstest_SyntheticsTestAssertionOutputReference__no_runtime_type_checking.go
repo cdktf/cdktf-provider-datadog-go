@@ -48,6 +48,10 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjson
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestAssertionTargetxpath) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

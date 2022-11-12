@@ -179,14 +179,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "property", GoGetter: "Property"},
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProperty", GoMethod: "ResetProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
 			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpath", GoGetter: "Targetjsonpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
+			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -237,6 +241,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetxpath)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpathOutputReference",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetxpathOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
+			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "targetvalue", GoGetter: "Targetvalue"},
+			_jsii_.MemberProperty{JsiiProperty: "targetvalueInput", GoGetter: "TargetvalueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "xpath", GoGetter: "Xpath"},
+			_jsii_.MemberProperty{JsiiProperty: "xpathInput", GoGetter: "XpathInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestApiStepAssertionTargetxpathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -649,6 +695,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecureInput", GoGetter: "AllowInsecureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyType", GoGetter: "BodyType"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyTypeInput", GoGetter: "BodyTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateDomains", GoGetter: "CertificateDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateDomainsInput", GoGetter: "CertificateDomainsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -688,6 +736,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInsecure", GoMethod: "ResetAllowInsecure"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBody", GoMethod: "ResetBody"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBodyType", GoMethod: "ResetBodyType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateDomains", GoMethod: "ResetCertificateDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServer", GoMethod: "ResetDnsServer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServerPort", GoMethod: "ResetDnsServerPort"},
@@ -858,14 +907,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "property", GoGetter: "Property"},
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProperty", GoMethod: "ResetProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
 			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpath", GoGetter: "Targetjsonpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
+			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -916,6 +969,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetxpath)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpathOutputReference",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetxpathOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
+			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "targetvalue", GoGetter: "Targetvalue"},
+			_jsii_.MemberProperty{JsiiProperty: "targetvalueInput", GoGetter: "TargetvalueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "xpath", GoGetter: "Xpath"},
+			_jsii_.MemberProperty{JsiiProperty: "xpathInput", GoGetter: "XpathInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1820,6 +1915,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyType", GoGetter: "BodyType"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyTypeInput", GoGetter: "BodyTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateDomains", GoGetter: "CertificateDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateDomainsInput", GoGetter: "CertificateDomainsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1856,6 +1953,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
 			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBody", GoMethod: "ResetBody"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBodyType", GoMethod: "ResetBodyType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateDomains", GoMethod: "ResetCertificateDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServer", GoMethod: "ResetDnsServer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServerPort", GoMethod: "ResetDnsServerPort"},

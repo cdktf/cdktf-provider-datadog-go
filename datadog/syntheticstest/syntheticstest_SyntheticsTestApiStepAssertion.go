@@ -24,5 +24,9 @@ type SyntheticsTestApiStepAssertion struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
 	Targetjsonpath *SyntheticsTestApiStepAssertionTargetjsonpath `field:"optional" json:"targetjsonpath" yaml:"targetjsonpath"`
+	// targetxpath block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+	Targetxpath *SyntheticsTestApiStepAssertionTargetxpath `field:"optional" json:"targetxpath" yaml:"targetxpath"`
 }
 

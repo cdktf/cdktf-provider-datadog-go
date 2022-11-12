@@ -6,7 +6,7 @@ type MonitorVariablesEventQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#compute Monitor#compute}
 	Compute interface{} `field:"required" json:"compute" yaml:"compute"`
-	// The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`.
+	// The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#data_source Monitor#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`

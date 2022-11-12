@@ -64,6 +64,10 @@ func (j *jsiiProxy_DashboardTemplateVariableOutputReference) validateSetDefaultP
 	return nil
 }
 
+func (j *jsiiProxy_DashboardTemplateVariableOutputReference) validateSetDefaultsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardTemplateVariableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

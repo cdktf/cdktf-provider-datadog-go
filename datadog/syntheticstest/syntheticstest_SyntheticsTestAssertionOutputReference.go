@@ -40,6 +40,8 @@ type SyntheticsTestAssertionOutputReference interface {
 	TargetInput() *string
 	Targetjsonpath() SyntheticsTestAssertionTargetjsonpathOutputReference
 	TargetjsonpathInput() *SyntheticsTestAssertionTargetjsonpath
+	Targetxpath() SyntheticsTestAssertionTargetxpathOutputReference
+	TargetxpathInput() *SyntheticsTestAssertionTargetxpath
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,9 +78,11 @@ type SyntheticsTestAssertionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestAssertionTargetjsonpath)
+	PutTargetxpath(value *SyntheticsTestAssertionTargetxpath)
 	ResetProperty()
 	ResetTarget()
 	ResetTargetjsonpath()
+	ResetTargetxpath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -219,6 +223,26 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TargetjsonpathInput()
 	_jsii_.Get(
 		j,
 		"targetjsonpathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) Targetxpath() SyntheticsTestAssertionTargetxpathOutputReference {
+	var returns SyntheticsTestAssertionTargetxpathOutputReference
+	_jsii_.Get(
+		j,
+		"targetxpath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TargetxpathInput() *SyntheticsTestAssertionTargetxpath {
+	var returns *SyntheticsTestAssertionTargetxpath
+	_jsii_.Get(
+		j,
+		"targetxpathInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +612,17 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) PutTargetjsonpath(val
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) PutTargetxpath(value *SyntheticsTestAssertionTargetxpath) {
+	if err := s.validatePutTargetxpathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetxpath",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetProperty() {
 	_jsii_.InvokeVoid(
 		s,
@@ -608,6 +643,14 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetTargetjsonpath()
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetjsonpath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetTargetxpath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetxpath",
 		nil, // no parameters
 	)
 }

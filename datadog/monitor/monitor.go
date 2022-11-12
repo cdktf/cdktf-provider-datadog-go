@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorThresholds", GoMethod: "PutMonitorThresholds"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorThresholdWindows", GoMethod: "PutMonitorThresholdWindows"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchedulingOptions", GoMethod: "PutSchedulingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putVariables", GoMethod: "PutVariables"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
@@ -116,12 +117,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRenotifyStatuses", GoMethod: "ResetRenotifyStatuses"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireFullWindow", GoMethod: "ResetRequireFullWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictedRoles", GoMethod: "ResetRestrictedRoles"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchedulingOptions", GoMethod: "ResetSchedulingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeoutH", GoMethod: "ResetTimeoutH"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValidate", GoMethod: "ResetValidate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVariables", GoMethod: "ResetVariables"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedRoles", GoGetter: "RestrictedRoles"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedRolesInput", GoGetter: "RestrictedRolesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "schedulingOptions", GoGetter: "SchedulingOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "schedulingOptionsInput", GoGetter: "SchedulingOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
@@ -242,6 +246,132 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorMonitorThresholdsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptions",
+		reflect.TypeOf((*MonitorSchedulingOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow",
+		reflect.TypeOf((*MonitorSchedulingOptionsEvaluationWindow)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowList",
+		reflect.TypeOf((*MonitorSchedulingOptionsEvaluationWindowList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorSchedulingOptionsEvaluationWindowList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference",
+		reflect.TypeOf((*MonitorSchedulingOptionsEvaluationWindowOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dayStarts", GoGetter: "DayStarts"},
+			_jsii_.MemberProperty{JsiiProperty: "dayStartsInput", GoGetter: "DayStartsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hourStarts", GoGetter: "HourStarts"},
+			_jsii_.MemberProperty{JsiiProperty: "hourStartsInput", GoGetter: "HourStartsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "monthStarts", GoGetter: "MonthStarts"},
+			_jsii_.MemberProperty{JsiiProperty: "monthStartsInput", GoGetter: "MonthStartsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDayStarts", GoMethod: "ResetDayStarts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHourStarts", GoMethod: "ResetHourStarts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMonthStarts", GoMethod: "ResetMonthStarts"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsList",
+		reflect.TypeOf((*MonitorSchedulingOptionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorSchedulingOptionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
+		reflect.TypeOf((*MonitorSchedulingOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "evaluationWindow", GoGetter: "EvaluationWindow"},
+			_jsii_.MemberProperty{JsiiProperty: "evaluationWindowInput", GoGetter: "EvaluationWindowInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putEvaluationWindow", GoMethod: "PutEvaluationWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorSchedulingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -10,6 +10,10 @@ type SyntheticsTestApiStepRequestDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body SyntheticsTest#body}
 	Body *string `field:"optional" json:"body" yaml:"body"`
+	// Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body_type SyntheticsTest#body_type}
+	BodyType *string `field:"optional" json:"bodyType" yaml:"bodyType"`
 	// By default, the client certificate is applied on the domain of the starting URL for browser tests.
 	//
 	// If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
