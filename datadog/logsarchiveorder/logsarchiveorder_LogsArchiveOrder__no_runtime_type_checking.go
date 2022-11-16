@@ -56,6 +56,14 @@ func validateLogsArchiveOrder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogsArchiveOrder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogsArchiveOrder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveOrder) validateSetArchiveIdsParameters(val *[]*string) error {
 	return nil
 }

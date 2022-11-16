@@ -2,10 +2,10 @@ package slocorrection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/slocorrection/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/slocorrection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -696,6 +696,44 @@ func SloCorrection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.sloCorrection.SloCorrection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SloCorrection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSloCorrection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.sloCorrection.SloCorrection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SloCorrection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSloCorrection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.sloCorrection.SloCorrection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

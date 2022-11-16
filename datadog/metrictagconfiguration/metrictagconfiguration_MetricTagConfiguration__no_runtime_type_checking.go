@@ -60,6 +60,14 @@ func validateMetricTagConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMetricTagConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMetricTagConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetricTagConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

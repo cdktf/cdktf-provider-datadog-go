@@ -60,6 +60,14 @@ func validateSyntheticsPrivateLocation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSyntheticsPrivateLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsPrivateLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

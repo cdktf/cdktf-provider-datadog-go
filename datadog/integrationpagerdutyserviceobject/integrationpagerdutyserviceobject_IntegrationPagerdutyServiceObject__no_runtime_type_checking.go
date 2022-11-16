@@ -56,6 +56,14 @@ func validateIntegrationPagerdutyServiceObject_IsConstructParameters(x interface
 	return nil
 }
 
+func validateIntegrationPagerdutyServiceObject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationPagerdutyServiceObject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationPagerdutyServiceObject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIntegrationAzure_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIntegrationAzure_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationAzure_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAzure) validateSetAutomuteParameters(val interface{}) error {
 	return nil
 }

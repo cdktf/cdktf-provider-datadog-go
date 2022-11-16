@@ -72,6 +72,14 @@ func validateMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

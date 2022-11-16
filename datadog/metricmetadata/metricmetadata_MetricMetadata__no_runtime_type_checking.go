@@ -56,6 +56,14 @@ func validateMetricMetadata_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMetricMetadata_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMetricMetadata_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetricMetadata) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

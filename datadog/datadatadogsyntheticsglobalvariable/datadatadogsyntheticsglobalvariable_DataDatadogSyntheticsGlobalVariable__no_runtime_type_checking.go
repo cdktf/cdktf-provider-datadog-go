@@ -56,6 +56,14 @@ func validateDataDatadogSyntheticsGlobalVariable_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataDatadogSyntheticsGlobalVariable_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogSyntheticsGlobalVariable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) validateSetIdParameters(val *string) error {
 	return nil
 }

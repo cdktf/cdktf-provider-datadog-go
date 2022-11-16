@@ -2,10 +2,10 @@ package datadatadogmonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/datadatadogmonitor/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/datadatadogmonitor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -782,6 +782,44 @@ func DataDatadogMonitor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDatadogMonitor_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDatadogMonitor_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDatadogMonitor_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDatadogMonitor_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

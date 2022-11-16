@@ -56,6 +56,14 @@ func validateIntegrationGcp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIntegrationGcp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationGcp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcp) validateSetAutomuteParameters(val interface{}) error {
 	return nil
 }

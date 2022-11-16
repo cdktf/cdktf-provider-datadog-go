@@ -60,6 +60,14 @@ func validateSecurityMonitoringFilter_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSecurityMonitoringFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityMonitoringFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringFilter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

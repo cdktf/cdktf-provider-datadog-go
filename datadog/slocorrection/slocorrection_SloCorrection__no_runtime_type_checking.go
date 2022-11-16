@@ -56,6 +56,14 @@ func validateSloCorrection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSloCorrection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSloCorrection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SloCorrection) validateSetCategoryParameters(val *string) error {
 	return nil
 }

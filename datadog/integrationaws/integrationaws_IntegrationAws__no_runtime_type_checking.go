@@ -56,6 +56,14 @@ func validateIntegrationAws_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIntegrationAws_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationAws_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAws) validateSetAccessKeyIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIntegrationOpsgenieServiceObject_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateIntegrationOpsgenieServiceObject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationOpsgenieServiceObject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationOpsgenieServiceObject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

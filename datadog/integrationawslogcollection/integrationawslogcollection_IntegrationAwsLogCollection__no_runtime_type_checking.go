@@ -56,6 +56,14 @@ func validateIntegrationAwsLogCollection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateIntegrationAwsLogCollection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationAwsLogCollection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAwsLogCollection) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

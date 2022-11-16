@@ -68,6 +68,14 @@ func validateLogsArchive_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogsArchive_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogsArchive_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchive) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -96,6 +96,14 @@ func validateSyntheticsTest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSyntheticsTest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsTest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

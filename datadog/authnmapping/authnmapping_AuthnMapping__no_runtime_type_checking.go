@@ -56,6 +56,14 @@ func validateAuthnMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthnMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthnMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthnMapping) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

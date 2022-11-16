@@ -56,6 +56,14 @@ func validateIntegrationAwsTagFilter_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateIntegrationAwsTagFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationAwsTagFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAwsTagFilter) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

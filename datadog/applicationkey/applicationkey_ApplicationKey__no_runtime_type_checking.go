@@ -56,6 +56,14 @@ func validateApplicationKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApplicationKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

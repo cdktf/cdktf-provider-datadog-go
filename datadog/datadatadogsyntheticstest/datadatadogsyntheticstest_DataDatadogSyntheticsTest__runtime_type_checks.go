@@ -119,6 +119,22 @@ func validateDataDatadogSyntheticsTest_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataDatadogSyntheticsTest_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataDatadogSyntheticsTest_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

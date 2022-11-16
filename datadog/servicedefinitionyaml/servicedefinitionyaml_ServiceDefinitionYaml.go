@@ -2,10 +2,10 @@ package servicedefinitionyaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/servicedefinitionyaml/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/servicedefinitionyaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -453,6 +453,44 @@ func ServiceDefinitionYaml_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceDefinitionYaml_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceDefinitionYaml_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceDefinitionYaml_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceDefinitionYaml_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

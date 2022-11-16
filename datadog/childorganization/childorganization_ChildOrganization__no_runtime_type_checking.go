@@ -56,6 +56,14 @@ func validateChildOrganization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateChildOrganization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateChildOrganization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChildOrganization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

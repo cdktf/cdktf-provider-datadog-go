@@ -56,6 +56,14 @@ func validateDataDatadogSecurityMonitoringRules_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataDatadogSecurityMonitoringRules_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogSecurityMonitoringRules_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) validateSetDefaultOnlyFilterParameters(val interface{}) error {
 	return nil
 }

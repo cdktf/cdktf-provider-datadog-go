@@ -68,6 +68,14 @@ func validateSecurityMonitoringDefaultRule_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateSecurityMonitoringDefaultRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityMonitoringDefaultRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

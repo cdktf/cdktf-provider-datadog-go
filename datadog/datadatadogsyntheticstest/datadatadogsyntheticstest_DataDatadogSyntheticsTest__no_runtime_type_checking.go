@@ -56,6 +56,14 @@ func validateDataDatadogSyntheticsTest_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataDatadogSyntheticsTest_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogSyntheticsTest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) validateSetIdParameters(val *string) error {
 	return nil
 }

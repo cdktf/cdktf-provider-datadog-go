@@ -56,6 +56,14 @@ func validateDataDatadogLogsIndexes_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatadogLogsIndexes_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogLogsIndexes_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogLogsIndexes) validateSetIdParameters(val *string) error {
 	return nil
 }

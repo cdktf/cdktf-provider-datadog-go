@@ -56,6 +56,14 @@ func validateCloudWorkloadSecurityAgentRule_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateCloudWorkloadSecurityAgentRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudWorkloadSecurityAgentRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

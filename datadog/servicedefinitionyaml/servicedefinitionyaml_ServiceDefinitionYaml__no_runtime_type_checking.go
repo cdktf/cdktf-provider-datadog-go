@@ -56,6 +56,14 @@ func validateServiceDefinitionYaml_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceDefinitionYaml_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceDefinitionYaml_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDefinitionYaml) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

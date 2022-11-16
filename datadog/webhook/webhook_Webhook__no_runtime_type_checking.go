@@ -56,6 +56,14 @@ func validateWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Webhook) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataDatadogServiceLevelObjectives_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataDatadogServiceLevelObjectives_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogServiceLevelObjectives_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/monitor/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/monitor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1491,6 +1491,44 @@ func Monitor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.monitor.Monitor",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Monitor_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitor_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.monitor.Monitor",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Monitor_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitor_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.monitor.Monitor",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

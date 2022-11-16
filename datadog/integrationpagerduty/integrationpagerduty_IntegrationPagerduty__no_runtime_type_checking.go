@@ -56,6 +56,14 @@ func validateIntegrationPagerduty_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIntegrationPagerduty_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationPagerduty_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationPagerduty) validateSetApiTokenParameters(val *string) error {
 	return nil
 }

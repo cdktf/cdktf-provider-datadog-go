@@ -60,6 +60,14 @@ func validateDowntime_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDowntime_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDowntime_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Downtime) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

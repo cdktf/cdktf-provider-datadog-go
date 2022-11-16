@@ -56,6 +56,14 @@ func validateDataDatadogMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataDatadogMonitor_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDatadogMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogMonitor) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package syntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/syntheticsglobalvariable/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/syntheticsglobalvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -686,6 +686,44 @@ func SyntheticsGlobalVariable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsGlobalVariable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsGlobalVariable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsGlobalVariable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsGlobalVariable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

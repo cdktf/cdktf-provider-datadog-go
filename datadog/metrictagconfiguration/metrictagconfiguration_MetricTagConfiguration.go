@@ -2,10 +2,10 @@ package metrictagconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v3/metrictagconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/metrictagconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -580,6 +580,44 @@ func MetricTagConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MetricTagConfiguration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMetricTagConfiguration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MetricTagConfiguration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMetricTagConfiguration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
