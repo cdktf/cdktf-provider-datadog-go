@@ -42,6 +42,8 @@ type DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetQueryTableDefinitionRequestFormulaLimit
+	Style() DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetQueryTableDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetQueryTableDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetQueryTableDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) Style() DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetQueryTableDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetQueryTableDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetQueryTableDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

@@ -42,6 +42,8 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputRe
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit
+	Style() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputRe
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestF
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) Style() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestF
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestF
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

@@ -42,6 +42,8 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputRe
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit
+	Style() DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputRe
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestF
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) Style() DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestF
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestF
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

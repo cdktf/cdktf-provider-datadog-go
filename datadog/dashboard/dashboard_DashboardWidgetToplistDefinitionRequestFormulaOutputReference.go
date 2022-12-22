@@ -42,6 +42,8 @@ type DashboardWidgetToplistDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetToplistDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetToplistDefinitionRequestFormulaLimit
+	Style() DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetToplistDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetToplistDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetToplistDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetToplistDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) Style() DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetToplistDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetToplistDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetToplistDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

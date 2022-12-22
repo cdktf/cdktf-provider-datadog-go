@@ -23,7 +23,7 @@ type DowntimeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#scope Downtime#scope}
 	Scope *[]*string `field:"required" json:"scope" yaml:"scope"`
-	// Optionally specify an end date when this downtime should expire.
+	// Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#end Downtime#end}
 	End *float64 `field:"optional" json:"end" yaml:"end"`
@@ -58,7 +58,7 @@ type DowntimeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#recurrence Downtime#recurrence}
 	Recurrence *DowntimeRecurrence `field:"optional" json:"recurrence" yaml:"recurrence"`
-	// Specify when this downtime should start.
+	// Specify when this downtime should start. Accepts a Unix timestamp in UTC.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#start Downtime#start}
 	Start *float64 `field:"optional" json:"start" yaml:"start"`
@@ -66,7 +66,7 @@ type DowntimeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#start_date Downtime#start_date}
 	StartDate *string `field:"optional" json:"startDate" yaml:"startDate"`
-	// The timezone for the downtime, default UTC.
+	// The timezone for the downtime, default UTC. Follows IANA timezone database identifiers.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#timezone Downtime#timezone}
 	Timezone *string `field:"optional" json:"timezone" yaml:"timezone"`

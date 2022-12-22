@@ -991,17 +991,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetChangeDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -4519,17 +4565,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGeomapDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -6549,17 +6641,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -10077,17 +10215,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -17051,17 +17235,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -19560,17 +19790,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -25881,17 +26157,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -28705,17 +29027,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -31678,17 +32046,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -33817,17 +34231,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -40209,17 +40669,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetQueryTableDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetQueryTableDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -42718,17 +43224,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetQueryValueDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetQueryValueDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetQueryValueDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetQueryValueDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -49039,17 +49591,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetSunburstDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetSunburstDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -51863,17 +52461,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetTimeseriesDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -54836,17 +55480,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetToplistDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -56975,17 +57665,63 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "style", GoGetter: "Style"},
+			_jsii_.MemberProperty{JsiiProperty: "styleInput", GoGetter: "StyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaStyle",
+		reflect.TypeOf((*DashboardWidgetTreemapDefinitionRequestFormulaStyle)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaStyleOutputReference",
+		reflect.TypeOf((*DashboardWidgetTreemapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndex", GoGetter: "PaletteIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteIndexInput", GoGetter: "PaletteIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPaletteIndex", GoMethod: "ResetPaletteIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

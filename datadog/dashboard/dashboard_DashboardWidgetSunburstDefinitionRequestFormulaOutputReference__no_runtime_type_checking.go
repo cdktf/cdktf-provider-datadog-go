@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetSunburstDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enableLogsSample", GoGetter: "EnableLogsSample"},
 			_jsii_.MemberProperty{JsiiProperty: "enableLogsSampleInput", GoGetter: "EnableLogsSampleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableSamples", GoGetter: "EnableSamples"},
 			_jsii_.MemberProperty{JsiiProperty: "escalationMessage", GoGetter: "EscalationMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "escalationMessageInput", GoGetter: "EscalationMessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "evaluationDelay", GoGetter: "EvaluationDelay"},

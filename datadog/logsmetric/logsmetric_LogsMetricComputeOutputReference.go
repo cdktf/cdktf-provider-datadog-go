@@ -30,6 +30,9 @@ type LogsMetricComputeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludePercentiles() interface{}
+	SetIncludePercentiles(val interface{})
+	IncludePercentilesInput() interface{}
 	InternalValue() *LogsMetricCompute
 	SetInternalValue(val *LogsMetricCompute)
 	Path() *string
@@ -67,6 +70,7 @@ type LogsMetricComputeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIncludePercentiles()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -138,6 +142,26 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsMetricComputeOutputReference) IncludePercentiles() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includePercentiles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsMetricComputeOutputReference) IncludePercentilesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includePercentilesInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +274,17 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference)SetComplexObjectIsFromSet(va
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsMetricComputeOutputReference)SetIncludePercentiles(val interface{}) {
+	if err := j.validateSetIncludePercentilesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includePercentiles",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationForAttribute(p
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LogsMetricComputeOutputReference) ResetIncludePercentiles() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIncludePercentiles",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LogsMetricComputeOutputReference) ResetPath() {

@@ -10,6 +10,10 @@ type SyntheticsTestRequestDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body_type SyntheticsTest#body_type}
 	BodyType *string `field:"optional" json:"bodyType" yaml:"bodyType"`
+	// The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#call_type SyntheticsTest#call_type}
+	CallType *string `field:"optional" json:"callType" yaml:"callType"`
 	// By default, the client certificate is applied on the domain of the starting URL for browser tests.
 	//
 	// If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
@@ -32,7 +36,9 @@ type SyntheticsTestRequestDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#message SyntheticsTest#message}
 	Message *string `field:"optional" json:"message" yaml:"message"`
-	// The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
+	// Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field.
+	//
+	// Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#method SyntheticsTest#method}
 	Method *string `field:"optional" json:"method" yaml:"method"`
@@ -52,7 +58,7 @@ type SyntheticsTestRequestDefinition struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#servername SyntheticsTest#servername}
 	Servername *string `field:"optional" json:"servername" yaml:"servername"`
-	// For gRPC tests, service to target for healthcheck.
+	// The gRPC service on which you want to perform the gRPC call.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service SyntheticsTest#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`

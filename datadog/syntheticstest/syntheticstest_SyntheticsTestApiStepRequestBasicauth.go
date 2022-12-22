@@ -6,6 +6,22 @@ type SyntheticsTestApiStepRequestBasicauth struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_key SyntheticsTest#access_key}
 	AccessKey *string `field:"optional" json:"accessKey" yaml:"accessKey"`
+	// Access token url for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+	AccessTokenUrl *string `field:"optional" json:"accessTokenUrl" yaml:"accessTokenUrl"`
+	// Audience for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#audience SyntheticsTest#audience}
+	Audience *string `field:"optional" json:"audience" yaml:"audience"`
+	// Client ID for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_id SyntheticsTest#client_id}
+	ClientId *string `field:"optional" json:"clientId" yaml:"clientId"`
+	// Client secret for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_secret SyntheticsTest#client_secret}
+	ClientSecret *string `field:"optional" json:"clientSecret" yaml:"clientSecret"`
 	// Domain for `ntlm` authentication.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#domain SyntheticsTest#domain}
@@ -18,6 +34,14 @@ type SyntheticsTestApiStepRequestBasicauth struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#region SyntheticsTest#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// Resource for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#resource SyntheticsTest#resource}
+	Resource *string `field:"optional" json:"resource" yaml:"resource"`
+	// Scope for `oauth-client` or `oauth-rop` authentication.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scope SyntheticsTest#scope}
+	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 	// Secret key for `SIGV4` authentication.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secret_key SyntheticsTest#secret_key}
@@ -30,6 +54,10 @@ type SyntheticsTestApiStepRequestBasicauth struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#session_token SyntheticsTest#session_token}
 	SessionToken *string `field:"optional" json:"sessionToken" yaml:"sessionToken"`
+	// Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+	TokenApiAuthentication *string `field:"optional" json:"tokenApiAuthentication" yaml:"tokenApiAuthentication"`
 	// Type of basic authentication to use when performing the test.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}

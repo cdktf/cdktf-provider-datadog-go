@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetTreemapDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

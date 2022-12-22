@@ -6,7 +6,7 @@ type LogsArchiveAzureArchive struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#client_id LogsArchive#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
-	// The container where the archive will be stored.
+	// The container where the archive is stored.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#container LogsArchive#container}
 	Container *string `field:"required" json:"container" yaml:"container"`
@@ -18,7 +18,7 @@ type LogsArchiveAzureArchive struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#tenant_id LogsArchive#tenant_id}
 	TenantId *string `field:"required" json:"tenantId" yaml:"tenantId"`
-	// The path where the archive will be stored.
+	// The path where the archive is stored.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`

@@ -25,6 +25,7 @@ type DataDatadogMonitor interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EnableLogsSample() cdktf.IResolvable
+	EnableSamples() cdktf.IResolvable
 	EscalationMessage() *string
 	EvaluationDelay() *float64
 	// Experimental.
@@ -182,6 +183,16 @@ func (j *jsiiProxy_DataDatadogMonitor) EnableLogsSample() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"enableLogsSample",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) EnableSamples() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableSamples",
 		&returns,
 	)
 	return returns

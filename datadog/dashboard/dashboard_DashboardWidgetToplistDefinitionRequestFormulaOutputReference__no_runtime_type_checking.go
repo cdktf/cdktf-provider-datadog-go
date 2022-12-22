@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetToplistDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

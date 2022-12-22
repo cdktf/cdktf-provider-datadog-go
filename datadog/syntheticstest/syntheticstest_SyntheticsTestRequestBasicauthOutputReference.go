@@ -13,6 +13,18 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	AccessKey() *string
 	SetAccessKey(val *string)
 	AccessKeyInput() *string
+	AccessTokenUrl() *string
+	SetAccessTokenUrl(val *string)
+	AccessTokenUrlInput() *string
+	Audience() *string
+	SetAudience(val *string)
+	AudienceInput() *string
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
+	ClientSecret() *string
+	SetClientSecret(val *string)
+	ClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,6 +53,12 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	Resource() *string
+	SetResource(val *string)
+	ResourceInput() *string
+	Scope() *string
+	SetScope(val *string)
+	ScopeInput() *string
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -58,6 +76,9 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TokenApiAuthentication() *string
+	SetTokenApiAuthentication(val *string)
+	TokenApiAuthenticationInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -92,12 +113,19 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessKey()
+	ResetAccessTokenUrl()
+	ResetAudience()
+	ResetClientId()
+	ResetClientSecret()
 	ResetDomain()
 	ResetPassword()
 	ResetRegion()
+	ResetResource()
+	ResetScope()
 	ResetSecretKey()
 	ResetServiceName()
 	ResetSessionToken()
+	ResetTokenApiAuthentication()
 	ResetType()
 	ResetUsername()
 	ResetWorkstation()
@@ -131,6 +159,86 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AccessKeyInput
 	_jsii_.Get(
 		j,
 		"accessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AccessTokenUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AccessTokenUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Audience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"audience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"audienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretInput",
 		&returns,
 	)
 	return returns
@@ -246,6 +354,46 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) RegionInput() 
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Resource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Scope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SecretKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,6 +469,26 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TerraformResou
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TokenApiAuthentication() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenApiAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TokenApiAuthenticationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenApiAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -425,6 +593,50 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAccessKey(va
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAccessTokenUrl(val *string) {
+	if err := j.validateSetAccessTokenUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessTokenUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAudience(val *string) {
+	if err := j.validateSetAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"audience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecret",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -491,6 +703,28 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetRegion(val *
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetResource(val *string) {
+	if err := j.validateSetResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetScope(val *string) {
+	if err := j.validateSetScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scope",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetSecretKey(val *string) {
 	if err := j.validateSetSecretKeyParameters(val); err != nil {
 		panic(err)
@@ -542,6 +776,17 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTokenApiAuthentication(val *string) {
+	if err := j.validateSetTokenApiAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenApiAuthentication",
 		val,
 	)
 }
@@ -773,6 +1018,38 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAccessKey
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAccessTokenUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessTokenUrl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAudience() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAudience",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetClientId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetDomain() {
 	_jsii_.InvokeVoid(
 		s,
@@ -797,6 +1074,22 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetRegion() 
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetResource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResource",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScope",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetSecretKey() {
 	_jsii_.InvokeVoid(
 		s,
@@ -817,6 +1110,14 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetSessionTo
 	_jsii_.InvokeVoid(
 		s,
 		"resetSessionToken",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetTokenApiAuthentication() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTokenApiAuthentication",
 		nil, // no parameters
 	)
 }

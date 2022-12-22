@@ -22,5 +22,9 @@ type DashboardWidgetTreemapDefinitionRequestFormula struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
 	Limit *DashboardWidgetTreemapDefinitionRequestFormulaLimit `field:"optional" json:"limit" yaml:"limit"`
+	// style block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
+	Style *DashboardWidgetTreemapDefinitionRequestFormulaStyle `field:"optional" json:"style" yaml:"style"`
 }
 

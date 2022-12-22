@@ -42,6 +42,8 @@ type DashboardWidgetGeomapDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGeomapDefinitionRequestFormulaLimit
+	Style() DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetGeomapDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetGeomapDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGeomapDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetGeomapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) Style() DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetGeomapDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetGeomapDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGeomapDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

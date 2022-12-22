@@ -42,6 +42,8 @@ type DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaLimit
+	Style() DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference
+	StyleInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +78,12 @@ type DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetTimeseriesDefinitionRequestFormulaLimit)
+	PutStyle(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +244,26 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) Style() DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference {
+	var returns DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) StyleInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle {
+	var returns *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -617,6 +652,14 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

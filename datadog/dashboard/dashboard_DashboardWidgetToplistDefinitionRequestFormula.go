@@ -22,5 +22,9 @@ type DashboardWidgetToplistDefinitionRequestFormula struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
 	Limit *DashboardWidgetToplistDefinitionRequestFormulaLimit `field:"optional" json:"limit" yaml:"limit"`
+	// style block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
+	Style *DashboardWidgetToplistDefinitionRequestFormulaStyle `field:"optional" json:"style" yaml:"style"`
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGeomapDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

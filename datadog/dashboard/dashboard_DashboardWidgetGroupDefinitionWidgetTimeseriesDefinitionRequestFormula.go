@@ -22,5 +22,9 @@ type DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula stru
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
 	Limit *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit `field:"optional" json:"limit" yaml:"limit"`
+	// style block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
+	Style *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle `field:"optional" json:"style" yaml:"style"`
 }
 

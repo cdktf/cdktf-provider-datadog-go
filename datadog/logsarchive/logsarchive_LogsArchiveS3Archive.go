@@ -10,13 +10,13 @@ type LogsArchiveS3Archive struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#bucket LogsArchive#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Path where the archive will be stored.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
-	Path *string `field:"required" json:"path" yaml:"path"`
 	// Your AWS role name.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#role_name LogsArchive#role_name}
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
+	// Path where the archive is stored.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
+	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

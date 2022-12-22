@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetQueryTableDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

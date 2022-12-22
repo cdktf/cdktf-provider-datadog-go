@@ -52,6 +52,22 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAccessTokenUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetClientIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetClientSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -76,6 +92,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetResourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetSecretKeyParameters(val *string) error {
 	return nil
 }
@@ -93,6 +117,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
 	return nil
 }
 

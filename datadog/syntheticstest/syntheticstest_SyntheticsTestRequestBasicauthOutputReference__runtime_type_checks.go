@@ -106,6 +106,38 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAcc
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAccessTokenUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetClientIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetClientSecretParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -203,6 +235,22 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetReg
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetResourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetSecretKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -236,6 +284,14 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTer
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

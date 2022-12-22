@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

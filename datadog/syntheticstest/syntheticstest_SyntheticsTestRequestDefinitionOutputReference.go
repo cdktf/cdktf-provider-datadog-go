@@ -16,6 +16,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	BodyType() *string
 	SetBodyType(val *string)
 	BodyTypeInput() *string
+	CallType() *string
+	SetCallType(val *string)
+	CallTypeInput() *string
 	CertificateDomains() *[]*string
 	SetCertificateDomains(val *[]*string)
 	CertificateDomainsInput() *[]*string
@@ -111,6 +114,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBody()
 	ResetBodyType()
+	ResetCallType()
 	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) BodyTypeInput
 	_jsii_.Get(
 		j,
 		"bodyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) CallType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) CallTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callTypeInput",
 		&returns,
 	)
 	return returns
@@ -576,6 +600,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetBodyType(va
 	_jsii_.Set(
 		j,
 		"bodyType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetCallType(val *string) {
+	if err := j.validateSetCallTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"callType",
 		val,
 	)
 }
@@ -987,6 +1022,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetBodyType
 	_jsii_.InvokeVoid(
 		s,
 		"resetBodyType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetCallType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCallType",
 		nil, // no parameters
 	)
 }

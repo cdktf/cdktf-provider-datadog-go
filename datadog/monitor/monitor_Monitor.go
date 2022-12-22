@@ -31,6 +31,7 @@ type Monitor interface {
 	EnableLogsSample() interface{}
 	SetEnableLogsSample(val interface{})
 	EnableLogsSampleInput() interface{}
+	EnableSamples() cdktf.IResolvable
 	EscalationMessage() *string
 	SetEscalationMessage(val *string)
 	EscalationMessageInput() *string
@@ -294,6 +295,16 @@ func (j *jsiiProxy_Monitor) EnableLogsSampleInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableLogsSampleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) EnableSamples() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableSamples",
 		&returns,
 	)
 	return returns

@@ -19,6 +19,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	BodyType() *string
 	SetBodyType(val *string)
 	BodyTypeInput() *string
+	CallType() *string
+	SetCallType(val *string)
+	CallTypeInput() *string
 	CertificateDomains() *[]*string
 	SetCertificateDomains(val *[]*string)
 	CertificateDomainsInput() *[]*string
@@ -118,6 +121,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetAllowInsecure()
 	ResetBody()
 	ResetBodyType()
+	ResetCallType()
 	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) BodyTy
 	_jsii_.Get(
 		j,
 		"bodyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CallType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CallTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callTypeInput",
 		&returns,
 	)
 	return returns
@@ -639,6 +663,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetBody
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCallType(val *string) {
+	if err := j.validateSetCallTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"callType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCertificateDomains(val *[]*string) {
 	if err := j.validateSetCertificateDomainsParameters(val); err != nil {
 		panic(err)
@@ -1065,6 +1100,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		s,
 		"resetBodyType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetCallType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCallType",
 		nil, // no parameters
 	)
 }

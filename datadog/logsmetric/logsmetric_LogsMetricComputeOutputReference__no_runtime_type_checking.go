@@ -60,6 +60,10 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_LogsMetricComputeOutputReference) validateSetIncludePercentilesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsMetricComputeOutputReference) validateSetInternalValueParameters(val *LogsMetricCompute) error {
 	return nil
 }
