@@ -41,6 +41,9 @@ type SyntheticsTestConfigVariableOutputReference interface {
 	Pattern() *string
 	SetPattern(val *string)
 	PatternInput() *string
+	Secure() interface{}
+	SetSecure(val interface{})
+	SecureInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type SyntheticsTestConfigVariableOutputReference interface {
 	ResetExample()
 	ResetId()
 	ResetPattern()
+	ResetSecure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -219,6 +223,26 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableOutputReference) PatternInput() *
 	_jsii_.Get(
 		j,
 		"patternInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestConfigVariableOutputReference) Secure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestConfigVariableOutputReference) SecureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureInput",
 		&returns,
 	)
 	return returns
@@ -365,6 +389,17 @@ func (j *jsiiProxy_SyntheticsTestConfigVariableOutputReference)SetPattern(val *s
 	_jsii_.Set(
 		j,
 		"pattern",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestConfigVariableOutputReference)SetSecure(val interface{}) {
+	if err := j.validateSetSecureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secure",
 		val,
 	)
 }
@@ -608,6 +643,14 @@ func (s *jsiiProxy_SyntheticsTestConfigVariableOutputReference) ResetPattern() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPattern",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestConfigVariableOutputReference) ResetSecure() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecure",
 		nil, // no parameters
 	)
 }

@@ -12,6 +12,8 @@ type SyntheticsTestConfigVariable struct {
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Example for the variable.
 	//
+	// This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#example SyntheticsTest#example}
 	Example *string `field:"optional" json:"example" yaml:"example"`
 	// When type = `global`, ID of the global variable to use.
@@ -23,7 +25,13 @@ type SyntheticsTestConfigVariable struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Pattern of the variable.
 	//
+	// This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#pattern SyntheticsTest#pattern}
 	Pattern *string `field:"optional" json:"pattern" yaml:"pattern"`
+	// Whether the value of this variable will be obfuscated in test results.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secure SyntheticsTest#secure}
+	Secure interface{} `field:"optional" json:"secure" yaml:"secure"`
 }
 

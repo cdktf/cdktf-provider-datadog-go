@@ -1,23 +1,20 @@
-package role
+package datadatadogintegrationawslogsservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/role/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v4/datadatadogintegrationawslogsservices/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role}.
-type Role interface {
-	cdktf.TerraformResource
+// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services}.
+type DataDatadogIntegrationAwsLogsServices interface {
+	cdktf.TerraformDataSource
+	AwsLogsServices() DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	// Experimental.
-	Connection() interface{}
-	// Experimental.
-	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -43,21 +40,12 @@ type Role interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Permission() RolePermissionList
-	PermissionInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
-	// Experimental.
-	Provisioners() *[]interface{}
-	// Experimental.
-	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -66,10 +54,6 @@ type Role interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UserCount() *float64
-	Validate() interface{}
-	SetValidate(val interface{})
-	ValidateInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,13 +79,10 @@ type Role interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPermission(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPermission()
-	ResetValidate()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -112,12 +93,22 @@ type Role interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for Role
-type jsiiProxy_Role struct {
-	internal.Type__cdktfTerraformResource
+// The jsii proxy struct for DataDatadogIntegrationAwsLogsServices
+type jsiiProxy_DataDatadogIntegrationAwsLogsServices struct {
+	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_Role) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) AwsLogsServices() DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList {
+	var returns DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList
+	_jsii_.Get(
+		j,
+		"awsLogsServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -127,17 +118,7 @@ func (j *jsiiProxy_Role) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Connection() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -147,7 +128,7 @@ func (j *jsiiProxy_Role) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Count() *float64 {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -157,7 +138,7 @@ func (j *jsiiProxy_Role) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) DependsOn() *[]*string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -167,7 +148,7 @@ func (j *jsiiProxy_Role) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -177,7 +158,7 @@ func (j *jsiiProxy_Role) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Fqn() *string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -187,7 +168,7 @@ func (j *jsiiProxy_Role) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -197,7 +178,7 @@ func (j *jsiiProxy_Role) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Id() *string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -207,7 +188,7 @@ func (j *jsiiProxy_Role) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) IdInput() *string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -217,7 +198,7 @@ func (j *jsiiProxy_Role) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -227,27 +208,7 @@ func (j *jsiiProxy_Role) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) Node() constructs.Node {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -257,27 +218,7 @@ func (j *jsiiProxy_Role) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Permission() RolePermissionList {
-	var returns RolePermissionList
-	_jsii_.Get(
-		j,
-		"permission",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) PermissionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"permissionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -287,17 +228,7 @@ func (j *jsiiProxy_Role) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Provisioners() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"provisioners",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) RawOverrides() interface{} {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -307,7 +238,7 @@ func (j *jsiiProxy_Role) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -317,7 +248,7 @@ func (j *jsiiProxy_Role) TerraformGeneratorMetadata() *cdktf.TerraformProviderGe
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -327,7 +258,7 @@ func (j *jsiiProxy_Role) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformResourceType() *string {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -337,48 +268,18 @@ func (j *jsiiProxy_Role) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) UserCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"userCount",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Role) Validate() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"validate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) ValidateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"validateInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role} Resource.
-func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
+// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+func NewDataDatadogIntegrationAwsLogsServices(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) DataDatadogIntegrationAwsLogsServices {
 	_init_.Initialize()
 
-	if err := validateNewRoleParameters(scope, id, config); err != nil {
+	if err := validateNewDataDatadogIntegrationAwsLogsServicesParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_Role{}
+	j := jsiiProxy_DataDatadogIntegrationAwsLogsServices{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.role.Role",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,29 +287,18 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role} Resource.
-func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+func NewDataDatadogIntegrationAwsLogsServices_Override(d DataDatadogIntegrationAwsLogsServices, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.role.Role",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
 		[]interface{}{scope, id, config},
-		r,
+		d,
 	)
 }
 
-func (j *jsiiProxy_Role)SetConnection(val interface{}) {
-	if err := j.validateSetConnectionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -416,7 +306,7 @@ func (j *jsiiProxy_Role)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +314,7 @@ func (j *jsiiProxy_Role)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +322,7 @@ func (j *jsiiProxy_Role)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetId(val *string) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +333,7 @@ func (j *jsiiProxy_Role)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,43 +344,10 @@ func (j *jsiiProxy_Role)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetProvisioners(val *[]interface{}) {
-	if err := j.validateSetProvisionersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetValidate(val interface{}) {
-	if err := j.validateSetValidateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"validate",
 		val,
 	)
 }
@@ -512,16 +369,16 @@ func (j *jsiiProxy_Role)SetValidate(val interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Role_IsConstruct(x interface{}) *bool {
+func DataDatadogIntegrationAwsLogsServices_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsConstructParameters(x); err != nil {
+	if err := validateDataDatadogIntegrationAwsLogsServices_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.role.Role",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,17 +388,17 @@ func Role_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Role_IsTerraformElement(x interface{}) *bool {
+func DataDatadogIntegrationAwsLogsServices_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataDatadogIntegrationAwsLogsServices_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.role.Role",
-		"isTerraformElement",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
+		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
 	)
@@ -550,17 +407,17 @@ func Role_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Role_IsTerraformResource(x interface{}) *bool {
+func DataDatadogIntegrationAwsLogsServices_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsTerraformResourceParameters(x); err != nil {
+	if err := validateDataDatadogIntegrationAwsLogsServices_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.role.Role",
-		"isTerraformResource",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)
@@ -568,36 +425,36 @@ func Role_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func Role_TfResourceType() *string {
+func DataDatadogIntegrationAwsLogsServices_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.role.Role",
+		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (r *jsiiProxy_Role) AddOverride(path *string, value interface{}) {
-	if err := r.validateAddOverrideParameters(path, value); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		r,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -606,14 +463,14 @@ func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[str
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -622,14 +479,14 @@ func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.I
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -638,14 +495,14 @@ func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -654,14 +511,14 @@ func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -670,14 +527,14 @@ func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -686,14 +543,14 @@ func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -702,14 +559,14 @@ func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string {
-	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -718,14 +575,14 @@ func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string 
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -734,14 +591,14 @@ func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -750,65 +607,38 @@ func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) c
 	return returns
 }
 
-func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
-	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		r,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_Role) PutPermission(value interface{}) {
-	if err := r.validatePutPermissionParameters(value); err != nil {
-		panic(err)
-	}
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ResetId() {
 	_jsii_.InvokeVoid(
-		r,
-		"putPermission",
-		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_Role) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
+		d,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (r *jsiiProxy_Role) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		r,
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (r *jsiiProxy_Role) ResetPermission() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPermission",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) ResetValidate() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetValidate",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -817,11 +647,11 @@ func (r *jsiiProxy_Role) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToMetadata() interface{} {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -830,11 +660,11 @@ func (r *jsiiProxy_Role) ToMetadata() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToString() *string {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -843,11 +673,11 @@ func (r *jsiiProxy_Role) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToTerraform() interface{} {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		r,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

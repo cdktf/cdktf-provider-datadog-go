@@ -88,6 +88,10 @@ func (j *jsiiProxy_Role) validateSetProvisionersParameters(val *[]interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Role) validateSetValidateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewRoleParameters(scope constructs.Construct, id *string, config *RoleConfig) error {
 	return nil
 }

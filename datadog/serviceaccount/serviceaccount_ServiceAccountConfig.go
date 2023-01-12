@@ -1,10 +1,10 @@
-package role
+package serviceaccount
 
 import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type RoleConfig struct {
+type ServiceAccountConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
@@ -19,22 +19,26 @@ type RoleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Name of the role.
+	// Email of the associated user.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#name Role#name}
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#id Role#id}.
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#email ServiceAccount#email}
+	Email *string `field:"required" json:"email" yaml:"email"`
+	// Whether the service account is disabled.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#disabled ServiceAccount#disabled}
+	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#id ServiceAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// permission block.
+	// Name for the service account.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#permission Role#permission}
-	Permission interface{} `field:"optional" json:"permission" yaml:"permission"`
-	// If set to `false`, skip the validation call done during plan.
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#name ServiceAccount#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
+	// A list a role IDs to assign to the service account.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#validate Role#validate}
-	Validate interface{} `field:"optional" json:"validate" yaml:"validate"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#roles ServiceAccount#roles}
+	Roles *[]*string `field:"optional" json:"roles" yaml:"roles"`
 }
 
