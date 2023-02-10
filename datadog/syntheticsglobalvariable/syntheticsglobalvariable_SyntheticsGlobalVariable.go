@@ -51,6 +51,8 @@ type SyntheticsGlobalVariable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() SyntheticsGlobalVariableOptionsOutputReference
+	OptionsInput() *SyntheticsGlobalVariableOptions
 	ParseTestId() *string
 	SetParseTestId(val *string)
 	ParseTestIdInput() *string
@@ -109,9 +111,11 @@ type SyntheticsGlobalVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOptions(value *SyntheticsGlobalVariableOptions)
 	PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions)
 	ResetDescription()
 	ResetId()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) Options() SyntheticsGlobalVariableOptionsOutputReference {
+	var returns SyntheticsGlobalVariableOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) OptionsInput() *SyntheticsGlobalVariableOptions {
+	var returns *SyntheticsGlobalVariableOptions
+	_jsii_.Get(
+		j,
+		"optionsInput",
 		&returns,
 	)
 	return returns
@@ -924,6 +948,17 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) PutOptions(value *SyntheticsGlobalVariableOptions) {
+	if err := s.validatePutOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions) {
 	if err := s.validatePutParseTestOptionsParameters(value); err != nil {
 		panic(err)
@@ -947,6 +982,14 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptions",
 		nil, // no parameters
 	)
 }

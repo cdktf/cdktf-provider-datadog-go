@@ -112,11 +112,23 @@ func (j *jsiiProxy_ServiceLevelObjective) validateSetTagsParameters(val *[]*stri
 	return nil
 }
 
+func (j *jsiiProxy_ServiceLevelObjective) validateSetTargetThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) validateSetTimeframeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceLevelObjective) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ServiceLevelObjective) validateSetValidateParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) validateSetWarningThresholdParameters(val *float64) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) validateSetEventSizeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) validateSetIndexesParameters(val *[]*string) error {
 	return nil
 }

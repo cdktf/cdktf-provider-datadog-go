@@ -43,6 +43,10 @@ type IntegrationGcpConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#automute IntegrationGcp#automute}
 	Automute interface{} `field:"optional" json:"automute" yaml:"automute"`
+	// Whether Datadog collects cloud security posture management resources from your GCP project.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+	CspmResourceCollectionEnabled interface{} `field:"optional" json:"cspmResourceCollectionEnabled" yaml:"cspmResourceCollectionEnabled"`
 	// Limit the GCE instances that are pulled into Datadog by using tags.
 	//
 	// Only hosts that match one of the defined tags are imported into Datadog.

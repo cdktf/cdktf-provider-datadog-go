@@ -64,9 +64,23 @@ type ServiceLevelObjectiveConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#tags ServiceLevelObjective#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
+	// The objective's target in `(0,100)`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+	TargetThreshold *float64 `field:"optional" json:"targetThreshold" yaml:"targetThreshold"`
+	// The time frame for the objective.
+	//
+	// The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+	Timeframe *string `field:"optional" json:"timeframe" yaml:"timeframe"`
 	// Whether or not to validate the SLO.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#validate ServiceLevelObjective#validate}
 	Validate interface{} `field:"optional" json:"validate" yaml:"validate"`
+	// The objective's warning value in `(0,100)`. This must be greater than the target value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+	WarningThreshold *float64 `field:"optional" json:"warningThreshold" yaml:"warningThreshold"`
 }
 

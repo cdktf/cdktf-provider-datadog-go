@@ -116,6 +116,10 @@ type MonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#no_data_timeframe Monitor#no_data_timeframe}
 	NoDataTimeframe *float64 `field:"optional" json:"noDataTimeframe" yaml:"noDataTimeframe"`
+	// Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notification_preset_name Monitor#notification_preset_name}
+	NotificationPresetName *string `field:"optional" json:"notificationPresetName" yaml:"notificationPresetName"`
 	// A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_audit Monitor#notify_audit}

@@ -28,6 +28,9 @@ type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputR
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
+	EventSize() *string
+	SetEventSize(val *string)
+	EventSizeInput() *string
 	// Experimental.
 	Fqn() *string
 	Indexes() *[]*string
@@ -73,6 +76,7 @@ type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputR
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEventSize()
 	ResetIndexes()
 	ResetQueryString()
 	ResetStorage()
@@ -136,6 +140,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	_jsii_.Get(
 		j,
 		"dataSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) EventSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) EventSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSizeInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	_jsii_.Set(
 		j,
 		"dataSource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference)SetEventSize(val *string) {
+	if err := j.validateSetEventSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventSize",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) ResetEventSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEventSize",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) ResetIndexes() {

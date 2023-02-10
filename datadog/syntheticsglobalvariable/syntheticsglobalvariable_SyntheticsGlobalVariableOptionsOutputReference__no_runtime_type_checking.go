@@ -1,0 +1,78 @@
+//go:build no_runtime_type_checking
+
+package syntheticsglobalvariable
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validatePutTotpParametersParameters(value *SyntheticsGlobalVariableOptionsTotpParameters) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetInternalValueParameters(val *SyntheticsGlobalVariableOptions) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewSyntheticsGlobalVariableOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

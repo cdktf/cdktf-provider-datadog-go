@@ -20,7 +20,7 @@ type SecurityMonitoringRuleOptions struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
 	DecreaseCriticalityBasedOnEnv interface{} `field:"optional" json:"decreaseCriticalityBasedOnEnv" yaml:"decreaseCriticalityBasedOnEnv"`
-	// The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`.
+	// The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
 	DetectionMethod *string `field:"optional" json:"detectionMethod" yaml:"detectionMethod"`

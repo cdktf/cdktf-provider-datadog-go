@@ -47,6 +47,9 @@ type SyntheticsTestOptionsListOutputReference interface {
 	FollowRedirectsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HttpVersion() *string
+	SetHttpVersion(val *string)
+	HttpVersionInput() *string
 	IgnoreServerCertificateError() interface{}
 	SetIgnoreServerCertificateError(val interface{})
 	IgnoreServerCertificateErrorInput() interface{}
@@ -125,6 +128,7 @@ type SyntheticsTestOptionsListOutputReference interface {
 	ResetDisableCors()
 	ResetDisableCsp()
 	ResetFollowRedirects()
+	ResetHttpVersion()
 	ResetIgnoreServerCertificateError()
 	ResetInitialNavigationTimeout()
 	ResetMinFailureDuration()
@@ -326,6 +330,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersionInput",
 		&returns,
 	)
 	return returns
@@ -713,6 +737,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(v
 	_jsii_.Set(
 		j,
 		"followRedirects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetHttpVersion(val *string) {
+	if err := j.validateSetHttpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpVersion",
 		val,
 	)
 }
@@ -1131,6 +1166,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetFollowRedirect
 	_jsii_.InvokeVoid(
 		s,
 		"resetFollowRedirects",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetHttpVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpVersion",
 		nil, // no parameters
 	)
 }

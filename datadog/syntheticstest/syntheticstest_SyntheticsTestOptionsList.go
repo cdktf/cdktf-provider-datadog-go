@@ -34,6 +34,10 @@ type SyntheticsTestOptionsList struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	// HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#http_version SyntheticsTest#http_version}
+	HttpVersion *string `field:"optional" json:"httpVersion" yaml:"httpVersion"`
 	// Ignore server certificate error.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}

@@ -96,6 +96,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetFollowRe
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetHttpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetIgnoreServerCertificateErrorParameters(val interface{}) error {
 	return nil
 }

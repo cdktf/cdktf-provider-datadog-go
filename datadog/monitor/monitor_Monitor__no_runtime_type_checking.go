@@ -144,6 +144,10 @@ func (j *jsiiProxy_Monitor) validateSetNoDataTimeframeParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetNotificationPresetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetNotifyAuditParameters(val interface{}) error {
 	return nil
 }

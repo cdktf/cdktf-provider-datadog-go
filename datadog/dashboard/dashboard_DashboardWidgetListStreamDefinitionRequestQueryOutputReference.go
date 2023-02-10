@@ -28,6 +28,9 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
+	EventSize() *string
+	SetEventSize(val *string)
+	EventSizeInput() *string
 	// Experimental.
 	Fqn() *string
 	Indexes() *[]*string
@@ -73,6 +76,7 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEventSize()
 	ResetIndexes()
 	ResetQueryString()
 	ResetStorage()
@@ -136,6 +140,26 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.Get(
 		j,
 		"dataSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) EventSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) EventSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSizeInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.Set(
 		j,
 		"dataSource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference)SetEventSize(val *string) {
+	if err := j.validateSetEventSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventSize",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetEventSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEventSize",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetIndexes() {

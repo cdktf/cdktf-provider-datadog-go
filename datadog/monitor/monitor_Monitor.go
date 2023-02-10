@@ -89,6 +89,9 @@ type Monitor interface {
 	NoDataTimeframeInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	NotificationPresetName() *string
+	SetNotificationPresetName(val *string)
+	NotificationPresetNameInput() *string
 	NotifyAudit() interface{}
 	SetNotifyAudit(val interface{})
 	NotifyAuditInput() interface{}
@@ -197,6 +200,7 @@ type Monitor interface {
 	ResetNewGroupDelay()
 	ResetNewHostDelay()
 	ResetNoDataTimeframe()
+	ResetNotificationPresetName()
 	ResetNotifyAudit()
 	ResetNotifyBy()
 	ResetNotifyNoData()
@@ -655,6 +659,26 @@ func (j *jsiiProxy_Monitor) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) NotificationPresetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPresetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) NotificationPresetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPresetNameInput",
 		&returns,
 	)
 	return returns
@@ -1290,6 +1314,17 @@ func (j *jsiiProxy_Monitor)SetNoDataTimeframe(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Monitor)SetNotificationPresetName(val *string) {
+	if err := j.validateSetNotificationPresetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationPresetName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Monitor)SetNotifyAudit(val interface{}) {
 	if err := j.validateSetNotifyAuditParameters(val); err != nil {
 		panic(err)
@@ -1892,6 +1927,14 @@ func (m *jsiiProxy_Monitor) ResetNoDataTimeframe() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetNoDataTimeframe",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetNotificationPresetName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNotificationPresetName",
 		nil, // no parameters
 	)
 }

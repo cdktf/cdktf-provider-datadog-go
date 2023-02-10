@@ -12,7 +12,7 @@ type SecurityMonitoringRuleQuery struct {
 	AgentRule interface{} `field:"optional" json:"agentRule" yaml:"agentRule"`
 	// The aggregation type.
 	//
-	// For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+	// For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
 	Aggregation *string `field:"optional" json:"aggregation" yaml:"aggregation"`

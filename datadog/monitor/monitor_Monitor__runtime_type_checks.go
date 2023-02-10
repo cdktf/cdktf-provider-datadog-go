@@ -412,6 +412,14 @@ func (j *jsiiProxy_Monitor) validateSetNoDataTimeframeParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetNotificationPresetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetNotifyAuditParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

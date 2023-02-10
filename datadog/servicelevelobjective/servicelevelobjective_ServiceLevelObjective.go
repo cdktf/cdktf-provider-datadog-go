@@ -75,6 +75,9 @@ type ServiceLevelObjective interface {
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
+	TargetThreshold() *float64
+	SetTargetThreshold(val *float64)
+	TargetThresholdInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -83,12 +86,18 @@ type ServiceLevelObjective interface {
 	TerraformResourceType() *string
 	Thresholds() ServiceLevelObjectiveThresholdsList
 	ThresholdsInput() interface{}
+	Timeframe() *string
+	SetTimeframe(val *string)
+	TimeframeInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
 	Validate() interface{}
 	SetValidate(val interface{})
 	ValidateInput() interface{}
+	WarningThreshold() *float64
+	SetWarningThreshold(val *float64)
+	WarningThresholdInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -126,7 +135,10 @@ type ServiceLevelObjective interface {
 	ResetOverrideLogicalId()
 	ResetQuery()
 	ResetTags()
+	ResetTargetThreshold()
+	ResetTimeframe()
 	ResetValidate()
+	ResetWarningThreshold()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -432,6 +444,26 @@ func (j *jsiiProxy_ServiceLevelObjective) TagsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceLevelObjective) TargetThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) TargetThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceLevelObjective) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -482,6 +514,26 @@ func (j *jsiiProxy_ServiceLevelObjective) ThresholdsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceLevelObjective) Timeframe() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeframe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) TimeframeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeframeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceLevelObjective) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -517,6 +569,26 @@ func (j *jsiiProxy_ServiceLevelObjective) ValidateInput() interface{} {
 	_jsii_.Get(
 		j,
 		"validateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) WarningThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"warningThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) WarningThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"warningThresholdInput",
 		&returns,
 	)
 	return returns
@@ -694,6 +766,28 @@ func (j *jsiiProxy_ServiceLevelObjective)SetTags(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ServiceLevelObjective)SetTargetThreshold(val *float64) {
+	if err := j.validateSetTargetThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelObjective)SetTimeframe(val *string) {
+	if err := j.validateSetTimeframeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeframe",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServiceLevelObjective)SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
@@ -712,6 +806,17 @@ func (j *jsiiProxy_ServiceLevelObjective)SetValidate(val interface{}) {
 	_jsii_.Set(
 		j,
 		"validate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelObjective)SetWarningThreshold(val *float64) {
+	if err := j.validateSetWarningThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warningThreshold",
 		val,
 	)
 }
@@ -1068,10 +1173,34 @@ func (s *jsiiProxy_ServiceLevelObjective) ResetTags() {
 	)
 }
 
+func (s *jsiiProxy_ServiceLevelObjective) ResetTargetThreshold() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetThreshold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjective) ResetTimeframe() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeframe",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServiceLevelObjective) ResetValidate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetValidate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjective) ResetWarningThreshold() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWarningThreshold",
 		nil, // no parameters
 	)
 }

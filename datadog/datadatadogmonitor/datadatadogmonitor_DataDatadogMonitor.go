@@ -62,6 +62,7 @@ type DataDatadogMonitor interface {
 	NoDataTimeframe() *float64
 	// The tree node.
 	Node() constructs.Node
+	NotificationPresetName() *string
 	NotifyAudit() cdktf.IResolvable
 	NotifyBy() *[]*string
 	NotifyNoData() cdktf.IResolvable
@@ -433,6 +434,16 @@ func (j *jsiiProxy_DataDatadogMonitor) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitor) NotificationPresetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPresetName",
 		&returns,
 	)
 	return returns

@@ -33,6 +33,9 @@ type IntegrationGcp interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CspmResourceCollectionEnabled() interface{}
+	SetCspmResourceCollectionEnabled(val interface{})
+	CspmResourceCollectionEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -108,6 +111,7 @@ type IntegrationGcp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutomute()
+	ResetCspmResourceCollectionEnabled()
 	ResetHostFilters()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -223,6 +227,26 @@ func (j *jsiiProxy_IntegrationGcp) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) CspmResourceCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cspmResourceCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) CspmResourceCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cspmResourceCollectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -526,6 +550,17 @@ func (j *jsiiProxy_IntegrationGcp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcp)SetCspmResourceCollectionEnabled(val interface{}) {
+	if err := j.validateSetCspmResourceCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cspmResourceCollectionEnabled",
 		val,
 	)
 }
@@ -901,6 +936,14 @@ func (i *jsiiProxy_IntegrationGcp) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAutomute",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcp) ResetCspmResourceCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCspmResourceCollectionEnabled",
 		nil, // no parameters
 	)
 }

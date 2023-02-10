@@ -2,7 +2,7 @@ package servicelevelobjective
 
 
 type ServiceLevelObjectiveThresholds struct {
-	// The objective's target in`[0,100]`.
+	// The objective's target in `(0,100)`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target ServiceLevelObjective#target}
 	Target *float64 `field:"required" json:"target" yaml:"target"`
@@ -12,7 +12,7 @@ type ServiceLevelObjectiveThresholds struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 	Timeframe *string `field:"required" json:"timeframe" yaml:"timeframe"`
-	// The objective's warning value in `[0,100]`. This must be greater than the target value.
+	// The objective's warning value in `(0,100)`. This must be greater than the target value.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning ServiceLevelObjective#warning}
 	Warning *float64 `field:"optional" json:"warning" yaml:"warning"`

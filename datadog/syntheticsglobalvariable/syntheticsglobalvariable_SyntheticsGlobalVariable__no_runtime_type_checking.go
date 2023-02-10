@@ -52,6 +52,10 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutOptionsParameters(value *SyntheticsGlobalVariableOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutParseTestOptionsParameters(value *SyntheticsGlobalVariableParseTestOptions) error {
 	return nil
 }
