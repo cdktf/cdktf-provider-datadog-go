@@ -1,6 +1,0 @@
-package datadatadogsecuritymonitoringrules
-
-
-type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions struct {
-}
-

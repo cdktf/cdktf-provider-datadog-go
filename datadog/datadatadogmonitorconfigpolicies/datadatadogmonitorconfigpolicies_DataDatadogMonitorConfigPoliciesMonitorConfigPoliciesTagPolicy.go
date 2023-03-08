@@ -1,6 +1,0 @@
-package datadatadogmonitorconfigpolicies
-
-
-type DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicy struct {
-}
-
