@@ -46,7 +46,7 @@ type SyntheticsTestOptionsList struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
 	InitialNavigationTimeout *float64 `field:"optional" json:"initialNavigationTimeout" yaml:"initialNavigationTimeout"`
-	// Minimum amount of time in failure required to trigger an alert. Default is `0`.
+	// Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 	MinFailureDuration *float64 `field:"optional" json:"minFailureDuration" yaml:"minFailureDuration"`

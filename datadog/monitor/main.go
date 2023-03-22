@@ -620,7 +620,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSearch", GoMethod: "PutSearch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIndexes", GoMethod: "ResetIndexes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSearch", GoMethod: "ResetSearch"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "search", GoGetter: "Search"},
 			_jsii_.MemberProperty{JsiiProperty: "searchInput", GoGetter: "SearchInput"},

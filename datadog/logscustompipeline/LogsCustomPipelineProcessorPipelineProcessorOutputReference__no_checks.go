@@ -76,6 +76,10 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) validatePutReferenceTableLookupProcessorParameters(value *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) validatePutServiceRemapperParameters(value *LogsCustomPipelineProcessorPipelineProcessorServiceRemapper) error {
 	return nil
 }

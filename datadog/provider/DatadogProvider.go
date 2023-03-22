@@ -32,9 +32,18 @@ type DatadogProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpClientRetryBackoffBase() *float64
+	SetHttpClientRetryBackoffBase(val *float64)
+	HttpClientRetryBackoffBaseInput() *float64
+	HttpClientRetryBackoffMultiplier() *float64
+	SetHttpClientRetryBackoffMultiplier(val *float64)
+	HttpClientRetryBackoffMultiplierInput() *float64
 	HttpClientRetryEnabled() interface{}
 	SetHttpClientRetryEnabled(val interface{})
 	HttpClientRetryEnabledInput() interface{}
+	HttpClientRetryMaxRetries() *float64
+	SetHttpClientRetryMaxRetries(val *float64)
+	HttpClientRetryMaxRetriesInput() *float64
 	HttpClientRetryTimeout() *float64
 	SetHttpClientRetryTimeout(val *float64)
 	HttpClientRetryTimeoutInput() *float64
@@ -62,7 +71,10 @@ type DatadogProvider interface {
 	ResetApiKey()
 	ResetApiUrl()
 	ResetAppKey()
+	ResetHttpClientRetryBackoffBase()
+	ResetHttpClientRetryBackoffMultiplier()
 	ResetHttpClientRetryEnabled()
+	ResetHttpClientRetryMaxRetries()
 	ResetHttpClientRetryTimeout()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -203,6 +215,46 @@ func (j *jsiiProxy_DatadogProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryBackoffBase() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryBackoffBase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryBackoffBaseInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryBackoffBaseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryBackoffMultiplier() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryBackoffMultiplier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryBackoffMultiplierInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryBackoffMultiplierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -218,6 +270,26 @@ func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"httpClientRetryEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryMaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryMaxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryMaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpClientRetryMaxRetriesInput",
 		&returns,
 	)
 	return returns
@@ -385,6 +457,22 @@ func (j *jsiiProxy_DatadogProvider)SetAppKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryBackoffBase(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpClientRetryBackoffBase",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryBackoffMultiplier(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpClientRetryBackoffMultiplier",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryEnabled(val interface{}) {
 	if err := j.validateSetHttpClientRetryEnabledParameters(val); err != nil {
 		panic(err)
@@ -392,6 +480,14 @@ func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"httpClientRetryEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryMaxRetries(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpClientRetryMaxRetries",
 		val,
 	)
 }
@@ -553,10 +649,34 @@ func (d *jsiiProxy_DatadogProvider) ResetAppKey() {
 	)
 }
 
+func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryBackoffBase() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpClientRetryBackoffBase",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryBackoffMultiplier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpClientRetryBackoffMultiplier",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetHttpClientRetryEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryMaxRetries() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpClientRetryMaxRetries",
 		nil, // no parameters
 	)
 }

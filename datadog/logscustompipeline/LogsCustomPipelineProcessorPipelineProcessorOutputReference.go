@@ -45,6 +45,8 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	LookupProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorLookupProcessor
 	MessageRemapper() LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference
 	MessageRemapperInput() *LogsCustomPipelineProcessorPipelineProcessorMessageRemapper
+	ReferenceTableLookupProcessor() LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference
+	ReferenceTableLookupProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor
 	ServiceRemapper() LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference
 	ServiceRemapperInput() *LogsCustomPipelineProcessorPipelineProcessorServiceRemapper
 	StatusRemapper() LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference
@@ -97,6 +99,7 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	PutGrokParser(value *LogsCustomPipelineProcessorPipelineProcessorGrokParser)
 	PutLookupProcessor(value *LogsCustomPipelineProcessorPipelineProcessorLookupProcessor)
 	PutMessageRemapper(value *LogsCustomPipelineProcessorPipelineProcessorMessageRemapper)
+	PutReferenceTableLookupProcessor(value *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor)
 	PutServiceRemapper(value *LogsCustomPipelineProcessorPipelineProcessorServiceRemapper)
 	PutStatusRemapper(value *LogsCustomPipelineProcessorPipelineProcessorStatusRemapper)
 	PutStringBuilderProcessor(value *LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor)
@@ -111,6 +114,7 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	ResetGrokParser()
 	ResetLookupProcessor()
 	ResetMessageRemapper()
+	ResetReferenceTableLookupProcessor()
 	ResetServiceRemapper()
 	ResetStatusRemapper()
 	ResetStringBuilderProcessor()
@@ -337,6 +341,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	_jsii_.Get(
 		j,
 		"messageRemapperInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ReferenceTableLookupProcessor() LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference {
+	var returns LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"referenceTableLookupProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ReferenceTableLookupProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor {
+	var returns *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor
+	_jsii_.Get(
+		j,
+		"referenceTableLookupProcessorInput",
 		&returns,
 	)
 	return returns
@@ -839,6 +863,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) PutReferenceTableLookupProcessor(value *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor) {
+	if err := l.validatePutReferenceTableLookupProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putReferenceTableLookupProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) PutServiceRemapper(value *LogsCustomPipelineProcessorPipelineProcessorServiceRemapper) {
 	if err := l.validatePutServiceRemapperParameters(value); err != nil {
 		panic(err)
@@ -965,6 +1000,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	_jsii_.InvokeVoid(
 		l,
 		"resetMessageRemapper",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ResetReferenceTableLookupProcessor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetReferenceTableLookupProcessor",
 		nil, // no parameters
 	)
 }

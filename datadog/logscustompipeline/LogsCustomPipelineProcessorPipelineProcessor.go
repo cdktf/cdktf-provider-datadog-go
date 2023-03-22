@@ -34,6 +34,10 @@ type LogsCustomPipelineProcessorPipelineProcessor struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 	MessageRemapper *LogsCustomPipelineProcessorPipelineProcessorMessageRemapper `field:"optional" json:"messageRemapper" yaml:"messageRemapper"`
+	// reference_table_lookup_processor block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+	ReferenceTableLookupProcessor *LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor `field:"optional" json:"referenceTableLookupProcessor" yaml:"referenceTableLookupProcessor"`
 	// service_remapper block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}

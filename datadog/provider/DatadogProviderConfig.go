@@ -20,10 +20,22 @@ type DatadogProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#app_key DatadogProvider#app_key}
 	AppKey *string `field:"optional" json:"appKey" yaml:"appKey"`
+	// The HTTP request retry back off base. Defaults to 2.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+	HttpClientRetryBackoffBase *float64 `field:"optional" json:"httpClientRetryBackoffBase" yaml:"httpClientRetryBackoffBase"`
+	// The HTTP request retry back off multiplier. Defaults to 2.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+	HttpClientRetryBackoffMultiplier *float64 `field:"optional" json:"httpClientRetryBackoffMultiplier" yaml:"httpClientRetryBackoffMultiplier"`
 	// Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 	HttpClientRetryEnabled interface{} `field:"optional" json:"httpClientRetryEnabled" yaml:"httpClientRetryEnabled"`
+	// The HTTP request maximum retry number. Defaults to 3.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+	HttpClientRetryMaxRetries *float64 `field:"optional" json:"httpClientRetryMaxRetries" yaml:"httpClientRetryMaxRetries"`
 	// The HTTP request retry timeout period. Defaults to 60 seconds.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}

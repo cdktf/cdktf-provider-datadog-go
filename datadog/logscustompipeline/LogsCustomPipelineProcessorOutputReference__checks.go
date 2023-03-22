@@ -189,6 +189,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutPipeli
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutReferenceTableLookupProcessorParameters(value *LogsCustomPipelineProcessorReferenceTableLookupProcessor) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutServiceRemapperParameters(value *LogsCustomPipelineProcessorServiceRemapper) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

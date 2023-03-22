@@ -81,7 +81,6 @@ type MonitorVariablesEventQueryOutputReference interface {
 	PutSearch(value *MonitorVariablesEventQuerySearch)
 	ResetGroupBy()
 	ResetIndexes()
-	ResetSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -634,14 +633,6 @@ func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) ResetIndexes() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIndexes",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) ResetSearch() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetSearch",
 		nil, // no parameters
 	)
 }

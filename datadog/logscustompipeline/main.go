@@ -732,12 +732,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLookupProcessor", GoMethod: "PutLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putMessageRemapper", GoMethod: "PutMessageRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putPipeline", GoMethod: "PutPipeline"},
+			_jsii_.MemberMethod{JsiiMethod: "putReferenceTableLookupProcessor", GoMethod: "PutReferenceTableLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceRemapper", GoMethod: "PutServiceRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatusRemapper", GoMethod: "PutStatusRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putStringBuilderProcessor", GoMethod: "PutStringBuilderProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putTraceIdRemapper", GoMethod: "PutTraceIdRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putUrlParser", GoMethod: "PutUrlParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserAgentParser", GoMethod: "PutUserAgentParser"},
+			_jsii_.MemberProperty{JsiiProperty: "referenceTableLookupProcessor", GoGetter: "ReferenceTableLookupProcessor"},
+			_jsii_.MemberProperty{JsiiProperty: "referenceTableLookupProcessorInput", GoGetter: "ReferenceTableLookupProcessorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArithmeticProcessor", GoMethod: "ResetArithmeticProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttributeRemapper", GoMethod: "ResetAttributeRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCategoryProcessor", GoMethod: "ResetCategoryProcessor"},
@@ -747,6 +750,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLookupProcessor", GoMethod: "ResetLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessageRemapper", GoMethod: "ResetMessageRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPipeline", GoMethod: "ResetPipeline"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReferenceTableLookupProcessor", GoMethod: "ResetReferenceTableLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceRemapper", GoMethod: "ResetServiceRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatusRemapper", GoMethod: "ResetStatusRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStringBuilderProcessor", GoMethod: "ResetStringBuilderProcessor"},
@@ -1483,12 +1487,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGrokParser", GoMethod: "PutGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putLookupProcessor", GoMethod: "PutLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putMessageRemapper", GoMethod: "PutMessageRemapper"},
+			_jsii_.MemberMethod{JsiiMethod: "putReferenceTableLookupProcessor", GoMethod: "PutReferenceTableLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceRemapper", GoMethod: "PutServiceRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatusRemapper", GoMethod: "PutStatusRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putStringBuilderProcessor", GoMethod: "PutStringBuilderProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putTraceIdRemapper", GoMethod: "PutTraceIdRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putUrlParser", GoMethod: "PutUrlParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserAgentParser", GoMethod: "PutUserAgentParser"},
+			_jsii_.MemberProperty{JsiiProperty: "referenceTableLookupProcessor", GoGetter: "ReferenceTableLookupProcessor"},
+			_jsii_.MemberProperty{JsiiProperty: "referenceTableLookupProcessorInput", GoGetter: "ReferenceTableLookupProcessorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArithmeticProcessor", GoMethod: "ResetArithmeticProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttributeRemapper", GoMethod: "ResetAttributeRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCategoryProcessor", GoMethod: "ResetCategoryProcessor"},
@@ -1497,6 +1504,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGrokParser", GoMethod: "ResetGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLookupProcessor", GoMethod: "ResetLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessageRemapper", GoMethod: "ResetMessageRemapper"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReferenceTableLookupProcessor", GoMethod: "ResetReferenceTableLookupProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceRemapper", GoMethod: "ResetServiceRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatusRemapper", GoMethod: "ResetStatusRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStringBuilderProcessor", GoMethod: "ResetStringBuilderProcessor"},
@@ -1522,6 +1530,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "lookupEnrichmentTable", GoGetter: "LookupEnrichmentTable"},
+			_jsii_.MemberProperty{JsiiProperty: "lookupEnrichmentTableInput", GoGetter: "LookupEnrichmentTableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsEnabled", GoMethod: "ResetIsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
+			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1801,6 +1857,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor",
+		reflect.TypeOf((*LogsCustomPipelineProcessorReferenceTableLookupProcessor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "lookupEnrichmentTable", GoGetter: "LookupEnrichmentTable"},
+			_jsii_.MemberProperty{JsiiProperty: "lookupEnrichmentTableInput", GoGetter: "LookupEnrichmentTableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsEnabled", GoMethod: "ResetIsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
+			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

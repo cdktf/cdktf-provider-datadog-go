@@ -14,6 +14,10 @@ type MonitorVariablesEventQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#name Monitor#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// search block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+	Search *MonitorVariablesEventQuerySearch `field:"required" json:"search" yaml:"search"`
 	// group_by block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#group_by Monitor#group_by}
@@ -22,9 +26,5 @@ type MonitorVariablesEventQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
 	Indexes *[]*string `field:"optional" json:"indexes" yaml:"indexes"`
-	// search block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
-	Search *MonitorVariablesEventQuerySearch `field:"optional" json:"search" yaml:"search"`
 }
 
