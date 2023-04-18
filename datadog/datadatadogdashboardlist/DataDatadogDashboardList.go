@@ -2,14 +2,14 @@ package datadatadogdashboardlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogdashboardlist/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboardlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 type DataDatadogDashboardList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogDashboardList interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataDatadogDashboardList) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogDashboardList) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogDashboardList) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataDatadogDashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) DataDatadogDashboardList {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList_Override(d DataDatadogDashboardList, scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) {
 	_init_.Initialize()
 
@@ -310,7 +310,10 @@ func NewDataDatadogDashboardList_Override(d DataDatadogDashboardList, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataDatadogDashboardList)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogDashboardList)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

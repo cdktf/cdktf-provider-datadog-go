@@ -64,6 +64,10 @@ func validateDataDatadogLogsArchivesOrder_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogLogsArchivesOrder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogLogsArchivesOrder) validateSetIdParameters(val *string) error {
 	return nil
 }

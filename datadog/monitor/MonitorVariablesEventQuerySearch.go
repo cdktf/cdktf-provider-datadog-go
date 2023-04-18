@@ -4,7 +4,7 @@ package monitor
 type MonitorVariablesEventQuerySearch struct {
 	// The events search string.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#query Monitor#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor#query Monitor#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAwsLogCollection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAwsLogCollection) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataDatadogIpRanges_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogIpRanges) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

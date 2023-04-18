@@ -2,14 +2,14 @@ package dashboardlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/dashboardlist/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/dashboardlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list datadog_dashboard_list}.
 type DashboardList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DashboardList interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DashItem() DashboardListDashItemList
 	DashItemInput() interface{}
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DashboardList) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DashboardList) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DashboardList) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList(scope constructs.Construct, id *string, config *DashboardListConfig) DashboardList {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDashboardList(scope constructs.Construct, id *string, config *DashboardL
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList_Override(d DashboardList, scope constructs.Construct, id *string, config *DashboardListConfig) {
 	_init_.Initialize()
 
@@ -373,7 +373,10 @@ func (j *jsiiProxy_DashboardList)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DashboardList)SetCount(val *float64) {
+func (j *jsiiProxy_DashboardList)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

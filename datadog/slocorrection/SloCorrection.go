@@ -2,14 +2,14 @@ package slocorrection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/slocorrection/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/slocorrection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction datadog_slo_correction}.
 type SloCorrection interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -24,9 +24,9 @@ type SloCorrection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SloCorrection) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_SloCorrection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SloCorrection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,7 +475,7 @@ func (j *jsiiProxy_SloCorrection) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrectionConfig) SloCorrection {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrect
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection_Override(s SloCorrection, scope constructs.Construct, id *string, config *SloCorrectionConfig) {
 	_init_.Initialize()
 
@@ -526,7 +526,10 @@ func (j *jsiiProxy_SloCorrection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SloCorrection)SetCount(val *float64) {
+func (j *jsiiProxy_SloCorrection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

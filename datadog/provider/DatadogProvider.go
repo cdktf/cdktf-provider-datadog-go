@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog}.
 type DatadogProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 

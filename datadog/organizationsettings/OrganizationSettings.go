@@ -2,14 +2,14 @@ package organizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/organizationsettings/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/organizationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/organization_settings datadog_organization_settings}.
 type OrganizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type OrganizationSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_OrganizationSettings) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrganizationSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_OrganizationSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_OrganizationSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettings)SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

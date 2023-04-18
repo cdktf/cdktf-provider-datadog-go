@@ -80,6 +80,10 @@ func (j *jsiiProxy_IntegrationAws) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAws) validateSetCspmResourceCollectionEnabledParameters(val *string) error {
 	return nil
 }

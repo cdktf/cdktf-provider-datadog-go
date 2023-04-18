@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogsArchive) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchive) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchive) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datadatadogsyntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsyntheticsglobalvariable/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticsglobalvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
 type DataDatadogSyntheticsGlobalVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogSyntheticsGlobalVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
 func NewDataDatadogSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *DataDatadogSyntheticsGlobalVariableConfig) DataDatadogSyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataDatadogSyntheticsGlobalVariable(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
 func NewDataDatadogSyntheticsGlobalVariable_Override(d DataDatadogSyntheticsGlobalVariable, scope constructs.Construct, id *string, config *DataDatadogSyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataDatadogSyntheticsGlobalVariable_Override(d DataDatadogSyntheticsGlob
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

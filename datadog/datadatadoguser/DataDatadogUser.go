@@ -2,14 +2,14 @@ package datadatadoguser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoguser/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoguser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user datadog_user}.
 type DataDatadogUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataDatadogUser) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataDatadogUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataDatadogUserConfig) DataDatadogUser {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser_Override(d DataDatadogUser, scope constructs.Construct, id *string, config *DataDatadogUserConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataDatadogUser_Override(d DataDatadogUser, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogUser)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

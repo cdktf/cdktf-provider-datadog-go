@@ -2,14 +2,14 @@ package integrationopsgenieserviceobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/integrationopsgenieserviceobject/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationopsgenieserviceobject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
 type IntegrationOpsgenieServiceObject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IntegrationOpsgenieServiceObject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomUrl() *string
 	SetCustomUrl(val *string)
 	CustomUrlInput() *string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationOpsgenieServiceObject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IntegrationOpsgenieServiceObject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) IntegrationOpsgenieServiceObject {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject_Override(i IntegrationOpsgenieServiceObject, scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_IntegrationOpsgenieServiceObject)SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationOpsgenieServiceObject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

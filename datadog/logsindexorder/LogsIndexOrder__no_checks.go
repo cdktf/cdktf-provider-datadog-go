@@ -68,6 +68,10 @@ func (j *jsiiProxy_LogsIndexOrder) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LogsIndexOrder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsIndexOrder) validateSetIdParameters(val *string) error {
 	return nil
 }

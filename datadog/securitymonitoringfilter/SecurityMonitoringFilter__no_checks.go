@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecurityMonitoringFilter) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringFilter) validateSetFilteredDataTypeParameters(val *string) error {
 	return nil
 }

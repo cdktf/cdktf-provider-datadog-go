@@ -2,14 +2,14 @@ package datadatadogintegrationawslogsservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogintegrationawslogsservices/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogintegrationawslogsservices/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
 type DataDatadogIntegrationAwsLogsServices interface {
 	cdktf.TerraformDataSource
 	AwsLogsServices() DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList
@@ -18,9 +18,9 @@ type DataDatadogIntegrationAwsLogsServices interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
 func NewDataDatadogIntegrationAwsLogsServices(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) DataDatadogIntegrationAwsLogsServices {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataDatadogIntegrationAwsLogsServices(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
 func NewDataDatadogIntegrationAwsLogsServices_Override(d DataDatadogIntegrationAwsLogsServices, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataDatadogIntegrationAwsLogsServices_Override(d DataDatadogIntegrationA
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

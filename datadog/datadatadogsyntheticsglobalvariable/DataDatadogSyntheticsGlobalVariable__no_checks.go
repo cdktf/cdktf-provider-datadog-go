@@ -64,6 +64,10 @@ func validateDataDatadogSyntheticsGlobalVariable_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) validateSetIdParameters(val *string) error {
 	return nil
 }

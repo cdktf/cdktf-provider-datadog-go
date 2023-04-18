@@ -2,14 +2,14 @@ package datadatadogservicelevelobjectives
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogservicelevelobjectives/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogservicelevelobjectives/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 type DataDatadogServiceLevelObjectives interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogServiceLevelObjectives interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObjectives, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObje
 	)
 }
 
-func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

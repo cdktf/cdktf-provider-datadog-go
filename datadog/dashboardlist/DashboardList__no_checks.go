@@ -72,6 +72,10 @@ func (j *jsiiProxy_DashboardList) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DashboardList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardList) validateSetIdParameters(val *string) error {
 	return nil
 }

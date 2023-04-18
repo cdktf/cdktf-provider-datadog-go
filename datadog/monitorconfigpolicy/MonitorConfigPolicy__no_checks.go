@@ -72,6 +72,10 @@ func (j *jsiiProxy_MonitorConfigPolicy) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MonitorConfigPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorConfigPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

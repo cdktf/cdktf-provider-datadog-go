@@ -2,14 +2,14 @@ package securitymonitoringdefaultrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/securitymonitoringdefaultrule/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 type SecurityMonitoringDefaultRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringDefaultRuleCaseList
@@ -23,9 +23,9 @@ type SecurityMonitoringDefaultRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -393,7 +393,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule_Override(s SecurityMonitoringDefaultRule, scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) {
 	_init_.Initialize()
 
@@ -433,7 +433,10 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCount(val *float64) {
+func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

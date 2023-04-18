@@ -2,14 +2,14 @@ package datadatadogmonitors
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogmonitors/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogmonitors/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitors datadog_monitors}.
 type DataDatadogMonitors interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogMonitors interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataDatadogMonitors) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitors) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogMonitors) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataDatadogMonitors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitors datadog_monitors} Data Source.
 func NewDataDatadogMonitors(scope constructs.Construct, id *string, config *DataDatadogMonitorsConfig) DataDatadogMonitors {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataDatadogMonitors(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitors datadog_monitors} Data Source.
 func NewDataDatadogMonitors_Override(d DataDatadogMonitors, scope constructs.Construct, id *string, config *DataDatadogMonitorsConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataDatadogMonitors_Override(d DataDatadogMonitors, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitors)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogMonitors)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_IntegrationGcp) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcp) validateSetCspmResourceCollectionEnabledParameters(val interface{}) error {
 	return nil
 }

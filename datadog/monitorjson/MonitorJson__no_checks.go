@@ -68,6 +68,10 @@ func (j *jsiiProxy_MonitorJson) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_MonitorJson) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorJson) validateSetIdParameters(val *string) error {
 	return nil
 }

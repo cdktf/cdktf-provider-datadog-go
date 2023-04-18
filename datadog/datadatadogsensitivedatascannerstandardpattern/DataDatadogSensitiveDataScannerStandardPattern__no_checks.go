@@ -64,6 +64,10 @@ func validateDataDatadogSensitiveDataScannerStandardPattern_IsTerraformElementPa
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) validateSetFilterParameters(val *string) error {
 	return nil
 }

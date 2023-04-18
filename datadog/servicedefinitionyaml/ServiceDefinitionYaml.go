@@ -2,14 +2,14 @@ package servicedefinitionyaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_definition_yaml datadog_service_definition_yaml}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
 type ServiceDefinitionYaml interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServiceDefinitionYaml interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ServiceDefinitionYaml) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDefinitionYaml) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceDefinitionYaml) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ServiceDefinitionYaml) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) ServiceDefinitionYaml {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml_Override(s ServiceDefinitionYaml, scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_ServiceDefinitionYaml)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDefinitionYaml)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceDefinitionYaml)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

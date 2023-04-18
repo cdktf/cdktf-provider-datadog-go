@@ -68,6 +68,10 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationOpsgenieServiceObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationOpsgenieServiceObject) validateSetCustomUrlParameters(val *string) error {
 	return nil
 }

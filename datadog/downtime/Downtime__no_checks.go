@@ -72,6 +72,10 @@ func (j *jsiiProxy_Downtime) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Downtime) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Downtime) validateSetEndParameters(val *float64) error {
 	return nil
 }

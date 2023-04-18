@@ -64,6 +64,10 @@ func validateDataDatadogRumApplication_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogRumApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogRumApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

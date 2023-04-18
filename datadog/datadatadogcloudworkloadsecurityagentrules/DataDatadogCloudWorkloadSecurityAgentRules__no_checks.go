@@ -64,6 +64,10 @@ func validateDataDatadogCloudWorkloadSecurityAgentRules_IsTerraformElementParame
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRules) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRules) validateSetIdParameters(val *string) error {
 	return nil
 }

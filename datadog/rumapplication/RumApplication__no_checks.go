@@ -68,6 +68,10 @@ func (j *jsiiProxy_RumApplication) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_RumApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RumApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

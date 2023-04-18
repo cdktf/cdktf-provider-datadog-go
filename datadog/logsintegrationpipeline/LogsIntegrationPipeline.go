@@ -2,14 +2,14 @@ package logsintegrationpipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsintegrationpipeline/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsintegrationpipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}.
 type LogsIntegrationPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LogsIntegrationPipeline interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_LogsIntegrationPipeline) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LogsIntegrationPipeline) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogsIntegrationPipeline) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,7 +310,7 @@ func (j *jsiiProxy_LogsIntegrationPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline} Resource.
 func NewLogsIntegrationPipeline(scope constructs.Construct, id *string, config *LogsIntegrationPipelineConfig) LogsIntegrationPipeline {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewLogsIntegrationPipeline(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline} Resource.
 func NewLogsIntegrationPipeline_Override(l LogsIntegrationPipeline, scope constructs.Construct, id *string, config *LogsIntegrationPipelineConfig) {
 	_init_.Initialize()
 
@@ -350,7 +350,10 @@ func (j *jsiiProxy_LogsIntegrationPipeline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsIntegrationPipeline)SetCount(val *float64) {
+func (j *jsiiProxy_LogsIntegrationPipeline)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datadatadoglogsindexesorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsindexesorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order}.
 type DataDatadogLogsIndexesOrder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogLogsIndexesOrder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexesOrder) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesOrder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogLogsIndexesOrder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexesOrder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) DataDatadogLogsIndexesOrder {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder_Override(d DataDatadogLogsIndexesOrder, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataDatadogLogsIndexesOrder_Override(d DataDatadogLogsIndexesOrder, scop
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexesOrder)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogLogsIndexesOrder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

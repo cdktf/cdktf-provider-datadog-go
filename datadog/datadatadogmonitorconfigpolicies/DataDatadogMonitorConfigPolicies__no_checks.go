@@ -64,6 +64,10 @@ func validateDataDatadogMonitorConfigPolicies_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogMonitorConfigPolicies) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogMonitorConfigPolicies) validateSetIdParameters(val *string) error {
 	return nil
 }

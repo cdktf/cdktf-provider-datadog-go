@@ -2,14 +2,14 @@ package datadatadogsecuritymonitoringrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules}.
 type DataDatadogSecurityMonitoringRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogSecurityMonitoringRules interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultOnlyFilter() interface{}
 	SetDefaultOnlyFilter(val interface{})
 	DefaultOnlyFilterInput() interface{}
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRules) UserOnlyFilterInput() int
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source.
 func NewDataDatadogSecurityMonitoringRules(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringRulesConfig) DataDatadogSecurityMonitoringRules {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataDatadogSecurityMonitoringRules(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source.
 func NewDataDatadogSecurityMonitoringRules_Override(d DataDatadogSecurityMonitoringRules, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringRulesConfig) {
 	_init_.Initialize()
 
@@ -405,7 +405,10 @@ func NewDataDatadogSecurityMonitoringRules_Override(d DataDatadogSecurityMonitor
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRules)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

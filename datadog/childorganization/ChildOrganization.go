@@ -2,14 +2,14 @@ package childorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/childorganization/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/childorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/child_organization datadog_child_organization}.
 type ChildOrganization interface {
 	cdktf.TerraformResource
 	ApiKey() ChildOrganizationApiKeyList
@@ -23,9 +23,9 @@ type ChildOrganization interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ChildOrganization) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ChildOrganization) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ChildOrganization) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,7 +375,7 @@ func (j *jsiiProxy_ChildOrganization) User() ChildOrganizationUserList {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/child_organization datadog_child_organization} Resource.
 func NewChildOrganization(scope constructs.Construct, id *string, config *ChildOrganizationConfig) ChildOrganization {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewChildOrganization(scope constructs.Construct, id *string, config *ChildO
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/child_organization datadog_child_organization} Resource.
 func NewChildOrganization_Override(c ChildOrganization, scope constructs.Construct, id *string, config *ChildOrganizationConfig) {
 	_init_.Initialize()
 
@@ -415,7 +415,10 @@ func (j *jsiiProxy_ChildOrganization)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChildOrganization)SetCount(val *float64) {
+func (j *jsiiProxy_ChildOrganization)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

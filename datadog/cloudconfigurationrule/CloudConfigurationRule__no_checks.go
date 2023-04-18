@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudConfigurationRule) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudConfigurationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudConfigurationRule) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

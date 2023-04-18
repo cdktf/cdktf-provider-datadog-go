@@ -64,6 +64,10 @@ func validateDataDatadogRole_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogRole) validateSetFilterParameters(val *string) error {
 	return nil
 }

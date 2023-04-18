@@ -80,6 +80,10 @@ func (j *jsiiProxy_Dashboard) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Dashboard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Dashboard) validateSetDashboardListsParameters(val *[]*float64) error {
 	return nil
 }

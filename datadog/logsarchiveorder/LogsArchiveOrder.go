@@ -2,14 +2,14 @@ package logsarchiveorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsarchiveorder/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive_order datadog_logs_archive_order}.
 type LogsArchiveOrder interface {
 	cdktf.TerraformResource
 	ArchiveIds() *[]*string
@@ -24,9 +24,9 @@ type LogsArchiveOrder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_LogsArchiveOrder) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LogsArchiveOrder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogsArchiveOrder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,7 +310,7 @@ func (j *jsiiProxy_LogsArchiveOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
 func NewLogsArchiveOrder(scope constructs.Construct, id *string, config *LogsArchiveOrderConfig) LogsArchiveOrder {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewLogsArchiveOrder(scope constructs.Construct, id *string, config *LogsArc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
 func NewLogsArchiveOrder_Override(l LogsArchiveOrder, scope constructs.Construct, id *string, config *LogsArchiveOrderConfig) {
 	_init_.Initialize()
 
@@ -361,7 +361,10 @@ func (j *jsiiProxy_LogsArchiveOrder)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveOrder)SetCount(val *float64) {
+func (j *jsiiProxy_LogsArchiveOrder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

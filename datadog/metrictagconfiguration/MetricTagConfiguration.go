@@ -2,14 +2,14 @@ package metrictagconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metrictagconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/metrictagconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
 	cdktf.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
@@ -23,9 +23,9 @@ type MetricTagConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_MetricTagConfiguration) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MetricTagConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func (j *jsiiProxy_MetricTagConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetricTagConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_MetricTagConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

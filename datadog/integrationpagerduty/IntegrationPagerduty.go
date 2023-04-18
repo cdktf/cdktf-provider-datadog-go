@@ -2,14 +2,14 @@ package integrationpagerduty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/integrationpagerduty/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_pagerduty datadog_integration_pagerduty}.
 type IntegrationPagerduty interface {
 	cdktf.TerraformResource
 	ApiToken() *string
@@ -24,9 +24,9 @@ type IntegrationPagerduty interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_IntegrationPagerduty) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IntegrationPagerduty) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_IntegrationPagerduty) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
 func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) IntegrationPagerduty {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *Int
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
 func NewIntegrationPagerduty_Override(i IntegrationPagerduty, scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) {
 	_init_.Initialize()
 
@@ -408,7 +408,10 @@ func (j *jsiiProxy_IntegrationPagerduty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationPagerduty)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

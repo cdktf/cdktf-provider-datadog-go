@@ -64,6 +64,10 @@ func validateDataDatadogLogsPipelines_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogLogsPipelines) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogLogsPipelines) validateSetIdParameters(val *string) error {
 	return nil
 }

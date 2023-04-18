@@ -84,6 +84,10 @@ func (j *jsiiProxy_Monitor) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetEnableLogsSampleParameters(val interface{}) error {
 	return nil
 }

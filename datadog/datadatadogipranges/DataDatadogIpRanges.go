@@ -2,14 +2,14 @@ package datadatadogipranges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogipranges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
 type DataDatadogIpRanges interface {
 	cdktf.TerraformDataSource
 	AgentsIpv4() *[]*string
@@ -23,9 +23,9 @@ type DataDatadogIpRanges interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DataDatadogIpRanges) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIpRanges) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogIpRanges) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataDatadogIpRanges) WebhooksIpv6() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) DataDatadogIpRanges {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges_Override(d DataDatadogIpRanges, scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) {
 	_init_.Initialize()
 
@@ -485,7 +485,10 @@ func NewDataDatadogIpRanges_Override(d DataDatadogIpRanges, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIpRanges)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogIpRanges)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

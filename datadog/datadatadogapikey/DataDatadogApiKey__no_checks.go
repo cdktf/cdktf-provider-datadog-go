@@ -64,6 +64,10 @@ func validateDataDatadogApiKey_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogApiKey) validateSetIdParameters(val *string) error {
 	return nil
 }

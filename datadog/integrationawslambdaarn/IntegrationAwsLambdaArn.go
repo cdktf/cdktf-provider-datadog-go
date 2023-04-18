@@ -2,14 +2,14 @@ package integrationawslambdaarn
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/integrationawslambdaarn/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawslambdaarn/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
 type IntegrationAwsLambdaArn interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type IntegrationAwsLambdaArn interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IntegrationAwsLambdaArn) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) IntegrationAwsLambdaArn {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn_Override(i IntegrationAwsLambdaArn, scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsLambdaArn)SetCount(val *float64) {
+func (j *jsiiProxy_IntegrationAwsLambdaArn)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

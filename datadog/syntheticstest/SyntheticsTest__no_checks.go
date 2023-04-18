@@ -108,6 +108,10 @@ func (j *jsiiProxy_SyntheticsTest) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTest) validateSetDeviceIdsParameters(val *[]*string) error {
 	return nil
 }

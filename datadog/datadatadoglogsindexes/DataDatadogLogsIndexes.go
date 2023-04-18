@@ -2,14 +2,14 @@ package datadatadoglogsindexes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexes/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsindexes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
 type DataDatadogLogsIndexes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDatadogLogsIndexes interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDatadogLogsIndexes) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) DataDatadogLogsIndexes {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes_Override(d DataDatadogLogsIndexes, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataDatadogLogsIndexes_Override(d DataDatadogLogsIndexes, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes)SetCount(val *float64) {
+func (j *jsiiProxy_DataDatadogLogsIndexes)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

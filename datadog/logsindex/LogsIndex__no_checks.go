@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogsIndex) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_LogsIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsIndex) validateSetDailyLimitParameters(val *float64) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DashboardJson) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DashboardJson) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardJson) validateSetDashboardParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package downtime
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/downtime/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/downtime datadog_downtime}.
 type Downtime interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -23,9 +23,9 @@ type Downtime interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -201,8 +201,8 @@ func (j *jsiiProxy_Downtime) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Downtime) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -582,7 +582,7 @@ func (j *jsiiProxy_Downtime) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig) Downtime {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime_Override(d Downtime, scope constructs.Construct, id *string, config *DowntimeConfig) {
 	_init_.Initialize()
 
@@ -622,7 +622,10 @@ func (j *jsiiProxy_Downtime)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Downtime)SetCount(val *float64) {
+func (j *jsiiProxy_Downtime)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
