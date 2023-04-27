@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
 type DataDatadogServiceLevelObjective interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataDatadogServiceLevelObjective interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,18 +53,22 @@ type DataDatadogServiceLevelObjective interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Query() DataDatadogServiceLevelObjectiveQueryList
 	// Experimental.
 	RawOverrides() interface{}
 	TagsQuery() *string
 	SetTagsQuery(val *string)
 	TagsQueryInput() *string
+	TargetThreshold() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeframe() *string
 	Type() *string
+	WarningThreshold() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -146,6 +151,16 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjective) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -281,6 +296,16 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) Provider() cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogServiceLevelObjective) Query() DataDatadogServiceLevelObjectiveQueryList {
+	var returns DataDatadogServiceLevelObjectiveQueryList
+	_jsii_.Get(
+		j,
+		"query",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogServiceLevelObjective) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -306,6 +331,16 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) TagsQueryInput() *string {
 	_jsii_.Get(
 		j,
 		"tagsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjective) TargetThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetThreshold",
 		&returns,
 	)
 	return returns
@@ -341,6 +376,16 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) TerraformResourceType() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogServiceLevelObjective) Timeframe() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeframe",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogServiceLevelObjective) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -351,8 +396,18 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogServiceLevelObjective) WarningThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"warningThreshold",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
 func NewDataDatadogServiceLevelObjective(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectiveConfig) DataDatadogServiceLevelObjective {
 	_init_.Initialize()
 
@@ -370,7 +425,7 @@ func NewDataDatadogServiceLevelObjective(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
 func NewDataDatadogServiceLevelObjective_Override(d DataDatadogServiceLevelObjective, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectiveConfig) {
 	_init_.Initialize()
 

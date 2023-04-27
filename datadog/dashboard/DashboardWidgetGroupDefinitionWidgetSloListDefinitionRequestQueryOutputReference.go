@@ -35,6 +35,8 @@ type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputRefe
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
+	Sort() DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference
+	SortInput() *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSort(value *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort)
 	ResetLimit()
+	ResetSort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +172,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	_jsii_.Get(
 		j,
 		"queryStringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) Sort() DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) SortInput() *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort {
+	var returns *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) PutSort(value *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) ResetLimit() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSort",
 		nil, // no parameters
 	)
 }

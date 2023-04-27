@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key datadog_api_key}.
 type ApiKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,8 +37,6 @@ type ApiKey interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -90,7 +88,6 @@ type ApiKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -194,16 +191,6 @@ func (j *jsiiProxy_ApiKey) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiKey) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -320,7 +307,7 @@ func (j *jsiiProxy_ApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) ApiKey {
 	_init_.Initialize()
 
@@ -338,7 +325,7 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey_Override(a ApiKey, scope constructs.Construct, id *string, config *ApiKeyConfig) {
 	_init_.Initialize()
 
@@ -383,17 +370,6 @@ func (j *jsiiProxy_ApiKey)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiKey)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -702,14 +678,6 @@ func (a *jsiiProxy_ApiKey) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_ApiKey) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

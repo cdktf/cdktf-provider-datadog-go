@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
 type ServiceDefinitionYaml interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ServiceDefinitionYaml) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) ServiceDefinitionYaml {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml_Override(s ServiceDefinitionYaml, scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard datadog_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/dashboard datadog_dashboard}.
 type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type Dashboard interface {
 	RestrictedRoles() *[]*string
 	SetRestrictedRoles(val *[]*string)
 	RestrictedRolesInput() *[]*string
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	TemplateVariable() DashboardTemplateVariableList
 	TemplateVariableInput() interface{}
 	TemplateVariablePreset() DashboardTemplateVariablePresetList
@@ -133,6 +136,7 @@ type Dashboard interface {
 	ResetOverrideLogicalId()
 	ResetReflowType()
 	ResetRestrictedRoles()
+	ResetTags()
 	ResetTemplateVariable()
 	ResetTemplateVariablePreset()
 	ResetUrl()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_Dashboard) RestrictedRolesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Dashboard) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Dashboard) TemplateVariable() DashboardTemplateVariableList {
 	var returns DashboardTemplateVariableList
 	_jsii_.Get(
@@ -583,7 +607,7 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -601,7 +625,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 
@@ -764,6 +788,17 @@ func (j *jsiiProxy_Dashboard)SetRestrictedRoles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"restrictedRoles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Dashboard)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1149,6 +1184,14 @@ func (d *jsiiProxy_Dashboard) ResetRestrictedRoles() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRestrictedRoles",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

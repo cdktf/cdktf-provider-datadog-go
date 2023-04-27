@@ -41,6 +41,9 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NoScreenshot() interface{}
+	SetNoScreenshot(val interface{})
+	NoScreenshotInput() interface{}
 	Params() SyntheticsTestBrowserStepParamsOutputReference
 	ParamsInput() *SyntheticsTestBrowserStepParams
 	// Experimental.
@@ -85,6 +88,7 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	ResetAllowFailure()
 	ResetForceElementUpdate()
 	ResetIsCritical()
+	ResetNoScreenshot()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) NameInput() *string
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) NoScreenshot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noScreenshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) NoScreenshotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noScreenshotInput",
 		&returns,
 	)
 	return returns
@@ -412,6 +436,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetName(val *string)
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetNoScreenshot(val interface{}) {
+	if err := j.validateSetNoScreenshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noScreenshot",
 		val,
 	)
 }
@@ -677,6 +712,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetIsCritical() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIsCritical",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetNoScreenshot() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNoScreenshot",
 		nil, // no parameters
 	)
 }

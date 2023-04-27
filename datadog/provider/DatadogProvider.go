@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs datadog}.
 type DatadogProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -38,9 +38,9 @@ type DatadogProvider interface {
 	HttpClientRetryBackoffMultiplier() *float64
 	SetHttpClientRetryBackoffMultiplier(val *float64)
 	HttpClientRetryBackoffMultiplierInput() *float64
-	HttpClientRetryEnabled() interface{}
-	SetHttpClientRetryEnabled(val interface{})
-	HttpClientRetryEnabledInput() interface{}
+	HttpClientRetryEnabled() *string
+	SetHttpClientRetryEnabled(val *string)
+	HttpClientRetryEnabledInput() *string
 	HttpClientRetryMaxRetries() *float64
 	SetHttpClientRetryMaxRetries(val *float64)
 	HttpClientRetryMaxRetriesInput() *float64
@@ -59,9 +59,9 @@ type DatadogProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
-	Validate() interface{}
-	SetValidate(val interface{})
-	ValidateInput() interface{}
+	Validate() *string
+	SetValidate(val *string)
+	ValidateInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DatadogProvider) HttpClientRetryBackoffMultiplierInput() *flo
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabled() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"httpClientRetryEnabled",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatadogProvider) HttpClientRetryEnabledInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"httpClientRetryEnabledInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_DatadogProvider) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) Validate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatadogProvider) Validate() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"validate",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_DatadogProvider) Validate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) ValidateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"validateInput",
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 
@@ -473,10 +473,7 @@ func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryBackoffMultiplier(val *floa
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryEnabled(val interface{}) {
-	if err := j.validateSetHttpClientRetryEnabledParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryEnabled(val *string) {
 	_jsii_.Set(
 		j,
 		"httpClientRetryEnabled",
@@ -500,10 +497,7 @@ func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatadogProvider)SetValidate(val interface{}) {
-	if err := j.validateSetValidateParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_DatadogProvider)SetValidate(val *string) {
 	_jsii_.Set(
 		j,
 		"validate",

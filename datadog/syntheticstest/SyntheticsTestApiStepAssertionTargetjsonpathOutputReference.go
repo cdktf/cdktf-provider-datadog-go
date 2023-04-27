@@ -70,6 +70,7 @@ type SyntheticsTestApiStepAssertionTargetjsonpathOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTargetvalue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -515,6 +516,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) 
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) ResetTargetvalue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetvalue",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

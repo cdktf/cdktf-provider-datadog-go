@@ -124,6 +124,10 @@ func (j *jsiiProxy_Dashboard) validateSetRestrictedRolesParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_Dashboard) validateSetTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Dashboard) validateSetTitleParameters(val *string) error {
 	return nil
 }

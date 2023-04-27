@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 type SensitiveDataScannerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SensitiveDataScannerGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) SensitiveDataScannerGroup {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup_Override(s SensitiveDataScannerGroup, scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) {
 	_init_.Initialize()
 

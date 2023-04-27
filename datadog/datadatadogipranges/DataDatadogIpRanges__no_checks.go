@@ -68,10 +68,6 @@ func (j *jsiiProxy_DataDatadogIpRanges) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogIpRanges) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatadogIpRanges) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -35,6 +35,8 @@ type DashboardWidgetSloListDefinitionRequestQueryOutputReference interface {
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
+	Sort() DashboardWidgetSloListDefinitionRequestQuerySortOutputReference
+	SortInput() *DashboardWidgetSloListDefinitionRequestQuerySort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DashboardWidgetSloListDefinitionRequestQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSort(value *DashboardWidgetSloListDefinitionRequestQuerySort)
 	ResetLimit()
+	ResetSort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +172,26 @@ func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"queryStringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) Sort() DashboardWidgetSloListDefinitionRequestQuerySortOutputReference {
+	var returns DashboardWidgetSloListDefinitionRequestQuerySortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) SortInput() *DashboardWidgetSloListDefinitionRequestQuerySort {
+	var returns *DashboardWidgetSloListDefinitionRequestQuerySort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) 
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) PutSort(value *DashboardWidgetSloListDefinitionRequestQuerySort) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) ResetLimit() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQueryOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSort",
 		nil, // no parameters
 	)
 }

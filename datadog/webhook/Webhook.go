@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook datadog_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook datadog_webhook}.
 type Webhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_Webhook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) Webhook {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook_Override(w Webhook, scope constructs.Construct, id *string, config *WebhookConfig) {
 	_init_.Initialize()
 

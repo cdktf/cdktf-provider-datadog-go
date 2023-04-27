@@ -44,6 +44,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) validatePutSortParameters(value *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySort) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

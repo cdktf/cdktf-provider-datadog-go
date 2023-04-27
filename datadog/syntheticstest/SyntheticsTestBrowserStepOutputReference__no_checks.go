@@ -80,6 +80,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetNamePara
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetNoScreenshotParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

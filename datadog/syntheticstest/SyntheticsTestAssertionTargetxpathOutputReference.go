@@ -70,6 +70,7 @@ type SyntheticsTestAssertionTargetxpathOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTargetvalue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -515,6 +516,14 @@ func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) ResetTargetvalue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetvalue",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
