@@ -19,7 +19,7 @@ type DataDatadogPermissionsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/permissions#id DataDatadogPermissions#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions#id DataDatadogPermissions#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ type DataDatadogPermissionsConfig struct {
 	//
 	// Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
 	IncludeRestricted interface{} `field:"optional" json:"includeRestricted" yaml:"includeRestricted"`
 }
 

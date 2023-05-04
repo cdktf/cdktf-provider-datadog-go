@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 type WebhookCustomVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_WebhookCustomVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) WebhookCustomVariable {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable_Override(w WebhookCustomVariable, scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) {
 	_init_.Initialize()
 
