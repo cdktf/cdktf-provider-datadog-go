@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/slo_correction datadog_slo_correction}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/slo_correction datadog_slo_correction}.
 type SloCorrection interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_SloCorrection) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrectionConfig) SloCorrection {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection_Override(s SloCorrection, scope constructs.Construct, id *string, config *SloCorrectionConfig) {
 	_init_.Initialize()
 

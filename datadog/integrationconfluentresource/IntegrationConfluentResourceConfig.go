@@ -21,19 +21,19 @@ type IntegrationConfluentResourceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Confluent Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The ID associated with a Confluent resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
 	// A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

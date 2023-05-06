@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -1085,7 +1085,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1103,7 +1103,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 

@@ -10,6 +10,9 @@ import (
 
 type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalQueryFilters() *string
+	SetAdditionalQueryFilters(val *string)
+	AdditionalQueryFiltersInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,6 +91,7 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalQueryFilters()
 	ResetGlobalTimeTarget()
 	ResetShowErrorBudget()
 	ResetTitle()
@@ -106,6 +110,26 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) AdditionalQueryFilters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) AdditionalQueryFiltersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -383,6 +407,17 @@ func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutpu
 		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference)SetAdditionalQueryFilters(val *string) {
+	if err := j.validateSetAdditionalQueryFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalQueryFilters",
+		val,
 	)
 }
 
@@ -724,6 +759,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) ResetAdditionalQueryFilters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdditionalQueryFilters",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) ResetGlobalTimeTarget() {
