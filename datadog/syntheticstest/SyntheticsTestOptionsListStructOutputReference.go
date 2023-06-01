@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type SyntheticsTestOptionsListOutputReference interface {
+type SyntheticsTestOptionsListStructOutputReference interface {
 	cdktf.ComplexObject
 	AcceptSelfSigned() interface{}
 	SetAcceptSelfSigned(val interface{})
@@ -56,8 +56,8 @@ type SyntheticsTestOptionsListOutputReference interface {
 	InitialNavigationTimeout() *float64
 	SetInitialNavigationTimeout(val *float64)
 	InitialNavigationTimeoutInput() *float64
-	InternalValue() *SyntheticsTestOptionsList
-	SetInternalValue(val *SyntheticsTestOptionsList)
+	InternalValue() *SyntheticsTestOptionsListStruct
+	SetInternalValue(val *SyntheticsTestOptionsListStruct)
 	MinFailureDuration() *float64
 	SetMinFailureDuration(val *float64)
 	MinFailureDurationInput() *float64
@@ -154,12 +154,12 @@ type SyntheticsTestOptionsListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for SyntheticsTestOptionsListOutputReference
-type jsiiProxy_SyntheticsTestOptionsListOutputReference struct {
+// The jsii proxy struct for SyntheticsTestOptionsListStructOutputReference
+type jsiiProxy_SyntheticsTestOptionsListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AcceptSelfSigned() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) AcceptSelfSigned() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -169,7 +169,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AcceptSelfSigned() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AcceptSelfSignedInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) AcceptSelfSignedInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AcceptSelfSignedInp
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AllowInsecure() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) AllowInsecure() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -189,7 +189,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AllowInsecure() int
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AllowInsecureInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) AllowInsecureInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -199,7 +199,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) AllowInsecureInput(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CheckCertificateRevocation() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CheckCertificateRevocation() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -209,7 +209,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CheckCertificateRev
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CheckCertificateRevocationInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CheckCertificateRevocationInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -219,7 +219,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CheckCertificateRev
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Ci() SyntheticsTestOptionsListCiOutputReference {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) Ci() SyntheticsTestOptionsListCiOutputReference {
 	var returns SyntheticsTestOptionsListCiOutputReference
 	_jsii_.Get(
 		j,
@@ -229,7 +229,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Ci() SyntheticsTest
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CiInput() *SyntheticsTestOptionsListCi {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CiInput() *SyntheticsTestOptionsListCi {
 	var returns *SyntheticsTestOptionsListCi
 	_jsii_.Get(
 		j,
@@ -239,7 +239,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CiInput() *Syntheti
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -249,7 +249,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComplexObjectIndex(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -259,7 +259,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComplexObjectIsFrom
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -269,7 +269,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCors() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableCors() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -279,7 +279,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCors() inter
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCorsInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableCorsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -289,7 +289,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCorsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCsp() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableCsp() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCsp() interf
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCspInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableCspInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -309,7 +309,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) DisableCspInput() i
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) FollowRedirects() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) FollowRedirects() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -319,7 +319,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) FollowRedirects() i
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) FollowRedirectsInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) FollowRedirectsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) FollowRedirectsInpu
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Fqn() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -339,7 +339,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersion() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) HttpVersion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -349,7 +349,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersion() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersionInput() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) HttpVersionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -359,7 +359,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) HttpVersionInput() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertificateError() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) IgnoreServerCertificateError() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -369,7 +369,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertifi
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertificateErrorInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) IgnoreServerCertificateErrorInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) IgnoreServerCertifi
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTimeout() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) InitialNavigationTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -389,7 +389,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTi
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTimeoutInput() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) InitialNavigationTimeoutInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -399,8 +399,8 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InitialNavigationTi
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InternalValue() *SyntheticsTestOptionsList {
-	var returns *SyntheticsTestOptionsList
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) InternalValue() *SyntheticsTestOptionsListStruct {
+	var returns *SyntheticsTestOptionsListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) InternalValue() *Sy
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinFailureDuration() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MinFailureDuration() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -419,7 +419,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinFailureDuration(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinFailureDurationInput() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MinFailureDurationInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -429,7 +429,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinFailureDurationI
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinLocationFailed() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MinLocationFailed() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -439,7 +439,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinLocationFailed()
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinLocationFailedInput() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MinLocationFailedInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MinLocationFailedIn
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorName() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorName() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorNameInput() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -469,7 +469,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorNameInput() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorOptions() SyntheticsTestOptionsListMonitorOptionsOutputReference {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorOptions() SyntheticsTestOptionsListMonitorOptionsOutputReference {
 	var returns SyntheticsTestOptionsListMonitorOptionsOutputReference
 	_jsii_.Get(
 		j,
@@ -479,7 +479,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorOptions() Sy
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorOptionsInput() *SyntheticsTestOptionsListMonitorOptions {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorOptionsInput() *SyntheticsTestOptionsListMonitorOptions {
 	var returns *SyntheticsTestOptionsListMonitorOptions
 	_jsii_.Get(
 		j,
@@ -489,7 +489,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorOptionsInput
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorPriority() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorPriority() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -499,7 +499,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorPriority() *
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorPriorityInput() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) MonitorPriorityInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -509,7 +509,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) MonitorPriorityInpu
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) NoScreenshot() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) NoScreenshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -519,7 +519,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) NoScreenshot() inte
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) NoScreenshotInput() interface{} {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) NoScreenshotInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -529,7 +529,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) NoScreenshotInput()
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RestrictedRoles() *[]*string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) RestrictedRoles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -539,7 +539,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RestrictedRoles() *
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RestrictedRolesInput() *[]*string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) RestrictedRolesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -549,7 +549,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RestrictedRolesInpu
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Retry() SyntheticsTestOptionsListRetryOutputReference {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) Retry() SyntheticsTestOptionsListRetryOutputReference {
 	var returns SyntheticsTestOptionsListRetryOutputReference
 	_jsii_.Get(
 		j,
@@ -559,7 +559,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Retry() SyntheticsT
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RetryInput() *SyntheticsTestOptionsListRetry {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) RetryInput() *SyntheticsTestOptionsListRetry {
 	var returns *SyntheticsTestOptionsListRetry
 	_jsii_.Get(
 		j,
@@ -569,7 +569,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RetryInput() *Synth
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RumSettings() SyntheticsTestOptionsListRumSettingsOutputReference {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) RumSettings() SyntheticsTestOptionsListRumSettingsOutputReference {
 	var returns SyntheticsTestOptionsListRumSettingsOutputReference
 	_jsii_.Get(
 		j,
@@ -579,7 +579,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RumSettings() Synth
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RumSettingsInput() *SyntheticsTestOptionsListRumSettings {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) RumSettingsInput() *SyntheticsTestOptionsListRumSettings {
 	var returns *SyntheticsTestOptionsListRumSettings
 	_jsii_.Get(
 		j,
@@ -589,7 +589,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) RumSettingsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Scheduling() SyntheticsTestOptionsListSchedulingOutputReference {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) Scheduling() SyntheticsTestOptionsListSchedulingOutputReference {
 	var returns SyntheticsTestOptionsListSchedulingOutputReference
 	_jsii_.Get(
 		j,
@@ -599,7 +599,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) Scheduling() Synthe
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SchedulingInput() *SyntheticsTestOptionsListScheduling {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) SchedulingInput() *SyntheticsTestOptionsListScheduling {
 	var returns *SyntheticsTestOptionsListScheduling
 	_jsii_.Get(
 		j,
@@ -609,7 +609,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) SchedulingInput() *
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -619,7 +619,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -629,7 +629,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TerraformResource()
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TickEvery() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) TickEvery() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -639,7 +639,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TickEvery() *float6
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TickEveryInput() *float64 {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) TickEveryInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -650,16 +650,16 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) TickEveryInput() *f
 }
 
 
-func NewSyntheticsTestOptionsListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListOutputReference {
+func NewSyntheticsTestOptionsListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSyntheticsTestOptionsListOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSyntheticsTestOptionsListStructOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_SyntheticsTestOptionsListOutputReference{}
+	j := jsiiProxy_SyntheticsTestOptionsListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference",
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -667,17 +667,17 @@ func NewSyntheticsTestOptionsListOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewSyntheticsTestOptionsListOutputReference_Override(s SyntheticsTestOptionsListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsTestOptionsListStructOutputReference_Override(s SyntheticsTestOptionsListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference",
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAcceptSelfSigned(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetAcceptSelfSigned(val interface{}) {
 	if err := j.validateSetAcceptSelfSignedParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +688,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAcceptSelfSigned(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAllowInsecure(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetAllowInsecure(val interface{}) {
 	if err := j.validateSetAllowInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +699,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetAllowInsecure(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetCheckCertificateRevocation(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetCheckCertificateRevocation(val interface{}) {
 	if err := j.validateSetCheckCertificateRevocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +710,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetCheckCertificateR
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +721,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +732,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCors(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetDisableCors(val interface{}) {
 	if err := j.validateSetDisableCorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +743,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCors(val i
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCsp(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetDisableCsp(val interface{}) {
 	if err := j.validateSetDisableCspParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +754,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetDisableCsp(val in
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetFollowRedirects(val interface{}) {
 	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +765,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetFollowRedirects(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetHttpVersion(val *string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetHttpVersion(val *string) {
 	if err := j.validateSetHttpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +776,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetHttpVersion(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetIgnoreServerCertificateError(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetIgnoreServerCertificateError(val interface{}) {
 	if err := j.validateSetIgnoreServerCertificateErrorParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +787,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetIgnoreServerCerti
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInitialNavigationTimeout(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetInitialNavigationTimeout(val *float64) {
 	if err := j.validateSetInitialNavigationTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +798,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInitialNavigation
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInternalValue(val *SyntheticsTestOptionsList) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetInternalValue(val *SyntheticsTestOptionsListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +809,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinFailureDuration(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetMinFailureDuration(val *float64) {
 	if err := j.validateSetMinFailureDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +820,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinFailureDuratio
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinLocationFailed(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetMinLocationFailed(val *float64) {
 	if err := j.validateSetMinLocationFailedParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +831,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMinLocationFailed
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorName(val *string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetMonitorName(val *string) {
 	if err := j.validateSetMonitorNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +842,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorName(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorPriority(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetMonitorPriority(val *float64) {
 	if err := j.validateSetMonitorPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +853,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetMonitorPriority(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetNoScreenshot(val interface{}) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetNoScreenshot(val interface{}) {
 	if err := j.validateSetNoScreenshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +864,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetNoScreenshot(val 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetRestrictedRoles(val *[]*string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetRestrictedRoles(val *[]*string) {
 	if err := j.validateSetRestrictedRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +875,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetRestrictedRoles(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +886,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +897,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTickEvery(val *float64) {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetTickEvery(val *float64) {
 	if err := j.validateSetTickEveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +908,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference)SetTickEvery(val *fl
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComputeFqn() *string {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -921,7 +921,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -937,7 +937,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -953,7 +953,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanAttribute
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -969,7 +969,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetBooleanMapAttrib
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -985,7 +985,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetListAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1001,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1017,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberListAttrib
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1033,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetNumberMapAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1049,7 +1049,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1065,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1078,7 +1078,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationAsList
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -1094,7 +1094,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) InterpolationForAtt
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutCi(value *SyntheticsTestOptionsListCi) {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) PutCi(value *SyntheticsTestOptionsListCi) {
 	if err := s.validatePutCiParameters(value); err != nil {
 		panic(err)
 	}
@@ -1105,7 +1105,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutCi(value *Synthe
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutMonitorOptions(value *SyntheticsTestOptionsListMonitorOptions) {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) PutMonitorOptions(value *SyntheticsTestOptionsListMonitorOptions) {
 	if err := s.validatePutMonitorOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1116,7 +1116,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutMonitorOptions(v
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRetry(value *SyntheticsTestOptionsListRetry) {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) PutRetry(value *SyntheticsTestOptionsListRetry) {
 	if err := s.validatePutRetryParameters(value); err != nil {
 		panic(err)
 	}
@@ -1127,7 +1127,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRetry(value *Syn
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRumSettings(value *SyntheticsTestOptionsListRumSettings) {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) PutRumSettings(value *SyntheticsTestOptionsListRumSettings) {
 	if err := s.validatePutRumSettingsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1138,7 +1138,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutRumSettings(valu
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutScheduling(value *SyntheticsTestOptionsListScheduling) {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) PutScheduling(value *SyntheticsTestOptionsListScheduling) {
 	if err := s.validatePutSchedulingParameters(value); err != nil {
 		panic(err)
 	}
@@ -1149,7 +1149,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) PutScheduling(value
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetAcceptSelfSigned() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetAcceptSelfSigned() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcceptSelfSigned",
@@ -1157,7 +1157,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetAcceptSelfSign
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetAllowInsecure() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetAllowInsecure() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowInsecure",
@@ -1165,7 +1165,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetAllowInsecure(
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCheckCertificateRevocation() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetCheckCertificateRevocation() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCheckCertificateRevocation",
@@ -1173,7 +1173,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCheckCertifica
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCi() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetCi() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCi",
@@ -1181,7 +1181,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetCi() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCors() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetDisableCors() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisableCors",
@@ -1189,7 +1189,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCors() 
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCsp() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetDisableCsp() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisableCsp",
@@ -1197,7 +1197,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetDisableCsp() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetFollowRedirects() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetFollowRedirects() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFollowRedirects",
@@ -1205,7 +1205,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetFollowRedirect
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetHttpVersion() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetHttpVersion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpVersion",
@@ -1213,7 +1213,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetHttpVersion() 
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetIgnoreServerCertificateError() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetIgnoreServerCertificateError() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIgnoreServerCertificateError",
@@ -1221,7 +1221,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetIgnoreServerCe
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetInitialNavigationTimeout() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetInitialNavigationTimeout() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetInitialNavigationTimeout",
@@ -1229,7 +1229,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetInitialNavigat
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMinFailureDuration() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetMinFailureDuration() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMinFailureDuration",
@@ -1237,7 +1237,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMinFailureDura
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMinLocationFailed() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetMinLocationFailed() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMinLocationFailed",
@@ -1245,7 +1245,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMinLocationFai
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorName() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetMonitorName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMonitorName",
@@ -1253,7 +1253,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorName() 
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorOptions() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetMonitorOptions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMonitorOptions",
@@ -1261,7 +1261,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorOptions
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorPriority() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetMonitorPriority() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMonitorPriority",
@@ -1269,7 +1269,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetMonitorPriorit
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetNoScreenshot() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetNoScreenshot() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetNoScreenshot",
@@ -1277,7 +1277,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetNoScreenshot()
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRestrictedRoles() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetRestrictedRoles() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRestrictedRoles",
@@ -1285,7 +1285,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRestrictedRole
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRetry() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetRetry() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRetry",
@@ -1293,7 +1293,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRetry() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRumSettings() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetRumSettings() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRumSettings",
@@ -1301,7 +1301,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetRumSettings() 
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetScheduling() {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetScheduling() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetScheduling",
@@ -1309,7 +1309,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ResetScheduling() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -1325,7 +1325,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) Resolve(_context cd
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) ToString() *string {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

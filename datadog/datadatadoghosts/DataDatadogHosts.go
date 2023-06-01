@@ -38,7 +38,7 @@ type DataDatadogHosts interface {
 	From() *float64
 	SetFrom(val *float64)
 	FromInput() *float64
-	HostList() DataDatadogHostsHostListList
+	HostList() DataDatadogHostsHostListStructList
 	Id() *string
 	IncludeMutedHostsData() interface{}
 	SetIncludeMutedHostsData(val interface{})
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataDatadogHosts) FromInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHosts) HostList() DataDatadogHostsHostListList {
-	var returns DataDatadogHostsHostListList
+func (j *jsiiProxy_DataDatadogHosts) HostList() DataDatadogHostsHostListStructList {
+	var returns DataDatadogHostsHostListStructList
 	_jsii_.Get(
 		j,
 		"hostList",

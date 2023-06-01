@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetAnyMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetBooleanAt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetBooleanMa
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetListAttri
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberLis
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetNumberMap
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetStringAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateInterpolatio
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetInternalValueParameters(val *DataDatadogHostsHostList) error {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateSetInternalValueParameters(val *DataDatadogHostsHostListStruct) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewDataDatadogHostsHostListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDatadogHostsHostListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

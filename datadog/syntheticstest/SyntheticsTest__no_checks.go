@@ -72,7 +72,7 @@ func (s *jsiiProxy_SyntheticsTest) validatePutConfigVariableParameters(value int
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTest) validatePutOptionsListParameters(value *SyntheticsTestOptionsList) error {
+func (s *jsiiProxy_SyntheticsTest) validatePutOptionsListParameters(value *SyntheticsTestOptionsListStruct) error {
 	return nil
 }
 

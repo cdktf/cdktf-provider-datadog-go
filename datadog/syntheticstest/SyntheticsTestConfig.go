@@ -77,7 +77,7 @@ type SyntheticsTestConfig struct {
 	// options_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
-	OptionsList *SyntheticsTestOptionsList `field:"optional" json:"optionsList" yaml:"optionsList"`
+	OptionsList *SyntheticsTestOptionsListStruct `field:"optional" json:"optionsList" yaml:"optionsList"`
 	// request_basicauth block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}

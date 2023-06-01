@@ -68,8 +68,8 @@ type SyntheticsTest interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OptionsList() SyntheticsTestOptionsListOutputReference
-	OptionsListInput() *SyntheticsTestOptionsList
+	OptionsList() SyntheticsTestOptionsListStructOutputReference
+	OptionsListInput() *SyntheticsTestOptionsListStruct
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -145,7 +145,7 @@ type SyntheticsTest interface {
 	PutBrowserStep(value interface{})
 	PutBrowserVariable(value interface{})
 	PutConfigVariable(value interface{})
-	PutOptionsList(value *SyntheticsTestOptionsList)
+	PutOptionsList(value *SyntheticsTestOptionsListStruct)
 	PutRequestBasicauth(value *SyntheticsTestRequestBasicauth)
 	PutRequestClientCertificate(value *SyntheticsTestRequestClientCertificate)
 	PutRequestDefinition(value *SyntheticsTestRequestDefinition)
@@ -496,8 +496,8 @@ func (j *jsiiProxy_SyntheticsTest) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTest) OptionsList() SyntheticsTestOptionsListOutputReference {
-	var returns SyntheticsTestOptionsListOutputReference
+func (j *jsiiProxy_SyntheticsTest) OptionsList() SyntheticsTestOptionsListStructOutputReference {
+	var returns SyntheticsTestOptionsListStructOutputReference
 	_jsii_.Get(
 		j,
 		"optionsList",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_SyntheticsTest) OptionsList() SyntheticsTestOptionsListOutput
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTest) OptionsListInput() *SyntheticsTestOptionsList {
-	var returns *SyntheticsTestOptionsList
+func (j *jsiiProxy_SyntheticsTest) OptionsListInput() *SyntheticsTestOptionsListStruct {
+	var returns *SyntheticsTestOptionsListStruct
 	_jsii_.Get(
 		j,
 		"optionsListInput",
@@ -1347,7 +1347,7 @@ func (s *jsiiProxy_SyntheticsTest) PutConfigVariable(value interface{}) {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTest) PutOptionsList(value *SyntheticsTestOptionsList) {
+func (s *jsiiProxy_SyntheticsTest) PutOptionsList(value *SyntheticsTestOptionsListStruct) {
 	if err := s.validatePutOptionsListParameters(value); err != nil {
 		panic(err)
 	}

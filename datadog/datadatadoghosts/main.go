@@ -73,30 +73,6 @@ func init() {
 		reflect.TypeOf((*DataDatadogHostsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostList",
-		reflect.TypeOf((*DataDatadogHostsHostList)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList",
-		reflect.TypeOf((*DataDatadogHostsHostListList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataDatadogHostsHostListList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta",
 		reflect.TypeOf((*DataDatadogHostsHostListMeta)(nil)).Elem(),
 	)
@@ -180,9 +156,33 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct",
+		reflect.TypeOf((*DataDatadogHostsHostListStruct)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference",
-		reflect.TypeOf((*DataDatadogHostsHostListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList",
+		reflect.TypeOf((*DataDatadogHostsHostListStructList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataDatadogHostsHostListStructList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference",
+		reflect.TypeOf((*DataDatadogHostsHostListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
 			_jsii_.MemberProperty{JsiiProperty: "apps", GoGetter: "Apps"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "up", GoGetter: "Up"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataDatadogHostsHostListOutputReference{}
+			j := jsiiProxy_DataDatadogHostsHostListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

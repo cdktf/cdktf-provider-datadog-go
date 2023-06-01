@@ -1,7 +1,7 @@
 package syntheticstest
 
 
-type SyntheticsTestOptionsList struct {
+type SyntheticsTestOptionsListStruct struct {
 	// How often the test should run (in seconds).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}

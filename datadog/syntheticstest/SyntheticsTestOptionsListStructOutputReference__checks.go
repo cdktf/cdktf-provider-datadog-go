@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetAnyMapAt
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetBooleanA
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetBooleanM
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetListAttr
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberAt
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberLi
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetNumberMa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetStringAt
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateInterpolati
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutCiParameters(value *SyntheticsTestOptionsListCi) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validatePutCiParameters(value *SyntheticsTestOptionsListCi) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutCiParame
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutMonitorOptionsParameters(value *SyntheticsTestOptionsListMonitorOptions) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validatePutMonitorOptionsParameters(value *SyntheticsTestOptionsListMonitorOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -112,7 +112,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutMonitorO
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutRetryParameters(value *SyntheticsTestOptionsListRetry) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validatePutRetryParameters(value *SyntheticsTestOptionsListRetry) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -123,7 +123,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutRetryPar
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutRumSettingsParameters(value *SyntheticsTestOptionsListRumSettings) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validatePutRumSettingsParameters(value *SyntheticsTestOptionsListRumSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -134,7 +134,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutRumSetti
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutSchedulingParameters(value *SyntheticsTestOptionsListScheduling) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validatePutSchedulingParameters(value *SyntheticsTestOptionsListScheduling) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validatePutScheduli
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -153,7 +153,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetAcceptSelfSignedParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetAcceptSelfSignedParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetAcceptSe
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetAllowInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetAllowInsecureParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetAllowIns
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetCheckCertificateRevocationParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetCheckCertificateRevocationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetCheckCer
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,7 +270,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,27 +278,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetDisableCorsParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetDisableCspParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetDisableCorsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -318,7 +298,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetDisableC
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetFollowRedirectsParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetDisableCspParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,15 +318,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetFollowRe
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetHttpVersionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetIgnoreServerCertificateErrorParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetFollowRedirectsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,7 +338,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetIgnoreSe
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetInitialNavigationTimeoutParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetHttpVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -374,7 +346,35 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetInitialN
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetInternalValueParameters(val *SyntheticsTestOptionsList) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetIgnoreServerCertificateErrorParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetInitialNavigationTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetInternalValueParameters(val *SyntheticsTestOptionsListStruct) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMinFailureDurationParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetMinFailureDurationParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMinFailu
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMinLocationFailedParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetMinLocationFailedParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMinLocat
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMonitorNameParameters(val *string) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetMonitorNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,7 +406,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMonitorN
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMonitorPriorityParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetMonitorPriorityParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -414,7 +414,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetMonitorP
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetNoScreenshotParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetNoScreenshotParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -434,7 +434,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetNoScreen
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetRestrictedRolesParameters(val *[]*string) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetRestrictedRolesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetRestrict
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -450,7 +450,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTickEveryParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetTickEveryParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListOutputReference) validateSetTickEver
 	return nil
 }
 
-func validateNewSyntheticsTestOptionsListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsTestOptionsListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

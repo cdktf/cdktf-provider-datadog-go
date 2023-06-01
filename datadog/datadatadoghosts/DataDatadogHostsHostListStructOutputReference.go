@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataDatadogHostsHostListOutputReference interface {
+type DataDatadogHostsHostListStructOutputReference interface {
 	cdktf.ComplexObject
 	Aliases() *[]*string
 	Apps() *[]*string
@@ -32,8 +32,8 @@ type DataDatadogHostsHostListOutputReference interface {
 	Fqn() *string
 	HostName() *string
 	Id() *float64
-	InternalValue() *DataDatadogHostsHostList
-	SetInternalValue(val *DataDatadogHostsHostList)
+	InternalValue() *DataDatadogHostsHostListStruct
+	SetInternalValue(val *DataDatadogHostsHostListStruct)
 	IsMuted() cdktf.IResolvable
 	LastReportedTime() *float64
 	Meta() DataDatadogHostsHostListMetaOutputReference
@@ -84,12 +84,12 @@ type DataDatadogHostsHostListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataDatadogHostsHostListOutputReference
-type jsiiProxy_DataDatadogHostsHostListOutputReference struct {
+// The jsii proxy struct for DataDatadogHostsHostListStructOutputReference
+type jsiiProxy_DataDatadogHostsHostListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Aliases() *[]*string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Aliases() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -99,7 +99,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Aliases() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Apps() *[]*string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Apps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -109,7 +109,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Apps() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) AwsName() *string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) AwsName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -119,7 +119,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) AwsName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -129,7 +129,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) ComplexObjectIndex()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -139,7 +139,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) ComplexObjectIsFromS
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -149,7 +149,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) HostName() *string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) HostName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) HostName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Id() *float64 {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Id() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Id() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) InternalValue() *DataDatadogHostsHostList {
-	var returns *DataDatadogHostsHostList
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) InternalValue() *DataDatadogHostsHostListStruct {
+	var returns *DataDatadogHostsHostListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -189,7 +189,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) InternalValue() *Dat
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) IsMuted() cdktf.IResolvable {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) IsMuted() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) IsMuted() cdktf.IRes
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) LastReportedTime() *float64 {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) LastReportedTime() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -209,7 +209,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) LastReportedTime() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Meta() DataDatadogHostsHostListMetaOutputReference {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Meta() DataDatadogHostsHostListMetaOutputReference {
 	var returns DataDatadogHostsHostListMetaOutputReference
 	_jsii_.Get(
 		j,
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Meta() DataDatadogHo
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Metrics() DataDatadogHostsHostListMetricsOutputReference {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Metrics() DataDatadogHostsHostListMetricsOutputReference {
 	var returns DataDatadogHostsHostListMetricsOutputReference
 	_jsii_.Get(
 		j,
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Metrics() DataDatado
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) MuteTimeout() *float64 {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) MuteTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -239,7 +239,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) MuteTimeout() *float
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Name() *string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -249,7 +249,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Sources() *[]*string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Sources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -259,7 +259,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Sources() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -279,7 +279,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) TerraformResource() 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Up() cdktf.IResolvable {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Up() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
@@ -290,16 +290,16 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference) Up() cdktf.IResolvab
 }
 
 
-func NewDataDatadogHostsHostListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogHostsHostListOutputReference {
+func NewDataDatadogHostsHostListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogHostsHostListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDatadogHostsHostListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDatadogHostsHostListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataDatadogHostsHostListOutputReference{}
+	j := jsiiProxy_DataDatadogHostsHostListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference",
+		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,17 +307,17 @@ func NewDataDatadogHostsHostListOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewDataDatadogHostsHostListOutputReference_Override(d DataDatadogHostsHostListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogHostsHostListStructOutputReference_Override(d DataDatadogHostsHostListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference",
+		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetInternalValue(val *DataDatadogHostsHostList) {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference)SetInternalValue(val *DataDatadogHostsHostListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataDatadogHostsHostListOutputReference)SetTerraformResource(
 	)
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -385,7 +385,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -401,7 +401,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -417,7 +417,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetBooleanAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetBooleanMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -449,7 +449,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetListAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -465,7 +465,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -481,7 +481,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberListAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -497,7 +497,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetNumberMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -513,7 +513,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetStringAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -529,7 +529,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -542,7 +542,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -558,7 +558,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -574,7 +574,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) Resolve(_context cdk
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListOutputReference) ToString() *string {
+func (d *jsiiProxy_DataDatadogHostsHostListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
