@@ -64,6 +64,10 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardWidgetTreemapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

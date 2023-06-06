@@ -37,6 +37,9 @@ type SyntheticsTestApiStepExtractedValueOutputReference interface {
 	NameInput() *string
 	Parser() SyntheticsTestApiStepExtractedValueParserOutputReference
 	ParserInput() *SyntheticsTestApiStepExtractedValueParser
+	Secure() interface{}
+	SetSecure(val interface{})
+	SecureInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type SyntheticsTestApiStepExtractedValueOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParser(value *SyntheticsTestApiStepExtractedValueParser)
 	ResetField()
+	ResetSecure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) ParserInp
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) Secure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) SecureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -318,6 +342,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetName(va
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference)SetSecure(val interface{}) {
+	if err := j.validateSetSecureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secure",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) ResetFiel
 	_jsii_.InvokeVoid(
 		s,
 		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) ResetSecure() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecure",
 		nil, // no parameters
 	)
 }

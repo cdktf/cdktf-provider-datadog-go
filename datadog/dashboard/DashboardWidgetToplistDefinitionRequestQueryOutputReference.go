@@ -39,6 +39,8 @@ type DashboardWidgetToplistDefinitionRequestQueryOutputReference interface {
 	MetricQueryInput() *DashboardWidgetToplistDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardWidgetToplistDefinitionRequestQueryProcessQuery
+	SloQuery() DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputReference
+	SloQueryInput() *DashboardWidgetToplistDefinitionRequestQuerySloQuery
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type DashboardWidgetToplistDefinitionRequestQueryOutputReference interface {
 	PutEventQuery(value *DashboardWidgetToplistDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetToplistDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetToplistDefinitionRequestQueryProcessQuery)
+	PutSloQuery(value *DashboardWidgetToplistDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetSloQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"processQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SloQuery() DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputReference {
+	var returns DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputReference
+	_jsii_.Get(
+		j,
+		"sloQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) SloQueryInput() *DashboardWidgetToplistDefinitionRequestQuerySloQuery {
+	var returns *DashboardWidgetToplistDefinitionRequestQuerySloQuery
+	_jsii_.Get(
+		j,
+		"sloQueryInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardWidgetToplistDefinitionRequestQuerySloQuery) {
+	if err := d.validatePutSloQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSloQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +661,14 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetProcessQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) ResetSloQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSloQuery",
 		nil, // no parameters
 	)
 }

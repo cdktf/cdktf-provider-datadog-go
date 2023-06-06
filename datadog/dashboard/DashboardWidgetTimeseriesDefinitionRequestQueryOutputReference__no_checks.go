@@ -64,6 +64,10 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardWidgetTimeseriesDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

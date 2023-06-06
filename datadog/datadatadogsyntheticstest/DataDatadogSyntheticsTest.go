@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
 type DataDatadogSyntheticsTest interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -314,7 +314,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
 func NewDataDatadogSyntheticsTest(scope constructs.Construct, id *string, config *DataDatadogSyntheticsTestConfig) DataDatadogSyntheticsTest {
 	_init_.Initialize()
 
@@ -332,7 +332,7 @@ func NewDataDatadogSyntheticsTest(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
 func NewDataDatadogSyntheticsTest_Override(d DataDatadogSyntheticsTest, scope constructs.Construct, id *string, config *DataDatadogSyntheticsTestConfig) {
 	_init_.Initialize()
 

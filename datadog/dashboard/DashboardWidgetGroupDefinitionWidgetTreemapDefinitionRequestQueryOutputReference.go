@@ -39,6 +39,8 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputRefe
 	MetricQueryInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery
+	SloQuery() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQueryOutputReference
+	SloQueryInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQuery
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputRefe
 	PutEventQuery(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery)
+	PutSloQuery(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetSloQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	_jsii_.Get(
 		j,
 		"processQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) SloQuery() DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQueryOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQueryOutputReference
+	_jsii_.Get(
+		j,
+		"sloQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) SloQueryInput() *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQuery {
+	var returns *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQuery
+	_jsii_.Get(
+		j,
+		"sloQueryInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuerySloQuery) {
+	if err := d.validatePutSloQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSloQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +661,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	_jsii_.InvokeVoid(
 		d,
 		"resetProcessQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) ResetSloQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSloQuery",
 		nil, // no parameters
 	)
 }

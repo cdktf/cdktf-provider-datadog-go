@@ -72,6 +72,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) validateSetSecureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepExtractedValueOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

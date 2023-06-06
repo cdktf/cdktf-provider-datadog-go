@@ -64,6 +64,10 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardWidgetSunburstDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

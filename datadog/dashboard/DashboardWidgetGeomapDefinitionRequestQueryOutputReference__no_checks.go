@@ -64,6 +64,10 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardWidgetGeomapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

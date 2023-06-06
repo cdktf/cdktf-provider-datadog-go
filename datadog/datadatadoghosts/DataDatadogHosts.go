@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/hosts datadog_hosts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/hosts datadog_hosts}.
 type DataDatadogHosts interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataDatadogHosts) TotalReturned() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/hosts datadog_hosts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/hosts datadog_hosts} Data Source.
 func NewDataDatadogHosts(scope constructs.Construct, id *string, config *DataDatadogHostsConfig) DataDatadogHosts {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataDatadogHosts(scope constructs.Construct, id *string, config *DataDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/hosts datadog_hosts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/hosts datadog_hosts} Data Source.
 func NewDataDatadogHosts_Override(d DataDatadogHosts, scope constructs.Construct, id *string, config *DataDatadogHostsConfig) {
 	_init_.Initialize()
 

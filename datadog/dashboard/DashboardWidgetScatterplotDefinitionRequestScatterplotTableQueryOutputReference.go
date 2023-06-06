@@ -39,6 +39,8 @@ type DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputRefer
 	MetricQueryInput() *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery
 	ProcessQuery() DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery
+	SloQuery() DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference
+	SloQueryInput() *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputRefer
 	PutEventQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery)
+	PutSloQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetSloQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	_jsii_.Get(
 		j,
 		"processQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SloQuery() DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference {
+	var returns DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference
+	_jsii_.Get(
+		j,
+		"sloQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) SloQueryInput() *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery {
+	var returns *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery
+	_jsii_.Get(
+		j,
+		"sloQueryInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutSloQuery(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery) {
+	if err := d.validatePutSloQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSloQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +661,14 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	_jsii_.InvokeVoid(
 		d,
 		"resetProcessQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) ResetSloQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSloQuery",
 		nil, // no parameters
 	)
 }

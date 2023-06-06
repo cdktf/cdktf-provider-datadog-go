@@ -41,6 +41,8 @@ type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputR
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
+	Sort() DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySortOutputReference
+	SortInput() *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySort
 	Storage() *string
 	SetStorage(val *string)
 	StorageInput() *string
@@ -76,9 +78,11 @@ type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputR
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSort(value *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySort)
 	ResetEventSize()
 	ResetIndexes()
 	ResetQueryString()
+	ResetSort()
 	ResetStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -220,6 +224,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	_jsii_.Get(
 		j,
 		"queryStringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) Sort() DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySortOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) SortInput() *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySort {
+	var returns *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) PutSort(value *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuerySort) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) ResetEventSize() {
 	_jsii_.InvokeVoid(
 		d,
@@ -609,6 +644,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionReque
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryString",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSort",
 		nil, // no parameters
 	)
 }

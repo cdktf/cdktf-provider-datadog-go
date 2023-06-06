@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/dashboard datadog_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard datadog_dashboard}.
 type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -607,7 +607,7 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 

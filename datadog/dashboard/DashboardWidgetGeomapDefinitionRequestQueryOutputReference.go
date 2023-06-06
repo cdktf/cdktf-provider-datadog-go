@@ -39,6 +39,8 @@ type DashboardWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	MetricQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryProcessQuery
+	SloQuery() DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference
+	SloQueryInput() *DashboardWidgetGeomapDefinitionRequestQuerySloQuery
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +78,13 @@ type DashboardWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	PutEventQuery(value *DashboardWidgetGeomapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetGeomapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetGeomapDefinitionRequestQueryProcessQuery)
+	PutSloQuery(value *DashboardWidgetGeomapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetSloQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) P
 	_jsii_.Get(
 		j,
 		"processQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) SloQuery() DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference {
+	var returns DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference
+	_jsii_.Get(
+		j,
+		"sloQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) SloQueryInput() *DashboardWidgetGeomapDefinitionRequestQuerySloQuery {
+	var returns *DashboardWidgetGeomapDefinitionRequestQuerySloQuery
+	_jsii_.Get(
+		j,
+		"sloQueryInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardWidgetGeomapDefinitionRequestQuerySloQuery) {
+	if err := d.validatePutSloQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSloQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +661,14 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetProcessQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) ResetSloQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSloQuery",
 		nil, // no parameters
 	)
 }

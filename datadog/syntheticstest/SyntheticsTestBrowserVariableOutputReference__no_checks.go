@@ -76,6 +76,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserVariableOutputReference) validateSetPatt
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserVariableOutputReference) validateSetSecureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserVariableOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
