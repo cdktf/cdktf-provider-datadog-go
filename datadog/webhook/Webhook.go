@@ -2,10 +2,10 @@ package webhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/webhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
