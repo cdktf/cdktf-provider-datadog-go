@@ -2,14 +2,14 @@ package datadatadogdashboardlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadogdashboardlist/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogdashboardlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 type DataDatadogDashboardList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataDatadogDashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) DataDatadogDashboardList {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList_Override(d DataDatadogDashboardList, scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) {
 	_init_.Initialize()
 

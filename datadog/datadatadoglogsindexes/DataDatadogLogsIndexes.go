@@ -2,14 +2,14 @@ package datadatadoglogsindexes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogsindexes/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadoglogsindexes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
 type DataDatadogLogsIndexes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) DataDatadogLogsIndexes {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes_Override(d DataDatadogLogsIndexes, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) {
 	_init_.Initialize()
 

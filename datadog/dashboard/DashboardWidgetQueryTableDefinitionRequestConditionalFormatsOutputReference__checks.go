@@ -217,6 +217,8 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsO
 
 func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetQueryTableDefinitionRequestConditionalFormats:
 		val := val.(*DashboardWidgetQueryTableDefinitionRequestConditionalFormats)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -228,11 +230,9 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsO
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetQueryTableDefinitionRequestConditionalFormats, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetQueryTableDefinitionRequestConditionalFormats; received %#v (a %T)", val, val)
 		}
 	}
 

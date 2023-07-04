@@ -184,6 +184,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy:
 		val := val.(*DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -195,11 +197,9 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy; received %#v (a %T)", val, val)
 		}
 	}
 

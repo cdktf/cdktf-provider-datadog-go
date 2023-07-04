@@ -181,6 +181,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequ
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery:
 		val := val.(*DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequ
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery; received %#v (a %T)", val, val)
 		}
 	}
 

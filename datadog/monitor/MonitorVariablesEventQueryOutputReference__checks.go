@@ -254,6 +254,8 @@ func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) validateSetIndexes
 
 func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MonitorVariablesEventQuery:
 		val := val.(*MonitorVariablesEventQuery)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -265,11 +267,9 @@ func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MonitorVariablesEventQuery, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitorVariablesEventQuery; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -354,6 +354,8 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestOutputReference) va
 
 func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetTimeseriesDefinitionRequest:
 		val := val.(*DashboardWidgetTimeseriesDefinitionRequest)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -365,11 +367,9 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetTimeseriesDefinitionRequest, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetTimeseriesDefinitionRequest; received %#v (a %T)", val, val)
 		}
 	}
 

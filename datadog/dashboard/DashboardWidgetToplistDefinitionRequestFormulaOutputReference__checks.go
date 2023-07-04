@@ -242,6 +242,8 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetToplistDefinitionRequestFormula:
 		val := val.(*DashboardWidgetToplistDefinitionRequestFormula)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -253,11 +255,9 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetToplistDefinitionRequestFormula, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetToplistDefinitionRequestFormula; received %#v (a %T)", val, val)
 		}
 	}
 

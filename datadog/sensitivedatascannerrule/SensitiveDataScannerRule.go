@@ -2,14 +2,14 @@ package sensitivedatascannerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/sensitivedatascannerrule/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/sensitivedatascannerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 type SensitiveDataScannerRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_SensitiveDataScannerRule) TextReplacementInput() *SensitiveDa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) SensitiveDataScannerRule {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule_Override(s SensitiveDataScannerRule, scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) {
 	_init_.Initialize()
 

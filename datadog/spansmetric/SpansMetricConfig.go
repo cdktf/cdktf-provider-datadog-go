@@ -21,15 +21,15 @@ type SpansMetricConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the span-based metric. This field can't be updated after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/spans_metric#name SpansMetric#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#name SpansMetric#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/spans_metric#filter SpansMetric#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#filter SpansMetric#filter}
 	Filter *SpansMetricFilter `field:"optional" json:"filter" yaml:"filter"`
 	// group_by block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
 	GroupBy interface{} `field:"optional" json:"groupBy" yaml:"groupBy"`
 }
 

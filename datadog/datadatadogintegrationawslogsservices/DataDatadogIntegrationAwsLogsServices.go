@@ -2,14 +2,14 @@ package datadatadogintegrationawslogsservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadogintegrationawslogsservices/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogintegrationawslogsservices/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
 type DataDatadogIntegrationAwsLogsServices interface {
 	cdktf.TerraformDataSource
 	AwsLogsServices() DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServices) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
 func NewDataDatadogIntegrationAwsLogsServices(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) DataDatadogIntegrationAwsLogsServices {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataDatadogIntegrationAwsLogsServices(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services} Data Source.
 func NewDataDatadogIntegrationAwsLogsServices_Override(d DataDatadogIntegrationAwsLogsServices, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsLogsServicesConfig) {
 	_init_.Initialize()
 

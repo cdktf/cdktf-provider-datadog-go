@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDatadogUser) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogUser) validateSetExactMatchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogUser) validateSetFilterParameters(val *string) error {
 	return nil
 }

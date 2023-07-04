@@ -21,20 +21,22 @@ type DashboardJsonConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The JSON formatted definition of the Dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
 	Dashboard *string `field:"required" json:"dashboard" yaml:"dashboard"`
-	// The list of dashboard lists this dashboard belongs to.
+	// A list of dashboard lists this dashboard belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+	// This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
 	DashboardLists *[]*float64 `field:"optional" json:"dashboardLists" yaml:"dashboardLists"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#id DashboardJson#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#id DashboardJson#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The URL of the dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#url DashboardJson#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#url DashboardJson#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

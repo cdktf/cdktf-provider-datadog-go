@@ -4,11 +4,11 @@ package syntheticstest
 type SyntheticsTestRequestClientCertificate struct {
 	// cert block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 	Cert *SyntheticsTestRequestClientCertificateCert `field:"required" json:"cert" yaml:"cert"`
 	// key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 	Key *SyntheticsTestRequestClientCertificateKey `field:"required" json:"key" yaml:"key"`
 }
 

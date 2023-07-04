@@ -2,14 +2,14 @@ package logscustompipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/logscustompipeline/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 type LogsCustomPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_LogsCustomPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) LogsCustomPipeline {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline_Override(l LogsCustomPipeline, scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) {
 	_init_.Initialize()
 

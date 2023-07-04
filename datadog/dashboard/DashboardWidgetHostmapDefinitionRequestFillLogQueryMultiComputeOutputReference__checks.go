@@ -181,6 +181,8 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompu
 
 func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute:
 		val := val.(*DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -227,6 +227,8 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOu
 
 func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetScatterplotDefinitionRequestScatterplotTable:
 		val := val.(*DashboardWidgetScatterplotDefinitionRequestScatterplotTable)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetScatterplotDefinitionRequestScatterplotTable, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetScatterplotDefinitionRequestScatterplotTable; received %#v (a %T)", val, val)
 		}
 	}
 

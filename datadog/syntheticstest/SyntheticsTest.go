@@ -2,14 +2,14 @@ package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/syntheticstest/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/syntheticstest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/synthetics_test datadog_synthetics_test}.
 type SyntheticsTest interface {
 	cdktf.TerraformResource
 	ApiStep() SyntheticsTestApiStepList
@@ -797,7 +797,7 @@ func (j *jsiiProxy_SyntheticsTest) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest(scope constructs.Construct, id *string, config *SyntheticsTestConfig) SyntheticsTest {
 	_init_.Initialize()
 
@@ -815,7 +815,7 @@ func NewSyntheticsTest(scope constructs.Construct, id *string, config *Synthetic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest_Override(s SyntheticsTest, scope constructs.Construct, id *string, config *SyntheticsTestConfig) {
 	_init_.Initialize()
 

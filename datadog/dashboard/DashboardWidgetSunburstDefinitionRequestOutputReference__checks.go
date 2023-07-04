@@ -304,6 +304,8 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) vali
 
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DashboardWidgetSunburstDefinitionRequest:
 		val := val.(*DashboardWidgetSunburstDefinitionRequest)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -315,11 +317,9 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) vali
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DashboardWidgetSunburstDefinitionRequest, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetSunburstDefinitionRequest; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package servicedefinitionyaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/servicedefinitionyaml/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/servicedefinitionyaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
 type ServiceDefinitionYaml interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ServiceDefinitionYaml) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) ServiceDefinitionYaml {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewServiceDefinitionYaml(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource.
 func NewServiceDefinitionYaml_Override(s ServiceDefinitionYaml, scope constructs.Construct, id *string, config *ServiceDefinitionYamlConfig) {
 	_init_.Initialize()
 

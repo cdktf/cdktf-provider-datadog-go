@@ -2,14 +2,14 @@ package monitorconfigpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/monitorconfigpolicy/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/monitorconfigpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 type MonitorConfigPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_MonitorConfigPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) MonitorConfigPolicy {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *Moni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy_Override(m MonitorConfigPolicy, scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) {
 	_init_.Initialize()
 

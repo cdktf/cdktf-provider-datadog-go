@@ -2,14 +2,14 @@ package integrationconfluentresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/integrationconfluentresource/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationconfluentresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
 type IntegrationConfluentResource interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_IntegrationConfluentResource) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
 func NewIntegrationConfluentResource(scope constructs.Construct, id *string, config *IntegrationConfluentResourceConfig) IntegrationConfluentResource {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewIntegrationConfluentResource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
 func NewIntegrationConfluentResource_Override(i IntegrationConfluentResource, scope constructs.Construct, id *string, config *IntegrationConfluentResourceConfig) {
 	_init_.Initialize()
 

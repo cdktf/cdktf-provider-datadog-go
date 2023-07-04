@@ -2,14 +2,14 @@ package datadatadogrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadogrole/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/role datadog_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/role datadog_role}.
 type DataDatadogRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataDatadogRole) UserCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/role datadog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/role datadog_role} Data Source.
 func NewDataDatadogRole(scope constructs.Construct, id *string, config *DataDatadogRoleConfig) DataDatadogRole {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataDatadogRole(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/role datadog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/role datadog_role} Data Source.
 func NewDataDatadogRole_Override(d DataDatadogRole, scope constructs.Construct, id *string, config *DataDatadogRoleConfig) {
 	_init_.Initialize()
 
