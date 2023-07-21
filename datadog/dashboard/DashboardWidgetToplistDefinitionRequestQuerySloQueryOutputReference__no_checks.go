@@ -48,6 +48,10 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputReference) validateSetAdditionalQueryFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestQuerySloQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

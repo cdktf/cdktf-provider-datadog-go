@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric}.
 type SpansMetric interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SpansMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricConfig) SpansMetric {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric_Override(s SpansMetric, scope constructs.Construct, id *string, config *SpansMetricConfig) {
 	_init_.Initialize()
 

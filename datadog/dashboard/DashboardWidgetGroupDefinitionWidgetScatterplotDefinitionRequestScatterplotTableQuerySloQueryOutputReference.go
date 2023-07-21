@@ -10,6 +10,9 @@ import (
 
 type DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalQueryFilters() *string
+	SetAdditionalQueryFilters(val *string)
+	AdditionalQueryFiltersInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +82,7 @@ type DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplot
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalQueryFilters()
 	ResetGroupMode()
 	ResetName()
 	ResetSloQueryType()
@@ -95,6 +99,26 @@ type DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplot
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference) AdditionalQueryFilters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference) AdditionalQueryFiltersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -312,6 +336,17 @@ func NewDashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterp
 		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference)SetAdditionalQueryFilters(val *string) {
+	if err := j.validateSetAdditionalQueryFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalQueryFilters",
+		val,
 	)
 }
 
@@ -620,6 +655,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequ
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference) ResetAdditionalQueryFilters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdditionalQueryFilters",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference) ResetGroupMode() {

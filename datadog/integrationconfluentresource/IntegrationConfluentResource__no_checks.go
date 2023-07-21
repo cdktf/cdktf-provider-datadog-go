@@ -76,6 +76,10 @@ func (j *jsiiProxy_IntegrationConfluentResource) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationConfluentResource) validateSetEnableCustomMetricsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationConfluentResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

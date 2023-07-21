@@ -10,6 +10,9 @@ import (
 
 type DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalQueryFilters() *string
+	SetAdditionalQueryFilters(val *string)
+	AdditionalQueryFiltersInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +82,7 @@ type DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQuer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalQueryFilters()
 	ResetGroupMode()
 	ResetName()
 	ResetSloQueryType()
@@ -95,6 +99,26 @@ type DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQuer
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference) AdditionalQueryFilters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference) AdditionalQueryFiltersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalQueryFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -312,6 +336,17 @@ func NewDashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQ
 		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference)SetAdditionalQueryFilters(val *string) {
+	if err := j.validateSetAdditionalQueryFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalQueryFilters",
+		val,
 	)
 }
 
@@ -620,6 +655,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionReque
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference) ResetAdditionalQueryFilters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdditionalQueryFilters",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference) ResetGroupMode() {

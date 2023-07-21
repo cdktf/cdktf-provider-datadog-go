@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
 type IntegrationConfluentResource interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -31,6 +31,9 @@ type IntegrationConfluentResource interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableCustomMetrics() interface{}
+	SetEnableCustomMetrics(val interface{})
+	EnableCustomMetricsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -96,6 +99,7 @@ type IntegrationConfluentResource interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnableCustomMetrics()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_IntegrationConfluentResource) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationConfluentResource) EnableCustomMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCustomMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationConfluentResource) EnableCustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCustomMetricsInput",
 		&returns,
 	)
 	return returns
@@ -367,7 +391,7 @@ func (j *jsiiProxy_IntegrationConfluentResource) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
 func NewIntegrationConfluentResource(scope constructs.Construct, id *string, config *IntegrationConfluentResourceConfig) IntegrationConfluentResource {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewIntegrationConfluentResource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource.
 func NewIntegrationConfluentResource_Override(i IntegrationConfluentResource, scope constructs.Construct, id *string, config *IntegrationConfluentResourceConfig) {
 	_init_.Initialize()
 
@@ -433,6 +457,17 @@ func (j *jsiiProxy_IntegrationConfluentResource)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationConfluentResource)SetEnableCustomMetrics(val interface{}) {
+	if err := j.validateSetEnableCustomMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableCustomMetrics",
 		val,
 	)
 }
@@ -771,6 +806,14 @@ func (i *jsiiProxy_IntegrationConfluentResource) OverrideLogicalId(newLogicalId 
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IntegrationConfluentResource) ResetEnableCustomMetrics() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEnableCustomMetrics",
+		nil, // no parameters
 	)
 }
 

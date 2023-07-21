@@ -108,8 +108,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "principalsInput", GoGetter: "PrincipalsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "relation", GoGetter: "Relation"},
 			_jsii_.MemberProperty{JsiiProperty: "relationInput", GoGetter: "RelationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrincipals", GoMethod: "ResetPrincipals"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRelation", GoMethod: "ResetRelation"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

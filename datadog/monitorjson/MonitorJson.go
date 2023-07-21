@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_json datadog_monitor_json}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json datadog_monitor_json}.
 type MonitorJson interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_MonitorJson) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_json datadog_monitor_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json datadog_monitor_json} Resource.
 func NewMonitorJson(scope constructs.Construct, id *string, config *MonitorJsonConfig) MonitorJson {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewMonitorJson(scope constructs.Construct, id *string, config *MonitorJsonC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/monitor_json datadog_monitor_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json datadog_monitor_json} Resource.
 func NewMonitorJson_Override(m MonitorJson, scope constructs.Construct, id *string, config *MonitorJsonConfig) {
 	_init_.Initialize()
 

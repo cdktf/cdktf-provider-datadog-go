@@ -67,8 +67,6 @@ type RestrictionPolicyBindingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPrincipals()
-	ResetRelation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (r *jsiiProxy_RestrictionPolicyBindingsOutputReference) InterpolationForAtt
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RestrictionPolicyBindingsOutputReference) ResetPrincipals() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPrincipals",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RestrictionPolicyBindingsOutputReference) ResetRelation() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetRelation",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RestrictionPolicyBindingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

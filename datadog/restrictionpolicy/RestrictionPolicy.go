@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy}.
 type RestrictionPolicy interface {
 	cdktf.TerraformResource
 	Bindings() RestrictionPolicyBindingsList
@@ -320,7 +320,7 @@ func (j *jsiiProxy_RestrictionPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
 func NewRestrictionPolicy(scope constructs.Construct, id *string, config *RestrictionPolicyConfig) RestrictionPolicy {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewRestrictionPolicy(scope constructs.Construct, id *string, config *Restri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
 func NewRestrictionPolicy_Override(r RestrictionPolicy, scope constructs.Construct, id *string, config *RestrictionPolicyConfig) {
 	_init_.Initialize()
 

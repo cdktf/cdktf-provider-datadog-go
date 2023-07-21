@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_membership datadog_team_membership}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership}.
 type TeamMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_TeamMembership) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_membership datadog_team_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership} Resource.
 func NewTeamMembership(scope constructs.Construct, id *string, config *TeamMembershipConfig) TeamMembership {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewTeamMembership(scope constructs.Construct, id *string, config *TeamMembe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_membership datadog_team_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership} Resource.
 func NewTeamMembership_Override(t TeamMembership, scope constructs.Construct, id *string, config *TeamMembershipConfig) {
 	_init_.Initialize()
 

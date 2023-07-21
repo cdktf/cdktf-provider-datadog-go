@@ -48,6 +48,10 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQuerySloQueryOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQuerySloQueryOutputReference) validateSetAdditionalQueryFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQuerySloQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

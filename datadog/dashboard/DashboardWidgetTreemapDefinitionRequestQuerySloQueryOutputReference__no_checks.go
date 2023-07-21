@@ -48,6 +48,10 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQuerySloQueryOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQuerySloQueryOutputReference) validateSetAdditionalQueryFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQuerySloQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

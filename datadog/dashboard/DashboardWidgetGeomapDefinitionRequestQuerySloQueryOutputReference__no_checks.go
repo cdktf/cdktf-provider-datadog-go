@@ -48,6 +48,10 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference) validateSetAdditionalQueryFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
