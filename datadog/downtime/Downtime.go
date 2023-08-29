@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package downtime
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/downtime/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtime/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/downtime datadog_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime}.
 type Downtime interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -582,7 +585,7 @@ func (j *jsiiProxy_Downtime) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig) Downtime {
 	_init_.Initialize()
 
@@ -600,7 +603,7 @@ func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime_Override(d Downtime, scope constructs.Construct, id *string, config *DowntimeConfig) {
 	_init_.Initialize()
 

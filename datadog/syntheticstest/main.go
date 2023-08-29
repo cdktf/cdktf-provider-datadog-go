@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package syntheticstest
 
 import (
@@ -760,6 +763,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noSavingResponseBodyInput", GoGetter: "NoSavingResponseBodyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfPackets", GoGetter: "NumberOfPackets"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfPacketsInput", GoGetter: "NumberOfPacketsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "persistCookies", GoGetter: "PersistCookies"},
+			_jsii_.MemberProperty{JsiiProperty: "persistCookiesInput", GoGetter: "PersistCookiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
 			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInsecure", GoMethod: "ResetAllowInsecure"},
@@ -775,6 +780,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoSavingResponseBody", GoMethod: "ResetNoSavingResponseBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfPackets", GoMethod: "ResetNumberOfPackets"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPersistCookies", GoMethod: "ResetPersistCookies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServername", GoMethod: "ResetServername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},
@@ -2124,6 +2130,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noSavingResponseBodyInput", GoGetter: "NoSavingResponseBodyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfPackets", GoGetter: "NumberOfPackets"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfPacketsInput", GoGetter: "NumberOfPacketsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "persistCookies", GoGetter: "PersistCookies"},
+			_jsii_.MemberProperty{JsiiProperty: "persistCookiesInput", GoGetter: "PersistCookiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
 			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBody", GoMethod: "ResetBody"},
@@ -2137,6 +2145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoSavingResponseBody", GoMethod: "ResetNoSavingResponseBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfPackets", GoMethod: "ResetNumberOfPackets"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPersistCookies", GoMethod: "ResetPersistCookies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServername", GoMethod: "ResetServername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},

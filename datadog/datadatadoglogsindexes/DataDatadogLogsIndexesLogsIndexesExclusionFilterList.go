@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadoglogsindexes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadoglogsindexes/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadoglogsindexes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

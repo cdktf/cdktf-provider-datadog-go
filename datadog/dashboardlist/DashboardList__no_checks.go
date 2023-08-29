@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package dashboardlist
@@ -73,10 +76,6 @@ func (j *jsiiProxy_DashboardList) validateSetConnectionParameters(val interface{
 }
 
 func (j *jsiiProxy_DashboardList) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DashboardList) validateSetIdParameters(val *string) error {
 	return nil
 }
 

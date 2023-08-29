@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package serviceaccountapplicationkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/serviceaccountapplicationkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 type ServiceAccountApplicationKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -352,7 +355,7 @@ func (j *jsiiProxy_ServiceAccountApplicationKey) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) ServiceAccountApplicationKey {
 	_init_.Initialize()
 
@@ -370,7 +373,7 @@ func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey_Override(s ServiceAccountApplicationKey, scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) {
 	_init_.Initialize()
 

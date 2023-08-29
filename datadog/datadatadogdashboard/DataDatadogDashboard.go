@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogdashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogdashboard/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard datadog_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard datadog_dashboard}.
 type DataDatadogDashboard interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +306,7 @@ func (j *jsiiProxy_DataDatadogDashboard) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard datadog_dashboard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard datadog_dashboard} Data Source.
 func NewDataDatadogDashboard(scope constructs.Construct, id *string, config *DataDatadogDashboardConfig) DataDatadogDashboard {
 	_init_.Initialize()
 
@@ -321,7 +324,7 @@ func NewDataDatadogDashboard(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard datadog_dashboard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard datadog_dashboard} Data Source.
 func NewDataDatadogDashboard_Override(d DataDatadogDashboard, scope constructs.Construct, id *string, config *DataDatadogDashboardConfig) {
 	_init_.Initialize()
 

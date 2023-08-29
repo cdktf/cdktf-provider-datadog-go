@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogdashboardlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogdashboardlist/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 type DataDatadogDashboardList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,8 +36,6 @@ type DataDatadogDashboardList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -81,7 +82,6 @@ type DataDatadogDashboardList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -180,16 +180,6 @@ func (j *jsiiProxy_DataDatadogDashboardList) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogDashboardList) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDatadogDashboardList) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -281,7 +271,7 @@ func (j *jsiiProxy_DataDatadogDashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) DataDatadogDashboardList {
 	_init_.Initialize()
 
@@ -299,7 +289,7 @@ func NewDataDatadogDashboardList(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source.
 func NewDataDatadogDashboardList_Override(d DataDatadogDashboardList, scope constructs.Construct, id *string, config *DataDatadogDashboardListConfig) {
 	_init_.Initialize()
 
@@ -333,17 +323,6 @@ func (j *jsiiProxy_DataDatadogDashboardList)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDatadogDashboardList)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -641,14 +620,6 @@ func (d *jsiiProxy_DataDatadogDashboardList) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDatadogDashboardList) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

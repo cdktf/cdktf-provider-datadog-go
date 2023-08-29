@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dashboard
 
 
 type DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit struct {
 	// The number of results to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard#count Dashboard#count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#count Dashboard#count}
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// The direction of the sort. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard#order Dashboard#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#order Dashboard#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 }
 

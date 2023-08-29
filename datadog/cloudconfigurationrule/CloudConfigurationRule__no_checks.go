@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package cloudconfigurationrule
@@ -49,6 +52,10 @@ func (c *jsiiProxy_CloudConfigurationRule) validateInterpolationForAttributePara
 }
 
 func (c *jsiiProxy_CloudConfigurationRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudConfigurationRule) validatePutFilterParameters(value interface{}) error {
 	return nil
 }
 

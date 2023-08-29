@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationazure
 
 import (
@@ -12,6 +15,8 @@ func init() {
 		reflect.TypeOf((*IntegrationAzure)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "appServicePlanFilters", GoGetter: "AppServicePlanFilters"},
+			_jsii_.MemberProperty{JsiiProperty: "appServicePlanFiltersInput", GoGetter: "AppServicePlanFiltersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automute", GoGetter: "Automute"},
 			_jsii_.MemberProperty{JsiiProperty: "automuteInput", GoGetter: "AutomuteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -22,6 +27,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "cspmEnabled", GoGetter: "CspmEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "cspmEnabledInput", GoGetter: "CspmEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetricsEnabled", GoGetter: "CustomMetricsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetricsEnabledInput", GoGetter: "CustomMetricsEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -46,7 +55,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppServicePlanFilters", GoMethod: "ResetAppServicePlanFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomute", GoMethod: "ResetAutomute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCspmEnabled", GoMethod: "ResetCspmEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetricsEnabled", GoMethod: "ResetCustomMetricsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostFilters", GoMethod: "ResetHostFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationfastlyaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationfastlyaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 type IntegrationFastlyAccount interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -319,7 +322,7 @@ func (j *jsiiProxy_IntegrationFastlyAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) IntegrationFastlyAccount {
 	_init_.Initialize()
 
@@ -337,7 +340,7 @@ func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount_Override(i IntegrationFastlyAccount, scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) {
 	_init_.Initialize()
 

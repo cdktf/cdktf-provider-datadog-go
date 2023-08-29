@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationopsgenieserviceobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationopsgenieserviceobject/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationopsgenieserviceobject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
 type IntegrationOpsgenieServiceObject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +382,7 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) IntegrationOpsgenieServiceObject {
 	_init_.Initialize()
 
@@ -397,7 +400,7 @@ func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject_Override(i IntegrationOpsgenieServiceObject, scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) {
 	_init_.Initialize()
 

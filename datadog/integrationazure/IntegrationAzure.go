@@ -1,17 +1,23 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktf.TerraformResource
+	AppServicePlanFilters() *string
+	SetAppServicePlanFilters(val *string)
+	AppServicePlanFiltersInput() *string
 	Automute() interface{}
 	SetAutomute(val interface{})
 	AutomuteInput() interface{}
@@ -33,6 +39,12 @@ type IntegrationAzure interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CspmEnabled() interface{}
+	SetCspmEnabled(val interface{})
+	CspmEnabledInput() interface{}
+	CustomMetricsEnabled() interface{}
+	SetCustomMetricsEnabled(val interface{})
+	CustomMetricsEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -101,7 +113,10 @@ type IntegrationAzure interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAppServicePlanFilters()
 	ResetAutomute()
+	ResetCspmEnabled()
+	ResetCustomMetricsEnabled()
 	ResetHostFilters()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -120,6 +135,26 @@ type IntegrationAzure interface {
 // The jsii proxy struct for IntegrationAzure
 type jsiiProxy_IntegrationAzure struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IntegrationAzure) AppServicePlanFilters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appServicePlanFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) AppServicePlanFiltersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appServicePlanFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IntegrationAzure) Automute() interface{} {
@@ -217,6 +252,46 @@ func (j *jsiiProxy_IntegrationAzure) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) CspmEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cspmEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) CspmEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cspmEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) CustomMetricsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) CustomMetricsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -403,7 +478,7 @@ func (j *jsiiProxy_IntegrationAzure) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -421,7 +496,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 
@@ -429,6 +504,17 @@ func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct
 		"@cdktf/provider-datadog.integrationAzure.IntegrationAzure",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetAppServicePlanFilters(val *string) {
+	if err := j.validateSetAppServicePlanFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appServicePlanFilters",
+		val,
 	)
 }
 
@@ -483,6 +569,28 @@ func (j *jsiiProxy_IntegrationAzure)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetCspmEnabled(val interface{}) {
+	if err := j.validateSetCspmEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cspmEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetCustomMetricsEnabled(val interface{}) {
+	if err := j.validateSetCustomMetricsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMetricsEnabled",
 		val,
 	)
 }
@@ -832,10 +940,34 @@ func (i *jsiiProxy_IntegrationAzure) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IntegrationAzure) ResetAppServicePlanFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAppServicePlanFilters",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationAzure) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAutomute",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetCspmEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCspmEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetCustomMetricsEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCustomMetricsEnabled",
 		nil, // no parameters
 	)
 }

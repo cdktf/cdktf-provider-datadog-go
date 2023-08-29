@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationfastlyservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyservice/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationfastlyservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 type IntegrationFastlyService interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -344,7 +347,7 @@ func (j *jsiiProxy_IntegrationFastlyService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService(scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) IntegrationFastlyService {
 	_init_.Initialize()
 
@@ -362,7 +365,7 @@ func NewIntegrationFastlyService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService_Override(i IntegrationFastlyService, scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationawslogcollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationawslogcollection/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationawslogcollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
 type IntegrationAwsLogCollection interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -332,7 +335,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) IntegrationAwsLogCollection {
 	_init_.Initialize()
 
@@ -350,7 +353,7 @@ func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection_Override(i IntegrationAwsLogCollection, scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) {
 	_init_.Initialize()
 

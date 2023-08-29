@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/syntheticstest/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -68,6 +71,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	NumberOfPackets() *float64
 	SetNumberOfPackets(val *float64)
 	NumberOfPacketsInput() *float64
+	PersistCookies() interface{}
+	SetPersistCookies(val interface{})
+	PersistCookiesInput() interface{}
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -131,6 +137,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetMethod()
 	ResetNoSavingResponseBody()
 	ResetNumberOfPackets()
+	ResetPersistCookies()
 	ResetPort()
 	ResetServername()
 	ResetService()
@@ -457,6 +464,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Number
 	_jsii_.Get(
 		j,
 		"numberOfPacketsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) PersistCookies() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistCookies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) PersistCookiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistCookiesInput",
 		&returns,
 	)
 	return returns
@@ -802,6 +829,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetNumb
 	_jsii_.Set(
 		j,
 		"numberOfPackets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetPersistCookies(val interface{}) {
+	if err := j.validateSetPersistCookiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persistCookies",
 		val,
 	)
 }
@@ -1180,6 +1218,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetN
 	_jsii_.InvokeVoid(
 		s,
 		"resetNumberOfPackets",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetPersistCookies() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPersistCookies",
 		nil, // no parameters
 	)
 }

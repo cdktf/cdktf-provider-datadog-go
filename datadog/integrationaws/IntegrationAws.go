@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationaws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationaws/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationaws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws datadog_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws datadog_integration_aws}.
 type IntegrationAws interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -561,7 +564,7 @@ func (j *jsiiProxy_IntegrationAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws(scope constructs.Construct, id *string, config *IntegrationAwsConfig) IntegrationAws {
 	_init_.Initialize()
 
@@ -579,7 +582,7 @@ func NewIntegrationAws(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws_Override(i IntegrationAws, scope constructs.Construct, id *string, config *IntegrationAwsConfig) {
 	_init_.Initialize()
 

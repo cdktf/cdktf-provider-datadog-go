@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package cloudconfigurationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/cloudconfigurationrule/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/cloudconfigurationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
 type CloudConfigurationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +34,8 @@ type CloudConfigurationRule interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Filter() CloudConfigurationRuleFilterList
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -116,6 +121,8 @@ type CloudConfigurationRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value interface{})
+	ResetFilter()
 	ResetGroupBy()
 	ResetId()
 	ResetNotifications()
@@ -204,6 +211,26 @@ func (j *jsiiProxy_CloudConfigurationRule) EnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConfigurationRule) Filter() CloudConfigurationRuleFilterList {
+	var returns CloudConfigurationRuleFilterList
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConfigurationRule) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +547,7 @@ func (j *jsiiProxy_CloudConfigurationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) CloudConfigurationRule {
 	_init_.Initialize()
 
@@ -538,7 +565,7 @@ func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule_Override(c CloudConfigurationRule, scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1028,25 @@ func (c *jsiiProxy_CloudConfigurationRule) OverrideLogicalId(newLogicalId *strin
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudConfigurationRule) PutFilter(value interface{}) {
+	if err := c.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudConfigurationRule) ResetFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package datadatadogdashboardlist
@@ -65,10 +68,6 @@ func validateDataDatadogDashboardList_IsTerraformElementParameters(x interface{}
 }
 
 func (j *jsiiProxy_DataDatadogDashboardList) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDatadogDashboardList) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package teammembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/teammembership/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/teammembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership}.
 type TeamMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +346,7 @@ func (j *jsiiProxy_TeamMembership) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership} Resource.
 func NewTeamMembership(scope constructs.Construct, id *string, config *TeamMembershipConfig) TeamMembership {
 	_init_.Initialize()
 
@@ -361,7 +364,7 @@ func NewTeamMembership(scope constructs.Construct, id *string, config *TeamMembe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership} Resource.
 func NewTeamMembership_Override(t TeamMembership, scope constructs.Construct, id *string, config *TeamMembershipConfig) {
 	_init_.Initialize()
 

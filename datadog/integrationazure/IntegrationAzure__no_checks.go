@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package integrationazure
@@ -64,6 +67,10 @@ func validateIntegrationAzure_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAzure) validateSetAppServicePlanFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAzure) validateSetAutomuteParameters(val interface{}) error {
 	return nil
 }
@@ -81,6 +88,14 @@ func (j *jsiiProxy_IntegrationAzure) validateSetConnectionParameters(val interfa
 }
 
 func (j *jsiiProxy_IntegrationAzure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetCspmEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetCustomMetricsEnabledParameters(val interface{}) error {
 	return nil
 }
 

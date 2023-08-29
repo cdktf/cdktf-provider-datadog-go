@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package webhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/webhook/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/webhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook datadog_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/webhook datadog_webhook}.
 type Webhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +407,7 @@ func (j *jsiiProxy_Webhook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) Webhook {
 	_init_.Initialize()
 
@@ -422,7 +425,7 @@ func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook_Override(w Webhook, scope constructs.Construct, id *string, config *WebhookConfig) {
 	_init_.Initialize()
 

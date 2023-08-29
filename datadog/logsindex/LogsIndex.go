@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package logsindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsindex/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/logsindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index datadog_logs_index}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_index datadog_logs_index}.
 type LogsIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +431,7 @@ func (j *jsiiProxy_LogsIndex) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfig) LogsIndex {
 	_init_.Initialize()
 
@@ -446,7 +449,7 @@ func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex_Override(l LogsIndex, scope constructs.Construct, id *string, config *LogsIndexConfig) {
 	_init_.Initialize()
 

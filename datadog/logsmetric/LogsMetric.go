@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package logsmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/logsmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric datadog_logs_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_metric datadog_logs_metric}.
 type LogsMetric interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +382,7 @@ func (j *jsiiProxy_LogsMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricConfig) LogsMetric {
 	_init_.Initialize()
 
@@ -397,7 +400,7 @@ func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric_Override(l LogsMetric, scope constructs.Construct, id *string, config *LogsMetricConfig) {
 	_init_.Initialize()
 

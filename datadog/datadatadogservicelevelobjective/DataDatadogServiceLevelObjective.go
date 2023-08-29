@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogservicelevelobjective
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogservicelevelobjective/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogservicelevelobjective/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
 type DataDatadogServiceLevelObjective interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -407,7 +410,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjective) WarningThreshold() *float64
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
 func NewDataDatadogServiceLevelObjective(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectiveConfig) DataDatadogServiceLevelObjective {
 	_init_.Initialize()
 
@@ -425,7 +428,7 @@ func NewDataDatadogServiceLevelObjective(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source.
 func NewDataDatadogServiceLevelObjective_Override(d DataDatadogServiceLevelObjective, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectiveConfig) {
 	_init_.Initialize()
 

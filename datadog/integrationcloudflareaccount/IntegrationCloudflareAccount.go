@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationcloudflareaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationcloudflareaccount/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationcloudflareaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 type IntegrationCloudflareAccount interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -343,7 +346,7 @@ func (j *jsiiProxy_IntegrationCloudflareAccount) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) IntegrationCloudflareAccount {
 	_init_.Initialize()
 
@@ -361,7 +364,7 @@ func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount_Override(i IntegrationCloudflareAccount, scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) {
 	_init_.Initialize()
 

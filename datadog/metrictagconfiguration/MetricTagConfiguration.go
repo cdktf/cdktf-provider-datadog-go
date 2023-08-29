@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package metrictagconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/metrictagconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/metrictagconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
 	cdktf.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
@@ -403,7 +406,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -421,7 +424,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 

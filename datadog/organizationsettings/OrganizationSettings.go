@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package organizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/organizationsettings/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/organizationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/organization_settings datadog_organization_settings}.
 type OrganizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +359,7 @@ func (j *jsiiProxy_OrganizationSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -374,7 +377,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 

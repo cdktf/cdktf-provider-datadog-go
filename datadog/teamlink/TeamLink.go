@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package teamlink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/teamlink/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/teamlink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link datadog_team_link}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_link datadog_team_link}.
 type TeamLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +369,7 @@ func (j *jsiiProxy_TeamLink) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link datadog_team_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_link datadog_team_link} Resource.
 func NewTeamLink(scope constructs.Construct, id *string, config *TeamLinkConfig) TeamLink {
 	_init_.Initialize()
 
@@ -384,7 +387,7 @@ func NewTeamLink(scope constructs.Construct, id *string, config *TeamLinkConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link datadog_team_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_link datadog_team_link} Resource.
 func NewTeamLink_Override(t TeamLink, scope constructs.Construct, id *string, config *TeamLinkConfig) {
 	_init_.Initialize()
 

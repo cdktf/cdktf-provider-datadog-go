@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogsensitivedatascannergrouporder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogsensitivedatascannergrouporder/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogsensitivedatascannergrouporder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 type DataDatadogSensitiveDataScannerGroupOrder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -256,7 +259,7 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
 func NewDataDatadogSensitiveDataScannerGroupOrder(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerGroupOrderConfig) DataDatadogSensitiveDataScannerGroupOrder {
 	_init_.Initialize()
 
@@ -274,7 +277,7 @@ func NewDataDatadogSensitiveDataScannerGroupOrder(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
 func NewDataDatadogSensitiveDataScannerGroupOrder_Override(d DataDatadogSensitiveDataScannerGroupOrder, scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerGroupOrderConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account datadog_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_account datadog_service_account}.
 type DataDatadogServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -405,7 +408,7 @@ func (j *jsiiProxy_DataDatadogServiceAccount) Verified() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account datadog_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_account datadog_service_account} Data Source.
 func NewDataDatadogServiceAccount(scope constructs.Construct, id *string, config *DataDatadogServiceAccountConfig) DataDatadogServiceAccount {
 	_init_.Initialize()
 
@@ -423,7 +426,7 @@ func NewDataDatadogServiceAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account datadog_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_account datadog_service_account} Data Source.
 func NewDataDatadogServiceAccount_Override(d DataDatadogServiceAccount, scope constructs.Construct, id *string, config *DataDatadogServiceAccountConfig) {
 	_init_.Initialize()
 

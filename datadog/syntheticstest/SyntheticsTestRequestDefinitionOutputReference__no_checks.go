@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package syntheticstest
@@ -101,6 +104,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetNo
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetNumberOfPacketsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPersistCookiesParameters(val interface{}) error {
 	return nil
 }
 

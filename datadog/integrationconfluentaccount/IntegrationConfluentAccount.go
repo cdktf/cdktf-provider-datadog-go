@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package integrationconfluentaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationconfluentaccount/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationconfluentaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
 type IntegrationConfluentAccount interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -343,7 +346,7 @@ func (j *jsiiProxy_IntegrationConfluentAccount) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
 func NewIntegrationConfluentAccount(scope constructs.Construct, id *string, config *IntegrationConfluentAccountConfig) IntegrationConfluentAccount {
 	_init_.Initialize()
 
@@ -361,7 +364,7 @@ func NewIntegrationConfluentAccount(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
 func NewIntegrationConfluentAccount_Override(i IntegrationConfluentAccount, scope constructs.Construct, id *string, config *IntegrationConfluentAccountConfig) {
 	_init_.Initialize()
 

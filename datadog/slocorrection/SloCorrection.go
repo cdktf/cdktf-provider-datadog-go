@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package slocorrection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/slocorrection/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/slocorrection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction datadog_slo_correction}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/slo_correction datadog_slo_correction}.
 type SloCorrection interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -475,7 +478,7 @@ func (j *jsiiProxy_SloCorrection) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrectionConfig) SloCorrection {
 	_init_.Initialize()
 
@@ -493,7 +496,7 @@ func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection_Override(s SloCorrection, scope constructs.Construct, id *string, config *SloCorrectionConfig) {
 	_init_.Initialize()
 

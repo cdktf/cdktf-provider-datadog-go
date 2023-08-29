@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadatadogsyntheticslocations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogsyntheticslocations/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogsyntheticslocations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 type DataDatadogSyntheticsLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +272,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsLocations) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
 func NewDataDatadogSyntheticsLocations(scope constructs.Construct, id *string, config *DataDatadogSyntheticsLocationsConfig) DataDatadogSyntheticsLocations {
 	_init_.Initialize()
 
@@ -287,7 +290,7 @@ func NewDataDatadogSyntheticsLocations(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
 func NewDataDatadogSyntheticsLocations_Override(d DataDatadogSyntheticsLocations, scope constructs.Construct, id *string, config *DataDatadogSyntheticsLocationsConfig) {
 	_init_.Initialize()
 
