@@ -7,33 +7,33 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery struct {
 	// compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#compute Dashboard#compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#compute Dashboard#compute}
 	Compute interface{} `field:"required" json:"compute" yaml:"compute"`
 	// The data source for event platform-based queries.
 	//
 	// Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#data_source Dashboard#data_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#data_source Dashboard#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`
 	// The name of query for use in formulas.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#name Dashboard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#name Dashboard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// group_by block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#group_by Dashboard#group_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#group_by Dashboard#group_by}
 	GroupBy interface{} `field:"optional" json:"groupBy" yaml:"groupBy"`
 	// An array of index names to query in the stream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#indexes Dashboard#indexes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#indexes Dashboard#indexes}
 	Indexes *[]*string `field:"optional" json:"indexes" yaml:"indexes"`
 	// search block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#search Dashboard#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#search Dashboard#search}
 	Search *DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch `field:"optional" json:"search" yaml:"search"`
 	// Storage location (private beta).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard#storage Dashboard#storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard#storage Dashboard#storage}
 	Storage *string `field:"optional" json:"storage" yaml:"storage"`
 }
 

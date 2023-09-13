@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 type SecurityMonitoringDefaultRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringDefaultRuleCaseList
@@ -396,7 +396,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule_Override(s SecurityMonitoringDefaultRule, scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) {
 	_init_.Initialize()
 

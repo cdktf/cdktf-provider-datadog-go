@@ -53,6 +53,8 @@ type DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReferenc
 	RumQueryInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery
 	SecurityQuery() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery
+	Style() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleOutputReference
+	StyleInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +96,7 @@ type DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReferenc
 	PutQuery(value interface{})
 	PutRumQuery(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery)
+	PutStyle(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle)
 	ResetApmQuery()
 	ResetAuditQuery()
 	ResetFormula()
@@ -104,6 +107,7 @@ type DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReferenc
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -364,6 +368,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) Style() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) StyleInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle {
+	var returns *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -768,6 +792,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) ResetApmQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -844,6 +879,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

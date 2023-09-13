@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata datadog_metric_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata datadog_metric_metadata}.
 type MetricMetadata interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -456,7 +456,7 @@ func (j *jsiiProxy_MetricMetadata) UnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata datadog_metric_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata datadog_metric_metadata} Resource.
 func NewMetricMetadata(scope constructs.Construct, id *string, config *MetricMetadataConfig) MetricMetadata {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewMetricMetadata(scope constructs.Construct, id *string, config *MetricMet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata datadog_metric_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata datadog_metric_metadata} Resource.
 func NewMetricMetadata_Override(m MetricMetadata, scope constructs.Construct, id *string, config *MetricMetadataConfig) {
 	_init_.Initialize()
 

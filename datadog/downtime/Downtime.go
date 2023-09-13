@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime datadog_downtime}.
 type Downtime interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -585,7 +585,7 @@ func (j *jsiiProxy_Downtime) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig) Downtime {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime_Override(d Downtime, scope constructs.Construct, id *string, config *DowntimeConfig) {
 	_init_.Initialize()
 

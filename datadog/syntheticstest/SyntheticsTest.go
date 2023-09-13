@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_test datadog_synthetics_test}.
 type SyntheticsTest interface {
 	cdktf.TerraformResource
 	ApiStep() SyntheticsTestApiStepList
@@ -92,6 +92,9 @@ type SyntheticsTest interface {
 	RequestHeaders() *map[string]*string
 	SetRequestHeaders(val *map[string]*string)
 	RequestHeadersInput() *map[string]*string
+	RequestMetadata() *map[string]*string
+	SetRequestMetadata(val *map[string]*string)
+	RequestMetadataInput() *map[string]*string
 	RequestProxy() SyntheticsTestRequestProxyOutputReference
 	RequestProxyInput() *SyntheticsTestRequestProxy
 	RequestQuery() *map[string]*string
@@ -169,6 +172,7 @@ type SyntheticsTest interface {
 	ResetRequestClientCertificate()
 	ResetRequestDefinition()
 	ResetRequestHeaders()
+	ResetRequestMetadata()
 	ResetRequestProxy()
 	ResetRequestQuery()
 	ResetSetCookie()
@@ -629,6 +633,26 @@ func (j *jsiiProxy_SyntheticsTest) RequestHeadersInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTest) RequestMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"requestMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) RequestMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"requestMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTest) RequestProxy() SyntheticsTestRequestProxyOutputReference {
 	var returns SyntheticsTestRequestProxyOutputReference
 	_jsii_.Get(
@@ -800,7 +824,7 @@ func (j *jsiiProxy_SyntheticsTest) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest(scope constructs.Construct, id *string, config *SyntheticsTestConfig) SyntheticsTest {
 	_init_.Initialize()
 
@@ -818,7 +842,7 @@ func NewSyntheticsTest(scope constructs.Construct, id *string, config *Synthetic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest_Override(s SyntheticsTest, scope constructs.Construct, id *string, config *SyntheticsTestConfig) {
 	_init_.Initialize()
 
@@ -959,6 +983,17 @@ func (j *jsiiProxy_SyntheticsTest)SetRequestHeaders(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"requestHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTest)SetRequestMetadata(val *map[string]*string) {
+	if err := j.validateSetRequestMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestMetadata",
 		val,
 	)
 }
@@ -1513,6 +1548,14 @@ func (s *jsiiProxy_SyntheticsTest) ResetRequestHeaders() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) ResetRequestMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequestMetadata",
 		nil, // no parameters
 	)
 }

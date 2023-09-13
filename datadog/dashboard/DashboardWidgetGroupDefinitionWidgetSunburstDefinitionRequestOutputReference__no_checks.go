@@ -83,6 +83,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) validatePutStyleParameters(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

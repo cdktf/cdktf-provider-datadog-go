@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
 type IntegrationAwsLogCollection interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) IntegrationAwsLogCollection {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection_Override(i IntegrationAwsLogCollection, scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) {
 	_init_.Initialize()
 

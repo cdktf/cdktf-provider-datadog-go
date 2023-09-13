@@ -53,6 +53,8 @@ type DashboardWidgetSunburstDefinitionRequestOutputReference interface {
 	RumQueryInput() *DashboardWidgetSunburstDefinitionRequestRumQuery
 	SecurityQuery() DashboardWidgetSunburstDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *DashboardWidgetSunburstDefinitionRequestSecurityQuery
+	Style() DashboardWidgetSunburstDefinitionRequestStyleOutputReference
+	StyleInput() *DashboardWidgetSunburstDefinitionRequestStyle
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +96,7 @@ type DashboardWidgetSunburstDefinitionRequestOutputReference interface {
 	PutQuery(value interface{})
 	PutRumQuery(value *DashboardWidgetSunburstDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardWidgetSunburstDefinitionRequestSecurityQuery)
+	PutStyle(value *DashboardWidgetSunburstDefinitionRequestStyle)
 	ResetApmQuery()
 	ResetAuditQuery()
 	ResetFormula()
@@ -104,6 +107,7 @@ type DashboardWidgetSunburstDefinitionRequestOutputReference interface {
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -364,6 +368,26 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) Secu
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) Style() DashboardWidgetSunburstDefinitionRequestStyleOutputReference {
+	var returns DashboardWidgetSunburstDefinitionRequestStyleOutputReference
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) StyleInput() *DashboardWidgetSunburstDefinitionRequestStyle {
+	var returns *DashboardWidgetSunburstDefinitionRequestStyle
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -768,6 +792,17 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) PutS
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) PutStyle(value *DashboardWidgetSunburstDefinitionRequestStyle) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) ResetApmQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -844,6 +879,14 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

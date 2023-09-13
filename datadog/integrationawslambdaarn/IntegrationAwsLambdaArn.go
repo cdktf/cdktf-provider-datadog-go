@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
 type IntegrationAwsLambdaArn interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) IntegrationAwsLambdaArn {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn_Override(i IntegrationAwsLambdaArn, scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) {
 	_init_.Initialize()
 

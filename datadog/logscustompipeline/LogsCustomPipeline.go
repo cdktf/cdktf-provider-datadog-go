@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 type LogsCustomPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_LogsCustomPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) LogsCustomPipeline {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline_Override(l LogsCustomPipeline, scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) {
 	_init_.Initialize()
 
