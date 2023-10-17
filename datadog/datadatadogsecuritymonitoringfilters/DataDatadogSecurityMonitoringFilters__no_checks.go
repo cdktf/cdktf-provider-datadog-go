@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) validateOverrideLogical
 	return nil
 }
 
+func validateDataDatadogSecurityMonitoringFilters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogSecurityMonitoringFilters_IsConstructParameters(x interface{}) error {
 	return nil
 }

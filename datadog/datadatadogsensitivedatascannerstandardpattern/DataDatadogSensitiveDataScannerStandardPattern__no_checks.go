@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) validateOverr
 	return nil
 }
 
+func validateDataDatadogSensitiveDataScannerStandardPattern_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogSensitiveDataScannerStandardPattern_IsConstructParameters(x interface{}) error {
 	return nil
 }

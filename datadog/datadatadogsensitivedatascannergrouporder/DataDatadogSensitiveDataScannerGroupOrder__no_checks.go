@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) validateOverrideLo
 	return nil
 }
 
+func validateDataDatadogSensitiveDataScannerGroupOrder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogSensitiveDataScannerGroupOrder_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package integrationawslambdaarn
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIntegrationAwsLambdaArn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

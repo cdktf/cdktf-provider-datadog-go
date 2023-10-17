@@ -7,6 +7,10 @@ package securitymonitoringfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityMonitoringFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecurityMonitoringFilter) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityMonitoringFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecurityMonitoringFilter) validateOverrideLogicalIdParameters
 }
 
 func (s *jsiiProxy_SecurityMonitoringFilter) validatePutExclusionFilterParameters(value interface{}) error {
+	return nil
+}
+
+func validateSecurityMonitoringFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

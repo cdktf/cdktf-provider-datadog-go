@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRules) validateOverrideL
 	return nil
 }
 
+func validateDataDatadogCloudWorkloadSecurityAgentRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogCloudWorkloadSecurityAgentRules_IsConstructParameters(x interface{}) error {
 	return nil
 }

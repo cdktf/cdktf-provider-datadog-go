@@ -7,6 +7,10 @@ package logsarchive
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogsArchive) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsArchive) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogsArchive) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LogsArchive) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsArchive) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsArchive) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_LogsArchive) validatePutGcsArchiveParameters(value *LogsArchi
 }
 
 func (l *jsiiProxy_LogsArchive) validatePutS3ArchiveParameters(value *LogsArchiveS3Archive) error {
+	return nil
+}
+
+func validateLogsArchive_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

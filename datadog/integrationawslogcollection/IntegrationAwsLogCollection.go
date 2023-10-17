@@ -5,10 +5,10 @@ package integrationawslogcollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationawslogcollection/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationawslogcollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,9 @@ type IntegrationAwsLogCollection interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,12 @@ type IntegrationAwsLogCollection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -465,6 +473,25 @@ func (j *jsiiProxy_IntegrationAwsLogCollection)SetServices(val *[]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a IntegrationAwsLogCollection resource upon running "cdktf plan <stack-name>".
+func IntegrationAwsLogCollection_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIntegrationAwsLogCollection_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -547,6 +574,17 @@ func IntegrationAwsLogCollection_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IntegrationAwsLogCollection) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) AddOverride(path *string, value interface{}) {
@@ -704,6 +742,17 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsLogCollection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAwsLogCollection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -718,6 +767,17 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) InterpolationForAttribute(terraf
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IntegrationAwsLogCollection) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (i *jsiiProxy_IntegrationAwsLogCollection) OverrideLogicalId(newLogicalId *string) {

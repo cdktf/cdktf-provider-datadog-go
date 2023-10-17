@@ -7,6 +7,10 @@ package childorganization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChildOrganization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChildOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ChildOrganization) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ChildOrganization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChildOrganization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ChildOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChildOrganization) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateChildOrganization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package integrationaws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationAws) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAws) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IntegrationAws) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAws) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAws) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAws) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIntegrationAws_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

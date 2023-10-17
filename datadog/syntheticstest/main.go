@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTest",
 		reflect.TypeOf((*SyntheticsTest)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiStep", GoGetter: "ApiStep"},
 			_jsii_.MemberProperty{JsiiProperty: "apiStepInput", GoGetter: "ApiStepInput"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locations", GoGetter: "Locations"},
@@ -53,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
 			_jsii_.MemberProperty{JsiiProperty: "messageInput", GoGetter: "MessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorId", GoGetter: "MonitorId"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSyntheticsTest) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataDatadogSyntheticsTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogSyntheticsTest_IsConstructParameters(x interface{}) error {
 	return nil
 }

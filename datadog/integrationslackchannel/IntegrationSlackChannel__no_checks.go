@@ -7,6 +7,10 @@ package integrationslackchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationSlackChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationSlackChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IntegrationSlackChannel) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationSlackChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationSlackChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationSlackChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IntegrationSlackChannel) validateOverrideLogicalIdParameters(
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) validatePutDisplayParameters(value *IntegrationSlackChannelDisplay) error {
+	return nil
+}
+
+func validateIntegrationSlackChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -15,6 +15,10 @@ func (d *jsiiProxy_DatadogProvider) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateDatadogProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDatadogProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

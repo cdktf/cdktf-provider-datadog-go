@@ -7,6 +7,10 @@ package dashboardlist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DashboardList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DashboardList) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DashboardList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardList) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DashboardList) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DashboardList) validatePutDashItemParameters(value interface{}) error {
+	return nil
+}
+
+func validateDashboardList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

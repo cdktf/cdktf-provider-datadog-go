@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSyntheticsLocations) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataDatadogSyntheticsLocations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogSyntheticsLocations_IsConstructParameters(x interface{}) error {
 	return nil
 }

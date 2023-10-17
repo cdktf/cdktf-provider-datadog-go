@@ -7,6 +7,10 @@ package organizationsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationSettings) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OrganizationSettings) validateOverrideLogicalIdParameters(new
 }
 
 func (o *jsiiProxy_OrganizationSettings) validatePutSettingsParameters(value *OrganizationSettingsSettings) error {
+	return nil
+}
+
+func validateOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

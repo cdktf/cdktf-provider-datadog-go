@@ -7,6 +7,10 @@ package restrictionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RestrictionPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RestrictionPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RestrictionPolicy) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RestrictionPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RestrictionPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RestrictionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RestrictionPolicy) validateOverrideLogicalIdParameters(newLog
 }
 
 func (r *jsiiProxy_RestrictionPolicy) validatePutBindingsParameters(value interface{}) error {
+	return nil
+}
+
+func validateRestrictionPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

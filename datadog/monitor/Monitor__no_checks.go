@@ -7,6 +7,10 @@ package monitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Monitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Monitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_Monitor) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (m *jsiiProxy_Monitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Monitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Monitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_Monitor) validatePutSchedulingOptionsParameters(value interfa
 }
 
 func (m *jsiiProxy_Monitor) validatePutVariablesParameters(value *MonitorVariables) error {
+	return nil
+}
+
+func validateMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

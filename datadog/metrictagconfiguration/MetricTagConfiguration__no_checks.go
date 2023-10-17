@@ -7,6 +7,10 @@ package metrictagconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MetricTagConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricTagConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MetricTagConfiguration) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (m *jsiiProxy_MetricTagConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricTagConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetricTagConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MetricTagConfiguration) validateOverrideLogicalIdParameters(n
 }
 
 func (m *jsiiProxy_MetricTagConfiguration) validatePutAggregationsParameters(value interface{}) error {
+	return nil
+}
+
+func validateMetricTagConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

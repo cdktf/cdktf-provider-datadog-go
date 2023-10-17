@@ -7,6 +7,10 @@ package integrationawstagfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationAwsTagFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsTagFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IntegrationAwsTagFilter) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsTagFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsTagFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsTagFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsTagFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIntegrationAwsTagFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

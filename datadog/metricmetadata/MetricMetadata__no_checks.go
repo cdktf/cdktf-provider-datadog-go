@@ -7,6 +7,10 @@ package metricmetadata
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MetricMetadata) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricMetadata) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MetricMetadata) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MetricMetadata) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricMetadata) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MetricMetadata) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricMetadata) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMetricMetadata_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

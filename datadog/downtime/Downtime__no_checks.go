@@ -7,6 +7,10 @@ package downtime
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Downtime) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Downtime) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_Downtime) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_Downtime) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Downtime) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Downtime) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_Downtime) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (d *jsiiProxy_Downtime) validatePutRecurrenceParameters(value *DowntimeRecurrence) error {
+	return nil
+}
+
+func validateDowntime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

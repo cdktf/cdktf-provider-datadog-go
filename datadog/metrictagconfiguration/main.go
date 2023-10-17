@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		reflect.TypeOf((*MetricTagConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationsInput", GoGetter: "AggregationsInput"},
@@ -36,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "includePercentiles", GoGetter: "IncludePercentiles"},
 			_jsii_.MemberProperty{JsiiProperty: "includePercentilesInput", GoGetter: "IncludePercentilesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -44,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricType", GoGetter: "MetricType"},
 			_jsii_.MemberProperty{JsiiProperty: "metricTypeInput", GoGetter: "MetricTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

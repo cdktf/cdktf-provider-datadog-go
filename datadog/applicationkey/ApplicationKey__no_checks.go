@@ -7,6 +7,10 @@ package applicationkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApplicationKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApplicationKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

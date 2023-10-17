@@ -7,6 +7,10 @@ package integrationconfluentresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationConfluentResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConfluentResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IntegrationConfluentResource) validateGetStringMapAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConfluentResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConfluentResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConfluentResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConfluentResource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIntegrationConfluentResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

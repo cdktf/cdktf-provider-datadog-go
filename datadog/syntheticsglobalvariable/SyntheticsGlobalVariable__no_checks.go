@@ -7,6 +7,10 @@ package syntheticsglobalvariable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutOptionsParameters(value 
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutParseTestOptionsParameters(value *SyntheticsGlobalVariableParseTestOptions) error {
+	return nil
+}
+
+func validateSyntheticsGlobalVariable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

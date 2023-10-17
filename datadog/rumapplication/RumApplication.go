@@ -5,10 +5,10 @@ package rumapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/rumapplication/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/rumapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -71,6 +71,9 @@ type RumApplication interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +95,12 @@ type RumApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -477,6 +485,25 @@ func (j *jsiiProxy_RumApplication)SetType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a RumApplication resource upon running "cdktf plan <stack-name>".
+func RumApplication_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRumApplication_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-datadog.rumApplication.RumApplication",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -559,6 +586,17 @@ func RumApplication_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_RumApplication) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_RumApplication) AddOverride(path *string, value interface{}) {
@@ -716,6 +754,17 @@ func (r *jsiiProxy_RumApplication) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (r *jsiiProxy_RumApplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_RumApplication) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -730,6 +779,17 @@ func (r *jsiiProxy_RumApplication) InterpolationForAttribute(terraformAttribute 
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RumApplication) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (r *jsiiProxy_RumApplication) OverrideLogicalId(newLogicalId *string) {

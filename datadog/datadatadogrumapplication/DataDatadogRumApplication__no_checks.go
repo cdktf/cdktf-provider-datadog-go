@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogRumApplication) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataDatadogRumApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogRumApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

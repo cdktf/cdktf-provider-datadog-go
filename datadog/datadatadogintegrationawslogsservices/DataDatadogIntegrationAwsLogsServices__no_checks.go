@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServices) validateOverrideLogica
 	return nil
 }
 
+func validateDataDatadogIntegrationAwsLogsServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDatadogIntegrationAwsLogsServices_IsConstructParameters(x interface{}) error {
 	return nil
 }

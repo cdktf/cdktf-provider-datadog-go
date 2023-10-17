@@ -7,6 +7,10 @@ package webhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Webhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Webhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (w *jsiiProxy_Webhook) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (w *jsiiProxy_Webhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Webhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_Webhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Webhook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

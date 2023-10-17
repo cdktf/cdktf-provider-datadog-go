@@ -5,9 +5,9 @@ package integrationslackchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/integrationslackchannel/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationslackchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

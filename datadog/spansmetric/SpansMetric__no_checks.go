@@ -7,6 +7,10 @@ package spansmetric
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpansMetric) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpansMetric) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpansMetric) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SpansMetric) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpansMetric) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpansMetric) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SpansMetric) validatePutFilterParameters(value *SpansMetricFi
 }
 
 func (s *jsiiProxy_SpansMetric) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
+func validateSpansMetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

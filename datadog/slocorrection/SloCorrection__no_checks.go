@@ -7,6 +7,10 @@ package slocorrection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SloCorrection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloCorrection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SloCorrection) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SloCorrection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloCorrection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SloCorrection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloCorrection) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSloCorrection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

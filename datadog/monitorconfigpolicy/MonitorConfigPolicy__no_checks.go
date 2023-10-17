@@ -7,6 +7,10 @@ package monitorconfigpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorConfigPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorConfigPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorConfigPolicy) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MonitorConfigPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorConfigPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorConfigPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitorConfigPolicy) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MonitorConfigPolicy) validatePutTagPolicyParameters(value *MonitorConfigPolicyTagPolicy) error {
+	return nil
+}
+
+func validateMonitorConfigPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

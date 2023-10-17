@@ -7,6 +7,10 @@ package servicelevelobjective
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceLevelObjective) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceLevelObjective) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceLevelObjective) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_ServiceLevelObjective) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceLevelObjective) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceLevelObjective) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_ServiceLevelObjective) validatePutQueryParameters(value *Serv
 }
 
 func (s *jsiiProxy_ServiceLevelObjective) validatePutThresholdsParameters(value interface{}) error {
+	return nil
+}
+
+func validateServiceLevelObjective_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeChildId", GoGetter: "ActiveChildId"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -41,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
@@ -49,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "monitorIdInput", GoGetter: "MonitorIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorTags", GoGetter: "MonitorTags"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorTagsInput", GoGetter: "MonitorTagsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "muteFirstRecoveryNotification", GoGetter: "MuteFirstRecoveryNotification"},
 			_jsii_.MemberProperty{JsiiProperty: "muteFirstRecoveryNotificationInput", GoGetter: "MuteFirstRecoveryNotificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

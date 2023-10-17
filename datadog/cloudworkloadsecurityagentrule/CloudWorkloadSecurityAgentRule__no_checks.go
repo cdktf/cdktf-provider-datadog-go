@@ -7,6 +7,10 @@ package cloudworkloadsecurityagentrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudWorkloadSecurityAgentRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

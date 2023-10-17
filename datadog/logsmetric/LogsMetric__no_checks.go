@@ -7,6 +7,10 @@ package logsmetric
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogsMetric) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsMetric) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogsMetric) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (l *jsiiProxy_LogsMetric) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsMetric) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsMetric) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_LogsMetric) validatePutFilterParameters(value *LogsMetricFilt
 }
 
 func (l *jsiiProxy_LogsMetric) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
+func validateLogsMetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

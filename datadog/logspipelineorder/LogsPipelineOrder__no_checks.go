@@ -7,6 +7,10 @@ package logspipelineorder
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogsPipelineOrder) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsPipelineOrder) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LogsPipelineOrder) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LogsPipelineOrder) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsPipelineOrder) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LogsPipelineOrder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsPipelineOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLogsPipelineOrder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

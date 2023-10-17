@@ -7,6 +7,10 @@ package sensitivedatascannergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SensitiveDataScannerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveDataScannerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SensitiveDataScannerGroup) validatePutFilterParameters(value *SensitiveDataScannerGroupFilter) error {
+	return nil
+}
+
+func validateSensitiveDataScannerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
