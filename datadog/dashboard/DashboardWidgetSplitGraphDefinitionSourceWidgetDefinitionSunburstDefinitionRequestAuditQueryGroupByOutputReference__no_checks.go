@@ -1,0 +1,89 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboard
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validatePutSortQueryParameters(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupBySortQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetFacetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestAuditQueryGroupByOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

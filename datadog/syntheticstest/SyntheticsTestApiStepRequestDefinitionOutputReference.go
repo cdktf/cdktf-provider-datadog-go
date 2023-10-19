@@ -77,6 +77,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	ProtoJsonDescriptor() *string
+	SetProtoJsonDescriptor(val *string)
+	ProtoJsonDescriptorInput() *string
 	Servername() *string
 	SetServername(val *string)
 	ServernameInput() *string
@@ -139,6 +142,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetNumberOfPackets()
 	ResetPersistCookies()
 	ResetPort()
+	ResetProtoJsonDescriptor()
 	ResetServername()
 	ResetService()
 	ResetShouldTrackHops()
@@ -509,6 +513,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) PortIn
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ProtoJsonDescriptor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protoJsonDescriptor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ProtoJsonDescriptorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protoJsonDescriptorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Servername() *string {
 	var returns *string
 	_jsii_.Get(
@@ -851,6 +875,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetPort
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetProtoJsonDescriptor(val *string) {
+	if err := j.validateSetProtoJsonDescriptorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protoJsonDescriptor",
 		val,
 	)
 }
@@ -1234,6 +1269,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetP
 	_jsii_.InvokeVoid(
 		s,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetProtoJsonDescriptor() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProtoJsonDescriptor",
 		nil, // no parameters
 	)
 }

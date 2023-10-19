@@ -1,0 +1,97 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboard
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validatePutComputeQueryParameters(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryComputeQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validatePutMultiComputeParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetIndexParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetInternalValueParameters(val *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQuery) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetSearchQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -1,0 +1,113 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboard
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetAggregatorParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetDataSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetInternalValueParameters(val *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQuery) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetIsNormalizedCpuParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetMetricParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetSortParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetTagFiltersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReference) validateSetTextFilterParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryProcessQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

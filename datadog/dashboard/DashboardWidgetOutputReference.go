@@ -83,6 +83,8 @@ type DashboardWidgetOutputReference interface {
 	ServicemapDefinitionInput() *DashboardWidgetServicemapDefinition
 	SloListDefinition() DashboardWidgetSloListDefinitionOutputReference
 	SloListDefinitionInput() *DashboardWidgetSloListDefinition
+	SplitGraphDefinition() DashboardWidgetSplitGraphDefinitionOutputReference
+	SplitGraphDefinitionInput() *DashboardWidgetSplitGraphDefinition
 	SunburstDefinition() DashboardWidgetSunburstDefinitionOutputReference
 	SunburstDefinitionInput() *DashboardWidgetSunburstDefinition
 	// Experimental.
@@ -154,6 +156,7 @@ type DashboardWidgetOutputReference interface {
 	PutServiceLevelObjectiveDefinition(value *DashboardWidgetServiceLevelObjectiveDefinition)
 	PutServicemapDefinition(value *DashboardWidgetServicemapDefinition)
 	PutSloListDefinition(value *DashboardWidgetSloListDefinition)
+	PutSplitGraphDefinition(value *DashboardWidgetSplitGraphDefinition)
 	PutSunburstDefinition(value *DashboardWidgetSunburstDefinition)
 	PutTimeseriesDefinition(value *DashboardWidgetTimeseriesDefinition)
 	PutToplistDefinition(value *DashboardWidgetToplistDefinition)
@@ -186,6 +189,7 @@ type DashboardWidgetOutputReference interface {
 	ResetServiceLevelObjectiveDefinition()
 	ResetServicemapDefinition()
 	ResetSloListDefinition()
+	ResetSplitGraphDefinition()
 	ResetSunburstDefinition()
 	ResetTimeseriesDefinition()
 	ResetToplistDefinition()
@@ -763,6 +767,26 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SloListDefinitionInput() *Das
 	_jsii_.Get(
 		j,
 		"sloListDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) SplitGraphDefinition() DashboardWidgetSplitGraphDefinitionOutputReference {
+	var returns DashboardWidgetSplitGraphDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"splitGraphDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) SplitGraphDefinitionInput() *DashboardWidgetSplitGraphDefinition {
+	var returns *DashboardWidgetSplitGraphDefinition
+	_jsii_.Get(
+		j,
+		"splitGraphDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1472,6 +1496,17 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) PutSloListDefinition(value *D
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) PutSplitGraphDefinition(value *DashboardWidgetSplitGraphDefinition) {
+	if err := d.validatePutSplitGraphDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSplitGraphDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) PutSunburstDefinition(value *DashboardWidgetSunburstDefinition) {
 	if err := d.validatePutSunburstDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1745,6 +1780,14 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) ResetSloListDefinition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSloListDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetOutputReference) ResetSplitGraphDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSplitGraphDefinition",
 		nil, // no parameters
 	)
 }

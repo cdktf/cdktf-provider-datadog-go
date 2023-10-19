@@ -147,6 +147,10 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutSloListDefinitionP
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutSplitGraphDefinitionParameters(value *DashboardWidgetSplitGraphDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutSunburstDefinitionParameters(value *DashboardWidgetSunburstDefinition) error {
 	return nil
 }

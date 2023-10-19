@@ -51,11 +51,19 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestO
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutFormulaParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutLogQueryParameters(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery) error {
 	return nil
 }
 
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutProcessQueryParameters(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutQueryParameters(value interface{}) error {
 	return nil
 }
 

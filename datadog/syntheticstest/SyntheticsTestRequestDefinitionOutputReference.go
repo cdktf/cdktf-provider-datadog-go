@@ -71,6 +71,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	ProtoJsonDescriptor() *string
+	SetProtoJsonDescriptor(val *string)
+	ProtoJsonDescriptorInput() *string
 	Servername() *string
 	SetServername(val *string)
 	ServernameInput() *string
@@ -131,6 +134,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetNumberOfPackets()
 	ResetPersistCookies()
 	ResetPort()
+	ResetProtoJsonDescriptor()
 	ResetServername()
 	ResetService()
 	ResetShouldTrackHops()
@@ -461,6 +465,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PortInput() *
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ProtoJsonDescriptor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protoJsonDescriptor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ProtoJsonDescriptorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protoJsonDescriptorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Servername() *string {
 	var returns *string
 	_jsii_.Get(
@@ -781,6 +805,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPort(val *f
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetProtoJsonDescriptor(val *string) {
+	if err := j.validateSetProtoJsonDescriptorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protoJsonDescriptor",
 		val,
 	)
 }
@@ -1148,6 +1183,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetProtoJsonDescriptor() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProtoJsonDescriptor",
 		nil, // no parameters
 	)
 }

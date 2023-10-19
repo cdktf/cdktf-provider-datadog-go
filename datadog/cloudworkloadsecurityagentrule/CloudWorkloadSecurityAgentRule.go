@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
 type CloudWorkloadSecurityAgentRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CloudWorkloadSecurityAgentRule) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource.
 func NewCloudWorkloadSecurityAgentRule(scope constructs.Construct, id *string, config *CloudWorkloadSecurityAgentRuleConfig) CloudWorkloadSecurityAgentRule {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewCloudWorkloadSecurityAgentRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource.
 func NewCloudWorkloadSecurityAgentRule_Override(c CloudWorkloadSecurityAgentRule, scope constructs.Construct, id *string, config *CloudWorkloadSecurityAgentRuleConfig) {
 	_init_.Initialize()
 

@@ -30,6 +30,8 @@ type DashboardWidgetHeatmapDefinitionRequestOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Formula() DashboardWidgetHeatmapDefinitionRequestFormulaList
+	FormulaInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -41,6 +43,8 @@ type DashboardWidgetHeatmapDefinitionRequestOutputReference interface {
 	Q() *string
 	SetQ(val *string)
 	QInput() *string
+	Query() DashboardWidgetHeatmapDefinitionRequestQueryList
+	QueryInput() interface{}
 	RumQuery() DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference
 	RumQueryInput() *DashboardWidgetHeatmapDefinitionRequestRumQuery
 	SecurityQuery() DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
@@ -80,15 +84,19 @@ type DashboardWidgetHeatmapDefinitionRequestOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmQuery(value *DashboardWidgetHeatmapDefinitionRequestApmQuery)
+	PutFormula(value interface{})
 	PutLogQuery(value *DashboardWidgetHeatmapDefinitionRequestLogQuery)
 	PutProcessQuery(value *DashboardWidgetHeatmapDefinitionRequestProcessQuery)
+	PutQuery(value interface{})
 	PutRumQuery(value *DashboardWidgetHeatmapDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardWidgetHeatmapDefinitionRequestSecurityQuery)
 	PutStyle(value *DashboardWidgetHeatmapDefinitionRequestStyle)
 	ResetApmQuery()
+	ResetFormula()
 	ResetLogQuery()
 	ResetProcessQuery()
 	ResetQ()
+	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
 	ResetStyle()
@@ -152,6 +160,26 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) Formula() DashboardWidgetHeatmapDefinitionRequestFormulaList {
+	var returns DashboardWidgetHeatmapDefinitionRequestFormulaList
+	_jsii_.Get(
+		j,
+		"formula",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) FormulaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"formulaInput",
 		&returns,
 	)
 	return returns
@@ -232,6 +260,26 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) QInpu
 	_jsii_.Get(
 		j,
 		"qInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) Query() DashboardWidgetHeatmapDefinitionRequestQueryList {
+	var returns DashboardWidgetHeatmapDefinitionRequestQueryList
+	_jsii_.Get(
+		j,
+		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) QueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queryInput",
 		&returns,
 	)
 	return returns
@@ -608,6 +656,17 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) PutAp
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) PutFormula(value interface{}) {
+	if err := d.validatePutFormulaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFormula",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) PutLogQuery(value *DashboardWidgetHeatmapDefinitionRequestLogQuery) {
 	if err := d.validatePutLogQueryParameters(value); err != nil {
 		panic(err)
@@ -626,6 +685,17 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) PutPr
 	_jsii_.InvokeVoid(
 		d,
 		"putProcessQuery",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) PutQuery(value interface{}) {
+	if err := d.validatePutQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putQuery",
 		[]interface{}{value},
 	)
 }
@@ -671,6 +741,14 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) Reset
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) ResetFormula() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFormula",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) ResetLogQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -691,6 +769,14 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetQ",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestOutputReference) ResetQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetQuery",
 		nil, // no parameters
 	)
 }

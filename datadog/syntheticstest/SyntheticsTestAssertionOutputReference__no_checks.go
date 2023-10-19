@@ -91,6 +91,10 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) validateSetTerraformR
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) validateSetTimingsScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }

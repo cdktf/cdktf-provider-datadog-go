@@ -24,11 +24,11 @@ type DataDatadogTeamMembershipsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The team's identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// Search query, can be user email or name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 	FilterKeyword *string `field:"optional" json:"filterKeyword" yaml:"filterKeyword"`
 }
 

@@ -143,6 +143,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutSplitGraphDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutSunburstDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinition) error {
 	return nil
 }

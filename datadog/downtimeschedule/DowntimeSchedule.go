@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
 type DowntimeSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DowntimeSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule datadog_downtime_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/downtime_schedule datadog_downtime_schedule} Resource.
 func NewDowntimeSchedule(scope constructs.Construct, id *string, config *DowntimeScheduleConfig) DowntimeSchedule {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDowntimeSchedule(scope constructs.Construct, id *string, config *Downtim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule datadog_downtime_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/downtime_schedule datadog_downtime_schedule} Resource.
 func NewDowntimeSchedule_Override(d DowntimeSchedule, scope constructs.Construct, id *string, config *DowntimeScheduleConfig) {
 	_init_.Initialize()
 

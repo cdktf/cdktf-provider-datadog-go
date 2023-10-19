@@ -91,6 +91,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validateSetTer
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validateSetTimingsScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }

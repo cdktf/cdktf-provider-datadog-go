@@ -123,6 +123,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetProtoJsonDescriptorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetServernameParameters(val *string) error {
 	return nil
 }

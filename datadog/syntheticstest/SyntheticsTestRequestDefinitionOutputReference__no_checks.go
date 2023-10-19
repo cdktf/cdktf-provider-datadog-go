@@ -115,6 +115,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetProtoJsonDescriptorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetServernameParameters(val *string) error {
 	return nil
 }

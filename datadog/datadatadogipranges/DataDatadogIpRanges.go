@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
 type DataDatadogIpRanges interface {
 	cdktf.TerraformDataSource
 	AgentsIpv4() *[]*string
@@ -41,6 +41,8 @@ type DataDatadogIpRanges interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlobalIpv4() *[]*string
+	GlobalIpv6() *[]*string
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -240,6 +242,26 @@ func (j *jsiiProxy_DataDatadogIpRanges) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogIpRanges) GlobalIpv4() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"globalIpv4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogIpRanges) GlobalIpv6() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"globalIpv6",
 		&returns,
 	)
 	return returns
@@ -446,7 +468,7 @@ func (j *jsiiProxy_DataDatadogIpRanges) WebhooksIpv6() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) DataDatadogIpRanges {
 	_init_.Initialize()
 
@@ -464,7 +486,7 @@ func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges_Override(d DataDatadogIpRanges, scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) {
 	_init_.Initialize()
 

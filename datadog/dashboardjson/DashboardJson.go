@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_json datadog_dashboard_json}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_json datadog_dashboard_json}.
 type DashboardJson interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DashboardJson) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_json datadog_dashboard_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_json datadog_dashboard_json} Resource.
 func NewDashboardJson(scope constructs.Construct, id *string, config *DashboardJsonConfig) DashboardJson {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDashboardJson(scope constructs.Construct, id *string, config *DashboardJ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_json datadog_dashboard_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_json datadog_dashboard_json} Resource.
 func NewDashboardJson_Override(d DashboardJson, scope constructs.Construct, id *string, config *DashboardJsonConfig) {
 	_init_.Initialize()
 

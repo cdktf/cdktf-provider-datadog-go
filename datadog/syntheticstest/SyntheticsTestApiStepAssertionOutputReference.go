@@ -53,6 +53,9 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimingsScope() *string
+	SetTimingsScope(val *string)
+	TimingsScopeInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -86,6 +89,7 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	ResetTarget()
 	ResetTargetjsonpath()
 	ResetTargetxpath()
+	ResetTimingsScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -271,6 +275,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TimingsScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timingsScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TimingsScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timingsScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,6 +427,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference)SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference)SetTimingsScope(val *string) {
+	if err := j.validateSetTimingsScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timingsScope",
 		val,
 	)
 }
@@ -654,6 +689,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetxpa
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetxpath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTimingsScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimingsScope",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order}.
 type DataDatadogLogsIndexesOrder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexesOrder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) DataDatadogLogsIndexesOrder {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder_Override(d DataDatadogLogsIndexesOrder, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) {
 	_init_.Initialize()
 

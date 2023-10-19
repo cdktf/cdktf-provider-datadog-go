@@ -104,6 +104,37 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestO
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutFormulaParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula:
+		value := value.(*[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula:
+		value_ := value.([]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutLogQueryParameters(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -121,6 +152,37 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestO
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutQueryParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery:
+		value := value.(*[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery:
+		value_ := value.([]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
