@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatadogTeamMemberships) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogTeamMemberships) validateSetExactMatchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogTeamMemberships) validateSetFilterKeywordParameters(val *string) error {
 	return nil
 }

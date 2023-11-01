@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships datadog_team_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships datadog_team_memberships}.
 type DataDatadogTeamMemberships interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataDatadogTeamMemberships interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExactMatch() interface{}
+	SetExactMatch(val interface{})
+	ExactMatchInput() interface{}
 	FilterKeyword() *string
 	SetFilterKeyword(val *string)
 	FilterKeywordInput() *string
@@ -86,6 +89,7 @@ type DataDatadogTeamMemberships interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetExactMatch()
 	ResetFilterKeyword()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -140,6 +144,26 @@ func (j *jsiiProxy_DataDatadogTeamMemberships) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogTeamMemberships) ExactMatch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogTeamMemberships) ExactMatchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactMatchInput",
 		&returns,
 	)
 	return returns
@@ -306,7 +330,7 @@ func (j *jsiiProxy_DataDatadogTeamMemberships) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) DataDatadogTeamMemberships {
 	_init_.Initialize()
 
@@ -324,7 +348,7 @@ func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships_Override(d DataDatadogTeamMemberships, scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) {
 	_init_.Initialize()
 
@@ -350,6 +374,17 @@ func (j *jsiiProxy_DataDatadogTeamMemberships)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogTeamMemberships)SetExactMatch(val interface{}) {
+	if err := j.validateSetExactMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exactMatch",
 		val,
 	)
 }
@@ -685,6 +720,14 @@ func (d *jsiiProxy_DataDatadogTeamMemberships) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogTeamMemberships) ResetExactMatch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExactMatch",
+		nil, // no parameters
 	)
 }
 

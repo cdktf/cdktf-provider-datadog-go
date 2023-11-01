@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
 type IntegrationOpsgenieServiceObject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IntegrationOpsgenieServiceObject) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) IntegrationOpsgenieServiceObject {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIntegrationOpsgenieServiceObject(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource.
 func NewIntegrationOpsgenieServiceObject_Override(i IntegrationOpsgenieServiceObject, scope constructs.Construct, id *string, config *IntegrationOpsgenieServiceObjectConfig) {
 	_init_.Initialize()
 
