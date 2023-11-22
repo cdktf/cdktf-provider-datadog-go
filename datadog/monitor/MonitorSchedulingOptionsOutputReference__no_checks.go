@@ -47,6 +47,10 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateInterpolatio
 	return nil
 }
 
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutCustomScheduleParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutEvaluationWindowParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/dashboard_list datadog_dashboard_list}.
 type DashboardList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList(scope constructs.Construct, id *string, config *DashboardListConfig) DashboardList {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDashboardList(scope constructs.Construct, id *string, config *DashboardL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList_Override(d DashboardList, scope constructs.Construct, id *string, config *DashboardListConfig) {
 	_init_.Initialize()
 

@@ -95,6 +95,10 @@ func (j *jsiiProxy_MetricTagConfiguration) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MetricTagConfiguration) validateSetExcludeTagsModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetricTagConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

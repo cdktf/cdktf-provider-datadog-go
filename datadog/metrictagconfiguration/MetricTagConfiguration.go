@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
 	cdktf.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
@@ -33,6 +33,9 @@ type MetricTagConfiguration interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExcludeTagsMode() interface{}
+	SetExcludeTagsMode(val interface{})
+	ExcludeTagsModeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,6 +116,7 @@ type MetricTagConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAggregations(value interface{})
 	ResetAggregations()
+	ResetExcludeTagsMode()
 	ResetId()
 	ResetIncludePercentiles()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -198,6 +202,26 @@ func (j *jsiiProxy_MetricTagConfiguration) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricTagConfiguration) ExcludeTagsMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeTagsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricTagConfiguration) ExcludeTagsModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeTagsModeInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +438,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 
@@ -469,6 +493,17 @@ func (j *jsiiProxy_MetricTagConfiguration)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetricTagConfiguration)SetExcludeTagsMode(val interface{}) {
+	if err := j.validateSetExcludeTagsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeTagsMode",
 		val,
 	)
 }
@@ -899,6 +934,14 @@ func (m *jsiiProxy_MetricTagConfiguration) ResetAggregations() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAggregations",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetricTagConfiguration) ResetExcludeTagsMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExcludeTagsMode",
 		nil, // no parameters
 	)
 }

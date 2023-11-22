@@ -28,6 +28,8 @@ type MonitorSchedulingOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSchedule() MonitorSchedulingOptionsCustomScheduleList
+	CustomScheduleInput() interface{}
 	EvaluationWindow() MonitorSchedulingOptionsEvaluationWindowList
 	EvaluationWindowInput() interface{}
 	// Experimental.
@@ -66,7 +68,10 @@ type MonitorSchedulingOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomSchedule(value interface{})
 	PutEvaluationWindow(value interface{})
+	ResetCustomSchedule()
+	ResetEvaluationWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +112,26 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CreationStack() *[]*
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomSchedule() MonitorSchedulingOptionsCustomScheduleList {
+	var returns MonitorSchedulingOptionsCustomScheduleList
+	_jsii_.Get(
+		j,
+		"customSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomScheduleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customScheduleInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +466,17 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutCustomSchedule(value interface{}) {
+	if err := m.validatePutCustomScheduleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCustomSchedule",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutEvaluationWindow(value interface{}) {
 	if err := m.validatePutEvaluationWindowParameters(value); err != nil {
 		panic(err)
@@ -449,6 +485,22 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutEvaluationWindow(
 		m,
 		"putEvaluationWindow",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) ResetCustomSchedule() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomSchedule",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) ResetEvaluationWindow() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEvaluationWindow",
+		nil, // no parameters
 	)
 }
 

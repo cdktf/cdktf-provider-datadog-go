@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktf.TerraformResource
 	AppServicePlanFilters() *string
@@ -35,6 +35,9 @@ type IntegrationAzure interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContainerAppFilters() *string
+	SetContainerAppFilters(val *string)
+	ContainerAppFiltersInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -123,6 +126,7 @@ type IntegrationAzure interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAppServicePlanFilters()
 	ResetAutomute()
+	ResetContainerAppFilters()
 	ResetCspmEnabled()
 	ResetCustomMetricsEnabled()
 	ResetHostFilters()
@@ -250,6 +254,26 @@ func (j *jsiiProxy_IntegrationAzure) ConstructNodeMetadata() *map[string]interfa
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) ContainerAppFilters() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAppFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) ContainerAppFiltersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAppFiltersInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +510,7 @@ func (j *jsiiProxy_IntegrationAzure) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 
@@ -566,6 +590,17 @@ func (j *jsiiProxy_IntegrationAzure)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetContainerAppFilters(val *string) {
+	if err := j.validateSetContainerAppFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"containerAppFilters",
 		val,
 	)
 }
@@ -1012,6 +1047,14 @@ func (i *jsiiProxy_IntegrationAzure) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAutomute",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetContainerAppFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetContainerAppFilters",
 		nil, // no parameters
 	)
 }

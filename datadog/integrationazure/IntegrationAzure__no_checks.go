@@ -103,6 +103,10 @@ func (j *jsiiProxy_IntegrationAzure) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAzure) validateSetContainerAppFiltersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAzure) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -28,6 +28,7 @@ type DataDatadogMonitorSchedulingOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSchedule() DataDatadogMonitorSchedulingOptionsCustomScheduleList
 	EvaluationWindow() DataDatadogMonitorSchedulingOptionsEvaluationWindowList
 	// Experimental.
 	Fqn() *string
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) CreationS
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) CustomSchedule() DataDatadogMonitorSchedulingOptionsCustomScheduleList {
+	var returns DataDatadogMonitorSchedulingOptionsCustomScheduleList
+	_jsii_.Get(
+		j,
+		"customSchedule",
 		&returns,
 	)
 	return returns

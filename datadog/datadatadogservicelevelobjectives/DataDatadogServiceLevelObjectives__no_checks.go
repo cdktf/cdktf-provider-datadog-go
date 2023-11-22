@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetErrorOnEmptyResultParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetMetricsQueryPar
 }
 
 func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetNameQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) validateSetQueryParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 type DataDatadogServiceLevelObjectives interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataDatadogServiceLevelObjectives interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ErrorOnEmptyResult() interface{}
+	SetErrorOnEmptyResult(val interface{})
+	ErrorOnEmptyResultInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,6 +60,9 @@ type DataDatadogServiceLevelObjectives interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Query() *string
+	SetQuery(val *string)
+	QueryInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Slos() DataDatadogServiceLevelObjectivesSlosList
@@ -94,6 +100,7 @@ type DataDatadogServiceLevelObjectives interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetErrorOnEmptyResult()
 	ResetId()
 	ResetIds()
 	ResetMetricsQuery()
@@ -101,6 +108,7 @@ type DataDatadogServiceLevelObjectives interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQuery()
 	ResetTagsQuery()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -152,6 +160,26 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) ErrorOnEmptyResult() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"errorOnEmptyResult",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) ErrorOnEmptyResultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"errorOnEmptyResultInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +325,26 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) Provider() cdktf.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) Query() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives) QueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogServiceLevelObjectives) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -368,7 +416,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives {
 	_init_.Initialize()
 
@@ -386,7 +434,7 @@ func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObjectives, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) {
 	_init_.Initialize()
 
@@ -412,6 +460,17 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetDependsOn(val *[]*string
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetErrorOnEmptyResult(val interface{}) {
+	if err := j.validateSetErrorOnEmptyResultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"errorOnEmptyResult",
 		val,
 	)
 }
@@ -483,6 +542,17 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogServiceLevelObjectives)SetQuery(val *string) {
+	if err := j.validateSetQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"query",
 		val,
 	)
 }
@@ -783,6 +853,14 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) OverrideLogicalId(newLogic
 	)
 }
 
+func (d *jsiiProxy_DataDatadogServiceLevelObjectives) ResetErrorOnEmptyResult() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetErrorOnEmptyResult",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatadogServiceLevelObjectives) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -819,6 +897,14 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogServiceLevelObjectives) ResetQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetQuery",
 		nil, // no parameters
 	)
 }
