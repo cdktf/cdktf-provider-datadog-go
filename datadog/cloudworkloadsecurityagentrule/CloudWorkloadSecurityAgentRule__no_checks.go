@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

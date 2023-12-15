@@ -291,6 +291,17 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutNoteDefinitionPara
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutPowerpackDefinitionParameters(value *DashboardWidgetPowerpackDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardWidgetQueryTableDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

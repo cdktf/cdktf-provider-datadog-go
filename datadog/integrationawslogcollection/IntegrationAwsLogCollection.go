@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
 type IntegrationAwsLogCollection interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -94,12 +94,22 @@ type IntegrationAwsLogCollection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_IntegrationAwsLogCollection) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) IntegrationAwsLogCollection {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewIntegrationAwsLogCollection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 func NewIntegrationAwsLogCollection_Override(i IntegrationAwsLogCollection, scope constructs.Construct, id *string, config *IntegrationAwsLogCollectionConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsLogCollection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IntegrationAwsLogCollection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsLogCollection) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAwsLogCollection) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) MoveTo(moveTarget *string, index
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IntegrationAwsLogCollection) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

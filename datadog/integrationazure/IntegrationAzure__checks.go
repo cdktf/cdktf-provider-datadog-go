@@ -122,6 +122,14 @@ func (i *jsiiProxy_IntegrationAzure) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAzure) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (i *jsiiProxy_IntegrationAzure) validateMoveToParameters(moveTarget *string
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAzure) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil
@@ -421,14 +437,6 @@ func (j *jsiiProxy_IntegrationAzure) validateSetHostFiltersParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationAzure) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationAzure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -477,6 +485,26 @@ func (j *jsiiProxy_IntegrationAzure) validateSetProvisionersParameters(val *[]in
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetResourceCollectionEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

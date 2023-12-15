@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationPagerdutyServiceObject) validateInterpolationForAt
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationPagerdutyServiceObject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationPagerdutyServiceObject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationPagerdutyServiceObject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

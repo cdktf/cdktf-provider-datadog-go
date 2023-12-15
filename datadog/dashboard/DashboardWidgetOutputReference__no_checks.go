@@ -119,6 +119,10 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutNoteDefinitionPara
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutPowerpackDefinitionParameters(value *DashboardWidgetPowerpackDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardWidgetQueryTableDefinition) error {
 	return nil
 }

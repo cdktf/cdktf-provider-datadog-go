@@ -59,7 +59,15 @@ func (s *jsiiProxy_SensitiveDataScannerRule) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveDataScannerRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

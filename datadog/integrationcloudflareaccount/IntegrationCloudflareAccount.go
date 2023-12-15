@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 type IntegrationCloudflareAccount interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -95,12 +95,22 @@ type IntegrationCloudflareAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -354,7 +364,7 @@ func (j *jsiiProxy_IntegrationCloudflareAccount) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) IntegrationCloudflareAccount {
 	_init_.Initialize()
 
@@ -372,7 +382,7 @@ func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount_Override(i IntegrationCloudflareAccount, scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) {
 	_init_.Initialize()
 
@@ -753,6 +763,19 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationCloudflareAccount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IntegrationCloudflareAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -780,6 +803,17 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) InterpolationForAttribute(terra
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationCloudflareAccount) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IntegrationCloudflareAccount) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -788,6 +822,17 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) MoveTo(moveTarget *string, inde
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IntegrationCloudflareAccount) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApmRetentionFilterOrder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApmRetentionFilterOrder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApmRetentionFilterOrder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
 type IntegrationAwsLambdaArn interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -94,12 +94,22 @@ type IntegrationAwsLambdaArn interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_IntegrationAwsLambdaArn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) IntegrationAwsLambdaArn {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewIntegrationAwsLambdaArn(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 func NewIntegrationAwsLambdaArn_Override(i IntegrationAwsLambdaArn, scope constructs.Construct, id *string, config *IntegrationAwsLambdaArnConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) MoveTo(moveTarget *string, index int
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IntegrationAwsLambdaArn) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

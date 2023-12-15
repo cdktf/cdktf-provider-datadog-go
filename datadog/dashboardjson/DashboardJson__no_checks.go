@@ -59,7 +59,15 @@ func (d *jsiiProxy_DashboardJson) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DashboardJson) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardJson) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardJson) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
 type LogsPipelineOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type LogsPipelineOrder interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_LogsPipelineOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) LogsPipelineOrder {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder_Override(l LogsPipelineOrder, scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (l *jsiiProxy_LogsPipelineOrder) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (l *jsiiProxy_LogsPipelineOrder) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LogsPipelineOrder) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (l *jsiiProxy_LogsPipelineOrder) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (l *jsiiProxy_LogsPipelineOrder) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LogsPipelineOrder) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (l *jsiiProxy_LogsPipelineOrder) MoveTo(moveTarget *string, index interface
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LogsPipelineOrder) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

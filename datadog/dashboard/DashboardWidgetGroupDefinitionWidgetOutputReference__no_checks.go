@@ -115,6 +115,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutPowerpackDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetPowerpackDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	return nil
 }

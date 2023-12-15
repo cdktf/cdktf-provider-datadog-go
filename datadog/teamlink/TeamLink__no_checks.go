@@ -59,7 +59,15 @@ func (t *jsiiProxy_TeamLink) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (t *jsiiProxy_TeamLink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamLink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

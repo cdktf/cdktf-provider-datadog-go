@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationGcp) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationGcp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationGcp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationGcp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

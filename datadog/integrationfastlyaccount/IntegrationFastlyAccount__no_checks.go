@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationFastlyAccount) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationFastlyAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationFastlyAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationFastlyAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

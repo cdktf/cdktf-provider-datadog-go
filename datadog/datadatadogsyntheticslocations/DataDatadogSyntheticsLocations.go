@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 type DataDatadogSyntheticsLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsLocations) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
 func NewDataDatadogSyntheticsLocations(scope constructs.Construct, id *string, config *DataDatadogSyntheticsLocationsConfig) DataDatadogSyntheticsLocations {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataDatadogSyntheticsLocations(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/synthetics_locations datadog_synthetics_locations} Data Source.
 func NewDataDatadogSyntheticsLocations_Override(d DataDatadogSyntheticsLocations, scope constructs.Construct, id *string, config *DataDatadogSyntheticsLocationsConfig) {
 	_init_.Initialize()
 

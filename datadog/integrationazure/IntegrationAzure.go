@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktf.TerraformResource
 	AppServicePlanFilters() *string
@@ -64,8 +64,6 @@ type IntegrationAzure interface {
 	SetHostFilters(val *string)
 	HostFiltersInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -82,6 +80,9 @@ type IntegrationAzure interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceCollectionEnabled() interface{}
+	SetResourceCollectionEnabled(val interface{})
+	ResourceCollectionEnabledInput() interface{}
 	TenantName() *string
 	SetTenantName(val *string)
 	TenantNameInput() *string
@@ -115,12 +116,22 @@ type IntegrationAzure interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -130,10 +141,10 @@ type IntegrationAzure interface {
 	ResetCspmEnabled()
 	ResetCustomMetricsEnabled()
 	ResetHostFilters()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceCollectionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -399,16 +410,6 @@ func (j *jsiiProxy_IntegrationAzure) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAzure) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IntegrationAzure) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -454,6 +455,26 @@ func (j *jsiiProxy_IntegrationAzure) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) ResourceCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) ResourceCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -510,7 +531,7 @@ func (j *jsiiProxy_IntegrationAzure) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -528,7 +549,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 
@@ -665,17 +686,6 @@ func (j *jsiiProxy_IntegrationAzure)SetHostFilters(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAzure)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_IntegrationAzure)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -702,6 +712,17 @@ func (j *jsiiProxy_IntegrationAzure)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetResourceCollectionEnabled(val interface{}) {
+	if err := j.validateSetResourceCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceCollectionEnabled",
 		val,
 	)
 }
@@ -986,6 +1007,19 @@ func (i *jsiiProxy_IntegrationAzure) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAzure) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IntegrationAzure) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1013,6 +1047,17 @@ func (i *jsiiProxy_IntegrationAzure) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAzure) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAzure) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1021,6 +1066,17 @@ func (i *jsiiProxy_IntegrationAzure) MoveTo(moveTarget *string, index interface{
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1083,18 +1139,18 @@ func (i *jsiiProxy_IntegrationAzure) ResetHostFilters() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationAzure) ResetId() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (i *jsiiProxy_IntegrationAzure) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetResourceCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResourceCollectionEnabled",
 		nil, // no parameters
 	)
 }

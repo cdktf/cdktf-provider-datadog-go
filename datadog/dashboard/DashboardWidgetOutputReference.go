@@ -69,6 +69,8 @@ type DashboardWidgetOutputReference interface {
 	ManageStatusDefinitionInput() *DashboardWidgetManageStatusDefinition
 	NoteDefinition() DashboardWidgetNoteDefinitionOutputReference
 	NoteDefinitionInput() *DashboardWidgetNoteDefinition
+	PowerpackDefinition() DashboardWidgetPowerpackDefinitionOutputReference
+	PowerpackDefinitionInput() *DashboardWidgetPowerpackDefinition
 	QueryTableDefinition() DashboardWidgetQueryTableDefinitionOutputReference
 	QueryTableDefinitionInput() *DashboardWidgetQueryTableDefinition
 	QueryValueDefinition() DashboardWidgetQueryValueDefinitionOutputReference
@@ -149,6 +151,7 @@ type DashboardWidgetOutputReference interface {
 	PutLogStreamDefinition(value *DashboardWidgetLogStreamDefinition)
 	PutManageStatusDefinition(value *DashboardWidgetManageStatusDefinition)
 	PutNoteDefinition(value *DashboardWidgetNoteDefinition)
+	PutPowerpackDefinition(value *DashboardWidgetPowerpackDefinition)
 	PutQueryTableDefinition(value *DashboardWidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *DashboardWidgetQueryValueDefinition)
 	PutRunWorkflowDefinition(value *DashboardWidgetRunWorkflowDefinition)
@@ -182,6 +185,7 @@ type DashboardWidgetOutputReference interface {
 	ResetLogStreamDefinition()
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
+	ResetPowerpackDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
 	ResetRunWorkflowDefinition()
@@ -627,6 +631,26 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) NoteDefinitionInput() *Dashbo
 	_jsii_.Get(
 		j,
 		"noteDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) PowerpackDefinition() DashboardWidgetPowerpackDefinitionOutputReference {
+	var returns DashboardWidgetPowerpackDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"powerpackDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetOutputReference) PowerpackDefinitionInput() *DashboardWidgetPowerpackDefinition {
+	var returns *DashboardWidgetPowerpackDefinition
+	_jsii_.Get(
+		j,
+		"powerpackDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1419,6 +1443,17 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) PutNoteDefinition(value *Dash
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetOutputReference) PutPowerpackDefinition(value *DashboardWidgetPowerpackDefinition) {
+	if err := d.validatePutPowerpackDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPowerpackDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetOutputReference) PutQueryTableDefinition(value *DashboardWidgetQueryTableDefinition) {
 	if err := d.validatePutQueryTableDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1724,6 +1759,14 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) ResetNoteDefinition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNoteDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetOutputReference) ResetPowerpackDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPowerpackDefinition",
 		nil, // no parameters
 	)
 }

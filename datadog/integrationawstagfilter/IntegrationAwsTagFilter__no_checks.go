@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationAwsTagFilter) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsTagFilter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsTagFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsTagFilter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SensitiveDataScannerGroupOrder) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerGroupOrder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerGroupOrder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveDataScannerGroupOrder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

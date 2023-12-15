@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application}.
 type RumApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type RumApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -355,7 +365,7 @@ func (j *jsiiProxy_RumApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication(scope constructs.Construct, id *string, config *RumApplicationConfig) RumApplication {
 	_init_.Initialize()
 
@@ -373,7 +383,7 @@ func NewRumApplication(scope constructs.Construct, id *string, config *RumApplic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication_Override(r RumApplication, scope constructs.Construct, id *string, config *RumApplicationConfig) {
 	_init_.Initialize()
 
@@ -754,6 +764,19 @@ func (r *jsiiProxy_RumApplication) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (r *jsiiProxy_RumApplication) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RumApplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -781,6 +804,17 @@ func (r *jsiiProxy_RumApplication) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (r *jsiiProxy_RumApplication) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RumApplication) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -789,6 +823,17 @@ func (r *jsiiProxy_RumApplication) MoveTo(moveTarget *string, index interface{})
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RumApplication) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

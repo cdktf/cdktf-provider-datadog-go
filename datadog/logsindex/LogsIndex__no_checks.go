@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogsIndex) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LogsIndex) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsIndex) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

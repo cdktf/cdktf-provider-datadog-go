@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationConfluentResource) validateInterpolationForAttribu
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConfluentResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConfluentResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationConfluentResource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

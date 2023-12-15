@@ -59,7 +59,15 @@ func (d *jsiiProxy_DowntimeSchedule) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DowntimeSchedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DowntimeSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DowntimeSchedule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

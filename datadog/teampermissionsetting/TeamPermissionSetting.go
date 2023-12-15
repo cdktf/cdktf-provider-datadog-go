@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 type TeamPermissionSetting interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -95,12 +95,22 @@ type TeamPermissionSetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -353,7 +363,7 @@ func (j *jsiiProxy_TeamPermissionSetting) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) TeamPermissionSetting {
 	_init_.Initialize()
 
@@ -371,7 +381,7 @@ func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *Te
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting_Override(t TeamPermissionSetting, scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) {
 	_init_.Initialize()
 
@@ -752,6 +762,19 @@ func (t *jsiiProxy_TeamPermissionSetting) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (t *jsiiProxy_TeamPermissionSetting) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TeamPermissionSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -779,6 +802,17 @@ func (t *jsiiProxy_TeamPermissionSetting) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (t *jsiiProxy_TeamPermissionSetting) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TeamPermissionSetting) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -787,6 +821,17 @@ func (t *jsiiProxy_TeamPermissionSetting) MoveTo(moveTarget *string, index inter
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TeamPermissionSetting) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

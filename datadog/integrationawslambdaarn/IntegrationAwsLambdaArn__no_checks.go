@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationAwsLambdaArn) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsLambdaArn) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsLambdaArn) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsLambdaArn) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

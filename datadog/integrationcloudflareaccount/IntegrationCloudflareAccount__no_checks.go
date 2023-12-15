@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) validateInterpolationForAttribu
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationCloudflareAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationCloudflareAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationCloudflareAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

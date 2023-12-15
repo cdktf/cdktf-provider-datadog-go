@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationAzure) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAzure) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAzure) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -123,15 +131,15 @@ func (j *jsiiProxy_IntegrationAzure) validateSetHostFiltersParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationAzure) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationAzure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_IntegrationAzure) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetResourceCollectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

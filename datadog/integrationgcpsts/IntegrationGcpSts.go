@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktf.TerraformResource
 	Automute() interface{}
@@ -99,12 +99,22 @@ type IntegrationGcpSts interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -390,7 +400,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -408,7 +418,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -800,6 +810,19 @@ func (i *jsiiProxy_IntegrationGcpSts) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -827,6 +850,17 @@ func (i *jsiiProxy_IntegrationGcpSts) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -835,6 +869,17 @@ func (i *jsiiProxy_IntegrationGcpSts) MoveTo(moveTarget *string, index interface
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

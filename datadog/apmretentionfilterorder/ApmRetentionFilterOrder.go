@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
 type ApmRetentionFilterOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -89,12 +89,22 @@ type ApmRetentionFilterOrder interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -307,7 +317,7 @@ func (j *jsiiProxy_ApmRetentionFilterOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
 func NewApmRetentionFilterOrder(scope constructs.Construct, id *string, config *ApmRetentionFilterOrderConfig) ApmRetentionFilterOrder {
 	_init_.Initialize()
 
@@ -325,7 +335,7 @@ func NewApmRetentionFilterOrder(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
 func NewApmRetentionFilterOrder_Override(a ApmRetentionFilterOrder, scope constructs.Construct, id *string, config *ApmRetentionFilterOrderConfig) {
 	_init_.Initialize()
 
@@ -684,6 +694,19 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (a *jsiiProxy_ApmRetentionFilterOrder) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApmRetentionFilterOrder) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -711,6 +734,17 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (a *jsiiProxy_ApmRetentionFilterOrder) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApmRetentionFilterOrder) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -719,6 +753,17 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) MoveTo(moveTarget *string, index int
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApmRetentionFilterOrder) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

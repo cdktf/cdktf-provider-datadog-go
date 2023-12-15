@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationAwsLogCollection) validateInterpolationForAttribut
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsLogCollection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsLogCollection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsLogCollection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
