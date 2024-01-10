@@ -7,6 +7,10 @@ package metrictagconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MetricTagConfigurationAggregationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricTagConfigurationAggregationsList) validateGetParameters(index *float64) error {
 	return nil
 }

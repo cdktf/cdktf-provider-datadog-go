@@ -5,10 +5,10 @@ package user
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/user/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/user/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -133,6 +133,9 @@ type User interface {
 	ResetRoles()
 	ResetSendUserInvitation()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1018,6 +1021,32 @@ func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		u,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		u,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_User) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -7,6 +7,10 @@ package restrictionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RestrictionPolicyBindingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RestrictionPolicyBindingsList) validateGetParameters(index *float64) error {
 	return nil
 }

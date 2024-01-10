@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "showTitle", GoGetter: "ShowTitle"},
 			_jsii_.MemberProperty{JsiiProperty: "showTitleInput", GoGetter: "ShowTitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "templateVariables", GoGetter: "TemplateVariables"},
@@ -78,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -150,6 +152,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackTemplateVariablesList",
 		reflect.TypeOf((*PowerpackTemplateVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -328,6 +331,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -501,6 +505,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -611,6 +616,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -729,6 +735,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -848,6 +855,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -963,6 +971,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1036,6 +1045,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1146,6 +1156,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1516,6 +1527,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1581,6 +1593,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1778,6 +1791,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2067,6 +2081,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2177,6 +2192,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2339,6 +2355,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2449,6 +2466,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2734,6 +2752,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2844,6 +2863,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2962,6 +2982,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3075,6 +3096,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3148,6 +3170,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3258,6 +3281,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3530,6 +3554,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3640,6 +3665,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3802,6 +3828,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3912,6 +3939,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4225,6 +4253,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4361,6 +4390,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4480,6 +4510,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4595,6 +4626,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4668,6 +4700,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4778,6 +4811,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5071,6 +5105,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5136,6 +5171,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5333,6 +5369,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5622,6 +5659,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5732,6 +5770,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5928,6 +5967,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -5997,6 +6037,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionEventList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6177,6 +6218,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6287,6 +6329,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6405,6 +6448,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6524,6 +6568,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6639,6 +6684,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6712,6 +6758,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -6822,6 +6869,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -7178,6 +7226,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -7243,6 +7292,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -7440,6 +7490,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -7729,6 +7780,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -7839,6 +7891,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8001,6 +8054,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8111,6 +8165,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8319,6 +8374,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8512,6 +8568,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8622,6 +8679,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8732,6 +8790,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8805,6 +8864,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -8915,6 +8975,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9179,6 +9240,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9289,6 +9351,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9451,6 +9514,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9561,6 +9625,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9767,6 +9832,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9877,6 +9943,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -9987,6 +10054,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10060,6 +10128,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10170,6 +10239,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10434,6 +10504,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10544,6 +10615,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10706,6 +10778,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -10816,6 +10889,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -11071,6 +11145,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetList",
 		reflect.TypeOf((*PowerpackWidgetList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -11148,6 +11223,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumnsList",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -11205,6 +11281,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -11765,6 +11842,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -11941,6 +12019,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12051,6 +12130,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12169,6 +12249,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12286,6 +12367,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12371,6 +12453,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12490,6 +12573,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12605,6 +12689,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12678,6 +12763,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -12788,6 +12874,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13163,6 +13250,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13228,6 +13316,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13425,6 +13514,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13714,6 +13804,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13824,6 +13915,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -13986,6 +14078,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14096,6 +14189,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14214,6 +14308,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14403,6 +14498,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14513,6 +14609,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14675,6 +14772,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14785,6 +14883,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14899,6 +14998,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -14984,6 +15084,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15103,6 +15204,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15218,6 +15320,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15291,6 +15394,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15401,6 +15505,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15764,6 +15869,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -15829,6 +15935,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16026,6 +16133,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16315,6 +16423,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16425,6 +16534,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16587,6 +16697,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16697,6 +16808,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16908,6 +17020,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -16977,6 +17090,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInputList",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionInputList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17096,6 +17210,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17280,6 +17395,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17340,6 +17456,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17533,6 +17650,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17598,6 +17716,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -17795,6 +17914,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18088,6 +18208,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18198,6 +18319,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18308,6 +18430,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18381,6 +18504,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18491,6 +18615,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18758,6 +18883,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -18868,6 +18994,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19030,6 +19157,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19140,6 +19268,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19306,6 +19435,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19416,6 +19546,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19526,6 +19657,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19599,6 +19731,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19709,6 +19842,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -19976,6 +20110,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -20086,6 +20221,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -20248,6 +20384,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -20358,6 +20495,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -20640,6 +20778,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -20936,6 +21075,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21202,6 +21342,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21312,6 +21453,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21474,6 +21616,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21584,6 +21727,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21702,6 +21846,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21821,6 +21966,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -21936,6 +22082,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22009,6 +22156,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22119,6 +22267,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22281,6 +22430,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22391,6 +22541,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22755,6 +22906,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -22820,6 +22972,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23017,6 +23170,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23306,6 +23460,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23416,6 +23571,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23578,6 +23734,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23688,6 +23845,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23845,6 +24003,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23914,6 +24073,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEventList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionEventList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -23976,6 +24136,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarkerList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionMarkerList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24173,6 +24334,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24283,6 +24445,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24445,6 +24608,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24555,6 +24719,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24673,6 +24838,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24792,6 +24958,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24907,6 +25074,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -24980,6 +25148,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25090,6 +25259,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25204,6 +25374,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadataList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25314,6 +25485,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25424,6 +25596,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25798,6 +25971,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -25863,6 +26037,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26060,6 +26235,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26349,6 +26525,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26459,6 +26636,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26621,6 +26799,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26731,6 +26910,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -26996,6 +27176,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27169,6 +27350,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27279,6 +27461,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27441,6 +27624,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27551,6 +27735,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27665,6 +27850,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27750,6 +27936,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27869,6 +28056,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -27984,6 +28172,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -28057,6 +28246,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -28167,6 +28357,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -28531,6 +28722,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -28596,6 +28788,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -28793,6 +28986,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29082,6 +29276,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29192,6 +29387,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29354,6 +29550,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29464,6 +29661,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29621,6 +29819,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29739,6 +29938,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29801,6 +30001,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -29993,6 +30194,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -30112,6 +30314,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -30227,6 +30430,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -30420,6 +30624,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -30485,6 +30690,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -30682,6 +30888,7 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

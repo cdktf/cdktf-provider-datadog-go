@@ -7,6 +7,10 @@ package dashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList) validateGetParameters(index *float64) error {
 	return nil
 }

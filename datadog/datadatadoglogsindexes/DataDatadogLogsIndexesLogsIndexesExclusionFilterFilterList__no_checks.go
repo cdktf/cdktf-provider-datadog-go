@@ -7,6 +7,10 @@ package datadatadoglogsindexes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

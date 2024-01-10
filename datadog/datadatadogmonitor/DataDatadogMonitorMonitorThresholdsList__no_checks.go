@@ -7,6 +7,10 @@ package datadatadogmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsList) validateGetParameters(index *float64) error {
 	return nil
 }

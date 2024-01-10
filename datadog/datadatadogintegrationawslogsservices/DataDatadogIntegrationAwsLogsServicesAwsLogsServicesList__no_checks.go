@@ -7,6 +7,10 @@ package datadatadogintegrationawslogsservices
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList) validateGetParameters(index *float64) error {
 	return nil
 }

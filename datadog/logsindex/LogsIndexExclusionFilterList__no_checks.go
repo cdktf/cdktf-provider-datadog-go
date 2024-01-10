@@ -7,6 +7,10 @@ package logsindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogsIndexExclusionFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsIndexExclusionFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package powerpack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList) validateGetParameters(index *float64) error {
 	return nil
 }

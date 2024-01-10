@@ -7,6 +7,10 @@ package datadatadogsecuritymonitoringfilters
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDatadogSecurityMonitoringFiltersFiltersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDatadogSecurityMonitoringFiltersFiltersList) validateGetParameters(index *float64) error {
 	return nil
 }

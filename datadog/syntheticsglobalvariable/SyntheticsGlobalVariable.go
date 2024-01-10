@@ -5,10 +5,10 @@ package syntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsglobalvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -146,6 +146,9 @@ type SyntheticsGlobalVariable interface {
 	ResetSecure()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1159,6 +1162,32 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) SynthesizeAttributes() *map[string]
 	_jsii_.Invoke(
 		s,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -7,6 +7,10 @@ package securitymonitoringdefaultrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringDefaultRuleFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

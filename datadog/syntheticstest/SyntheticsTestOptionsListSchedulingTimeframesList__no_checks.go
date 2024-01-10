@@ -7,6 +7,10 @@ package syntheticstest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesList) validateGetParameters(index *float64) error {
 	return nil
 }

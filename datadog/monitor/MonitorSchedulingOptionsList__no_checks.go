@@ -7,6 +7,10 @@ package monitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorSchedulingOptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorSchedulingOptionsList) validateGetParameters(index *float64) error {
 	return nil
 }
