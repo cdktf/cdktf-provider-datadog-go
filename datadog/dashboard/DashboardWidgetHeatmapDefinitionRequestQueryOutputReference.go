@@ -17,6 +17,8 @@ type DashboardWidgetHeatmapDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *DashboardWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type DashboardWidgetHeatmapDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *DashboardWidgetHeatmapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) CloudCostQuery() DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) CloudCostQueryInput() *DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQuery {
+	var returns *DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryCloudCostQuery) {
+	if err := d.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) PutEventQuery(value *DashboardWidgetHeatmapDefinitionRequestQueryEventQuery) {
 	if err := d.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

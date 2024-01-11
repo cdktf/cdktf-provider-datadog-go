@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetToplistDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetToplistDefinitionRequestQueryEventQuery) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetSunburstDefinitionRequestQueryEventQuery) error {
 	return nil
 }

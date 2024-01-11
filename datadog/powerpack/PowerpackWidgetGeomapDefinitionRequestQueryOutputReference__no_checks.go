@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) v
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQuery) error {
 	return nil
 }

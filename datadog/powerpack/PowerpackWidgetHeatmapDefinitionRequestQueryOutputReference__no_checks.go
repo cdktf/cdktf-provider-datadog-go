@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery) error {
 	return nil
 }

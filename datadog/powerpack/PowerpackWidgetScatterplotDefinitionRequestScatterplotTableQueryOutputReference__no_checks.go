@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQu
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery) error {
 	return nil
 }

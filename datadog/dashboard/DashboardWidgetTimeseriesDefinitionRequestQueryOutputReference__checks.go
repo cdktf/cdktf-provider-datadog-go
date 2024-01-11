@@ -115,6 +115,17 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetTimeseriesDefinitionRequestQueryCloudCostQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

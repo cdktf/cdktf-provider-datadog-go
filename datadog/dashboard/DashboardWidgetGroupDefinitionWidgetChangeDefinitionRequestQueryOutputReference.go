@@ -17,6 +17,8 @@ type DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputRefer
 	ApmDependencyStatsQueryInput() *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputRefer
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQu
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputReference) CloudCostQuery() DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputReference) CloudCostQueryInput() *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQuery {
+	var returns *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQu
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryCloudCostQuery) {
+	if err := d.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputReference) PutEventQuery(value *DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery) {
 	if err := d.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQu
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

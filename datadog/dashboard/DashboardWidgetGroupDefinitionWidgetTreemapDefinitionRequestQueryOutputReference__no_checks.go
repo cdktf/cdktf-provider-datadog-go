@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery) error {
 	return nil
 }

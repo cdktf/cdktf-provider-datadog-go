@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQu
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuery) error {
 	return nil
 }

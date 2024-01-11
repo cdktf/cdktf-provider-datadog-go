@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
 type IntegrationSlackChannel interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
 func NewIntegrationSlackChannel(scope constructs.Construct, id *string, config *IntegrationSlackChannelConfig) IntegrationSlackChannel {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewIntegrationSlackChannel(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
 func NewIntegrationSlackChannel_Override(i IntegrationSlackChannel, scope constructs.Construct, id *string, config *IntegrationSlackChannelConfig) {
 	_init_.Initialize()
 

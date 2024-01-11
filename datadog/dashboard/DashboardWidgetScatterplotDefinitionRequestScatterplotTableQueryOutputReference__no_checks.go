@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQu
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery) error {
 	return nil
 }

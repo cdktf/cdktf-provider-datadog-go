@@ -115,6 +115,17 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) v
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

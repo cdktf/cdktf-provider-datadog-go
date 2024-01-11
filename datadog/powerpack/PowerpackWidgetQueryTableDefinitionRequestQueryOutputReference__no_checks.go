@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery) error {
 	return nil
 }

@@ -17,6 +17,8 @@ type PowerpackWidgetChangeDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type PowerpackWidgetChangeDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackWidgetChangeDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackWidgetChangeDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackWidgetChangeDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *PowerpackWidgetChangeDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) A
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) CloudCostQuery() PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) CloudCostQueryInput() *PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery {
+	var returns *PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) P
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery) {
+	if err := p.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) PutEventQuery(value *PowerpackWidgetChangeDefinitionRequestQueryEventQuery) {
 	if err := p.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) R
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

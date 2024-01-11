@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetQueryTableDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetQueryTableDefinitionRequestQueryEventQuery) error {
 	return nil
 }

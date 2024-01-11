@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application datadog_rum_application}.
 type RumApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,8 +41,6 @@ type RumApplication interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -114,7 +112,6 @@ type RumApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -232,16 +229,6 @@ func (j *jsiiProxy_RumApplication) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RumApplication) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -368,7 +355,7 @@ func (j *jsiiProxy_RumApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication(scope constructs.Construct, id *string, config *RumApplicationConfig) RumApplication {
 	_init_.Initialize()
 
@@ -386,7 +373,7 @@ func NewRumApplication(scope constructs.Construct, id *string, config *RumApplic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication_Override(r RumApplication, scope constructs.Construct, id *string, config *RumApplicationConfig) {
 	_init_.Initialize()
 
@@ -431,17 +418,6 @@ func (j *jsiiProxy_RumApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RumApplication)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -848,14 +824,6 @@ func (r *jsiiProxy_RumApplication) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (r *jsiiProxy_RumApplication) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

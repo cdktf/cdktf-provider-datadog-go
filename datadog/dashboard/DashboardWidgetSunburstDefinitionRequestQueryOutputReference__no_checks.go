@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *DashboardWidgetSunburstDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *DashboardWidgetSunburstDefinitionRequestQueryEventQuery) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key datadog_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key datadog_application_key}.
 type ApplicationKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type ApplicationKey interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -111,7 +109,6 @@ type ApplicationKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -218,16 +215,6 @@ func (j *jsiiProxy_ApplicationKey) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationKey) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -344,7 +331,7 @@ func (j *jsiiProxy_ApplicationKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key datadog_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key datadog_application_key} Resource.
 func NewApplicationKey(scope constructs.Construct, id *string, config *ApplicationKeyConfig) ApplicationKey {
 	_init_.Initialize()
 
@@ -362,7 +349,7 @@ func NewApplicationKey(scope constructs.Construct, id *string, config *Applicati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key datadog_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key datadog_application_key} Resource.
 func NewApplicationKey_Override(a ApplicationKey, scope constructs.Construct, id *string, config *ApplicationKeyConfig) {
 	_init_.Initialize()
 
@@ -407,17 +394,6 @@ func (j *jsiiProxy_ApplicationKey)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationKey)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -813,14 +789,6 @@ func (a *jsiiProxy_ApplicationKey) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_ApplicationKey) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

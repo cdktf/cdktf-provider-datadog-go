@@ -17,6 +17,8 @@ type PowerpackWidgetTreemapDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type PowerpackWidgetTreemapDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *PowerpackWidgetTreemapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) CloudCostQuery() PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) CloudCostQueryInput() *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery {
+	var returns *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) 
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery) {
+	if err := p.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) PutEventQuery(value *PowerpackWidgetTreemapDefinitionRequestQueryEventQuery) {
 	if err := p.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,17 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

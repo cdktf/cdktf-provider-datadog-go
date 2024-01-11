@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetToplistDefinitionRequestQueryEventQuery) error {
 	return nil
 }

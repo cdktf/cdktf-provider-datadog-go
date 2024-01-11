@@ -17,6 +17,8 @@ type DashboardWidgetQueryValueDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type DashboardWidgetQueryValueDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *DashboardWidgetQueryValueDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReferenc
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReference) CloudCostQuery() DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReference) CloudCostQueryInput() *DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQuery {
+	var returns *DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryCloudCostQuery) {
+	if err := d.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReference) PutEventQuery(value *DashboardWidgetQueryValueDefinitionRequestQueryEventQuery) {
 	if err := d.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

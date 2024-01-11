@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery) error {
 	return nil
 }

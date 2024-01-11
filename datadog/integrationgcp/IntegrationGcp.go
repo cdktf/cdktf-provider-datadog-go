@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp datadog_integration_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_gcp datadog_integration_gcp}.
 type IntegrationGcp interface {
 	cdktf.TerraformResource
 	Automute() interface{}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_IntegrationGcp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp(scope constructs.Construct, id *string, config *IntegrationGcpConfig) IntegrationGcp {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewIntegrationGcp(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp_Override(i IntegrationGcp, scope constructs.Construct, id *string, config *IntegrationGcpConfig) {
 	_init_.Initialize()
 

@@ -17,6 +17,8 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) CloudCostQuery() PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) CloudCostQueryInput() *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery {
+	var returns *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery) {
+	if err := p.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) PutEventQuery(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery) {
 	if err := p.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

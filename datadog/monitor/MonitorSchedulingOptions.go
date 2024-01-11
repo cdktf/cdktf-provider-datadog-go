@@ -7,11 +7,11 @@ package monitor
 type MonitorSchedulingOptions struct {
 	// custom_schedule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 	CustomSchedule interface{} `field:"optional" json:"customSchedule" yaml:"customSchedule"`
 	// evaluation_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 	EvaluationWindow interface{} `field:"optional" json:"evaluationWindow" yaml:"evaluationWindow"`
 }
 

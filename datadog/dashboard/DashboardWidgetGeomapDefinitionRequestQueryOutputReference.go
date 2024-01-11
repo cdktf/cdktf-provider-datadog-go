@@ -17,6 +17,8 @@ type DashboardWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type DashboardWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardWidgetGeomapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardWidgetGeomapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardWidgetGeomapDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *DashboardWidgetGeomapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) A
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) CloudCostQuery() DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) CloudCostQueryInput() *DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery {
+	var returns *DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery) {
+	if err := d.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) PutEventQuery(value *DashboardWidgetGeomapDefinitionRequestQueryEventQuery) {
 	if err := d.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

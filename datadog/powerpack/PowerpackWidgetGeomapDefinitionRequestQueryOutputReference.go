@@ -17,6 +17,8 @@ type PowerpackWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	ApmDependencyStatsQueryInput() *PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery
+	CloudCostQuery() PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type PowerpackWidgetGeomapDefinitionRequestQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery)
 	PutSloQuery(value *PowerpackWidgetGeomapDefinitionRequestQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) A
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) CloudCostQuery() PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference {
+	var returns PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) CloudCostQueryInput() *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery {
+	var returns *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) P
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) PutCloudCostQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery) {
+	if err := p.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) PutEventQuery(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQuery) {
 	if err := p.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) R
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }

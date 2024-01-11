@@ -115,6 +115,17 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) validatePutCloudCostQueryParameters(value *PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference) validatePutEventQueryParameters(value *PowerpackWidgetTreemapDefinitionRequestQueryEventQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

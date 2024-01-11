@@ -17,6 +17,8 @@ type PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputRefer
 	ApmDependencyStatsQueryInput() *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery
 	ApmResourceStatsQuery() PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery
+	CloudCostQuery() PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference
+	CloudCostQueryInput() *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,12 +80,14 @@ type PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputRefer
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery)
 	PutApmResourceStatsQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery)
+	PutCloudCostQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery)
 	PutMetricQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery)
 	PutProcessQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery)
 	PutSloQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery)
 	ResetApmDependencyStatsQuery()
 	ResetApmResourceStatsQuery()
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQu
 	_jsii_.Get(
 		j,
 		"apmResourceStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) CloudCostQuery() PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference {
+	var returns PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) CloudCostQueryInput() *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery {
+	var returns *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
 		&returns,
 	)
 	return returns
@@ -584,6 +608,17 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQu
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutCloudCostQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery) {
+	if err := p.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) PutEventQuery(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery) {
 	if err := p.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -640,6 +675,14 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQu
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmResourceStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudCostQuery",
 		nil, // no parameters
 	)
 }
