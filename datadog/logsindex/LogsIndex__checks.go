@@ -207,6 +207,17 @@ func (l *jsiiProxy_LogsIndex) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (l *jsiiProxy_LogsIndex) validatePutDailyLimitResetParameters(value *LogsIndexDailyLimitReset) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LogsIndex) validatePutExclusionFilterParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -380,6 +391,14 @@ func (j *jsiiProxy_LogsIndex) validateSetCountParameters(val interface{}) error 
 }
 
 func (j *jsiiProxy_LogsIndex) validateSetDailyLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogsIndex) validateSetDailyLimitWarningThresholdPercentageParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

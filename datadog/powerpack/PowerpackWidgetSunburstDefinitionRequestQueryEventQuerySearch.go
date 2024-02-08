@@ -7,7 +7,7 @@ package powerpack
 type PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch struct {
 	// The events search string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/powerpack#query Powerpack#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/powerpack#query Powerpack#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

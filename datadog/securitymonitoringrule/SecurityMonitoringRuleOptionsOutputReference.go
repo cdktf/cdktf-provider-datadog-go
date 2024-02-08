@@ -59,6 +59,8 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference
+	ThirdPartyRuleOptionsInput() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,11 +87,15 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutImpossibleTravelOptions(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions)
 	PutNewValueOptions(value *SecurityMonitoringRuleOptionsNewValueOptions)
+	PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions)
 	ResetDecreaseCriticalityBasedOnEnv()
 	ResetDetectionMethod()
 	ResetEvaluationWindow()
 	ResetImpossibleTravelOptions()
+	ResetKeepAlive()
+	ResetMaxSignalDuration()
 	ResetNewValueOptions()
+	ResetThirdPartyRuleOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -310,6 +316,26 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) TerraformResour
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference {
+	var returns SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"thirdPartyRuleOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptionsInput() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions {
+	var returns *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
+	_jsii_.Get(
+		j,
+		"thirdPartyRuleOptionsInput",
 		&returns,
 	)
 	return returns
@@ -661,6 +687,17 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutNewValueOpti
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) {
+	if err := s.validatePutThirdPartyRuleOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putThirdPartyRuleOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetDecreaseCriticalityBasedOnEnv() {
 	_jsii_.InvokeVoid(
 		s,
@@ -693,10 +730,34 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetImpossible
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetKeepAlive() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKeepAlive",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetMaxSignalDuration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMaxSignalDuration",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetNewValueOptions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetNewValueOptions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetThirdPartyRuleOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetThirdPartyRuleOptions",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (s *jsiiProxy_SensitiveDataScannerRule) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerRule) validatePutIncludedKeywordConfigurationParameters(value *SensitiveDataScannerRuleIncludedKeywordConfiguration) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerRule) validatePutTextReplacementParameters(value *SensitiveDataScannerRuleTextReplacement) error {
 	return nil
 }

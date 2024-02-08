@@ -107,10 +107,6 @@ func (j *jsiiProxy_IpAllowlist) validateSetEnabledParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_IpAllowlist) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IpAllowlist) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

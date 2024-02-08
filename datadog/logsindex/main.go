@@ -22,6 +22,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dailyLimit", GoGetter: "DailyLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "dailyLimitInput", GoGetter: "DailyLimitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyLimitReset", GoGetter: "DailyLimitReset"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyLimitResetInput", GoGetter: "DailyLimitResetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyLimitWarningThresholdPercentage", GoGetter: "DailyLimitWarningThresholdPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyLimitWarningThresholdPercentageInput", GoGetter: "DailyLimitWarningThresholdPercentageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "disableDailyLimit", GoGetter: "DisableDailyLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "disableDailyLimitInput", GoGetter: "DisableDailyLimitInput"},
@@ -56,10 +60,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putDailyLimitReset", GoMethod: "PutDailyLimitReset"},
 			_jsii_.MemberMethod{JsiiMethod: "putExclusionFilter", GoMethod: "PutExclusionFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyLimit", GoMethod: "ResetDailyLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDailyLimitReset", GoMethod: "ResetDailyLimitReset"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDailyLimitWarningThresholdPercentage", GoMethod: "ResetDailyLimitWarningThresholdPercentage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableDailyLimit", GoMethod: "ResetDisableDailyLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExclusionFilter", GoMethod: "ResetExclusionFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -86,6 +93,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.logsIndex.LogsIndexConfig",
 		reflect.TypeOf((*LogsIndexConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset",
+		reflect.TypeOf((*LogsIndexDailyLimitReset)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
+		reflect.TypeOf((*LogsIndexDailyLimitResetOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "resetTime", GoGetter: "ResetTime"},
+			_jsii_.MemberProperty{JsiiProperty: "resetTimeInput", GoGetter: "ResetTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "resetUtcOffset", GoGetter: "ResetUtcOffset"},
+			_jsii_.MemberProperty{JsiiProperty: "resetUtcOffsetInput", GoGetter: "ResetUtcOffsetInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsIndexDailyLimitResetOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter",

@@ -79,6 +79,10 @@ func (s *jsiiProxy_ServiceLevelObjective) validatePutQueryParameters(value *Serv
 	return nil
 }
 
+func (s *jsiiProxy_ServiceLevelObjective) validatePutSliSpecificationParameters(value *ServiceLevelObjectiveSliSpecification) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceLevelObjective) validatePutThresholdsParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key datadog_api_key}.
 type DataDatadogApiKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataDatadogApiKey interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExactMatch() interface{}
+	SetExactMatch(val interface{})
+	ExactMatchInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,6 +88,7 @@ type DataDatadogApiKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetExactMatch()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -144,6 +148,26 @@ func (j *jsiiProxy_DataDatadogApiKey) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogApiKey) ExactMatch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogApiKey) ExactMatchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactMatchInput",
 		&returns,
 	)
 	return returns
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataDatadogApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key datadog_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key datadog_api_key} Data Source.
 func NewDataDatadogApiKey(scope constructs.Construct, id *string, config *DataDatadogApiKeyConfig) DataDatadogApiKey {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataDatadogApiKey(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key datadog_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key datadog_api_key} Data Source.
 func NewDataDatadogApiKey_Override(d DataDatadogApiKey, scope constructs.Construct, id *string, config *DataDatadogApiKeyConfig) {
 	_init_.Initialize()
 
@@ -344,6 +368,17 @@ func (j *jsiiProxy_DataDatadogApiKey)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogApiKey)SetExactMatch(val interface{}) {
+	if err := j.validateSetExactMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exactMatch",
 		val,
 	)
 }
@@ -679,6 +714,14 @@ func (d *jsiiProxy_DataDatadogApiKey) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogApiKey) ResetExactMatch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExactMatch",
+		nil, // no parameters
 	)
 }
 

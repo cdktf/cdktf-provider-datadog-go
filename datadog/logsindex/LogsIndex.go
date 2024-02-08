@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index datadog_logs_index}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index datadog_logs_index}.
 type LogsIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,11 @@ type LogsIndex interface {
 	DailyLimit() *float64
 	SetDailyLimit(val *float64)
 	DailyLimitInput() *float64
+	DailyLimitReset() LogsIndexDailyLimitResetOutputReference
+	DailyLimitResetInput() *LogsIndexDailyLimitReset
+	DailyLimitWarningThresholdPercentage() *float64
+	SetDailyLimitWarningThresholdPercentage(val *float64)
+	DailyLimitWarningThresholdPercentageInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,9 +128,12 @@ type LogsIndex interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDailyLimitReset(value *LogsIndexDailyLimitReset)
 	PutExclusionFilter(value interface{})
 	PutFilter(value *LogsIndexFilter)
 	ResetDailyLimit()
+	ResetDailyLimitReset()
+	ResetDailyLimitWarningThresholdPercentage()
 	ResetDisableDailyLimit()
 	ResetExclusionFilter()
 	ResetId()
@@ -206,6 +214,46 @@ func (j *jsiiProxy_LogsIndex) DailyLimitInput() *float64 {
 	_jsii_.Get(
 		j,
 		"dailyLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) DailyLimitReset() LogsIndexDailyLimitResetOutputReference {
+	var returns LogsIndexDailyLimitResetOutputReference
+	_jsii_.Get(
+		j,
+		"dailyLimitReset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) DailyLimitResetInput() *LogsIndexDailyLimitReset {
+	var returns *LogsIndexDailyLimitReset
+	_jsii_.Get(
+		j,
+		"dailyLimitResetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) DailyLimitWarningThresholdPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailyLimitWarningThresholdPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) DailyLimitWarningThresholdPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailyLimitWarningThresholdPercentageInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +500,7 @@ func (j *jsiiProxy_LogsIndex) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfig) LogsIndex {
 	_init_.Initialize()
 
@@ -470,7 +518,7 @@ func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex_Override(l LogsIndex, scope constructs.Construct, id *string, config *LogsIndexConfig) {
 	_init_.Initialize()
 
@@ -510,6 +558,17 @@ func (j *jsiiProxy_LogsIndex)SetDailyLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"dailyLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsIndex)SetDailyLimitWarningThresholdPercentage(val *float64) {
+	if err := j.validateSetDailyLimitWarningThresholdPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dailyLimitWarningThresholdPercentage",
 		val,
 	)
 }
@@ -957,6 +1016,17 @@ func (l *jsiiProxy_LogsIndex) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LogsIndex) PutDailyLimitReset(value *LogsIndexDailyLimitReset) {
+	if err := l.validatePutDailyLimitResetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDailyLimitReset",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsIndex) PutExclusionFilter(value interface{}) {
 	if err := l.validatePutExclusionFilterParameters(value); err != nil {
 		panic(err)
@@ -983,6 +1053,22 @@ func (l *jsiiProxy_LogsIndex) ResetDailyLimit() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDailyLimit",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsIndex) ResetDailyLimitReset() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDailyLimitReset",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsIndex) ResetDailyLimitWarningThresholdPercentage() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDailyLimitWarningThresholdPercentage",
 		nil, // no parameters
 	)
 }

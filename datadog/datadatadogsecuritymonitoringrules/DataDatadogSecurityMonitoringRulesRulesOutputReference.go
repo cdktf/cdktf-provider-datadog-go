@@ -50,6 +50,7 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ThirdPartyCase() DataDatadogSecurityMonitoringRulesRulesThirdPartyCaseList
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -255,6 +256,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) ThirdPartyCase() DataDatadogSecurityMonitoringRulesRulesThirdPartyCaseList {
+	var returns DataDatadogSecurityMonitoringRulesRulesThirdPartyCaseList
+	_jsii_.Get(
+		j,
+		"thirdPartyCase",
 		&returns,
 	)
 	return returns

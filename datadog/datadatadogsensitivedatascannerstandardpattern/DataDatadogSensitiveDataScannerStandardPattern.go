@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
 type DataDatadogSensitiveDataScannerStandardPattern interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,6 +41,7 @@ type DataDatadogSensitiveDataScannerStandardPattern interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludedKeywords() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -220,6 +221,16 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) IdInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) IncludedKeywords() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includedKeywords",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -321,7 +332,7 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) DataDatadogSensitiveDataScannerStandardPattern {
 	_init_.Initialize()
 
@@ -339,7 +350,7 @@ func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern_Override(d DataDatadogSensitiveDataScannerStandardPattern, scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) {
 	_init_.Initialize()
 

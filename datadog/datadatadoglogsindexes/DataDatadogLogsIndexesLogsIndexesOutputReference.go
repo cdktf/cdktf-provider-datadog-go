@@ -29,6 +29,8 @@ type DataDatadogLogsIndexesLogsIndexesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DailyLimit() *float64
+	DailyLimitReset() DataDatadogLogsIndexesLogsIndexesDailyLimitResetList
+	DailyLimitWarningThresholdPercentage() *float64
 	ExclusionFilter() DataDatadogLogsIndexesLogsIndexesExclusionFilterList
 	Filter() DataDatadogLogsIndexesLogsIndexesFilterList
 	// Experimental.
@@ -119,6 +121,26 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) DailyLimit(
 	_jsii_.Get(
 		j,
 		"dailyLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) DailyLimitReset() DataDatadogLogsIndexesLogsIndexesDailyLimitResetList {
+	var returns DataDatadogLogsIndexesLogsIndexesDailyLimitResetList
+	_jsii_.Get(
+		j,
+		"dailyLimitReset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) DailyLimitWarningThresholdPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailyLimitWarningThresholdPercentage",
 		&returns,
 	)
 	return returns

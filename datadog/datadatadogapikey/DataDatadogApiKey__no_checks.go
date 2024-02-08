@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataDatadogApiKey) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogApiKey) validateSetExactMatchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogApiKey) validateSetIdParameters(val *string) error {
 	return nil
 }

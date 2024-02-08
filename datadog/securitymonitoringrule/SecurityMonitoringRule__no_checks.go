@@ -95,6 +95,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutSignalQueryParameters(valu
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutThirdPartyCaseParameters(value interface{}) error {
+	return nil
+}
+
 func validateSecurityMonitoringRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

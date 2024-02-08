@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 type SensitiveDataScannerRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,8 @@ type SensitiveDataScannerRule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludedKeywordConfiguration() SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference
+	IncludedKeywordConfigurationInput() *SensitiveDataScannerRuleIncludedKeywordConfiguration
 	IsEnabled() interface{}
 	SetIsEnabled(val interface{})
 	IsEnabledInput() interface{}
@@ -136,10 +138,12 @@ type SensitiveDataScannerRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIncludedKeywordConfiguration(value *SensitiveDataScannerRuleIncludedKeywordConfiguration)
 	PutTextReplacement(value *SensitiveDataScannerRuleTextReplacement)
 	ResetDescription()
 	ResetExcludedNamespaces()
 	ResetId()
+	ResetIncludedKeywordConfiguration()
 	ResetIsEnabled()
 	ResetName()
 	ResetNamespaces()
@@ -323,6 +327,26 @@ func (j *jsiiProxy_SensitiveDataScannerRule) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRule) IncludedKeywordConfiguration() SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference {
+	var returns SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"includedKeywordConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRule) IncludedKeywordConfigurationInput() *SensitiveDataScannerRuleIncludedKeywordConfiguration {
+	var returns *SensitiveDataScannerRuleIncludedKeywordConfiguration
+	_jsii_.Get(
+		j,
+		"includedKeywordConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -549,7 +573,7 @@ func (j *jsiiProxy_SensitiveDataScannerRule) TextReplacementInput() *SensitiveDa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) SensitiveDataScannerRule {
 	_init_.Initialize()
 
@@ -567,7 +591,7 @@ func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule_Override(s SensitiveDataScannerRule, scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) {
 	_init_.Initialize()
 
@@ -1109,6 +1133,17 @@ func (s *jsiiProxy_SensitiveDataScannerRule) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (s *jsiiProxy_SensitiveDataScannerRule) PutIncludedKeywordConfiguration(value *SensitiveDataScannerRuleIncludedKeywordConfiguration) {
+	if err := s.validatePutIncludedKeywordConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIncludedKeywordConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SensitiveDataScannerRule) PutTextReplacement(value *SensitiveDataScannerRuleTextReplacement) {
 	if err := s.validatePutTextReplacementParameters(value); err != nil {
 		panic(err)
@@ -1140,6 +1175,14 @@ func (s *jsiiProxy_SensitiveDataScannerRule) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SensitiveDataScannerRule) ResetIncludedKeywordConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludedKeywordConfiguration",
 		nil, // no parameters
 	)
 }

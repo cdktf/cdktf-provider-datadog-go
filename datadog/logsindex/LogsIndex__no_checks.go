@@ -75,6 +75,10 @@ func (l *jsiiProxy_LogsIndex) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (l *jsiiProxy_LogsIndex) validatePutDailyLimitResetParameters(value *LogsIndexDailyLimitReset) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsIndex) validatePutExclusionFilterParameters(value interface{}) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_LogsIndex) validateSetCountParameters(val interface{}) error 
 }
 
 func (j *jsiiProxy_LogsIndex) validateSetDailyLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsIndex) validateSetDailyLimitWarningThresholdPercentageParameters(val *float64) error {
 	return nil
 }
 
