@@ -68,6 +68,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	PersistCookies() interface{}
 	SetPersistCookies(val interface{})
 	PersistCookiesInput() interface{}
+	PlainProtoFile() *string
+	SetPlainProtoFile(val *string)
+	PlainProtoFileInput() *string
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -133,6 +136,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetNoSavingResponseBody()
 	ResetNumberOfPackets()
 	ResetPersistCookies()
+	ResetPlainProtoFile()
 	ResetPort()
 	ResetProtoJsonDescriptor()
 	ResetServername()
@@ -440,6 +444,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PersistCookie
 	_jsii_.Get(
 		j,
 		"persistCookiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PlainProtoFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plainProtoFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PlainProtoFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plainProtoFileInput",
 		&returns,
 	)
 	return returns
@@ -794,6 +818,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPersistCook
 	_jsii_.Set(
 		j,
 		"persistCookies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPlainProtoFile(val *string) {
+	if err := j.validateSetPlainProtoFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"plainProtoFile",
 		val,
 	)
 }
@@ -1175,6 +1210,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetPersistC
 	_jsii_.InvokeVoid(
 		s,
 		"resetPersistCookies",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetPlainProtoFile() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPlainProtoFile",
 		nil, // no parameters
 	)
 }

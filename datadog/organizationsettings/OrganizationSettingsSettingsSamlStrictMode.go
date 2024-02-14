@@ -9,7 +9,7 @@ type OrganizationSettingsSettingsSamlStrictMode struct {
 	//
 	// If true, all users must log in with SAML. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

@@ -24,29 +24,29 @@ type SecurityMonitoringSuppressionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the suppression rule is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The name of the suppression rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The rule query of the suppression rule, with the same syntax as the search bar for detection rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
 	RuleQuery *string `field:"required" json:"ruleQuery" yaml:"ruleQuery"`
 	// The suppression query of the suppression rule.
 	//
 	// If a signal matches this query, it is suppressed and is not triggered. Same syntax as the queries to search signals in the signal explorer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
 	SuppressionQuery *string `field:"required" json:"suppressionQuery" yaml:"suppressionQuery"`
 	// A description for the suppression rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
 	ExpirationDate *string `field:"optional" json:"expirationDate" yaml:"expirationDate"`
 }
 

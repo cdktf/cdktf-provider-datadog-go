@@ -111,6 +111,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPe
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPlainProtoFileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPortParameters(val *float64) error {
 	return nil
 }
