@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account}.
 type ServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,8 +46,6 @@ type ServiceAccount interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -120,7 +118,6 @@ type ServiceAccount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDisabled()
-	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -274,16 +271,6 @@ func (j *jsiiProxy_ServiceAccount) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccount) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ServiceAccount) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -405,7 +392,7 @@ func (j *jsiiProxy_ServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account} Resource.
 func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAccountConfig) ServiceAccount {
 	_init_.Initialize()
 
@@ -423,7 +410,7 @@ func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account} Resource.
 func NewServiceAccount_Override(s ServiceAccount, scope constructs.Construct, id *string, config *ServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -490,17 +477,6 @@ func (j *jsiiProxy_ServiceAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceAccount)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -914,14 +890,6 @@ func (s *jsiiProxy_ServiceAccount) ResetDisabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisabled",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServiceAccount) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }
