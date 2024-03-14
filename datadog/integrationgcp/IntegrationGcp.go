@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp datadog_integration_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp datadog_integration_gcp}.
 type IntegrationGcp interface {
 	cdktf.TerraformResource
 	Automute() interface{}
@@ -55,8 +55,9 @@ type IntegrationGcp interface {
 	SetHostFilters(val *string)
 	HostFiltersInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	IsSecurityCommandCenterEnabled() interface{}
+	SetIsSecurityCommandCenterEnabled(val interface{})
+	IsSecurityCommandCenterEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -82,6 +83,9 @@ type IntegrationGcp interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceCollectionEnabled() interface{}
+	SetResourceCollectionEnabled(val interface{})
+	ResourceCollectionEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -134,10 +138,11 @@ type IntegrationGcp interface {
 	ResetAutomute()
 	ResetCspmResourceCollectionEnabled()
 	ResetHostFilters()
-	ResetId()
+	ResetIsSecurityCommandCenterEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceCollectionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -346,11 +351,21 @@ func (j *jsiiProxy_IntegrationGcp) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcp) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_IntegrationGcp) IsSecurityCommandCenterEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"idInput",
+		"isSecurityCommandCenterEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) IsSecurityCommandCenterEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecurityCommandCenterEnabledInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +481,26 @@ func (j *jsiiProxy_IntegrationGcp) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcp) ResourceCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) ResourceCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -497,7 +532,7 @@ func (j *jsiiProxy_IntegrationGcp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp(scope constructs.Construct, id *string, config *IntegrationGcpConfig) IntegrationGcp {
 	_init_.Initialize()
 
@@ -515,7 +550,7 @@ func NewIntegrationGcp(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp_Override(i IntegrationGcp, scope constructs.Construct, id *string, config *IntegrationGcpConfig) {
 	_init_.Initialize()
 
@@ -619,13 +654,13 @@ func (j *jsiiProxy_IntegrationGcp)SetHostFilters(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationGcp)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_IntegrationGcp)SetIsSecurityCommandCenterEnabled(val interface{}) {
+	if err := j.validateSetIsSecurityCommandCenterEnabledParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"isSecurityCommandCenterEnabled",
 		val,
 	)
 }
@@ -689,6 +724,17 @@ func (j *jsiiProxy_IntegrationGcp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcp)SetResourceCollectionEnabled(val interface{}) {
+	if err := j.validateSetResourceCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceCollectionEnabled",
 		val,
 	)
 }
@@ -1070,10 +1116,10 @@ func (i *jsiiProxy_IntegrationGcp) ResetHostFilters() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationGcp) ResetId() {
+func (i *jsiiProxy_IntegrationGcp) ResetIsSecurityCommandCenterEnabled() {
 	_jsii_.InvokeVoid(
 		i,
-		"resetId",
+		"resetIsSecurityCommandCenterEnabled",
 		nil, // no parameters
 	)
 }
@@ -1082,6 +1128,14 @@ func (i *jsiiProxy_IntegrationGcp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcp) ResetResourceCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResourceCollectionEnabled",
 		nil, // no parameters
 	)
 }

@@ -24,15 +24,15 @@ type TeamPermissionSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The identifier for the action. Valid values are `manage_membership`, `edit`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// ID of the team the team permission setting is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

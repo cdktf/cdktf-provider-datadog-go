@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktf.TerraformResource
+	AccountTags() *[]*string
+	SetAccountTags(val *[]*string)
+	AccountTagsInput() *[]*string
 	Automute() interface{}
 	SetAutomute(val interface{})
 	AutomuteInput() interface{}
@@ -53,6 +56,9 @@ type IntegrationGcpSts interface {
 	IsCspmEnabled() interface{}
 	SetIsCspmEnabled(val interface{})
 	IsCspmEnabledInput() interface{}
+	IsSecurityCommandCenterEnabled() interface{}
+	SetIsSecurityCommandCenterEnabled(val interface{})
+	IsSecurityCommandCenterEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,6 +75,9 @@ type IntegrationGcpSts interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceCollectionEnabled() interface{}
+	SetResourceCollectionEnabled(val interface{})
+	ResourceCollectionEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,12 +127,15 @@ type IntegrationGcpSts interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountTags()
 	ResetAutomute()
 	ResetHostFilters()
 	ResetIsCspmEnabled()
+	ResetIsSecurityCommandCenterEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceCollectionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -140,6 +152,26 @@ type IntegrationGcpSts interface {
 // The jsii proxy struct for IntegrationGcpSts
 type jsiiProxy_IntegrationGcpSts struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) AccountTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accountTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) AccountTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accountTagsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IntegrationGcpSts) Automute() interface{} {
@@ -322,6 +354,26 @@ func (j *jsiiProxy_IntegrationGcpSts) IsCspmEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) IsSecurityCommandCenterEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecurityCommandCenterEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) IsSecurityCommandCenterEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecurityCommandCenterEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -372,6 +424,26 @@ func (j *jsiiProxy_IntegrationGcpSts) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) ResourceCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) ResourceCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceCollectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -403,7 +475,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -421,7 +493,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -429,6 +501,17 @@ func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Constru
 		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetAccountTags(val *[]*string) {
+	if err := j.validateSetAccountTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountTags",
+		val,
 	)
 }
 
@@ -514,6 +597,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetIsCspmEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_IntegrationGcpSts)SetIsSecurityCommandCenterEnabled(val interface{}) {
+	if err := j.validateSetIsSecurityCommandCenterEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSecurityCommandCenterEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IntegrationGcpSts)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -540,6 +634,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetResourceCollectionEnabled(val interface{}) {
+	if err := j.validateSetResourceCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceCollectionEnabled",
 		val,
 	)
 }
@@ -897,6 +1002,14 @@ func (i *jsiiProxy_IntegrationGcpSts) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) ResetAccountTags() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAccountTags",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
@@ -921,10 +1034,26 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetIsCspmEnabled() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) ResetIsSecurityCommandCenterEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsSecurityCommandCenterEnabled",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetResourceCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResourceCollectionEnabled",
 		nil, // no parameters
 	)
 }

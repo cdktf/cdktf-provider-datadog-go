@@ -83,7 +83,7 @@ func (m *jsiiProxy_Monitor) validatePutMonitorThresholdWindowsParameters(value *
 	return nil
 }
 
-func (m *jsiiProxy_Monitor) validatePutSchedulingOptionsParameters(value interface{}) error {
+func (m *jsiiProxy_Monitor) validatePutSchedulingOptionsParameters(value *MonitorSchedulingOptions) error {
 	return nil
 }
 

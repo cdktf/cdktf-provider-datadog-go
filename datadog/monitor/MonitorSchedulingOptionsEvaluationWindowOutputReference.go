@@ -36,8 +36,8 @@ type MonitorSchedulingOptionsEvaluationWindowOutputReference interface {
 	HourStarts() *float64
 	SetHourStarts(val *float64)
 	HourStartsInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *MonitorSchedulingOptionsEvaluationWindow
+	SetInternalValue(val *MonitorSchedulingOptionsEvaluationWindow)
 	MonthStarts() *float64
 	SetMonthStarts(val *float64)
 	MonthStartsInput() *float64
@@ -171,8 +171,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) Hour
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) InternalValue() *MonitorSchedulingOptionsEvaluationWindow {
+	var returns *MonitorSchedulingOptionsEvaluationWindow
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) Terr
 }
 
 
-func NewMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorSchedulingOptionsEvaluationWindowOutputReference {
+func NewMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsEvaluationWindowOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMonitorSchedulingOptionsEvaluationWindowOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewMonitorSchedulingOptionsEvaluationWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMonitorSchedulingOptionsEvaluationWindowOutputReference_Override(m MonitorSchedulingOptionsEvaluationWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorSchedulingOptionsEvaluationWindowOutputReference_Override(m MonitorSchedulingOptionsEvaluationWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
 }
@@ -293,7 +293,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference)SetHo
 	)
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference)SetInternalValue(val *MonitorSchedulingOptionsEvaluationWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

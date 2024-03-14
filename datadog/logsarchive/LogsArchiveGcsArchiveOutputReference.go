@@ -77,6 +77,7 @@ type LogsArchiveGcsArchiveOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPath()
+	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -559,6 +560,14 @@ func (l *jsiiProxy_LogsArchiveGcsArchiveOutputReference) ResetPath() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchiveGcsArchiveOutputReference) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

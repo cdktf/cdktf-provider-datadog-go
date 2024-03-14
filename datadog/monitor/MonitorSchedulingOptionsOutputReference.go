@@ -28,14 +28,14 @@ type MonitorSchedulingOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomSchedule() MonitorSchedulingOptionsCustomScheduleList
-	CustomScheduleInput() interface{}
-	EvaluationWindow() MonitorSchedulingOptionsEvaluationWindowList
-	EvaluationWindowInput() interface{}
+	CustomSchedule() MonitorSchedulingOptionsCustomScheduleOutputReference
+	CustomScheduleInput() *MonitorSchedulingOptionsCustomSchedule
+	EvaluationWindow() MonitorSchedulingOptionsEvaluationWindowOutputReference
+	EvaluationWindowInput() *MonitorSchedulingOptionsEvaluationWindow
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *MonitorSchedulingOptions
+	SetInternalValue(val *MonitorSchedulingOptions)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +68,8 @@ type MonitorSchedulingOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomSchedule(value interface{})
-	PutEvaluationWindow(value interface{})
+	PutCustomSchedule(value *MonitorSchedulingOptionsCustomSchedule)
+	PutEvaluationWindow(value *MonitorSchedulingOptionsEvaluationWindow)
 	ResetCustomSchedule()
 	ResetEvaluationWindow()
 	// Produce the Token's value at resolution time.
@@ -117,8 +117,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomSchedule() MonitorSchedulingOptionsCustomScheduleList {
-	var returns MonitorSchedulingOptionsCustomScheduleList
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomSchedule() MonitorSchedulingOptionsCustomScheduleOutputReference {
+	var returns MonitorSchedulingOptionsCustomScheduleOutputReference
 	_jsii_.Get(
 		j,
 		"customSchedule",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomSchedule() Mon
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomScheduleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomScheduleInput() *MonitorSchedulingOptionsCustomSchedule {
+	var returns *MonitorSchedulingOptionsCustomSchedule
 	_jsii_.Get(
 		j,
 		"customScheduleInput",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) CustomScheduleInput(
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) EvaluationWindow() MonitorSchedulingOptionsEvaluationWindowList {
-	var returns MonitorSchedulingOptionsEvaluationWindowList
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) EvaluationWindow() MonitorSchedulingOptionsEvaluationWindowOutputReference {
+	var returns MonitorSchedulingOptionsEvaluationWindowOutputReference
 	_jsii_.Get(
 		j,
 		"evaluationWindow",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) EvaluationWindow() M
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) EvaluationWindowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) EvaluationWindowInput() *MonitorSchedulingOptionsEvaluationWindow {
+	var returns *MonitorSchedulingOptionsEvaluationWindow
 	_jsii_.Get(
 		j,
 		"evaluationWindowInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) InternalValue() *MonitorSchedulingOptions {
+	var returns *MonitorSchedulingOptions
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) TerraformResource() 
 }
 
 
-func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorSchedulingOptionsOutputReference {
+func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMonitorSchedulingOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewMonitorSchedulingOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MonitorSchedulingOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMonitorSchedulingOptionsOutputReference_Override(m MonitorSchedulingOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorSchedulingOptionsOutputReference_Override(m MonitorSchedulingOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
 }
@@ -247,7 +247,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetInternalValue(val *MonitorSchedulingOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +466,7 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutCustomSchedule(value interface{}) {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutCustomSchedule(value *MonitorSchedulingOptionsCustomSchedule) {
 	if err := m.validatePutCustomScheduleParameters(value); err != nil {
 		panic(err)
 	}
@@ -477,7 +477,7 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutCustomSchedule(va
 	)
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutEvaluationWindow(value interface{}) {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) PutEvaluationWindow(value *MonitorSchedulingOptionsEvaluationWindow) {
 	if err := m.validatePutEvaluationWindowParameters(value); err != nil {
 		panic(err)
 	}

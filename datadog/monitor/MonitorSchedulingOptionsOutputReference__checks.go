@@ -93,63 +93,23 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateInterpolatio
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutCustomScheduleParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutCustomScheduleParameters(value *MonitorSchedulingOptionsCustomSchedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*MonitorSchedulingOptionsCustomSchedule:
-		value := value.(*[]*MonitorSchedulingOptionsCustomSchedule)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*MonitorSchedulingOptionsCustomSchedule:
-		value_ := value.([]*MonitorSchedulingOptionsCustomSchedule)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorSchedulingOptionsCustomSchedule; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutEvaluationWindowParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) validatePutEvaluationWindowParameters(value *MonitorSchedulingOptionsEvaluationWindow) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*MonitorSchedulingOptionsEvaluationWindow:
-		value := value.(*[]*MonitorSchedulingOptionsEvaluationWindow)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*MonitorSchedulingOptionsEvaluationWindow:
-		value_ := value.([]*MonitorSchedulingOptionsEvaluationWindow)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorSchedulingOptionsEvaluationWindow; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -228,25 +188,9 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *MonitorSchedulingOptions:
-		val := val.(*MonitorSchedulingOptions)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case MonitorSchedulingOptions:
-		val_ := val.(MonitorSchedulingOptions)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitorSchedulingOptions; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateSetInternalValueParameters(val *MonitorSchedulingOptions) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -268,21 +212,13 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewMonitorSchedulingOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorSchedulingOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

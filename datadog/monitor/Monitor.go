@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -138,8 +138,8 @@ type Monitor interface {
 	RestrictedRoles() *[]*string
 	SetRestrictedRoles(val *[]*string)
 	RestrictedRolesInput() *[]*string
-	SchedulingOptions() MonitorSchedulingOptionsList
-	SchedulingOptionsInput() interface{}
+	SchedulingOptions() MonitorSchedulingOptionsOutputReference
+	SchedulingOptionsInput() *MonitorSchedulingOptions
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -205,7 +205,7 @@ type Monitor interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMonitorThresholds(value *MonitorMonitorThresholds)
 	PutMonitorThresholdWindows(value *MonitorMonitorThresholdWindows)
-	PutSchedulingOptions(value interface{})
+	PutSchedulingOptions(value *MonitorSchedulingOptions)
 	PutVariables(value *MonitorVariables)
 	ResetEnableLogsSample()
 	ResetEscalationMessage()
@@ -958,8 +958,8 @@ func (j *jsiiProxy_Monitor) RestrictedRolesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Monitor) SchedulingOptions() MonitorSchedulingOptionsList {
-	var returns MonitorSchedulingOptionsList
+func (j *jsiiProxy_Monitor) SchedulingOptions() MonitorSchedulingOptionsOutputReference {
+	var returns MonitorSchedulingOptionsOutputReference
 	_jsii_.Get(
 		j,
 		"schedulingOptions",
@@ -968,8 +968,8 @@ func (j *jsiiProxy_Monitor) SchedulingOptions() MonitorSchedulingOptionsList {
 	return returns
 }
 
-func (j *jsiiProxy_Monitor) SchedulingOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Monitor) SchedulingOptionsInput() *MonitorSchedulingOptions {
+	var returns *MonitorSchedulingOptions
 	_jsii_.Get(
 		j,
 		"schedulingOptionsInput",
@@ -1109,7 +1109,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1127,7 +1127,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1911,7 +1911,7 @@ func (m *jsiiProxy_Monitor) PutMonitorThresholdWindows(value *MonitorMonitorThre
 	)
 }
 
-func (m *jsiiProxy_Monitor) PutSchedulingOptions(value interface{}) {
+func (m *jsiiProxy_Monitor) PutSchedulingOptions(value *MonitorSchedulingOptions) {
 	if err := m.validatePutSchedulingOptionsParameters(value); err != nil {
 		panic(err)
 	}

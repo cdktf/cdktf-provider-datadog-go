@@ -24,7 +24,7 @@ type OpenapiApiConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The OpenAPI spec.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 	Spec *string `field:"required" json:"spec" yaml:"spec"`
 }
 

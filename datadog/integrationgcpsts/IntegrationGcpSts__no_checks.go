@@ -91,6 +91,10 @@ func validateIntegrationGcpSts_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) validateSetAccountTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) validateSetAutomuteParameters(val interface{}) error {
 	return nil
 }
@@ -115,11 +119,19 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetIsCspmEnabledParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) validateSetIsSecurityCommandCenterEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_IntegrationGcpSts) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) validateSetResourceCollectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

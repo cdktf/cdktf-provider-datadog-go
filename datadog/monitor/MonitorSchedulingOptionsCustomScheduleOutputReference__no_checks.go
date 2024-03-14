@@ -63,7 +63,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateSetInternalValueParameters(val *MonitorSchedulingOptionsCustomSchedule) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) valida
 	return nil
 }
 
-func validateNewMonitorSchedulingOptionsCustomScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorSchedulingOptionsCustomScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

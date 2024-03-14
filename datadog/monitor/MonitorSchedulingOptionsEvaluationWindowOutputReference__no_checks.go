@@ -67,7 +67,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateSetInternalValueParameters(val *MonitorSchedulingOptionsEvaluationWindow) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) vali
 	return nil
 }
 
-func validateNewMonitorSchedulingOptionsEvaluationWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorSchedulingOptionsEvaluationWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

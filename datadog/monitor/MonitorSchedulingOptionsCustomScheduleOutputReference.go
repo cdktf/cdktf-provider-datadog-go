@@ -30,8 +30,8 @@ type MonitorSchedulingOptionsCustomScheduleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *MonitorSchedulingOptionsCustomSchedule
+	SetInternalValue(val *MonitorSchedulingOptionsCustomSchedule)
 	Recurrence() MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
 	RecurrenceInput() *MonitorSchedulingOptionsCustomScheduleRecurrence
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) InternalValue() *MonitorSchedulingOptionsCustomSchedule {
+	var returns *MonitorSchedulingOptionsCustomSchedule
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -173,29 +173,29 @@ func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) Terraf
 }
 
 
-func NewMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorSchedulingOptionsCustomScheduleOutputReference {
+func NewMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMonitorSchedulingOptionsCustomScheduleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewMonitorSchedulingOptionsCustomScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMonitorSchedulingOptionsCustomScheduleOutputReference_Override(m MonitorSchedulingOptionsCustomScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorSchedulingOptionsCustomScheduleOutputReference_Override(m MonitorSchedulingOptionsCustomScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
 }
@@ -222,7 +222,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference)SetInternalValue(val *MonitorSchedulingOptionsCustomSchedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

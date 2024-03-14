@@ -119,7 +119,7 @@ func (j *jsiiProxy_IntegrationGcp) validateSetHostFiltersParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationGcp) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_IntegrationGcp) validateSetIsSecurityCommandCenterEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -140,6 +140,10 @@ func (j *jsiiProxy_IntegrationGcp) validateSetProjectIdParameters(val *string) e
 }
 
 func (j *jsiiProxy_IntegrationGcp) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGcp) validateSetResourceCollectionEnabledParameters(val interface{}) error {
 	return nil
 }
 
