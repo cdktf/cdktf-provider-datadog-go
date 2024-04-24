@@ -99,6 +99,10 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetDataExclusionQueryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -22,9 +22,11 @@ type OpenapiApiConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The OpenAPI spec.
+	// The textual content of the OpenAPI specification.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+	// Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 	Spec *string `field:"required" json:"spec" yaml:"spec"`
 }
 

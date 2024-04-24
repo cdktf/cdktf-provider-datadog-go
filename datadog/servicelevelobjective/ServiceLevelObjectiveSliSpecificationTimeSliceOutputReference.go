@@ -37,6 +37,9 @@ type ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference interface {
 	SetInternalValue(val *ServiceLevelObjectiveSliSpecificationTimeSlice)
 	Query() ServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference
 	QueryInput() *ServiceLevelObjectiveSliSpecificationTimeSliceQuery
+	QueryIntervalSeconds() *float64
+	SetQueryIntervalSeconds(val *float64)
+	QueryIntervalSecondsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutQuery(value *ServiceLevelObjectiveSliSpecificationTimeSliceQuery)
+	ResetQueryIntervalSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 	_jsii_.Get(
 		j,
 		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference) QueryIntervalSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryIntervalSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference) QueryIntervalSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryIntervalSecondsInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference)SetQueryIntervalSeconds(val *float64) {
+	if err := j.validateSetQueryIntervalSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryIntervalSeconds",
 		val,
 	)
 }
@@ -517,6 +552,14 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 		s,
 		"putQuery",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference) ResetQueryIntervalSeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQueryIntervalSeconds",
+		nil, // no parameters
 	)
 }
 

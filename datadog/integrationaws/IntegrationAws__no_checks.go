@@ -119,6 +119,10 @@ func (j *jsiiProxy_IntegrationAws) validateSetExcludedRegionsParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAws) validateSetExtendedResourceCollectionEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAws) validateSetFilterTagsParameters(val *[]*string) error {
 	return nil
 }

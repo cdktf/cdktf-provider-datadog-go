@@ -9,7 +9,7 @@ type DashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensions struct {
 	//
 	// For metrics, it's a tag. For the events platform, it's an attribute or tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/dashboard#one_graph_per Dashboard#one_graph_per}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/dashboard#one_graph_per Dashboard#one_graph_per}
 	OneGraphPer *string `field:"required" json:"oneGraphPer" yaml:"oneGraphPer"`
 }
 

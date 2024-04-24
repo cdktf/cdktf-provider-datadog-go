@@ -51,6 +51,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
+	HttpVersion() *string
+	SetHttpVersion(val *string)
+	HttpVersionInput() *string
 	InternalValue() *SyntheticsTestRequestDefinition
 	SetInternalValue(val *SyntheticsTestRequestDefinition)
 	Message() *string
@@ -131,6 +134,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetDnsServer()
 	ResetDnsServerPort()
 	ResetHost()
+	ResetHttpVersion()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -334,6 +338,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) HostInput() *
 	_jsii_.Get(
 		j,
 		"hostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) HttpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) HttpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersionInput",
 		&returns,
 	)
 	return returns
@@ -756,6 +780,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetHost(val *s
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetHttpVersion(val *string) {
+	if err := j.validateSetHttpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetInternalValue(val *SyntheticsTestRequestDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -1170,6 +1205,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetHost() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetHttpVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpVersion",
 		nil, // no parameters
 	)
 }

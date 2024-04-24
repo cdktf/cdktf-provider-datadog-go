@@ -75,6 +75,10 @@ func (s *jsiiProxy_SpansMetric) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (s *jsiiProxy_SpansMetric) validatePutComputeParameters(value *SpansMetricCompute) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpansMetric) validatePutFilterParameters(value *SpansMetricFilter) error {
 	return nil
 }

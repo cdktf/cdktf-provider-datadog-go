@@ -207,6 +207,17 @@ func (s *jsiiProxy_SpansMetric) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (s *jsiiProxy_SpansMetric) validatePutComputeParameters(value *SpansMetricCompute) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SpansMetric) validatePutFilterParameters(value *SpansMetricFilter) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

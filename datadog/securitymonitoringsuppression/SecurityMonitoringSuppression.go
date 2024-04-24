@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 type SecurityMonitoringSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type SecurityMonitoringSuppression interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataExclusionQuery() *string
+	SetDataExclusionQuery(val *string)
+	DataExclusionQueryInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,11 +126,13 @@ type SecurityMonitoringSuppression interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDataExclusionQuery()
 	ResetDescription()
 	ResetExpirationDate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSuppressionQuery()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -181,6 +186,26 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression) DataExclusionQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataExclusionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression) DataExclusionQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataExclusionQueryInput",
 		&returns,
 	)
 	return returns
@@ -437,7 +462,7 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression {
 	_init_.Initialize()
 
@@ -455,7 +480,7 @@ func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression_Override(s SecurityMonitoringSuppression, scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) {
 	_init_.Initialize()
 
@@ -484,6 +509,17 @@ func (j *jsiiProxy_SecurityMonitoringSuppression)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression)SetDataExclusionQuery(val *string) {
+	if err := j.validateSetDataExclusionQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataExclusionQuery",
 		val,
 	)
 }
@@ -953,6 +989,14 @@ func (s *jsiiProxy_SecurityMonitoringSuppression) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringSuppression) ResetDataExclusionQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataExclusionQuery",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringSuppression) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -973,6 +1017,14 @@ func (s *jsiiProxy_SecurityMonitoringSuppression) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringSuppression) ResetSuppressionQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSuppressionQuery",
 		nil, // no parameters
 	)
 }

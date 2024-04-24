@@ -28,6 +28,7 @@ type DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataExclusionQuery() *string
 	Description() *string
 	Enabled() cdktf.IResolvable
 	ExpirationDate() *string
@@ -111,6 +112,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference) DataExclusionQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataExclusionQuery",
 		&returns,
 	)
 	return returns

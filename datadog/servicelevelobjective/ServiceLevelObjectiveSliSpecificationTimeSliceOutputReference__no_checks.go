@@ -71,6 +71,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference) validateSetQueryIntervalSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

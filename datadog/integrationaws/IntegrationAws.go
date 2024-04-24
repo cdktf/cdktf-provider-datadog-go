@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws datadog_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws datadog_integration_aws}.
 type IntegrationAws interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -46,6 +46,9 @@ type IntegrationAws interface {
 	ExcludedRegions() *[]*string
 	SetExcludedRegions(val *[]*string)
 	ExcludedRegionsInput() *[]*string
+	ExtendedResourceCollectionEnabled() *string
+	SetExtendedResourceCollectionEnabled(val *string)
+	ExtendedResourceCollectionEnabledInput() *string
 	ExternalId() *string
 	FilterTags() *[]*string
 	SetFilterTags(val *[]*string)
@@ -146,6 +149,7 @@ type IntegrationAws interface {
 	ResetAccountSpecificNamespaceRules()
 	ResetCspmResourceCollectionEnabled()
 	ResetExcludedRegions()
+	ResetExtendedResourceCollectionEnabled()
 	ResetFilterTags()
 	ResetHostTags()
 	ResetId()
@@ -319,6 +323,26 @@ func (j *jsiiProxy_IntegrationAws) ExcludedRegionsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"excludedRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAws) ExtendedResourceCollectionEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extendedResourceCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAws) ExtendedResourceCollectionEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extendedResourceCollectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -585,7 +609,7 @@ func (j *jsiiProxy_IntegrationAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws(scope constructs.Construct, id *string, config *IntegrationAwsConfig) IntegrationAws {
 	_init_.Initialize()
 
@@ -603,7 +627,7 @@ func NewIntegrationAws(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws_Override(i IntegrationAws, scope constructs.Construct, id *string, config *IntegrationAwsConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (j *jsiiProxy_IntegrationAws)SetExcludedRegions(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"excludedRegions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAws)SetExtendedResourceCollectionEnabled(val *string) {
+	if err := j.validateSetExtendedResourceCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extendedResourceCollectionEnabled",
 		val,
 	)
 }
@@ -1203,6 +1238,14 @@ func (i *jsiiProxy_IntegrationAws) ResetExcludedRegions() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetExcludedRegions",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAws) ResetExtendedResourceCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetExtendedResourceCollectionEnabled",
 		nil, // no parameters
 	)
 }

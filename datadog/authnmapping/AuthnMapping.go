@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping datadog_authn_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping datadog_authn_mapping}.
 type AuthnMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type AuthnMapping interface {
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
+	Team() *string
+	SetTeam(val *string)
+	TeamInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +123,8 @@ type AuthnMapping interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRole()
+	ResetTeam()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -328,6 +333,26 @@ func (j *jsiiProxy_AuthnMapping) RoleInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthnMapping) Team() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"team",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthnMapping) TeamInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"teamInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthnMapping) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +404,7 @@ func (j *jsiiProxy_AuthnMapping) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
 func NewAuthnMapping(scope constructs.Construct, id *string, config *AuthnMappingConfig) AuthnMapping {
 	_init_.Initialize()
 
@@ -397,7 +422,7 @@ func NewAuthnMapping(scope constructs.Construct, id *string, config *AuthnMappin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
 func NewAuthnMapping_Override(a AuthnMapping, scope constructs.Construct, id *string, config *AuthnMappingConfig) {
 	_init_.Initialize()
 
@@ -505,6 +530,17 @@ func (j *jsiiProxy_AuthnMapping)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthnMapping)SetTeam(val *string) {
+	if err := j.validateSetTeamParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"team",
 		val,
 	)
 }
@@ -885,6 +921,22 @@ func (a *jsiiProxy_AuthnMapping) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthnMapping) ResetRole() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthnMapping) ResetTeam() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTeam",
 		nil, // no parameters
 	)
 }

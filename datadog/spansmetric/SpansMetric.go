@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric datadog_spans_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric datadog_spans_metric}.
 type SpansMetric interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Compute() SpansMetricComputeOutputReference
+	ComputeInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -113,8 +114,10 @@ type SpansMetric interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCompute(value *SpansMetricCompute)
 	PutFilter(value *SpansMetricFilter)
 	PutGroupBy(value interface{})
+	ResetCompute()
 	ResetFilter()
 	ResetGroupBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -153,6 +156,16 @@ func (j *jsiiProxy_SpansMetric) Compute() SpansMetricComputeOutputReference {
 	_jsii_.Get(
 		j,
 		"compute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpansMetric) ComputeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"computeInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +392,7 @@ func (j *jsiiProxy_SpansMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricConfig) SpansMetric {
 	_init_.Initialize()
 
@@ -397,7 +410,7 @@ func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric_Override(s SpansMetric, scope constructs.Construct, id *string, config *SpansMetricConfig) {
 	_init_.Initialize()
 
@@ -840,6 +853,17 @@ func (s *jsiiProxy_SpansMetric) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SpansMetric) PutCompute(value *SpansMetricCompute) {
+	if err := s.validatePutComputeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCompute",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpansMetric) PutFilter(value *SpansMetricFilter) {
 	if err := s.validatePutFilterParameters(value); err != nil {
 		panic(err)
@@ -859,6 +883,14 @@ func (s *jsiiProxy_SpansMetric) PutGroupBy(value interface{}) {
 		s,
 		"putGroupBy",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpansMetric) ResetCompute() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCompute",
+		nil, // no parameters
 	)
 }
 

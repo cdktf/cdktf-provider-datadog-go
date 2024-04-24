@@ -24,15 +24,15 @@ type IntegrationConfluentAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The API key associated with your Confluent account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
 	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
 	// The API secret associated with your Confluent account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
 	ApiSecret *string `field:"required" json:"apiSecret" yaml:"apiSecret"`
 	// A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

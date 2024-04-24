@@ -87,6 +87,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetHo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetHttpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetInternalValueParameters(val *SyntheticsTestRequestDefinition) error {
 	return nil
 }

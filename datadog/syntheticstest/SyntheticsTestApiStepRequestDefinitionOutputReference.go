@@ -57,6 +57,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
+	HttpVersion() *string
+	SetHttpVersion(val *string)
+	HttpVersionInput() *string
 	InternalValue() *SyntheticsTestApiStepRequestDefinition
 	SetInternalValue(val *SyntheticsTestApiStepRequestDefinition)
 	Message() *string
@@ -139,6 +142,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetDnsServerPort()
 	ResetFollowRedirects()
 	ResetHost()
+	ResetHttpVersion()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -382,6 +386,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) HostIn
 	_jsii_.Get(
 		j,
 		"hostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) HttpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) HttpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpVersionInput",
 		&returns,
 	)
 	return returns
@@ -826,6 +850,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetHost
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetHttpVersion(val *string) {
+	if err := j.validateSetHttpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetInternalValue(val *SyntheticsTestApiStepRequestDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -1256,6 +1291,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetH
 	_jsii_.InvokeVoid(
 		s,
 		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetHttpVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpVersion",
 		nil, // no parameters
 	)
 }

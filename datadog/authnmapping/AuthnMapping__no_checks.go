@@ -119,6 +119,10 @@ func (j *jsiiProxy_AuthnMapping) validateSetRoleParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_AuthnMapping) validateSetTeamParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthnMapping) validateSetValueParameters(val *string) error {
 	return nil
 }
