@@ -104,6 +104,17 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjson
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjsonschemaParameters(value *SyntheticsTestAssertionTargetjsonschema) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestAssertionTargetxpath) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

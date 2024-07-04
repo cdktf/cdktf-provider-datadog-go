@@ -7,19 +7,19 @@ package powerpack
 type PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery struct {
 	// The name of the query for use in formulas.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/powerpack#name Powerpack#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/powerpack#name Powerpack#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The metrics query definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/powerpack#query Powerpack#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/powerpack#query Powerpack#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 	// The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
 	Aggregator *string `field:"optional" json:"aggregator" yaml:"aggregator"`
 	// The data source for metrics queries. Defaults to `"metrics"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/powerpack#data_source Powerpack#data_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/powerpack#data_source Powerpack#data_source}
 	DataSource *string `field:"optional" json:"dataSource" yaml:"dataSource"`
 }
 

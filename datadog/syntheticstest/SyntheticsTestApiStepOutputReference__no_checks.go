@@ -67,6 +67,10 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestDefin
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestFileParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestProxyParameters(value *SyntheticsTestApiStepRequestProxy) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetTerraformAtt
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetValueParameters(val *float64) error {
 	return nil
 }
 

@@ -111,6 +111,10 @@ func (s *jsiiProxy_SyntheticsTest) validatePutRequestDefinitionParameters(value 
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTest) validatePutRequestFileParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTest) validatePutRequestProxyParameters(value *SyntheticsTestRequestProxy) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_SyntheticsTest) validateSetCountParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_SyntheticsTest) validateSetDeviceIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTest) validateSetForceDeleteDependenciesParameters(val interface{}) error {
 	return nil
 }
 
@@ -196,6 +204,10 @@ func (j *jsiiProxy_SyntheticsTest) validateSetTagsParameters(val *[]*string) err
 }
 
 func (j *jsiiProxy_SyntheticsTest) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTest) validateSetVariablesFromScriptParameters(val *string) error {
 	return nil
 }
 

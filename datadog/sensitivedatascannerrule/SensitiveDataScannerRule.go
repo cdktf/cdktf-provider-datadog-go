@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 type SensitiveDataScannerRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type SensitiveDataScannerRule interface {
 	Pattern() *string
 	SetPattern(val *string)
 	PatternInput() *string
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -151,6 +154,7 @@ type SensitiveDataScannerRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPattern()
+	ResetPriority()
 	ResetStandardPatternId()
 	ResetTags()
 	ResetTextReplacement()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_SensitiveDataScannerRule) PatternInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SensitiveDataScannerRule) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRule) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SensitiveDataScannerRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -573,7 +597,7 @@ func (j *jsiiProxy_SensitiveDataScannerRule) TextReplacementInput() *SensitiveDa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) SensitiveDataScannerRule {
 	_init_.Initialize()
 
@@ -591,7 +615,7 @@ func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule_Override(s SensitiveDataScannerRule, scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_SensitiveDataScannerRule)SetPattern(val *string) {
 	_jsii_.Set(
 		j,
 		"pattern",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRule)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
 		val,
 	)
 }
@@ -1223,6 +1258,14 @@ func (s *jsiiProxy_SensitiveDataScannerRule) ResetPattern() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPattern",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SensitiveDataScannerRule) ResetPriority() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPriority",
 		nil, // no parameters
 	)
 }

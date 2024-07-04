@@ -406,6 +406,37 @@ func (s *jsiiProxy_SyntheticsTest) validatePutRequestDefinitionParameters(value 
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTest) validatePutRequestFileParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SyntheticsTestRequestFile:
+		value := value.(*[]*SyntheticsTestRequestFile)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SyntheticsTestRequestFile:
+		value_ := value.([]*SyntheticsTestRequestFile)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SyntheticsTestRequestFile; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTest) validatePutRequestProxyParameters(value *SyntheticsTestRequestProxy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -555,6 +586,26 @@ func (j *jsiiProxy_SyntheticsTest) validateSetDeviceIdsParameters(val *[]*string
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTest) validateSetForceDeleteDependenciesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTest) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -698,6 +749,14 @@ func (j *jsiiProxy_SyntheticsTest) validateSetTagsParameters(val *[]*string) err
 }
 
 func (j *jsiiProxy_SyntheticsTest) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTest) validateSetVariablesFromScriptParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

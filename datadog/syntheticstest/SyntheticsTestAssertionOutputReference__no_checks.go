@@ -51,6 +51,10 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjson
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjsonschemaParameters(value *SyntheticsTestAssertionTargetjsonschema) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestAssertionTargetxpath) error {
 	return nil
 }

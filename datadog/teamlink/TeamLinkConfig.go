@@ -24,19 +24,19 @@ type TeamLinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The link's label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_link#label TeamLink#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_link#label TeamLink#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 	// ID of the team the link is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_link#team_id TeamLink#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_link#team_id TeamLink#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// The URL for the link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_link#url TeamLink#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_link#url TeamLink#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// The link's position, used to sort links for the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_link#position TeamLink#position}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_link#position TeamLink#position}
 	Position *float64 `field:"optional" json:"position" yaml:"position"`
 }
 

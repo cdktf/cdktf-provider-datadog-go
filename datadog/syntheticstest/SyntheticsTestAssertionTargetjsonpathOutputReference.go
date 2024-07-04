@@ -28,6 +28,9 @@ type SyntheticsTestAssertionTargetjsonpathOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Elementsoperator() *string
+	SetElementsoperator(val *string)
+	ElementsoperatorInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SyntheticsTestAssertionTargetjsonpath
@@ -73,6 +76,7 @@ type SyntheticsTestAssertionTargetjsonpathOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetElementsoperator()
 	ResetTargetvalue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +118,26 @@ func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) Elementsoperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elementsoperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) ElementsoperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elementsoperatorInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference)SetElementsoperator(val *string) {
+	if err := j.validateSetElementsoperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elementsoperator",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (s *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) ResetElementsoperator() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetElementsoperator",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) ResetTargetvalue() {

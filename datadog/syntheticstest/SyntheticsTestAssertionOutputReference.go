@@ -43,6 +43,8 @@ type SyntheticsTestAssertionOutputReference interface {
 	TargetInput() *string
 	Targetjsonpath() SyntheticsTestAssertionTargetjsonpathOutputReference
 	TargetjsonpathInput() *SyntheticsTestAssertionTargetjsonpath
+	Targetjsonschema() SyntheticsTestAssertionTargetjsonschemaOutputReference
+	TargetjsonschemaInput() *SyntheticsTestAssertionTargetjsonschema
 	Targetxpath() SyntheticsTestAssertionTargetxpathOutputReference
 	TargetxpathInput() *SyntheticsTestAssertionTargetxpath
 	// Experimental.
@@ -84,10 +86,12 @@ type SyntheticsTestAssertionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestAssertionTargetjsonpath)
+	PutTargetjsonschema(value *SyntheticsTestAssertionTargetjsonschema)
 	PutTargetxpath(value *SyntheticsTestAssertionTargetxpath)
 	ResetProperty()
 	ResetTarget()
 	ResetTargetjsonpath()
+	ResetTargetjsonschema()
 	ResetTargetxpath()
 	ResetTimingsScope()
 	// Produce the Token's value at resolution time.
@@ -230,6 +234,26 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TargetjsonpathInput()
 	_jsii_.Get(
 		j,
 		"targetjsonpathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) Targetjsonschema() SyntheticsTestAssertionTargetjsonschemaOutputReference {
+	var returns SyntheticsTestAssertionTargetjsonschemaOutputReference
+	_jsii_.Get(
+		j,
+		"targetjsonschema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TargetjsonschemaInput() *SyntheticsTestAssertionTargetjsonschema {
+	var returns *SyntheticsTestAssertionTargetjsonschema
+	_jsii_.Get(
+		j,
+		"targetjsonschemaInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) PutTargetjsonpath(val
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) PutTargetjsonschema(value *SyntheticsTestAssertionTargetjsonschema) {
+	if err := s.validatePutTargetjsonschemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetjsonschema",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) PutTargetxpath(value *SyntheticsTestAssertionTargetxpath) {
 	if err := s.validatePutTargetxpathParameters(value); err != nil {
 		panic(err)
@@ -681,6 +716,14 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetTargetjsonpath()
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetjsonpath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetTargetjsonschema() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetjsonschema",
 		nil, // no parameters
 	)
 }

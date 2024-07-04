@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCustomTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_SensitiveDataScannerRule) validateSetPatternParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_SensitiveDataScannerRule) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SensitiveDataScannerRule) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

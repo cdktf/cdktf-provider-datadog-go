@@ -159,6 +159,10 @@ func (j *jsiiProxy_SecurityMonitoringRule) validateSetTypeParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRule) validateSetValidateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSecurityMonitoringRuleParameters(scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) error {
 	return nil
 }

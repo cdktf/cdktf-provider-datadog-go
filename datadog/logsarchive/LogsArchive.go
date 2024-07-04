@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/logs_archive datadog_logs_archive}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/logs_archive datadog_logs_archive}.
 type LogsArchive interface {
 	cdktf.TerraformResource
 	AzureArchive() LogsArchiveAzureArchiveOutputReference
@@ -500,7 +500,7 @@ func (j *jsiiProxy_LogsArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveConfig) LogsArchive {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *string, config *LogsArchiveConfig) {
 	_init_.Initialize()
 

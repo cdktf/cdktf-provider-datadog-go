@@ -59,6 +59,10 @@ func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) validateSetElementsoperatorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference) validateSetInternalValueParameters(val *SyntheticsTestAssertionTargetjsonpath) error {
 	return nil
 }

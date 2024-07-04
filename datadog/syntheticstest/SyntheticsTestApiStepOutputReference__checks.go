@@ -188,6 +188,37 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestDefin
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestFileParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SyntheticsTestApiStepRequestFile:
+		value := value.(*[]*SyntheticsTestApiStepRequestFile)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SyntheticsTestApiStepRequestFile:
+		value_ := value.([]*SyntheticsTestApiStepRequestFile)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SyntheticsTestApiStepRequestFile; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) validatePutRequestProxyParameters(value *SyntheticsTestApiStepRequestProxy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -388,6 +419,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetTerraformAtt
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetValueParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

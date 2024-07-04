@@ -51,6 +51,8 @@ type SyntheticsTestApiStepOutputReference interface {
 	RequestClientCertificateInput() *SyntheticsTestApiStepRequestClientCertificate
 	RequestDefinition() SyntheticsTestApiStepRequestDefinitionOutputReference
 	RequestDefinitionInput() *SyntheticsTestApiStepRequestDefinition
+	RequestFile() SyntheticsTestApiStepRequestFileList
+	RequestFileInput() interface{}
 	RequestHeaders() *map[string]*string
 	SetRequestHeaders(val *map[string]*string)
 	RequestHeadersInput() *map[string]*string
@@ -72,6 +74,9 @@ type SyntheticsTestApiStepOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Value() *float64
+	SetValue(val *float64)
+	ValueInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -101,6 +106,7 @@ type SyntheticsTestApiStepOutputReference interface {
 	PutRequestBasicauth(value *SyntheticsTestApiStepRequestBasicauth)
 	PutRequestClientCertificate(value *SyntheticsTestApiStepRequestClientCertificate)
 	PutRequestDefinition(value *SyntheticsTestApiStepRequestDefinition)
+	PutRequestFile(value interface{})
 	PutRequestProxy(value *SyntheticsTestApiStepRequestProxy)
 	PutRetry(value *SyntheticsTestApiStepRetry)
 	ResetAllowFailure()
@@ -110,11 +116,13 @@ type SyntheticsTestApiStepOutputReference interface {
 	ResetRequestBasicauth()
 	ResetRequestClientCertificate()
 	ResetRequestDefinition()
+	ResetRequestFile()
 	ResetRequestHeaders()
 	ResetRequestProxy()
 	ResetRequestQuery()
 	ResetRetry()
 	ResetSubtype()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -340,6 +348,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestDefinitionInput(
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestFile() SyntheticsTestApiStepRequestFileList {
+	var returns SyntheticsTestApiStepRequestFileList
+	_jsii_.Get(
+		j,
+		"requestFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestFileInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestFileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestHeaders() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -455,6 +483,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) TerraformResource() cdk
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) Value() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ValueInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"valueInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +653,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetTerraformResource(val
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"value",
 		val,
 	)
 }
@@ -850,6 +909,17 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) PutRequestDefinition(va
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) PutRequestFile(value interface{}) {
+	if err := s.validatePutRequestFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRequestFile",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) PutRequestProxy(value *SyntheticsTestApiStepRequestProxy) {
 	if err := s.validatePutRequestProxyParameters(value); err != nil {
 		panic(err)
@@ -928,6 +998,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetRequestDefinition(
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetRequestFile() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequestFile",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetRequestHeaders() {
 	_jsii_.InvokeVoid(
 		s,
@@ -964,6 +1042,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetSubtype() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSubtype",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValue",
 		nil, // no parameters
 	)
 }

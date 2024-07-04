@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 type SecurityMonitoringDefaultRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringDefaultRuleCaseList
@@ -29,6 +29,9 @@ type SecurityMonitoringDefaultRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomTags() *[]*string
+	SetCustomTags(val *[]*string)
+	CustomTagsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,6 +124,7 @@ type SecurityMonitoringDefaultRule interface {
 	PutFilter(value interface{})
 	PutOptions(value *SecurityMonitoringDefaultRuleOptions)
 	ResetCase()
+	ResetCustomTags()
 	ResetEnabled()
 	ResetFilter()
 	ResetId()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customTagsInput",
 		&returns,
 	)
 	return returns
@@ -417,7 +441,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule {
 	_init_.Initialize()
 
@@ -435,7 +459,7 @@ func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule_Override(s SecurityMonitoringDefaultRule, scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) {
 	_init_.Initialize()
 
@@ -464,6 +488,17 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCustomTags(val *[]*string) {
+	if err := j.validateSetCustomTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customTags",
 		val,
 	)
 }
@@ -926,6 +961,14 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetCase() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCase",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetCustomTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomTags",
 		nil, // no parameters
 	)
 }

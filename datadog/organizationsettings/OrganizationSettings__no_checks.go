@@ -119,6 +119,10 @@ func (j *jsiiProxy_OrganizationSettings) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationSettings) validateSetSecurityContactsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewOrganizationSettingsParameters(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) error {
 	return nil
 }

@@ -33,6 +33,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "deviceIds", GoGetter: "DeviceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "deviceIdsInput", GoGetter: "DeviceIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "forceDeleteDependencies", GoGetter: "ForceDeleteDependencies"},
+			_jsii_.MemberProperty{JsiiProperty: "forceDeleteDependenciesInput", GoGetter: "ForceDeleteDependenciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRequestBasicauth", GoMethod: "PutRequestBasicauth"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestClientCertificate", GoMethod: "PutRequestClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestDefinition", GoMethod: "PutRequestDefinition"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequestFile", GoMethod: "PutRequestFile"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestProxy", GoMethod: "PutRequestProxy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestBasicauth", GoGetter: "RequestBasicauth"},
@@ -84,6 +87,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestClientCertificateInput", GoGetter: "RequestClientCertificateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestDefinition", GoGetter: "RequestDefinition"},
 			_jsii_.MemberProperty{JsiiProperty: "requestDefinitionInput", GoGetter: "RequestDefinitionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requestFile", GoGetter: "RequestFile"},
+			_jsii_.MemberProperty{JsiiProperty: "requestFileInput", GoGetter: "RequestFileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestHeaders", GoGetter: "RequestHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "requestHeadersInput", GoGetter: "RequestHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestMetadata", GoGetter: "RequestMetadata"},
@@ -98,6 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBrowserVariable", GoMethod: "ResetBrowserVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfigVariable", GoMethod: "ResetConfigVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeviceIds", GoMethod: "ResetDeviceIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetForceDeleteDependencies", GoMethod: "ResetForceDeleteDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessage", GoMethod: "ResetMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptionsList", GoMethod: "ResetOptionsList"},
@@ -105,6 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestBasicauth", GoMethod: "ResetRequestBasicauth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestClientCertificate", GoMethod: "ResetRequestClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestDefinition", GoMethod: "ResetRequestDefinition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequestFile", GoMethod: "ResetRequestFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestHeaders", GoMethod: "ResetRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestMetadata", GoMethod: "ResetRequestMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestProxy", GoMethod: "ResetRequestProxy"},
@@ -112,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSetCookie", GoMethod: "ResetSetCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubtype", GoMethod: "ResetSubtype"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVariablesFromScript", GoMethod: "ResetVariablesFromScript"},
 			_jsii_.MemberProperty{JsiiProperty: "setCookie", GoGetter: "SetCookie"},
 			_jsii_.MemberProperty{JsiiProperty: "setCookieInput", GoGetter: "SetCookieInput"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
@@ -131,6 +139,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "variablesFromScript", GoGetter: "VariablesFromScript"},
+			_jsii_.MemberProperty{JsiiProperty: "variablesFromScriptInput", GoGetter: "VariablesFromScriptInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTest{}
@@ -194,10 +204,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "property", GoGetter: "Property"},
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonschema", GoMethod: "PutTargetjsonschema"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProperty", GoMethod: "ResetProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonschema", GoMethod: "ResetTargetjsonschema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimingsScope", GoMethod: "ResetTimingsScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -205,6 +217,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpath", GoGetter: "Targetjsonpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetjsonschema", GoGetter: "Targetjsonschema"},
+			_jsii_.MemberProperty{JsiiProperty: "targetjsonschemaInput", GoGetter: "TargetjsonschemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -233,6 +247,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "elementsoperator", GoGetter: "Elementsoperator"},
+			_jsii_.MemberProperty{JsiiProperty: "elementsoperatorInput", GoGetter: "ElementsoperatorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -250,6 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonpathInput", GoGetter: "JsonpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetElementsoperator", GoMethod: "ResetElementsoperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetvalue", GoMethod: "ResetTargetvalue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "targetvalue", GoGetter: "Targetvalue"},
@@ -260,6 +277,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschema",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetjsonschema)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonschema", GoGetter: "Jsonschema"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonschemaInput", GoGetter: "JsonschemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metaschema", GoGetter: "Metaschema"},
+			_jsii_.MemberProperty{JsiiProperty: "metaschemaInput", GoGetter: "MetaschemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetaschema", GoMethod: "ResetMetaschema"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -477,6 +535,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRequestBasicauth", GoMethod: "PutRequestBasicauth"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestClientCertificate", GoMethod: "PutRequestClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestDefinition", GoMethod: "PutRequestDefinition"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequestFile", GoMethod: "PutRequestFile"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestProxy", GoMethod: "PutRequestProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetry", GoMethod: "PutRetry"},
 			_jsii_.MemberProperty{JsiiProperty: "requestBasicauth", GoGetter: "RequestBasicauth"},
@@ -485,6 +544,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestClientCertificateInput", GoGetter: "RequestClientCertificateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestDefinition", GoGetter: "RequestDefinition"},
 			_jsii_.MemberProperty{JsiiProperty: "requestDefinitionInput", GoGetter: "RequestDefinitionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requestFile", GoGetter: "RequestFile"},
+			_jsii_.MemberProperty{JsiiProperty: "requestFileInput", GoGetter: "RequestFileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestHeaders", GoGetter: "RequestHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "requestHeadersInput", GoGetter: "RequestHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestProxy", GoGetter: "RequestProxy"},
@@ -498,11 +559,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestBasicauth", GoMethod: "ResetRequestBasicauth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestClientCertificate", GoMethod: "ResetRequestClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestDefinition", GoMethod: "ResetRequestDefinition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequestFile", GoMethod: "ResetRequestFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestHeaders", GoMethod: "ResetRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestProxy", GoMethod: "ResetRequestProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestQuery", GoMethod: "ResetRequestQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetry", GoMethod: "ResetRetry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubtype", GoMethod: "ResetSubtype"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "retry", GoGetter: "Retry"},
 			_jsii_.MemberProperty{JsiiProperty: "retryInput", GoGetter: "RetryInput"},
@@ -511,6 +574,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestApiStepOutputReference{}
@@ -835,6 +900,77 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile",
+		reflect.TypeOf((*SyntheticsTestApiStepRequestFile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList",
+		reflect.TypeOf((*SyntheticsTestApiStepRequestFileList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestApiStepRequestFileList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference",
+		reflect.TypeOf((*SyntheticsTestApiStepRequestFileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bucketKey", GoGetter: "BucketKey"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
+			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "originalFileName", GoGetter: "OriginalFileName"},
+			_jsii_.MemberProperty{JsiiProperty: "originalFileNameInput", GoGetter: "OriginalFileNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginalFileName", GoMethod: "ResetOriginalFileName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy",
 		reflect.TypeOf((*SyntheticsTestApiStepRequestProxy)(nil)).Elem(),
 	)
@@ -969,10 +1105,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "property", GoGetter: "Property"},
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonschema", GoMethod: "PutTargetjsonschema"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProperty", GoMethod: "ResetProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonschema", GoMethod: "ResetTargetjsonschema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimingsScope", GoMethod: "ResetTimingsScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -980,6 +1118,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpath", GoGetter: "Targetjsonpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetjsonschema", GoGetter: "Targetjsonschema"},
+			_jsii_.MemberProperty{JsiiProperty: "targetjsonschemaInput", GoGetter: "TargetjsonschemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1008,6 +1148,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "elementsoperator", GoGetter: "Elementsoperator"},
+			_jsii_.MemberProperty{JsiiProperty: "elementsoperatorInput", GoGetter: "ElementsoperatorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1025,6 +1167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonpathInput", GoGetter: "JsonpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetElementsoperator", GoMethod: "ResetElementsoperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetvalue", GoMethod: "ResetTargetvalue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "targetvalue", GoGetter: "Targetvalue"},
@@ -1035,6 +1178,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestAssertionTargetjsonpathOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonschema",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetjsonschema)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonschemaOutputReference",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetjsonschemaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonschema", GoGetter: "Jsonschema"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonschemaInput", GoGetter: "JsonschemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metaschema", GoGetter: "Metaschema"},
+			_jsii_.MemberProperty{JsiiProperty: "metaschemaInput", GoGetter: "MetaschemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetaschema", GoMethod: "ResetMetaschema"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestAssertionTargetjsonschemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2212,6 +2396,77 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestRequestDefinitionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile",
+		reflect.TypeOf((*SyntheticsTestRequestFile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList",
+		reflect.TypeOf((*SyntheticsTestRequestFileList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestRequestFileList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference",
+		reflect.TypeOf((*SyntheticsTestRequestFileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bucketKey", GoGetter: "BucketKey"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
+			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "originalFileName", GoGetter: "OriginalFileName"},
+			_jsii_.MemberProperty{JsiiProperty: "originalFileNameInput", GoGetter: "OriginalFileNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginalFileName", GoMethod: "ResetOriginalFileName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestRequestFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

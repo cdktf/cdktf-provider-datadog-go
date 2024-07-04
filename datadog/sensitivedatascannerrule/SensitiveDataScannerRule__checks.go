@@ -443,6 +443,14 @@ func (j *jsiiProxy_SensitiveDataScannerRule) validateSetPatternParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_SensitiveDataScannerRule) validateSetPriorityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SensitiveDataScannerRule) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

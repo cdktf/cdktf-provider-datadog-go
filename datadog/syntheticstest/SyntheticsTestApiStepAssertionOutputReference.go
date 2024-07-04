@@ -43,6 +43,8 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	TargetInput() *string
 	Targetjsonpath() SyntheticsTestApiStepAssertionTargetjsonpathOutputReference
 	TargetjsonpathInput() *SyntheticsTestApiStepAssertionTargetjsonpath
+	Targetjsonschema() SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference
+	TargetjsonschemaInput() *SyntheticsTestApiStepAssertionTargetjsonschema
 	Targetxpath() SyntheticsTestApiStepAssertionTargetxpathOutputReference
 	TargetxpathInput() *SyntheticsTestApiStepAssertionTargetxpath
 	// Experimental.
@@ -84,10 +86,12 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestApiStepAssertionTargetjsonpath)
+	PutTargetjsonschema(value *SyntheticsTestApiStepAssertionTargetjsonschema)
 	PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath)
 	ResetProperty()
 	ResetTarget()
 	ResetTargetjsonpath()
+	ResetTargetjsonschema()
 	ResetTargetxpath()
 	ResetTimingsScope()
 	// Produce the Token's value at resolution time.
@@ -230,6 +234,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Targetjsonpath
 	_jsii_.Get(
 		j,
 		"targetjsonpathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Targetjsonschema() SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference {
+	var returns SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference
+	_jsii_.Get(
+		j,
+		"targetjsonschema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TargetjsonschemaInput() *SyntheticsTestApiStepAssertionTargetjsonschema {
+	var returns *SyntheticsTestApiStepAssertionTargetjsonschema
+	_jsii_.Get(
+		j,
+		"targetjsonschemaInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetjsonp
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetjsonschema(value *SyntheticsTestApiStepAssertionTargetjsonschema) {
+	if err := s.validatePutTargetjsonschemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetjsonschema",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath) {
 	if err := s.validatePutTargetxpathParameters(value); err != nil {
 		panic(err)
@@ -681,6 +716,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetjso
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetjsonpath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetjsonschema() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetjsonschema",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings datadog_organization_settings}.
 type OrganizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type OrganizationSettings interface {
 	PublicId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityContacts() *[]*string
+	SetSecurityContacts(val *[]*string)
+	SecurityContactsInput() *[]*string
 	Settings() OrganizationSettingsSettingsOutputReference
 	SettingsInput() *OrganizationSettingsSettings
 	// Experimental.
@@ -120,6 +123,7 @@ type OrganizationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityContacts()
 	ResetSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_OrganizationSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationSettings) SecurityContacts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityContacts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationSettings) SecurityContactsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityContactsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrganizationSettings) Settings() OrganizationSettingsSettingsOutputReference {
 	var returns OrganizationSettingsSettingsOutputReference
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_OrganizationSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_OrganizationSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationSettings)SetSecurityContacts(val *[]*string) {
+	if err := j.validateSetSecurityContactsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityContacts",
 		val,
 	)
 }
@@ -883,6 +918,14 @@ func (o *jsiiProxy_OrganizationSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationSettings) ResetSecurityContacts() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSecurityContacts",
 		nil, // no parameters
 	)
 }

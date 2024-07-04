@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/synthetics_test datadog_synthetics_test}.
 type SyntheticsTest interface {
 	cdktf.TerraformResource
 	ApiStep() SyntheticsTestApiStepList
@@ -44,6 +44,9 @@ type SyntheticsTest interface {
 	DeviceIds() *[]*string
 	SetDeviceIds(val *[]*string)
 	DeviceIdsInput() *[]*string
+	ForceDeleteDependencies() interface{}
+	SetForceDeleteDependencies(val interface{})
+	ForceDeleteDependenciesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +92,8 @@ type SyntheticsTest interface {
 	RequestClientCertificateInput() *SyntheticsTestRequestClientCertificate
 	RequestDefinition() SyntheticsTestRequestDefinitionOutputReference
 	RequestDefinitionInput() *SyntheticsTestRequestDefinition
+	RequestFile() SyntheticsTestRequestFileList
+	RequestFileInput() interface{}
 	RequestHeaders() *map[string]*string
 	SetRequestHeaders(val *map[string]*string)
 	RequestHeadersInput() *map[string]*string
@@ -121,6 +126,9 @@ type SyntheticsTest interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VariablesFromScript() *string
+	SetVariablesFromScript(val *string)
+	VariablesFromScriptInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -173,6 +181,7 @@ type SyntheticsTest interface {
 	PutRequestBasicauth(value *SyntheticsTestRequestBasicauth)
 	PutRequestClientCertificate(value *SyntheticsTestRequestClientCertificate)
 	PutRequestDefinition(value *SyntheticsTestRequestDefinition)
+	PutRequestFile(value interface{})
 	PutRequestProxy(value *SyntheticsTestRequestProxy)
 	ResetApiStep()
 	ResetAssertion()
@@ -180,6 +189,7 @@ type SyntheticsTest interface {
 	ResetBrowserVariable()
 	ResetConfigVariable()
 	ResetDeviceIds()
+	ResetForceDeleteDependencies()
 	ResetId()
 	ResetMessage()
 	ResetOptionsList()
@@ -189,6 +199,7 @@ type SyntheticsTest interface {
 	ResetRequestBasicauth()
 	ResetRequestClientCertificate()
 	ResetRequestDefinition()
+	ResetRequestFile()
 	ResetRequestHeaders()
 	ResetRequestMetadata()
 	ResetRequestProxy()
@@ -196,6 +207,7 @@ type SyntheticsTest interface {
 	ResetSetCookie()
 	ResetSubtype()
 	ResetTags()
+	ResetVariablesFromScript()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -379,6 +391,26 @@ func (j *jsiiProxy_SyntheticsTest) DeviceIdsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"deviceIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) ForceDeleteDependencies() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteDependencies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) ForceDeleteDependenciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteDependenciesInput",
 		&returns,
 	)
 	return returns
@@ -634,6 +666,26 @@ func (j *jsiiProxy_SyntheticsTest) RequestDefinitionInput() *SyntheticsTestReque
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTest) RequestFile() SyntheticsTestRequestFileList {
+	var returns SyntheticsTestRequestFileList
+	_jsii_.Get(
+		j,
+		"requestFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) RequestFileInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestFileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTest) RequestHeaders() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -844,8 +896,28 @@ func (j *jsiiProxy_SyntheticsTest) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTest) VariablesFromScript() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variablesFromScript",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+func (j *jsiiProxy_SyntheticsTest) VariablesFromScriptInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variablesFromScriptInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest(scope constructs.Construct, id *string, config *SyntheticsTestConfig) SyntheticsTest {
 	_init_.Initialize()
 
@@ -863,7 +935,7 @@ func NewSyntheticsTest(scope constructs.Construct, id *string, config *Synthetic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest_Override(s SyntheticsTest, scope constructs.Construct, id *string, config *SyntheticsTestConfig) {
 	_init_.Initialize()
 
@@ -911,6 +983,17 @@ func (j *jsiiProxy_SyntheticsTest)SetDeviceIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"deviceIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTest)SetForceDeleteDependencies(val interface{}) {
+	if err := j.validateSetForceDeleteDependenciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDeleteDependencies",
 		val,
 	)
 }
@@ -1081,6 +1164,17 @@ func (j *jsiiProxy_SyntheticsTest)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTest)SetVariablesFromScript(val *string) {
+	if err := j.validateSetVariablesFromScriptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"variablesFromScript",
 		val,
 	)
 }
@@ -1537,6 +1631,17 @@ func (s *jsiiProxy_SyntheticsTest) PutRequestDefinition(value *SyntheticsTestReq
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTest) PutRequestFile(value interface{}) {
+	if err := s.validatePutRequestFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRequestFile",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTest) PutRequestProxy(value *SyntheticsTestRequestProxy) {
 	if err := s.validatePutRequestProxyParameters(value); err != nil {
 		panic(err)
@@ -1592,6 +1697,14 @@ func (s *jsiiProxy_SyntheticsTest) ResetDeviceIds() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeviceIds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) ResetForceDeleteDependencies() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceDeleteDependencies",
 		nil, // no parameters
 	)
 }
@@ -1652,6 +1765,14 @@ func (s *jsiiProxy_SyntheticsTest) ResetRequestDefinition() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTest) ResetRequestFile() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequestFile",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTest) ResetRequestHeaders() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1704,6 +1825,14 @@ func (s *jsiiProxy_SyntheticsTest) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) ResetVariablesFromScript() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVariablesFromScript",
 		nil, // no parameters
 	)
 }
