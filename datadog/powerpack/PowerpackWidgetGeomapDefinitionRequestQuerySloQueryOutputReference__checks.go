@@ -174,6 +174,14 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

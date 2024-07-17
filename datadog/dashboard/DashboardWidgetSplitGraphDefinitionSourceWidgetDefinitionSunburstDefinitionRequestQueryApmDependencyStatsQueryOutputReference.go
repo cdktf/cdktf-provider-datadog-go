@@ -28,6 +28,9 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinition
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossOrgUuids() *[]*string
+	SetCrossOrgUuids(val *[]*string)
+	CrossOrgUuidsInput() *[]*string
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -94,6 +97,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinition
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCrossOrgUuids()
 	ResetIsUpstream()
 	ResetPrimaryTagName()
 	ResetPrimaryTagValue()
@@ -137,6 +141,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunb
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference) CrossOrgUuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference) CrossOrgUuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuidsInput",
 		&returns,
 	)
 	return returns
@@ -428,6 +452,17 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference)SetCrossOrgUuids(val *[]*string) {
+	if err := j.validateSetCrossOrgUuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossOrgUuids",
 		val,
 	)
 }
@@ -759,6 +794,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunb
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference) ResetCrossOrgUuids() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCrossOrgUuids",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference) ResetIsUpstream() {

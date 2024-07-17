@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutput
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

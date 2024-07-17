@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryCloudCostQuery
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

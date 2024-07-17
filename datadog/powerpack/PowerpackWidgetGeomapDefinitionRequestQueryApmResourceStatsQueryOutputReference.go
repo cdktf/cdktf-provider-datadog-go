@@ -28,6 +28,9 @@ type PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossOrgUuids() *[]*string
+	SetCrossOrgUuids(val *[]*string)
+	CrossOrgUuidsInput() *[]*string
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -94,6 +97,7 @@ type PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCrossOrgUuids()
 	ResetGroupBy()
 	ResetOperationName()
 	ResetPrimaryTagName()
@@ -139,6 +143,26 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) CrossOrgUuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) CrossOrgUuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuidsInput",
 		&returns,
 	)
 	return returns
@@ -430,6 +454,17 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference)SetCrossOrgUuids(val *[]*string) {
+	if err := j.validateSetCrossOrgUuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossOrgUuids",
 		val,
 	)
 }
@@ -761,6 +796,14 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) ResetCrossOrgUuids() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCrossOrgUuids",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) ResetGroupBy() {

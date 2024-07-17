@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyS
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -174,6 +174,14 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

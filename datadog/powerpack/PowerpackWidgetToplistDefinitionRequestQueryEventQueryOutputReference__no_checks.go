@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

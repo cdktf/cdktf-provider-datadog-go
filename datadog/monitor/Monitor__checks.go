@@ -625,7 +625,7 @@ func (j *jsiiProxy_Monitor) validateSetOnMissingDataParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetPriorityParameters(val *float64) error {
+func (j *jsiiProxy_Monitor) validateSetPriorityParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutp
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

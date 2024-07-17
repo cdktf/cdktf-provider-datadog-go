@@ -56,6 +56,9 @@ type SyntheticsTestApiStepOutputReference interface {
 	RequestHeaders() *map[string]*string
 	SetRequestHeaders(val *map[string]*string)
 	RequestHeadersInput() *map[string]*string
+	RequestMetadata() *map[string]*string
+	SetRequestMetadata(val *map[string]*string)
+	RequestMetadataInput() *map[string]*string
 	RequestProxy() SyntheticsTestApiStepRequestProxyOutputReference
 	RequestProxyInput() *SyntheticsTestApiStepRequestProxy
 	RequestQuery() *map[string]*string
@@ -118,6 +121,7 @@ type SyntheticsTestApiStepOutputReference interface {
 	ResetRequestDefinition()
 	ResetRequestFile()
 	ResetRequestHeaders()
+	ResetRequestMetadata()
 	ResetRequestProxy()
 	ResetRequestQuery()
 	ResetRetry()
@@ -388,6 +392,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestHeadersInput() *
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"requestMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"requestMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) RequestProxy() SyntheticsTestApiStepRequestProxyOutputReference {
 	var returns SyntheticsTestApiStepRequestProxyOutputReference
 	_jsii_.Get(
@@ -609,6 +633,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetRequestHeaders(val *m
 	_jsii_.Set(
 		j,
 		"requestHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetRequestMetadata(val *map[string]*string) {
+	if err := j.validateSetRequestMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestMetadata",
 		val,
 	)
 }
@@ -1010,6 +1045,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetRequestHeaders() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetRequestMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequestMetadata",
 		nil, // no parameters
 	)
 }

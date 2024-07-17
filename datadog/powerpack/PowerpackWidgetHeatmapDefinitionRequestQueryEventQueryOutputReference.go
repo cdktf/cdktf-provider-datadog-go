@@ -30,6 +30,9 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossOrgUuids() *[]*string
+	SetCrossOrgUuids(val *[]*string)
+	CrossOrgUuidsInput() *[]*string
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -85,6 +88,7 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference inter
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
 	PutSearch(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch)
+	ResetCrossOrgUuids()
 	ResetGroupBy()
 	ResetIndexes()
 	ResetSearch()
@@ -149,6 +153,26 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) CrossOrgUuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) CrossOrgUuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuidsInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +384,17 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference)SetCrossOrgUuids(val *[]*string) {
+	if err := j.validateSetCrossOrgUuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossOrgUuids",
 		val,
 	)
 }
@@ -657,6 +692,14 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 		p,
 		"putSearch",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) ResetCrossOrgUuids() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCrossOrgUuids",
+		nil, // no parameters
 	)
 }
 

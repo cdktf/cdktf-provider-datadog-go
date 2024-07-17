@@ -28,6 +28,9 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputRe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossOrgUuids() *[]*string
+	SetCrossOrgUuids(val *[]*string)
+	CrossOrgUuidsInput() *[]*string
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -94,6 +97,7 @@ type PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCrossOrgUuids()
 	ResetIsUpstream()
 	ResetPrimaryTagName()
 	ResetPrimaryTagValue()
@@ -137,6 +141,26 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) CrossOrgUuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) CrossOrgUuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuidsInput",
 		&returns,
 	)
 	return returns
@@ -428,6 +452,17 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStat
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference)SetCrossOrgUuids(val *[]*string) {
+	if err := j.validateSetCrossOrgUuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossOrgUuids",
 		val,
 	)
 }
@@ -759,6 +794,14 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStat
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) ResetCrossOrgUuids() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCrossOrgUuids",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) ResetIsUpstream() {

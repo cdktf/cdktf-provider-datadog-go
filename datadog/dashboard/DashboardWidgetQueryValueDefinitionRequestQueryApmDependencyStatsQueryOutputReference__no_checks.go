@@ -59,6 +59,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyS
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutp
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetRequestHeade
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetRequestMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetRequestQueryParameters(val *map[string]*string) error {
 	return nil
 }

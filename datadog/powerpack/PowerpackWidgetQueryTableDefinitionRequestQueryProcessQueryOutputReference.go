@@ -31,6 +31,9 @@ type PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossOrgUuids() *[]*string
+	SetCrossOrgUuids(val *[]*string)
+	CrossOrgUuidsInput() *[]*string
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -92,6 +95,7 @@ type PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregator()
+	ResetCrossOrgUuids()
 	ResetIsNormalizedCpu()
 	ResetLimit()
 	ResetSort()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference) CrossOrgUuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference) CrossOrgUuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"crossOrgUuidsInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +443,17 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference)SetCrossOrgUuids(val *[]*string) {
+	if err := j.validateSetCrossOrgUuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossOrgUuids",
 		val,
 	)
 }
@@ -734,6 +769,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOu
 	_jsii_.InvokeVoid(
 		p,
 		"resetAggregator",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference) ResetCrossOrgUuids() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCrossOrgUuids",
 		nil, // no parameters
 	)
 }

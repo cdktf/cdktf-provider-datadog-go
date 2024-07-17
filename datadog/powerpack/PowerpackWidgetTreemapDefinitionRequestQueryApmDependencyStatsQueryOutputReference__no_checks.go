@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStat
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

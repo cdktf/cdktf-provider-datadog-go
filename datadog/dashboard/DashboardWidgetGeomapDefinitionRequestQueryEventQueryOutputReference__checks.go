@@ -239,6 +239,14 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

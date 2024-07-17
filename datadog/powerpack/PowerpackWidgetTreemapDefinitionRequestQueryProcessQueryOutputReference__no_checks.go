@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

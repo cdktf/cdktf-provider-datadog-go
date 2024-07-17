@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -174,6 +174,14 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutpu
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

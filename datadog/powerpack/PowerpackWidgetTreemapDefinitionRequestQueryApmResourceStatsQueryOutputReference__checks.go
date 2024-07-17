@@ -166,6 +166,14 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQ
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStat
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

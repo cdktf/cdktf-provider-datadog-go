@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutp
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

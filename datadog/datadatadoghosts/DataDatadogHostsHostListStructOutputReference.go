@@ -44,6 +44,7 @@ type DataDatadogHostsHostListStructOutputReference interface {
 	MuteTimeout() *float64
 	Name() *string
 	Sources() *[]*string
+	TagsBySource() cdktf.StringListMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -257,6 +258,16 @@ func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) Sources() *[]*
 	_jsii_.Get(
 		j,
 		"sources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogHostsHostListStructOutputReference) TagsBySource() cdktf.StringListMap {
+	var returns cdktf.StringListMap
+	_jsii_.Get(
+		j,
+		"tagsBySource",
 		&returns,
 	)
 	return returns

@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

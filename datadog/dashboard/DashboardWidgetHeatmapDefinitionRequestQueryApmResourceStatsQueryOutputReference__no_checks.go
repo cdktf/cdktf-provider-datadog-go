@@ -59,6 +59,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQ
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

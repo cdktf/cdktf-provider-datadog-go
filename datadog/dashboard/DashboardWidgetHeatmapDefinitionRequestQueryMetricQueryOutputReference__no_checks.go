@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryMetricQueryOutput
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

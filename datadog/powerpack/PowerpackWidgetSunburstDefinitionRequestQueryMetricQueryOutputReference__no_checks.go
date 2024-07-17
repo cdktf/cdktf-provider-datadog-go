@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

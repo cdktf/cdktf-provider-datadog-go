@@ -195,7 +195,7 @@ func (j *jsiiProxy_Monitor) validateSetOnMissingDataParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetPriorityParameters(val *float64) error {
+func (j *jsiiProxy_Monitor) validateSetPriorityParameters(val *string) error {
 	return nil
 }
 

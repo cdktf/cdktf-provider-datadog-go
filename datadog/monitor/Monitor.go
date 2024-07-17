@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -107,9 +107,9 @@ type Monitor interface {
 	OnMissingData() *string
 	SetOnMissingData(val *string)
 	OnMissingDataInput() *string
-	Priority() *float64
-	SetPriority(val *float64)
-	PriorityInput() *float64
+	Priority() *string
+	SetPriority(val *string)
+	PriorityInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -788,8 +788,8 @@ func (j *jsiiProxy_Monitor) OnMissingDataInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Monitor) Priority() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Monitor) Priority() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"priority",
@@ -798,8 +798,8 @@ func (j *jsiiProxy_Monitor) Priority() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Monitor) PriorityInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Monitor) PriorityInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"priorityInput",
@@ -1109,7 +1109,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1127,7 +1127,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1396,7 +1396,7 @@ func (j *jsiiProxy_Monitor)SetOnMissingData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Monitor)SetPriority(val *float64) {
+func (j *jsiiProxy_Monitor)SetPriority(val *string) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
