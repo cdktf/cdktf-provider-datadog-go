@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/integration_aws datadog_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_aws datadog_integration_aws}.
 type IntegrationAws interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -609,7 +609,7 @@ func (j *jsiiProxy_IntegrationAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws(scope constructs.Construct, id *string, config *IntegrationAwsConfig) IntegrationAws {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewIntegrationAws(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws_Override(i IntegrationAws, scope constructs.Construct, id *string, config *IntegrationAwsConfig) {
 	_init_.Initialize()
 

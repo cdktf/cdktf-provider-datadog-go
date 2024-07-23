@@ -7,11 +7,11 @@ package cloudconfigurationrule
 type CloudConfigurationRuleFilter struct {
 	// The type of filtering action. Valid values are `require`, `suppress`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// Query for selecting logs to apply the filtering action.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 
