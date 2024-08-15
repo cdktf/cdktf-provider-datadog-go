@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook}.
 type Webhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,8 +46,6 @@ type Webhook interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -124,7 +122,6 @@ type Webhook interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCustomHeaders()
 	ResetEncodeAs()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -277,16 +274,6 @@ func (j *jsiiProxy_Webhook) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Webhook) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Webhook) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -428,7 +415,7 @@ func (j *jsiiProxy_Webhook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) Webhook {
 	_init_.Initialize()
 
@@ -446,7 +433,7 @@ func NewWebhook(scope constructs.Construct, id *string, config *WebhookConfig) W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook} Resource.
 func NewWebhook_Override(w Webhook, scope constructs.Construct, id *string, config *WebhookConfig) {
 	_init_.Initialize()
 
@@ -513,17 +500,6 @@ func (j *jsiiProxy_Webhook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Webhook)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -956,14 +932,6 @@ func (w *jsiiProxy_Webhook) ResetEncodeAs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetEncodeAs",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_Webhook) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
 		nil, // no parameters
 	)
 }

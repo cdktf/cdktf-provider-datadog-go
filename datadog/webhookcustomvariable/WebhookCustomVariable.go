@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 type WebhookCustomVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type WebhookCustomVariable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsSecret() interface{}
 	SetIsSecret(val interface{})
 	IsSecretInput() interface{}
@@ -116,7 +114,6 @@ type WebhookCustomVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -223,16 +220,6 @@ func (j *jsiiProxy_WebhookCustomVariable) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WebhookCustomVariable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +366,7 @@ func (j *jsiiProxy_WebhookCustomVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) WebhookCustomVariable {
 	_init_.Initialize()
 
@@ -397,7 +384,7 @@ func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable_Override(w WebhookCustomVariable, scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) {
 	_init_.Initialize()
 
@@ -442,17 +429,6 @@ func (j *jsiiProxy_WebhookCustomVariable)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WebhookCustomVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -870,14 +846,6 @@ func (w *jsiiProxy_WebhookCustomVariable) OverrideLogicalId(newLogicalId *string
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (w *jsiiProxy_WebhookCustomVariable) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

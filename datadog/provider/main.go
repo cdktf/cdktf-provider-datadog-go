@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "appKeyInput", GoGetter: "AppKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultTags", GoGetter: "DefaultTags"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultTagsInput", GoGetter: "DefaultTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "httpClientRetryBackoffBase", GoGetter: "HttpClientRetryBackoffBase"},
@@ -45,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetApiKey", GoMethod: "ResetApiKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiUrl", GoMethod: "ResetApiUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppKey", GoMethod: "ResetAppKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTags", GoMethod: "ResetDefaultTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpClientRetryBackoffBase", GoMethod: "ResetHttpClientRetryBackoffBase"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpClientRetryBackoffMultiplier", GoMethod: "ResetHttpClientRetryBackoffMultiplier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpClientRetryEnabled", GoMethod: "ResetHttpClientRetryEnabled"},
@@ -73,5 +76,9 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.provider.DatadogProviderConfig",
 		reflect.TypeOf((*DatadogProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.provider.DatadogProviderDefaultTags",
+		reflect.TypeOf((*DatadogProviderDefaultTags)(nil)).Elem(),
 	)
 }

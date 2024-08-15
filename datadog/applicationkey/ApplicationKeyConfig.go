@@ -24,7 +24,7 @@ type ApplicationKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name for Application Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/application_key#name ApplicationKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/application_key#name ApplicationKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

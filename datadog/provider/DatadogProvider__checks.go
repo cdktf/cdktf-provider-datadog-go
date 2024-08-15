@@ -73,6 +73,14 @@ func validateDatadogProvider_IsTerraformProviderParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DatadogProvider) validateSetDefaultTagsParameters(val *DatadogProviderDefaultTags) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateNewDatadogProviderParameters(scope constructs.Construct, id *string, config *DatadogProviderConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
