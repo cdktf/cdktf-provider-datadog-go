@@ -83,7 +83,7 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
 	return nil
 }
 
@@ -127,7 +127,7 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetPortParameters(val *string) error {
 	return nil
 }
 

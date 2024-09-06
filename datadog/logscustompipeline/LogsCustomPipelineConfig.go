@@ -24,20 +24,20 @@ type LogsCustomPipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 	Filter interface{} `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 	IsEnabled interface{} `field:"optional" json:"isEnabled" yaml:"isEnabled"`
 	// processor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 	Processor interface{} `field:"optional" json:"processor" yaml:"processor"`
 }
 

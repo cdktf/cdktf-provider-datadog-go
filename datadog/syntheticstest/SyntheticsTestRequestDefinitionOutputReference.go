@@ -43,9 +43,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	DnsServer() *string
 	SetDnsServer(val *string)
 	DnsServerInput() *string
-	DnsServerPort() *float64
-	SetDnsServerPort(val *float64)
-	DnsServerPortInput() *float64
+	DnsServerPort() *string
+	SetDnsServerPort(val *string)
+	DnsServerPortInput() *string
 	// Experimental.
 	Fqn() *string
 	Host() *string
@@ -74,9 +74,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	PlainProtoFile() *string
 	SetPlainProtoFile(val *string)
 	PlainProtoFileInput() *string
-	Port() *float64
-	SetPort(val *float64)
-	PortInput() *float64
+	Port() *string
+	SetPort(val *string)
+	PortInput() *string
 	ProtoJsonDescriptor() *string
 	SetProtoJsonDescriptor(val *string)
 	ProtoJsonDescriptorInput() *string
@@ -293,8 +293,8 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerInpu
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPort() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPort() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"dnsServerPort",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPort
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPortInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPortInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"dnsServerPortInput",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PlainProtoFil
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Port() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Port() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"port",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Port() *float
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PortInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) PortInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -758,7 +758,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetDnsServer(v
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetDnsServerPort(val *float64) {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetDnsServerPort(val *string) {
 	if err := j.validateSetDnsServerPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +868,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPlainProtoF
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}

@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionTimeseriesBackground struct {
 	// Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/dashboard#type Dashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/dashboard#type Dashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// yaxis block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/dashboard#yaxis Dashboard#yaxis}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/dashboard#yaxis Dashboard#yaxis}
 	Yaxis *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionTimeseriesBackgroundYaxis `field:"optional" json:"yaxis" yaml:"yaxis"`
 }
 

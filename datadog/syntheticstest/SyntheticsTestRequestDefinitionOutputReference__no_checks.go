@@ -79,7 +79,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDn
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
 	return nil
 }
 
@@ -119,7 +119,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPl
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPortParameters(val *string) error {
 	return nil
 }
 

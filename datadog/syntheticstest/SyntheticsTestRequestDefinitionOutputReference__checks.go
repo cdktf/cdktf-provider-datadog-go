@@ -206,7 +206,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDn
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPl
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPortParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetPortParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
