@@ -24,15 +24,15 @@ type DataDatadogTeamMembershipsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The team's identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
 	ExactMatch interface{} `field:"optional" json:"exactMatch" yaml:"exactMatch"`
 	// Search query, can be user email or name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 	FilterKeyword *string `field:"optional" json:"filterKeyword" yaml:"filterKeyword"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/powerpack datadog_powerpack}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/powerpack datadog_powerpack}.
 type DataDatadogPowerpack interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataDatadogPowerpack) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/powerpack datadog_powerpack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/powerpack datadog_powerpack} Data Source.
 func NewDataDatadogPowerpack(scope constructs.Construct, id *string, config *DataDatadogPowerpackConfig) DataDatadogPowerpack {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataDatadogPowerpack(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/powerpack datadog_powerpack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/powerpack datadog_powerpack} Data Source.
 func NewDataDatadogPowerpack_Override(d DataDatadogPowerpack, scope constructs.Construct, id *string, config *DataDatadogPowerpackConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
 type DataDatadogMonitorConfigPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatadogMonitorConfigPolicies) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/monitor_config_policies datadog_monitor_config_policies} Data Source.
 func NewDataDatadogMonitorConfigPolicies(scope constructs.Construct, id *string, config *DataDatadogMonitorConfigPoliciesConfig) DataDatadogMonitorConfigPolicies {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataDatadogMonitorConfigPolicies(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/monitor_config_policies datadog_monitor_config_policies} Data Source.
 func NewDataDatadogMonitorConfigPolicies_Override(d DataDatadogMonitorConfigPolicies, scope constructs.Construct, id *string, config *DataDatadogMonitorConfigPoliciesConfig) {
 	_init_.Initialize()
 

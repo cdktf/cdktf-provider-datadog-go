@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 type MonitorConfigPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_MonitorConfigPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) MonitorConfigPolicy {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *Moni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy_Override(m MonitorConfigPolicy, scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) {
 	_init_.Initialize()
 

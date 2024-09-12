@@ -7,15 +7,15 @@ package powerpack
 type PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy struct {
 	// The event facet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/powerpack#facet Powerpack#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/powerpack#facet Powerpack#facet}
 	Facet *string `field:"required" json:"facet" yaml:"facet"`
 	// The number of groups to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/powerpack#limit Powerpack#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/powerpack#limit Powerpack#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/powerpack#sort Powerpack#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/powerpack#sort Powerpack#sort}
 	Sort *PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort `field:"optional" json:"sort" yaml:"sort"`
 }
 
