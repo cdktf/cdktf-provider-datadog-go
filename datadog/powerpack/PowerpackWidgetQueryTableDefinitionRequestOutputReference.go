@@ -76,6 +76,8 @@ type PowerpackWidgetQueryTableDefinitionRequestOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TextFormats() PowerpackWidgetQueryTableDefinitionRequestTextFormatsList
+	TextFormatsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -109,6 +111,7 @@ type PowerpackWidgetQueryTableDefinitionRequestOutputReference interface {
 	PutQuery(value interface{})
 	PutRumQuery(value *PowerpackWidgetQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *PowerpackWidgetQueryTableDefinitionRequestSecurityQuery)
+	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
 	ResetApmQuery()
@@ -124,6 +127,7 @@ type PowerpackWidgetQueryTableDefinitionRequestOutputReference interface {
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -504,6 +508,26 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) TextFormats() PowerpackWidgetQueryTableDefinitionRequestTextFormatsList {
+	var returns PowerpackWidgetQueryTableDefinitionRequestTextFormatsList
+	_jsii_.Get(
+		j,
+		"textFormats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) TextFormatsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"textFormatsInput",
 		&returns,
 	)
 	return returns
@@ -943,6 +967,17 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) Pu
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
+	if err := p.validatePutTextFormatsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTextFormats",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) ResetAggregator() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1059,6 +1094,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) Re
 	_jsii_.InvokeVoid(
 		p,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) ResetTextFormats() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTextFormats",
 		nil, // no parameters
 	)
 }

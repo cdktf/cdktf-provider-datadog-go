@@ -13,6 +13,9 @@ import (
 
 type SyntheticsTestApiStepAssertionOutputReference interface {
 	cdktf.ComplexObject
+	Code() *string
+	SetCode(val *string)
+	CodeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,6 +91,8 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	PutTargetjsonpath(value *SyntheticsTestApiStepAssertionTargetjsonpath)
 	PutTargetjsonschema(value *SyntheticsTestApiStepAssertionTargetjsonschema)
 	PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath)
+	ResetCode()
+	ResetOperator()
 	ResetProperty()
 	ResetTarget()
 	ResetTargetjsonpath()
@@ -107,6 +112,26 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 // The jsii proxy struct for SyntheticsTestApiStepAssertionOutputReference
 type jsiiProxy_SyntheticsTestApiStepAssertionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Code() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"code",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) CodeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ComplexObjectIndex() interface{} {
@@ -364,6 +389,17 @@ func NewSyntheticsTestApiStepAssertionOutputReference_Override(s SyntheticsTestA
 		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference)SetCode(val *string) {
+	if err := j.validateSetCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"code",
+		val,
 	)
 }
 
@@ -693,6 +729,22 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetxpath
 		s,
 		"putTargetxpath",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetCode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetOperator() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOperator",
+		nil, // no parameters
 	)
 }
 

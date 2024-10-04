@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) validatePutStyleParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

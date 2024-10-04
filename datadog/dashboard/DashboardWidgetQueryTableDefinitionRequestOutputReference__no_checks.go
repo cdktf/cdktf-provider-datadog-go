@@ -83,6 +83,10 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestOutputReference) va
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestOutputReference) validatePutTextFormatsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -336,6 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dailyLimitWarningThresholdPercentage", GoGetter: "DailyLimitWarningThresholdPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "exclusionFilter", GoGetter: "ExclusionFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
+			_jsii_.MemberProperty{JsiiProperty: "flexRetentionDays", GoGetter: "FlexRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

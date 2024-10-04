@@ -76,6 +76,8 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefiniti
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TextFormats() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestTextFormatsList
+	TextFormatsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -109,6 +111,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefiniti
 	PutQuery(value interface{})
 	PutRumQuery(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestSecurityQuery)
+	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
 	ResetApmQuery()
@@ -124,6 +127,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefiniti
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -504,6 +508,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) TextFormats() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestTextFormatsList {
+	var returns DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestTextFormatsList
+	_jsii_.Get(
+		j,
+		"textFormats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) TextFormatsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"textFormatsInput",
 		&returns,
 	)
 	return returns
@@ -943,6 +967,17 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
+	if err := d.validatePutTextFormatsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTextFormats",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) ResetAggregator() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1059,6 +1094,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) ResetTextFormats() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTextFormats",
 		nil, // no parameters
 	)
 }

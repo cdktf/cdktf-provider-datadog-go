@@ -39,6 +39,8 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	LiveSpanInput() *string
 	Request() PowerpackWidgetToplistDefinitionRequestList
 	RequestInput() interface{}
+	Style() PowerpackWidgetToplistDefinitionStyleList
+	StyleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,9 +84,11 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
+	PutStyle(value interface{})
 	ResetCustomLink()
 	ResetLiveSpan()
 	ResetRequest()
+	ResetStyle()
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
@@ -208,6 +212,26 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) RequestInput
 	_jsii_.Get(
 		j,
 		"requestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) Style() PowerpackWidgetToplistDefinitionStyleList {
+	var returns PowerpackWidgetToplistDefinitionStyleList
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) StyleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -628,6 +652,17 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) PutRequest(v
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) PutStyle(value interface{}) {
+	if err := p.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetCustomLink() {
 	_jsii_.InvokeVoid(
 		p,
@@ -648,6 +683,14 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetRequest
 	_jsii_.InvokeVoid(
 		p,
 		"resetRequest",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

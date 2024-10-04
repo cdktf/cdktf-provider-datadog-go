@@ -39,6 +39,8 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	LiveSpanInput() *string
 	Request() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestList
 	RequestInput() interface{}
+	Style() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleList
+	StyleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,9 +84,11 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
+	PutStyle(value interface{})
 	ResetCustomLink()
 	ResetLiveSpan()
 	ResetRequest()
+	ResetStyle()
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.Get(
 		j,
 		"requestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) Style() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleList {
+	var returns DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleList
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) StyleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -628,6 +652,17 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) PutStyle(value interface{}) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) ResetCustomLink() {
 	_jsii_.InvokeVoid(
 		d,
@@ -648,6 +683,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequest",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

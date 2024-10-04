@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validatePutR
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validatePutStyleParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

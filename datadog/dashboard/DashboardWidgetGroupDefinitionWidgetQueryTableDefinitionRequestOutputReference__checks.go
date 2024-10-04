@@ -252,6 +252,37 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) validatePutTextFormatsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats:
+		value := value.(*[]*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats:
+		value_ := value.([]*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

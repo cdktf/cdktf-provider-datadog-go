@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_index datadog_logs_index}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/logs_index datadog_logs_index}.
 type LogsIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type LogsIndex interface {
 	ExclusionFilterInput() interface{}
 	Filter() LogsIndexFilterOutputReference
 	FilterInput() *LogsIndexFilter
+	FlexRetentionDays() *float64
+	SetFlexRetentionDays(val *float64)
+	FlexRetentionDaysInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -136,6 +139,7 @@ type LogsIndex interface {
 	ResetDailyLimitWarningThresholdPercentage()
 	ResetDisableDailyLimit()
 	ResetExclusionFilter()
+	ResetFlexRetentionDays()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -329,6 +333,26 @@ func (j *jsiiProxy_LogsIndex) FilterInput() *LogsIndexFilter {
 	return returns
 }
 
+func (j *jsiiProxy_LogsIndex) FlexRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"flexRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) FlexRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"flexRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsIndex) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -500,7 +524,7 @@ func (j *jsiiProxy_LogsIndex) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfig) LogsIndex {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex_Override(l LogsIndex, scope constructs.Construct, id *string, config *LogsIndexConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_LogsIndex)SetDisableDailyLimit(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableDailyLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsIndex)SetFlexRetentionDays(val *float64) {
+	if err := j.validateSetFlexRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexRetentionDays",
 		val,
 	)
 }
@@ -1085,6 +1120,14 @@ func (l *jsiiProxy_LogsIndex) ResetExclusionFilter() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetExclusionFilter",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsIndex) ResetFlexRetentionDays() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFlexRetentionDays",
 		nil, // no parameters
 	)
 }

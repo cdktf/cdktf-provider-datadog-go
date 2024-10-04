@@ -39,6 +39,8 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference interf
 	LiveSpanInput() *string
 	Request() DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestList
 	RequestInput() interface{}
+	Style() DashboardWidgetGroupDefinitionWidgetToplistDefinitionStyleList
+	StyleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,9 +84,11 @@ type DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference interf
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
+	PutStyle(value interface{})
 	ResetCustomLink()
 	ResetLiveSpan()
 	ResetRequest()
+	ResetStyle()
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputRe
 	_jsii_.Get(
 		j,
 		"requestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference) Style() DashboardWidgetGroupDefinitionWidgetToplistDefinitionStyleList {
+	var returns DashboardWidgetGroupDefinitionWidgetToplistDefinitionStyleList
+	_jsii_.Get(
+		j,
+		"style",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference) StyleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"styleInput",
 		&returns,
 	)
 	return returns
@@ -628,6 +652,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputRe
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference) PutStyle(value interface{}) {
+	if err := d.validatePutStyleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStyle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference) ResetCustomLink() {
 	_jsii_.InvokeVoid(
 		d,
@@ -648,6 +683,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputRe
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequest",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference) ResetStyle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStyle",
 		nil, // no parameters
 	)
 }

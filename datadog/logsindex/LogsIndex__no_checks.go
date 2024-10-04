@@ -123,6 +123,10 @@ func (j *jsiiProxy_LogsIndex) validateSetDisableDailyLimitParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LogsIndex) validateSetFlexRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsIndex) validateSetIdParameters(val *string) error {
 	return nil
 }

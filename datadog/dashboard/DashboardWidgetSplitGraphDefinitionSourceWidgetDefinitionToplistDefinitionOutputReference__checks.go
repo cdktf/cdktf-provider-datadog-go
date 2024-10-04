@@ -155,6 +155,37 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) validatePutStyleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyle:
+		value := value.(*[]*DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyle)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyle:
+		value_ := value.([]*DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyle)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyle; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

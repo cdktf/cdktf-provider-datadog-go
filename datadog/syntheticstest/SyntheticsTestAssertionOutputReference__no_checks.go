@@ -63,6 +63,10 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateResolveParame
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) validateSetCodeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

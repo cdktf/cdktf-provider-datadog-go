@@ -83,6 +83,10 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) validatePutTextFormatsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

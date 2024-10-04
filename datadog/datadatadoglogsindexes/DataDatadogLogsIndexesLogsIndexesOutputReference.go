@@ -33,6 +33,7 @@ type DataDatadogLogsIndexesLogsIndexesOutputReference interface {
 	DailyLimitWarningThresholdPercentage() *float64
 	ExclusionFilter() DataDatadogLogsIndexesLogsIndexesExclusionFilterList
 	Filter() DataDatadogLogsIndexesLogsIndexesFilterList
+	FlexRetentionDays() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDatadogLogsIndexesLogsIndexes
@@ -161,6 +162,16 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) Filter() Da
 	_jsii_.Get(
 		j,
 		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) FlexRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"flexRetentionDays",
 		&returns,
 	)
 	return returns
