@@ -40,6 +40,7 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	Name() *string
 	Options() DataDatadogSecurityMonitoringRulesRulesOptionsList
 	Query() DataDatadogSecurityMonitoringRulesRulesQueryList
+	ReferenceTables() DataDatadogSecurityMonitoringRulesRulesReferenceTablesList
 	SignalQuery() DataDatadogSecurityMonitoringRulesRulesSignalQueryList
 	Tags() *[]*string
 	// Experimental.
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Query
 	_jsii_.Get(
 		j,
 		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) ReferenceTables() DataDatadogSecurityMonitoringRulesRulesReferenceTablesList {
+	var returns DataDatadogSecurityMonitoringRulesRulesReferenceTablesList
+	_jsii_.Get(
+		j,
+		"referenceTables",
 		&returns,
 	)
 	return returns

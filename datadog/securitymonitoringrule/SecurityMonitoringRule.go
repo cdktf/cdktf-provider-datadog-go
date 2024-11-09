@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
 type SecurityMonitoringRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringRuleCaseList
@@ -78,6 +78,8 @@ type SecurityMonitoringRule interface {
 	QueryInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	ReferenceTables() SecurityMonitoringRuleReferenceTablesList
+	ReferenceTablesInput() interface{}
 	SignalQuery() SecurityMonitoringRuleSignalQueryList
 	SignalQueryInput() interface{}
 	Tags() *[]*string
@@ -144,6 +146,7 @@ type SecurityMonitoringRule interface {
 	PutFilter(value interface{})
 	PutOptions(value *SecurityMonitoringRuleOptions)
 	PutQuery(value interface{})
+	PutReferenceTables(value interface{})
 	PutSignalQuery(value interface{})
 	PutThirdPartyCase(value interface{})
 	ResetCase()
@@ -156,6 +159,7 @@ type SecurityMonitoringRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQuery()
+	ResetReferenceTables()
 	ResetSignalQuery()
 	ResetTags()
 	ResetThirdPartyCase()
@@ -489,6 +493,26 @@ func (j *jsiiProxy_SecurityMonitoringRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityMonitoringRule) ReferenceTables() SecurityMonitoringRuleReferenceTablesList {
+	var returns SecurityMonitoringRuleReferenceTablesList
+	_jsii_.Get(
+		j,
+		"referenceTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule) ReferenceTablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"referenceTablesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityMonitoringRule) SignalQuery() SecurityMonitoringRuleSignalQueryList {
 	var returns SecurityMonitoringRuleSignalQueryList
 	_jsii_.Get(
@@ -620,7 +644,7 @@ func (j *jsiiProxy_SecurityMonitoringRule) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) SecurityMonitoringRule {
 	_init_.Initialize()
 
@@ -638,7 +662,7 @@ func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule_Override(s SecurityMonitoringRule, scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -1202,6 +1226,17 @@ func (s *jsiiProxy_SecurityMonitoringRule) PutQuery(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) PutReferenceTables(value interface{}) {
+	if err := s.validatePutReferenceTablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putReferenceTables",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringRule) PutSignalQuery(value interface{}) {
 	if err := s.validatePutSignalQueryParameters(value); err != nil {
 		panic(err)
@@ -1284,6 +1319,14 @@ func (s *jsiiProxy_SecurityMonitoringRule) ResetQuery() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) ResetReferenceTables() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReferenceTables",
 		nil, // no parameters
 	)
 }

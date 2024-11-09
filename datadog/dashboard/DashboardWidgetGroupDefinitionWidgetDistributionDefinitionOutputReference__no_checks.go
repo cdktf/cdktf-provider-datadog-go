@@ -51,6 +51,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOut
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference) validatePutXaxisParameters(value *DashboardWidgetGroupDefinitionWidgetDistributionDefinitionXaxis) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference) validatePutYaxisParameters(value *DashboardWidgetGroupDefinitionWidgetDistributionDefinitionYaxis) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

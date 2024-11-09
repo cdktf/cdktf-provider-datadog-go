@@ -124,6 +124,28 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validat
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validatePutXaxisParameters(value *PowerpackWidgetDistributionDefinitionXaxis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validatePutYaxisParameters(value *PowerpackWidgetDistributionDefinitionYaxis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

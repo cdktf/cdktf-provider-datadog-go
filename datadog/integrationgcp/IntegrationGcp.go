@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp datadog_integration_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp datadog_integration_gcp}.
 type IntegrationGcp interface {
 	cdktf.TerraformResource
 	Automute() interface{}
@@ -26,6 +26,9 @@ type IntegrationGcp interface {
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	CloudRunRevisionFilters() *[]*string
+	SetCloudRunRevisionFilters(val *[]*string)
+	CloudRunRevisionFiltersInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -55,6 +58,9 @@ type IntegrationGcp interface {
 	SetHostFilters(val *string)
 	HostFiltersInput() *string
 	Id() *string
+	IsResourceChangeCollectionEnabled() interface{}
+	SetIsResourceChangeCollectionEnabled(val interface{})
+	IsResourceChangeCollectionEnabledInput() interface{}
 	IsSecurityCommandCenterEnabled() interface{}
 	SetIsSecurityCommandCenterEnabled(val interface{})
 	IsSecurityCommandCenterEnabledInput() interface{}
@@ -136,8 +142,10 @@ type IntegrationGcp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutomute()
+	ResetCloudRunRevisionFilters()
 	ResetCspmResourceCollectionEnabled()
 	ResetHostFilters()
+	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -226,6 +234,26 @@ func (j *jsiiProxy_IntegrationGcp) ClientIdInput() *string {
 	_jsii_.Get(
 		j,
 		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) CloudRunRevisionFilters() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cloudRunRevisionFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) CloudRunRevisionFiltersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cloudRunRevisionFiltersInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +374,26 @@ func (j *jsiiProxy_IntegrationGcp) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) IsResourceChangeCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isResourceChangeCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) IsResourceChangeCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isResourceChangeCollectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +580,7 @@ func (j *jsiiProxy_IntegrationGcp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp(scope constructs.Construct, id *string, config *IntegrationGcpConfig) IntegrationGcp {
 	_init_.Initialize()
 
@@ -550,7 +598,7 @@ func NewIntegrationGcp(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp_Override(i IntegrationGcp, scope constructs.Construct, id *string, config *IntegrationGcpConfig) {
 	_init_.Initialize()
 
@@ -590,6 +638,17 @@ func (j *jsiiProxy_IntegrationGcp)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcp)SetCloudRunRevisionFilters(val *[]*string) {
+	if err := j.validateSetCloudRunRevisionFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudRunRevisionFilters",
 		val,
 	)
 }
@@ -650,6 +709,17 @@ func (j *jsiiProxy_IntegrationGcp)SetHostFilters(val *string) {
 	_jsii_.Set(
 		j,
 		"hostFilters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcp)SetIsResourceChangeCollectionEnabled(val interface{}) {
+	if err := j.validateSetIsResourceChangeCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isResourceChangeCollectionEnabled",
 		val,
 	)
 }
@@ -1100,6 +1170,14 @@ func (i *jsiiProxy_IntegrationGcp) ResetAutomute() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcp) ResetCloudRunRevisionFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCloudRunRevisionFilters",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcp) ResetCspmResourceCollectionEnabled() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1112,6 +1190,14 @@ func (i *jsiiProxy_IntegrationGcp) ResetHostFilters() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetHostFilters",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcp) ResetIsResourceChangeCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsResourceChangeCollectionEnabled",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktf.TerraformResource
 	AccountTags() *[]*string
@@ -26,6 +26,9 @@ type IntegrationGcpSts interface {
 	ClientEmail() *string
 	SetClientEmail(val *string)
 	ClientEmailInput() *string
+	CloudRunRevisionFilters() *[]*string
+	SetCloudRunRevisionFilters(val *[]*string)
+	CloudRunRevisionFiltersInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -56,6 +59,9 @@ type IntegrationGcpSts interface {
 	IsCspmEnabled() interface{}
 	SetIsCspmEnabled(val interface{})
 	IsCspmEnabledInput() interface{}
+	IsResourceChangeCollectionEnabled() interface{}
+	SetIsResourceChangeCollectionEnabled(val interface{})
+	IsResourceChangeCollectionEnabledInput() interface{}
 	IsSecurityCommandCenterEnabled() interface{}
 	SetIsSecurityCommandCenterEnabled(val interface{})
 	IsSecurityCommandCenterEnabledInput() interface{}
@@ -63,6 +69,8 @@ type IntegrationGcpSts interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetricNamespaceConfigs() IntegrationGcpStsMetricNamespaceConfigsList
+	MetricNamespaceConfigsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -127,11 +135,15 @@ type IntegrationGcpSts interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMetricNamespaceConfigs(value interface{})
 	ResetAccountTags()
 	ResetAutomute()
+	ResetCloudRunRevisionFilters()
 	ResetHostFilters()
 	ResetIsCspmEnabled()
+	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
+	ResetMetricNamespaceConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -219,6 +231,26 @@ func (j *jsiiProxy_IntegrationGcpSts) ClientEmailInput() *string {
 	_jsii_.Get(
 		j,
 		"clientEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) CloudRunRevisionFilters() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cloudRunRevisionFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) CloudRunRevisionFiltersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cloudRunRevisionFiltersInput",
 		&returns,
 	)
 	return returns
@@ -354,6 +386,26 @@ func (j *jsiiProxy_IntegrationGcpSts) IsCspmEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) IsResourceChangeCollectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isResourceChangeCollectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) IsResourceChangeCollectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isResourceChangeCollectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) IsSecurityCommandCenterEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -379,6 +431,26 @@ func (j *jsiiProxy_IntegrationGcpSts) Lifecycle() *cdktf.TerraformResourceLifecy
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) MetricNamespaceConfigs() IntegrationGcpStsMetricNamespaceConfigsList {
+	var returns IntegrationGcpStsMetricNamespaceConfigsList
+	_jsii_.Get(
+		j,
+		"metricNamespaceConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) MetricNamespaceConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricNamespaceConfigsInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +547,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -493,7 +565,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -533,6 +605,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetClientEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"clientEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetCloudRunRevisionFilters(val *[]*string) {
+	if err := j.validateSetCloudRunRevisionFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudRunRevisionFilters",
 		val,
 	)
 }
@@ -593,6 +676,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetIsCspmEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isCspmEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetIsResourceChangeCollectionEnabled(val interface{}) {
+	if err := j.validateSetIsResourceChangeCollectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isResourceChangeCollectionEnabled",
 		val,
 	)
 }
@@ -1002,6 +1096,17 @@ func (i *jsiiProxy_IntegrationGcpSts) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) PutMetricNamespaceConfigs(value interface{}) {
+	if err := i.validatePutMetricNamespaceConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMetricNamespaceConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetAccountTags() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1014,6 +1119,14 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAutomute",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetCloudRunRevisionFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCloudRunRevisionFilters",
 		nil, // no parameters
 	)
 }
@@ -1034,10 +1147,26 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetIsCspmEnabled() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) ResetIsResourceChangeCollectionEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsResourceChangeCollectionEnabled",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetIsSecurityCommandCenterEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetIsSecurityCommandCenterEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetMetricNamespaceConfigs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMetricNamespaceConfigs",
 		nil, // no parameters
 	)
 }

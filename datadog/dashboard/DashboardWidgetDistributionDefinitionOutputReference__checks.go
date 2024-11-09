@@ -124,6 +124,28 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) validatePutXaxisParameters(value *DashboardWidgetDistributionDefinitionXaxis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) validatePutYaxisParameters(value *DashboardWidgetDistributionDefinitionYaxis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

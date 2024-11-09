@@ -51,6 +51,14 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validat
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validatePutXaxisParameters(value *PowerpackWidgetDistributionDefinitionXaxis) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validatePutYaxisParameters(value *PowerpackWidgetDistributionDefinitionYaxis) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_IntegrationGcp) validateSetClientIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcp) validateSetCloudRunRevisionFiltersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_IntegrationGcp) validateSetCspmResourceCollectionEnabledParam
 }
 
 func (j *jsiiProxy_IntegrationGcp) validateSetHostFiltersParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGcp) validateSetIsResourceChangeCollectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

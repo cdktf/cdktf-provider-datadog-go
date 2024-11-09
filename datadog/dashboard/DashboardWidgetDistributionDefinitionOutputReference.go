@@ -60,6 +60,10 @@ type DashboardWidgetDistributionDefinitionOutputReference interface {
 	TitleSize() *string
 	SetTitleSize(val *string)
 	TitleSizeInput() *string
+	Xaxis() DashboardWidgetDistributionDefinitionXaxisOutputReference
+	XaxisInput() *DashboardWidgetDistributionDefinitionXaxis
+	Yaxis() DashboardWidgetDistributionDefinitionYaxisOutputReference
+	YaxisInput() *DashboardWidgetDistributionDefinitionYaxis
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,6 +89,8 @@ type DashboardWidgetDistributionDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequest(value interface{})
+	PutXaxis(value *DashboardWidgetDistributionDefinitionXaxis)
+	PutYaxis(value *DashboardWidgetDistributionDefinitionYaxis)
 	ResetLegendSize()
 	ResetLiveSpan()
 	ResetRequest()
@@ -92,6 +98,8 @@ type DashboardWidgetDistributionDefinitionOutputReference interface {
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
+	ResetXaxis()
+	ResetYaxis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -312,6 +320,46 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) TitleSi
 	_jsii_.Get(
 		j,
 		"titleSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) Xaxis() DashboardWidgetDistributionDefinitionXaxisOutputReference {
+	var returns DashboardWidgetDistributionDefinitionXaxisOutputReference
+	_jsii_.Get(
+		j,
+		"xaxis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) XaxisInput() *DashboardWidgetDistributionDefinitionXaxis {
+	var returns *DashboardWidgetDistributionDefinitionXaxis
+	_jsii_.Get(
+		j,
+		"xaxisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) Yaxis() DashboardWidgetDistributionDefinitionYaxisOutputReference {
+	var returns DashboardWidgetDistributionDefinitionYaxisOutputReference
+	_jsii_.Get(
+		j,
+		"yaxis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) YaxisInput() *DashboardWidgetDistributionDefinitionYaxis {
+	var returns *DashboardWidgetDistributionDefinitionYaxis
+	_jsii_.Get(
+		j,
+		"yaxisInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +711,28 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) PutRequ
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) PutXaxis(value *DashboardWidgetDistributionDefinitionXaxis) {
+	if err := d.validatePutXaxisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putXaxis",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) PutYaxis(value *DashboardWidgetDistributionDefinitionYaxis) {
+	if err := d.validatePutYaxisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putYaxis",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) ResetLegendSize() {
 	_jsii_.InvokeVoid(
 		d,
@@ -715,6 +785,22 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) ResetTi
 	_jsii_.InvokeVoid(
 		d,
 		"resetTitleSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) ResetXaxis() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetXaxis",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionOutputReference) ResetYaxis() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetYaxis",
 		nil, // no parameters
 	)
 }

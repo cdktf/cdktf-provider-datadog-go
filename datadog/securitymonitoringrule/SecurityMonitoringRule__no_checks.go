@@ -91,6 +91,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutQueryParameters(value inte
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutReferenceTablesParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRule) validatePutSignalQueryParameters(value interface{}) error {
 	return nil
 }

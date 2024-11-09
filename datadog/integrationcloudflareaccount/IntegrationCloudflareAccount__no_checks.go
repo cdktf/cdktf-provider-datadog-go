@@ -119,6 +119,10 @@ func (j *jsiiProxy_IntegrationCloudflareAccount) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationCloudflareAccount) validateSetResourcesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewIntegrationCloudflareAccountParameters(scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (i *jsiiProxy_IntegrationGcpSts) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) validatePutMetricNamespaceConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateIntegrationGcpSts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,6 +107,10 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetClientEmailParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) validateSetCloudRunRevisionFiltersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +124,10 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetHostFiltersParameters(val *[]*s
 }
 
 func (j *jsiiProxy_IntegrationGcpSts) validateSetIsCspmEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) validateSetIsResourceChangeCollectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

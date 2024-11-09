@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 type IntegrationCloudflareAccount interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -65,6 +65,9 @@ type IntegrationCloudflareAccount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Resources() *[]*string
+	SetResources(val *[]*string)
+	ResourcesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type IntegrationCloudflareAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResources()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -336,6 +340,26 @@ func (j *jsiiProxy_IntegrationCloudflareAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationCloudflareAccount) Resources() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationCloudflareAccount) ResourcesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationCloudflareAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_IntegrationCloudflareAccount) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) IntegrationCloudflareAccount {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewIntegrationCloudflareAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource.
 func NewIntegrationCloudflareAccount_Override(i IntegrationCloudflareAccount, scope constructs.Construct, id *string, config *IntegrationCloudflareAccountConfig) {
 	_init_.Initialize()
 
@@ -493,6 +517,17 @@ func (j *jsiiProxy_IntegrationCloudflareAccount)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationCloudflareAccount)SetResources(val *[]*string) {
+	if err := j.validateSetResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resources",
 		val,
 	)
 }
@@ -862,6 +897,14 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationCloudflareAccount) ResetResources() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResources",
 		nil, // no parameters
 	)
 }

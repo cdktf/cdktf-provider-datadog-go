@@ -60,6 +60,10 @@ type PowerpackWidgetDistributionDefinitionOutputReference interface {
 	TitleSize() *string
 	SetTitleSize(val *string)
 	TitleSizeInput() *string
+	Xaxis() PowerpackWidgetDistributionDefinitionXaxisOutputReference
+	XaxisInput() *PowerpackWidgetDistributionDefinitionXaxis
+	Yaxis() PowerpackWidgetDistributionDefinitionYaxisOutputReference
+	YaxisInput() *PowerpackWidgetDistributionDefinitionYaxis
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,6 +89,8 @@ type PowerpackWidgetDistributionDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequest(value interface{})
+	PutXaxis(value *PowerpackWidgetDistributionDefinitionXaxis)
+	PutYaxis(value *PowerpackWidgetDistributionDefinitionYaxis)
 	ResetLegendSize()
 	ResetLiveSpan()
 	ResetRequest()
@@ -92,6 +98,8 @@ type PowerpackWidgetDistributionDefinitionOutputReference interface {
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
+	ResetXaxis()
+	ResetYaxis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -312,6 +320,46 @@ func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) TitleSi
 	_jsii_.Get(
 		j,
 		"titleSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) Xaxis() PowerpackWidgetDistributionDefinitionXaxisOutputReference {
+	var returns PowerpackWidgetDistributionDefinitionXaxisOutputReference
+	_jsii_.Get(
+		j,
+		"xaxis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) XaxisInput() *PowerpackWidgetDistributionDefinitionXaxis {
+	var returns *PowerpackWidgetDistributionDefinitionXaxis
+	_jsii_.Get(
+		j,
+		"xaxisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) Yaxis() PowerpackWidgetDistributionDefinitionYaxisOutputReference {
+	var returns PowerpackWidgetDistributionDefinitionYaxisOutputReference
+	_jsii_.Get(
+		j,
+		"yaxis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) YaxisInput() *PowerpackWidgetDistributionDefinitionYaxis {
+	var returns *PowerpackWidgetDistributionDefinitionYaxis
+	_jsii_.Get(
+		j,
+		"yaxisInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +711,28 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) PutRequ
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) PutXaxis(value *PowerpackWidgetDistributionDefinitionXaxis) {
+	if err := p.validatePutXaxisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putXaxis",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) PutYaxis(value *PowerpackWidgetDistributionDefinitionYaxis) {
+	if err := p.validatePutYaxisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putYaxis",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) ResetLegendSize() {
 	_jsii_.InvokeVoid(
 		p,
@@ -715,6 +785,22 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) ResetTi
 	_jsii_.InvokeVoid(
 		p,
 		"resetTitleSize",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) ResetXaxis() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetXaxis",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) ResetYaxis() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetYaxis",
 		nil, // no parameters
 	)
 }
