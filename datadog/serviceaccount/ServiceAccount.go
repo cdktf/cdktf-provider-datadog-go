@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/service_account datadog_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/service_account datadog_service_account}.
 type ServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_ServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/service_account datadog_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/service_account datadog_service_account} Resource.
 func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAccountConfig) ServiceAccount {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/service_account datadog_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/service_account datadog_service_account} Resource.
 func NewServiceAccount_Override(s ServiceAccount, scope constructs.Construct, id *string, config *ServiceAccountConfig) {
 	_init_.Initialize()
 

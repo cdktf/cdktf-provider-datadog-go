@@ -9,13 +9,13 @@ type LogsIndexDailyLimitReset struct {
 	//
 	// The hours must be between 00 and 23 (inclusive).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
 	ResetTime *string `field:"required" json:"resetTime" yaml:"resetTime"`
 	// String in `(-|+)HH:00` format representing the UTC offset to apply to the given reset time.
 	//
 	// The hours must be between -12 and +14 (inclusive).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
 	ResetUtcOffset *string `field:"required" json:"resetUtcOffset" yaml:"resetUtcOffset"`
 }
 

@@ -24,15 +24,15 @@ type TeamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Free-form markdown description/content for the team's homepage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/team#description Team#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/team#description Team#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// The team's identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/team#handle Team#handle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/team#handle Team#handle}
 	Handle *string `field:"required" json:"handle" yaml:"handle"`
 	// The name of the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/team#name Team#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/team#name Team#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
