@@ -24,19 +24,19 @@ type DataDatadogServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/data-sources/service_account#exact_match DataDatadogServiceAccount#exact_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/data-sources/service_account#exact_match DataDatadogServiceAccount#exact_match}
 	ExactMatch interface{} `field:"optional" json:"exactMatch" yaml:"exactMatch"`
 	// Filter all users and service accounts by name, email, or role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// Filter on status attribute. Comma separated list, with possible values `Active`, `Pending`, and `Disabled`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
 	FilterStatus *string `field:"optional" json:"filterStatus" yaml:"filterStatus"`
 	// The service account's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
