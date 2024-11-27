@@ -59,11 +59,19 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetAllowFai
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetAlwaysExecuteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetExitIfSucceedParameters(val interface{}) error {
 	return nil
 }
 

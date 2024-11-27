@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionLegendTable struct {
 	// The type of legend (table or none). Valid values are `table`, `none`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#type Dashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#type Dashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

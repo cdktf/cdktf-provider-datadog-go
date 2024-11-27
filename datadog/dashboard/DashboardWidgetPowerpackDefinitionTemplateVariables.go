@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetPowerpackDefinitionTemplateVariables struct {
 	// controlled_by_powerpack block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#controlled_by_powerpack Dashboard#controlled_by_powerpack}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#controlled_by_powerpack Dashboard#controlled_by_powerpack}
 	ControlledByPowerpack interface{} `field:"optional" json:"controlledByPowerpack" yaml:"controlledByPowerpack"`
 	// controlled_externally block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#controlled_externally Dashboard#controlled_externally}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#controlled_externally Dashboard#controlled_externally}
 	ControlledExternally interface{} `field:"optional" json:"controlledExternally" yaml:"controlledExternally"`
 }
 

@@ -16,6 +16,9 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	AllowFailure() interface{}
 	SetAllowFailure(val interface{})
 	AllowFailureInput() interface{}
+	AlwaysExecute() interface{}
+	SetAlwaysExecute(val interface{})
+	AlwaysExecuteInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +34,9 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExitIfSucceed() interface{}
+	SetExitIfSucceed(val interface{})
+	ExitIfSucceedInput() interface{}
 	ForceElementUpdate() interface{}
 	SetForceElementUpdate(val interface{})
 	ForceElementUpdateInput() interface{}
@@ -89,6 +95,8 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParams(value *SyntheticsTestBrowserStepParams)
 	ResetAllowFailure()
+	ResetAlwaysExecute()
+	ResetExitIfSucceed()
 	ResetForceElementUpdate()
 	ResetIsCritical()
 	ResetNoScreenshot()
@@ -128,6 +136,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) AllowFailureInput()
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) AlwaysExecute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysExecute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) AlwaysExecuteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysExecuteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -153,6 +181,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ExitIfSucceed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exitIfSucceed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ExitIfSucceedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exitIfSucceedInput",
 		&returns,
 	)
 	return returns
@@ -377,6 +425,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetAllowFailure(val 
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetAlwaysExecute(val interface{}) {
+	if err := j.validateSetAlwaysExecuteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alwaysExecute",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -395,6 +454,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetExitIfSucceed(val interface{}) {
+	if err := j.validateSetExitIfSucceedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exitIfSucceed",
 		val,
 	)
 }
@@ -699,6 +769,22 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetAllowFailure()
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowFailure",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetAlwaysExecute() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAlwaysExecute",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetExitIfSucceed() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExitIfSucceed",
 		nil, // no parameters
 	)
 }

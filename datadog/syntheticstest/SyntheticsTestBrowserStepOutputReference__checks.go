@@ -132,6 +132,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetAllowFai
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetAlwaysExecuteParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -192,6 +212,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetComplexO
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateSetExitIfSucceedParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

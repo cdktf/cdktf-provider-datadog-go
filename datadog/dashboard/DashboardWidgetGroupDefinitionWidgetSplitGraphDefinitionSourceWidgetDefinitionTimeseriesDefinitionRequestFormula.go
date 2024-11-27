@@ -7,27 +7,27 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestFormula struct {
 	// A string expression built from queries, formulas, and functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
 	FormulaExpression *string `field:"required" json:"formulaExpression" yaml:"formulaExpression"`
 	// An expression alias.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#alias Dashboard#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#alias Dashboard#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 	// A list of display modes for each table cell. Valid values are `number`, `bar`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
 	CellDisplayMode *string `field:"optional" json:"cellDisplayMode" yaml:"cellDisplayMode"`
 	// conditional_formats block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
 	ConditionalFormats interface{} `field:"optional" json:"conditionalFormats" yaml:"conditionalFormats"`
 	// limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#limit Dashboard#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#limit Dashboard#limit}
 	Limit *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestFormulaLimit `field:"optional" json:"limit" yaml:"limit"`
 	// style block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/dashboard#style Dashboard#style}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/dashboard#style Dashboard#style}
 	Style *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestFormulaStyle `field:"optional" json:"style" yaml:"style"`
 }
 
