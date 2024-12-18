@@ -362,6 +362,48 @@ func (s *jsiiProxy_SyntheticsTest) validatePutConfigVariableParameters(value int
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTest) validatePutMobileOptionsListParameters(value *SyntheticsTestMobileOptionsListStruct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsTest) validatePutMobileStepParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SyntheticsTestMobileStep:
+		value := value.(*[]*SyntheticsTestMobileStep)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SyntheticsTestMobileStep:
+		value_ := value.([]*SyntheticsTestMobileStep)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SyntheticsTestMobileStep; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTest) validatePutOptionsListParameters(value *SyntheticsTestOptionsListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -483,6 +525,14 @@ func validateSyntheticsTest_IsTerraformElementParameters(x interface{}) error {
 func validateSyntheticsTest_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTest) validateSetConfigInitialApplicationArgumentsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

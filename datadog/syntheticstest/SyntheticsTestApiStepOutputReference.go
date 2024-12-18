@@ -33,6 +33,9 @@ type SyntheticsTestApiStepOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExitIfSucceed() interface{}
+	SetExitIfSucceed(val interface{})
+	ExitIfSucceedInput() interface{}
 	ExtractedValue() SyntheticsTestApiStepExtractedValueList
 	ExtractedValueInput() interface{}
 	// Experimental.
@@ -114,6 +117,7 @@ type SyntheticsTestApiStepOutputReference interface {
 	PutRetry(value *SyntheticsTestApiStepRetry)
 	ResetAllowFailure()
 	ResetAssertion()
+	ResetExitIfSucceed()
 	ResetExtractedValue()
 	ResetIsCritical()
 	ResetRequestBasicauth()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ExitIfSucceed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exitIfSucceed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ExitIfSucceedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exitIfSucceedInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetComplexObjectIsFromSe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetExitIfSucceed(val interface{}) {
+	if err := j.validateSetExitIfSucceedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exitIfSucceed",
 		val,
 	)
 }
@@ -989,6 +1024,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetAssertion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAssertion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetExitIfSucceed() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExitIfSucceed",
 		nil, // no parameters
 	)
 }

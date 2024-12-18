@@ -95,6 +95,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetExitIfSucceedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

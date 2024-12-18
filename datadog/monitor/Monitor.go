@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,7 +34,9 @@ type Monitor interface {
 	EnableLogsSample() interface{}
 	SetEnableLogsSample(val interface{})
 	EnableLogsSampleInput() interface{}
-	EnableSamples() cdktf.IResolvable
+	EnableSamples() interface{}
+	SetEnableSamples(val interface{})
+	EnableSamplesInput() interface{}
 	EscalationMessage() *string
 	SetEscalationMessage(val *string)
 	EscalationMessageInput() *string
@@ -208,6 +210,7 @@ type Monitor interface {
 	PutSchedulingOptions(value *MonitorSchedulingOptions)
 	PutVariables(value *MonitorVariables)
 	ResetEnableLogsSample()
+	ResetEnableSamples()
 	ResetEscalationMessage()
 	ResetEvaluationDelay()
 	ResetForceDelete()
@@ -328,11 +331,21 @@ func (j *jsiiProxy_Monitor) EnableLogsSampleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Monitor) EnableSamples() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Monitor) EnableSamples() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"enableSamples",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) EnableSamplesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSamplesInput",
 		&returns,
 	)
 	return returns
@@ -1109,7 +1122,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1127,7 +1140,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1175,6 +1188,17 @@ func (j *jsiiProxy_Monitor)SetEnableLogsSample(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableLogsSample",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Monitor)SetEnableSamples(val interface{}) {
+	if err := j.validateSetEnableSamplesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSamples",
 		val,
 	)
 }
@@ -1937,6 +1961,14 @@ func (m *jsiiProxy_Monitor) ResetEnableLogsSample() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetEnableLogsSample",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetEnableSamples() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnableSamples",
 		nil, // no parameters
 	)
 }

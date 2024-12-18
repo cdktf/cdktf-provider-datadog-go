@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test}.
 type SyntheticsTest interface {
 	cdktf.TerraformResource
 	ApiStep() SyntheticsTestApiStepList
@@ -25,6 +25,9 @@ type SyntheticsTest interface {
 	BrowserVariableInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfigInitialApplicationArguments() *map[string]*string
+	SetConfigInitialApplicationArguments(val *map[string]*string)
+	ConfigInitialApplicationArgumentsInput() *map[string]*string
 	ConfigVariable() SyntheticsTestConfigVariableList
 	ConfigVariableInput() interface{}
 	// Experimental.
@@ -68,6 +71,10 @@ type SyntheticsTest interface {
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
+	MobileOptionsList() SyntheticsTestMobileOptionsListStructOutputReference
+	MobileOptionsListInput() *SyntheticsTestMobileOptionsListStruct
+	MobileStep() SyntheticsTestMobileStepList
+	MobileStepInput() interface{}
 	MonitorId() *float64
 	Name() *string
 	SetName(val *string)
@@ -177,6 +184,8 @@ type SyntheticsTest interface {
 	PutBrowserStep(value interface{})
 	PutBrowserVariable(value interface{})
 	PutConfigVariable(value interface{})
+	PutMobileOptionsList(value *SyntheticsTestMobileOptionsListStruct)
+	PutMobileStep(value interface{})
 	PutOptionsList(value *SyntheticsTestOptionsListStruct)
 	PutRequestBasicauth(value *SyntheticsTestRequestBasicauth)
 	PutRequestClientCertificate(value *SyntheticsTestRequestClientCertificate)
@@ -187,11 +196,14 @@ type SyntheticsTest interface {
 	ResetAssertion()
 	ResetBrowserStep()
 	ResetBrowserVariable()
+	ResetConfigInitialApplicationArguments()
 	ResetConfigVariable()
 	ResetDeviceIds()
 	ResetForceDeleteDependencies()
 	ResetId()
 	ResetMessage()
+	ResetMobileOptionsList()
+	ResetMobileStep()
 	ResetOptionsList()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -311,6 +323,26 @@ func (j *jsiiProxy_SyntheticsTest) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) ConfigInitialApplicationArguments() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"configInitialApplicationArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) ConfigInitialApplicationArgumentsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"configInitialApplicationArgumentsInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +543,46 @@ func (j *jsiiProxy_SyntheticsTest) MessageInput() *string {
 	_jsii_.Get(
 		j,
 		"messageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) MobileOptionsList() SyntheticsTestMobileOptionsListStructOutputReference {
+	var returns SyntheticsTestMobileOptionsListStructOutputReference
+	_jsii_.Get(
+		j,
+		"mobileOptionsList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) MobileOptionsListInput() *SyntheticsTestMobileOptionsListStruct {
+	var returns *SyntheticsTestMobileOptionsListStruct
+	_jsii_.Get(
+		j,
+		"mobileOptionsListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) MobileStep() SyntheticsTestMobileStepList {
+	var returns SyntheticsTestMobileStepList
+	_jsii_.Get(
+		j,
+		"mobileStep",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTest) MobileStepInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mobileStepInput",
 		&returns,
 	)
 	return returns
@@ -917,7 +989,7 @@ func (j *jsiiProxy_SyntheticsTest) VariablesFromScriptInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest(scope constructs.Construct, id *string, config *SyntheticsTestConfig) SyntheticsTest {
 	_init_.Initialize()
 
@@ -935,7 +1007,7 @@ func NewSyntheticsTest(scope constructs.Construct, id *string, config *Synthetic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test} Resource.
 func NewSyntheticsTest_Override(s SyntheticsTest, scope constructs.Construct, id *string, config *SyntheticsTestConfig) {
 	_init_.Initialize()
 
@@ -943,6 +1015,17 @@ func NewSyntheticsTest_Override(s SyntheticsTest, scope constructs.Construct, id
 		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTest",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTest)SetConfigInitialApplicationArguments(val *map[string]*string) {
+	if err := j.validateSetConfigInitialApplicationArgumentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configInitialApplicationArguments",
+		val,
 	)
 }
 
@@ -1587,6 +1670,28 @@ func (s *jsiiProxy_SyntheticsTest) PutConfigVariable(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTest) PutMobileOptionsList(value *SyntheticsTestMobileOptionsListStruct) {
+	if err := s.validatePutMobileOptionsListParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMobileOptionsList",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) PutMobileStep(value interface{}) {
+	if err := s.validatePutMobileStepParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMobileStep",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTest) PutOptionsList(value *SyntheticsTestOptionsListStruct) {
 	if err := s.validatePutOptionsListParameters(value); err != nil {
 		panic(err)
@@ -1685,6 +1790,14 @@ func (s *jsiiProxy_SyntheticsTest) ResetBrowserVariable() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTest) ResetConfigInitialApplicationArguments() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConfigInitialApplicationArguments",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTest) ResetConfigVariable() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1721,6 +1834,22 @@ func (s *jsiiProxy_SyntheticsTest) ResetMessage() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMessage",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) ResetMobileOptionsList() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMobileOptionsList",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTest) ResetMobileStep() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMobileStep",
 		nil, // no parameters
 	)
 }

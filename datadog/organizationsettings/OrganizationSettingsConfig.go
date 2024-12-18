@@ -22,22 +22,22 @@ type OrganizationSettingsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/organization_settings#id OrganizationSettings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/organization_settings#id OrganizationSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Name for Organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/organization_settings#name OrganizationSettings#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/organization_settings#name OrganizationSettings#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// List of emails used for security event notifications from the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
 	SecurityContacts *[]*string `field:"optional" json:"securityContacts" yaml:"securityContacts"`
 	// settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
 	Settings *OrganizationSettingsSettings `field:"optional" json:"settings" yaml:"settings"`
 }
 

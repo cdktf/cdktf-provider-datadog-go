@@ -119,6 +119,10 @@ func (j *jsiiProxy_Monitor) validateSetEnableLogsSampleParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetEnableSamplesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetEscalationMessageParameters(val *string) error {
 	return nil
 }

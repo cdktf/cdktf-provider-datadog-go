@@ -95,6 +95,14 @@ func (s *jsiiProxy_SyntheticsTest) validatePutConfigVariableParameters(value int
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTest) validatePutMobileOptionsListParameters(value *SyntheticsTestMobileOptionsListStruct) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsTest) validatePutMobileStepParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTest) validatePutOptionsListParameters(value *SyntheticsTestOptionsListStruct) error {
 	return nil
 }
@@ -132,6 +140,10 @@ func validateSyntheticsTest_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateSyntheticsTest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTest) validateSetConfigInitialApplicationArgumentsParameters(val *map[string]*string) error {
 	return nil
 }
 
