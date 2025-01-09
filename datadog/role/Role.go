@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role datadog_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role datadog_role}.
 type Role interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type Role interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultPermissionsOptOut() interface{}
+	SetDefaultPermissionsOptOut(val interface{})
+	DefaultPermissionsOptOutInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -117,6 +120,7 @@ type Role interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPermission(value interface{})
+	ResetDefaultPermissionsOptOut()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_Role) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) DefaultPermissionsOptOut() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultPermissionsOptOut",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) DefaultPermissionsOptOutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultPermissionsOptOutInput",
 		&returns,
 	)
 	return returns
@@ -392,7 +416,7 @@ func (j *jsiiProxy_Role) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role datadog_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role datadog_role} Resource.
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role datadog_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role datadog_role} Resource.
 func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
 	_init_.Initialize()
 
@@ -439,6 +463,17 @@ func (j *jsiiProxy_Role)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Role)SetDefaultPermissionsOptOut(val interface{}) {
+	if err := j.validateSetDefaultPermissionsOptOutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultPermissionsOptOut",
 		val,
 	)
 }
@@ -883,6 +918,14 @@ func (r *jsiiProxy_Role) PutPermission(value interface{}) {
 		r,
 		"putPermission",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_Role) ResetDefaultPermissionsOptOut() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDefaultPermissionsOptOut",
+		nil, // no parameters
 	)
 }
 

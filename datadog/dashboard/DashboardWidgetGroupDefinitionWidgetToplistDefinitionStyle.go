@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetToplistDefinitionStyle struct {
 	// display block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/dashboard#display Dashboard#display}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/dashboard#display Dashboard#display}
 	Display interface{} `field:"optional" json:"display" yaml:"display"`
 	// The color palette for the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/dashboard#palette Dashboard#palette}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/dashboard#palette Dashboard#palette}
 	Palette *string `field:"optional" json:"palette" yaml:"palette"`
 }
 

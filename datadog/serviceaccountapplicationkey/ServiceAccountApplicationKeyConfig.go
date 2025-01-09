@@ -24,11 +24,11 @@ type ServiceAccountApplicationKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the application key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// ID of the service account that owns this key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
 	ServiceAccountId *string `field:"required" json:"serviceAccountId" yaml:"serviceAccountId"`
 }
 

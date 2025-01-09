@@ -24,7 +24,7 @@ type ApmRetentionFilterOrderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The filter IDs list. The order of filters IDs in this attribute defines the overall APM retention filters order.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
 	FilterIds *[]*string `field:"required" json:"filterIds" yaml:"filterIds"`
 }
 

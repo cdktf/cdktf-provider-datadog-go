@@ -24,11 +24,11 @@ type DomainAllowlistConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The domains within the domain allowlist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
 	Domains *[]*string `field:"required" json:"domains" yaml:"domains"`
 	// Whether the Email Domain Allowlist is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

@@ -47,6 +47,9 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	IsCritical() interface{}
 	SetIsCritical(val interface{})
 	IsCriticalInput() interface{}
+	LocalKey() *string
+	SetLocalKey(val *string)
+	LocalKeyInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -55,6 +58,7 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	NoScreenshotInput() interface{}
 	Params() SyntheticsTestBrowserStepParamsOutputReference
 	ParamsInput() *SyntheticsTestBrowserStepParams
+	PublicId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -99,6 +103,7 @@ type SyntheticsTestBrowserStepOutputReference interface {
 	ResetExitIfSucceed()
 	ResetForceElementUpdate()
 	ResetIsCritical()
+	ResetLocalKey()
 	ResetNoScreenshot()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
@@ -266,6 +271,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) IsCriticalInput() i
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) LocalKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) LocalKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,6 +346,16 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ParamsInput() *Synt
 	_jsii_.Get(
 		j,
 		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference) PublicId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicId",
 		&returns,
 	)
 	return returns
@@ -498,6 +533,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetIsCritical(val in
 	_jsii_.Set(
 		j,
 		"isCritical",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepOutputReference)SetLocalKey(val *string) {
+	if err := j.validateSetLocalKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localKey",
 		val,
 	)
 }
@@ -801,6 +847,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetIsCritical() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIsCritical",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) ResetLocalKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalKey",
 		nil, // no parameters
 	)
 }

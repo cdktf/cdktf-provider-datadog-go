@@ -103,6 +103,10 @@ func (j *jsiiProxy_Role) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Role) validateSetDefaultPermissionsOptOutParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Role) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -7,19 +7,19 @@ package syntheticsglobalvariable
 type SyntheticsGlobalVariableParseTestOptions struct {
 	// Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `http_status_code`, `local_variable`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Required when type = `http_header`. Defines the header to use to extract the value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
 	Field *string `field:"optional" json:"field" yaml:"field"`
 	// When type is `local_variable`, name of the local variable to use to extract the value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
 	LocalVariableName *string `field:"optional" json:"localVariableName" yaml:"localVariableName"`
 	// parser block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
 	Parser *SyntheticsGlobalVariableParseTestOptionsParser `field:"optional" json:"parser" yaml:"parser"`
 }
 
