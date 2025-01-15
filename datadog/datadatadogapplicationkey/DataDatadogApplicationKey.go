@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key datadog_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key}.
 type DataDatadogApplicationKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,9 @@ type DataDatadogApplicationKey interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -94,6 +97,7 @@ type DataDatadogApplicationKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScopes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_DataDatadogApplicationKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogApplicationKey) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogApplicationKey) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogApplicationKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataDatadogApplicationKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key datadog_application_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key} Data Source.
 func NewDataDatadogApplicationKey(scope constructs.Construct, id *string, config *DataDatadogApplicationKeyConfig) DataDatadogApplicationKey {
 	_init_.Initialize()
 
@@ -342,7 +366,7 @@ func NewDataDatadogApplicationKey(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key datadog_application_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key} Data Source.
 func NewDataDatadogApplicationKey_Override(d DataDatadogApplicationKey, scope constructs.Construct, id *string, config *DataDatadogApplicationKeyConfig) {
 	_init_.Initialize()
 
@@ -428,6 +452,17 @@ func (j *jsiiProxy_DataDatadogApplicationKey)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogApplicationKey)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -745,6 +780,14 @@ func (d *jsiiProxy_DataDatadogApplicationKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogApplicationKey) ResetScopes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScopes",
 		nil, // no parameters
 	)
 }

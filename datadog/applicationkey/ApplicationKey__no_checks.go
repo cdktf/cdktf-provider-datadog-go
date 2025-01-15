@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApplicationKey) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationKey) validateSetScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewApplicationKeyParameters(scope constructs.Construct, id *string, config *ApplicationKeyConfig) error {
 	return nil
 }

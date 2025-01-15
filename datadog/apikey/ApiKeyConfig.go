@@ -24,7 +24,7 @@ type ApiKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name for API Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/api_key#name ApiKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/api_key#name ApiKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

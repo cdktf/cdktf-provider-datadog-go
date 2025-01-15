@@ -24,11 +24,11 @@ type IpAllowlistConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the IP Allowlist is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// entry block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
 	Entry interface{} `field:"optional" json:"entry" yaml:"entry"`
 }
 

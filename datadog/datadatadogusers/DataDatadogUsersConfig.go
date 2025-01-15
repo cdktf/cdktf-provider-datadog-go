@@ -24,11 +24,11 @@ type DataDatadogUsersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Filter all users by the given string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/users#filter DataDatadogUsers#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 	FilterStatus *string `field:"optional" json:"filterStatus" yaml:"filterStatus"`
 }
 

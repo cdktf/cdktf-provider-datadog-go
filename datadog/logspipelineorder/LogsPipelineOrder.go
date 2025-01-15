@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
 type LogsPipelineOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_LogsPipelineOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) LogsPipelineOrder {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder_Override(l LogsPipelineOrder, scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) {
 	_init_.Initialize()
 
