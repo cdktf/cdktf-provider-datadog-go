@@ -24,11 +24,11 @@ type DashboardListConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Dashboard List.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/dashboard_list#name DashboardList#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/dashboard_list#name DashboardList#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// dash_item block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 	DashItem interface{} `field:"optional" json:"dashItem" yaml:"dashItem"`
 }
 

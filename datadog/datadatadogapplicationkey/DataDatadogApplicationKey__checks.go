@@ -255,14 +255,6 @@ func (j *jsiiProxy_DataDatadogApplicationKey) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogApplicationKey) validateSetScopesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataDatadogApplicationKeyParameters(scope constructs.Construct, id *string, config *DataDatadogApplicationKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

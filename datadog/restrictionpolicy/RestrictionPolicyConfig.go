@@ -26,11 +26,11 @@ type RestrictionPolicyConfig struct {
 	//
 	// Note: Dashboards support is in private beta. Reach out to your Datadog contact or support to enable this.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// bindings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 	Bindings interface{} `field:"optional" json:"bindings" yaml:"bindings"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces}.
 type DataDatadogIntegrationAwsAvailableNamespaces interface {
 	cdktf.TerraformDataSource
 	AwsNamespaces() *[]*string
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsAvailableNamespaces) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces} Data Source.
 func NewDataDatadogIntegrationAwsAvailableNamespaces(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsAvailableNamespacesConfig) DataDatadogIntegrationAwsAvailableNamespaces {
 	_init_.Initialize()
 
@@ -281,7 +281,7 @@ func NewDataDatadogIntegrationAwsAvailableNamespaces(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/integration_aws_available_namespaces datadog_integration_aws_available_namespaces} Data Source.
 func NewDataDatadogIntegrationAwsAvailableNamespaces_Override(d DataDatadogIntegrationAwsAvailableNamespaces, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsAvailableNamespacesConfig) {
 	_init_.Initialize()
 
