@@ -131,6 +131,10 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetRuleQueryParameters
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetStartDateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetSuppressionQueryParameters(val *string) error {
 	return nil
 }

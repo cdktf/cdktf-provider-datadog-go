@@ -24,7 +24,7 @@ type SoftwareCatalogConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The catalog entity definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 	Entity *string `field:"required" json:"entity" yaml:"entity"`
 }
 

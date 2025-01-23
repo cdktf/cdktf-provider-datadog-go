@@ -451,6 +451,14 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetRuleQueryParameters
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetStartDateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetSuppressionQueryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

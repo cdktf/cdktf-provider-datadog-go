@@ -75,6 +75,10 @@ func (i *jsiiProxy_IntegrationAzure) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAzure) validatePutResourceProviderConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateIntegrationAzure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -135,6 +139,14 @@ func (j *jsiiProxy_IntegrationAzure) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAzure) validateSetMetricsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetMetricsEnabledDefaultParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAzure) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -144,6 +156,10 @@ func (j *jsiiProxy_IntegrationAzure) validateSetResourceCollectionEnabledParamet
 }
 
 func (j *jsiiProxy_IntegrationAzure) validateSetTenantNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationAzure) validateSetUsageMetricsEnabledParameters(val interface{}) error {
 	return nil
 }
 

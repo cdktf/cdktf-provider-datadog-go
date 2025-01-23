@@ -24,19 +24,19 @@ type SpansMetricConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the span-based metric. This field can't be updated after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/spans_metric#name SpansMetric#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/spans_metric#name SpansMetric#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/spans_metric#compute SpansMetric#compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/spans_metric#compute SpansMetric#compute}
 	Compute *SpansMetricCompute `field:"optional" json:"compute" yaml:"compute"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/spans_metric#filter SpansMetric#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/spans_metric#filter SpansMetric#filter}
 	Filter *SpansMetricFilter `field:"optional" json:"filter" yaml:"filter"`
 	// group_by block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/spans_metric#group_by SpansMetric#group_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
 	GroupBy interface{} `field:"optional" json:"groupBy" yaml:"groupBy"`
 }
 

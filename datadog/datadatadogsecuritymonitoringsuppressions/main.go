@@ -115,6 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleQuery", GoGetter: "RuleQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressionQuery", GoGetter: "SuppressionQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

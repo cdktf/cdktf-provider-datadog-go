@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleDisplay struct {
 	// The display type for the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/dashboard#type Dashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/dashboard#type Dashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

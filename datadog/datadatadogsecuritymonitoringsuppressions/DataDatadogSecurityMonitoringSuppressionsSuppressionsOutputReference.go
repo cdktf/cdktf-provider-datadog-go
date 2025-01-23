@@ -39,6 +39,7 @@ type DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference interf
 	SetInternalValue(val *DataDatadogSecurityMonitoringSuppressionsSuppressions)
 	Name() *string
 	RuleQuery() *string
+	StartDate() *string
 	SuppressionQuery() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputRe
 	_jsii_.Get(
 		j,
 		"ruleQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference) StartDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDate",
 		&returns,
 	)
 	return returns

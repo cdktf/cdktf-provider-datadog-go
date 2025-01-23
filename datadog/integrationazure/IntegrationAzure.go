@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktf.TerraformResource
 	AppServicePlanFilters() *string
@@ -68,6 +68,12 @@ type IntegrationAzure interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetricsEnabled() interface{}
+	SetMetricsEnabled(val interface{})
+	MetricsEnabledDefault() interface{}
+	SetMetricsEnabledDefault(val interface{})
+	MetricsEnabledDefaultInput() interface{}
+	MetricsEnabledInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -83,6 +89,8 @@ type IntegrationAzure interface {
 	ResourceCollectionEnabled() interface{}
 	SetResourceCollectionEnabled(val interface{})
 	ResourceCollectionEnabledInput() interface{}
+	ResourceProviderConfigs() IntegrationAzureResourceProviderConfigsList
+	ResourceProviderConfigsInput() interface{}
 	TenantName() *string
 	SetTenantName(val *string)
 	TenantNameInput() *string
@@ -92,6 +100,9 @@ type IntegrationAzure interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UsageMetricsEnabled() interface{}
+	SetUsageMetricsEnabled(val interface{})
+	UsageMetricsEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,16 +146,21 @@ type IntegrationAzure interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutResourceProviderConfigs(value interface{})
 	ResetAppServicePlanFilters()
 	ResetAutomute()
 	ResetContainerAppFilters()
 	ResetCspmEnabled()
 	ResetCustomMetricsEnabled()
 	ResetHostFilters()
+	ResetMetricsEnabled()
+	ResetMetricsEnabledDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResourceCollectionEnabled()
+	ResetResourceProviderConfigs()
+	ResetUsageMetricsEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -423,6 +439,46 @@ func (j *jsiiProxy_IntegrationAzure) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationAzure) MetricsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) MetricsEnabledDefault() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricsEnabledDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) MetricsEnabledDefaultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricsEnabledDefaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) MetricsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationAzure) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -483,6 +539,26 @@ func (j *jsiiProxy_IntegrationAzure) ResourceCollectionEnabledInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationAzure) ResourceProviderConfigs() IntegrationAzureResourceProviderConfigsList {
+	var returns IntegrationAzureResourceProviderConfigsList
+	_jsii_.Get(
+		j,
+		"resourceProviderConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) ResourceProviderConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceProviderConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationAzure) TenantName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,8 +609,28 @@ func (j *jsiiProxy_IntegrationAzure) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationAzure) UsageMetricsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usageMetricsEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_azure datadog_integration_azure} Resource.
+func (j *jsiiProxy_IntegrationAzure) UsageMetricsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usageMetricsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -552,7 +648,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 
@@ -700,6 +796,28 @@ func (j *jsiiProxy_IntegrationAzure)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
+func (j *jsiiProxy_IntegrationAzure)SetMetricsEnabled(val interface{}) {
+	if err := j.validateSetMetricsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetMetricsEnabledDefault(val interface{}) {
+	if err := j.validateSetMetricsEnabledDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsEnabledDefault",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IntegrationAzure)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -737,6 +855,17 @@ func (j *jsiiProxy_IntegrationAzure)SetTenantName(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetUsageMetricsEnabled(val interface{}) {
+	if err := j.validateSetUsageMetricsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usageMetricsEnabled",
 		val,
 	)
 }
@@ -1094,6 +1223,17 @@ func (i *jsiiProxy_IntegrationAzure) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IntegrationAzure) PutResourceProviderConfigs(value interface{}) {
+	if err := i.validatePutResourceProviderConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putResourceProviderConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAzure) ResetAppServicePlanFilters() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1142,6 +1282,22 @@ func (i *jsiiProxy_IntegrationAzure) ResetHostFilters() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationAzure) ResetMetricsEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMetricsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetMetricsEnabledDefault() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMetricsEnabledDefault",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationAzure) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1154,6 +1310,22 @@ func (i *jsiiProxy_IntegrationAzure) ResetResourceCollectionEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetResourceCollectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetResourceProviderConfigs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetResourceProviderConfigs",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetUsageMetricsEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetUsageMetricsEnabled",
 		nil, // no parameters
 	)
 }

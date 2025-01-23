@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 type SecurityMonitoringSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type SecurityMonitoringSuppression interface {
 	RuleQuery() *string
 	SetRuleQuery(val *string)
 	RuleQueryInput() *string
+	StartDate() *string
+	SetStartDate(val *string)
+	StartDateInput() *string
 	SuppressionQuery() *string
 	SetSuppressionQuery(val *string)
 	SuppressionQueryInput() *string
@@ -132,6 +135,7 @@ type SecurityMonitoringSuppression interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStartDate()
 	ResetSuppressionQuery()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -411,6 +415,26 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) RuleQueryInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) StartDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression) StartDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityMonitoringSuppression) SuppressionQuery() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression_Override(s SecurityMonitoringSuppression, scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) {
 	_init_.Initialize()
 
@@ -621,6 +645,17 @@ func (j *jsiiProxy_SecurityMonitoringSuppression)SetRuleQuery(val *string) {
 	_jsii_.Set(
 		j,
 		"ruleQuery",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression)SetStartDate(val *string) {
+	if err := j.validateSetStartDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startDate",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (s *jsiiProxy_SecurityMonitoringSuppression) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringSuppression) ResetStartDate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStartDate",
 		nil, // no parameters
 	)
 }
