@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_archive_order datadog_logs_archive_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_archive_order datadog_logs_archive_order}.
 type LogsArchiveOrder interface {
 	cdktf.TerraformResource
 	ArchiveIds() *[]*string
@@ -334,7 +334,7 @@ func (j *jsiiProxy_LogsArchiveOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
 func NewLogsArchiveOrder(scope constructs.Construct, id *string, config *LogsArchiveOrderConfig) LogsArchiveOrder {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewLogsArchiveOrder(scope constructs.Construct, id *string, config *LogsArc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource.
 func NewLogsArchiveOrder_Override(l LogsArchiveOrder, scope constructs.Construct, id *string, config *LogsArchiveOrderConfig) {
 	_init_.Initialize()
 

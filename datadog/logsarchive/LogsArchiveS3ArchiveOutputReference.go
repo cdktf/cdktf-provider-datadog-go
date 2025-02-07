@@ -34,6 +34,12 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncryptionKey() *string
+	SetEncryptionKey(val *string)
+	EncryptionKeyInput() *string
+	EncryptionType() *string
+	SetEncryptionType(val *string)
+	EncryptionTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *LogsArchiveS3Archive
@@ -76,6 +82,8 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEncryptionKey()
+	ResetEncryptionType()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -157,6 +165,46 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) EncryptionKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) EncryptionKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) EncryptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) EncryptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionTypeInput",
 		&returns,
 	)
 	return returns
@@ -310,6 +358,28 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetEncryptionKey(val *string) {
+	if err := j.validateSetEncryptionKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetEncryptionType(val *string) {
+	if err := j.validateSetEncryptionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionType",
 		val,
 	)
 }
@@ -553,6 +623,22 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetEncryptionKey() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetEncryptionType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEncryptionType",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetPath() {

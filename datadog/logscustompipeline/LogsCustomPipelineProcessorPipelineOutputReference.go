@@ -28,6 +28,9 @@ type LogsCustomPipelineProcessorPipelineOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Filter() LogsCustomPipelineProcessorPipelineFilterList
 	FilterInput() interface{}
 	// Experimental.
@@ -42,6 +45,9 @@ type LogsCustomPipelineProcessorPipelineOutputReference interface {
 	NameInput() *string
 	Processor() LogsCustomPipelineProcessorPipelineProcessorList
 	ProcessorInput() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,8 +82,10 @@ type LogsCustomPipelineProcessorPipelineOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFilter(value interface{})
 	PutProcessor(value interface{})
+	ResetDescription()
 	ResetIsEnabled()
 	ResetProcessor()
+	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,6 +126,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) CreationS
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -223,6 +251,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) Processor
 	return returns
 }
 
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -293,6 +341,17 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference)SetComplex
 	)
 }
 
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference)SetInternalValue(val *LogsCustomPipelineProcessorPipeline) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -322,6 +381,17 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference)SetName(va
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -556,6 +626,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) PutProces
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) ResetIsEnabled() {
 	_jsii_.InvokeVoid(
 		l,
@@ -568,6 +646,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) ResetProc
 	_jsii_.InvokeVoid(
 		l,
 		"resetProcessor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
 		nil, // no parameters
 	)
 }

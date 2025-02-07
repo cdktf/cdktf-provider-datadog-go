@@ -28,6 +28,7 @@ type DataDatadogLogsPipelinesLogsPipelinesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	Filter() DataDatadogLogsPipelinesLogsPipelinesFilterList
 	// Experimental.
 	Fqn() *string
@@ -37,6 +38,7 @@ type DataDatadogLogsPipelinesLogsPipelinesOutputReference interface {
 	IsEnabled() cdktf.IResolvable
 	IsReadOnly() cdktf.IResolvable
 	Name() *string
+	Tags() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -115,6 +117,16 @@ func (j *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesOutputReference) Filter() DataDatadogLogsPipelinesLogsPipelinesFilterList {
 	var returns DataDatadogLogsPipelinesLogsPipelinesFilterList
 	_jsii_.Get(
@@ -180,6 +192,16 @@ func (j *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesOutputReference) Name() 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesOutputReference) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

@@ -228,6 +228,14 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetInternalValueParameters(val *LogsCustomPipelineProcessorPipeline) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -257,6 +265,14 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateS
 }
 
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetTagsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

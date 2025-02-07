@@ -399,6 +399,14 @@ func (j *jsiiProxy_LogsCustomPipeline) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LogsCustomPipeline) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogsCustomPipeline) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -484,6 +492,14 @@ func (j *jsiiProxy_LogsCustomPipeline) validateSetProvisionersParameters(val *[]
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipeline) validateSetTagsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

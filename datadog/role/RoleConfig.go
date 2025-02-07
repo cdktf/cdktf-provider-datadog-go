@@ -24,26 +24,26 @@ type RoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/role#name Role#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/role#name Role#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set.
 	//
 	// The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 	DefaultPermissionsOptOut interface{} `field:"optional" json:"defaultPermissionsOptOut" yaml:"defaultPermissionsOptOut"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/role#id Role#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/role#id Role#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// permission block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/role#permission Role#permission}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/role#permission Role#permission}
 	Permission interface{} `field:"optional" json:"permission" yaml:"permission"`
 	// If set to `false`, skip the validation call done during plan.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/role#validate Role#validate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/role#validate Role#validate}
 	Validate interface{} `field:"optional" json:"validate" yaml:"validate"`
 }
 

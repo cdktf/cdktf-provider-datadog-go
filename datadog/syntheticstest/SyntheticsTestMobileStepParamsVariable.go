@@ -7,11 +7,11 @@ package syntheticstest
 type SyntheticsTestMobileStepParamsVariable struct {
 	// Name of the extracted variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Example of the extracted variable. Defaults to `""`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 	Example *string `field:"optional" json:"example" yaml:"example"`
 }
 

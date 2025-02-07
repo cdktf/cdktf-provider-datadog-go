@@ -93,6 +93,37 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validateInterpolationForAttr
 	return nil
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutCloudCostQueryParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorVariablesCloudCostQuery:
+		value := value.(*[]*MonitorVariablesCloudCostQuery)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorVariablesCloudCostQuery:
+		value_ := value.([]*MonitorVariablesCloudCostQuery)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorVariablesCloudCostQuery; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutEventQueryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

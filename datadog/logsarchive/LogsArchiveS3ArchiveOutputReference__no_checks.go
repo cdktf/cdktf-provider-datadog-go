@@ -67,6 +67,14 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetEncryptionKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetEncryptionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetInternalValueParameters(val *LogsArchiveS3Archive) error {
 	return nil
 }

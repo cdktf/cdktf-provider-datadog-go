@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 type LogsCustomPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type LogsCustomPipeline interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Filter() LogsCustomPipelineFilterList
 	FilterInput() interface{}
 	// Experimental.
@@ -68,6 +71,9 @@ type LogsCustomPipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,12 +125,14 @@ type LogsCustomPipeline interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value interface{})
 	PutProcessor(value interface{})
+	ResetDescription()
 	ResetId()
 	ResetIsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProcessor()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -188,6 +196,26 @@ func (j *jsiiProxy_LogsCustomPipeline) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipeline) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipeline) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -373,6 +401,26 @@ func (j *jsiiProxy_LogsCustomPipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LogsCustomPipeline) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipeline) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsCustomPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -404,7 +452,7 @@ func (j *jsiiProxy_LogsCustomPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) LogsCustomPipeline {
 	_init_.Initialize()
 
@@ -422,7 +470,7 @@ func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline_Override(l LogsCustomPipeline, scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) {
 	_init_.Initialize()
 
@@ -459,6 +507,17 @@ func (j *jsiiProxy_LogsCustomPipeline)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsCustomPipeline)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -530,6 +589,17 @@ func (j *jsiiProxy_LogsCustomPipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsCustomPipeline)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -909,6 +979,14 @@ func (l *jsiiProxy_LogsCustomPipeline) PutProcessor(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipeline) ResetDescription() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipeline) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -937,6 +1015,14 @@ func (l *jsiiProxy_LogsCustomPipeline) ResetProcessor() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProcessor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipeline) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
 		nil, // no parameters
 	)
 }

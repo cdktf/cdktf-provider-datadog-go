@@ -107,6 +107,10 @@ func (j *jsiiProxy_LogsCustomPipeline) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LogsCustomPipeline) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsCustomPipeline) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_LogsCustomPipeline) validateSetNameParameters(val *string) er
 }
 
 func (j *jsiiProxy_LogsCustomPipeline) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipeline) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -111,6 +111,10 @@ func (j *jsiiProxy_ServiceAccountApplicationKey) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ServiceAccountApplicationKey) validateSetScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceAccountApplicationKey) validateSetServiceAccountIdParameters(val *string) error {
 	return nil
 }

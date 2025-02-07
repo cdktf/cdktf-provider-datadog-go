@@ -13,6 +13,8 @@ import (
 
 type MonitorVariablesOutputReference interface {
 	cdktf.ComplexObject
+	CloudCostQuery() MonitorVariablesCloudCostQueryList
+	CloudCostQueryInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type MonitorVariablesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCloudCostQuery(value interface{})
 	PutEventQuery(value interface{})
+	ResetCloudCostQuery()
 	ResetEventQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type MonitorVariablesOutputReference interface {
 // The jsii proxy struct for MonitorVariablesOutputReference
 type jsiiProxy_MonitorVariablesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) CloudCostQuery() MonitorVariablesCloudCostQueryList {
+	var returns MonitorVariablesCloudCostQueryList
+	_jsii_.Get(
+		j,
+		"cloudCostQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) CloudCostQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudCostQueryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MonitorVariablesOutputReference) ComplexObjectIndex() interface{} {
@@ -442,6 +466,17 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationForAttribute(pr
 	return returns
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) PutCloudCostQuery(value interface{}) {
+	if err := m.validatePutCloudCostQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) PutEventQuery(value interface{}) {
 	if err := m.validatePutEventQueryParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) PutEventQuery(value interfac
 		m,
 		"putEventQuery",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) ResetCloudCostQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCloudCostQuery",
+		nil, // no parameters
 	)
 }
 

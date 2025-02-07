@@ -67,6 +67,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetInternalValueParameters(val *LogsCustomPipelineProcessorPipeline) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateS
 }
 
 func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineOutputReference) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 
