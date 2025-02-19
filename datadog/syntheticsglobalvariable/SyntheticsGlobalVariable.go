@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 type SyntheticsGlobalVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type SyntheticsGlobalVariable interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsTotp() interface{}
+	SetIsTotp(val interface{})
+	IsTotpInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -136,6 +139,7 @@ type SyntheticsGlobalVariable interface {
 	PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions)
 	ResetDescription()
 	ResetId()
+	ResetIsTotp()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) IsTotp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isTotp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) IsTotpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isTotpInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +548,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -542,7 +566,7 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable_Override(s SyntheticsGlobalVariable, scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetIsTotp(val interface{}) {
+	if err := j.validateSetIsTotpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isTotp",
 		val,
 	)
 }
@@ -1096,6 +1131,14 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetIsTotp() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsTotp",
 		nil, // no parameters
 	)
 }

@@ -9,27 +9,27 @@ type PowerpackWidgetListStreamDefinitionRequestQuery struct {
 	//
 	// Valid values are `logs_stream`, `audit_stream`, `ci_pipeline_stream`, `ci_test_stream`, `rum_issue_stream`, `apm_issue_stream`, `trace_stream`, `logs_issue_stream`, `logs_pattern_stream`, `logs_transaction_stream`, `event_stream`, `rum_stream`, `llm_observability_stream`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#data_source Powerpack#data_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#data_source Powerpack#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`
 	// Size of events displayed in widget. Required if `data_source` is `event_stream`. Valid values are `s`, `l`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#event_size Powerpack#event_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#event_size Powerpack#event_size}
 	EventSize *string `field:"optional" json:"eventSize" yaml:"eventSize"`
 	// List of indexes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#indexes Powerpack#indexes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#indexes Powerpack#indexes}
 	Indexes *[]*string `field:"optional" json:"indexes" yaml:"indexes"`
 	// Widget query.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#query_string Powerpack#query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#query_string Powerpack#query_string}
 	QueryString *string `field:"optional" json:"queryString" yaml:"queryString"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#sort Powerpack#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#sort Powerpack#sort}
 	Sort *PowerpackWidgetListStreamDefinitionRequestQuerySort `field:"optional" json:"sort" yaml:"sort"`
 	// Storage location (private beta).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#storage Powerpack#storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#storage Powerpack#storage}
 	Storage *string `field:"optional" json:"storage" yaml:"storage"`
 }
 

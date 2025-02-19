@@ -7,11 +7,11 @@ package powerpack
 type PowerpackWidgetLogStreamDefinitionSort struct {
 	// The facet path for the column.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#column Powerpack#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#column Powerpack#column}
 	Column *string `field:"required" json:"column" yaml:"column"`
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/powerpack#order Powerpack#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/powerpack#order Powerpack#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 }
 

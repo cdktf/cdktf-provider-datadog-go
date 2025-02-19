@@ -24,7 +24,13 @@ type ApiKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name for API Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#name ApiKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#name ApiKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Whether the API key is used for remote config.
+	//
+	// Warning : default value is true for backwards compatibility Defaults to `true`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+	RemoteConfigReadEnabled interface{} `field:"optional" json:"remoteConfigReadEnabled" yaml:"remoteConfigReadEnabled"`
 }
 

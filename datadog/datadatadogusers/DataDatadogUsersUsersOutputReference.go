@@ -23,18 +23,26 @@ type DataDatadogUsersUsersOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Disabled() cdktf.IResolvable
 	Email() *string
 	// Experimental.
 	Fqn() *string
+	Handle() *string
+	Icon() *string
 	Id() *string
 	InternalValue() *DataDatadogUsersUsers
 	SetInternalValue(val *DataDatadogUsersUsers)
+	MfaEnabled() cdktf.IResolvable
+	ModifiedAt() *string
 	Name() *string
+	ServiceAccount() cdktf.IResolvable
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +51,8 @@ type DataDatadogUsersUsersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	Verified() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -102,11 +112,31 @@ func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) ComplexObjectIsFromSet(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Disabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disabled",
 		&returns,
 	)
 	return returns
@@ -132,6 +162,26 @@ func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Handle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"handle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Icon() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"icon",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,11 +202,51 @@ func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) InternalValue() *DataDa
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) MfaEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"mfaEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) ServiceAccount() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -177,6 +267,26 @@ func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) TerraformResource() cdk
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUsersUsersOutputReference) Verified() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"verified",
 		&returns,
 	)
 	return returns

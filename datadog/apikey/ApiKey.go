@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key}.
 type ApiKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,9 @@ type ApiKey interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteConfigReadEnabled() interface{}
+	SetRemoteConfigReadEnabled(val interface{})
+	RemoteConfigReadEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -112,6 +115,7 @@ type ApiKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRemoteConfigReadEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -300,6 +304,26 @@ func (j *jsiiProxy_ApiKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiKey) RemoteConfigReadEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteConfigReadEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiKey) RemoteConfigReadEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteConfigReadEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -331,7 +355,7 @@ func (j *jsiiProxy_ApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) ApiKey {
 	_init_.Initialize()
 
@@ -349,7 +373,7 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey_Override(a ApiKey, scope constructs.Construct, id *string, config *ApiKeyConfig) {
 	_init_.Initialize()
 
@@ -435,6 +459,17 @@ func (j *jsiiProxy_ApiKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiKey)SetRemoteConfigReadEnabled(val interface{}) {
+	if err := j.validateSetRemoteConfigReadEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteConfigReadEnabled",
 		val,
 	)
 }
@@ -796,6 +831,14 @@ func (a *jsiiProxy_ApiKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiKey) ResetRemoteConfigReadEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRemoteConfigReadEnabled",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApiKey) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ApiKey) validateSetRemoteConfigReadEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewApiKeyParameters(scope constructs.Construct, id *string, config *ApiKeyConfig) error {
 	return nil
 }

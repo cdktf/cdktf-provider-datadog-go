@@ -38,6 +38,9 @@ type SyntheticsTestBrowserStepParamsVariableOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Secure() interface{}
+	SetSecure(val interface{})
+	SecureInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type SyntheticsTestBrowserStepParamsVariableOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExample()
 	ResetName()
+	ResetSecure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) NameI
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) Secure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) SecureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference)SetNam
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference)SetSecure(val interface{}) {
+	if err := j.validateSetSecureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secure",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) ResetSecure() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecure",
 		nil, // no parameters
 	)
 }

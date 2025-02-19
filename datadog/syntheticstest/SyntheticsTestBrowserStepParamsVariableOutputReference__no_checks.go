@@ -71,6 +71,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) validateSetSecureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsVariableOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

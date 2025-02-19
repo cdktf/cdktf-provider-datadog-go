@@ -7,7 +7,7 @@ package integrationawsaccount
 type IntegrationAwsAccountTracesConfig struct {
 	// xray_services block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
 	XrayServices *IntegrationAwsAccountTracesConfigXrayServices `field:"optional" json:"xrayServices" yaml:"xrayServices"`
 }
 

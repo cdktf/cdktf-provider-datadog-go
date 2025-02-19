@@ -67,6 +67,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetRenotifyOccurrencesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

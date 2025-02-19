@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 type ServiceAccountApplicationKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ServiceAccountApplicationKey) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) ServiceAccountApplicationKey {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey_Override(s ServiceAccountApplicationKey, scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) {
 	_init_.Initialize()
 

@@ -115,6 +115,10 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetIsTotpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

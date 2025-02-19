@@ -24,15 +24,15 @@ type IntegrationFastlyServiceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Fastly service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
 	// Fastly Account id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// A list of tags for the Fastly service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

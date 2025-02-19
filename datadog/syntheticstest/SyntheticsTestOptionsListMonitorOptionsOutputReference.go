@@ -35,6 +35,9 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	RenotifyInterval() *float64
 	SetRenotifyInterval(val *float64)
 	RenotifyIntervalInput() *float64
+	RenotifyOccurrences() *float64
+	SetRenotifyOccurrences(val *float64)
+	RenotifyOccurrencesInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetRenotifyInterval()
+	ResetRenotifyOccurrences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Renot
 	_jsii_.Get(
 		j,
 		"renotifyIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) RenotifyOccurrences() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"renotifyOccurrences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) RenotifyOccurrencesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"renotifyOccurrencesInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetRen
 	_jsii_.Set(
 		j,
 		"renotifyInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetRenotifyOccurrences(val *float64) {
+	if err := j.validateSetRenotifyOccurrencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"renotifyOccurrences",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetRenotifyInterval",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) ResetRenotifyOccurrences() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRenotifyOccurrences",
 		nil, // no parameters
 	)
 }

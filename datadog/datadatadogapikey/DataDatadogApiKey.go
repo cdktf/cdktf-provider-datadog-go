@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/api_key datadog_api_key}.
 type DataDatadogApiKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,7 @@ type DataDatadogApiKey interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteConfigReadEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -293,6 +294,16 @@ func (j *jsiiProxy_DataDatadogApiKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogApiKey) RemoteConfigReadEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"remoteConfigReadEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogApiKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -324,7 +335,7 @@ func (j *jsiiProxy_DataDatadogApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/api_key datadog_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/api_key datadog_api_key} Data Source.
 func NewDataDatadogApiKey(scope constructs.Construct, id *string, config *DataDatadogApiKeyConfig) DataDatadogApiKey {
 	_init_.Initialize()
 
@@ -342,7 +353,7 @@ func NewDataDatadogApiKey(scope constructs.Construct, id *string, config *DataDa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/api_key datadog_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/api_key datadog_api_key} Data Source.
 func NewDataDatadogApiKey_Override(d DataDatadogApiKey, scope constructs.Construct, id *string, config *DataDatadogApiKeyConfig) {
 	_init_.Initialize()
 
