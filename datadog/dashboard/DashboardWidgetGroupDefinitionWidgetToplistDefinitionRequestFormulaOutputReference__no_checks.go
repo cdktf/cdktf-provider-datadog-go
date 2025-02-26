@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestF
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaStyle) error {
 	return nil
 }

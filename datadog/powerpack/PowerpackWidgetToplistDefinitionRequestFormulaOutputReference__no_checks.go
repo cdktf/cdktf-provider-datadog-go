@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetToplistDefinitionRequestFormulaStyle) error {
 	return nil
 }

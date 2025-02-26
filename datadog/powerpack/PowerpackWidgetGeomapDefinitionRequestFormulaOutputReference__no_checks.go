@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetGeomapDefinitionRequestFormulaStyle) error {
 	return nil
 }

@@ -45,6 +45,8 @@ type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinit
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinit
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

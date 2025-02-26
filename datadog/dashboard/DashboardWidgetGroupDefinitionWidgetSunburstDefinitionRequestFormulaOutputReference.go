@@ -45,6 +45,8 @@ type DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputR
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputR
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

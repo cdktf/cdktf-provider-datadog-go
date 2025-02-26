@@ -45,6 +45,8 @@ type PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetHeatmapDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetHeatmapDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetHeatmapDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetHeatmapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetHeatmapDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

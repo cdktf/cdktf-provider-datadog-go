@@ -45,6 +45,8 @@ type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinit
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinit
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourc
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

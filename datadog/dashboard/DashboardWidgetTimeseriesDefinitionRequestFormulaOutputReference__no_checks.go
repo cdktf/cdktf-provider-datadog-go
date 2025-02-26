@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle) error {
 	return nil
 }

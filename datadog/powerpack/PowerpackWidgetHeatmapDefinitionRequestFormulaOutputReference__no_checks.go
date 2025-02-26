@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetHeatmapDefinitionRequestFormulaStyle) error {
 	return nil
 }

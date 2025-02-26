@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetSunburstDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetSunburstDefinitionRequestFormulaStyle) error {
 	return nil
 }

@@ -135,6 +135,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestF
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormulaNumberFormat) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormulaStyle) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

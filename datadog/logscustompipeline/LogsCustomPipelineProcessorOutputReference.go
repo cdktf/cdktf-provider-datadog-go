@@ -54,6 +54,8 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	ReferenceTableLookupProcessorInput() *LogsCustomPipelineProcessorReferenceTableLookupProcessor
 	ServiceRemapper() LogsCustomPipelineProcessorServiceRemapperOutputReference
 	ServiceRemapperInput() *LogsCustomPipelineProcessorServiceRemapper
+	SpanIdRemapper() LogsCustomPipelineProcessorSpanIdRemapperOutputReference
+	SpanIdRemapperInput() *LogsCustomPipelineProcessorSpanIdRemapper
 	StatusRemapper() LogsCustomPipelineProcessorStatusRemapperOutputReference
 	StatusRemapperInput() *LogsCustomPipelineProcessorStatusRemapper
 	StringBuilderProcessor() LogsCustomPipelineProcessorStringBuilderProcessorOutputReference
@@ -107,6 +109,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	PutPipeline(value *LogsCustomPipelineProcessorPipeline)
 	PutReferenceTableLookupProcessor(value *LogsCustomPipelineProcessorReferenceTableLookupProcessor)
 	PutServiceRemapper(value *LogsCustomPipelineProcessorServiceRemapper)
+	PutSpanIdRemapper(value *LogsCustomPipelineProcessorSpanIdRemapper)
 	PutStatusRemapper(value *LogsCustomPipelineProcessorStatusRemapper)
 	PutStringBuilderProcessor(value *LogsCustomPipelineProcessorStringBuilderProcessor)
 	PutTraceIdRemapper(value *LogsCustomPipelineProcessorTraceIdRemapper)
@@ -123,6 +126,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	ResetPipeline()
 	ResetReferenceTableLookupProcessor()
 	ResetServiceRemapper()
+	ResetSpanIdRemapper()
 	ResetStatusRemapper()
 	ResetStringBuilderProcessor()
 	ResetTraceIdRemapper()
@@ -408,6 +412,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ServiceRemapperIn
 	_jsii_.Get(
 		j,
 		"serviceRemapperInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) SpanIdRemapper() LogsCustomPipelineProcessorSpanIdRemapperOutputReference {
+	var returns LogsCustomPipelineProcessorSpanIdRemapperOutputReference
+	_jsii_.Get(
+		j,
+		"spanIdRemapper",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) SpanIdRemapperInput() *LogsCustomPipelineProcessorSpanIdRemapper {
+	var returns *LogsCustomPipelineProcessorSpanIdRemapper
+	_jsii_.Get(
+		j,
+		"spanIdRemapperInput",
 		&returns,
 	)
 	return returns
@@ -923,6 +947,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutServiceRemappe
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutSpanIdRemapper(value *LogsCustomPipelineProcessorSpanIdRemapper) {
+	if err := l.validatePutSpanIdRemapperParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSpanIdRemapper",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutStatusRemapper(value *LogsCustomPipelineProcessorStatusRemapper) {
 	if err := l.validatePutStatusRemapperParameters(value); err != nil {
 		panic(err)
@@ -1062,6 +1097,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetServiceRemap
 	_jsii_.InvokeVoid(
 		l,
 		"resetServiceRemapper",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetSpanIdRemapper() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSpanIdRemapper",
 		nil, // no parameters
 	)
 }

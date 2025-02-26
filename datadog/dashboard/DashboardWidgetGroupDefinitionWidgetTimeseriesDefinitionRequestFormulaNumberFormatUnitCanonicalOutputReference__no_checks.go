@@ -1,0 +1,85 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboard
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetInternalValueParameters(val *DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetPerUnitNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateSetUnitNameParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

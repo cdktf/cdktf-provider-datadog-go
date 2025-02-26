@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetSunburstDefinitionRequestFormulaStyle) error {
 	return nil
 }

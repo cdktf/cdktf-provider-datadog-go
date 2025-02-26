@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle) error {
 	return nil
 }

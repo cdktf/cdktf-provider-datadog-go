@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) validateSetScalingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

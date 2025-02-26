@@ -45,6 +45,8 @@ type PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

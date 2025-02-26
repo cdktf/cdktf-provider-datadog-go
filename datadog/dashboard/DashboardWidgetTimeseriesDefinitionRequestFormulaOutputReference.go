@@ -45,6 +45,8 @@ type DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetTimeseriesDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetTimeseriesDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetTimeseriesDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

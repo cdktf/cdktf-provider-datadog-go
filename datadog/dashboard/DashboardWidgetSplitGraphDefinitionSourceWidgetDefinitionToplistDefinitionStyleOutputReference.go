@@ -37,6 +37,9 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionS
 	Palette() *string
 	SetPalette(val *string)
 	PaletteInput() *string
+	Scaling() *string
+	SetScaling(val *string)
+	ScalingInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionS
 	PutDisplay(value interface{})
 	ResetDisplay()
 	ResetPalette()
+	ResetScaling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) Scaling() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) ScalingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -265,6 +289,17 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.Set(
 		j,
 		"palette",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference)SetScaling(val *string) {
+	if err := j.validateSetScalingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaling",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.InvokeVoid(
 		d,
 		"resetPalette",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionStyleOutputReference) ResetScaling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScaling",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,8 @@ type DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetQueryValueDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetQueryValueDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetQueryValueDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetQueryValueDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetQueryValueDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetQueryValueDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

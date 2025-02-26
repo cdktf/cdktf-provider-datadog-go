@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionStyleOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionStyleOutputReference) validateSetScalingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetToplistDefinitionStyleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

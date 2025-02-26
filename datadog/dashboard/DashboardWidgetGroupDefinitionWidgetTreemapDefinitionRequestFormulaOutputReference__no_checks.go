@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestF
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaStyle) error {
 	return nil
 }

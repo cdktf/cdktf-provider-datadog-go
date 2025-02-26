@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetHeatmapDefinitionRequestFormulaStyle) error {
 	return nil
 }

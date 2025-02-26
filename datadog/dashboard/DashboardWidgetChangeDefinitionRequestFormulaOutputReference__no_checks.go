@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetChangeDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetChangeDefinitionRequestFormulaStyle) error {
 	return nil
 }

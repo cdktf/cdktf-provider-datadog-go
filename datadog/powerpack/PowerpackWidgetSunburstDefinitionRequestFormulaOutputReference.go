@@ -45,6 +45,8 @@ type PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetSunburstDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetSunburstDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetSunburstDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetSunburstDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetSunburstDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReferenc
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

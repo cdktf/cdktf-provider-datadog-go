@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGeomapDefinitionRequestFormulaStyle) error {
 	return nil
 }

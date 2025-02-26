@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionStyleOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionStyleOutputReference) validateSetScalingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionStyleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

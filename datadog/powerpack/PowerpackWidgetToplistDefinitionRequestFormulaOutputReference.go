@@ -45,6 +45,8 @@ type PowerpackWidgetToplistDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetToplistDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetToplistDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetToplistDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetToplistDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetToplistDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetToplistDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

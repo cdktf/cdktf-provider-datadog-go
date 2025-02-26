@@ -45,6 +45,8 @@ type PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference interface 
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetQueryValueDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetQueryValueDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetQueryValueDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetQueryValueDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetQueryValueDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetQueryValueDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetQueryValueDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

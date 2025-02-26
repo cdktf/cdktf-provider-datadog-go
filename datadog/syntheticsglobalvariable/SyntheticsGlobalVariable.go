@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 type SyntheticsGlobalVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type SyntheticsGlobalVariable interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsFido() interface{}
+	SetIsFido(val interface{})
+	IsFidoInput() interface{}
 	IsTotp() interface{}
 	SetIsTotp(val interface{})
 	IsTotpInput() interface{}
@@ -139,6 +142,7 @@ type SyntheticsGlobalVariable interface {
 	PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions)
 	ResetDescription()
 	ResetId()
+	ResetIsFido()
 	ResetIsTotp()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -149,6 +153,7 @@ type SyntheticsGlobalVariable interface {
 	ResetRestrictedRoles()
 	ResetSecure()
 	ResetTags()
+	ResetValue()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -282,6 +287,26 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) IsFido() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isFido",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) IsFidoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isFidoInput",
 		&returns,
 	)
 	return returns
@@ -548,7 +573,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -566,7 +591,7 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable_Override(s SyntheticsGlobalVariable, scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
@@ -633,6 +658,17 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetIsFido(val interface{}) {
+	if err := j.validateSetIsFidoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isFido",
 		val,
 	)
 }
@@ -1135,6 +1171,14 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetIsFido() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsFido",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) ResetIsTotp() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1195,6 +1239,14 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetValue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValue",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,8 @@ type PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() PowerpackWidgetTreemapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *PowerpackWidgetTreemapDefinitionRequestFormulaLimit
+	NumberFormat() PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat
 	Style() PowerpackWidgetTreemapDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *PowerpackWidgetTreemapDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetTreemapDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetTreemapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) NumberFormat() PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) NumberFormatInput() *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat {
+	var returns *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) PutNumberFormat(value *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat) {
+	if err := p.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) PutStyle(value *PowerpackWidgetTreemapDefinitionRequestFormulaStyle) {
 	if err := p.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		p,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

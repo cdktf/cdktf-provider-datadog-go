@@ -45,6 +45,8 @@ type DashboardWidgetTreemapDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetTreemapDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetTreemapDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetTreemapDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetTreemapDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetTreemapDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetTreemapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetTreemapDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

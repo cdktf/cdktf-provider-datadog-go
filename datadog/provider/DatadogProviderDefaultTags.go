@@ -5,9 +5,9 @@ package provider
 
 
 type DatadogProviderDefaultTags struct {
-	// [Experimental - Monitors only] Resource tags to be applied by default across all resources.
+	// [Experimental - Monitors and Logs Pipelines only] Resource tags to be applied by default across all resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs#tags DatadogProvider#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs#tags DatadogProvider#tags}
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

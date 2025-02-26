@@ -7,27 +7,27 @@ package logsarchive
 type LogsArchiveS3Archive struct {
 	// Your AWS account id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of your s3 bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Your AWS role name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
 	// The AWS KMS encryption key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
 	EncryptionKey *string `field:"optional" json:"encryptionKey" yaml:"encryptionKey"`
 	// The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
 	EncryptionType *string `field:"optional" json:"encryptionType" yaml:"encryptionType"`
 	// Path where the archive is stored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/logs_archive#path LogsArchive#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/logs_archive#path LogsArchive#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

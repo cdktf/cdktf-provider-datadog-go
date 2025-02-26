@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetChangeDefinitionRequestFormulaStyle) error {
 	return nil
 }

@@ -135,6 +135,17 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *DashboardWidgetGeomapDefinitionRequestFormulaStyle) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

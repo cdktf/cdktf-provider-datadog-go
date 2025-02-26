@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetTreemapDefinitionRequestFormulaStyle) error {
 	return nil
 }

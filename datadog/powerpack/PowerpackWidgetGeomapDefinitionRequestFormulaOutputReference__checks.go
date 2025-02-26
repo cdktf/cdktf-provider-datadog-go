@@ -135,6 +135,17 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetGeomapDefinitionRequestFormulaStyle) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

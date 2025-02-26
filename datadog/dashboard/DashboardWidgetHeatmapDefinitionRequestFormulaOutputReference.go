@@ -45,6 +45,8 @@ type DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference interface {
 	SetInternalValue(val interface{})
 	Limit() DashboardWidgetHeatmapDefinitionRequestFormulaLimitOutputReference
 	LimitInput() *DashboardWidgetHeatmapDefinitionRequestFormulaLimit
+	NumberFormat() DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference
+	NumberFormatInput() *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat
 	Style() DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference
 	StyleInput() *DashboardWidgetHeatmapDefinitionRequestFormulaStyle
 	// Experimental.
@@ -81,11 +83,13 @@ type DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetHeatmapDefinitionRequestFormulaLimit)
+	PutNumberFormat(value *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetHeatmapDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
 	ResetConditionalFormats()
 	ResetLimit()
+	ResetNumberFormat()
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) NumberFormat() DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference {
+	var returns DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference
+	_jsii_.Get(
+		j,
+		"numberFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) NumberFormatInput() *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat {
+	var returns *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat
+	_jsii_.Get(
+		j,
+		"numberFormatInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) PutNumberFormat(value *DashboardWidgetHeatmapDefinitionRequestFormulaNumberFormat) {
+	if err := d.validatePutNumberFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNumberFormat",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) PutStyle(value *DashboardWidgetHeatmapDefinitionRequestFormulaStyle) {
 	if err := d.validatePutStyleParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaOutputReference) ResetNumberFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNumberFormat",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user datadog_user}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user datadog_user}.
 type DataDatadogUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,10 +23,12 @@ type DataDatadogUser interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Disabled() cdktf.IResolvable
 	Email() *string
 	ExactMatch() interface{}
 	SetExactMatch(val interface{})
@@ -42,6 +44,8 @@ type DataDatadogUser interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Handle() *string
+	Icon() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -49,6 +53,8 @@ type DataDatadogUser interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MfaEnabled() cdktf.IResolvable
+	ModifiedAt() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -58,12 +64,16 @@ type DataDatadogUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceAccount() cdktf.IResolvable
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Title() *string
+	Verified() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -143,11 +153,31 @@ func (j *jsiiProxy_DataDatadogUser) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUser) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) Disabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disabled",
 		&returns,
 	)
 	return returns
@@ -233,6 +263,26 @@ func (j *jsiiProxy_DataDatadogUser) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUser) Handle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"handle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) Icon() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"icon",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUser) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -258,6 +308,26 @@ func (j *jsiiProxy_DataDatadogUser) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) MfaEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"mfaEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -303,6 +373,26 @@ func (j *jsiiProxy_DataDatadogUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUser) ServiceAccount() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -333,8 +423,28 @@ func (j *jsiiProxy_DataDatadogUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogUser) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user datadog_user} Data Source.
+func (j *jsiiProxy_DataDatadogUser) Verified() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"verified",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataDatadogUserConfig) DataDatadogUser {
 	_init_.Initialize()
 
@@ -352,7 +462,7 @@ func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser_Override(d DataDatadogUser, scope constructs.Construct, id *string, config *DataDatadogUserConfig) {
 	_init_.Initialize()
 

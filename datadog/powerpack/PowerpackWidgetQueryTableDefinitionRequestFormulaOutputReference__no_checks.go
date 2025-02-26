@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutNumberFormatParameters(value *PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutStyleParameters(value *PowerpackWidgetQueryTableDefinitionRequestFormulaStyle) error {
 	return nil
 }
