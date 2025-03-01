@@ -12284,10 +12284,72 @@ func init() {
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQuery)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupBy",
+		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupBy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByList",
+		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupByList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference",
+		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "facet", GoGetter: "Facet"},
+			_jsii_.MemberProperty{JsiiProperty: "facetInput", GoGetter: "FacetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "clusteringPatternFieldPath", GoGetter: "ClusteringPatternFieldPath"},
+			_jsii_.MemberProperty{JsiiProperty: "clusteringPatternFieldPathInput", GoGetter: "ClusteringPatternFieldPathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -12306,15 +12368,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupBy", GoGetter: "GroupBy"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByInput", GoGetter: "GroupByInput"},
 			_jsii_.MemberProperty{JsiiProperty: "indexes", GoGetter: "Indexes"},
 			_jsii_.MemberProperty{JsiiProperty: "indexesInput", GoGetter: "IndexesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putGroupBy", GoMethod: "PutGroupBy"},
 			_jsii_.MemberMethod{JsiiMethod: "putSort", GoMethod: "PutSort"},
 			_jsii_.MemberProperty{JsiiProperty: "queryString", GoGetter: "QueryString"},
 			_jsii_.MemberProperty{JsiiProperty: "queryStringInput", GoGetter: "QueryStringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClusteringPatternFieldPath", GoMethod: "ResetClusteringPatternFieldPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventSize", GoMethod: "ResetEventSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIndexes", GoMethod: "ResetIndexes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryString", GoMethod: "ResetQueryString"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSort", GoMethod: "ResetSort"},
@@ -13387,6 +13454,48 @@ func init() {
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions",
+		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference",
+		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTrendType", GoMethod: "ResetTrendType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYScale", GoMethod: "ResetYScale"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "trendType", GoGetter: "TrendType"},
+			_jsii_.MemberProperty{JsiiProperty: "trendTypeInput", GoGetter: "TrendTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yScale", GoGetter: "YScale"},
+			_jsii_.MemberProperty{JsiiProperty: "yScaleInput", GoGetter: "YScaleInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
@@ -13744,6 +13853,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cellDisplayMode", GoGetter: "CellDisplayMode"},
 			_jsii_.MemberProperty{JsiiProperty: "cellDisplayModeInput", GoGetter: "CellDisplayModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cellDisplayModeOptions", GoGetter: "CellDisplayModeOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cellDisplayModeOptionsInput", GoGetter: "CellDisplayModeOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -13769,12 +13880,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "limitInput", GoGetter: "LimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "numberFormat", GoGetter: "NumberFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "numberFormatInput", GoGetter: "NumberFormatInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCellDisplayModeOptions", GoMethod: "PutCellDisplayModeOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putConditionalFormats", GoMethod: "PutConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimit", GoMethod: "PutLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "putNumberFormat", GoMethod: "PutNumberFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "putStyle", GoMethod: "PutStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayMode", GoMethod: "ResetCellDisplayMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCellDisplayModeOptions", GoMethod: "ResetCellDisplayModeOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditionalFormats", GoMethod: "ResetConditionalFormats"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimit", GoMethod: "ResetLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNumberFormat", GoMethod: "ResetNumberFormat"},

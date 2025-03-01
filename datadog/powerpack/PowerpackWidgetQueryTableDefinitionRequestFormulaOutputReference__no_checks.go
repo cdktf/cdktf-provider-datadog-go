@@ -47,6 +47,10 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutCellDisplayModeOptionsParameters(value *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutConditionalFormatsParameters(value interface{}) error {
 	return nil
 }

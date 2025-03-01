@@ -19,6 +19,8 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefiniti
 	CellDisplayMode() *string
 	SetCellDisplayMode(val *string)
 	CellDisplayModeInput() *string
+	CellDisplayModeOptions() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	CellDisplayModeOptionsInput() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,12 +83,14 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefiniti
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCellDisplayModeOptions(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions)
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaLimit)
 	PutNumberFormat(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
+	ResetCellDisplayModeOptions()
 	ResetConditionalFormats()
 	ResetLimit()
 	ResetNumberFormat()
@@ -141,6 +145,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	_jsii_.Get(
 		j,
 		"cellDisplayModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptions() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference {
+	var returns DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptionsInput() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions {
+	var returns *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +642,17 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaOutputReference) PutCellDisplayModeOptions(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions) {
+	if err := d.validatePutCellDisplayModeOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCellDisplayModeOptions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaOutputReference) PutConditionalFormats(value interface{}) {
 	if err := d.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -674,6 +709,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQuer
 	_jsii_.InvokeVoid(
 		d,
 		"resetCellDisplayMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaOutputReference) ResetCellDisplayModeOptions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCellDisplayModeOptions",
 		nil, // no parameters
 	)
 }

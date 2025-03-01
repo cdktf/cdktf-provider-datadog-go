@@ -13,6 +13,9 @@ import (
 
 type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	cdktf.ComplexObject
+	ClusteringPatternFieldPath() *string
+	SetClusteringPatternFieldPath(val *string)
+	ClusteringPatternFieldPathInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,6 +39,8 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	EventSizeInput() *string
 	// Experimental.
 	Fqn() *string
+	GroupBy() DashboardWidgetListStreamDefinitionRequestQueryGroupByList
+	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
 	IndexesInput() *[]*string
@@ -81,8 +86,11 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGroupBy(value interface{})
 	PutSort(value *DashboardWidgetListStreamDefinitionRequestQuerySort)
+	ResetClusteringPatternFieldPath()
 	ResetEventSize()
+	ResetGroupBy()
 	ResetIndexes()
 	ResetQueryString()
 	ResetSort()
@@ -100,6 +108,26 @@ type DashboardWidgetListStreamDefinitionRequestQueryOutputReference interface {
 // The jsii proxy struct for DashboardWidgetListStreamDefinitionRequestQueryOutputReference
 type jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ClusteringPatternFieldPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusteringPatternFieldPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ClusteringPatternFieldPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusteringPatternFieldPathInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -177,6 +205,26 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) GroupBy() DashboardWidgetListStreamDefinitionRequestQueryGroupByList {
+	var returns DashboardWidgetListStreamDefinitionRequestQueryGroupByList
+	_jsii_.Get(
+		j,
+		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) GroupByInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"groupByInput",
 		&returns,
 	)
 	return returns
@@ -317,6 +365,17 @@ func NewDashboardWidgetListStreamDefinitionRequestQueryOutputReference_Override(
 		"@cdktf/provider-datadog.dashboard.DashboardWidgetListStreamDefinitionRequestQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference)SetClusteringPatternFieldPath(val *string) {
+	if err := j.validateSetClusteringPatternFieldPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusteringPatternFieldPath",
+		val,
 	)
 }
 
@@ -616,6 +675,17 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) PutGroupBy(value interface{}) {
+	if err := d.validatePutGroupByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGroupBy",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) PutSort(value *DashboardWidgetListStreamDefinitionRequestQuerySort) {
 	if err := d.validatePutSortParameters(value); err != nil {
 		panic(err)
@@ -627,10 +697,26 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReferenc
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetClusteringPatternFieldPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusteringPatternFieldPath",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetEventSize() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEventSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestQueryOutputReference) ResetGroupBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupBy",
 		nil, // no parameters
 	)
 }

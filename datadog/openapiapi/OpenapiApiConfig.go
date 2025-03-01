@@ -26,7 +26,7 @@ type OpenapiApiConfig struct {
 	//
 	// Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 	Spec *string `field:"required" json:"spec" yaml:"spec"`
 }
 

@@ -13,6 +13,9 @@ import (
 
 type PowerpackWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	cdktf.ComplexObject
+	ClusteringPatternFieldPath() *string
+	SetClusteringPatternFieldPath(val *string)
+	ClusteringPatternFieldPathInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,6 +39,8 @@ type PowerpackWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	EventSizeInput() *string
 	// Experimental.
 	Fqn() *string
+	GroupBy() PowerpackWidgetListStreamDefinitionRequestQueryGroupByList
+	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
 	IndexesInput() *[]*string
@@ -81,8 +86,11 @@ type PowerpackWidgetListStreamDefinitionRequestQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGroupBy(value interface{})
 	PutSort(value *PowerpackWidgetListStreamDefinitionRequestQuerySort)
+	ResetClusteringPatternFieldPath()
 	ResetEventSize()
+	ResetGroupBy()
 	ResetIndexes()
 	ResetQueryString()
 	ResetSort()
@@ -100,6 +108,26 @@ type PowerpackWidgetListStreamDefinitionRequestQueryOutputReference interface {
 // The jsii proxy struct for PowerpackWidgetListStreamDefinitionRequestQueryOutputReference
 type jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ClusteringPatternFieldPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusteringPatternFieldPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ClusteringPatternFieldPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusteringPatternFieldPathInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -177,6 +205,26 @@ func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) GroupBy() PowerpackWidgetListStreamDefinitionRequestQueryGroupByList {
+	var returns PowerpackWidgetListStreamDefinitionRequestQueryGroupByList
+	_jsii_.Get(
+		j,
+		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) GroupByInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"groupByInput",
 		&returns,
 	)
 	return returns
@@ -317,6 +365,17 @@ func NewPowerpackWidgetListStreamDefinitionRequestQueryOutputReference_Override(
 		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference)SetClusteringPatternFieldPath(val *string) {
+	if err := j.validateSetClusteringPatternFieldPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusteringPatternFieldPath",
+		val,
 	)
 }
 
@@ -616,6 +675,17 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReferenc
 	return returns
 }
 
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) PutGroupBy(value interface{}) {
+	if err := p.validatePutGroupByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGroupBy",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) PutSort(value *PowerpackWidgetListStreamDefinitionRequestQuerySort) {
 	if err := p.validatePutSortParameters(value); err != nil {
 		panic(err)
@@ -627,10 +697,26 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReferenc
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ResetClusteringPatternFieldPath() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetClusteringPatternFieldPath",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ResetEventSize() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEventSize",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) ResetGroupBy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupBy",
 		nil, // no parameters
 	)
 }

@@ -19,6 +19,8 @@ type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutpu
 	CellDisplayMode() *string
 	SetCellDisplayMode(val *string)
 	CellDisplayModeInput() *string
+	CellDisplayModeOptions() DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	CellDisplayModeOptionsInput() *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,12 +83,14 @@ type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutpu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCellDisplayModeOptions(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions)
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit)
 	PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
+	ResetCellDisplayModeOptions()
 	ResetConditionalFormats()
 	ResetLimit()
 	ResetNumberFormat()
@@ -141,6 +145,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	_jsii_.Get(
 		j,
 		"cellDisplayModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptions() DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptionsInput() *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions {
+	var returns *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +642,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) PutCellDisplayModeOptions(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions) {
+	if err := d.validatePutCellDisplayModeOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCellDisplayModeOptions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) PutConditionalFormats(value interface{}) {
 	if err := d.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -674,6 +709,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	_jsii_.InvokeVoid(
 		d,
 		"resetCellDisplayMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) ResetCellDisplayModeOptions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCellDisplayModeOptions",
 		nil, // no parameters
 	)
 }

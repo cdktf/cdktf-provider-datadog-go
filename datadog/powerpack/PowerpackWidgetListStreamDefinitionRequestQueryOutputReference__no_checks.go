@@ -47,11 +47,19 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReferenc
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) validatePutSortParameters(value *PowerpackWidgetListStreamDefinitionRequestQuerySort) error {
 	return nil
 }
 
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference) validateSetClusteringPatternFieldPathParameters(val *string) error {
 	return nil
 }
 

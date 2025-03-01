@@ -19,6 +19,8 @@ type PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference interface 
 	CellDisplayMode() *string
 	SetCellDisplayMode(val *string)
 	CellDisplayModeInput() *string
+	CellDisplayModeOptions() PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	CellDisplayModeOptionsInput() *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,12 +83,14 @@ type PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCellDisplayModeOptions(value *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions)
 	PutConditionalFormats(value interface{})
 	PutLimit(value *PowerpackWidgetQueryTableDefinitionRequestFormulaLimit)
 	PutNumberFormat(value *PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat)
 	PutStyle(value *PowerpackWidgetQueryTableDefinitionRequestFormulaStyle)
 	ResetAlias()
 	ResetCellDisplayMode()
+	ResetCellDisplayModeOptions()
 	ResetConditionalFormats()
 	ResetLimit()
 	ResetNumberFormat()
@@ -141,6 +145,26 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	_jsii_.Get(
 		j,
 		"cellDisplayModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptions() PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference {
+	var returns PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) CellDisplayModeOptionsInput() *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions {
+	var returns *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions
+	_jsii_.Get(
+		j,
+		"cellDisplayModeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +642,17 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	return returns
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) PutCellDisplayModeOptions(value *PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions) {
+	if err := p.validatePutCellDisplayModeOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCellDisplayModeOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) PutConditionalFormats(value interface{}) {
 	if err := p.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -674,6 +709,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputRefere
 	_jsii_.InvokeVoid(
 		p,
 		"resetCellDisplayMode",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference) ResetCellDisplayModeOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCellDisplayModeOptions",
 		nil, // no parameters
 	)
 }

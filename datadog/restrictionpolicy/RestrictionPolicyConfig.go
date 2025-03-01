@@ -24,13 +24,19 @@ type RestrictionPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier for the resource, formatted as resource_type:resource_id.
 	//
-	// Note: Dashboards support is in private beta. Reach out to your Datadog contact or support to enable this.
+	// Resources to define `resource_type` :
+	// * [List of supported resources](https://docs.datadoghq.com/account_management/rbac/granular_access)
+	// * [Resource type definition](https://docs.datadoghq.com/api/latest/restriction-policies/#supported-resources)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+	// Restrictions :
+	// * Dashboards : support is in private beta. Reach out to your Datadog contact or support to enable this.
+	// * Monitors : Management of restriction policy through terraform is currently not available
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// bindings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 	Bindings interface{} `field:"optional" json:"bindings" yaml:"bindings"`
 }
 

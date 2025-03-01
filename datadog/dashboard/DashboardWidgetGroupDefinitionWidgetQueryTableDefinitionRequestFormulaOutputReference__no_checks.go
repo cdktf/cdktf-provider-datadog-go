@@ -47,6 +47,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionReque
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutCellDisplayModeOptionsParameters(value *DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaOutputReference) validatePutConditionalFormatsParameters(value interface{}) error {
 	return nil
 }

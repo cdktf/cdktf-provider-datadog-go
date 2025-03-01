@@ -1,0 +1,15 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package actionconnection
+
+
+type ActionConnectionHttpTokenAuthHeader struct {
+	// Header name.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/action_connection#name ActionConnection#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/action_connection#value ActionConnection#value}.
+	Value *string `field:"optional" json:"value" yaml:"value"`
+}
+
