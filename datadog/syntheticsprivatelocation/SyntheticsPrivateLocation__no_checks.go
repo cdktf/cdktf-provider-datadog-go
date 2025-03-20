@@ -75,7 +75,7 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsPrivateLocation) validatePutMetadataParameters(value *SyntheticsPrivateLocationMetadata) error {
+func (s *jsiiProxy_SyntheticsPrivateLocation) validatePutMetadataParameters(value interface{}) error {
 	return nil
 }
 
@@ -104,10 +104,6 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetCountParameters(val int
 }
 
 func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetIdParameters(val *string) error {
 	return nil
 }
 

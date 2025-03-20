@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
 type SyntheticsPrivateLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,14 +44,12 @@ type SyntheticsPrivateLocation interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Metadata() SyntheticsPrivateLocationMetadataOutputReference
-	MetadataInput() *SyntheticsPrivateLocationMetadata
+	Metadata() SyntheticsPrivateLocationMetadataList
+	MetadataInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -119,9 +117,8 @@ type SyntheticsPrivateLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMetadata(value *SyntheticsPrivateLocationMetadata)
+	PutMetadata(value interface{})
 	ResetDescription()
-	ResetId()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -265,16 +262,6 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocation) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SyntheticsPrivateLocation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -285,8 +272,8 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocation) Metadata() SyntheticsPrivateLocationMetadataOutputReference {
-	var returns SyntheticsPrivateLocationMetadataOutputReference
+func (j *jsiiProxy_SyntheticsPrivateLocation) Metadata() SyntheticsPrivateLocationMetadataList {
+	var returns SyntheticsPrivateLocationMetadataList
 	_jsii_.Get(
 		j,
 		"metadata",
@@ -295,8 +282,8 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) Metadata() SyntheticsPrivateLocati
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocation) MetadataInput() *SyntheticsPrivateLocationMetadata {
-	var returns *SyntheticsPrivateLocationMetadata
+func (j *jsiiProxy_SyntheticsPrivateLocation) MetadataInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"metadataInput",
@@ -416,7 +403,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation {
 	_init_.Initialize()
 
@@ -434,7 +421,7 @@ func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation_Override(s SyntheticsPrivateLocation, scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) {
 	_init_.Initialize()
 
@@ -490,17 +477,6 @@ func (j *jsiiProxy_SyntheticsPrivateLocation)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SyntheticsPrivateLocation)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -910,7 +886,7 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (s *jsiiProxy_SyntheticsPrivateLocation) PutMetadata(value *SyntheticsPrivateLocationMetadata) {
+func (s *jsiiProxy_SyntheticsPrivateLocation) PutMetadata(value interface{}) {
 	if err := s.validatePutMetadataParameters(value); err != nil {
 		panic(err)
 	}
@@ -925,14 +901,6 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SyntheticsPrivateLocation) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

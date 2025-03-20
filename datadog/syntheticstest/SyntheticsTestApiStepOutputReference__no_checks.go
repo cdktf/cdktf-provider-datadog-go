@@ -99,6 +99,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetExitIfSuccee
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetExtractedValuesFromScriptParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 type SyntheticsGlobalVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,8 +43,6 @@ type SyntheticsGlobalVariable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsFido() interface{}
 	SetIsFido(val interface{})
 	IsFidoInput() interface{}
@@ -60,13 +58,13 @@ type SyntheticsGlobalVariable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Options() SyntheticsGlobalVariableOptionsOutputReference
-	OptionsInput() *SyntheticsGlobalVariableOptions
+	Options() SyntheticsGlobalVariableOptionsList
+	OptionsInput() interface{}
 	ParseTestId() *string
 	SetParseTestId(val *string)
 	ParseTestIdInput() *string
-	ParseTestOptions() SyntheticsGlobalVariableParseTestOptionsOutputReference
-	ParseTestOptionsInput() *SyntheticsGlobalVariableParseTestOptions
+	ParseTestOptions() SyntheticsGlobalVariableParseTestOptionsList
+	ParseTestOptionsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -138,10 +136,9 @@ type SyntheticsGlobalVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOptions(value *SyntheticsGlobalVariableOptions)
-	PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions)
+	PutOptions(value interface{})
+	PutParseTestOptions(value interface{})
 	ResetDescription()
-	ResetId()
 	ResetIsFido()
 	ResetIsTotp()
 	ResetOptions()
@@ -282,16 +279,6 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SyntheticsGlobalVariable) IsFido() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -372,8 +359,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) Options() SyntheticsGlobalVariableOptionsOutputReference {
-	var returns SyntheticsGlobalVariableOptionsOutputReference
+func (j *jsiiProxy_SyntheticsGlobalVariable) Options() SyntheticsGlobalVariableOptionsList {
+	var returns SyntheticsGlobalVariableOptionsList
 	_jsii_.Get(
 		j,
 		"options",
@@ -382,8 +369,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) Options() SyntheticsGlobalVariableO
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) OptionsInput() *SyntheticsGlobalVariableOptions {
-	var returns *SyntheticsGlobalVariableOptions
+func (j *jsiiProxy_SyntheticsGlobalVariable) OptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"optionsInput",
@@ -412,8 +399,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptions() SyntheticsGlobalVariableParseTestOptionsOutputReference {
-	var returns SyntheticsGlobalVariableParseTestOptionsOutputReference
+func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptions() SyntheticsGlobalVariableParseTestOptionsList {
+	var returns SyntheticsGlobalVariableParseTestOptionsList
 	_jsii_.Get(
 		j,
 		"parseTestOptions",
@@ -422,8 +409,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptions() SyntheticsGlobal
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptionsInput() *SyntheticsGlobalVariableParseTestOptions {
-	var returns *SyntheticsGlobalVariableParseTestOptions
+func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"parseTestOptionsInput",
@@ -573,7 +560,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -591,7 +578,7 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable_Override(s SyntheticsGlobalVariable, scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
@@ -647,17 +634,6 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SyntheticsGlobalVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1133,7 +1109,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) OverrideLogicalId(newLogicalId *str
 	)
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) PutOptions(value *SyntheticsGlobalVariableOptions) {
+func (s *jsiiProxy_SyntheticsGlobalVariable) PutOptions(value interface{}) {
 	if err := s.validatePutOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1120,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) PutOptions(value *SyntheticsGlobalV
 	)
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) PutParseTestOptions(value *SyntheticsGlobalVariableParseTestOptions) {
+func (s *jsiiProxy_SyntheticsGlobalVariable) PutParseTestOptions(value interface{}) {
 	if err := s.validatePutParseTestOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1159,14 +1135,6 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SyntheticsGlobalVariable) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

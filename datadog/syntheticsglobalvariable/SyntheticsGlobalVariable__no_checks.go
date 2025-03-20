@@ -75,11 +75,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutOptionsParameters(value *SyntheticsGlobalVariableOptions) error {
+func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutOptionsParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutParseTestOptionsParameters(value *SyntheticsGlobalVariableParseTestOptions) error {
+func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutParseTestOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -108,10 +108,6 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetCountParameters(val inte
 }
 
 func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetIdParameters(val *string) error {
 	return nil
 }
 

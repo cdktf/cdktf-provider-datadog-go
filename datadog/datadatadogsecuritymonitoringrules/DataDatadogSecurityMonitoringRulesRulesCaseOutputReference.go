@@ -13,6 +13,7 @@ import (
 
 type DataDatadogSecurityMonitoringRulesRulesCaseOutputReference interface {
 	cdktf.ComplexObject
+	Action() DataDatadogSecurityMonitoringRulesRulesCaseActionList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,6 +82,16 @@ type DataDatadogSecurityMonitoringRulesRulesCaseOutputReference interface {
 // The jsii proxy struct for DataDatadogSecurityMonitoringRulesRulesCaseOutputReference
 type jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCaseOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCaseOutputReference) Action() DataDatadogSecurityMonitoringRulesRulesCaseActionList {
+	var returns DataDatadogSecurityMonitoringRulesRulesCaseActionList
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCaseOutputReference) ComplexObjectIndex() interface{} {

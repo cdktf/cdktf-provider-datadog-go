@@ -24,19 +24,19 @@ type CsmThreatsAgentRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Indicates Whether the Agent rule is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The SECL expression of the Agent rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// The name of the Agent rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A description for the Agent rule. Defaults to `""`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

@@ -13,6 +13,8 @@ import (
 
 type SecurityMonitoringRuleCaseOutputReference interface {
 	cdktf.ComplexObject
+	Action() SecurityMonitoringRuleCaseActionList
+	ActionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +78,8 @@ type SecurityMonitoringRuleCaseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAction(value interface{})
+	ResetAction()
 	ResetCondition()
 	ResetName()
 	ResetNotifications()
@@ -92,6 +96,26 @@ type SecurityMonitoringRuleCaseOutputReference interface {
 // The jsii proxy struct for SecurityMonitoringRuleCaseOutputReference
 type jsiiProxy_SecurityMonitoringRuleCaseOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) Action() SecurityMonitoringRuleCaseActionList {
+	var returns SecurityMonitoringRuleCaseActionList
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) ActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) ComplexObjectIndex() interface{} {
@@ -555,6 +579,25 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) PutAction(value interface{}) {
+	if err := s.validatePutActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) ResetAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAction",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) ResetCondition() {

@@ -7,7 +7,7 @@ package datadatadogactionconnection
 type DataDatadogActionConnectionHttp struct {
 	// token_auth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
 	TokenAuth *DataDatadogActionConnectionHttpTokenAuth `field:"optional" json:"tokenAuth" yaml:"tokenAuth"`
 }
 

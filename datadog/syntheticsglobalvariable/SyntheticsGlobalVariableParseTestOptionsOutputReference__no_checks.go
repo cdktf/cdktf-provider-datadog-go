@@ -47,7 +47,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validatePutParserParameters(value *SyntheticsGlobalVariableParseTestOptionsParser) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validatePutParserParameters(value interface{}) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validateSetInternalValueParameters(val *SyntheticsGlobalVariableParseTestOptions) error {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) vali
 	return nil
 }
 
-func validateNewSyntheticsGlobalVariableParseTestOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsGlobalVariableParseTestOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

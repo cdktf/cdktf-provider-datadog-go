@@ -354,6 +354,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetExitIfSuccee
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetExtractedValuesFromScriptParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

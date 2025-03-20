@@ -33,8 +33,8 @@ type SyntheticsGlobalVariableOptionsTotpParametersOutputReference interface {
 	DigitsInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SyntheticsGlobalVariableOptionsTotpParameters
-	SetInternalValue(val *SyntheticsGlobalVariableOptionsTotpParameters)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RefreshInterval() *float64
 	SetRefreshInterval(val *float64)
 	RefreshIntervalInput() *float64
@@ -145,8 +145,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) InternalValue() *SyntheticsGlobalVariableOptionsTotpParameters {
-	var returns *SyntheticsGlobalVariableOptionsTotpParameters
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -196,29 +196,29 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)
 }
 
 
-func NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableOptionsTotpParametersOutputReference {
+func NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableOptionsTotpParametersOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSyntheticsGlobalVariableOptionsTotpParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSyntheticsGlobalVariableOptionsTotpParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference_Override(s SyntheticsGlobalVariableOptionsTotpParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference_Override(s SyntheticsGlobalVariableOptionsTotpParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -256,7 +256,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)SetInternalValue(val *SyntheticsGlobalVariableOptionsTotpParameters) {
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

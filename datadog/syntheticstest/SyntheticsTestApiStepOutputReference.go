@@ -38,6 +38,9 @@ type SyntheticsTestApiStepOutputReference interface {
 	ExitIfSucceedInput() interface{}
 	ExtractedValue() SyntheticsTestApiStepExtractedValueList
 	ExtractedValueInput() interface{}
+	ExtractedValuesFromScript() *string
+	SetExtractedValuesFromScript(val *string)
+	ExtractedValuesFromScriptInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -119,6 +122,7 @@ type SyntheticsTestApiStepOutputReference interface {
 	ResetAssertion()
 	ResetExitIfSucceed()
 	ResetExtractedValue()
+	ResetExtractedValuesFromScript()
 	ResetIsCritical()
 	ResetRequestBasicauth()
 	ResetRequestClientCertificate()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ExtractedValueInput() i
 	_jsii_.Get(
 		j,
 		"extractedValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ExtractedValuesFromScript() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extractedValuesFromScript",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) ExtractedValuesFromScriptInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extractedValuesFromScriptInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +648,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetExitIfSucceed(val int
 	_jsii_.Set(
 		j,
 		"exitIfSucceed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference)SetExtractedValuesFromScript(val *string) {
+	if err := j.validateSetExtractedValuesFromScriptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extractedValuesFromScript",
 		val,
 	)
 }
@@ -1040,6 +1075,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetExtractedValue() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetExtractedValue",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepOutputReference) ResetExtractedValuesFromScript() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExtractedValuesFromScript",
 		nil, // no parameters
 	)
 }

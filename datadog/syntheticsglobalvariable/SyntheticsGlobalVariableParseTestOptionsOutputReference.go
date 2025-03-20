@@ -33,13 +33,13 @@ type SyntheticsGlobalVariableParseTestOptionsOutputReference interface {
 	FieldInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SyntheticsGlobalVariableParseTestOptions
-	SetInternalValue(val *SyntheticsGlobalVariableParseTestOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	LocalVariableName() *string
 	SetLocalVariableName(val *string)
 	LocalVariableNameInput() *string
-	Parser() SyntheticsGlobalVariableParseTestOptionsParserOutputReference
-	ParserInput() *SyntheticsGlobalVariableParseTestOptionsParser
+	Parser() SyntheticsGlobalVariableParseTestOptionsParserList
+	ParserInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,7 +75,7 @@ type SyntheticsGlobalVariableParseTestOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParser(value *SyntheticsGlobalVariableParseTestOptionsParser)
+	PutParser(value interface{})
 	ResetField()
 	ResetLocalVariableName()
 	ResetParser()
@@ -154,8 +154,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) InternalValue() *SyntheticsGlobalVariableParseTestOptions {
-	var returns *SyntheticsGlobalVariableParseTestOptions
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Loca
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Parser() SyntheticsGlobalVariableParseTestOptionsParserOutputReference {
-	var returns SyntheticsGlobalVariableParseTestOptionsParserOutputReference
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Parser() SyntheticsGlobalVariableParseTestOptionsParserList {
+	var returns SyntheticsGlobalVariableParseTestOptionsParserList
 	_jsii_.Get(
 		j,
 		"parser",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Pars
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) ParserInput() *SyntheticsGlobalVariableParseTestOptionsParser {
-	var returns *SyntheticsGlobalVariableParseTestOptionsParser
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) ParserInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"parserInput",
@@ -245,29 +245,29 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Type
 }
 
 
-func NewSyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableParseTestOptionsOutputReference {
+func NewSyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableParseTestOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSyntheticsGlobalVariableParseTestOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSyntheticsGlobalVariableParseTestOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSyntheticsGlobalVariableParseTestOptionsOutputReference_Override(s SyntheticsGlobalVariableParseTestOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsGlobalVariableParseTestOptionsOutputReference_Override(s SyntheticsGlobalVariableParseTestOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -305,7 +305,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetFi
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetInternalValue(val *SyntheticsGlobalVariableParseTestOptions) {
+func (j *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +546,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) Inte
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) PutParser(value *SyntheticsGlobalVariableParseTestOptionsParser) {
+func (s *jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference) PutParser(value interface{}) {
 	if err := s.validatePutParserParameters(value); err != nil {
 		panic(err)
 	}

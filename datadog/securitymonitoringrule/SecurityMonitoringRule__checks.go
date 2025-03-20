@@ -554,6 +554,14 @@ func (j *jsiiProxy_SecurityMonitoringRule) validateSetEnabledParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRule) validateSetGroupSignalsByParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRule) validateSetHasExtendedTitleParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

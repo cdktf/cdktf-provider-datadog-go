@@ -24,15 +24,15 @@ type DataDatadogRoleUsersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The role's identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// When true, `filter_keyword` string is exact matched against the user's `name`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
 	ExactMatch interface{} `field:"optional" json:"exactMatch" yaml:"exactMatch"`
 	// Search query, can be user name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 }
 

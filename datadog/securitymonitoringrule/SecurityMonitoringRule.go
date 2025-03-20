@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
 type SecurityMonitoringRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringRuleCaseList
@@ -46,6 +46,9 @@ type SecurityMonitoringRule interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupSignalsBy() *[]*string
+	SetGroupSignalsBy(val *[]*string)
+	GroupSignalsByInput() *[]*string
 	HasExtendedTitle() interface{}
 	SetHasExtendedTitle(val interface{})
 	HasExtendedTitleInput() interface{}
@@ -152,6 +155,7 @@ type SecurityMonitoringRule interface {
 	ResetCase()
 	ResetEnabled()
 	ResetFilter()
+	ResetGroupSignalsBy()
 	ResetHasExtendedTitle()
 	ResetId()
 	ResetOptions()
@@ -318,6 +322,26 @@ func (j *jsiiProxy_SecurityMonitoringRule) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule) GroupSignalsBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupSignalsBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule) GroupSignalsByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupSignalsByInput",
 		&returns,
 	)
 	return returns
@@ -644,7 +668,7 @@ func (j *jsiiProxy_SecurityMonitoringRule) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) SecurityMonitoringRule {
 	_init_.Initialize()
 
@@ -662,7 +686,7 @@ func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule_Override(s SecurityMonitoringRule, scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -718,6 +742,17 @@ func (j *jsiiProxy_SecurityMonitoringRule)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRule)SetGroupSignalsBy(val *[]*string) {
+	if err := j.validateSetGroupSignalsByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupSignalsBy",
 		val,
 	)
 }
@@ -1279,6 +1314,14 @@ func (s *jsiiProxy_SecurityMonitoringRule) ResetFilter() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) ResetGroupSignalsBy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGroupSignalsBy",
 		nil, // no parameters
 	)
 }

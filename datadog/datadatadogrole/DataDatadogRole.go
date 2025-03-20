@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role datadog_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role datadog_role}.
 type DataDatadogRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataDatadogRole) UserCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role datadog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role datadog_role} Data Source.
 func NewDataDatadogRole(scope constructs.Construct, id *string, config *DataDatadogRoleConfig) DataDatadogRole {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataDatadogRole(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/data-sources/role datadog_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/role datadog_role} Data Source.
 func NewDataDatadogRole_Override(d DataDatadogRole, scope constructs.Construct, id *string, config *DataDatadogRoleConfig) {
 	_init_.Initialize()
 

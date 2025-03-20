@@ -47,6 +47,10 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) validateInterpolat
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) validatePutActionParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleCaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -59,7 +59,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateSetInternalValueParameters(val *SyntheticsPrivateLocationMetadata) error {
+func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateSet
 	return nil
 }
 
-func validateNewSyntheticsPrivateLocationMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsPrivateLocationMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -47,7 +47,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateInter
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validatePutTotpParametersParameters(value *SyntheticsGlobalVariableOptionsTotpParameters) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validatePutTotpParametersParameters(value interface{}) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetInternalValueParameters(val *SyntheticsGlobalVariableOptions) error {
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewSyntheticsGlobalVariableOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsGlobalVariableOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

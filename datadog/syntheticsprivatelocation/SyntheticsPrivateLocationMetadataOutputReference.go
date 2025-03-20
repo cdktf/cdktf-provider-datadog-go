@@ -30,8 +30,8 @@ type SyntheticsPrivateLocationMetadataOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SyntheticsPrivateLocationMetadata
-	SetInternalValue(val *SyntheticsPrivateLocationMetadata)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RestrictedRoles() *[]*string
 	SetRestrictedRoles(val *[]*string)
 	RestrictedRolesInput() *[]*string
@@ -123,8 +123,8 @@ func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) InternalValue() *SyntheticsPrivateLocationMetadata {
-	var returns *SyntheticsPrivateLocationMetadata
+func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) TerraformRe
 }
 
 
-func NewSyntheticsPrivateLocationMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsPrivateLocationMetadataOutputReference {
+func NewSyntheticsPrivateLocationMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsPrivateLocationMetadataOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSyntheticsPrivateLocationMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSyntheticsPrivateLocationMetadataOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSyntheticsPrivateLocationMetadataOutputReference_Override(s SyntheticsPrivateLocationMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsPrivateLocationMetadataOutputReference_Override(s SyntheticsPrivateLocationMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -223,7 +223,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference)SetInternalValue(val *SyntheticsPrivateLocationMetadata) {
+func (j *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -33,6 +33,7 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	Filter() DataDatadogSecurityMonitoringRulesRulesFilterList
 	// Experimental.
 	Fqn() *string
+	GroupSignalsBy() *[]*string
 	HasExtendedTitle() cdktf.IResolvable
 	InternalValue() *DataDatadogSecurityMonitoringRulesRules
 	SetInternalValue(val *DataDatadogSecurityMonitoringRulesRules)
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) GroupSignalsBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupSignalsBy",
 		&returns,
 	)
 	return returns

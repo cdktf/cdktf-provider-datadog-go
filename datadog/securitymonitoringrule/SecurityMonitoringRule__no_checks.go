@@ -131,6 +131,10 @@ func (j *jsiiProxy_SecurityMonitoringRule) validateSetEnabledParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRule) validateSetGroupSignalsByParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRule) validateSetHasExtendedTitleParameters(val interface{}) error {
 	return nil
 }

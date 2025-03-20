@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequest struct {
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/dashboard#query Dashboard#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/dashboard#query Dashboard#query}
 	Query interface{} `field:"required" json:"query" yaml:"query"`
 	// The request type for the Topology request ('topology'). Valid values are `topology`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/dashboard#request_type Dashboard#request_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/dashboard#request_type Dashboard#request_type}
 	RequestType *string `field:"required" json:"requestType" yaml:"requestType"`
 }
 

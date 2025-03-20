@@ -7,11 +7,11 @@ package powerpack
 type PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit struct {
 	// canonical block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/powerpack#canonical Powerpack#canonical}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/powerpack#canonical Powerpack#canonical}
 	Canonical *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical `field:"optional" json:"canonical" yaml:"canonical"`
 	// custom block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/powerpack#custom Powerpack#custom}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/powerpack#custom Powerpack#custom}
 	Custom *PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom `field:"optional" json:"custom" yaml:"custom"`
 }
 
