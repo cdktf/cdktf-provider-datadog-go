@@ -24,11 +24,11 @@ type UserRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the role that the user is assigned to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/user_role#role_id UserRole#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/user_role#role_id UserRole#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// The ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/user_role#user_id UserRole#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/user_role#user_id UserRole#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 }
 

@@ -22,9 +22,9 @@ type SoftwareCatalogConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The catalog entity definition.
+	// The catalog entity definition. Entity must be a valid entity YAML/JSON structure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 	Entity *string `field:"required" json:"entity" yaml:"entity"`
 }
 

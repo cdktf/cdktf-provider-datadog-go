@@ -7,7 +7,7 @@ package powerpack
 type PowerpackWidgetSunburstDefinitionRequestStyle struct {
 	// A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/powerpack#palette Powerpack#palette}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/powerpack#palette Powerpack#palette}
 	Palette *string `field:"optional" json:"palette" yaml:"palette"`
 }
 

@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataDatadogSyntheticsLocations) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogSyntheticsLocations) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataDatadogSyntheticsLocations) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

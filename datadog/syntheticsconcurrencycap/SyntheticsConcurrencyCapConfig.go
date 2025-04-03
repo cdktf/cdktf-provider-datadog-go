@@ -24,7 +24,9 @@ type SyntheticsConcurrencyCapConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Value of the on-demand concurrency cap, customizing the number of Synthetic tests run in parallel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
+	// Value must be at least 1.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
 	OnDemandConcurrencyCap *float64 `field:"required" json:"onDemandConcurrencyCap" yaml:"onDemandConcurrencyCap"`
 }
 

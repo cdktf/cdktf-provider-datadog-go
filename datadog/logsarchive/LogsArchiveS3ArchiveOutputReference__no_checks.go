@@ -87,6 +87,10 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetRoleNameParam
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetStorageClassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

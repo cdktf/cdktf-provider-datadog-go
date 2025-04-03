@@ -222,6 +222,14 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetRoleNameParam
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetStorageClassParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

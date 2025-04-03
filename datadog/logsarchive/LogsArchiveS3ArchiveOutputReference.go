@@ -50,6 +50,9 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
+	StorageClass() *string
+	SetStorageClass(val *string)
+	StorageClassInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,6 +88,7 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	ResetEncryptionKey()
 	ResetEncryptionType()
 	ResetPath()
+	ResetStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -270,6 +274,26 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) RoleNameInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) StorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) StorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClassInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,6 +437,17 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetRoleName(val *string) 
 	_jsii_.Set(
 		j,
 		"roleName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetStorageClass(val *string) {
+	if err := j.validateSetStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageClass",
 		val,
 	)
 }
@@ -645,6 +680,14 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetPath() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetStorageClass() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStorageClass",
 		nil, // no parameters
 	)
 }
