@@ -24,15 +24,15 @@ type IntegrationAwsLogCollectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Your AWS Account ID without dashes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A list of services to collect logs from.
 	//
 	// See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
 	Services *[]*string `field:"required" json:"services" yaml:"services"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

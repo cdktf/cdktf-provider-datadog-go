@@ -24,15 +24,15 @@ type TeamMembershipConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the team the team membership is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_membership#team_id TeamMembership#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// The ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_membership#user_id TeamMembership#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// The user's role within the team. Valid values are `admin`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_membership#role TeamMembership#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_membership#role TeamMembership#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 }
 

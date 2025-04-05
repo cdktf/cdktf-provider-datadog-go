@@ -9,11 +9,11 @@ type SyntheticsTestOptionsListMonitorOptions struct {
 	//
 	// Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 	RenotifyInterval *float64 `field:"optional" json:"renotifyInterval" yaml:"renotifyInterval"`
 	// The number of times a monitor renotifies. It can only be set if `renotify_interval` is set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
 	RenotifyOccurrences *float64 `field:"optional" json:"renotifyOccurrences" yaml:"renotifyOccurrences"`
 }
 

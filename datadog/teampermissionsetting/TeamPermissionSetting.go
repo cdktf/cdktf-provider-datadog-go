@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_permission_setting datadog_team_permission_setting}.
 type TeamPermissionSetting interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_TeamPermissionSetting) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) TeamPermissionSetting {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *Te
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting_Override(t TeamPermissionSetting, scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) {
 	_init_.Initialize()
 

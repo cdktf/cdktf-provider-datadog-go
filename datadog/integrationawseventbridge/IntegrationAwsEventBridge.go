@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}.
 type IntegrationAwsEventBridge interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IntegrationAwsEventBridge) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource.
 func NewIntegrationAwsEventBridge(scope constructs.Construct, id *string, config *IntegrationAwsEventBridgeConfig) IntegrationAwsEventBridge {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIntegrationAwsEventBridge(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource.
 func NewIntegrationAwsEventBridge_Override(i IntegrationAwsEventBridge, scope constructs.Construct, id *string, config *IntegrationAwsEventBridgeConfig) {
 	_init_.Initialize()
 
