@@ -30,6 +30,7 @@ type DataDatadogSecurityMonitoringRulesRulesQueryOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataSource() *string
 	DistinctFields() *[]*string
 	// Experimental.
 	Fqn() *string
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesQueryOutputReference) DataSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataSource",
 		&returns,
 	)
 	return returns

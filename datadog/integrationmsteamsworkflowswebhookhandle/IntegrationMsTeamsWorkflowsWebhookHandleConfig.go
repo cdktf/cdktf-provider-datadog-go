@@ -24,11 +24,11 @@ type IntegrationMsTeamsWorkflowsWebhookHandleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Your Microsoft Workflows webhook handle name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Your Microsoft Workflows webhook URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

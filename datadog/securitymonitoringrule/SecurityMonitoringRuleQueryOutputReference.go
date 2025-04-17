@@ -33,6 +33,9 @@ type SecurityMonitoringRuleQueryOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataSource() *string
+	SetDataSource(val *string)
+	DataSourceInput() *string
 	DistinctFields() *[]*string
 	SetDistinctFields(val *[]*string)
 	DistinctFieldsInput() *[]*string
@@ -90,6 +93,7 @@ type SecurityMonitoringRuleQueryOutputReference interface {
 	PutAgentRule(value interface{})
 	ResetAgentRule()
 	ResetAggregation()
+	ResetDataSource()
 	ResetDistinctFields()
 	ResetGroupByFields()
 	ResetMetric()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) DataSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) DataSourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataSourceInput",
 		&returns,
 	)
 	return returns
@@ -397,6 +421,17 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference)SetComplexObjectIs
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference)SetDataSource(val *string) {
+	if err := j.validateSetDataSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataSource",
 		val,
 	)
 }
@@ -709,6 +744,14 @@ func (s *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) ResetAggregation(
 	_jsii_.InvokeVoid(
 		s,
 		"resetAggregation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) ResetDataSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataSource",
 		nil, // no parameters
 	)
 }

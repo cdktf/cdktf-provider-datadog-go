@@ -67,6 +67,10 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateSetMes
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateSetMuteButtonsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateSetNotifiedParameters(val interface{}) error {
 	return nil
 }

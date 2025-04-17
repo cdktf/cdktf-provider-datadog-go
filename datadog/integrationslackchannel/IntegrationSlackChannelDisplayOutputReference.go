@@ -35,6 +35,9 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 	Message() interface{}
 	SetMessage(val interface{})
 	MessageInput() interface{}
+	MuteButtons() interface{}
+	SetMuteButtons(val interface{})
+	MuteButtonsInput() interface{}
 	Notified() interface{}
 	SetNotified(val interface{})
 	NotifiedInput() interface{}
@@ -77,6 +80,7 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMessage()
+	ResetMuteButtons()
 	ResetNotified()
 	ResetSnapshot()
 	ResetTags()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) MessageInput()
 	_jsii_.Get(
 		j,
 		"messageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) MuteButtons() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"muteButtons",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) MuteButtonsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"muteButtonsInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference)SetMessage(val 
 	_jsii_.Set(
 		j,
 		"message",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference)SetMuteButtons(val interface{}) {
+	if err := j.validateSetMuteButtonsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"muteButtons",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) ResetMessage()
 	_jsii_.InvokeVoid(
 		i,
 		"resetMessage",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) ResetMuteButtons() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMuteButtons",
 		nil, // no parameters
 	)
 }

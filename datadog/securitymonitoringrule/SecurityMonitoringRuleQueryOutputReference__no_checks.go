@@ -67,6 +67,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetDataSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetDistinctFieldsParameters(val *[]*string) error {
 	return nil
 }

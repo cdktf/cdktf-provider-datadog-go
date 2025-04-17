@@ -205,6 +205,14 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetDataSourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetDistinctFieldsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
