@@ -127,6 +127,10 @@ func (j *jsiiProxy_ApmRetentionFilter) validateSetRateParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_ApmRetentionFilter) validateSetTraceRateParameters(val *string) error {
+	return nil
+}
+
 func validateNewApmRetentionFilterParameters(scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetRe
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetRequestsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetSubtestPublicIdParameters(val *string) error {
 	return nil
 }

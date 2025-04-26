@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormat struct {
 	// unit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/dashboard#unit Dashboard#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/dashboard#unit Dashboard#unit}
 	Unit *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit `field:"required" json:"unit" yaml:"unit"`
 	// unit_scale block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
 	UnitScale *DashboardWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale `field:"optional" json:"unitScale" yaml:"unitScale"`
 }
 

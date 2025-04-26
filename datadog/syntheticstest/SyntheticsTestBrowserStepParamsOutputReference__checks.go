@@ -292,6 +292,14 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetRe
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetRequestsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetSubtestPublicIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -24,15 +24,15 @@ type ActionConnectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/action_connection#name ActionConnection#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/action_connection#name ActionConnection#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// aws block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/action_connection#aws ActionConnection#aws}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/action_connection#aws ActionConnection#aws}
 	Aws *ActionConnectionAws `field:"optional" json:"aws" yaml:"aws"`
 	// http block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/action_connection#http ActionConnection#http}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/action_connection#http ActionConnection#http}
 	Http *ActionConnectionHttp `field:"optional" json:"http" yaml:"http"`
 }
 

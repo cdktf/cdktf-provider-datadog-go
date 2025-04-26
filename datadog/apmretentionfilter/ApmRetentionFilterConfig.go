@@ -24,23 +24,31 @@ type ApmRetentionFilterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// the status of the retention filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 	FilterType *string `field:"required" json:"filterType" yaml:"filterType"`
 	// The name of the retention filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+	// Sample rate to apply to spans going through this retention filter as a string;
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+	// a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 	Rate *string `field:"required" json:"rate" yaml:"rate"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
 	Filter *ApmRetentionFilterFilter `field:"optional" json:"filter" yaml:"filter"`
+	// Sample rate to apply to traces with spans going through this retention filter as a string;
+	//
+	// a value of 1.0 keeps all traces matching the query. Value must be between 0.00 and 1.00.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
+	TraceRate *string `field:"optional" json:"traceRate" yaml:"traceRate"`
 }
 

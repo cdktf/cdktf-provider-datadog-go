@@ -70,6 +70,9 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	Request() *string
 	SetRequest(val *string)
 	RequestInput() *string
+	Requests() *string
+	SetRequests(val *string)
+	RequestsInput() *string
 	SubtestPublicId() *string
 	SetSubtestPublicId(val *string)
 	SubtestPublicIdInput() *string
@@ -134,6 +137,7 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	ResetModifiers()
 	ResetPlayingTabId()
 	ResetRequest()
+	ResetRequests()
 	ResetSubtestPublicId()
 	ResetValue()
 	ResetVariable()
@@ -460,6 +464,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) RequestInput(
 	_jsii_.Get(
 		j,
 		"requestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Requests() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) RequestsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestsInput",
 		&returns,
 	)
 	return returns
@@ -794,6 +818,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetRequest(val
 	_jsii_.Set(
 		j,
 		"request",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetRequests(val *string) {
+	if err := j.validateSetRequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requests",
 		val,
 	)
 }
@@ -1183,6 +1218,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetRequest(
 	_jsii_.InvokeVoid(
 		s,
 		"resetRequest",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetRequests() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequests",
 		nil, // no parameters
 	)
 }

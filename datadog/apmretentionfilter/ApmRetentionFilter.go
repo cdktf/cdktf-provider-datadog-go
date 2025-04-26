@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
 type ApmRetentionFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type ApmRetentionFilter interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TraceRate() *string
+	SetTraceRate(val *string)
+	TraceRateInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -124,6 +127,7 @@ type ApmRetentionFilter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTraceRate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -412,8 +416,28 @@ func (j *jsiiProxy_ApmRetentionFilter) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApmRetentionFilter) TraceRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"traceRate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
+func (j *jsiiProxy_ApmRetentionFilter) TraceRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"traceRateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
 func NewApmRetentionFilter(scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) ApmRetentionFilter {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewApmRetentionFilter(scope constructs.Construct, id *string, config *ApmRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
 func NewApmRetentionFilter_Override(a ApmRetentionFilter, scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) {
 	_init_.Initialize()
 
@@ -550,6 +574,17 @@ func (j *jsiiProxy_ApmRetentionFilter)SetRate(val *string) {
 	_jsii_.Set(
 		j,
 		"rate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApmRetentionFilter)SetTraceRate(val *string) {
+	if err := j.validateSetTraceRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"traceRate",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (a *jsiiProxy_ApmRetentionFilter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApmRetentionFilter) ResetTraceRate() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTraceRate",
 		nil, // no parameters
 	)
 }

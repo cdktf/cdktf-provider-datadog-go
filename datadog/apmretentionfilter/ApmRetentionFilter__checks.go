@@ -446,6 +446,14 @@ func (j *jsiiProxy_ApmRetentionFilter) validateSetRateParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_ApmRetentionFilter) validateSetTraceRateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewApmRetentionFilterParameters(scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
