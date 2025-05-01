@@ -28,6 +28,9 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EscalationMessage() *string
+	SetEscalationMessage(val *string)
+	EscalationMessageInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SyntheticsTestOptionsListMonitorOptions
@@ -70,6 +73,7 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEscalationMessage()
 	ResetRenotifyInterval()
 	ResetRenotifyOccurrences()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) EscalationMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) EscalationMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationMessageInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetEscalationMessage(val *string) {
+	if err := j.validateSetEscalationMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"escalationMessage",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) ResetEscalationMessage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEscalationMessage",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) ResetRenotifyInterval() {

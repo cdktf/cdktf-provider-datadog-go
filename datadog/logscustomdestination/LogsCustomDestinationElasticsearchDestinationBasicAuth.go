@@ -7,11 +7,11 @@ package logscustomdestination
 type LogsCustomDestinationElasticsearchDestinationBasicAuth struct {
 	// The password of the authentication. This field is not returned by the API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// The username of the authentication. This field is not returned by the API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 

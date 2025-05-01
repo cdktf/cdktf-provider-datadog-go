@@ -24,7 +24,7 @@ type DataDatadogPowerpackConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Powerpack to search for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/data-sources/powerpack#name DataDatadogPowerpack#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/data-sources/powerpack#name DataDatadogPowerpack#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

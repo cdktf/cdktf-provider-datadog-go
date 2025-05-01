@@ -59,6 +59,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetEscalationMessageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetInternalValueParameters(val *SyntheticsTestOptionsListMonitorOptions) error {
 	return nil
 }
