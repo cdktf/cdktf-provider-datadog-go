@@ -83,7 +83,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaTlsOutputReference) va
 	return nil
 }
 
-func validateNewObservabilityPipelineConfigSourcesKafkaTlsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewObservabilityPipelineConfigSourcesKafkaTlsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

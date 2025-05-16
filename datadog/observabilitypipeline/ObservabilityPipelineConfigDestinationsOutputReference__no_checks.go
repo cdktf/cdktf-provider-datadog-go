@@ -47,7 +47,59 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) valid
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutAmazonOpensearchParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutAzureStorageParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutDatadogLogsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutElasticsearchParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutGoogleChronicleParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutGoogleCloudStorageParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutMicrosoftSentinelParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutNewRelicParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutOpensearchParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutRsyslogParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSentinelOneParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSplunkHecParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSumoLogicParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSyslogNgParameters(value interface{}) error {
 	return nil
 }
 

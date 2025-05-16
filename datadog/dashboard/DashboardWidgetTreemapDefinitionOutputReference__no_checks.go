@@ -47,6 +47,10 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validateInte
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validatePutCustomLinksParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validatePutRequestParameters(value interface{}) error {
 	return nil
 }

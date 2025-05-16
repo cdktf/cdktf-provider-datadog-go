@@ -24,27 +24,27 @@ type RumMetricConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The type of RUM events to filter on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#event_type RumMetric#event_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#event_type RumMetric#event_type}
 	EventType *string `field:"required" json:"eventType" yaml:"eventType"`
 	// The name of the RUM-based metric. This field can't be updated after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#name RumMetric#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#name RumMetric#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#compute RumMetric#compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#compute RumMetric#compute}
 	Compute *RumMetricCompute `field:"optional" json:"compute" yaml:"compute"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#filter RumMetric#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#filter RumMetric#filter}
 	Filter *RumMetricFilter `field:"optional" json:"filter" yaml:"filter"`
 	// group_by block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#group_by RumMetric#group_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#group_by RumMetric#group_by}
 	GroupBy interface{} `field:"optional" json:"groupBy" yaml:"groupBy"`
 	// uniqueness block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
 	Uniqueness *RumMetricUniqueness `field:"optional" json:"uniqueness" yaml:"uniqueness"`
 }
 

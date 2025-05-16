@@ -24,11 +24,11 @@ type ObservabilityPipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The pipeline name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 	Config *ObservabilityPipelineConfigA `field:"optional" json:"config" yaml:"config"`
 }
 

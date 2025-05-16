@@ -67,6 +67,7 @@ type ObservabilityPipelineConfigSourcesKafkaSaslOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMechanism()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaSaslOutputReference) I
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaSaslOutputReference) ResetMechanism() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMechanism",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaSaslOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	cdktf.ComplexObject
+	AddEnvVars() ObservabilityPipelineConfigProcessorsAddEnvVarsList
+	AddEnvVarsInput() interface{}
 	AddFields() ObservabilityPipelineConfigProcessorsAddFieldsList
 	AddFieldsInput() interface{}
 	// the index of the complex object in a list.
@@ -30,20 +32,36 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Dedupe() ObservabilityPipelineConfigProcessorsDedupeList
+	DedupeInput() interface{}
+	EnrichmentTable() ObservabilityPipelineConfigProcessorsEnrichmentTableList
+	EnrichmentTableInput() interface{}
 	Filter() ObservabilityPipelineConfigProcessorsFilterList
 	FilterInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GenerateDatadogMetrics() ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList
+	GenerateDatadogMetricsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OcsfMapper() ObservabilityPipelineConfigProcessorsOcsfMapperList
+	OcsfMapperInput() interface{}
+	ParseGrok() ObservabilityPipelineConfigProcessorsParseGrokList
+	ParseGrokInput() interface{}
 	ParseJson() ObservabilityPipelineConfigProcessorsParseJsonList
 	ParseJsonInput() interface{}
 	Quota() ObservabilityPipelineConfigProcessorsQuotaList
 	QuotaInput() interface{}
+	Reduce() ObservabilityPipelineConfigProcessorsReduceList
+	ReduceInput() interface{}
 	RemoveFields() ObservabilityPipelineConfigProcessorsRemoveFieldsList
 	RemoveFieldsInput() interface{}
 	RenameFields() ObservabilityPipelineConfigProcessorsRenameFieldsList
 	RenameFieldsInput() interface{}
+	Sample() ObservabilityPipelineConfigProcessorsSampleList
+	SampleInput() interface{}
+	SensitiveDataScanner() ObservabilityPipelineConfigProcessorsSensitiveDataScannerList
+	SensitiveDataScannerInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,6 +70,8 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Throttle() ObservabilityPipelineConfigProcessorsThrottleList
+	ThrottleInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,18 +96,38 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAddEnvVars(value interface{})
 	PutAddFields(value interface{})
+	PutDedupe(value interface{})
+	PutEnrichmentTable(value interface{})
 	PutFilter(value interface{})
+	PutGenerateDatadogMetrics(value interface{})
+	PutOcsfMapper(value interface{})
+	PutParseGrok(value interface{})
 	PutParseJson(value interface{})
 	PutQuota(value interface{})
+	PutReduce(value interface{})
 	PutRemoveFields(value interface{})
 	PutRenameFields(value interface{})
+	PutSample(value interface{})
+	PutSensitiveDataScanner(value interface{})
+	PutThrottle(value interface{})
+	ResetAddEnvVars()
 	ResetAddFields()
+	ResetDedupe()
+	ResetEnrichmentTable()
 	ResetFilter()
+	ResetGenerateDatadogMetrics()
+	ResetOcsfMapper()
+	ResetParseGrok()
 	ResetParseJson()
 	ResetQuota()
+	ResetReduce()
 	ResetRemoveFields()
 	ResetRenameFields()
+	ResetSample()
+	ResetSensitiveDataScanner()
+	ResetThrottle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -101,6 +141,26 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigProcessorsOutputReference
 type jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) AddEnvVars() ObservabilityPipelineConfigProcessorsAddEnvVarsList {
+	var returns ObservabilityPipelineConfigProcessorsAddEnvVarsList
+	_jsii_.Get(
+		j,
+		"addEnvVars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) AddEnvVarsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addEnvVarsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) AddFields() ObservabilityPipelineConfigProcessorsAddFieldsList {
@@ -153,6 +213,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Dedupe() ObservabilityPipelineConfigProcessorsDedupeList {
+	var returns ObservabilityPipelineConfigProcessorsDedupeList
+	_jsii_.Get(
+		j,
+		"dedupe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) DedupeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedupeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) EnrichmentTable() ObservabilityPipelineConfigProcessorsEnrichmentTableList {
+	var returns ObservabilityPipelineConfigProcessorsEnrichmentTableList
+	_jsii_.Get(
+		j,
+		"enrichmentTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) EnrichmentTableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enrichmentTableInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Filter() ObservabilityPipelineConfigProcessorsFilterList {
 	var returns ObservabilityPipelineConfigProcessorsFilterList
 	_jsii_.Get(
@@ -183,11 +283,71 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) GenerateDatadogMetrics() ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList {
+	var returns ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList
+	_jsii_.Get(
+		j,
+		"generateDatadogMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) GenerateDatadogMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"generateDatadogMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) OcsfMapper() ObservabilityPipelineConfigProcessorsOcsfMapperList {
+	var returns ObservabilityPipelineConfigProcessorsOcsfMapperList
+	_jsii_.Get(
+		j,
+		"ocsfMapper",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) OcsfMapperInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocsfMapperInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ParseGrok() ObservabilityPipelineConfigProcessorsParseGrokList {
+	var returns ObservabilityPipelineConfigProcessorsParseGrokList
+	_jsii_.Get(
+		j,
+		"parseGrok",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ParseGrokInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parseGrokInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +393,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) QuotaIn
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Reduce() ObservabilityPipelineConfigProcessorsReduceList {
+	var returns ObservabilityPipelineConfigProcessorsReduceList
+	_jsii_.Get(
+		j,
+		"reduce",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ReduceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"reduceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) RemoveFields() ObservabilityPipelineConfigProcessorsRemoveFieldsList {
 	var returns ObservabilityPipelineConfigProcessorsRemoveFieldsList
 	_jsii_.Get(
@@ -273,6 +453,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) RenameF
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Sample() ObservabilityPipelineConfigProcessorsSampleList {
+	var returns ObservabilityPipelineConfigProcessorsSampleList
+	_jsii_.Get(
+		j,
+		"sample",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) SampleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sampleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) SensitiveDataScanner() ObservabilityPipelineConfigProcessorsSensitiveDataScannerList {
+	var returns ObservabilityPipelineConfigProcessorsSensitiveDataScannerList
+	_jsii_.Get(
+		j,
+		"sensitiveDataScanner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) SensitiveDataScannerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sensitiveDataScannerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -288,6 +508,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Terrafo
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Throttle() ObservabilityPipelineConfigProcessorsThrottleList {
+	var returns ObservabilityPipelineConfigProcessorsThrottleList
+	_jsii_.Get(
+		j,
+		"throttle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ThrottleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"throttleInput",
 		&returns,
 	)
 	return returns
@@ -562,6 +802,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Interpo
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutAddEnvVars(value interface{}) {
+	if err := o.validatePutAddEnvVarsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAddEnvVars",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutAddFields(value interface{}) {
 	if err := o.validatePutAddFieldsParameters(value); err != nil {
 		panic(err)
@@ -573,6 +824,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutAddF
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutDedupe(value interface{}) {
+	if err := o.validatePutDedupeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDedupe",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutEnrichmentTable(value interface{}) {
+	if err := o.validatePutEnrichmentTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEnrichmentTable",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutFilter(value interface{}) {
 	if err := o.validatePutFilterParameters(value); err != nil {
 		panic(err)
@@ -580,6 +853,39 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutFilt
 	_jsii_.InvokeVoid(
 		o,
 		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutGenerateDatadogMetrics(value interface{}) {
+	if err := o.validatePutGenerateDatadogMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGenerateDatadogMetrics",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutOcsfMapper(value interface{}) {
+	if err := o.validatePutOcsfMapperParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putOcsfMapper",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutParseGrok(value interface{}) {
+	if err := o.validatePutParseGrokParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putParseGrok",
 		[]interface{}{value},
 	)
 }
@@ -606,6 +912,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutQuot
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutReduce(value interface{}) {
+	if err := o.validatePutReduceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putReduce",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutRemoveFields(value interface{}) {
 	if err := o.validatePutRemoveFieldsParameters(value); err != nil {
 		panic(err)
@@ -628,6 +945,47 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutRena
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutSample(value interface{}) {
+	if err := o.validatePutSampleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSample",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutSensitiveDataScanner(value interface{}) {
+	if err := o.validatePutSensitiveDataScannerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSensitiveDataScanner",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutThrottle(value interface{}) {
+	if err := o.validatePutThrottleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putThrottle",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetAddEnvVars() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddEnvVars",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetAddFields() {
 	_jsii_.InvokeVoid(
 		o,
@@ -636,10 +994,50 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetAd
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetDedupe() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDedupe",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetEnrichmentTable() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEnrichmentTable",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetFilter() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetGenerateDatadogMetrics() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGenerateDatadogMetrics",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetOcsfMapper() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOcsfMapper",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetParseGrok() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetParseGrok",
 		nil, // no parameters
 	)
 }
@@ -660,6 +1058,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetQu
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetReduce() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetReduce",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetRemoveFields() {
 	_jsii_.InvokeVoid(
 		o,
@@ -672,6 +1078,30 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetRe
 	_jsii_.InvokeVoid(
 		o,
 		"resetRenameFields",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetSample() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSample",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetSensitiveDataScanner() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSensitiveDataScanner",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetThrottle() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetThrottle",
 		nil, // no parameters
 	)
 }

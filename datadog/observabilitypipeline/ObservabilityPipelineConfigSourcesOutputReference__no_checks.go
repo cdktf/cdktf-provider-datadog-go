@@ -47,11 +47,63 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateIn
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutAmazonDataFirehoseParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutAmazonS3Parameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutDatadogAgentParameters(value interface{}) error {
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutFluentBitParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutFluentdParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutGooglePubsubParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutHttpClientParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutHttpServerParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutKafkaParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutLogstashParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutRsyslogParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSplunkHecParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSplunkTcpParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSumoLogicParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSyslogNgParameters(value interface{}) error {
 	return nil
 }
 

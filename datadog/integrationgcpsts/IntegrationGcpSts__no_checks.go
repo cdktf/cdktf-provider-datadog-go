@@ -127,6 +127,10 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetIsCspmEnabledParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) validateSetIsPerProjectQuotaEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) validateSetIsResourceChangeCollectionEnabledParameters(val interface{}) error {
 	return nil
 }

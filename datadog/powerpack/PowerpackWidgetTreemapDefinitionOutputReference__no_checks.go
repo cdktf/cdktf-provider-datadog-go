@@ -47,6 +47,10 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateInte
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validatePutCustomLinksParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validatePutRequestParameters(value interface{}) error {
 	return nil
 }

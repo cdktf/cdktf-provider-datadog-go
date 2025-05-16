@@ -47,11 +47,35 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutAddEnvVarsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutAddFieldsParameters(value interface{}) error {
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutDedupeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutEnrichmentTableParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutGenerateDatadogMetricsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutOcsfMapperParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutParseGrokParameters(value interface{}) error {
 	return nil
 }
 
@@ -63,11 +87,27 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutReduceParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutRemoveFieldsParameters(value interface{}) error {
 	return nil
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutRenameFieldsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutSampleParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutSensitiveDataScannerParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutThrottleParameters(value interface{}) error {
 	return nil
 }
 

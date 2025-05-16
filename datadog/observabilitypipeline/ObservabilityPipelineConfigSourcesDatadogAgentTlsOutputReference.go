@@ -74,6 +74,7 @@ type ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCaFile()
+	ResetCrtFile()
 	ResetKeyFile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -221,29 +222,29 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputRefere
 }
 
 
-func NewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference {
+func NewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference_Override(o ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference_Override(o ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
@@ -526,6 +527,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputRefere
 	_jsii_.InvokeVoid(
 		o,
 		"resetCaFile",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference) ResetCrtFile() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCrtFile",
 		nil, // no parameters
 	)
 }

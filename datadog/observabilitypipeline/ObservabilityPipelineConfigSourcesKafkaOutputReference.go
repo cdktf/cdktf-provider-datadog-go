@@ -50,7 +50,7 @@ type ObservabilityPipelineConfigSourcesKafkaOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tls() ObservabilityPipelineConfigSourcesKafkaTlsList
+	Tls() ObservabilityPipelineConfigSourcesKafkaTlsOutputReference
 	TlsInput() interface{}
 	Topics() *[]*string
 	SetTopics(val *[]*string)
@@ -81,8 +81,9 @@ type ObservabilityPipelineConfigSourcesKafkaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLibrdkafkaOption(value interface{})
 	PutSasl(value *ObservabilityPipelineConfigSourcesKafkaSasl)
-	PutTls(value interface{})
+	PutTls(value *ObservabilityPipelineConfigSourcesKafkaTls)
 	ResetLibrdkafkaOption()
+	ResetSasl()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -249,8 +250,8 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) Tls() ObservabilityPipelineConfigSourcesKafkaTlsList {
-	var returns ObservabilityPipelineConfigSourcesKafkaTlsList
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) Tls() ObservabilityPipelineConfigSourcesKafkaTlsOutputReference {
+	var returns ObservabilityPipelineConfigSourcesKafkaTlsOutputReference
 	_jsii_.Get(
 		j,
 		"tls",
@@ -613,7 +614,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) PutSa
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) PutTls(value interface{}) {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) PutTls(value *ObservabilityPipelineConfigSourcesKafkaTls) {
 	if err := o.validatePutTlsParameters(value); err != nil {
 		panic(err)
 	}
@@ -628,6 +629,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) Reset
 	_jsii_.InvokeVoid(
 		o,
 		"resetLibrdkafkaOption",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) ResetSasl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSasl",
 		nil, // no parameters
 	)
 }

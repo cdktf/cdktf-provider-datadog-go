@@ -47,7 +47,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) validatePutTlsParameters(value interface{}) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) validatePutTlsParameters(value *ObservabilityPipelineConfigSourcesDatadogAgentTls) error {
 	return nil
 }
 

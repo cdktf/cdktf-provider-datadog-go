@@ -52,6 +52,9 @@ type ObservabilityPipelineConfigProcessorsQuotaOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	OverflowAction() *string
+	SetOverflowAction(val *string)
+	OverflowActionInput() *string
 	Overrides() ObservabilityPipelineConfigProcessorsQuotaOverridesList
 	OverridesInput() interface{}
 	PartitionFields() *[]*string
@@ -92,6 +95,7 @@ type ObservabilityPipelineConfigProcessorsQuotaOutputReference interface {
 	PutLimit(value *ObservabilityPipelineConfigProcessorsQuotaLimit)
 	PutOverrides(value interface{})
 	ResetIgnoreWhenMissingPartitions()
+	ResetOverflowAction()
 	ResetOverrides()
 	ResetPartitionFields()
 	// Produce the Token's value at resolution time.
@@ -299,6 +303,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) Na
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) OverflowAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overflowAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) OverflowActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overflowActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) Overrides() ObservabilityPipelineConfigProcessorsQuotaOverridesList {
 	var returns ObservabilityPipelineConfigProcessorsQuotaOverridesList
 	_jsii_.Get(
@@ -482,6 +506,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference)Set
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference)SetOverflowAction(val *string) {
+	if err := j.validateSetOverflowActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overflowAction",
 		val,
 	)
 }
@@ -731,6 +766,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetIgnoreWhenMissingPartitions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) ResetOverflowAction() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOverflowAction",
 		nil, // no parameters
 	)
 }

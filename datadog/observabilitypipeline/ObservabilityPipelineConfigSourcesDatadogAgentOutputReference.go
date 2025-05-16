@@ -43,7 +43,7 @@ type ObservabilityPipelineConfigSourcesDatadogAgentOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tls() ObservabilityPipelineConfigSourcesDatadogAgentTlsList
+	Tls() ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference
 	TlsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
@@ -69,7 +69,7 @@ type ObservabilityPipelineConfigSourcesDatadogAgentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTls(value interface{})
+	PutTls(value *ObservabilityPipelineConfigSourcesDatadogAgentTls)
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) Tls() ObservabilityPipelineConfigSourcesDatadogAgentTlsList {
-	var returns ObservabilityPipelineConfigSourcesDatadogAgentTlsList
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) Tls() ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference {
+	var returns ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference
 	_jsii_.Get(
 		j,
 		"tls",
@@ -476,7 +476,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) PutTls(value interface{}) {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentOutputReference) PutTls(value *ObservabilityPipelineConfigSourcesDatadogAgentTls) {
 	if err := o.validatePutTlsParameters(value); err != nil {
 		panic(err)
 	}

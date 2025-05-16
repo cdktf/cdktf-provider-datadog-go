@@ -13,6 +13,10 @@ import (
 
 type ObservabilityPipelineConfigSourcesOutputReference interface {
 	cdktf.ComplexObject
+	AmazonDataFirehose() ObservabilityPipelineConfigSourcesAmazonDataFirehoseList
+	AmazonDataFirehoseInput() interface{}
+	AmazonS3() ObservabilityPipelineConfigSourcesAmazonS3List
+	AmazonS3Input() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,12 +34,34 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 	CreationStack() *[]*string
 	DatadogAgent() ObservabilityPipelineConfigSourcesDatadogAgentList
 	DatadogAgentInput() interface{}
+	FluentBit() ObservabilityPipelineConfigSourcesFluentBitList
+	FluentBitInput() interface{}
+	Fluentd() ObservabilityPipelineConfigSourcesFluentdList
+	FluentdInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GooglePubsub() ObservabilityPipelineConfigSourcesGooglePubsubList
+	GooglePubsubInput() interface{}
+	HttpClient() ObservabilityPipelineConfigSourcesHttpClientList
+	HttpClientInput() interface{}
+	HttpServer() ObservabilityPipelineConfigSourcesHttpServerList
+	HttpServerInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Kafka() ObservabilityPipelineConfigSourcesKafkaList
 	KafkaInput() interface{}
+	Logstash() ObservabilityPipelineConfigSourcesLogstashList
+	LogstashInput() interface{}
+	Rsyslog() ObservabilityPipelineConfigSourcesRsyslogList
+	RsyslogInput() interface{}
+	SplunkHec() ObservabilityPipelineConfigSourcesSplunkHecList
+	SplunkHecInput() interface{}
+	SplunkTcp() ObservabilityPipelineConfigSourcesSplunkTcpList
+	SplunkTcpInput() interface{}
+	SumoLogic() ObservabilityPipelineConfigSourcesSumoLogicList
+	SumoLogicInput() interface{}
+	SyslogNg() ObservabilityPipelineConfigSourcesSyslogNgList
+	SyslogNgInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,10 +94,36 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAmazonDataFirehose(value interface{})
+	PutAmazonS3(value interface{})
 	PutDatadogAgent(value interface{})
+	PutFluentBit(value interface{})
+	PutFluentd(value interface{})
+	PutGooglePubsub(value interface{})
+	PutHttpClient(value interface{})
+	PutHttpServer(value interface{})
 	PutKafka(value interface{})
+	PutLogstash(value interface{})
+	PutRsyslog(value interface{})
+	PutSplunkHec(value interface{})
+	PutSplunkTcp(value interface{})
+	PutSumoLogic(value interface{})
+	PutSyslogNg(value interface{})
+	ResetAmazonDataFirehose()
+	ResetAmazonS3()
 	ResetDatadogAgent()
+	ResetFluentBit()
+	ResetFluentd()
+	ResetGooglePubsub()
+	ResetHttpClient()
+	ResetHttpServer()
 	ResetKafka()
+	ResetLogstash()
+	ResetRsyslog()
+	ResetSplunkHec()
+	ResetSplunkTcp()
+	ResetSumoLogic()
+	ResetSyslogNg()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -85,6 +137,46 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigSourcesOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) AmazonDataFirehose() ObservabilityPipelineConfigSourcesAmazonDataFirehoseList {
+	var returns ObservabilityPipelineConfigSourcesAmazonDataFirehoseList
+	_jsii_.Get(
+		j,
+		"amazonDataFirehose",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) AmazonDataFirehoseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonDataFirehoseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) AmazonS3() ObservabilityPipelineConfigSourcesAmazonS3List {
+	var returns ObservabilityPipelineConfigSourcesAmazonS3List
+	_jsii_.Get(
+		j,
+		"amazonS3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) AmazonS3Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonS3Input",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ComplexObjectIndex() interface{} {
@@ -137,11 +229,111 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) DatadogAge
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) FluentBit() ObservabilityPipelineConfigSourcesFluentBitList {
+	var returns ObservabilityPipelineConfigSourcesFluentBitList
+	_jsii_.Get(
+		j,
+		"fluentBit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) FluentBitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fluentBitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Fluentd() ObservabilityPipelineConfigSourcesFluentdList {
+	var returns ObservabilityPipelineConfigSourcesFluentdList
+	_jsii_.Get(
+		j,
+		"fluentd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) FluentdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fluentdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) GooglePubsub() ObservabilityPipelineConfigSourcesGooglePubsubList {
+	var returns ObservabilityPipelineConfigSourcesGooglePubsubList
+	_jsii_.Get(
+		j,
+		"googlePubsub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) GooglePubsubInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googlePubsubInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) HttpClient() ObservabilityPipelineConfigSourcesHttpClientList {
+	var returns ObservabilityPipelineConfigSourcesHttpClientList
+	_jsii_.Get(
+		j,
+		"httpClient",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) HttpClientInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpClientInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) HttpServer() ObservabilityPipelineConfigSourcesHttpServerList {
+	var returns ObservabilityPipelineConfigSourcesHttpServerList
+	_jsii_.Get(
+		j,
+		"httpServer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) HttpServerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpServerInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +364,126 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) KafkaInput
 	_jsii_.Get(
 		j,
 		"kafkaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Logstash() ObservabilityPipelineConfigSourcesLogstashList {
+	var returns ObservabilityPipelineConfigSourcesLogstashList
+	_jsii_.Get(
+		j,
+		"logstash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) LogstashInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logstashInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Rsyslog() ObservabilityPipelineConfigSourcesRsyslogList {
+	var returns ObservabilityPipelineConfigSourcesRsyslogList
+	_jsii_.Get(
+		j,
+		"rsyslog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) RsyslogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rsyslogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SplunkHec() ObservabilityPipelineConfigSourcesSplunkHecList {
+	var returns ObservabilityPipelineConfigSourcesSplunkHecList
+	_jsii_.Get(
+		j,
+		"splunkHec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SplunkHecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splunkHecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SplunkTcp() ObservabilityPipelineConfigSourcesSplunkTcpList {
+	var returns ObservabilityPipelineConfigSourcesSplunkTcpList
+	_jsii_.Get(
+		j,
+		"splunkTcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SplunkTcpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splunkTcpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SumoLogic() ObservabilityPipelineConfigSourcesSumoLogicList {
+	var returns ObservabilityPipelineConfigSourcesSumoLogicList
+	_jsii_.Get(
+		j,
+		"sumoLogic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SumoLogicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sumoLogicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SyslogNg() ObservabilityPipelineConfigSourcesSyslogNgList {
+	var returns ObservabilityPipelineConfigSourcesSyslogNgList
+	_jsii_.Get(
+		j,
+		"syslogNg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SyslogNgInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"syslogNgInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +778,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Interpolat
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutAmazonDataFirehose(value interface{}) {
+	if err := o.validatePutAmazonDataFirehoseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonDataFirehose",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutAmazonS3(value interface{}) {
+	if err := o.validatePutAmazonS3Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonS3",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutDatadogAgent(value interface{}) {
 	if err := o.validatePutDatadogAgentParameters(value); err != nil {
 		panic(err)
@@ -473,6 +807,61 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutDatadog
 	_jsii_.InvokeVoid(
 		o,
 		"putDatadogAgent",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutFluentBit(value interface{}) {
+	if err := o.validatePutFluentBitParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFluentBit",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutFluentd(value interface{}) {
+	if err := o.validatePutFluentdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFluentd",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutGooglePubsub(value interface{}) {
+	if err := o.validatePutGooglePubsubParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGooglePubsub",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutHttpClient(value interface{}) {
+	if err := o.validatePutHttpClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putHttpClient",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutHttpServer(value interface{}) {
+	if err := o.validatePutHttpServerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putHttpServer",
 		[]interface{}{value},
 	)
 }
@@ -488,6 +877,88 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutKafka(v
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutLogstash(value interface{}) {
+	if err := o.validatePutLogstashParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLogstash",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutRsyslog(value interface{}) {
+	if err := o.validatePutRsyslogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRsyslog",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSplunkHec(value interface{}) {
+	if err := o.validatePutSplunkHecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSplunkHec",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSplunkTcp(value interface{}) {
+	if err := o.validatePutSplunkTcpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSplunkTcp",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSumoLogic(value interface{}) {
+	if err := o.validatePutSumoLogicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSumoLogic",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSyslogNg(value interface{}) {
+	if err := o.validatePutSyslogNgParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSyslogNg",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetAmazonDataFirehose() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonDataFirehose",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetAmazonS3() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonS3",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetDatadogAgent() {
 	_jsii_.InvokeVoid(
 		o,
@@ -496,10 +967,98 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetDatad
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetFluentBit() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFluentBit",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetFluentd() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFluentd",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetGooglePubsub() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGooglePubsub",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetHttpClient() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHttpClient",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetHttpServer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHttpServer",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetKafka() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetKafka",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetLogstash() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLogstash",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetRsyslog() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRsyslog",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetSplunkHec() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSplunkHec",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetSplunkTcp() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSplunkTcp",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetSumoLogic() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSumoLogic",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetSyslogNg() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSyslogNg",
 		nil, // no parameters
 	)
 }

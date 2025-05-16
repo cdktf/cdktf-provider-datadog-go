@@ -304,6 +304,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) validateSetOverflowActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) validateSetPartitionFieldsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktf.TerraformResource
 	AccountTags() *[]*string
@@ -59,6 +59,9 @@ type IntegrationGcpSts interface {
 	IsCspmEnabled() interface{}
 	SetIsCspmEnabled(val interface{})
 	IsCspmEnabledInput() interface{}
+	IsPerProjectQuotaEnabled() interface{}
+	SetIsPerProjectQuotaEnabled(val interface{})
+	IsPerProjectQuotaEnabledInput() interface{}
 	IsResourceChangeCollectionEnabled() interface{}
 	SetIsResourceChangeCollectionEnabled(val interface{})
 	IsResourceChangeCollectionEnabledInput() interface{}
@@ -141,6 +144,7 @@ type IntegrationGcpSts interface {
 	ResetCloudRunRevisionFilters()
 	ResetHostFilters()
 	ResetIsCspmEnabled()
+	ResetIsPerProjectQuotaEnabled()
 	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
 	ResetMetricNamespaceConfigs()
@@ -386,6 +390,26 @@ func (j *jsiiProxy_IntegrationGcpSts) IsCspmEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) IsPerProjectQuotaEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPerProjectQuotaEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) IsPerProjectQuotaEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPerProjectQuotaEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) IsResourceChangeCollectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -547,7 +571,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetIsCspmEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isCspmEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetIsPerProjectQuotaEnabled(val interface{}) {
+	if err := j.validateSetIsPerProjectQuotaEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPerProjectQuotaEnabled",
 		val,
 	)
 }
@@ -1143,6 +1178,14 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetIsCspmEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetIsCspmEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetIsPerProjectQuotaEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsPerProjectQuotaEnabled",
 		nil, // no parameters
 	)
 }

@@ -74,6 +74,7 @@ type ObservabilityPipelineConfigSourcesKafkaTlsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCaFile()
+	ResetCrtFile()
 	ResetKeyFile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -221,29 +222,29 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaTlsOutputReference) Te
 }
 
 
-func NewObservabilityPipelineConfigSourcesKafkaTlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourcesKafkaTlsOutputReference {
+func NewObservabilityPipelineConfigSourcesKafkaTlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObservabilityPipelineConfigSourcesKafkaTlsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewObservabilityPipelineConfigSourcesKafkaTlsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewObservabilityPipelineConfigSourcesKafkaTlsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ObservabilityPipelineConfigSourcesKafkaTlsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewObservabilityPipelineConfigSourcesKafkaTlsOutputReference_Override(o ObservabilityPipelineConfigSourcesKafkaTlsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewObservabilityPipelineConfigSourcesKafkaTlsOutputReference_Override(o ObservabilityPipelineConfigSourcesKafkaTlsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
@@ -526,6 +527,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaTlsOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetCaFile",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaTlsOutputReference) ResetCrtFile() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCrtFile",
 		nil, // no parameters
 	)
 }

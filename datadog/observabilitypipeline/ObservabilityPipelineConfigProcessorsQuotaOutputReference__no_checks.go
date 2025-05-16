@@ -95,6 +95,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) validateSetOverflowActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOutputReference) validateSetPartitionFieldsParameters(val *[]*string) error {
 	return nil
 }

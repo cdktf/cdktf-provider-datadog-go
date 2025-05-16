@@ -93,6 +93,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutAddEnvVarsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsAddEnvVars:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsAddEnvVars)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsAddEnvVars:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsAddEnvVars)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsAddEnvVars; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutAddFieldsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +155,68 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutDedupeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsDedupe:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsDedupe)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsDedupe:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsDedupe)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsDedupe; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutEnrichmentTableParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsEnrichmentTable:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsEnrichmentTable)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsEnrichmentTable:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsEnrichmentTable)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsEnrichmentTable; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutFilterParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -149,6 +242,99 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsFilter; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutGenerateDatadogMetricsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutOcsfMapperParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsOcsfMapper:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsOcsfMapper)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsOcsfMapper:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsOcsfMapper)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsOcsfMapper; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutParseGrokParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsParseGrok:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsParseGrok)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsParseGrok:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsParseGrok)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsParseGrok; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -217,6 +403,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutReduceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsReduce:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsReduce)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsReduce:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsReduce)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsReduce; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutRemoveFieldsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -273,6 +490,99 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsRenameFields; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutSampleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsSample:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsSample)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsSample:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsSample)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsSample; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutSensitiveDataScannerParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsSensitiveDataScanner:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsSensitiveDataScanner)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsSensitiveDataScanner:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsSensitiveDataScanner)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsSensitiveDataScanner; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutThrottleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorsThrottle:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorsThrottle)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorsThrottle:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorsThrottle)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ObservabilityPipelineConfigProcessorsThrottle; received %#v (a %T)", value, value)
 		}
 	}
 

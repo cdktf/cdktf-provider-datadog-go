@@ -5,7 +5,7 @@ package powerpack
 
 
 type PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/powerpack#unit_name Powerpack#unit_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/powerpack#unit_name Powerpack#unit_name}.
 	UnitName *string `field:"required" json:"unitName" yaml:"unitName"`
 }
 

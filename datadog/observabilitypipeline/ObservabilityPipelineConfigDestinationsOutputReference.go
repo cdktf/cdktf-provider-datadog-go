@@ -13,6 +13,10 @@ import (
 
 type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	cdktf.ComplexObject
+	AmazonOpensearch() ObservabilityPipelineConfigDestinationsAmazonOpensearchList
+	AmazonOpensearchInput() interface{}
+	AzureStorage() ObservabilityPipelineConfigDestinationsAzureStorageList
+	AzureStorageInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,10 +34,32 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	CreationStack() *[]*string
 	DatadogLogs() ObservabilityPipelineConfigDestinationsDatadogLogsList
 	DatadogLogsInput() interface{}
+	Elasticsearch() ObservabilityPipelineConfigDestinationsElasticsearchList
+	ElasticsearchInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GoogleChronicle() ObservabilityPipelineConfigDestinationsGoogleChronicleList
+	GoogleChronicleInput() interface{}
+	GoogleCloudStorage() ObservabilityPipelineConfigDestinationsGoogleCloudStorageList
+	GoogleCloudStorageInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MicrosoftSentinel() ObservabilityPipelineConfigDestinationsMicrosoftSentinelList
+	MicrosoftSentinelInput() interface{}
+	NewRelic() ObservabilityPipelineConfigDestinationsNewRelicList
+	NewRelicInput() interface{}
+	Opensearch() ObservabilityPipelineConfigDestinationsOpensearchList
+	OpensearchInput() interface{}
+	Rsyslog() ObservabilityPipelineConfigDestinationsRsyslogList
+	RsyslogInput() interface{}
+	SentinelOne() ObservabilityPipelineConfigDestinationsSentinelOneList
+	SentinelOneInput() interface{}
+	SplunkHec() ObservabilityPipelineConfigDestinationsSplunkHecList
+	SplunkHecInput() interface{}
+	SumoLogic() ObservabilityPipelineConfigDestinationsSumoLogicList
+	SumoLogicInput() interface{}
+	SyslogNg() ObservabilityPipelineConfigDestinationsSyslogNgList
+	SyslogNgInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,8 +92,34 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAmazonOpensearch(value interface{})
+	PutAzureStorage(value interface{})
 	PutDatadogLogs(value interface{})
+	PutElasticsearch(value interface{})
+	PutGoogleChronicle(value interface{})
+	PutGoogleCloudStorage(value interface{})
+	PutMicrosoftSentinel(value interface{})
+	PutNewRelic(value interface{})
+	PutOpensearch(value interface{})
+	PutRsyslog(value interface{})
+	PutSentinelOne(value interface{})
+	PutSplunkHec(value interface{})
+	PutSumoLogic(value interface{})
+	PutSyslogNg(value interface{})
+	ResetAmazonOpensearch()
+	ResetAzureStorage()
 	ResetDatadogLogs()
+	ResetElasticsearch()
+	ResetGoogleChronicle()
+	ResetGoogleCloudStorage()
+	ResetMicrosoftSentinel()
+	ResetNewRelic()
+	ResetOpensearch()
+	ResetRsyslog()
+	ResetSentinelOne()
+	ResetSplunkHec()
+	ResetSumoLogic()
+	ResetSyslogNg()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -81,6 +133,46 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationsOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonOpensearch() ObservabilityPipelineConfigDestinationsAmazonOpensearchList {
+	var returns ObservabilityPipelineConfigDestinationsAmazonOpensearchList
+	_jsii_.Get(
+		j,
+		"amazonOpensearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonOpensearchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonOpensearchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AzureStorage() ObservabilityPipelineConfigDestinationsAzureStorageList {
+	var returns ObservabilityPipelineConfigDestinationsAzureStorageList
+	_jsii_.Get(
+		j,
+		"azureStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AzureStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureStorageInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ComplexObjectIndex() interface{} {
@@ -133,6 +225,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Datad
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Elasticsearch() ObservabilityPipelineConfigDestinationsElasticsearchList {
+	var returns ObservabilityPipelineConfigDestinationsElasticsearchList
+	_jsii_.Get(
+		j,
+		"elasticsearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ElasticsearchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"elasticsearchInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,11 +255,211 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Fqn()
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GoogleChronicle() ObservabilityPipelineConfigDestinationsGoogleChronicleList {
+	var returns ObservabilityPipelineConfigDestinationsGoogleChronicleList
+	_jsii_.Get(
+		j,
+		"googleChronicle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GoogleChronicleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleChronicleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GoogleCloudStorage() ObservabilityPipelineConfigDestinationsGoogleCloudStorageList {
+	var returns ObservabilityPipelineConfigDestinationsGoogleCloudStorageList
+	_jsii_.Get(
+		j,
+		"googleCloudStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GoogleCloudStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleCloudStorageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) MicrosoftSentinel() ObservabilityPipelineConfigDestinationsMicrosoftSentinelList {
+	var returns ObservabilityPipelineConfigDestinationsMicrosoftSentinelList
+	_jsii_.Get(
+		j,
+		"microsoftSentinel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) MicrosoftSentinelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"microsoftSentinelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) NewRelic() ObservabilityPipelineConfigDestinationsNewRelicList {
+	var returns ObservabilityPipelineConfigDestinationsNewRelicList
+	_jsii_.Get(
+		j,
+		"newRelic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) NewRelicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"newRelicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Opensearch() ObservabilityPipelineConfigDestinationsOpensearchList {
+	var returns ObservabilityPipelineConfigDestinationsOpensearchList
+	_jsii_.Get(
+		j,
+		"opensearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) OpensearchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"opensearchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Rsyslog() ObservabilityPipelineConfigDestinationsRsyslogList {
+	var returns ObservabilityPipelineConfigDestinationsRsyslogList
+	_jsii_.Get(
+		j,
+		"rsyslog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) RsyslogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rsyslogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SentinelOne() ObservabilityPipelineConfigDestinationsSentinelOneList {
+	var returns ObservabilityPipelineConfigDestinationsSentinelOneList
+	_jsii_.Get(
+		j,
+		"sentinelOne",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SentinelOneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sentinelOneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SplunkHec() ObservabilityPipelineConfigDestinationsSplunkHecList {
+	var returns ObservabilityPipelineConfigDestinationsSplunkHecList
+	_jsii_.Get(
+		j,
+		"splunkHec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SplunkHecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splunkHecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SumoLogic() ObservabilityPipelineConfigDestinationsSumoLogicList {
+	var returns ObservabilityPipelineConfigDestinationsSumoLogicList
+	_jsii_.Get(
+		j,
+		"sumoLogic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SumoLogicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sumoLogicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SyslogNg() ObservabilityPipelineConfigDestinationsSyslogNgList {
+	var returns ObservabilityPipelineConfigDestinationsSyslogNgList
+	_jsii_.Get(
+		j,
+		"syslogNg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SyslogNgInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"syslogNgInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +754,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Inter
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAmazonOpensearch(value interface{}) {
+	if err := o.validatePutAmazonOpensearchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonOpensearch",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAzureStorage(value interface{}) {
+	if err := o.validatePutAzureStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAzureStorage",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutDatadogLogs(value interface{}) {
 	if err := o.validatePutDatadogLogsParameters(value); err != nil {
 		panic(err)
@@ -453,10 +787,235 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutDa
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutElasticsearch(value interface{}) {
+	if err := o.validatePutElasticsearchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putElasticsearch",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutGoogleChronicle(value interface{}) {
+	if err := o.validatePutGoogleChronicleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGoogleChronicle",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutGoogleCloudStorage(value interface{}) {
+	if err := o.validatePutGoogleCloudStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGoogleCloudStorage",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutMicrosoftSentinel(value interface{}) {
+	if err := o.validatePutMicrosoftSentinelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putMicrosoftSentinel",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutNewRelic(value interface{}) {
+	if err := o.validatePutNewRelicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNewRelic",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutOpensearch(value interface{}) {
+	if err := o.validatePutOpensearchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putOpensearch",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutRsyslog(value interface{}) {
+	if err := o.validatePutRsyslogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRsyslog",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSentinelOne(value interface{}) {
+	if err := o.validatePutSentinelOneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSentinelOne",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSplunkHec(value interface{}) {
+	if err := o.validatePutSplunkHecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSplunkHec",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSumoLogic(value interface{}) {
+	if err := o.validatePutSumoLogicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSumoLogic",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSyslogNg(value interface{}) {
+	if err := o.validatePutSyslogNgParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSyslogNg",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetAmazonOpensearch() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonOpensearch",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetAzureStorage() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAzureStorage",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetDatadogLogs() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDatadogLogs",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetElasticsearch() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetElasticsearch",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetGoogleChronicle() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGoogleChronicle",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetGoogleCloudStorage() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGoogleCloudStorage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetMicrosoftSentinel() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMicrosoftSentinel",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetNewRelic() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNewRelic",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetOpensearch() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOpensearch",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetRsyslog() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRsyslog",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetSentinelOne() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSentinelOne",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetSplunkHec() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSplunkHec",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetSumoLogic() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSumoLogic",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetSyslogNg() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSyslogNg",
 		nil, // no parameters
 	)
 }

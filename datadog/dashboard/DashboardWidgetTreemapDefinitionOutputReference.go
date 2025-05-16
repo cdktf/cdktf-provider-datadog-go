@@ -28,6 +28,8 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomLinks() DashboardWidgetTreemapDefinitionCustomLinksList
+	CustomLinksInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DashboardWidgetTreemapDefinition
@@ -69,7 +71,9 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomLinks(value interface{})
 	PutRequest(value interface{})
+	ResetCustomLinks()
 	ResetRequest()
 	ResetTitle()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) CustomLinks() DashboardWidgetTreemapDefinitionCustomLinksList {
+	var returns DashboardWidgetTreemapDefinitionCustomLinksList
+	_jsii_.Get(
+		j,
+		"customLinks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) CustomLinksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customLinksInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) Interpolatio
 	return returns
 }
 
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) PutCustomLinks(value interface{}) {
+	if err := d.validatePutCustomLinksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomLinks",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) PutRequest(value interface{}) {
 	if err := d.validatePutRequestParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) PutRequest(v
 		d,
 		"putRequest",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) ResetCustomLinks() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomLinks",
+		nil, // no parameters
 	)
 }
 

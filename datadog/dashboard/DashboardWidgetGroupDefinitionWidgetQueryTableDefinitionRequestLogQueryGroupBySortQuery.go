@@ -7,15 +7,15 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery struct {
 	// The aggregation method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/dashboard#order Dashboard#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/dashboard#order Dashboard#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 	// The facet name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/dashboard#facet Dashboard#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/dashboard#facet Dashboard#facet}
 	Facet *string `field:"optional" json:"facet" yaml:"facet"`
 }
 

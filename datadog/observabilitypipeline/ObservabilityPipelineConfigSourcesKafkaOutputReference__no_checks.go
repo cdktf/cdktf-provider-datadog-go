@@ -55,7 +55,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validatePutTlsParameters(value interface{}) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validatePutTlsParameters(value *ObservabilityPipelineConfigSourcesKafkaTls) error {
 	return nil
 }
 
