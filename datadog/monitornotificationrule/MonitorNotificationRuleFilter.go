@@ -7,7 +7,7 @@ package monitornotificationrule
 type MonitorNotificationRuleFilter struct {
 	// All tags that target monitors must match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
 	Tags *[]*string `field:"required" json:"tags" yaml:"tags"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/data-sources/role_users datadog_role_users}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/role_users datadog_role_users}.
 type DataDatadogRoleUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataDatadogRoleUsers) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/data-sources/role_users datadog_role_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/role_users datadog_role_users} Data Source.
 func NewDataDatadogRoleUsers(scope constructs.Construct, id *string, config *DataDatadogRoleUsersConfig) DataDatadogRoleUsers {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataDatadogRoleUsers(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/data-sources/role_users datadog_role_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/role_users datadog_role_users} Data Source.
 func NewDataDatadogRoleUsers_Override(d DataDatadogRoleUsers, scope constructs.Construct, id *string, config *DataDatadogRoleUsersConfig) {
 	_init_.Initialize()
 

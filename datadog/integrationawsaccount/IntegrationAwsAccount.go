@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
 type IntegrationAwsAccount interface {
 	cdktf.TerraformResource
 	AccountTags() *[]*string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_IntegrationAwsAccount) TracesConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
 func NewIntegrationAwsAccount(scope constructs.Construct, id *string, config *IntegrationAwsAccountConfig) IntegrationAwsAccount {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewIntegrationAwsAccount(scope constructs.Construct, id *string, config *In
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
 func NewIntegrationAwsAccount_Override(i IntegrationAwsAccount, scope constructs.Construct, id *string, config *IntegrationAwsAccountConfig) {
 	_init_.Initialize()
 

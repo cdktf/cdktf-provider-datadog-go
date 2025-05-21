@@ -22,6 +22,9 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	ClickType() *string
 	SetClickType(val *string)
 	ClickTypeInput() *string
+	ClickWithJavascript() interface{}
+	SetClickWithJavascript(val interface{})
+	ClickWithJavascriptInput() interface{}
 	Code() *string
 	SetCode(val *string)
 	CodeInput() *string
@@ -127,6 +130,7 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	ResetAttribute()
 	ResetCheck()
 	ResetClickType()
+	ResetClickWithJavascript()
 	ResetCode()
 	ResetDelay()
 	ResetElement()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ClickTypeInpu
 	_jsii_.Get(
 		j,
 		"clickTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ClickWithJavascript() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clickWithJavascript",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ClickWithJavascriptInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clickWithJavascriptInput",
 		&returns,
 	)
 	return returns
@@ -690,6 +714,17 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetClickType(v
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetClickWithJavascript(val interface{}) {
+	if err := j.validateSetClickWithJavascriptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clickWithJavascript",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetCode(val *string) {
 	if err := j.validateSetCodeParameters(val); err != nil {
 		panic(err)
@@ -1138,6 +1173,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetClickTyp
 	_jsii_.InvokeVoid(
 		s,
 		"resetClickType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetClickWithJavascript() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClickWithJavascript",
 		nil, // no parameters
 	)
 }

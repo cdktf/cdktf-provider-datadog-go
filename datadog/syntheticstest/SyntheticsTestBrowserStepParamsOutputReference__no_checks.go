@@ -71,6 +71,10 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetCl
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetClickWithJavascriptParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetCodeParameters(val *string) error {
 	return nil
 }

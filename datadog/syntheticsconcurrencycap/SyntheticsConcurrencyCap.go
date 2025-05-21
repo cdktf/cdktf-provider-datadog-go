@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
 type SyntheticsConcurrencyCap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_SyntheticsConcurrencyCap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
 func NewSyntheticsConcurrencyCap(scope constructs.Construct, id *string, config *SyntheticsConcurrencyCapConfig) SyntheticsConcurrencyCap {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewSyntheticsConcurrencyCap(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
 func NewSyntheticsConcurrencyCap_Override(s SyntheticsConcurrencyCap, scope constructs.Construct, id *string, config *SyntheticsConcurrencyCapConfig) {
 	_init_.Initialize()
 
