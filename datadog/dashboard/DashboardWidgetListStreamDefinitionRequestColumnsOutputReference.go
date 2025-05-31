@@ -70,6 +70,8 @@ type DashboardWidgetListStreamDefinitionRequestColumnsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetField()
+	ResetWidth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputRefere
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) ResetField() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) ResetWidth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWidth",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

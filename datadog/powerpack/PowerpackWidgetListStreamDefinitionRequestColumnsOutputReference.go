@@ -70,6 +70,8 @@ type PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetField()
+	ResetWidth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsOutputRefere
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference) ResetField() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference) ResetWidth() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWidth",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

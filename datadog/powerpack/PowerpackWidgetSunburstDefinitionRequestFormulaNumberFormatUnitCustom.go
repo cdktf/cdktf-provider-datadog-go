@@ -7,7 +7,7 @@ package powerpack
 type PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom struct {
 	// Unit label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/powerpack#label Powerpack#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/powerpack#label Powerpack#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 

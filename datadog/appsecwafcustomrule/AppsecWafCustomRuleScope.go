@@ -7,11 +7,11 @@ package appsecwafcustomrule
 type AppsecWafCustomRuleScope struct {
 	// The environment scope for the WAF custom rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
 	Env *string `field:"optional" json:"env" yaml:"env"`
 	// The service scope for the WAF custom rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 }
 

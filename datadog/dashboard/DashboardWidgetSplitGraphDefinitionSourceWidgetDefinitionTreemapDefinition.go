@@ -7,15 +7,15 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinition struct {
 	// custom_links block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/dashboard#custom_links Dashboard#custom_links}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/dashboard#custom_links Dashboard#custom_links}
 	CustomLinks interface{} `field:"optional" json:"customLinks" yaml:"customLinks"`
 	// request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/dashboard#request Dashboard#request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/dashboard#request Dashboard#request}
 	Request interface{} `field:"optional" json:"request" yaml:"request"`
 	// The title of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/dashboard#title Dashboard#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/dashboard#title Dashboard#title}
 	Title *string `field:"optional" json:"title" yaml:"title"`
 }
 

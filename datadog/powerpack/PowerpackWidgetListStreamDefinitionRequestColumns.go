@@ -7,11 +7,11 @@ package powerpack
 type PowerpackWidgetListStreamDefinitionRequestColumns struct {
 	// Widget column field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/powerpack#field Powerpack#field}
-	Field *string `field:"required" json:"field" yaml:"field"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/powerpack#field Powerpack#field}
+	Field *string `field:"optional" json:"field" yaml:"field"`
 	// Widget column width. Valid values are `auto`, `compact`, `full`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/powerpack#width Powerpack#width}
-	Width *string `field:"required" json:"width" yaml:"width"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/powerpack#width Powerpack#width}
+	Width *string `field:"optional" json:"width" yaml:"width"`
 }
 
