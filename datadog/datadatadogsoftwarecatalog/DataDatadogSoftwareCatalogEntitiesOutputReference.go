@@ -5,9 +5,9 @@ package datadatadogsoftwarecatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsoftwarecatalog/internal"
+	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogsoftwarecatalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
