@@ -75,6 +75,10 @@ func (c *jsiiProxy_CsmThreatsAgentRule) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_CsmThreatsAgentRule) validatePutActionsParameters(value interface{}) error {
+	return nil
+}
+
 func validateCsmThreatsAgentRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,6 +120,14 @@ func (j *jsiiProxy_CsmThreatsAgentRule) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_CsmThreatsAgentRule) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRule) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRule) validateSetProductTagsParameters(val *[]*string) error {
 	return nil
 }
 

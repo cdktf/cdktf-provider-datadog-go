@@ -95,6 +95,10 @@ func validateSyntheticsPrivateLocation_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetApiKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsPrivateLocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

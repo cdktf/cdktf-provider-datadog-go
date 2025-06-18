@@ -83,6 +83,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDn
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetFormParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetHostParameters(val *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetHt
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetInternalValueParameters(val *SyntheticsTestRequestDefinition) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetIsMessageBase64EncodedParameters(val interface{}) error {
 	return nil
 }
 

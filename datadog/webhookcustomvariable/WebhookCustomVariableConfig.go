@@ -24,15 +24,15 @@ type WebhookCustomVariableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the custom variable is secret or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 	IsSecret interface{} `field:"required" json:"isSecret" yaml:"isSecret"`
 	// The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The value of the custom variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

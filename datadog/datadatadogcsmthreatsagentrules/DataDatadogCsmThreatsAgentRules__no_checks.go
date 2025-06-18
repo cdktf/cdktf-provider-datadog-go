@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatadogCsmThreatsAgentRulesParameters(scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) error {
 	return nil
 }

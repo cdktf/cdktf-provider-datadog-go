@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
 type SyntheticsPrivateLocation interface {
 	cdktf.TerraformResource
+	ApiKey() *string
+	SetApiKey(val *string)
+	ApiKeyInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() *string
@@ -118,6 +121,7 @@ type SyntheticsPrivateLocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value interface{})
+	ResetApiKey()
 	ResetDescription()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -140,6 +144,26 @@ type SyntheticsPrivateLocation interface {
 // The jsii proxy struct for SyntheticsPrivateLocation
 type jsiiProxy_SyntheticsPrivateLocation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SyntheticsPrivateLocation) ApiKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsPrivateLocation) ApiKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsPrivateLocation) CdktfStack() cdktf.TerraformStack {
@@ -403,7 +427,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation_Override(s SyntheticsPrivateLocation, scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) {
 	_init_.Initialize()
 
@@ -429,6 +453,17 @@ func NewSyntheticsPrivateLocation_Override(s SyntheticsPrivateLocation, scope co
 		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsPrivateLocation)SetApiKey(val *string) {
+	if err := j.validateSetApiKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKey",
+		val,
 	)
 }
 
@@ -894,6 +929,14 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) PutMetadata(value interface{}) {
 		s,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsPrivateLocation) ResetApiKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApiKey",
+		nil, // no parameters
 	)
 }
 

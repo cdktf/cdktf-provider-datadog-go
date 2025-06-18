@@ -13,6 +13,9 @@ import (
 
 type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	cdktf.ComplexObject
+	AcceptSelfSigned() interface{}
+	SetAcceptSelfSigned(val interface{})
+	AcceptSelfSignedInput() interface{}
 	AllowInsecure() interface{}
 	SetAllowInsecure(val interface{})
 	AllowInsecureInput() interface{}
@@ -28,6 +31,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	CertificateDomains() *[]*string
 	SetCertificateDomains(val *[]*string)
 	CertificateDomainsInput() *[]*string
+	CheckCertificateRevocation() interface{}
+	SetCheckCertificateRevocation(val interface{})
+	CheckCertificateRevocationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,6 +58,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	FollowRedirects() interface{}
 	SetFollowRedirects(val interface{})
 	FollowRedirectsInput() interface{}
+	Form() *map[string]*string
+	SetForm(val *map[string]*string)
+	FormInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	Host() *string
@@ -62,6 +71,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	HttpVersionInput() *string
 	InternalValue() *SyntheticsTestApiStepRequestDefinition
 	SetInternalValue(val *SyntheticsTestApiStepRequestDefinition)
+	IsMessageBase64Encoded() interface{}
+	SetIsMessageBase64Encoded(val interface{})
+	IsMessageBase64EncodedInput() interface{}
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -133,16 +145,20 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAcceptSelfSigned()
 	ResetAllowInsecure()
 	ResetBody()
 	ResetBodyType()
 	ResetCallType()
 	ResetCertificateDomains()
+	ResetCheckCertificateRevocation()
 	ResetDnsServer()
 	ResetDnsServerPort()
 	ResetFollowRedirects()
+	ResetForm()
 	ResetHost()
 	ResetHttpVersion()
+	ResetIsMessageBase64Encoded()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -169,6 +185,26 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 // The jsii proxy struct for SyntheticsTestApiStepRequestDefinitionOutputReference
 type jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) AcceptSelfSigned() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptSelfSigned",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) AcceptSelfSignedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptSelfSignedInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) AllowInsecure() interface{} {
@@ -271,6 +307,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Certif
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CheckCertificateRevocation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkCertificateRevocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) CheckCertificateRevocationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkCertificateRevocationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -361,6 +417,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Follow
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Form() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"form",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) FormInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"formInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,6 +492,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) IsMessageBase64Encoded() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isMessageBase64Encoded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) IsMessageBase64EncodedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isMessageBase64EncodedInput",
 		&returns,
 	)
 	return returns
@@ -729,6 +825,17 @@ func NewSyntheticsTestApiStepRequestDefinitionOutputReference_Override(s Synthet
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetAcceptSelfSigned(val interface{}) {
+	if err := j.validateSetAcceptSelfSignedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptSelfSigned",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetAllowInsecure(val interface{}) {
 	if err := j.validateSetAllowInsecureParameters(val); err != nil {
 		panic(err)
@@ -780,6 +887,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCert
 	_jsii_.Set(
 		j,
 		"certificateDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetCheckCertificateRevocation(val interface{}) {
+	if err := j.validateSetCheckCertificateRevocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkCertificateRevocation",
 		val,
 	)
 }
@@ -839,6 +957,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetFoll
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetForm(val *map[string]*string) {
+	if err := j.validateSetFormParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"form",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
@@ -868,6 +997,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetIsMessageBase64Encoded(val interface{}) {
+	if err := j.validateSetIsMessageBase64EncodedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isMessageBase64Encoded",
 		val,
 	)
 }
@@ -1223,6 +1363,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Interp
 	return returns
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetAcceptSelfSigned() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAcceptSelfSigned",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetAllowInsecure() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1263,6 +1411,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetC
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetCheckCertificateRevocation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCheckCertificateRevocation",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetDnsServer() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1287,6 +1443,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetF
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetForm() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForm",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetHost() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1299,6 +1463,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetH
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetIsMessageBase64Encoded() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsMessageBase64Encoded",
 		nil, // no parameters
 	)
 }

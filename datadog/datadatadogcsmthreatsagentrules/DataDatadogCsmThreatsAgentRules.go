@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
 type DataDatadogCsmThreatsAgentRules interface {
 	cdktf.TerraformDataSource
 	AgentRules() DataDatadogCsmThreatsAgentRulesAgentRulesList
@@ -44,6 +44,9 @@ type DataDatadogCsmThreatsAgentRules interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -84,6 +87,7 @@ type DataDatadogCsmThreatsAgentRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -223,6 +227,26 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) PolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -274,7 +298,7 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
 func NewDataDatadogCsmThreatsAgentRules(scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) DataDatadogCsmThreatsAgentRules {
 	_init_.Initialize()
 
@@ -292,7 +316,7 @@ func NewDataDatadogCsmThreatsAgentRules(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
 func NewDataDatadogCsmThreatsAgentRules_Override(d DataDatadogCsmThreatsAgentRules, scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) {
 	_init_.Initialize()
 
@@ -337,6 +361,17 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules)SetLifecycle(val *cdktf.Terra
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -638,6 +673,14 @@ func (d *jsiiProxy_DataDatadogCsmThreatsAgentRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRules) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

@@ -22,5 +22,9 @@ type DataDatadogCsmThreatsAgentRulesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Listing only the rules in the policy with this field as the ID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
+	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 }
 

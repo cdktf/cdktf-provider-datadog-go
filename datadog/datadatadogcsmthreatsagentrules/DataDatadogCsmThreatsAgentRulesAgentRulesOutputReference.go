@@ -13,6 +13,7 @@ import (
 
 type DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference interface {
 	cdktf.ComplexObject
+	Actions() DataDatadogCsmThreatsAgentRulesAgentRulesActionsList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +38,7 @@ type DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference interface {
 	InternalValue() *DataDatadogCsmThreatsAgentRulesAgentRules
 	SetInternalValue(val *DataDatadogCsmThreatsAgentRulesAgentRules)
 	Name() *string
+	ProductTags() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +84,16 @@ type DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference interface {
 // The jsii proxy struct for DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference
 type jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference) Actions() DataDatadogCsmThreatsAgentRulesAgentRulesActionsList {
+	var returns DataDatadogCsmThreatsAgentRulesAgentRulesActionsList
+	_jsii_.Get(
+		j,
+		"actions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -179,6 +191,16 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference) Nam
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference) ProductTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"productTags",
 		&returns,
 	)
 	return returns

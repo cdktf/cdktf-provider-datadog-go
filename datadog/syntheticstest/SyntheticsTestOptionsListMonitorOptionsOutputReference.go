@@ -35,6 +35,9 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *SyntheticsTestOptionsListMonitorOptions
 	SetInternalValue(val *SyntheticsTestOptionsListMonitorOptions)
+	NotificationPresetName() *string
+	SetNotificationPresetName(val *string)
+	NotificationPresetNameInput() *string
 	RenotifyInterval() *float64
 	SetRenotifyInterval(val *float64)
 	RenotifyIntervalInput() *float64
@@ -74,6 +77,7 @@ type SyntheticsTestOptionsListMonitorOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEscalationMessage()
+	ResetNotificationPresetName()
 	ResetRenotifyInterval()
 	ResetRenotifyOccurrences()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) NotificationPresetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPresetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) NotificationPresetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPresetNameInput",
 		&returns,
 	)
 	return returns
@@ -289,6 +313,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference)SetNotificationPresetName(val *string) {
+	if err := j.validateSetNotificationPresetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationPresetName",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetEscalationMessage",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) ResetNotificationPresetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotificationPresetName",
 		nil, // no parameters
 	)
 }

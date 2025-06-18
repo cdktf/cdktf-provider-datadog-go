@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) validateSetPolicyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDatadogCsmThreatsAgentRulesParameters(scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -46,6 +46,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	DnsServerPort() *string
 	SetDnsServerPort(val *string)
 	DnsServerPortInput() *string
+	Form() *map[string]*string
+	SetForm(val *map[string]*string)
+	FormInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	Host() *string
@@ -56,6 +59,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	HttpVersionInput() *string
 	InternalValue() *SyntheticsTestRequestDefinition
 	SetInternalValue(val *SyntheticsTestRequestDefinition)
+	IsMessageBase64Encoded() interface{}
+	SetIsMessageBase64Encoded(val interface{})
+	IsMessageBase64EncodedInput() interface{}
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -133,8 +139,10 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetCertificateDomains()
 	ResetDnsServer()
 	ResetDnsServerPort()
+	ResetForm()
 	ResetHost()
 	ResetHttpVersion()
+	ResetIsMessageBase64Encoded()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -313,6 +321,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) DnsServerPort
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Form() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"form",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) FormInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"formInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +396,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) IsMessageBase64Encoded() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isMessageBase64Encoded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) IsMessageBase64EncodedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isMessageBase64EncodedInput",
 		&returns,
 	)
 	return returns
@@ -769,6 +817,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetDnsServerPo
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetForm(val *map[string]*string) {
+	if err := j.validateSetFormParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"form",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
@@ -798,6 +857,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetIsMessageBase64Encoded(val interface{}) {
+	if err := j.validateSetIsMessageBase64EncodedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isMessageBase64Encoded",
 		val,
 	)
 }
@@ -1201,6 +1271,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetDnsServe
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetForm() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForm",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetHost() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1213,6 +1291,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetHttpVers
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetIsMessageBase64Encoded() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsMessageBase64Encoded",
 		nil, // no parameters
 	)
 }

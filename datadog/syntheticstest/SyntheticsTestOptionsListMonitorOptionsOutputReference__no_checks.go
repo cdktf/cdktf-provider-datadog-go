@@ -67,6 +67,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetNotificationPresetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListMonitorOptionsOutputReference) validateSetRenotifyIntervalParameters(val *float64) error {
 	return nil
 }
