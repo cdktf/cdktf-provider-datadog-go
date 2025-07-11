@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionAws struct {
 	// assume_role block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 	AssumeRole *ActionConnectionAwsAssumeRole `field:"optional" json:"assumeRole" yaml:"assumeRole"`
 }
 

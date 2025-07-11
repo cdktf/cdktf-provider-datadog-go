@@ -5,7 +5,7 @@ package powerpack
 
 
 type PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/powerpack#unit_name Powerpack#unit_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/powerpack#unit_name Powerpack#unit_name}.
 	UnitName *string `field:"required" json:"unitName" yaml:"unitName"`
 }
 

@@ -30,6 +30,7 @@ type DataDatadogCsmThreatsAgentRulesAgentRulesActionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hash() DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference
 	InternalValue() *DataDatadogCsmThreatsAgentRulesAgentRulesActions
 	SetInternalValue(val *DataDatadogCsmThreatsAgentRulesAgentRulesActions)
 	Set() DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsOutputReferen
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsOutputReference) Hash() DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference {
+	var returns DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference
+	_jsii_.Get(
+		j,
+		"hash",
 		&returns,
 	)
 	return returns

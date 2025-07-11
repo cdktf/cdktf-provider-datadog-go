@@ -83,6 +83,10 @@ func (l *jsiiProxy_LogsCustomDestination) validatePutHttpDestinationParameters(v
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomDestination) validatePutMicrosoftSentinelDestinationParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomDestination) validatePutSplunkDestinationParameters(value interface{}) error {
 	return nil
 }

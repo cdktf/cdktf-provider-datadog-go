@@ -24,19 +24,19 @@ type OnCallScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human-readable name for the new schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The time zone in which the schedule is defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
 	TimeZone *string `field:"required" json:"timeZone" yaml:"timeZone"`
 	// layer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
 	Layer interface{} `field:"optional" json:"layer" yaml:"layer"`
 	// A list of team ids associated with the schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
 	Teams *[]*string `field:"optional" json:"teams" yaml:"teams"`
 }
 

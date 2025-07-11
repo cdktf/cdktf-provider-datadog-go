@@ -59,6 +59,10 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) validateSetCustomStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

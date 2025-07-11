@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 type SensitiveDataScannerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,8 @@ type SensitiveDataScannerGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Samplings() SensitiveDataScannerGroupSamplingsList
+	SamplingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,11 +124,13 @@ type SensitiveDataScannerGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *SensitiveDataScannerGroupFilter)
+	PutSamplings(value interface{})
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSamplings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -395,6 +399,26 @@ func (j *jsiiProxy_SensitiveDataScannerGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SensitiveDataScannerGroup) Samplings() SensitiveDataScannerGroupSamplingsList {
+	var returns SensitiveDataScannerGroupSamplingsList
+	_jsii_.Get(
+		j,
+		"samplings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerGroup) SamplingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"samplingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SensitiveDataScannerGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_SensitiveDataScannerGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) SensitiveDataScannerGroup {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup_Override(s SensitiveDataScannerGroup, scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) {
 	_init_.Initialize()
 
@@ -942,6 +966,17 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) PutFilter(value *SensitiveDataScan
 	)
 }
 
+func (s *jsiiProxy_SensitiveDataScannerGroup) PutSamplings(value interface{}) {
+	if err := s.validatePutSamplingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSamplings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SensitiveDataScannerGroup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -962,6 +997,14 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SensitiveDataScannerGroup) ResetSamplings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSamplings",
 		nil, // no parameters
 	)
 }

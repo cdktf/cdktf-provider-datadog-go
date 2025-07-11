@@ -30,6 +30,8 @@ type CsmThreatsAgentRuleActionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hash() CsmThreatsAgentRuleActionsHashOutputReference
+	HashInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Set() CsmThreatsAgentRuleActionsSetOutputReference
@@ -66,6 +68,7 @@ type CsmThreatsAgentRuleActionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHash(value *CsmThreatsAgentRuleActionsHash)
 	PutSet(value *CsmThreatsAgentRuleActionsSet)
 	ResetSet()
 	// Produce the Token's value at resolution time.
@@ -118,6 +121,26 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) Hash() CsmThreatsAgentRuleActionsHashOutputReference {
+	var returns CsmThreatsAgentRuleActionsHashOutputReference
+	_jsii_.Get(
+		j,
+		"hash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) HashInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hashInput",
 		&returns,
 	)
 	return returns
@@ -440,6 +463,17 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) PutHash(value *CsmThreatsAgentRuleActionsHash) {
+	if err := c.validatePutHashParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHash",
+		[]interface{}{value},
+	)
 }
 
 func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) PutSet(value *CsmThreatsAgentRuleActionsSet) {

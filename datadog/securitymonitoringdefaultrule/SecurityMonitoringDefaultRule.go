@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 type SecurityMonitoringDefaultRule interface {
 	cdktf.TerraformResource
 	Case() SecurityMonitoringDefaultRuleCaseList
@@ -29,6 +29,12 @@ type SecurityMonitoringDefaultRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomMessage() *string
+	SetCustomMessage(val *string)
+	CustomMessageInput() *string
+	CustomName() *string
+	SetCustomName(val *string)
+	CustomNameInput() *string
 	CustomTags() *[]*string
 	SetCustomTags(val *[]*string)
 	CustomTagsInput() *[]*string
@@ -68,6 +74,8 @@ type SecurityMonitoringDefaultRule interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Query() SecurityMonitoringDefaultRuleQueryList
+	QueryInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -123,7 +131,10 @@ type SecurityMonitoringDefaultRule interface {
 	PutCase(value interface{})
 	PutFilter(value interface{})
 	PutOptions(value *SecurityMonitoringDefaultRuleOptions)
+	PutQuery(value interface{})
 	ResetCase()
+	ResetCustomMessage()
+	ResetCustomName()
 	ResetCustomTags()
 	ResetEnabled()
 	ResetFilter()
@@ -132,6 +143,7 @@ type SecurityMonitoringDefaultRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQuery()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -205,6 +217,46 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) CustomNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNameInput",
 		&returns,
 	)
 	return returns
@@ -390,6 +442,26 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Provisioners() *[]interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) Query() SecurityMonitoringDefaultRuleQueryList {
+	var returns SecurityMonitoringDefaultRuleQueryList
+	_jsii_.Get(
+		j,
+		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) QueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -441,7 +513,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule {
 	_init_.Initialize()
 
@@ -459,7 +531,7 @@ func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule_Override(s SecurityMonitoringDefaultRule, scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) {
 	_init_.Initialize()
 
@@ -488,6 +560,28 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCustomMessage(val *string) {
+	if err := j.validateSetCustomMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetCustomName(val *string) {
+	if err := j.validateSetCustomNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customName",
 		val,
 	)
 }
@@ -957,10 +1051,37 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) PutOptions(value *SecurityMoni
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) PutQuery(value interface{}) {
+	if err := s.validatePutQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putQuery",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetCase() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCase",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetCustomMessage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomMessage",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetCustomName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomName",
 		nil, // no parameters
 	)
 }
@@ -1009,6 +1130,14 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQuery",
 		nil, // no parameters
 	)
 }

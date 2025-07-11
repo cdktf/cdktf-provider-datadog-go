@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
 type LogsCustomDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,8 @@ type LogsCustomDestination interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MicrosoftSentinelDestination() LogsCustomDestinationMicrosoftSentinelDestinationList
+	MicrosoftSentinelDestinationInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +133,7 @@ type LogsCustomDestination interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutElasticsearchDestination(value interface{})
 	PutHttpDestination(value interface{})
+	PutMicrosoftSentinelDestination(value interface{})
 	PutSplunkDestination(value interface{})
 	ResetElasticsearchDestination()
 	ResetEnabled()
@@ -138,6 +141,7 @@ type LogsCustomDestination interface {
 	ResetForwardTagsRestrictionList()
 	ResetForwardTagsRestrictionListType()
 	ResetHttpDestination()
+	ResetMicrosoftSentinelDestination()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -381,6 +385,26 @@ func (j *jsiiProxy_LogsCustomDestination) Lifecycle() *cdktf.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_LogsCustomDestination) MicrosoftSentinelDestination() LogsCustomDestinationMicrosoftSentinelDestinationList {
+	var returns LogsCustomDestinationMicrosoftSentinelDestinationList
+	_jsii_.Get(
+		j,
+		"microsoftSentinelDestination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomDestination) MicrosoftSentinelDestinationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"microsoftSentinelDestinationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsCustomDestination) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_LogsCustomDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
 func NewLogsCustomDestination(scope constructs.Construct, id *string, config *LogsCustomDestinationConfig) LogsCustomDestination {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewLogsCustomDestination(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
 func NewLogsCustomDestination_Override(l LogsCustomDestination, scope constructs.Construct, id *string, config *LogsCustomDestinationConfig) {
 	_init_.Initialize()
 
@@ -1050,6 +1074,17 @@ func (l *jsiiProxy_LogsCustomDestination) PutHttpDestination(value interface{}) 
 	)
 }
 
+func (l *jsiiProxy_LogsCustomDestination) PutMicrosoftSentinelDestination(value interface{}) {
+	if err := l.validatePutMicrosoftSentinelDestinationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putMicrosoftSentinelDestination",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomDestination) PutSplunkDestination(value interface{}) {
 	if err := l.validatePutSplunkDestinationParameters(value); err != nil {
 		panic(err)
@@ -1105,6 +1140,14 @@ func (l *jsiiProxy_LogsCustomDestination) ResetHttpDestination() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetHttpDestination",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomDestination) ResetMicrosoftSentinelDestination() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMicrosoftSentinelDestination",
 		nil, // no parameters
 	)
 }

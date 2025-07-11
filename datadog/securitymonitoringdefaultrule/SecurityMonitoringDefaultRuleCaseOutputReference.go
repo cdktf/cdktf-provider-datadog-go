@@ -28,6 +28,9 @@ type SecurityMonitoringDefaultRuleCaseOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomStatus() *string
+	SetCustomStatus(val *string)
+	CustomStatusInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,8 @@ type SecurityMonitoringDefaultRuleCaseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCustomStatus()
+	ResetNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -110,6 +115,26 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) CustomStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) CustomStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customStatusInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +266,17 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference)SetCustomStatus(val *string) {
+	if err := j.validateSetCustomStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customStatus",
 		val,
 	)
 }
@@ -484,6 +520,22 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) ResetCustomStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) ResetNotifications() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotifications",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

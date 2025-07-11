@@ -87,6 +87,10 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) validatePutOptionsParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) validatePutQueryParameters(value interface{}) error {
+	return nil
+}
+
 func validateSecurityMonitoringDefaultRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -108,6 +112,14 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetConnectionParameter
 }
 
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCustomMessageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCustomNameParameters(val *string) error {
 	return nil
 }
 

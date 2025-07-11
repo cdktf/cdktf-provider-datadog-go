@@ -70,6 +70,7 @@ type SyntheticsTestRequestClientCertificateKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetContent()
 	ResetFilename()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -485,6 +486,14 @@ func (s *jsiiProxy_SyntheticsTestRequestClientCertificateKeyOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestClientCertificateKeyOutputReference) ResetContent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContent",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsTestRequestClientCertificateKeyOutputReference) ResetFilename() {

@@ -47,6 +47,10 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validatePutHashParameters(value *CsmThreatsAgentRuleActionsHash) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validatePutSetParameters(value *CsmThreatsAgentRuleActionsSet) error {
 	return nil
 }

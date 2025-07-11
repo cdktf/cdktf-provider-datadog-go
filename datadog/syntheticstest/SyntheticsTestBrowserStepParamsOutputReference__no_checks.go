@@ -51,11 +51,19 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutEl
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutPatternParameters(value *SyntheticsTestBrowserStepParamsPattern) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutVariableParameters(value *SyntheticsTestBrowserStepParamsVariable) error {
 	return nil
 }
 
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateSetAppendToContentParameters(val interface{}) error {
 	return nil
 }
 

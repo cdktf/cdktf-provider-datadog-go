@@ -13,6 +13,9 @@ import (
 
 type SyntheticsTestBrowserStepParamsOutputReference interface {
 	cdktf.ComplexObject
+	AppendToContent() interface{}
+	SetAppendToContent(val interface{})
+	AppendToContentInput() interface{}
 	Attribute() *string
 	SetAttribute(val *string)
 	AttributeInput() *string
@@ -67,6 +70,8 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	Modifiers() *[]*string
 	SetModifiers(val *[]*string)
 	ModifiersInput() *[]*string
+	Pattern() SyntheticsTestBrowserStepParamsPatternOutputReference
+	PatternInput() *SyntheticsTestBrowserStepParamsPattern
 	PlayingTabId() *string
 	SetPlayingTabId(val *string)
 	PlayingTabIdInput() *string
@@ -126,7 +131,9 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutElementUserLocator(value *SyntheticsTestBrowserStepParamsElementUserLocator)
+	PutPattern(value *SyntheticsTestBrowserStepParamsPattern)
 	PutVariable(value *SyntheticsTestBrowserStepParamsVariable)
+	ResetAppendToContent()
 	ResetAttribute()
 	ResetCheck()
 	ResetClickType()
@@ -139,6 +146,7 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	ResetFile()
 	ResetFiles()
 	ResetModifiers()
+	ResetPattern()
 	ResetPlayingTabId()
 	ResetRequest()
 	ResetRequests()
@@ -161,6 +169,26 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 // The jsii proxy struct for SyntheticsTestBrowserStepParamsOutputReference
 type jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) AppendToContent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appendToContent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) AppendToContentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appendToContentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Attribute() *string {
@@ -453,6 +481,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ModifiersInpu
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Pattern() SyntheticsTestBrowserStepParamsPatternOutputReference {
+	var returns SyntheticsTestBrowserStepParamsPatternOutputReference
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PatternInput() *SyntheticsTestBrowserStepParamsPattern {
+	var returns *SyntheticsTestBrowserStepParamsPattern
+	_jsii_.Get(
+		j,
+		"patternInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PlayingTabId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -678,6 +726,17 @@ func NewSyntheticsTestBrowserStepParamsOutputReference_Override(s SyntheticsTest
 		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference)SetAppendToContent(val interface{}) {
+	if err := j.validateSetAppendToContentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appendToContent",
+		val,
 	)
 }
 
@@ -1142,6 +1201,17 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutElementUse
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutPattern(value *SyntheticsTestBrowserStepParamsPattern) {
+	if err := s.validatePutPatternParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPattern",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutVariable(value *SyntheticsTestBrowserStepParamsVariable) {
 	if err := s.validatePutVariableParameters(value); err != nil {
 		panic(err)
@@ -1150,6 +1220,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutVariable(v
 		s,
 		"putVariable",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetAppendToContent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppendToContent",
+		nil, // no parameters
 	)
 }
 
@@ -1245,6 +1323,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetModifier
 	_jsii_.InvokeVoid(
 		s,
 		"resetModifiers",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetPattern() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPattern",
 		nil, // no parameters
 	)
 }

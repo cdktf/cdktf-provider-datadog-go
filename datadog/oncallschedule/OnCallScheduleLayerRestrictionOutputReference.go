@@ -76,10 +76,6 @@ type OnCallScheduleLayerRestrictionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEndDay()
-	ResetEndTime()
-	ResetStartDay()
-	ResetStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -556,38 +552,6 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationF
 	)
 
 	return returns
-}
-
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) ResetEndDay() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetEndDay",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) ResetEndTime() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetEndTime",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) ResetStartDay() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetStartDay",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) ResetStartTime() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetStartTime",
-		nil, // no parameters
-	)
 }
 
 func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

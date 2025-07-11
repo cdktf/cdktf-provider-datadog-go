@@ -89,7 +89,6 @@ type OnCallScheduleLayerOutputReference interface {
 	ResetEndDate()
 	ResetInterval()
 	ResetRestriction()
-	ResetRotationStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -691,14 +690,6 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) ResetRestriction() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRestriction",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OnCallScheduleLayerOutputReference) ResetRotationStart() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetRotationStart",
 		nil, // no parameters
 	)
 }

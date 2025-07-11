@@ -79,6 +79,10 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) validatePutFilterParameters(value 
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerGroup) validatePutSamplingsParameters(value interface{}) error {
+	return nil
+}
+
 func validateSensitiveDataScannerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
