@@ -49,6 +49,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableAiaIntermediateFetching() interface{}
+	SetDisableAiaIntermediateFetching(val interface{})
+	DisableAiaIntermediateFetchingInput() interface{}
 	DnsServer() *string
 	SetDnsServer(val *string)
 	DnsServerInput() *string
@@ -152,6 +155,7 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetCallType()
 	ResetCertificateDomains()
 	ResetCheckCertificateRevocation()
+	ResetDisableAiaIntermediateFetching()
 	ResetDnsServer()
 	ResetDnsServerPort()
 	ResetFollowRedirects()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DisableAiaIntermediateFetching() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAiaIntermediateFetching",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DisableAiaIntermediateFetchingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAiaIntermediateFetchingInput",
 		&returns,
 	)
 	return returns
@@ -924,6 +948,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetComp
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDisableAiaIntermediateFetching(val interface{}) {
+	if err := j.validateSetDisableAiaIntermediateFetchingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAiaIntermediateFetching",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDnsServer(val *string) {
 	if err := j.validateSetDnsServerParameters(val); err != nil {
 		panic(err)
@@ -1415,6 +1450,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		s,
 		"resetCheckCertificateRevocation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetDisableAiaIntermediateFetching() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableAiaIntermediateFetching",
 		nil, // no parameters
 	)
 }

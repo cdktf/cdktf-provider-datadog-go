@@ -91,6 +91,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetDisableAiaIntermediateFetchingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetDisableCorsParameters(val interface{}) error {
 	return nil
 }

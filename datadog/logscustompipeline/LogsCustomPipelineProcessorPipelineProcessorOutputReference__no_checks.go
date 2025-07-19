@@ -51,6 +51,10 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) validatePutArrayProcessorParameters(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessor) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) validatePutAttributeRemapperParameters(value *LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper) error {
 	return nil
 }

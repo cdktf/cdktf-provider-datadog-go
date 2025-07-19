@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/action_connection datadog_action_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/action_connection datadog_action_connection}.
 type ActionConnection interface {
 	cdktf.TerraformResource
 	Aws() ActionConnectionAwsOutputReference
@@ -368,7 +368,7 @@ func (j *jsiiProxy_ActionConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/action_connection datadog_action_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/action_connection datadog_action_connection} Resource.
 func NewActionConnection(scope constructs.Construct, id *string, config *ActionConnectionConfig) ActionConnection {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewActionConnection(scope constructs.Construct, id *string, config *ActionC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/action_connection datadog_action_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/action_connection datadog_action_connection} Resource.
 func NewActionConnection_Override(a ActionConnection, scope constructs.Construct, id *string, config *ActionConnectionConfig) {
 	_init_.Initialize()
 

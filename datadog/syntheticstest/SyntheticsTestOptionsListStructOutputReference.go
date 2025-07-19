@@ -39,6 +39,9 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableAiaIntermediateFetching() interface{}
+	SetDisableAiaIntermediateFetching(val interface{})
+	DisableAiaIntermediateFetchingInput() interface{}
 	DisableCors() interface{}
 	SetDisableCors(val interface{})
 	DisableCorsInput() interface{}
@@ -131,6 +134,7 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	ResetAllowInsecure()
 	ResetCheckCertificateRevocation()
 	ResetCi()
+	ResetDisableAiaIntermediateFetching()
 	ResetDisableCors()
 	ResetDisableCsp()
 	ResetFollowRedirects()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableAiaIntermediateFetching() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAiaIntermediateFetching",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) DisableAiaIntermediateFetchingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAiaIntermediateFetchingInput",
 		&returns,
 	)
 	return returns
@@ -735,6 +759,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetComplexObje
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetDisableAiaIntermediateFetching(val interface{}) {
+	if err := j.validateSetDisableAiaIntermediateFetchingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAiaIntermediateFetching",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetDisableCors(val interface{}) {
 	if err := j.validateSetDisableCorsParameters(val); err != nil {
 		panic(err)
@@ -1180,6 +1215,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetCi() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCi",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetDisableAiaIntermediateFetching() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDisableAiaIntermediateFetching",
 		nil, // no parameters
 	)
 }

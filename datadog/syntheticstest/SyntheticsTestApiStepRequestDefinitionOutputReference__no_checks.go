@@ -87,6 +87,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDisableAiaIntermediateFetchingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDnsServerParameters(val *string) error {
 	return nil
 }

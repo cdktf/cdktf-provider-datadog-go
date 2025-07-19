@@ -15,6 +15,8 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	cdktf.ComplexObject
 	ArithmeticProcessor() LogsCustomPipelineProcessorArithmeticProcessorOutputReference
 	ArithmeticProcessorInput() *LogsCustomPipelineProcessorArithmeticProcessor
+	ArrayProcessor() LogsCustomPipelineProcessorArrayProcessorOutputReference
+	ArrayProcessorInput() *LogsCustomPipelineProcessorArrayProcessor
 	AttributeRemapper() LogsCustomPipelineProcessorAttributeRemapperOutputReference
 	AttributeRemapperInput() *LogsCustomPipelineProcessorAttributeRemapper
 	CategoryProcessor() LogsCustomPipelineProcessorCategoryProcessorOutputReference
@@ -99,6 +101,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutArithmeticProcessor(value *LogsCustomPipelineProcessorArithmeticProcessor)
+	PutArrayProcessor(value *LogsCustomPipelineProcessorArrayProcessor)
 	PutAttributeRemapper(value *LogsCustomPipelineProcessorAttributeRemapper)
 	PutCategoryProcessor(value *LogsCustomPipelineProcessorCategoryProcessor)
 	PutDateRemapper(value *LogsCustomPipelineProcessorDateRemapper)
@@ -116,6 +119,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	PutUrlParser(value *LogsCustomPipelineProcessorUrlParser)
 	PutUserAgentParser(value *LogsCustomPipelineProcessorUserAgentParser)
 	ResetArithmeticProcessor()
+	ResetArrayProcessor()
 	ResetAttributeRemapper()
 	ResetCategoryProcessor()
 	ResetDateRemapper()
@@ -162,6 +166,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ArithmeticProcess
 	_jsii_.Get(
 		j,
 		"arithmeticProcessorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ArrayProcessor() LogsCustomPipelineProcessorArrayProcessorOutputReference {
+	var returns LogsCustomPipelineProcessorArrayProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"arrayProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ArrayProcessorInput() *LogsCustomPipelineProcessorArrayProcessor {
+	var returns *LogsCustomPipelineProcessorArrayProcessor
+	_jsii_.Get(
+		j,
+		"arrayProcessorInput",
 		&returns,
 	)
 	return returns
@@ -837,6 +861,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutArithmeticProc
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutArrayProcessor(value *LogsCustomPipelineProcessorArrayProcessor) {
+	if err := l.validatePutArrayProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putArrayProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutAttributeRemapper(value *LogsCustomPipelineProcessorAttributeRemapper) {
 	if err := l.validatePutAttributeRemapperParameters(value); err != nil {
 		panic(err)
@@ -1017,6 +1052,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetArithmeticPr
 	_jsii_.InvokeVoid(
 		l,
 		"resetArithmeticProcessor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetArrayProcessor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetArrayProcessor",
 		nil, // no parameters
 	)
 }
