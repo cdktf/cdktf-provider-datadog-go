@@ -24,7 +24,7 @@ type DataDatadogDashboardListConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A dashboard list name to limit the search.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

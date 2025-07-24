@@ -24,7 +24,7 @@ type SecurityNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the rule (must be unique).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The list of handle targets for the notifications.
 	//
@@ -32,15 +32,15 @@ type SecurityNotificationRuleConfig struct {
 	Targets *[]*string `field:"required" json:"targets" yaml:"targets"`
 	// Indicates whether the rule is enabled. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// selectors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
 	Selectors *SecurityNotificationRuleSelectors `field:"optional" json:"selectors" yaml:"selectors"`
 	// Specifies the time period, in seconds, used to aggregate the notification. Defaults to `0`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
 	TimeAggregation *float64 `field:"optional" json:"timeAggregation" yaml:"timeAggregation"`
 }
 

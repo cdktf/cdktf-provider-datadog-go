@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order}.
 type DataDatadogLogsPipelinesOrder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataDatadogLogsPipelinesOrder) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order} Data Source.
 func NewDataDatadogLogsPipelinesOrder(scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesOrderConfig) DataDatadogLogsPipelinesOrder {
 	_init_.Initialize()
 
@@ -281,7 +281,7 @@ func NewDataDatadogLogsPipelinesOrder(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order} Data Source.
 func NewDataDatadogLogsPipelinesOrder_Override(d DataDatadogLogsPipelinesOrder, scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesOrderConfig) {
 	_init_.Initialize()
 

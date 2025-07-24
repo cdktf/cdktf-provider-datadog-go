@@ -24,7 +24,7 @@ type DataDatadogMetricTagsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The metric for which to fetch tags.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
 	Metric *string `field:"required" json:"metric" yaml:"metric"`
 }
 

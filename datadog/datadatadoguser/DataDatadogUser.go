@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/user datadog_user}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/user datadog_user}.
 type DataDatadogUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataDatadogUser) Verified() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataDatadogUserConfig) DataDatadogUser {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser_Override(d DataDatadogUser, scope constructs.Construct, id *string, config *DataDatadogUserConfig) {
 	_init_.Initialize()
 

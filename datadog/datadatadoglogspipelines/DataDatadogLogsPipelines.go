@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
 type DataDatadogLogsPipelines interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataDatadogLogsPipelines) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
 func NewDataDatadogLogsPipelines(scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesConfig) DataDatadogLogsPipelines {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataDatadogLogsPipelines(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
 func NewDataDatadogLogsPipelines_Override(d DataDatadogLogsPipelines, scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesConfig) {
 	_init_.Initialize()
 
