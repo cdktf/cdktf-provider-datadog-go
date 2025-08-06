@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs datadog}.
 type DatadogProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -27,8 +27,23 @@ type DatadogProvider interface {
 	AppKey() *string
 	SetAppKey(val *string)
 	AppKeyInput() *string
+	AwsAccessKeyId() *string
+	SetAwsAccessKeyId(val *string)
+	AwsAccessKeyIdInput() *string
+	AwsSecretAccessKey() *string
+	SetAwsSecretAccessKey(val *string)
+	AwsSecretAccessKeyInput() *string
+	AwsSessionToken() *string
+	SetAwsSessionToken(val *string)
+	AwsSessionTokenInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudProviderRegion() *string
+	SetCloudProviderRegion(val *string)
+	CloudProviderRegionInput() *string
+	CloudProviderType() *string
+	SetCloudProviderType(val *string)
+	CloudProviderTypeInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	DefaultTags() *DatadogProviderDefaultTags
@@ -57,6 +72,9 @@ type DatadogProvider interface {
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
+	OrgUuid() *string
+	SetOrgUuid(val *string)
+	OrgUuidInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -77,12 +95,18 @@ type DatadogProvider interface {
 	ResetApiKey()
 	ResetApiUrl()
 	ResetAppKey()
+	ResetAwsAccessKeyId()
+	ResetAwsSecretAccessKey()
+	ResetAwsSessionToken()
+	ResetCloudProviderRegion()
+	ResetCloudProviderType()
 	ResetDefaultTags()
 	ResetHttpClientRetryBackoffBase()
 	ResetHttpClientRetryBackoffMultiplier()
 	ResetHttpClientRetryEnabled()
 	ResetHttpClientRetryMaxRetries()
 	ResetHttpClientRetryTimeout()
+	ResetOrgUuid()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -185,11 +209,111 @@ func (j *jsiiProxy_DatadogProvider) AppKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatadogProvider) AwsAccessKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) AwsAccessKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) AwsSecretAccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) AwsSecretAccessKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) AwsSessionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSessionToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) AwsSessionTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSessionTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatadogProvider) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) CloudProviderRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) CloudProviderRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) CloudProviderType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) CloudProviderTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderTypeInput",
 		&returns,
 	)
 	return returns
@@ -365,6 +489,26 @@ func (j *jsiiProxy_DatadogProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DatadogProvider) OrgUuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orgUuid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) OrgUuidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orgUuidInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatadogProvider) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -426,7 +570,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -444,7 +588,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 
@@ -483,6 +627,46 @@ func (j *jsiiProxy_DatadogProvider)SetAppKey(val *string) {
 	_jsii_.Set(
 		j,
 		"appKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetAwsAccessKeyId(val *string) {
+	_jsii_.Set(
+		j,
+		"awsAccessKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetAwsSecretAccessKey(val *string) {
+	_jsii_.Set(
+		j,
+		"awsSecretAccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetAwsSessionToken(val *string) {
+	_jsii_.Set(
+		j,
+		"awsSessionToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetCloudProviderRegion(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudProviderRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetCloudProviderType(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudProviderType",
 		val,
 	)
 }
@@ -534,6 +718,14 @@ func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"httpClientRetryTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetOrgUuid(val *string) {
+	_jsii_.Set(
+		j,
+		"orgUuid",
 		val,
 	)
 }
@@ -703,6 +895,46 @@ func (d *jsiiProxy_DatadogProvider) ResetAppKey() {
 	)
 }
 
+func (d *jsiiProxy_DatadogProvider) ResetAwsAccessKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAwsAccessKeyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetAwsSecretAccessKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAwsSecretAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetAwsSessionToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAwsSessionToken",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetCloudProviderRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudProviderRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetCloudProviderType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudProviderType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatadogProvider) ResetDefaultTags() {
 	_jsii_.InvokeVoid(
 		d,
@@ -747,6 +979,14 @@ func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryTimeout() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetHttpClientRetryTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetOrgUuid() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrgUuid",
 		nil, // no parameters
 	)
 }

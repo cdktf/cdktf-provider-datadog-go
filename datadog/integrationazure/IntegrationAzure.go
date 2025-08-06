@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktf.TerraformResource
 	AppServicePlanFilters() *string
@@ -630,7 +630,7 @@ func (j *jsiiProxy_IntegrationAzure) UsageMetricsEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 

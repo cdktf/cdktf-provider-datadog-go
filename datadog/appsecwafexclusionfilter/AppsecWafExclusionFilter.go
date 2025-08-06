@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}.
 type AppsecWafExclusionFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_AppsecWafExclusionFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
 func NewAppsecWafExclusionFilter(scope constructs.Construct, id *string, config *AppsecWafExclusionFilterConfig) AppsecWafExclusionFilter {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewAppsecWafExclusionFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
 func NewAppsecWafExclusionFilter_Override(a AppsecWafExclusionFilter, scope constructs.Construct, id *string, config *AppsecWafExclusionFilterConfig) {
 	_init_.Initialize()
 

@@ -24,23 +24,23 @@ type ComplianceCustomFrameworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The framework handle. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
 	Handle *string `field:"required" json:"handle" yaml:"handle"`
 	// The framework name. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The framework version. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// The URL of the icon representing the framework.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
 	IconUrl *string `field:"optional" json:"iconUrl" yaml:"iconUrl"`
 	// requirements block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
 	Requirements interface{} `field:"optional" json:"requirements" yaml:"requirements"`
 }
 
