@@ -103,6 +103,7 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	ResetMetric()
 	ResetMetrics()
 	ResetName()
+	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -835,6 +836,14 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetName(
 	_jsii_.InvokeVoid(
 		s,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQuery",
 		nil, // no parameters
 	)
 }

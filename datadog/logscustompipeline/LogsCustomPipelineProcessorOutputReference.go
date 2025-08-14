@@ -38,6 +38,8 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	CreationStack() *[]*string
 	DateRemapper() LogsCustomPipelineProcessorDateRemapperOutputReference
 	DateRemapperInput() *LogsCustomPipelineProcessorDateRemapper
+	DecoderProcessor() LogsCustomPipelineProcessorDecoderProcessorOutputReference
+	DecoderProcessorInput() *LogsCustomPipelineProcessorDecoderProcessor
 	// Experimental.
 	Fqn() *string
 	GeoIpParser() LogsCustomPipelineProcessorGeoIpParserOutputReference
@@ -105,6 +107,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	PutAttributeRemapper(value *LogsCustomPipelineProcessorAttributeRemapper)
 	PutCategoryProcessor(value *LogsCustomPipelineProcessorCategoryProcessor)
 	PutDateRemapper(value *LogsCustomPipelineProcessorDateRemapper)
+	PutDecoderProcessor(value *LogsCustomPipelineProcessorDecoderProcessor)
 	PutGeoIpParser(value *LogsCustomPipelineProcessorGeoIpParser)
 	PutGrokParser(value *LogsCustomPipelineProcessorGrokParser)
 	PutLookupProcessor(value *LogsCustomPipelineProcessorLookupProcessor)
@@ -123,6 +126,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	ResetAttributeRemapper()
 	ResetCategoryProcessor()
 	ResetDateRemapper()
+	ResetDecoderProcessor()
 	ResetGeoIpParser()
 	ResetGrokParser()
 	ResetLookupProcessor()
@@ -276,6 +280,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) DateRemapperInput
 	_jsii_.Get(
 		j,
 		"dateRemapperInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) DecoderProcessor() LogsCustomPipelineProcessorDecoderProcessorOutputReference {
+	var returns LogsCustomPipelineProcessorDecoderProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"decoderProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) DecoderProcessorInput() *LogsCustomPipelineProcessorDecoderProcessor {
+	var returns *LogsCustomPipelineProcessorDecoderProcessor
+	_jsii_.Get(
+		j,
+		"decoderProcessorInput",
 		&returns,
 	)
 	return returns
@@ -905,6 +929,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutDateRemapper(v
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutDecoderProcessor(value *LogsCustomPipelineProcessorDecoderProcessor) {
+	if err := l.validatePutDecoderProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDecoderProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutGeoIpParser(value *LogsCustomPipelineProcessorGeoIpParser) {
 	if err := l.validatePutGeoIpParserParameters(value); err != nil {
 		panic(err)
@@ -1084,6 +1119,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetDateRemapper
 	_jsii_.InvokeVoid(
 		l,
 		"resetDateRemapper",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetDecoderProcessor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDecoderProcessor",
 		nil, // no parameters
 	)
 }

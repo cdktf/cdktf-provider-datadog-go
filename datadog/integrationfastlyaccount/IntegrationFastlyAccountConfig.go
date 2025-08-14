@@ -24,11 +24,11 @@ type IntegrationFastlyAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The API key for the Fastly account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
 	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
 	// The name of the Fastly account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

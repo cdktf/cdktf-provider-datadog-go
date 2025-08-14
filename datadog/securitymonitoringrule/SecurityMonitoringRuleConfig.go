@@ -24,70 +24,70 @@ type SecurityMonitoringRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Message for generated signals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
 	Message *string `field:"required" json:"message" yaml:"message"`
 	// The name of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// case block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
 	Case interface{} `field:"optional" json:"case" yaml:"case"`
 	// Whether the rule is enabled. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
 	// Additional grouping to perform on top of the query grouping.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#group_signals_by SecurityMonitoringRule#group_signals_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#group_signals_by SecurityMonitoringRule#group_signals_by}
 	GroupSignalsBy *[]*string `field:"optional" json:"groupSignalsBy" yaml:"groupSignalsBy"`
 	// Whether the notifications include the triggering group-by values in their title. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
 	HasExtendedTitle interface{} `field:"optional" json:"hasExtendedTitle" yaml:"hasExtendedTitle"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
 	Options *SecurityMonitoringRuleOptions `field:"optional" json:"options" yaml:"options"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 	// reference_tables block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#reference_tables SecurityMonitoringRule#reference_tables}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#reference_tables SecurityMonitoringRule#reference_tables}
 	ReferenceTables interface{} `field:"optional" json:"referenceTables" yaml:"referenceTables"`
 	// signal_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
 	SignalQuery interface{} `field:"optional" json:"signalQuery" yaml:"signalQuery"`
 	// Tags for generated signals.
 	//
 	// Note: if default tags are present at provider level, they will be added to this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 	// third_party_case block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#third_party_case SecurityMonitoringRule#third_party_case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#third_party_case SecurityMonitoringRule#third_party_case}
 	ThirdPartyCase interface{} `field:"optional" json:"thirdPartyCase" yaml:"thirdPartyCase"`
 	// The rule type. Valid values are `application_security`, `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// Whether or not to validate the Rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/security_monitoring_rule#validate SecurityMonitoringRule#validate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/security_monitoring_rule#validate SecurityMonitoringRule#validate}
 	Validate interface{} `field:"optional" json:"validate" yaml:"validate"`
 }
 

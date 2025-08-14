@@ -5,7 +5,7 @@ package dashboard
 
 
 type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/dashboard#unit_name Dashboard#unit_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/dashboard#unit_name Dashboard#unit_name}.
 	UnitName *string `field:"required" json:"unitName" yaml:"unitName"`
 }
 
