@@ -55,6 +55,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validat
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutCustomProcessorParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutDatadogTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) validatePutDedupeParameters(value interface{}) error {
 	return nil
 }

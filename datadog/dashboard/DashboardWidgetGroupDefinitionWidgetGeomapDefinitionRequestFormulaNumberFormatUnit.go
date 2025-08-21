@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaNumberFormatUnit struct {
 	// canonical block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/dashboard#canonical Dashboard#canonical}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dashboard#canonical Dashboard#canonical}
 	Canonical *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical `field:"optional" json:"canonical" yaml:"canonical"`
 	// custom block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/dashboard#custom Dashboard#custom}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dashboard#custom Dashboard#custom}
 	Custom *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom `field:"optional" json:"custom" yaml:"custom"`
 }
 

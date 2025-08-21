@@ -32,6 +32,10 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomProcessor() ObservabilityPipelineConfigProcessorsCustomProcessorList
+	CustomProcessorInput() interface{}
+	DatadogTags() ObservabilityPipelineConfigProcessorsDatadogTagsList
+	DatadogTagsInput() interface{}
 	Dedupe() ObservabilityPipelineConfigProcessorsDedupeList
 	DedupeInput() interface{}
 	EnrichmentTable() ObservabilityPipelineConfigProcessorsEnrichmentTableList
@@ -98,6 +102,8 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAddEnvVars(value interface{})
 	PutAddFields(value interface{})
+	PutCustomProcessor(value interface{})
+	PutDatadogTags(value interface{})
 	PutDedupe(value interface{})
 	PutEnrichmentTable(value interface{})
 	PutFilter(value interface{})
@@ -114,6 +120,8 @@ type ObservabilityPipelineConfigProcessorsOutputReference interface {
 	PutThrottle(value interface{})
 	ResetAddEnvVars()
 	ResetAddFields()
+	ResetCustomProcessor()
+	ResetDatadogTags()
 	ResetDedupe()
 	ResetEnrichmentTable()
 	ResetFilter()
@@ -208,6 +216,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) CustomProcessor() ObservabilityPipelineConfigProcessorsCustomProcessorList {
+	var returns ObservabilityPipelineConfigProcessorsCustomProcessorList
+	_jsii_.Get(
+		j,
+		"customProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) CustomProcessorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customProcessorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) DatadogTags() ObservabilityPipelineConfigProcessorsDatadogTagsList {
+	var returns ObservabilityPipelineConfigProcessorsDatadogTagsList
+	_jsii_.Get(
+		j,
+		"datadogTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) DatadogTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"datadogTagsInput",
 		&returns,
 	)
 	return returns
@@ -824,6 +872,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutAddF
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutCustomProcessor(value interface{}) {
+	if err := o.validatePutCustomProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCustomProcessor",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutDatadogTags(value interface{}) {
+	if err := o.validatePutDatadogTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDatadogTags",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) PutDedupe(value interface{}) {
 	if err := o.validatePutDedupeParameters(value); err != nil {
 		panic(err)
@@ -990,6 +1060,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetAd
 	_jsii_.InvokeVoid(
 		o,
 		"resetAddFields",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetCustomProcessor() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCustomProcessor",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsOutputReference) ResetDatadogTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDatadogTags",
 		nil, // no parameters
 	)
 }

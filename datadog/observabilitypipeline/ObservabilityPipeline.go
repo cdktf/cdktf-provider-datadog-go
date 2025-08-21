@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 type ObservabilityPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_ObservabilityPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline(scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) ObservabilityPipeline {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewObservabilityPipeline(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline_Override(o ObservabilityPipeline, scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) {
 	_init_.Initialize()
 

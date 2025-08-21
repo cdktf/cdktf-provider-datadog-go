@@ -15,6 +15,10 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	cdktf.ComplexObject
 	AmazonOpensearch() ObservabilityPipelineConfigDestinationsAmazonOpensearchList
 	AmazonOpensearchInput() interface{}
+	AmazonS3() ObservabilityPipelineConfigDestinationsAmazonS3List
+	AmazonS3Input() interface{}
+	AmazonSecurityLake() ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList
+	AmazonSecurityLakeInput() interface{}
 	AzureStorage() ObservabilityPipelineConfigDestinationsAzureStorageList
 	AzureStorageInput() interface{}
 	// the index of the complex object in a list.
@@ -32,6 +36,8 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrowdstrikeNextGenSiem() ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList
+	CrowdstrikeNextGenSiemInput() interface{}
 	DatadogLogs() ObservabilityPipelineConfigDestinationsDatadogLogsList
 	DatadogLogsInput() interface{}
 	Elasticsearch() ObservabilityPipelineConfigDestinationsElasticsearchList
@@ -54,6 +60,8 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	RsyslogInput() interface{}
 	SentinelOne() ObservabilityPipelineConfigDestinationsSentinelOneList
 	SentinelOneInput() interface{}
+	Socket() ObservabilityPipelineConfigDestinationsSocketList
+	SocketInput() interface{}
 	SplunkHec() ObservabilityPipelineConfigDestinationsSplunkHecList
 	SplunkHecInput() interface{}
 	SumoLogic() ObservabilityPipelineConfigDestinationsSumoLogicList
@@ -93,7 +101,10 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAmazonOpensearch(value interface{})
+	PutAmazonS3(value interface{})
+	PutAmazonSecurityLake(value interface{})
 	PutAzureStorage(value interface{})
+	PutCrowdstrikeNextGenSiem(value interface{})
 	PutDatadogLogs(value interface{})
 	PutElasticsearch(value interface{})
 	PutGoogleChronicle(value interface{})
@@ -103,11 +114,15 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	PutOpensearch(value interface{})
 	PutRsyslog(value interface{})
 	PutSentinelOne(value interface{})
+	PutSocket(value interface{})
 	PutSplunkHec(value interface{})
 	PutSumoLogic(value interface{})
 	PutSyslogNg(value interface{})
 	ResetAmazonOpensearch()
+	ResetAmazonS3()
+	ResetAmazonSecurityLake()
 	ResetAzureStorage()
+	ResetCrowdstrikeNextGenSiem()
 	ResetDatadogLogs()
 	ResetElasticsearch()
 	ResetGoogleChronicle()
@@ -117,6 +132,7 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	ResetOpensearch()
 	ResetRsyslog()
 	ResetSentinelOne()
+	ResetSocket()
 	ResetSplunkHec()
 	ResetSumoLogic()
 	ResetSyslogNg()
@@ -150,6 +166,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Amazo
 	_jsii_.Get(
 		j,
 		"amazonOpensearchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonS3() ObservabilityPipelineConfigDestinationsAmazonS3List {
+	var returns ObservabilityPipelineConfigDestinationsAmazonS3List
+	_jsii_.Get(
+		j,
+		"amazonS3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonS3Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonS3Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonSecurityLake() ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList {
+	var returns ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList
+	_jsii_.Get(
+		j,
+		"amazonSecurityLake",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) AmazonSecurityLakeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonSecurityLakeInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +256,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) CrowdstrikeNextGenSiem() ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList {
+	var returns ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList
+	_jsii_.Get(
+		j,
+		"crowdstrikeNextGenSiem",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) CrowdstrikeNextGenSiemInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crowdstrikeNextGenSiemInput",
 		&returns,
 	)
 	return returns
@@ -400,6 +476,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Senti
 	_jsii_.Get(
 		j,
 		"sentinelOneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Socket() ObservabilityPipelineConfigDestinationsSocketList {
+	var returns ObservabilityPipelineConfigDestinationsSocketList
+	_jsii_.Get(
+		j,
+		"socket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) SocketInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"socketInput",
 		&returns,
 	)
 	return returns
@@ -765,6 +861,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAm
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAmazonS3(value interface{}) {
+	if err := o.validatePutAmazonS3Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonS3",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAmazonSecurityLake(value interface{}) {
+	if err := o.validatePutAmazonSecurityLakeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonSecurityLake",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAzureStorage(value interface{}) {
 	if err := o.validatePutAzureStorageParameters(value); err != nil {
 		panic(err)
@@ -772,6 +890,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutAz
 	_jsii_.InvokeVoid(
 		o,
 		"putAzureStorage",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutCrowdstrikeNextGenSiem(value interface{}) {
+	if err := o.validatePutCrowdstrikeNextGenSiemParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCrowdstrikeNextGenSiem",
 		[]interface{}{value},
 	)
 }
@@ -875,6 +1004,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSe
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSocket(value interface{}) {
+	if err := o.validatePutSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSocket",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutSplunkHec(value interface{}) {
 	if err := o.validatePutSplunkHecParameters(value); err != nil {
 		panic(err)
@@ -916,10 +1056,34 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Reset
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetAmazonS3() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonS3",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetAmazonSecurityLake() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonSecurityLake",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetAzureStorage() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAzureStorage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetCrowdstrikeNextGenSiem() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCrowdstrikeNextGenSiem",
 		nil, // no parameters
 	)
 }
@@ -992,6 +1156,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		o,
 		"resetSentinelOne",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetSocket() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSocket",
 		nil, // no parameters
 	)
 }

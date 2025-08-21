@@ -54,6 +54,8 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 	LogstashInput() interface{}
 	Rsyslog() ObservabilityPipelineConfigSourcesRsyslogList
 	RsyslogInput() interface{}
+	Socket() ObservabilityPipelineConfigSourcesSocketList
+	SocketInput() interface{}
 	SplunkHec() ObservabilityPipelineConfigSourcesSplunkHecList
 	SplunkHecInput() interface{}
 	SplunkTcp() ObservabilityPipelineConfigSourcesSplunkTcpList
@@ -105,6 +107,7 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 	PutKafka(value interface{})
 	PutLogstash(value interface{})
 	PutRsyslog(value interface{})
+	PutSocket(value interface{})
 	PutSplunkHec(value interface{})
 	PutSplunkTcp(value interface{})
 	PutSumoLogic(value interface{})
@@ -120,6 +123,7 @@ type ObservabilityPipelineConfigSourcesOutputReference interface {
 	ResetKafka()
 	ResetLogstash()
 	ResetRsyslog()
+	ResetSocket()
 	ResetSplunkHec()
 	ResetSplunkTcp()
 	ResetSumoLogic()
@@ -404,6 +408,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) RsyslogInp
 	_jsii_.Get(
 		j,
 		"rsyslogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) Socket() ObservabilityPipelineConfigSourcesSocketList {
+	var returns ObservabilityPipelineConfigSourcesSocketList
+	_jsii_.Get(
+		j,
+		"socket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) SocketInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"socketInput",
 		&returns,
 	)
 	return returns
@@ -899,6 +923,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutRsyslog
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSocket(value interface{}) {
+	if err := o.validatePutSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSocket",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) PutSplunkHec(value interface{}) {
 	if err := o.validatePutSplunkHecParameters(value); err != nil {
 		panic(err)
@@ -1027,6 +1062,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetRsysl
 	_jsii_.InvokeVoid(
 		o,
 		"resetRsyslog",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) ResetSocket() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSocket",
 		nil, // no parameters
 	)
 }

@@ -51,7 +51,19 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) valid
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutAmazonS3Parameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutAmazonSecurityLakeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutAzureStorageParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutCrowdstrikeNextGenSiemParameters(value interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) valid
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSentinelOneParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutSocketParameters(value interface{}) error {
 	return nil
 }
 

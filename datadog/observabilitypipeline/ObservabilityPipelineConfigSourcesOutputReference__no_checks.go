@@ -91,6 +91,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePu
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSocketParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePutSplunkHecParameters(value interface{}) error {
 	return nil
 }
