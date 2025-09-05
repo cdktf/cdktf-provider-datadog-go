@@ -35,6 +35,8 @@ type IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference interface {
 	Lambdas() *[]*string
 	SetLambdas(val *[]*string)
 	LambdasInput() *[]*string
+	LogSourceConfig() IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference
+	LogSourceConfigInput() interface{}
 	Sources() *[]*string
 	SetSources(val *[]*string)
 	SourcesInput() *[]*string
@@ -70,7 +72,9 @@ type IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLogSourceConfig(value *IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig)
 	ResetLambdas()
+	ResetLogSourceConfig()
 	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference
 	_jsii_.Get(
 		j,
 		"lambdasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) LogSourceConfig() IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference {
+	var returns IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"logSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) LogSourceConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) PutLogSourceConfig(value *IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig) {
+	if err := i.validatePutLogSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putLogSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) ResetLambdas() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetLambdas",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) ResetLogSourceConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetLogSourceConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
 type DataDatadogCloudWorkloadSecurityAgentRules interface {
 	cdktf.TerraformDataSource
 	AgentRules() DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRules) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
 func NewDataDatadogCloudWorkloadSecurityAgentRules(scope constructs.Construct, id *string, config *DataDatadogCloudWorkloadSecurityAgentRulesConfig) DataDatadogCloudWorkloadSecurityAgentRules {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataDatadogCloudWorkloadSecurityAgentRules(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
 func NewDataDatadogCloudWorkloadSecurityAgentRules_Override(d DataDatadogCloudWorkloadSecurityAgentRules, scope constructs.Construct, id *string, config *DataDatadogCloudWorkloadSecurityAgentRulesConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateSetShouldSaveMatchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

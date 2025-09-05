@@ -47,6 +47,10 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) validatePutLogSourceConfigParameters(value *IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

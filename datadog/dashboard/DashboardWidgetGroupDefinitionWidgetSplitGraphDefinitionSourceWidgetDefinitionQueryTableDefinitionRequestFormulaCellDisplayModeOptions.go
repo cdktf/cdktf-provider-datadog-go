@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestFormulaCellDisplayModeOptions struct {
 	// The type of trend line to display. Valid values are `area`, `line`, `bars`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dashboard#trend_type Dashboard#trend_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dashboard#trend_type Dashboard#trend_type}
 	TrendType *string `field:"optional" json:"trendType" yaml:"trendType"`
 	// The scale of the y-axis. Valid values are `shared`, `independent`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dashboard#y_scale Dashboard#y_scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dashboard#y_scale Dashboard#y_scale}
 	YScale *string `field:"optional" json:"yScale" yaml:"yScale"`
 }
 

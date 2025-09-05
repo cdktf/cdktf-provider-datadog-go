@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationsGoogleChronicleAuth struct {
 	// Path to the GCP service account key file.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 	CredentialsFile *string `field:"optional" json:"credentialsFile" yaml:"credentialsFile"`
 }
 

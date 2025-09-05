@@ -9,11 +9,11 @@ type SyntheticsTestOptionsListRetry struct {
 	//
 	// Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
 }
 

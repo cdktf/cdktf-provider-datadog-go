@@ -107,7 +107,15 @@ func (j *jsiiProxy_RumApplication) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_RumApplication) validateSetProductAnalyticsRetentionStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RumApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RumApplication) validateSetRumEventProcessingStateParameters(val *string) error {
 	return nil
 }
 

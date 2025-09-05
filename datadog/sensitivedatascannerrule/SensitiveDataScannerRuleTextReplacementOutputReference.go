@@ -38,6 +38,9 @@ type SensitiveDataScannerRuleTextReplacementOutputReference interface {
 	ReplacementString() *string
 	SetReplacementString(val *string)
 	ReplacementStringInput() *string
+	ShouldSaveMatch() interface{}
+	SetShouldSaveMatch(val interface{})
+	ShouldSaveMatchInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type SensitiveDataScannerRuleTextReplacementOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetNumberOfChars()
 	ResetReplacementString()
+	ResetShouldSaveMatch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) Repla
 	_jsii_.Get(
 		j,
 		"replacementStringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) ShouldSaveMatch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldSaveMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) ShouldSaveMatchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldSaveMatchInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference)SetRep
 	_jsii_.Set(
 		j,
 		"replacementString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference)SetShouldSaveMatch(val interface{}) {
+	if err := j.validateSetShouldSaveMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldSaveMatch",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetReplacementString",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) ResetShouldSaveMatch() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShouldSaveMatch",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application}.
 type RumApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type RumApplication interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProductAnalyticsRetentionState() *string
+	SetProductAnalyticsRetentionState(val *string)
+	ProductAnalyticsRetentionStateInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -60,6 +63,9 @@ type RumApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RumEventProcessingState() *string
+	SetRumEventProcessingState(val *string)
+	RumEventProcessingStateInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,6 +121,8 @@ type RumApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProductAnalyticsRetentionState()
+	ResetRumEventProcessingState()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -274,6 +282,26 @@ func (j *jsiiProxy_RumApplication) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RumApplication) ProductAnalyticsRetentionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productAnalyticsRetentionState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumApplication) ProductAnalyticsRetentionStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productAnalyticsRetentionStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RumApplication) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -299,6 +327,26 @@ func (j *jsiiProxy_RumApplication) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumApplication) RumEventProcessingState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rumEventProcessingState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumApplication) RumEventProcessingStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rumEventProcessingStateInput",
 		&returns,
 	)
 	return returns
@@ -355,7 +403,7 @@ func (j *jsiiProxy_RumApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication(scope constructs.Construct, id *string, config *RumApplicationConfig) RumApplication {
 	_init_.Initialize()
 
@@ -373,7 +421,7 @@ func NewRumApplication(scope constructs.Construct, id *string, config *RumApplic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication_Override(r RumApplication, scope constructs.Construct, id *string, config *RumApplicationConfig) {
 	_init_.Initialize()
 
@@ -444,6 +492,17 @@ func (j *jsiiProxy_RumApplication)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RumApplication)SetProductAnalyticsRetentionState(val *string) {
+	if err := j.validateSetProductAnalyticsRetentionStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"productAnalyticsRetentionState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RumApplication)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -459,6 +518,17 @@ func (j *jsiiProxy_RumApplication)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RumApplication)SetRumEventProcessingState(val *string) {
+	if err := j.validateSetRumEventProcessingStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rumEventProcessingState",
 		val,
 	)
 }
@@ -831,6 +901,22 @@ func (r *jsiiProxy_RumApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RumApplication) ResetProductAnalyticsRetentionState() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProductAnalyticsRetentionState",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RumApplication) ResetRumEventProcessingState() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRumEventProcessingState",
 		nil, // no parameters
 	)
 }

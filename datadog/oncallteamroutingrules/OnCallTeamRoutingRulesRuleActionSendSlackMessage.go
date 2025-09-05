@@ -7,11 +7,11 @@ package oncallteamroutingrules
 type OnCallTeamRoutingRulesRuleActionSendSlackMessage struct {
 	// Slack channel ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 	Channel *string `field:"optional" json:"channel" yaml:"channel"`
 	// Slack workspace ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
 	Workspace *string `field:"optional" json:"workspace" yaml:"workspace"`
 }
 
