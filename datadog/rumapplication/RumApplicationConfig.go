@@ -24,19 +24,19 @@ type RumApplicationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the RUM application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#name RumApplication#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application#name RumApplication#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
 	ProductAnalyticsRetentionState *string `field:"optional" json:"productAnalyticsRetentionState" yaml:"productAnalyticsRetentionState"`
 	// Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
 	RumEventProcessingState *string `field:"optional" json:"rumEventProcessingState" yaml:"rumEventProcessingState"`
 	// Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#type RumApplication#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application#type RumApplication#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

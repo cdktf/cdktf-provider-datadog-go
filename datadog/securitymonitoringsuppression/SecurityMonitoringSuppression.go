@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 type SecurityMonitoringSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -86,6 +86,9 @@ type SecurityMonitoringSuppression interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Validate() interface{}
+	SetValidate(val interface{})
+	ValidateInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -137,6 +140,7 @@ type SecurityMonitoringSuppression interface {
 	ResetOverrideLogicalId()
 	ResetStartDate()
 	ResetSuppressionQuery()
+	ResetValidate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -485,8 +489,28 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) TerraformResourceType() *strin
 	return returns
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) Validate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+func (j *jsiiProxy_SecurityMonitoringSuppression) ValidateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression_Override(s SecurityMonitoringSuppression, scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) {
 	_init_.Initialize()
 
@@ -667,6 +691,17 @@ func (j *jsiiProxy_SecurityMonitoringSuppression)SetSuppressionQuery(val *string
 	_jsii_.Set(
 		j,
 		"suppressionQuery",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringSuppression)SetValidate(val interface{}) {
+	if err := j.validateSetValidateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validate",
 		val,
 	)
 }
@@ -1068,6 +1103,14 @@ func (s *jsiiProxy_SecurityMonitoringSuppression) ResetSuppressionQuery() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSuppressionQuery",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringSuppression) ResetValidate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValidate",
 		nil, // no parameters
 	)
 }

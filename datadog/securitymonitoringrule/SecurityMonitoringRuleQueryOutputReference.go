@@ -44,6 +44,12 @@ type SecurityMonitoringRuleQueryOutputReference interface {
 	GroupByFields() *[]*string
 	SetGroupByFields(val *[]*string)
 	GroupByFieldsInput() *[]*string
+	HasOptionalGroupByFields() interface{}
+	SetHasOptionalGroupByFields(val interface{})
+	HasOptionalGroupByFieldsInput() interface{}
+	Indexes() *[]*string
+	SetIndexes(val *[]*string)
+	IndexesInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Metric() *string
@@ -96,6 +102,8 @@ type SecurityMonitoringRuleQueryOutputReference interface {
 	ResetDataSource()
 	ResetDistinctFields()
 	ResetGroupByFields()
+	ResetHasOptionalGroupByFields()
+	ResetIndexes()
 	ResetMetric()
 	ResetMetrics()
 	ResetName()
@@ -249,6 +257,46 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) GroupByFieldsInpu
 	_jsii_.Get(
 		j,
 		"groupByFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) HasOptionalGroupByFields() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasOptionalGroupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) HasOptionalGroupByFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasOptionalGroupByFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) Indexes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"indexes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) IndexesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"indexesInput",
 		&returns,
 	)
 	return returns
@@ -454,6 +502,28 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference)SetGroupByFields(v
 	_jsii_.Set(
 		j,
 		"groupByFields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference)SetHasOptionalGroupByFields(val interface{}) {
+	if err := j.validateSetHasOptionalGroupByFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasOptionalGroupByFields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference)SetIndexes(val *[]*string) {
+	if err := j.validateSetIndexesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"indexes",
 		val,
 	)
 }
@@ -768,6 +838,22 @@ func (s *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) ResetGroupByField
 	_jsii_.InvokeVoid(
 		s,
 		"resetGroupByFields",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) ResetHasOptionalGroupByFields() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHasOptionalGroupByFields",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) ResetIndexes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIndexes",
 		nil, // no parameters
 	)
 }

@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartDate", GoMethod: "ResetStartDate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSuppressionQuery", GoMethod: "ResetSuppressionQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidate", GoMethod: "ResetValidate"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleQuery", GoGetter: "RuleQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleQueryInput", GoGetter: "RuleQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
@@ -77,6 +78,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "validate", GoGetter: "Validate"},
+			_jsii_.MemberProperty{JsiiProperty: "validateInput", GoGetter: "ValidateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringSuppression{}

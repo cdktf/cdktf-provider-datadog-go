@@ -47,6 +47,9 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	GroupByFields() *[]*string
 	SetGroupByFields(val *[]*string)
 	GroupByFieldsInput() *[]*string
+	HasOptionalGroupByFields() interface{}
+	SetHasOptionalGroupByFields(val interface{})
+	HasOptionalGroupByFieldsInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Metric() *string
@@ -100,6 +103,7 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	ResetDataSource()
 	ResetDistinctFields()
 	ResetGroupByFields()
+	ResetHasOptionalGroupByFields()
 	ResetMetric()
 	ResetMetrics()
 	ResetName()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) GroupByFie
 	_jsii_.Get(
 		j,
 		"groupByFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) HasOptionalGroupByFields() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasOptionalGroupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) HasOptionalGroupByFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasOptionalGroupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -490,6 +514,17 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetGroupByF
 	_jsii_.Set(
 		j,
 		"groupByFields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetHasOptionalGroupByFields(val interface{}) {
+	if err := j.validateSetHasOptionalGroupByFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasOptionalGroupByFields",
 		val,
 	)
 }
@@ -812,6 +847,14 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetGroup
 	_jsii_.InvokeVoid(
 		s,
 		"resetGroupByFields",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetHasOptionalGroupByFields() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHasOptionalGroupByFields",
 		nil, // no parameters
 	)
 }

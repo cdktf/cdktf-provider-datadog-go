@@ -83,6 +83,10 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetHasOptionalGroupByFieldsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -43,6 +43,7 @@ type SyntheticsTestApiStepOutputReference interface {
 	ExtractedValuesFromScriptInput() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	IsCritical() interface{}
@@ -285,6 +286,16 @@ func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

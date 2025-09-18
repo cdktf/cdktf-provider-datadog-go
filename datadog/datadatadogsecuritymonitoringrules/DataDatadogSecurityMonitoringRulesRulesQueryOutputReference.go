@@ -35,6 +35,8 @@ type DataDatadogSecurityMonitoringRulesRulesQueryOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GroupByFields() *[]*string
+	HasOptionalGroupByFields() cdktf.IResolvable
+	Indexes() *[]*string
 	InternalValue() *DataDatadogSecurityMonitoringRulesRulesQuery
 	SetInternalValue(val *DataDatadogSecurityMonitoringRulesRulesQuery)
 	Metric() *string
@@ -173,6 +175,26 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesQueryOutputReference) 
 	_jsii_.Get(
 		j,
 		"groupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesQueryOutputReference) HasOptionalGroupByFields() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasOptionalGroupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesQueryOutputReference) Indexes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"indexes",
 		&returns,
 	)
 	return returns

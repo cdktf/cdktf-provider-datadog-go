@@ -13,6 +13,7 @@ import (
 
 type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	cdktf.ComplexObject
+	CalculatedField() DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList
 	Case() DataDatadogSecurityMonitoringRulesRulesCaseList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -42,6 +43,7 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 	Options() DataDatadogSecurityMonitoringRulesRulesOptionsList
 	Query() DataDatadogSecurityMonitoringRulesRulesQueryList
 	ReferenceTables() DataDatadogSecurityMonitoringRulesRulesReferenceTablesList
+	SchedulingOptions() DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsList
 	SignalQuery() DataDatadogSecurityMonitoringRulesRulesSignalQueryList
 	Tags() *[]*string
 	// Experimental.
@@ -91,6 +93,16 @@ type DataDatadogSecurityMonitoringRulesRulesOutputReference interface {
 // The jsii proxy struct for DataDatadogSecurityMonitoringRulesRulesOutputReference
 type jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) CalculatedField() DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList {
+	var returns DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList
+	_jsii_.Get(
+		j,
+		"calculatedField",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Case() DataDatadogSecurityMonitoringRulesRulesCaseList {
@@ -238,6 +250,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) Refer
 	_jsii_.Get(
 		j,
 		"referenceTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOutputReference) SchedulingOptions() DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsList {
+	var returns DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsList
+	_jsii_.Get(
+		j,
+		"schedulingOptions",
 		&returns,
 	)
 	return returns

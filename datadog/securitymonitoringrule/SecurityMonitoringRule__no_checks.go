@@ -75,6 +75,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutCalculatedFieldParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRule) validatePutCaseParameters(value interface{}) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutQueryParameters(value inte
 }
 
 func (s *jsiiProxy_SecurityMonitoringRule) validatePutReferenceTablesParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutSchedulingOptionsParameters(value *SecurityMonitoringRuleSchedulingOptions) error {
 	return nil
 }
 

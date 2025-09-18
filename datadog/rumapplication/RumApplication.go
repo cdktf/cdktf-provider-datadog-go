@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application}.
 type RumApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_RumApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication(scope constructs.Construct, id *string, config *RumApplicationConfig) RumApplication {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewRumApplication(scope constructs.Construct, id *string, config *RumApplic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication_Override(r RumApplication, scope constructs.Construct, id *string, config *RumApplicationConfig) {
 	_init_.Initialize()
 

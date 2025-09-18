@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp datadog_integration_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp datadog_integration_gcp}.
 type IntegrationGcp interface {
 	cdktf.TerraformResource
 	Automute() interface{}
@@ -68,6 +68,8 @@ type IntegrationGcp interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MonitoredResourceConfigs() IntegrationGcpMonitoredResourceConfigsList
+	MonitoredResourceConfigsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PrivateKey() *string
@@ -141,12 +143,14 @@ type IntegrationGcp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMonitoredResourceConfigs(value interface{})
 	ResetAutomute()
 	ResetCloudRunRevisionFilters()
 	ResetCspmResourceCollectionEnabled()
 	ResetHostFilters()
 	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
+	ResetMonitoredResourceConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -429,6 +433,26 @@ func (j *jsiiProxy_IntegrationGcp) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcp) MonitoredResourceConfigs() IntegrationGcpMonitoredResourceConfigsList {
+	var returns IntegrationGcpMonitoredResourceConfigsList
+	_jsii_.Get(
+		j,
+		"monitoredResourceConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcp) MonitoredResourceConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"monitoredResourceConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcp) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -580,7 +604,7 @@ func (j *jsiiProxy_IntegrationGcp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp(scope constructs.Construct, id *string, config *IntegrationGcpConfig) IntegrationGcp {
 	_init_.Initialize()
 
@@ -598,7 +622,7 @@ func NewIntegrationGcp(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp datadog_integration_gcp} Resource.
 func NewIntegrationGcp_Override(i IntegrationGcp, scope constructs.Construct, id *string, config *IntegrationGcpConfig) {
 	_init_.Initialize()
 
@@ -1162,6 +1186,17 @@ func (i *jsiiProxy_IntegrationGcp) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcp) PutMonitoredResourceConfigs(value interface{}) {
+	if err := i.validatePutMonitoredResourceConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMonitoredResourceConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcp) ResetAutomute() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1206,6 +1241,14 @@ func (i *jsiiProxy_IntegrationGcp) ResetIsSecurityCommandCenterEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetIsSecurityCommandCenterEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcp) ResetMonitoredResourceConfigs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMonitoredResourceConfigs",
 		nil, // no parameters
 	)
 }

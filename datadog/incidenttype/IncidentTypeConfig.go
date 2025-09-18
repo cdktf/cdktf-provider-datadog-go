@@ -24,15 +24,15 @@ type IncidentTypeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the incident type. Must be between 1 and 50 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/incident_type#name IncidentType#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_type#name IncidentType#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Description of the incident type. The description can have a maximum of 512 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/incident_type#description IncidentType#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_type#description IncidentType#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether this incident type is the default type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/incident_type#is_default IncidentType#is_default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_type#is_default IncidentType#is_default}
 	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
 }
 

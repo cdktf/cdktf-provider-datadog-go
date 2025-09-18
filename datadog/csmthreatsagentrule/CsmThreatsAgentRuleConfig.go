@@ -24,31 +24,31 @@ type CsmThreatsAgentRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The SECL expression of the Agent rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// The name of the Agent rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// actions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
 	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
 	// A description for the Agent rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Indicates whether the Agent rule is enabled. Must not be used without policy_id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// The ID of the agent policy in which the rule is saved.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 	// The list of product tags associated with the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
 	ProductTags *[]*string `field:"optional" json:"productTags" yaml:"productTags"`
 }
 

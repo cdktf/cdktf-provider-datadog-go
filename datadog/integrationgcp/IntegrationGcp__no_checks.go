@@ -75,6 +75,10 @@ func (i *jsiiProxy_IntegrationGcp) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationGcp) validatePutMonitoredResourceConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateIntegrationGcp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

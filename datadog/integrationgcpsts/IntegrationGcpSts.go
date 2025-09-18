@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktf.TerraformResource
 	AccountTags() *[]*string
@@ -74,6 +74,8 @@ type IntegrationGcpSts interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MetricNamespaceConfigs() IntegrationGcpStsMetricNamespaceConfigsList
 	MetricNamespaceConfigsInput() interface{}
+	MonitoredResourceConfigs() IntegrationGcpStsMonitoredResourceConfigsList
+	MonitoredResourceConfigsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -139,6 +141,7 @@ type IntegrationGcpSts interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetricNamespaceConfigs(value interface{})
+	PutMonitoredResourceConfigs(value interface{})
 	ResetAccountTags()
 	ResetAutomute()
 	ResetCloudRunRevisionFilters()
@@ -148,6 +151,7 @@ type IntegrationGcpSts interface {
 	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
 	ResetMetricNamespaceConfigs()
+	ResetMonitoredResourceConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -480,6 +484,26 @@ func (j *jsiiProxy_IntegrationGcpSts) MetricNamespaceConfigsInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) MonitoredResourceConfigs() IntegrationGcpStsMonitoredResourceConfigsList {
+	var returns IntegrationGcpStsMonitoredResourceConfigsList
+	_jsii_.Get(
+		j,
+		"monitoredResourceConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) MonitoredResourceConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"monitoredResourceConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -571,7 +595,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -589,7 +613,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1166,17 @@ func (i *jsiiProxy_IntegrationGcpSts) PutMetricNamespaceConfigs(value interface{
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) PutMonitoredResourceConfigs(value interface{}) {
+	if err := i.validatePutMonitoredResourceConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMonitoredResourceConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetAccountTags() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1210,6 +1245,14 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetMetricNamespaceConfigs() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetMetricNamespaceConfigs",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetMonitoredResourceConfigs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMonitoredResourceConfigs",
 		nil, // no parameters
 	)
 }

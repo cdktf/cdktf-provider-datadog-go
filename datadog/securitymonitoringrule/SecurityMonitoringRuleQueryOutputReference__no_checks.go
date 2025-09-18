@@ -79,6 +79,14 @@ func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetGroupB
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetHasOptionalGroupByFieldsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetIndexesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRuleQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
