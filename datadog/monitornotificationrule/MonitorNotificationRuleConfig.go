@@ -24,15 +24,15 @@ type MonitorNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 	Filter *MonitorNotificationRuleFilter `field:"required" json:"filter" yaml:"filter"`
 	// The name of the monitor notification rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// List of recipients to notify.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 	Recipients *[]*string `field:"required" json:"recipients" yaml:"recipients"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
 	cdktf.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
@@ -451,7 +451,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 

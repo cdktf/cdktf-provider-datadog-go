@@ -7,11 +7,11 @@ package actionconnection
 type ActionConnectionAwsAssumeRole struct {
 	// AWS account that the connection is created for. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Role to assume. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/action_connection#role ActionConnection#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/action_connection#role ActionConnection#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 }
 

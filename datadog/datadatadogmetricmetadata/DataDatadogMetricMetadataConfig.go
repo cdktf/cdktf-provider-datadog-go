@@ -24,7 +24,7 @@ type DataDatadogMetricMetadataConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The metric for which to fetch metadata.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
 	MetricName *string `field:"required" json:"metricName" yaml:"metricName"`
 }
 

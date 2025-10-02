@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/rum_application datadog_rum_application}.
 type DataDatadogRumApplication interface {
 	cdktf.TerraformDataSource
+	ApiKeyId() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientToken() *string
@@ -113,6 +114,16 @@ type DataDatadogRumApplication interface {
 // The jsii proxy struct for DataDatadogRumApplication
 type jsiiProxy_DataDatadogRumApplication struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDatadogRumApplication) ApiKeyId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDatadogRumApplication) CdktfStack() cdktf.TerraformStack {
@@ -346,7 +357,7 @@ func (j *jsiiProxy_DataDatadogRumApplication) TypeFilterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/rum_application datadog_rum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/rum_application datadog_rum_application} Data Source.
 func NewDataDatadogRumApplication(scope constructs.Construct, id *string, config *DataDatadogRumApplicationConfig) DataDatadogRumApplication {
 	_init_.Initialize()
 
@@ -364,7 +375,7 @@ func NewDataDatadogRumApplication(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/rum_application datadog_rum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/rum_application datadog_rum_application} Data Source.
 func NewDataDatadogRumApplication_Override(d DataDatadogRumApplication, scope constructs.Construct, id *string, config *DataDatadogRumApplicationConfig) {
 	_init_.Initialize()
 

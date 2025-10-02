@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_application datadog_rum_application}.
 type RumApplication interface {
 	cdktf.TerraformResource
+	ApiKeyId() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientToken() *string
@@ -140,6 +141,16 @@ type RumApplication interface {
 // The jsii proxy struct for RumApplication
 type jsiiProxy_RumApplication struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RumApplication) ApiKeyId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RumApplication) CdktfStack() cdktf.TerraformStack {
@@ -403,7 +414,7 @@ func (j *jsiiProxy_RumApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication(scope constructs.Construct, id *string, config *RumApplicationConfig) RumApplication {
 	_init_.Initialize()
 
@@ -421,7 +432,7 @@ func NewRumApplication(scope constructs.Construct, id *string, config *RumApplic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_application datadog_rum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_application datadog_rum_application} Resource.
 func NewRumApplication_Override(r RumApplication, scope constructs.Construct, id *string, config *RumApplicationConfig) {
 	_init_.Initialize()
 

@@ -48,6 +48,8 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	GoogleChronicleInput() interface{}
 	GoogleCloudStorage() ObservabilityPipelineConfigDestinationsGoogleCloudStorageList
 	GoogleCloudStorageInput() interface{}
+	GooglePubsub() ObservabilityPipelineConfigDestinationsGooglePubsubList
+	GooglePubsubInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	MicrosoftSentinel() ObservabilityPipelineConfigDestinationsMicrosoftSentinelList
@@ -109,6 +111,7 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	PutElasticsearch(value interface{})
 	PutGoogleChronicle(value interface{})
 	PutGoogleCloudStorage(value interface{})
+	PutGooglePubsub(value interface{})
 	PutMicrosoftSentinel(value interface{})
 	PutNewRelic(value interface{})
 	PutOpensearch(value interface{})
@@ -127,6 +130,7 @@ type ObservabilityPipelineConfigDestinationsOutputReference interface {
 	ResetElasticsearch()
 	ResetGoogleChronicle()
 	ResetGoogleCloudStorage()
+	ResetGooglePubsub()
 	ResetMicrosoftSentinel()
 	ResetNewRelic()
 	ResetOpensearch()
@@ -366,6 +370,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Googl
 	_jsii_.Get(
 		j,
 		"googleCloudStorageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GooglePubsub() ObservabilityPipelineConfigDestinationsGooglePubsubList {
+	var returns ObservabilityPipelineConfigDestinationsGooglePubsubList
+	_jsii_.Get(
+		j,
+		"googlePubsub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) GooglePubsubInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googlePubsubInput",
 		&returns,
 	)
 	return returns
@@ -949,6 +973,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutGo
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutGooglePubsub(value interface{}) {
+	if err := o.validatePutGooglePubsubParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGooglePubsub",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) PutMicrosoftSentinel(value interface{}) {
 	if err := o.validatePutMicrosoftSentinelParameters(value); err != nil {
 		panic(err)
@@ -1116,6 +1151,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		o,
 		"resetGoogleCloudStorage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) ResetGooglePubsub() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGooglePubsub",
 		nil, // no parameters
 	)
 }

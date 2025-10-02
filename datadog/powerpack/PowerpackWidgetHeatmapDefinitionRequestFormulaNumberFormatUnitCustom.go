@@ -7,7 +7,7 @@ package powerpack
 type PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom struct {
 	// Unit label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/powerpack#label Powerpack#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#label Powerpack#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 

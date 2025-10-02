@@ -83,6 +83,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) valid
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutGooglePubsubParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsOutputReference) validatePutMicrosoftSentinelParameters(value interface{}) error {
 	return nil
 }

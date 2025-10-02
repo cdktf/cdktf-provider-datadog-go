@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/cost_budget datadog_cost_budget}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/cost_budget datadog_cost_budget}.
 type DataDatadogCostBudget interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataDatadogCostBudget) TotalAmount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source.
 func NewDataDatadogCostBudget(scope constructs.Construct, id *string, config *DataDatadogCostBudgetConfig) DataDatadogCostBudget {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataDatadogCostBudget(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source.
 func NewDataDatadogCostBudget_Override(d DataDatadogCostBudget, scope constructs.Construct, id *string, config *DataDatadogCostBudgetConfig) {
 	_init_.Initialize()
 

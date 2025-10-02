@@ -22,9 +22,11 @@ type DataDatadogSyntheticsGlobalVariableConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The synthetics global variable name to search for. Must only match one global variable.
+	// The synthetics global variable name to search for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+	// Must only match one global variable. Must be all uppercase with underscores.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
