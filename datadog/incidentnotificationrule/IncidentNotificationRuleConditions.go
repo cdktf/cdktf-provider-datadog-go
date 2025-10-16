@@ -7,11 +7,11 @@ package incidentnotificationrule
 type IncidentNotificationRuleConditions struct {
 	// The incident field to evaluate. Common values include: state, severity, services, teams. Custom fields are also supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
 	Field *string `field:"required" json:"field" yaml:"field"`
 	// The value(s) to compare against. Multiple values are ORed together.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

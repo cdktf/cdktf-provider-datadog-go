@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
 type AwsCurConfig interface {
 	cdktf.TerraformResource
 	AccountFilters() AwsCurConfigAccountFiltersOutputReference
@@ -38,10 +38,12 @@ type AwsCurConfig interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ErrorMessages() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,12 +75,15 @@ type AwsCurConfig interface {
 	ReportPrefix() *string
 	SetReportPrefix(val *string)
 	ReportPrefixInput() *string
+	Status() *string
+	StatusUpdatedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -266,11 +271,31 @@ func (j *jsiiProxy_AwsCurConfig) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AwsCurConfig) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsCurConfig) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsCurConfig) ErrorMessages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"errorMessages",
 		&returns,
 	)
 	return returns
@@ -406,6 +431,26 @@ func (j *jsiiProxy_AwsCurConfig) ReportPrefixInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsCurConfig) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsCurConfig) StatusUpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusUpdatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsCurConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -436,8 +481,18 @@ func (j *jsiiProxy_AwsCurConfig) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsCurConfig) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource.
 func NewAwsCurConfig(scope constructs.Construct, id *string, config *AwsCurConfigConfig) AwsCurConfig {
 	_init_.Initialize()
 
@@ -455,7 +510,7 @@ func NewAwsCurConfig(scope constructs.Construct, id *string, config *AwsCurConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource.
 func NewAwsCurConfig_Override(a AwsCurConfig, scope constructs.Construct, id *string, config *AwsCurConfigConfig) {
 	_init_.Initialize()
 

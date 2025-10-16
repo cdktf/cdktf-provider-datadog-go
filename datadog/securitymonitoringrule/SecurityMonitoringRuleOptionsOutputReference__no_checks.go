@@ -55,6 +55,10 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutNewV
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutSequenceDetectionOptionsParameters(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutThirdPartyRuleOptionsParameters(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) error {
 	return nil
 }

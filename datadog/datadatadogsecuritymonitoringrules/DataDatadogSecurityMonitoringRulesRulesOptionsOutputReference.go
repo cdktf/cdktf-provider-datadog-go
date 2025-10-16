@@ -39,6 +39,7 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference interface {
 	KeepAlive() *float64
 	MaxSignalDuration() *float64
 	NewValueOptions() DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList
+	SequenceDetectionOptions() DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetectionOptionsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference
 	_jsii_.Get(
 		j,
 		"newValueOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference) SequenceDetectionOptions() DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetectionOptionsList {
+	var returns DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetectionOptionsList
+	_jsii_.Get(
+		j,
+		"sequenceDetectionOptions",
 		&returns,
 	)
 	return returns

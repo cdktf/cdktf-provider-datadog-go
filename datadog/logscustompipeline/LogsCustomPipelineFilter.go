@@ -7,7 +7,7 @@ package logscustompipeline
 type LogsCustomPipelineFilter struct {
 	// Filter criteria of the category.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

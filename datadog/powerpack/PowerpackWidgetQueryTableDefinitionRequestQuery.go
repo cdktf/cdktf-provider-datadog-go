@@ -7,31 +7,31 @@ package powerpack
 type PowerpackWidgetQueryTableDefinitionRequestQuery struct {
 	// apm_dependency_stats_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
 	ApmDependencyStatsQuery *PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery `field:"optional" json:"apmDependencyStatsQuery" yaml:"apmDependencyStatsQuery"`
 	// apm_resource_stats_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
 	ApmResourceStatsQuery *PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery `field:"optional" json:"apmResourceStatsQuery" yaml:"apmResourceStatsQuery"`
 	// cloud_cost_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
 	CloudCostQuery *PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery `field:"optional" json:"cloudCostQuery" yaml:"cloudCostQuery"`
 	// event_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#event_query Powerpack#event_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#event_query Powerpack#event_query}
 	EventQuery *PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery `field:"optional" json:"eventQuery" yaml:"eventQuery"`
 	// metric_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
 	MetricQuery *PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery `field:"optional" json:"metricQuery" yaml:"metricQuery"`
 	// process_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#process_query Powerpack#process_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#process_query Powerpack#process_query}
 	ProcessQuery *PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery `field:"optional" json:"processQuery" yaml:"processQuery"`
 	// slo_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
 	SloQuery *PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery `field:"optional" json:"sloQuery" yaml:"sloQuery"`
 }
 

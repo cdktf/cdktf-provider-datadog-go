@@ -51,6 +51,8 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	MaxSignalDurationInput() *float64
 	NewValueOptions() SecurityMonitoringRuleOptionsNewValueOptionsOutputReference
 	NewValueOptionsInput() *SecurityMonitoringRuleOptionsNewValueOptions
+	SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference
+	SequenceDetectionOptionsInput() *SecurityMonitoringRuleOptionsSequenceDetectionOptions
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +89,7 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutImpossibleTravelOptions(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions)
 	PutNewValueOptions(value *SecurityMonitoringRuleOptionsNewValueOptions)
+	PutSequenceDetectionOptions(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions)
 	PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions)
 	ResetDecreaseCriticalityBasedOnEnv()
 	ResetDetectionMethod()
@@ -95,6 +98,7 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	ResetKeepAlive()
 	ResetMaxSignalDuration()
 	ResetNewValueOptions()
+	ResetSequenceDetectionOptions()
 	ResetThirdPartyRuleOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -296,6 +300,26 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptions
 	_jsii_.Get(
 		j,
 		"newValueOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference {
+	var returns SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"sequenceDetectionOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptionsInput() *SecurityMonitoringRuleOptionsSequenceDetectionOptions {
+	var returns *SecurityMonitoringRuleOptionsSequenceDetectionOptions
+	_jsii_.Get(
+		j,
+		"sequenceDetectionOptionsInput",
 		&returns,
 	)
 	return returns
@@ -687,6 +711,17 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutNewValueOpti
 	)
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutSequenceDetectionOptions(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions) {
+	if err := s.validatePutSequenceDetectionOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSequenceDetectionOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) {
 	if err := s.validatePutThirdPartyRuleOptionsParameters(value); err != nil {
 		panic(err)
@@ -750,6 +785,14 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetNewValueOp
 	_jsii_.InvokeVoid(
 		s,
 		"resetNewValueOptions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ResetSequenceDetectionOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSequenceDetectionOptions",
 		nil, // no parameters
 	)
 }

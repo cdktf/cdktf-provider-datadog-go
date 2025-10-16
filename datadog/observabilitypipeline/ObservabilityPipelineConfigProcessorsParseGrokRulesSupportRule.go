@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule struct {
 	// The name of the helper Grok rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The definition of the helper Grok rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 	Rule *string `field:"required" json:"rule" yaml:"rule"`
 }
 

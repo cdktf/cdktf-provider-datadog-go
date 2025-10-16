@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
 type SyntheticsPrivateLocation interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -68,6 +68,7 @@ type SyntheticsPrivateLocation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RestrictionPolicyResourceId() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -376,6 +377,16 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsPrivateLocation) RestrictionPolicyResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restrictionPolicyResourceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsPrivateLocation) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -427,7 +438,7 @@ func (j *jsiiProxy_SyntheticsPrivateLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation {
 	_init_.Initialize()
 
@@ -445,7 +456,7 @@ func NewSyntheticsPrivateLocation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource.
 func NewSyntheticsPrivateLocation_Override(s SyntheticsPrivateLocation, scope constructs.Construct, id *string, config *SyntheticsPrivateLocationConfig) {
 	_init_.Initialize()
 
