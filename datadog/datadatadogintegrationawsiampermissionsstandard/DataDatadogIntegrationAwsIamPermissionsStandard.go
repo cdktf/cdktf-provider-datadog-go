@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
 type DataDatadogIntegrationAwsIamPermissionsStandard interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissionsStandard) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissionsStandard(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsStandardConfig) DataDatadogIntegrationAwsIamPermissionsStandard {
 	_init_.Initialize()
 
@@ -281,7 +281,7 @@ func NewDataDatadogIntegrationAwsIamPermissionsStandard(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissionsStandard_Override(d DataDatadogIntegrationAwsIamPermissionsStandard, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsStandardConfig) {
 	_init_.Initialize()
 

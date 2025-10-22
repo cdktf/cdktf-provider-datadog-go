@@ -79,6 +79,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetAl
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetBlockedRequestPatternsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetCheckCertificateRevocationParameters(val interface{}) error {
 	return nil
 }

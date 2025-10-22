@@ -24,11 +24,11 @@ type RumRetentionFiltersOrderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// RUM application ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
 	// RUM retention filter ID list. The order of IDs in this attribute defines the order of RUM retention filters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
 	RetentionFilterIds *[]*string `field:"required" json:"retentionFilterIds" yaml:"retentionFilterIds"`
 }
 

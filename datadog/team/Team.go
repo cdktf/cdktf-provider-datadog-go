@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/team datadog_team}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/team datadog_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_Team) UserCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/team datadog_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/team datadog_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/team datadog_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/team datadog_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 

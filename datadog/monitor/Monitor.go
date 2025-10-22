@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type Monitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DraftStatus() *string
+	SetDraftStatus(val *string)
+	DraftStatusInput() *string
 	EnableLogsSample() interface{}
 	SetEnableLogsSample(val interface{})
 	EnableLogsSampleInput() interface{}
@@ -209,6 +212,7 @@ type Monitor interface {
 	PutMonitorThresholdWindows(value *MonitorMonitorThresholdWindows)
 	PutSchedulingOptions(value *MonitorSchedulingOptions)
 	PutVariables(value *MonitorVariables)
+	ResetDraftStatus()
 	ResetEnableLogsSample()
 	ResetEnableSamples()
 	ResetEscalationMessage()
@@ -306,6 +310,26 @@ func (j *jsiiProxy_Monitor) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) DraftStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"draftStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) DraftStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"draftStatusInput",
 		&returns,
 	)
 	return returns
@@ -1122,7 +1146,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1140,7 +1164,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1177,6 +1201,17 @@ func (j *jsiiProxy_Monitor)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Monitor)SetDraftStatus(val *string) {
+	if err := j.validateSetDraftStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"draftStatus",
 		val,
 	)
 }
@@ -1954,6 +1989,14 @@ func (m *jsiiProxy_Monitor) PutVariables(value *MonitorVariables) {
 		m,
 		"putVariables",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetDraftStatus() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDraftStatus",
+		nil, // no parameters
 	)
 }
 

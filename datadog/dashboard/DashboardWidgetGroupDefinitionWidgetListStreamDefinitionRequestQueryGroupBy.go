@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryGroupBy struct {
 	// Facet name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/dashboard#facet Dashboard#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/dashboard#facet Dashboard#facet}
 	Facet *string `field:"required" json:"facet" yaml:"facet"`
 }
 

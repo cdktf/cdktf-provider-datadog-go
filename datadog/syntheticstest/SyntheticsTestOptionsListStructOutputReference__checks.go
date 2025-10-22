@@ -196,6 +196,14 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetAl
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetBlockedRequestPatternsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetCheckCertificateRevocationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

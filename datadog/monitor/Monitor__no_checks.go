@@ -115,6 +115,10 @@ func (j *jsiiProxy_Monitor) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetDraftStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetEnableLogsSampleParameters(val interface{}) error {
 	return nil
 }

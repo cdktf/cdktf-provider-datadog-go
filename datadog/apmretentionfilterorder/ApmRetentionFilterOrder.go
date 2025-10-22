@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
 type ApmRetentionFilterOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_ApmRetentionFilterOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
 func NewApmRetentionFilterOrder(scope constructs.Construct, id *string, config *ApmRetentionFilterOrderConfig) ApmRetentionFilterOrder {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewApmRetentionFilterOrder(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order} Resource.
 func NewApmRetentionFilterOrder_Override(a ApmRetentionFilterOrder, scope constructs.Construct, id *string, config *ApmRetentionFilterOrderConfig) {
 	_init_.Initialize()
 

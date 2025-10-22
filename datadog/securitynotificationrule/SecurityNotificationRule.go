@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
 type SecurityNotificationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -492,7 +492,7 @@ func (j *jsiiProxy_SecurityNotificationRule) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule(scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) SecurityNotificationRule {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewSecurityNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule_Override(s SecurityNotificationRule, scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) {
 	_init_.Initialize()
 

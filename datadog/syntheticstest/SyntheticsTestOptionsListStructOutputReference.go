@@ -19,6 +19,9 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	AllowInsecure() interface{}
 	SetAllowInsecure(val interface{})
 	AllowInsecureInput() interface{}
+	BlockedRequestPatterns() *[]*string
+	SetBlockedRequestPatterns(val *[]*string)
+	BlockedRequestPatternsInput() *[]*string
 	CheckCertificateRevocation() interface{}
 	SetCheckCertificateRevocation(val interface{})
 	CheckCertificateRevocationInput() interface{}
@@ -132,6 +135,7 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	PutScheduling(value *SyntheticsTestOptionsListScheduling)
 	ResetAcceptSelfSigned()
 	ResetAllowInsecure()
+	ResetBlockedRequestPatterns()
 	ResetCheckCertificateRevocation()
 	ResetCi()
 	ResetDisableAiaIntermediateFetching()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) AllowInsecure
 	_jsii_.Get(
 		j,
 		"allowInsecureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) BlockedRequestPatterns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedRequestPatterns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) BlockedRequestPatternsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedRequestPatternsInput",
 		&returns,
 	)
 	return returns
@@ -726,6 +750,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetAllowInsecu
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetBlockedRequestPatterns(val *[]*string) {
+	if err := j.validateSetBlockedRequestPatternsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blockedRequestPatterns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetCheckCertificateRevocation(val interface{}) {
 	if err := j.validateSetCheckCertificateRevocationParameters(val); err != nil {
 		panic(err)
@@ -1199,6 +1234,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetAllowIns
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowInsecure",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetBlockedRequestPatterns() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBlockedRequestPatterns",
 		nil, // no parameters
 	)
 }

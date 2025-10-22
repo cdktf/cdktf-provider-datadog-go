@@ -24,7 +24,7 @@ type DataDatadogGcpUcConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Datadog cloud account ID for the GCP Usage Cost configuration you want to retrieve information about.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
 	CloudAccountId *float64 `field:"required" json:"cloudAccountId" yaml:"cloudAccountId"`
 }
 
