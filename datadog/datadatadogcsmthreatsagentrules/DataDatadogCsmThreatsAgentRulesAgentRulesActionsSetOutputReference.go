@@ -29,9 +29,12 @@ type DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultValue() *string
+	Expression() *string
 	Field() *string
 	// Experimental.
 	Fqn() *string
+	Inherited() cdktf.IResolvable
 	InternalValue() *DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet
 	SetInternalValue(val *DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet)
 	Name() *string
@@ -126,6 +129,26 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) DefaultValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) Field() *string {
 	var returns *string
 	_jsii_.Get(
@@ -141,6 +164,16 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) Inherited() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"inherited",
 		&returns,
 	)
 	return returns

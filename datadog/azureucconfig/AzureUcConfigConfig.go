@@ -24,23 +24,23 @@ type AzureUcConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The tenant ID of the Azure account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// actual_bill_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
 	ActualBillConfig *AzureUcConfigActualBillConfig `field:"required" json:"actualBillConfig" yaml:"actualBillConfig"`
 	// amortized_bill_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
 	AmortizedBillConfig *AzureUcConfigAmortizedBillConfig `field:"required" json:"amortizedBillConfig" yaml:"amortizedBillConfig"`
 	// The client ID of the Azure account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 	// The scope of your observed subscription.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 }
 

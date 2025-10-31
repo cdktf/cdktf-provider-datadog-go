@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
 type TagPipelineRulesets interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_TagPipelineRulesets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) TagPipelineRulesets {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets_Override(t TagPipelineRulesets, scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) {
 	_init_.Initialize()
 

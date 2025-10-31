@@ -9,13 +9,13 @@ type IntegrationAwsAccountResourcesConfig struct {
 	//
 	// Requires `extended_collection` to be set to `true`. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
 	CloudSecurityPostureManagementCollection interface{} `field:"optional" json:"cloudSecurityPostureManagementCollection" yaml:"cloudSecurityPostureManagementCollection"`
 	// Whether Datadog collects additional attributes and configuration information about the resources in your AWS account.
 	//
 	// Required for `cloud_security_posture_management_collection`. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
 	ExtendedCollection interface{} `field:"optional" json:"extendedCollection" yaml:"extendedCollection"`
 }
 

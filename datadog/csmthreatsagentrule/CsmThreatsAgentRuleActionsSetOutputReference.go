@@ -31,11 +31,20 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultValue() *string
+	SetDefaultValue(val *string)
+	DefaultValueInput() *string
+	Expression() *string
+	SetExpression(val *string)
+	ExpressionInput() *string
 	Field() *string
 	SetField(val *string)
 	FieldInput() *string
 	// Experimental.
 	Fqn() *string
+	Inherited() interface{}
+	SetInherited(val interface{})
+	InheritedInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -86,7 +95,10 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAppend()
+	ResetDefaultValue()
+	ResetExpression()
 	ResetField()
+	ResetInherited()
 	ResetScope()
 	ResetSize()
 	ResetTtl()
@@ -156,6 +168,46 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) CreationStack()
 	return returns
 }
 
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) DefaultValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) DefaultValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ExpressionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expressionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Field() *string {
 	var returns *string
 	_jsii_.Get(
@@ -181,6 +233,26 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Inherited() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InheritedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritedInput",
 		&returns,
 	)
 	return returns
@@ -377,6 +449,28 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetDefaultValue(val *string) {
+	if err := j.validateSetDefaultValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetExpression(val *string) {
+	if err := j.validateSetExpressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expression",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetField(val *string) {
 	if err := j.validateSetFieldParameters(val); err != nil {
 		panic(err)
@@ -384,6 +478,17 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetField(val *st
 	_jsii_.Set(
 		j,
 		"field",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetInherited(val interface{}) {
+	if err := j.validateSetInheritedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inherited",
 		val,
 	)
 }
@@ -670,10 +775,34 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetAppend() {
 	)
 }
 
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetDefaultValue() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultValue",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetExpression() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpression",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetField() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetInherited() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInherited",
 		nil, // no parameters
 	)
 }

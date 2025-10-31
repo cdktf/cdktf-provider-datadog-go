@@ -63,7 +63,19 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) validateSetDefaultValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) validateSetExpressionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) validateSetFieldParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) validateSetInheritedParameters(val interface{}) error {
 	return nil
 }
 

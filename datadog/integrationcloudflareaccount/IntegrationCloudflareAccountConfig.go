@@ -24,21 +24,21 @@ type IntegrationCloudflareAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The API key (or token) for the Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
 	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
 	// The name of the Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The email associated with the Cloudflare account.
 	//
 	// If an API key is provided (and not a token), this field is also required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
 	Email *string `field:"optional" json:"email" yaml:"email"`
 	// An allowlist of resources to pull metrics for. Includes `web`, `dns`, `lb` (load balancer), and `worker`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
 }
 

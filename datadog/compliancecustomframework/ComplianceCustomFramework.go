@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
 type ComplianceCustomFramework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ComplianceCustomFramework) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
 func NewComplianceCustomFramework(scope constructs.Construct, id *string, config *ComplianceCustomFrameworkConfig) ComplianceCustomFramework {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewComplianceCustomFramework(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
 func NewComplianceCustomFramework_Override(c ComplianceCustomFramework, scope constructs.Construct, id *string, config *ComplianceCustomFrameworkConfig) {
 	_init_.Initialize()
 

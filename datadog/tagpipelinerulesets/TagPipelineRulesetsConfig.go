@@ -24,7 +24,7 @@ type TagPipelineRulesetsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The list of Tag Pipeline Ruleset IDs, in order. Rulesets are executed in the order specified in this list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
 	RulesetIds *[]*string `field:"required" json:"rulesetIds" yaml:"rulesetIds"`
 }
 
