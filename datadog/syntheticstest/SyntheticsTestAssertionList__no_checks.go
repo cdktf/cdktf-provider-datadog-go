@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestAssertionList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestAssertionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionReque
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

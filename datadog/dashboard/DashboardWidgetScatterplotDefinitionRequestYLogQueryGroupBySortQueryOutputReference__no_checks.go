@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySo
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

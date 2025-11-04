@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

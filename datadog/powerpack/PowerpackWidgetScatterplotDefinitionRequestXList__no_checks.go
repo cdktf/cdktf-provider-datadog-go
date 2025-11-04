@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

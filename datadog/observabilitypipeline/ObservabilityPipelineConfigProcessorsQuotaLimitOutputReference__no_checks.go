@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaLimitOutputReferenc
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

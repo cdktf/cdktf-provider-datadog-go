@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOu
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOu
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

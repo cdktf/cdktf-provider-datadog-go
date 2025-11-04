@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryMultiComputeLi
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestLogQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

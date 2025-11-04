@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionTargetjsonpathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

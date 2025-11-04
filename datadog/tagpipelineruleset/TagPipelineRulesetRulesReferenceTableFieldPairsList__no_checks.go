@@ -15,7 +15,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesReferenceTableFieldPairsList) validate
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesReferenceTableFieldPairsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesReferenceTableFieldPairsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

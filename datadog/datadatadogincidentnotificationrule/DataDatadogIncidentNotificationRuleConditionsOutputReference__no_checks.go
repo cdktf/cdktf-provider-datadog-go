@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogIncidentNotificationRuleConditionsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogIncidentNotificationRuleConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogIncidentNotificationRuleConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogIncidentNotificationRuleConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogIncidentNotificationRuleConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

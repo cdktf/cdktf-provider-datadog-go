@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorVariablesCloudCostQueryList) validateGetParameters(ind
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesCloudCostQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorVariablesCloudCostQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

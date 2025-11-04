@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

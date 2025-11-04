@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComp
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

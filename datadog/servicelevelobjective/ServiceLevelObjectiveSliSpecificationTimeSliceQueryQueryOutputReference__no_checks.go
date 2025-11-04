@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalForm
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

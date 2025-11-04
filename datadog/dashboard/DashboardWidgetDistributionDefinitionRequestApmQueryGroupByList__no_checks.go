@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestApmQueryGroupByLi
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestApmQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestApmQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

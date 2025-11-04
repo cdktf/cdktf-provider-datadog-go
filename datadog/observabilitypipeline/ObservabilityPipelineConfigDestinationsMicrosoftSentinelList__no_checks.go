@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsMicrosoftSentinelList)
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsMicrosoftSentinelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsMicrosoftSentinelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

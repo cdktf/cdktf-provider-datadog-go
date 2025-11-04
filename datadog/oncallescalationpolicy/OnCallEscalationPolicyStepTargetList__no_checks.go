@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnCallEscalationPolicyStepTargetList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OnCallEscalationPolicyStepTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallEscalationPolicyStepTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleCostsToAllocateOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleCostsToAllocateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleCostsToAllocateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleCostsToAllocateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleCostsToAllocateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

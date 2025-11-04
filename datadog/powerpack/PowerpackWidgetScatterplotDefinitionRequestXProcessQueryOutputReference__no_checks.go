@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutpu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

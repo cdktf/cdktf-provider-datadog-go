@@ -72,11 +72,11 @@ type PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutpu
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetSubstring()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -505,8 +505,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextForm
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -514,7 +514,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextForm
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextForm
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextForm
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

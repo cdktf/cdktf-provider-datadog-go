@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleThirdPartyCaseList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleThirdPartyCaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleThirdPartyCaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

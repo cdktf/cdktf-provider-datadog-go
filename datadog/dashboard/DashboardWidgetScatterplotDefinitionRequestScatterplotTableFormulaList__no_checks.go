@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableFo
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormulaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormulaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

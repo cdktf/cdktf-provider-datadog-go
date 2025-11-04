@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsElasticsearchList) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsElasticsearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsElasticsearchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

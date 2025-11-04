@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsO
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

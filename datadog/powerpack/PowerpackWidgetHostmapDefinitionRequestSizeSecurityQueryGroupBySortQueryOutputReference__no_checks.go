@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroup
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

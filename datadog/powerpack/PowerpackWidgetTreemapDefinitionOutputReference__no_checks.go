@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validatePutR
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

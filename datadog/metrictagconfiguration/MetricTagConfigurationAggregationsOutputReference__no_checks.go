@@ -43,11 +43,11 @@ func (m *jsiiProxy_MetricTagConfigurationAggregationsOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MetricTagConfigurationAggregationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MetricTagConfigurationAggregationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetricTagConfigurationAggregationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetricTagConfigurationAggregationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

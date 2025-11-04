@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRul
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

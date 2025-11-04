@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsecWafExclusionFilterScopeOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsecWafExclusionFilterScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsecWafExclusionFilterScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

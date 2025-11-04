@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolic
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

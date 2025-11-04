@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeLi
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

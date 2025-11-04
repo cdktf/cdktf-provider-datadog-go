@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComp
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

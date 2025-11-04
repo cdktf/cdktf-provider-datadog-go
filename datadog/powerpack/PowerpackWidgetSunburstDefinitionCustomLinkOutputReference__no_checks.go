@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

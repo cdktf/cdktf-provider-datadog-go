@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

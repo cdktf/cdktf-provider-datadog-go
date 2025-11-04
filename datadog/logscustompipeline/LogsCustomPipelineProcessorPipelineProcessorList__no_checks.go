@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorList) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

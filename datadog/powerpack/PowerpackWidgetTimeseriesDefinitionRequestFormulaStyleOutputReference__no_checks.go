@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputR
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestStyleOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestStyleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestStyleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestStyleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestStyleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroup
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroup
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

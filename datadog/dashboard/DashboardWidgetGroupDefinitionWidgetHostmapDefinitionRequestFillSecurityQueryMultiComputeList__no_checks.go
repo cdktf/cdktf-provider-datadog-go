@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestF
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

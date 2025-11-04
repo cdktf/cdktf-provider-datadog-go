@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

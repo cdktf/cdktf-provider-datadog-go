@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList) va
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

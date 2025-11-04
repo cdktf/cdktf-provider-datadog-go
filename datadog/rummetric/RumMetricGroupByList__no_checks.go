@@ -15,7 +15,7 @@ func (r *jsiiProxy_RumMetricGroupByList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (r *jsiiProxy_RumMetricGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RumMetricGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

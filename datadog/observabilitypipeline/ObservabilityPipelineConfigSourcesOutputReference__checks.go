@@ -85,9 +85,9 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -589,9 +589,9 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePu
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

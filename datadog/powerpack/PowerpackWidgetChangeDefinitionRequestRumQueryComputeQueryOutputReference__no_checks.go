@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOut
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference) va
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

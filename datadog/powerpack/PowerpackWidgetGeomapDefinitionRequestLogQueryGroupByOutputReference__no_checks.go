@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestList) validateGetPa
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

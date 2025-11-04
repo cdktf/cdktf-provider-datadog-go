@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupByLi
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

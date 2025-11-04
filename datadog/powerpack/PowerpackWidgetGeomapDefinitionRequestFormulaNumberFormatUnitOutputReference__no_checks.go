@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

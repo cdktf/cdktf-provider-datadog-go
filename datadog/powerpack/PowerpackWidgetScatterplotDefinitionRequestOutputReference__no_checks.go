@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

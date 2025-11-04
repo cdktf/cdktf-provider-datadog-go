@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateP
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

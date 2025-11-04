@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

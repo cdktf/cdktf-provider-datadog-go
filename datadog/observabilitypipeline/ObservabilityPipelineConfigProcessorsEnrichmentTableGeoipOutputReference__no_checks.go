@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutp
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

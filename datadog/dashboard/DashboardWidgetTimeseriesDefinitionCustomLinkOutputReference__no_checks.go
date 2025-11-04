@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

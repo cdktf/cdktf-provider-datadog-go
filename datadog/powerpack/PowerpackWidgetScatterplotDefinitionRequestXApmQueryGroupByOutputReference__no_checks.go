@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

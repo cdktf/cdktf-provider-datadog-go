@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

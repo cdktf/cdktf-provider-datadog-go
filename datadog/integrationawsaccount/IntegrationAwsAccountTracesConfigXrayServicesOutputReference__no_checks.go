@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

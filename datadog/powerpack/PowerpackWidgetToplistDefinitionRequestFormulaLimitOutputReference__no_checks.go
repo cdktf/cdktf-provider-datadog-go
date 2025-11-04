@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputRefe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

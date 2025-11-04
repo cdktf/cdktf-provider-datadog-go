@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

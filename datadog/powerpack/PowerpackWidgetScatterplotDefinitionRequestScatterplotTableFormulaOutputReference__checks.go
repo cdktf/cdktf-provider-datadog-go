@@ -85,17 +85,17 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFo
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

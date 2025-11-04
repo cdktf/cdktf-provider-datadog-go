@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComput
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

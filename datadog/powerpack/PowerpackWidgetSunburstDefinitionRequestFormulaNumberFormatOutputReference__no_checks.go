@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

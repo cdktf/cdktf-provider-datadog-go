@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionCustomLinksList) validateGetP
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionCustomLinksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionCustomLinksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

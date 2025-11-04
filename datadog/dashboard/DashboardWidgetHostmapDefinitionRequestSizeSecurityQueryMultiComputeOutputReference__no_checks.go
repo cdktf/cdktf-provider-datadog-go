@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMulti
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryCloudCostQueryOut
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

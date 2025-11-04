@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

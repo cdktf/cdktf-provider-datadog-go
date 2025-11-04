@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference) validateGetString
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

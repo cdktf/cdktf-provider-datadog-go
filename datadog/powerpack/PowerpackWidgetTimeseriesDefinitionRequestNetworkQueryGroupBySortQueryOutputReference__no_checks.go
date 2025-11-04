@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

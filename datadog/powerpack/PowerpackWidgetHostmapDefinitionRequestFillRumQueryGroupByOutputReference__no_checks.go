@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOut
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOut
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

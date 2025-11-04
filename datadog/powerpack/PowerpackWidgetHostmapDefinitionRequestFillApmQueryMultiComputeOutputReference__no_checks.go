@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

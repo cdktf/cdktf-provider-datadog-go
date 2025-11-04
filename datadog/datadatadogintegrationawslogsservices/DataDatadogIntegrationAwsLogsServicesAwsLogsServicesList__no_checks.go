@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

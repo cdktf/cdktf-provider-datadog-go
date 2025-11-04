@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByList) v
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

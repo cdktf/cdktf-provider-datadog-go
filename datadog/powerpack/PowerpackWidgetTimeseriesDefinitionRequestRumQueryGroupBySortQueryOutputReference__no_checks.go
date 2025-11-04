@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySort
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

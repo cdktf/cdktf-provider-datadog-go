@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalForm
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

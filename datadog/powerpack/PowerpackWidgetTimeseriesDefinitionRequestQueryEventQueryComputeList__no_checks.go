@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComp
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

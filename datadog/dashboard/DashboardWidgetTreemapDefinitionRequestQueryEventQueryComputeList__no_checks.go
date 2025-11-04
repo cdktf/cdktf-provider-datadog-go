@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQueryComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCusto
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

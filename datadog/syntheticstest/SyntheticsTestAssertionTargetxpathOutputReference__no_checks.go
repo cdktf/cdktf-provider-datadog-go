@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestAssertionTargetxpathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

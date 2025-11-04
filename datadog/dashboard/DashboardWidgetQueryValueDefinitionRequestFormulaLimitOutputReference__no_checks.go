@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

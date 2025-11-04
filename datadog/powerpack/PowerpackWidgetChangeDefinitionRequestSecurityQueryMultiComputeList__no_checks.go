@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

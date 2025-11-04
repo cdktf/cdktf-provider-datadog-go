@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

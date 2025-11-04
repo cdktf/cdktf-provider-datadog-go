@@ -43,11 +43,11 @@ func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

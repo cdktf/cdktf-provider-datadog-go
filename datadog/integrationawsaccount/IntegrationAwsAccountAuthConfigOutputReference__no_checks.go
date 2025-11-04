@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validatePutAw
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

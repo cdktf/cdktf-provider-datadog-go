@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

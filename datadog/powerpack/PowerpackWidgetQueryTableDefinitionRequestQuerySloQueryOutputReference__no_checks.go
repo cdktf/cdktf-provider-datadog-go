@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

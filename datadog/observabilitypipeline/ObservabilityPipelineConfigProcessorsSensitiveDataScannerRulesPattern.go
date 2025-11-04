@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern struct {
 	// custom block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 	Custom *ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom `field:"optional" json:"custom" yaml:"custom"`
 	// library block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 	Library *ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary `field:"optional" json:"library" yaml:"library"`
 }
 

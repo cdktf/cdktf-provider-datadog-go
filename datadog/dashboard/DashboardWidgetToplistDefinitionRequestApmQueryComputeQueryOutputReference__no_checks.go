@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

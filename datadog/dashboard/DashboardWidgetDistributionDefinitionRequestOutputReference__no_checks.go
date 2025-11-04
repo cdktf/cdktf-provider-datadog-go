@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

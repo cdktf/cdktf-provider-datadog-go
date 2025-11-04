@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiC
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

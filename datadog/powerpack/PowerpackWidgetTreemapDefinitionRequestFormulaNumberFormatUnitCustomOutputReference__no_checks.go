@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUni
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

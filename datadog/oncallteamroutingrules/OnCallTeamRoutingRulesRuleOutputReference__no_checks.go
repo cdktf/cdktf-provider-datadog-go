@@ -43,7 +43,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validatePutTimeRes
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

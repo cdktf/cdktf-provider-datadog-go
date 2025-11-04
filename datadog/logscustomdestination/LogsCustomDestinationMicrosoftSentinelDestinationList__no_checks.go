@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationList) valida
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

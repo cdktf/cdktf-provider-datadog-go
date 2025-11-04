@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -183,7 +183,7 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutWidgetLayoutParame
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

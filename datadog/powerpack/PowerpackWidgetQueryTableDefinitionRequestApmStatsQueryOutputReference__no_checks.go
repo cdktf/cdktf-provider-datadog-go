@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutput
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutput
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList) v
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

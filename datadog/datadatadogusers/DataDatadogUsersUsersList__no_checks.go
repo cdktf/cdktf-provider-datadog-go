@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogUsersUsersList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogUsersUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogUsersUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

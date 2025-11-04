@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionCustomLinkList) validateGetPa
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

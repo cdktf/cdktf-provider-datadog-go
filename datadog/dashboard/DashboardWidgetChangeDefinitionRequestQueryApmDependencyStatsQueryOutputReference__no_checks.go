@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryApmDependencyStats
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchO
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference) validat
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

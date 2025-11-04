@@ -15,7 +15,7 @@ func (m *jsiiProxy_MetricTagConfigurationAggregationsList) validateGetParameters
 	return nil
 }
 
-func (m *jsiiProxy_MetricTagConfigurationAggregationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetricTagConfigurationAggregationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

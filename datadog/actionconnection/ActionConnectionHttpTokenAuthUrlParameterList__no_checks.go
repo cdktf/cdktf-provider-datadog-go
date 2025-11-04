@@ -15,7 +15,7 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterList) validateGetPar
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

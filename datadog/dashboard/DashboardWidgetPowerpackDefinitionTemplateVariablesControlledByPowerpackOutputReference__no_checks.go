@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionTemplateVariablesControlled
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

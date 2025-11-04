@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsLis
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

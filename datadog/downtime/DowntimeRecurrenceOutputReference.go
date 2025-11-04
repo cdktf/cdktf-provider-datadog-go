@@ -81,7 +81,7 @@ type DowntimeRecurrenceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetPeriod()
 	ResetRrule()
 	ResetUntilDate()
@@ -89,7 +89,7 @@ type DowntimeRecurrenceOutputReference interface {
 	ResetWeekDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -611,8 +611,8 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -620,7 +620,7 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) ResetWeekDays() {
 	)
 }
 
-func (d *jsiiProxy_DowntimeRecurrenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DowntimeRecurrenceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (d *jsiiProxy_DowntimeRecurrenceOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

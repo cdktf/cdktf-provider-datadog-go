@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaConditionalForm
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

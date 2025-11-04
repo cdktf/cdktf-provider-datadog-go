@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryMultiComputeLi
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

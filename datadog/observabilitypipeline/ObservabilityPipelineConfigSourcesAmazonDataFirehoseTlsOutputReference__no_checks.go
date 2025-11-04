@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutput
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSampleList) validateGetP
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSampleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSampleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

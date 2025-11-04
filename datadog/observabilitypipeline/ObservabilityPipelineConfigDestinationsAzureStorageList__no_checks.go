@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAzureStorageList) vali
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAzureStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAzureStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

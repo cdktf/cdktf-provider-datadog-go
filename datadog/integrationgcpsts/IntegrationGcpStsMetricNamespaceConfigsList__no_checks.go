@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

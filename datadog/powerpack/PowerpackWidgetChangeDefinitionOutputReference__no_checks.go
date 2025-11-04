@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validatePutRe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

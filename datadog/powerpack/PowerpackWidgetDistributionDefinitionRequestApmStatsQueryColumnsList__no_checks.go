@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

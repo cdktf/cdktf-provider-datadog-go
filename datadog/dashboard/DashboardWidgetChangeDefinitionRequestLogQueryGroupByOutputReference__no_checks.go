@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

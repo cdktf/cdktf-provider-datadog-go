@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

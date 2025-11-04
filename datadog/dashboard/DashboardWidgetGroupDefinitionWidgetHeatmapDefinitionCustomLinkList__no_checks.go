@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLi
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

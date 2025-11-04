@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionCustomLinkList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

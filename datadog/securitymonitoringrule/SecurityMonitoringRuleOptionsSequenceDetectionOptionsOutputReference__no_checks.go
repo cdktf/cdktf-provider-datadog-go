@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

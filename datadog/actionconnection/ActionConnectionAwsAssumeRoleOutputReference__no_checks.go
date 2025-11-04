@@ -43,11 +43,11 @@ func (a *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

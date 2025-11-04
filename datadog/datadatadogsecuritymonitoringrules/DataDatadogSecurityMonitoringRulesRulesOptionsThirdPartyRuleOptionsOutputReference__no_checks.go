@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleO
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

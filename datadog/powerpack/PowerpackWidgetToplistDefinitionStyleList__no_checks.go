@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionStyleList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionStyleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionStyleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

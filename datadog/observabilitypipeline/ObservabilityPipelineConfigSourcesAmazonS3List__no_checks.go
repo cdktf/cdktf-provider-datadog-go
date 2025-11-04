@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3List) validateGetPa
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutVa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

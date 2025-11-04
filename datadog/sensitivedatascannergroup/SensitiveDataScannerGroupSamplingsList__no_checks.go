@@ -15,7 +15,7 @@ func (s *jsiiProxy_SensitiveDataScannerGroupSamplingsList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SensitiveDataScannerGroupSamplingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SensitiveDataScannerGroupSamplingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

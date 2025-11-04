@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComp
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

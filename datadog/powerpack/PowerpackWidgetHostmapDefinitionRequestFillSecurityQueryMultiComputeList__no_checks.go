@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMulti
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

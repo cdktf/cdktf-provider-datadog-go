@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComput
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

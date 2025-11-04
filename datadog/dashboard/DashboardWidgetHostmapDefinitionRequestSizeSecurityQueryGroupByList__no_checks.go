@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroup
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

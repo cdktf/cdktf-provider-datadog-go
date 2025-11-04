@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByLi
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequ
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

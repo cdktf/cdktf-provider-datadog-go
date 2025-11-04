@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList) va
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

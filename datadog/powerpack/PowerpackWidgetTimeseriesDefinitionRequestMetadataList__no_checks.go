@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestMetadataList) valid
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

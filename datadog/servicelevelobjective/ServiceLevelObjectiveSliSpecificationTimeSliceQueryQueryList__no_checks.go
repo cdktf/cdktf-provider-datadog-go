@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList)
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetPowerpackDefinitionTempla
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetPowerpackDefinitionTemplateVariablesControlledByPowerpackList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

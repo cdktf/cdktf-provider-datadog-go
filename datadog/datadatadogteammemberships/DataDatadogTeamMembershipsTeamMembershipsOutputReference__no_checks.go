@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

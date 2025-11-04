@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

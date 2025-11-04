@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageList
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

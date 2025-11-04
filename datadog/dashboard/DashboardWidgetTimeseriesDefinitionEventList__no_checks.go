@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionEventList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionEventList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionEventList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

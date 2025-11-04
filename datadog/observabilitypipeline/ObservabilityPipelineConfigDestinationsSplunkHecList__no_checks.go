@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecList) validat
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

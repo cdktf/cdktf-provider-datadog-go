@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validatePutS
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

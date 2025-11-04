@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogHostsHostListStructList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogHostsHostListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogHostsHostListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

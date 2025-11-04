@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionCustomLinkList) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalF
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

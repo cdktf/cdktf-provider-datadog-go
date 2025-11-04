@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

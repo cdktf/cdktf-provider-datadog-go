@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogTeamMembershipsTeamMembershipsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

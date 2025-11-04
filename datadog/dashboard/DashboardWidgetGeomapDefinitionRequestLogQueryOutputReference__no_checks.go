@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

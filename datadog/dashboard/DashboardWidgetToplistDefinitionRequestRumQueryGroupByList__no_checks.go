@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupByList) v
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestRumQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

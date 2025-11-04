@@ -15,7 +15,7 @@ func (r *jsiiProxy_RestrictionPolicyBindingsList) validateGetParameters(index *f
 	return nil
 }
 
-func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

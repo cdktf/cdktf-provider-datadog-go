@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

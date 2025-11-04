@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleCalculatedFieldList) validateGetParamet
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleCalculatedFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleCalculatedFieldList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -75,13 +75,13 @@ type DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference interfac
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetFilterBy()
 	ResetLimit()
 	ResetSearchBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -541,8 +541,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -550,7 +550,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestProcessQueryOutputRefe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

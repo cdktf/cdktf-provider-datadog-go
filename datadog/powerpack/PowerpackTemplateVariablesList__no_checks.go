@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackTemplateVariablesList) validateGetParameters(index *
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackTemplateVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackTemplateVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

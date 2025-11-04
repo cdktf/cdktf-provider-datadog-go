@@ -86,7 +86,7 @@ type DashboardWidgetToplistDefinitionRequestOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutApmQuery(value *DashboardWidgetToplistDefinitionRequestApmQuery)
 	PutAuditQuery(value *DashboardWidgetToplistDefinitionRequestAuditQuery)
 	PutConditionalFormats(value interface{})
@@ -110,7 +110,7 @@ type DashboardWidgetToplistDefinitionRequestOutputReference interface {
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -677,8 +677,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -686,7 +686,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -891,8 +891,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -900,7 +900,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestOutputReference) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

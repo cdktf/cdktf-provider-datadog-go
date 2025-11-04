@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

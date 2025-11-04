@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorList) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

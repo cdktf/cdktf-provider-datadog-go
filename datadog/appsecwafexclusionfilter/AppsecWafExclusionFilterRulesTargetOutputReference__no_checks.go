@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateP
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

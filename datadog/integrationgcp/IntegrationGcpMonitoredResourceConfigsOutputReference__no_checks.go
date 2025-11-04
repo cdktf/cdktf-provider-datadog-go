@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

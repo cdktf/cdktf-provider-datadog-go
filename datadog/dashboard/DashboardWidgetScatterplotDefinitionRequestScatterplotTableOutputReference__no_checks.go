@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestScatterplotTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

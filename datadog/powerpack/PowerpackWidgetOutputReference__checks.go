@@ -85,9 +85,9 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PowerpackWidgetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -434,9 +434,9 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) validatePutWidgetLayoutParame
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PowerpackWidgetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

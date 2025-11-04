@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

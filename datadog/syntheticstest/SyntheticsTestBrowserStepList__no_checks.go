@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

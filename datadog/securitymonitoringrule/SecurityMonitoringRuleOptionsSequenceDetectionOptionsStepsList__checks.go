@@ -29,9 +29,9 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsLis
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

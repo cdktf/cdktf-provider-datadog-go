@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

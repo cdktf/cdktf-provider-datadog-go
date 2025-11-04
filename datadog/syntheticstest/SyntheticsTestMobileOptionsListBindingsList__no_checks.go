@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

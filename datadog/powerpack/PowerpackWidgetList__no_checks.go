@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

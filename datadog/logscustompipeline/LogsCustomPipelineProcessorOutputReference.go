@@ -56,6 +56,8 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	PipelineInput() *LogsCustomPipelineProcessorPipeline
 	ReferenceTableLookupProcessor() LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference
 	ReferenceTableLookupProcessorInput() *LogsCustomPipelineProcessorReferenceTableLookupProcessor
+	SchemaProcessor() LogsCustomPipelineProcessorSchemaProcessorOutputReference
+	SchemaProcessorInput() *LogsCustomPipelineProcessorSchemaProcessor
 	ServiceRemapper() LogsCustomPipelineProcessorServiceRemapperOutputReference
 	ServiceRemapperInput() *LogsCustomPipelineProcessorServiceRemapper
 	SpanIdRemapper() LogsCustomPipelineProcessorSpanIdRemapperOutputReference
@@ -101,7 +103,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutArithmeticProcessor(value *LogsCustomPipelineProcessorArithmeticProcessor)
 	PutArrayProcessor(value *LogsCustomPipelineProcessorArrayProcessor)
 	PutAttributeRemapper(value *LogsCustomPipelineProcessorAttributeRemapper)
@@ -114,6 +116,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	PutMessageRemapper(value *LogsCustomPipelineProcessorMessageRemapper)
 	PutPipeline(value *LogsCustomPipelineProcessorPipeline)
 	PutReferenceTableLookupProcessor(value *LogsCustomPipelineProcessorReferenceTableLookupProcessor)
+	PutSchemaProcessor(value *LogsCustomPipelineProcessorSchemaProcessor)
 	PutServiceRemapper(value *LogsCustomPipelineProcessorServiceRemapper)
 	PutSpanIdRemapper(value *LogsCustomPipelineProcessorSpanIdRemapper)
 	PutStatusRemapper(value *LogsCustomPipelineProcessorStatusRemapper)
@@ -133,6 +136,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	ResetMessageRemapper()
 	ResetPipeline()
 	ResetReferenceTableLookupProcessor()
+	ResetSchemaProcessor()
 	ResetServiceRemapper()
 	ResetSpanIdRemapper()
 	ResetStatusRemapper()
@@ -142,7 +146,7 @@ type LogsCustomPipelineProcessorOutputReference interface {
 	ResetUserAgentParser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -440,6 +444,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ReferenceTableLoo
 	_jsii_.Get(
 		j,
 		"referenceTableLookupProcessorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) SchemaProcessor() LogsCustomPipelineProcessorSchemaProcessorOutputReference {
+	var returns LogsCustomPipelineProcessorSchemaProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"schemaProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorOutputReference) SchemaProcessorInput() *LogsCustomPipelineProcessorSchemaProcessor {
+	var returns *LogsCustomPipelineProcessorSchemaProcessor
+	_jsii_.Get(
+		j,
+		"schemaProcessorInput",
 		&returns,
 	)
 	return returns
@@ -858,8 +882,8 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -867,7 +891,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,6 +1026,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutReferenceTable
 	_jsii_.InvokeVoid(
 		l,
 		"putReferenceTableLookupProcessor",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) PutSchemaProcessor(value *LogsCustomPipelineProcessorSchemaProcessor) {
+	if err := l.validatePutSchemaProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSchemaProcessor",
 		[]interface{}{value},
 	)
 }
@@ -1179,6 +1214,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetReferenceTab
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetSchemaProcessor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSchemaProcessor",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetServiceRemapper() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1235,8 +1278,8 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) ResetUserAgentPar
 	)
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1244,7 +1287,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

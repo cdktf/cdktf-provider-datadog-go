@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceLevelObjectiveThresholdsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelObjectiveThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveThresholdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

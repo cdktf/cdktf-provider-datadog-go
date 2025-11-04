@@ -43,7 +43,7 @@ func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validatePutTargetP
 	return nil
 }
 
-func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallEscalationPolicyStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

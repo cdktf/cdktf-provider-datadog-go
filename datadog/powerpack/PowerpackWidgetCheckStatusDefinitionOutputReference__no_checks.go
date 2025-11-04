@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

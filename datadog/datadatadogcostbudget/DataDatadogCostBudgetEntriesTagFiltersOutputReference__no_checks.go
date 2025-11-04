@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogCostBudgetEntriesTagFiltersOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCostBudgetEntriesTagFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogCostBudgetEntriesTagFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCostBudgetEntriesTagFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCostBudgetEntriesTagFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

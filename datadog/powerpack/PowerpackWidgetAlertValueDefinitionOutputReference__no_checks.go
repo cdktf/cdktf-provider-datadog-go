@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

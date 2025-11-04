@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

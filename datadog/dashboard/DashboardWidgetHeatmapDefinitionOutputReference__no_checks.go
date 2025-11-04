@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validatePutY
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

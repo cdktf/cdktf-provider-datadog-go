@@ -75,7 +75,7 @@ type DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference int
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutComputeQuery(value *DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery)
 	PutGroupBy(value interface{})
 	PutMultiCompute(value interface{})
@@ -85,7 +85,7 @@ type DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference int
 	ResetSearchQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -543,8 +543,8 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -552,7 +552,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutpu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -624,8 +624,8 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutpu
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutpu
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

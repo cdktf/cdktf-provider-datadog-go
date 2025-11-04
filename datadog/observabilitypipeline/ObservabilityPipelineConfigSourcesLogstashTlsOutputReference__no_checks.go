@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesLogstashTlsOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesLogstashTlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesLogstashTlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesLogstashTlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesLogstashTlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

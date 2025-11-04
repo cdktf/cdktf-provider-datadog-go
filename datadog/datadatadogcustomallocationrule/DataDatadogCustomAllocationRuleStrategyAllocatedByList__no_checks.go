@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

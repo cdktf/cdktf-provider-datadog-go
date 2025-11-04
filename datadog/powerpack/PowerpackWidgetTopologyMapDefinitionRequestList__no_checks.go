@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestList) validateGetP
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

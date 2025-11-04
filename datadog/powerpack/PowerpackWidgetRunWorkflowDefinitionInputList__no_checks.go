@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionInputList) validateGetPar
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionInputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

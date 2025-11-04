@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaConditionalF
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

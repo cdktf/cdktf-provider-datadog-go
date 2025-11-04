@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

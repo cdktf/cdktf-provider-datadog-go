@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesGooglePubsubList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesGooglePubsubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesGooglePubsubList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

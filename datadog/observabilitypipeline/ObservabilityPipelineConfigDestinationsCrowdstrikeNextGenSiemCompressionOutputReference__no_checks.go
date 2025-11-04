@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -29,9 +29,9 @@ func (d *jsiiProxy_DashboardWidgetList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

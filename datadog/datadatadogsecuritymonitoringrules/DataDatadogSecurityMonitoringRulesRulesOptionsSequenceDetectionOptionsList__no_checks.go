@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetecti
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetectionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsSequenceDetectionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

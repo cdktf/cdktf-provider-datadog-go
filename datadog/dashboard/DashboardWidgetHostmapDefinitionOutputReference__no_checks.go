@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validatePutS
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

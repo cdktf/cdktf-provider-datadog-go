@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsLi
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

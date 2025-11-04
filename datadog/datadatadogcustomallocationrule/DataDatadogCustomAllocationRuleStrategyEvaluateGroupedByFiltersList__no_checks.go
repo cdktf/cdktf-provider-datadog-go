@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilte
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

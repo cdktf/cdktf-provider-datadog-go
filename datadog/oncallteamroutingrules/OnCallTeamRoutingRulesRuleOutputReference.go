@@ -77,7 +77,7 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAction(value interface{})
 	PutTimeRestrictions(value *OnCallTeamRoutingRulesRuleTimeRestrictions)
 	ResetAction()
@@ -87,7 +87,7 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	ResetUrgency()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -566,8 +566,8 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -575,7 +575,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -644,8 +644,8 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) ResetUrgency() {
 	)
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -653,7 +653,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

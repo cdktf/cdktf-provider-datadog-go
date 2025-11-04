@@ -15,7 +15,7 @@ func (i *jsiiProxy_IpAllowlistEntryList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (i *jsiiProxy_IpAllowlistEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IpAllowlistEntryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutput
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

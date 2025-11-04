@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationAzureResourceProviderConfigsList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAzureResourceProviderConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAzureResourceProviderConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

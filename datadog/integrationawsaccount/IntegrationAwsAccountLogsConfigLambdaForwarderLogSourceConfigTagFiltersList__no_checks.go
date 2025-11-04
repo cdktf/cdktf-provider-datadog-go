@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

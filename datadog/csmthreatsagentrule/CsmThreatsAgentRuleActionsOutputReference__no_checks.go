@@ -43,7 +43,7 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validatePutSetPara
 	return nil
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

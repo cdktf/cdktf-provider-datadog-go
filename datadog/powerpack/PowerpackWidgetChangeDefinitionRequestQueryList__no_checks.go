@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryList) validateGetP
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

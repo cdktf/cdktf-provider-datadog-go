@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseList) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesAmazonDataFirehoseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

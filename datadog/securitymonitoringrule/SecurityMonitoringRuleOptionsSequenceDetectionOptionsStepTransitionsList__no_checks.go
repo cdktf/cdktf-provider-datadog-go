@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTran
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

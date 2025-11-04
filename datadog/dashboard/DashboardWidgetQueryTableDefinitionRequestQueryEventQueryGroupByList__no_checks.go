@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGrou
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

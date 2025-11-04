@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

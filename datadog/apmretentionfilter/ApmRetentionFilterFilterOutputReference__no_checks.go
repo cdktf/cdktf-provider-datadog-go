@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

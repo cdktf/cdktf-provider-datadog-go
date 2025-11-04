@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogCostBudgetEntriesList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCostBudgetEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCostBudgetEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

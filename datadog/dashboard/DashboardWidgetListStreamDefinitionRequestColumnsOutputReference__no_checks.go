@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateGetStr
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

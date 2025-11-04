@@ -85,9 +85,9 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -166,9 +166,9 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

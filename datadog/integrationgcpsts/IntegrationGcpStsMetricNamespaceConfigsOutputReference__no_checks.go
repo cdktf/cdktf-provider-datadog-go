@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

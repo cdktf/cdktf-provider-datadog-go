@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

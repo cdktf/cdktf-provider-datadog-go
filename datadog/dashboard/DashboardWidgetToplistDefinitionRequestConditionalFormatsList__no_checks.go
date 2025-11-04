@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestConditionalFormatsList
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestConditionalFormatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestConditionalFormatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

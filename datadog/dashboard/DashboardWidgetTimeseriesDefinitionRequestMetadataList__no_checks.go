@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestMetadataList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

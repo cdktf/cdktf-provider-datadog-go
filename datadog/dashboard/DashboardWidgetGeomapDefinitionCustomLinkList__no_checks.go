@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

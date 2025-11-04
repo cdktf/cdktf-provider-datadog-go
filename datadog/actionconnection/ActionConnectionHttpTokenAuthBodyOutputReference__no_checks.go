@@ -43,11 +43,11 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

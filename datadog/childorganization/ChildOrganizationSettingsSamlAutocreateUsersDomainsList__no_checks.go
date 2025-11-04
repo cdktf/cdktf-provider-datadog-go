@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) vali
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

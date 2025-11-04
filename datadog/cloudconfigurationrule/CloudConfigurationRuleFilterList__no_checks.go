@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudConfigurationRuleFilterList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CloudConfigurationRuleFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudConfigurationRuleFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

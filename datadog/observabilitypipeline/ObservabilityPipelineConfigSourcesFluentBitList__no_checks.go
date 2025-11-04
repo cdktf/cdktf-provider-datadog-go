@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitList) validateGetP
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesFluentBitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

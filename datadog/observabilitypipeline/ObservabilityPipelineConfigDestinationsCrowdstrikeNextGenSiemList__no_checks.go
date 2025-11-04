@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

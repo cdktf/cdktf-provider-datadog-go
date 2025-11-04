@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validatePut
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

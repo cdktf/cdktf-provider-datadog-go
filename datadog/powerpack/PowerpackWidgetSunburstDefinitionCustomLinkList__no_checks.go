@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkList) validateGetP
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

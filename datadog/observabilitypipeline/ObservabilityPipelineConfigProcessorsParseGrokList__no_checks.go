@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseGrokList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

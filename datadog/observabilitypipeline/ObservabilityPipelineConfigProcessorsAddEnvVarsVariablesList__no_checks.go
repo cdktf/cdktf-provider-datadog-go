@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList)
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

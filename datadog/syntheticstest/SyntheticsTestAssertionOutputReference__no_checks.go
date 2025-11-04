@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetxpat
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

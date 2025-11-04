@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaList) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

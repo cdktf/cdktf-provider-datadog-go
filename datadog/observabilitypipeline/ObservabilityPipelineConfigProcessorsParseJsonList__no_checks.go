@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseJsonList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseJsonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsParseJsonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

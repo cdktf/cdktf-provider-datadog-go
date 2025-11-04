@@ -90,7 +90,7 @@ type PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCustomBgColor()
 	ResetCustomFgColor()
 	ResetHideValue()
@@ -99,7 +99,7 @@ type PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	ResetTimeframe()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -714,8 +714,8 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFor
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -723,7 +723,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFor
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -778,8 +778,8 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFor
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -787,7 +787,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFor
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

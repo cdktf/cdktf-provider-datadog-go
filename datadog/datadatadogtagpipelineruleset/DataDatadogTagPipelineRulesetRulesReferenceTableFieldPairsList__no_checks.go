@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsLis
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

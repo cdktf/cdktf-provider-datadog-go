@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerList
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

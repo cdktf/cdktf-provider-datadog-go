@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOut
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

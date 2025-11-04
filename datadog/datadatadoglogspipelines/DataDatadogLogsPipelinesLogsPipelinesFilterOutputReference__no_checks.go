@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

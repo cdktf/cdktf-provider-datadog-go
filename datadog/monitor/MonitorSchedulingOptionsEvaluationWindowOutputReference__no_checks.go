@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

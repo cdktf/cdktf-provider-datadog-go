@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesDatadogAgentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

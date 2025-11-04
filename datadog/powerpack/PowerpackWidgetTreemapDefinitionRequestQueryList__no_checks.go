@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsL
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

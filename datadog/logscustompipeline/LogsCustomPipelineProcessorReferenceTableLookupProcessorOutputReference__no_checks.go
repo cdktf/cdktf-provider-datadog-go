@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutpu
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeLis
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

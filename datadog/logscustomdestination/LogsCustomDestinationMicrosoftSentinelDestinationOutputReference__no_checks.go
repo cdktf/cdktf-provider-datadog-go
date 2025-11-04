@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputRefere
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

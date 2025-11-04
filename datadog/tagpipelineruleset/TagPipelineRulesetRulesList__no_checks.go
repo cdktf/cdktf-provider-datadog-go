@@ -15,7 +15,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesList) validateGetParameters(index *flo
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

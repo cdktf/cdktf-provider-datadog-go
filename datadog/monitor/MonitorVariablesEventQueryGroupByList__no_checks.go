@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupByList) validateGetParameters(
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

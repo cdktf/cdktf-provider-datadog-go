@@ -43,11 +43,11 @@ func (r *jsiiProxy_RolePermissionOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (r *jsiiProxy_RolePermissionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RolePermissionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RolePermissionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RolePermissionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

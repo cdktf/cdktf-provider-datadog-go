@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

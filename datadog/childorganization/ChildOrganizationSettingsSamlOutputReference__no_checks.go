@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

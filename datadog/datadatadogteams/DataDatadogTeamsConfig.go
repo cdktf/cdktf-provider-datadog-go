@@ -24,15 +24,15 @@ type DataDatadogTeamsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Search query. Can be team name, team handle, or email of team member.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
 	FilterKeyword *string `field:"optional" json:"filterKeyword" yaml:"filterKeyword"`
 	// When true, only returns teams the current user belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
 	FilterMe interface{} `field:"optional" json:"filterMe" yaml:"filterMe"`
 	// teams block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
 	Teams interface{} `field:"optional" json:"teams" yaml:"teams"`
 }
 

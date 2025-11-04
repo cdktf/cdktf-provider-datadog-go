@@ -43,11 +43,11 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

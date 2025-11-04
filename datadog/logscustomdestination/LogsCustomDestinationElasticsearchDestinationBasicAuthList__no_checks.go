@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationBasicAuthList) v
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationBasicAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationBasicAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

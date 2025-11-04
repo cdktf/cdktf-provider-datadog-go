@@ -15,7 +15,7 @@ func (i *jsiiProxy_IncidentNotificationRuleConditionsList) validateGetParameters
 	return nil
 }
 
-func (i *jsiiProxy_IncidentNotificationRuleConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentNotificationRuleConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

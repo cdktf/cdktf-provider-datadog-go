@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsVariableOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsVariableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsVariableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsVariableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

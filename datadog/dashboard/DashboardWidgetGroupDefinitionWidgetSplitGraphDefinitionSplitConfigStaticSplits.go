@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSplitConfigStaticSplits struct {
 	// split_vector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/dashboard#split_vector Dashboard#split_vector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/dashboard#split_vector Dashboard#split_vector}
 	SplitVector interface{} `field:"required" json:"splitVector" yaml:"splitVector"`
 }
 

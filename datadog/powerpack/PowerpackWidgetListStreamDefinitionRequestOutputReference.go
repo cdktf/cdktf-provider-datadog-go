@@ -70,12 +70,12 @@ type PowerpackWidgetListStreamDefinitionRequestOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutColumns(value interface{})
 	PutQuery(value *PowerpackWidgetListStreamDefinitionRequestQuery)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -482,8 +482,8 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) In
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -491,7 +491,7 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) In
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -520,8 +520,8 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) Pu
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -529,7 +529,7 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) Re
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

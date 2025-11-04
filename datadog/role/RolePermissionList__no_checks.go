@@ -15,7 +15,7 @@ func (r *jsiiProxy_RolePermissionList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (r *jsiiProxy_RolePermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RolePermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

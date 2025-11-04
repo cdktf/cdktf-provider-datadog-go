@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSyslogNgList) validate
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSyslogNgList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSyslogNgList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

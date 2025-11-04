@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionCustomLinkList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

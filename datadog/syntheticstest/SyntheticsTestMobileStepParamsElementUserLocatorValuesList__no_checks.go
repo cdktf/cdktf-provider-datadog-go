@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesList) v
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

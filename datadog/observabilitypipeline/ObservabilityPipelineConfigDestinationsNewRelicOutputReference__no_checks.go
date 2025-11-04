@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsNewRelicOutputReferenc
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsNewRelicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsNewRelicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsNewRelicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsNewRelicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

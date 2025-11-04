@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaList) validateGetPa
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

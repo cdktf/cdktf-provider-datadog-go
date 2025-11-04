@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsecWafExclusionFilterScopeList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterScopeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsecWafExclusionFilterScopeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

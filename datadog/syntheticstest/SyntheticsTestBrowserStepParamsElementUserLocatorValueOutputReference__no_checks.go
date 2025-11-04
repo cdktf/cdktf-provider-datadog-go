@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

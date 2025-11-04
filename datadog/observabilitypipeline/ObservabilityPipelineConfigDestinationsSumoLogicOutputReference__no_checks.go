@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

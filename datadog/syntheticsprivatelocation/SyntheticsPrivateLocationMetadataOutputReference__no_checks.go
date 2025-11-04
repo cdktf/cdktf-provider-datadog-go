@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

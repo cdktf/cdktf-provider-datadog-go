@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

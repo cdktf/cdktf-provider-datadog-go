@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

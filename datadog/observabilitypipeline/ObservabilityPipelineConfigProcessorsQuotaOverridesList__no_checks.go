@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOverridesList) vali
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsQuotaOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

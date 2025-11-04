@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

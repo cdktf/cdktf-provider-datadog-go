@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSumoLogicOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSumoLogicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSumoLogicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSumoLogicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSumoLogicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

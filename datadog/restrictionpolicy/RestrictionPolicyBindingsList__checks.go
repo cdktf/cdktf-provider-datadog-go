@@ -29,9 +29,9 @@ func (r *jsiiProxy_RestrictionPolicyBindingsList) validateGetParameters(index *f
 	return nil
 }
 
-func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -29,9 +29,9 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSplunkTcpList) validateGetP
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSplunkTcpList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesSplunkTcpList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

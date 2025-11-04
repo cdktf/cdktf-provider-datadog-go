@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

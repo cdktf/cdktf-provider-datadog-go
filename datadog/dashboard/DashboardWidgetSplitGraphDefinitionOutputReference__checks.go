@@ -85,9 +85,9 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -115,9 +115,9 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

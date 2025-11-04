@@ -93,7 +93,7 @@ type PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAggregator()
 	ResetCrossOrgUuids()
 	ResetIsNormalizedCpu()
@@ -103,7 +103,7 @@ type PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference 
 	ResetTextFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -749,8 +749,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOu
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -758,7 +758,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOu
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -821,8 +821,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOu
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -830,7 +830,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOu
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

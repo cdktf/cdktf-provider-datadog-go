@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesFilterList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogLogsIndexesLogsIndexesFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

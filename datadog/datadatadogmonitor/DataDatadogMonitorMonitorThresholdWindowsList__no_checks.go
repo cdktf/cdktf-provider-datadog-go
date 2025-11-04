@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdWindowsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdWindowsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdWindowsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

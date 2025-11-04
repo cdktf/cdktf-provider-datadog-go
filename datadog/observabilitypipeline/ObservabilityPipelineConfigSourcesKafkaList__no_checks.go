@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

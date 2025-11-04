@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ActionConnectionAwsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionAwsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActionConnectionAwsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ActionConnectionAwsOutputReference) validatePutAssumeRolePara
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionAwsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionAwsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

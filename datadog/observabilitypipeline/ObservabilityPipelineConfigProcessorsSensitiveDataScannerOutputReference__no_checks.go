@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutp
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutp
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

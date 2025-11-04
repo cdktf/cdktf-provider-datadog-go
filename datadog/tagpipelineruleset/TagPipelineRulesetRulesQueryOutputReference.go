@@ -74,7 +74,7 @@ type TagPipelineRulesetRulesQueryOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAddition(value *TagPipelineRulesetRulesQueryAddition)
 	ResetAddition()
 	ResetCaseInsensitivity()
@@ -82,7 +82,7 @@ type TagPipelineRulesetRulesQueryOutputReference interface {
 	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -531,8 +531,8 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) InterpolationAsL
 	return returns
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -540,7 +540,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) ResetQuery() {
 	)
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

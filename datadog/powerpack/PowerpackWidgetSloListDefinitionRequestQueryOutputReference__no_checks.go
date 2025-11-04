@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

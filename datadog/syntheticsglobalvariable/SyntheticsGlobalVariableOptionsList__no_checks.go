@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

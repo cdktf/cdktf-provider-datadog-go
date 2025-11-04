@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

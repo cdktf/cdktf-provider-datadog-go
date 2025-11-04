@@ -41,7 +41,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList inte
 	Get(index *float64) PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCo
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCo
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

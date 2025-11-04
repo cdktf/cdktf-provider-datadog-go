@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByAllocatedTagsList) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByAllocatedTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByAllocatedTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

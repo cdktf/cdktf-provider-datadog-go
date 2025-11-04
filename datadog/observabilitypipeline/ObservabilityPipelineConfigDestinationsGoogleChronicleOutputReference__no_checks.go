@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputR
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputR
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

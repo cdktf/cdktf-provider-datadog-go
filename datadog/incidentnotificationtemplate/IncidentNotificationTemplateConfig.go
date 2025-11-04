@@ -24,23 +24,23 @@ type IncidentNotificationTemplateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The category of the notification template. Valid values are `alert`, `incident`, `recovery`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
 	Category *string `field:"required" json:"category" yaml:"category"`
 	// The content body of the notification template.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
 	Content *string `field:"required" json:"content" yaml:"content"`
 	// The ID of the incident type this notification template is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
 	IncidentType *string `field:"required" json:"incidentType" yaml:"incidentType"`
 	// The name of the notification template.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The subject line of the notification template.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

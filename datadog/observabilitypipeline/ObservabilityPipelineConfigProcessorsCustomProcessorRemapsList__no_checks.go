@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorRemapsLis
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

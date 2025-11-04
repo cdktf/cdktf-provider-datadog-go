@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationList) validateGetParamete
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

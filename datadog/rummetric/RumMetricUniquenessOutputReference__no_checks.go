@@ -43,11 +43,11 @@ func (r *jsiiProxy_RumMetricUniquenessOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (r *jsiiProxy_RumMetricUniquenessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RumMetricUniquenessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RumMetricUniquenessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RumMetricUniquenessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

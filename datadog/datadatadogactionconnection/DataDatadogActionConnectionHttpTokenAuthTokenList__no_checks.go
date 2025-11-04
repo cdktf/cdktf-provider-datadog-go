@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthTokenList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthTokenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogActionConnectionHttpTokenAuthTokenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

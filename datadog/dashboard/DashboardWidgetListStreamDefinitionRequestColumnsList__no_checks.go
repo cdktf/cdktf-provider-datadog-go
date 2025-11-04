@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetListStreamDefinitionRequestColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

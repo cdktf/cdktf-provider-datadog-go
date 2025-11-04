@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChildOrganizationSettingsList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

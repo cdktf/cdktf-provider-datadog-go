@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestTextFormatsTextForm
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestTextFormatsTextFormatList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestTextFormatsTextFormatList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

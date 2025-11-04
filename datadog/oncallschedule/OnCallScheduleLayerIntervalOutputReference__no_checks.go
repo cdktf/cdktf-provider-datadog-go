@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnCallScheduleLayerIntervalOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerIntervalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallScheduleLayerIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerIntervalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallScheduleLayerIntervalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

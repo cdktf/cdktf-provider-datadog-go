@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesLis
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

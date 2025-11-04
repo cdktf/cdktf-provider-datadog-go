@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

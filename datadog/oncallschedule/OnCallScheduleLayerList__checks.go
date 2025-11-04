@@ -29,9 +29,9 @@ func (o *jsiiProxy_OnCallScheduleLayerList) validateGetParameters(index *float64
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OnCallScheduleLayerList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

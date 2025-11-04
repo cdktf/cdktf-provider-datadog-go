@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetRunWorkflowDefinitionCustomLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

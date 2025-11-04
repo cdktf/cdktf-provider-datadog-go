@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketFramingCharacter
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

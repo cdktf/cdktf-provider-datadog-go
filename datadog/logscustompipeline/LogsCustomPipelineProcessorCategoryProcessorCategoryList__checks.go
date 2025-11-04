@@ -29,9 +29,9 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) val
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

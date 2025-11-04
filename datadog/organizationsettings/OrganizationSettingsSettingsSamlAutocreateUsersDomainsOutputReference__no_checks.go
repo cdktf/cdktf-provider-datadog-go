@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

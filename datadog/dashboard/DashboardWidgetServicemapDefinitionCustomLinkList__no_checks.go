@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetServicemapDefinitionCustomLinkList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetServicemapDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetServicemapDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleO
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsRootQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsThirdPartyRuleOptionsRootQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) val
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorCategoryProcessorCategoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

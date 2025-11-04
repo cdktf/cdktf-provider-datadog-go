@@ -43,11 +43,11 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

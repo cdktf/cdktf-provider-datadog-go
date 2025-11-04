@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpansMetricGroupByList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (s *jsiiProxy_SpansMetricGroupByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpansMetricGroupByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

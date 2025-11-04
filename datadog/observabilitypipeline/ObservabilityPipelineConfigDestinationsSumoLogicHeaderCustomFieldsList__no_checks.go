@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomF
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

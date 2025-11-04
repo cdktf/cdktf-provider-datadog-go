@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogRoleUsersRoleUsersList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogRoleUsersRoleUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogRoleUsersRoleUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

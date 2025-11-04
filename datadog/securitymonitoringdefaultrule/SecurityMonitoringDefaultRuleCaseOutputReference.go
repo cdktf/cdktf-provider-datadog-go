@@ -72,12 +72,12 @@ type SecurityMonitoringDefaultRuleCaseOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCustomStatus()
 	ResetNotifications()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Interpolati
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) ResetNotifi
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleCaseOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

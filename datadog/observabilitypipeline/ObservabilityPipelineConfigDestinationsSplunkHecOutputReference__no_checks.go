@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSplunkHecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -111,7 +111,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validatePu
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

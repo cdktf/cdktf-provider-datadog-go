@@ -43,11 +43,11 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) validateGetParame
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

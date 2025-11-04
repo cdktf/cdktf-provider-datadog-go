@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsIndexExclusionFilterList) validateGetParameters(index *fl
 	return nil
 }
 
-func (l *jsiiProxy_LogsIndexExclusionFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsIndexExclusionFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

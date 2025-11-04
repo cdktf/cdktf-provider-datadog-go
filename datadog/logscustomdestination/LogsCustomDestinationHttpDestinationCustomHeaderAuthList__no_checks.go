@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationCustomHeaderAuthList) val
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationCustomHeaderAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationCustomHeaderAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

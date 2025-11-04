@@ -15,7 +15,7 @@ func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

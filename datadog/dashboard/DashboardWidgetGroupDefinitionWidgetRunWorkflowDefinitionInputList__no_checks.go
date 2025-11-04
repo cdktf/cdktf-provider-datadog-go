@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionInpu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionInputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

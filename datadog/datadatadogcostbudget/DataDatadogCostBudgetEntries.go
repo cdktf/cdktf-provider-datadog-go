@@ -7,7 +7,7 @@ package datadatadogcostbudget
 type DataDatadogCostBudgetEntries struct {
 	// tag_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
 	TagFilters interface{} `field:"optional" json:"tagFilters" yaml:"tagFilters"`
 }
 

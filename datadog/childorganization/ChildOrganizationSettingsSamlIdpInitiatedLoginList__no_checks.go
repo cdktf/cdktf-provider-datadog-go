@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

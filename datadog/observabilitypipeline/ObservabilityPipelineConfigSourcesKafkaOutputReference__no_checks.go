@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesKafkaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

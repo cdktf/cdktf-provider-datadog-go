@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsecWafCustomRuleConditionParametersInputList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleConditionParametersInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsecWafCustomRuleConditionParametersInputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputR
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputR
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

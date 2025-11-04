@@ -29,9 +29,9 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeLis
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -83,7 +83,7 @@ type OnCallScheduleLayerOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutInterval(value *OnCallScheduleLayerInterval)
 	PutRestriction(value interface{})
 	ResetEndDate()
@@ -91,7 +91,7 @@ type OnCallScheduleLayerOutputReference interface {
 	ResetRestriction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -632,8 +632,8 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OnCallScheduleLayerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -641,7 +641,7 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -694,8 +694,8 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) ResetRestriction() {
 	)
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OnCallScheduleLayerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -703,7 +703,7 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

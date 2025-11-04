@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyEvaluateGroupedByFiltersList) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyEvaluateGroupedByFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyEvaluateGroupedByFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

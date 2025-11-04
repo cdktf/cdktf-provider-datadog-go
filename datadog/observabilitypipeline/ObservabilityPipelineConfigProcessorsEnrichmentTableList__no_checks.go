@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableList) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

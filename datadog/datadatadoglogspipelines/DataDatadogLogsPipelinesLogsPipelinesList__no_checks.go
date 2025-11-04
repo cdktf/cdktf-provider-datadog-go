@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogLogsPipelinesLogsPipelinesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionCustomLinkList) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionCustomLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionCustomLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

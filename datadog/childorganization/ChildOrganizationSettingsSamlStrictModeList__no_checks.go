@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validatePutTo
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

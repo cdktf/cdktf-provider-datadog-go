@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionEventList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

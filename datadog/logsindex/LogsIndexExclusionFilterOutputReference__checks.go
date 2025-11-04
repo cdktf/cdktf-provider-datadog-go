@@ -85,9 +85,9 @@ func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateGetStringMap
 	return nil
 }
 
-func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validatePutFilterPar
 	return nil
 }
 
-func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

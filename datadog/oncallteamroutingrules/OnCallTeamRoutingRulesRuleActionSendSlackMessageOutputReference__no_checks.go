@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

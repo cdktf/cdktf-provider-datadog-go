@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsL
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

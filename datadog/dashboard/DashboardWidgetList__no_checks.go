@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardWidgetList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

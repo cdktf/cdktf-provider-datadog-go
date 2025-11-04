@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validatePutParamete
 	return nil
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type CostBudgetEntriesList interface {
 	Get(index *float64) CostBudgetEntriesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (c *jsiiProxy_CostBudgetEntriesList) Get(index *float64) CostBudgetEntriesO
 	return returns
 }
 
-func (c *jsiiProxy_CostBudgetEntriesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CostBudgetEntriesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (c *jsiiProxy_CostBudgetEntriesList) Resolve(_context cdktf.IResolveContext
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

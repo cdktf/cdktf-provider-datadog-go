@@ -15,7 +15,7 @@ func (d *jsiiProxy_DashboardTemplateVariableList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DashboardTemplateVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardTemplateVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

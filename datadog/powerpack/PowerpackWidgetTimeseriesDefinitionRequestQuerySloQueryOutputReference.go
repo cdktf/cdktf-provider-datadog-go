@@ -87,7 +87,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAdditionalQueryFilters()
 	ResetCrossOrgUuids()
 	ResetGroupMode()
@@ -95,7 +95,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference inte
 	ResetSloQueryType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -679,8 +679,8 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutput
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -688,7 +688,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutput
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -735,8 +735,8 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutput
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -744,7 +744,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutput
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

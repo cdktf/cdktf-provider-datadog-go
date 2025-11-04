@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionList) validateGetParameters(ind
 	return nil
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

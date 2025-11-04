@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestClientCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

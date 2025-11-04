@@ -7,19 +7,19 @@ package powerpack
 type PowerpackWidgetDistributionDefinitionXaxis struct {
 	// Always include zero or fit the axis to the data range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
 	IncludeZero interface{} `field:"optional" json:"includeZero" yaml:"includeZero"`
 	// Specify the maximum value to show on the Y-axis.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/powerpack#max Powerpack#max}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/powerpack#max Powerpack#max}
 	Max *string `field:"optional" json:"max" yaml:"max"`
 	// Specify the minimum value to show on the Y-axis.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/powerpack#min Powerpack#min}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/powerpack#min Powerpack#min}
 	Min *string `field:"optional" json:"min" yaml:"min"`
 	// Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/powerpack#scale Powerpack#scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/powerpack#scale Powerpack#scale}
 	Scale *string `field:"optional" json:"scale" yaml:"scale"`
 }
 

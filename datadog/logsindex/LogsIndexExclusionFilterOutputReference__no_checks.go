@@ -43,7 +43,7 @@ func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateGetStringMap
 	return nil
 }
 
-func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validatePutFilterPar
 	return nil
 }
 
-func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsIndexExclusionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

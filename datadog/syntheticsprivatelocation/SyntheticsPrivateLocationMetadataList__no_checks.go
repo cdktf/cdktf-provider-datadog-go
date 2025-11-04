@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsPrivateLocationMetadataList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsPrivateLocationMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsPrivateLocationMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

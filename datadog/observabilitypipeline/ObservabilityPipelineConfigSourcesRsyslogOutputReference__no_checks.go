@@ -43,7 +43,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesRsyslogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

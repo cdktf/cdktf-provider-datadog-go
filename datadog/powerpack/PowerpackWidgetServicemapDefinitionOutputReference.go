@@ -80,7 +80,7 @@ type PowerpackWidgetServicemapDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCustomLink(value interface{})
 	ResetCustomLink()
 	ResetTitle()
@@ -88,7 +88,7 @@ type PowerpackWidgetServicemapDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -599,8 +599,8 @@ func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) Interpola
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -608,7 +608,7 @@ func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) ResetTitl
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (p *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) Resolve(_
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

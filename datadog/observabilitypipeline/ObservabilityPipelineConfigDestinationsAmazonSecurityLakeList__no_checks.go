@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestApiStepList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestApiStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

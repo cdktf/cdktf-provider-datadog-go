@@ -43,11 +43,11 @@ func (i *jsiiProxy_IncidentNotificationRuleConditionsOutputReference) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IncidentNotificationRuleConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IncidentNotificationRuleConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IncidentNotificationRuleConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentNotificationRuleConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

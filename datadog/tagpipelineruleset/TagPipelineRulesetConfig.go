@@ -24,15 +24,15 @@ type TagPipelineRulesetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the ruleset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Whether the ruleset is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 

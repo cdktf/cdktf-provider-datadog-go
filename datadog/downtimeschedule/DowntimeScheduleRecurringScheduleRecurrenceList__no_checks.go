@@ -15,7 +15,7 @@ func (d *jsiiProxy_DowntimeScheduleRecurringScheduleRecurrenceList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DowntimeScheduleRecurringScheduleRecurrenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DowntimeScheduleRecurringScheduleRecurrenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

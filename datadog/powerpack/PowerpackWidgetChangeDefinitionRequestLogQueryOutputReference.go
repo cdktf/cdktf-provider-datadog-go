@@ -75,7 +75,7 @@ type PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutComputeQuery(value *PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery)
 	PutGroupBy(value interface{})
 	PutMultiCompute(value interface{})
@@ -85,7 +85,7 @@ type PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference interface {
 	ResetSearchQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -543,8 +543,8 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -552,7 +552,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -624,8 +624,8 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

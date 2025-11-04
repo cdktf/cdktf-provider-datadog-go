@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogServiceLevelObjectiveQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

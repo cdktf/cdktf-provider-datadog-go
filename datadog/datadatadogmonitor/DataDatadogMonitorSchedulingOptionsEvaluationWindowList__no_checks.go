@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsEvaluationWindowList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsEvaluationWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsEvaluationWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

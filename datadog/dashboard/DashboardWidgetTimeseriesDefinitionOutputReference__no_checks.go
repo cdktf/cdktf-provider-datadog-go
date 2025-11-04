@@ -43,7 +43,7 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

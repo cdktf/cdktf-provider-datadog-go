@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

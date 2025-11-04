@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatasetProductFiltersList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DatasetProductFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasetProductFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

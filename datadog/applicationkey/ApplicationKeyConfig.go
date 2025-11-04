@@ -24,11 +24,11 @@ type ApplicationKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name for Application Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/application_key#name ApplicationKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/application_key#name ApplicationKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/application_key#scopes ApplicationKey#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
 

@@ -41,7 +41,7 @@ type ObservabilityPipelineConfigProcessorsRenameFieldsFieldList interface {
 	Get(index *float64) ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRenameFieldsFieldList) G
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRenameFieldsFieldList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRenameFieldsFieldList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRenameFieldsFieldList) R
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

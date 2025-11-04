@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveThresholdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

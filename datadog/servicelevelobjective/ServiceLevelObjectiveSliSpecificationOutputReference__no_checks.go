@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

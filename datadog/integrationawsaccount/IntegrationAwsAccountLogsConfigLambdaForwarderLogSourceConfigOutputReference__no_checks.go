@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

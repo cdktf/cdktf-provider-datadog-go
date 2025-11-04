@@ -24,7 +24,7 @@ type DataDatadogAwsCurConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Datadog cloud account ID for the AWS CUR configuration you want to retrieve information about.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
 	CloudAccountId *float64 `field:"required" json:"cloudAccountId" yaml:"cloudAccountId"`
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validatePutParamsPa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestBrowserStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

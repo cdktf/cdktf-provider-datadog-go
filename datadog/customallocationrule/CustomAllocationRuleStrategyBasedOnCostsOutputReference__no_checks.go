@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

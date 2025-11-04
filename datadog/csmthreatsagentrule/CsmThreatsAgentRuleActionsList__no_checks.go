@@ -15,7 +15,7 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PowerpackWidgetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -171,7 +171,7 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) validatePutWidgetLayoutParame
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

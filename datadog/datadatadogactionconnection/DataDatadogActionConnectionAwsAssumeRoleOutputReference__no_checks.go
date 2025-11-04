@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogActionConnectionAwsAssumeRoleOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsAssumeRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogActionConnectionAwsAssumeRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsAssumeRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogActionConnectionAwsAssumeRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

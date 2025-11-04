@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

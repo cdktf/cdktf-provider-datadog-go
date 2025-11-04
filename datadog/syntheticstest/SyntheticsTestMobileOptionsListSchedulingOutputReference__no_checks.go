@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

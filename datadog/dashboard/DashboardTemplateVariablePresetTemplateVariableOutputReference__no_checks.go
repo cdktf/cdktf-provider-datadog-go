@@ -43,11 +43,11 @@ func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardTemplateVariablePresetTemplateVariableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

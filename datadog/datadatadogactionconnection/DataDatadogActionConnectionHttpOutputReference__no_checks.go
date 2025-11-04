@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validatePutTo
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogActionConnectionHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

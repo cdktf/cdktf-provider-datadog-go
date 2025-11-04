@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputRe
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

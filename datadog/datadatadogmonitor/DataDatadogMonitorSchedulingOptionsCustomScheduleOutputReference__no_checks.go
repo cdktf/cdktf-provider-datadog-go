@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

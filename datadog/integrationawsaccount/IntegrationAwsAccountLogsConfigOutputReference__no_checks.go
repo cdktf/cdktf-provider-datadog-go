@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validatePutLa
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

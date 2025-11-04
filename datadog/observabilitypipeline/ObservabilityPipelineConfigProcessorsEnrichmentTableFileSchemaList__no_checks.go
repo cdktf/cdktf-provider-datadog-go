@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchem
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorUrlParserOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorUrlParserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorUrlParserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorUrlParserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorUrlParserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

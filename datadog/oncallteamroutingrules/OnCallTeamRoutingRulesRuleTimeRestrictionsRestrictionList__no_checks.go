@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList) va
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

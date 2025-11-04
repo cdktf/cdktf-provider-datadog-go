@@ -43,11 +43,11 @@ func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SensitiveDataScannerRuleTextReplacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

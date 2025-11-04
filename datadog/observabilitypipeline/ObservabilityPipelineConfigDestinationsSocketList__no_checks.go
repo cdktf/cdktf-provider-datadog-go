@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketList) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

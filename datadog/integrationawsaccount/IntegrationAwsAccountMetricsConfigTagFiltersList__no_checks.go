@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigTagFiltersList) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigTagFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigTagFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

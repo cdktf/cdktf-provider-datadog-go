@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestMobileStepList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

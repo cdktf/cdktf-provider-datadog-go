@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRemoveFieldsList) valida
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRemoveFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorsRemoveFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

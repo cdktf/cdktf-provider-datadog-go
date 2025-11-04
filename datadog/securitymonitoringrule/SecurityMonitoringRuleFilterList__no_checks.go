@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleFilterList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ActionConnectionHttpOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActionConnectionHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ActionConnectionHttpOutputReference) validatePutTokenAuthPara
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

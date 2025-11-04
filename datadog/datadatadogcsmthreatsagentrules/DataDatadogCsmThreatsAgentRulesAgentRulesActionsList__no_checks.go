@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogCsmThreatsAgentRulesAgentRulesActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsO
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

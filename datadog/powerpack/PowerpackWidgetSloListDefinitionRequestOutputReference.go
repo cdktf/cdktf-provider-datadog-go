@@ -68,11 +68,11 @@ type PowerpackWidgetSloListDefinitionRequestOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutQuery(value *PowerpackWidgetSloListDefinitionRequestQuery)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -459,8 +459,8 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) Inter
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -468,7 +468,7 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) Inter
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -486,8 +486,8 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) PutQu
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -495,7 +495,7 @@ func (p *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) Resol
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

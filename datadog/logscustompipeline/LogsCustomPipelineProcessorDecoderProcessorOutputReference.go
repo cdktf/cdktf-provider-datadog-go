@@ -81,12 +81,12 @@ type LogsCustomPipelineProcessorDecoderProcessorOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetIsEnabled()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -608,8 +608,8 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) I
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -617,7 +617,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) I
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -640,8 +640,8 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) R
 	)
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -649,7 +649,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorDecoderProcessorOutputReference) R
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 
