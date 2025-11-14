@@ -24,39 +24,39 @@ type IntegrationAwsAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Your AWS Account ID without dashes. Invalid aws_account_id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
 	AwsAccountId *string `field:"required" json:"awsAccountId" yaml:"awsAccountId"`
 	// AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
 	AwsPartition *string `field:"required" json:"awsPartition" yaml:"awsPartition"`
 	// Tags to apply to all metrics in the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
 	AccountTags *[]*string `field:"optional" json:"accountTags" yaml:"accountTags"`
 	// auth_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
 	AuthConfig *IntegrationAwsAccountAuthConfig `field:"optional" json:"authConfig" yaml:"authConfig"`
 	// aws_regions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
 	AwsRegions *IntegrationAwsAccountAwsRegions `field:"optional" json:"awsRegions" yaml:"awsRegions"`
 	// logs_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
 	LogsConfig *IntegrationAwsAccountLogsConfig `field:"optional" json:"logsConfig" yaml:"logsConfig"`
 	// metrics_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
 	MetricsConfig *IntegrationAwsAccountMetricsConfig `field:"optional" json:"metricsConfig" yaml:"metricsConfig"`
 	// resources_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
 	ResourcesConfig *IntegrationAwsAccountResourcesConfig `field:"optional" json:"resourcesConfig" yaml:"resourcesConfig"`
 	// traces_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
 	TracesConfig *IntegrationAwsAccountTracesConfig `field:"optional" json:"tracesConfig" yaml:"tracesConfig"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
 type DataDatadogAwsCurConfig interface {
 	cdktf.TerraformDataSource
 	AccountFilters() DataDatadogAwsCurConfigAccountFiltersOutputReference
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataDatadogAwsCurConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
 func NewDataDatadogAwsCurConfig(scope constructs.Construct, id *string, config *DataDatadogAwsCurConfigConfig) DataDatadogAwsCurConfig {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataDatadogAwsCurConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
 func NewDataDatadogAwsCurConfig_Override(d DataDatadogAwsCurConfig, scope constructs.Construct, id *string, config *DataDatadogAwsCurConfigConfig) {
 	_init_.Initialize()
 

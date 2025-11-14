@@ -26,7 +26,7 @@ type CustomAllocationRulesConfig struct {
 	//
 	// Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
 	RuleIds *[]*string `field:"required" json:"ruleIds" yaml:"ruleIds"`
 }
 

@@ -76,7 +76,6 @@ type MonitorVariablesCloudCostQueryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetAggregator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -553,14 +552,6 @@ func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) InterpolationF
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) ResetAggregator() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAggregator",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MonitorVariablesCloudCostQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

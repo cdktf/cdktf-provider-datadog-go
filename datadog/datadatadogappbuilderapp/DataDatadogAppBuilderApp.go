@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
 type DataDatadogAppBuilderApp interface {
 	cdktf.TerraformDataSource
 	ActionQueryNamesToConnectionIds() cdktf.StringMap
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) DataDatadogAppBuilderApp {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp_Override(d DataDatadogAppBuilderApp, scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) {
 	_init_.Initialize()
 

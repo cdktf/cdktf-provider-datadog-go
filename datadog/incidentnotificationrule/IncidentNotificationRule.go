@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
 type IncidentNotificationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_IncidentNotificationRule) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule(scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) IncidentNotificationRule {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewIncidentNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule_Override(i IncidentNotificationRule, scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) {
 	_init_.Initialize()
 

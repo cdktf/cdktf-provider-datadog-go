@@ -24,7 +24,7 @@ type SecurityMonitoringRuleJsonConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The JSON definition of the Security Monitoring Rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
 	Json *string `field:"required" json:"json" yaml:"json"`
 }
 

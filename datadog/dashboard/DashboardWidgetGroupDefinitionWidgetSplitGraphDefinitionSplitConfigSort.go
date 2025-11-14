@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSplitConfigSort struct {
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/dashboard#order Dashboard#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/dashboard#order Dashboard#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 	// compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/dashboard#compute Dashboard#compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/dashboard#compute Dashboard#compute}
 	Compute *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSplitConfigSortCompute `field:"optional" json:"compute" yaml:"compute"`
 }
 

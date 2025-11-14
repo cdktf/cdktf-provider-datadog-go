@@ -186,6 +186,14 @@ func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateSetFiltersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

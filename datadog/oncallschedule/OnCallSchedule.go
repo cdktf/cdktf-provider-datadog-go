@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
 type OnCallSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_OnCallSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource.
 func NewOnCallSchedule(scope constructs.Construct, id *string, config *OnCallScheduleConfig) OnCallSchedule {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewOnCallSchedule(scope constructs.Construct, id *string, config *OnCallSch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource.
 func NewOnCallSchedule_Override(o OnCallSchedule, scope constructs.Construct, id *string, config *OnCallScheduleConfig) {
 	_init_.Initialize()
 

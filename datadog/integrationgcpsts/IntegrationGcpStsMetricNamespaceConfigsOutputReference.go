@@ -31,6 +31,9 @@ type IntegrationGcpStsMetricNamespaceConfigsOutputReference interface {
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
+	Filters() *[]*string
+	SetFilters(val *[]*string)
+	FiltersInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -71,6 +74,7 @@ type IntegrationGcpStsMetricNamespaceConfigsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDisabled()
+	ResetFilters()
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) Disab
 	_jsii_.Get(
 		j,
 		"disabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) Filters() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) FiltersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference)SetDis
 	_jsii_.Set(
 		j,
 		"disabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference)SetFilters(val *[]*string) {
+	if err := j.validateSetFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filters",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		i,
 		"resetDisabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) ResetFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetFilters",
 		nil, // no parameters
 	)
 }

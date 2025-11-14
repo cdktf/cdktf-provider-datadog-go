@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/org_connection datadog_org_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/org_connection datadog_org_connection}.
 type OrgConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_OrgConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/org_connection datadog_org_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/org_connection datadog_org_connection} Resource.
 func NewOrgConnection(scope constructs.Construct, id *string, config *OrgConnectionConfig) OrgConnection {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewOrgConnection(scope constructs.Construct, id *string, config *OrgConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/org_connection datadog_org_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/org_connection datadog_org_connection} Resource.
 func NewOrgConnection_Override(o OrgConnection, scope constructs.Construct, id *string, config *OrgConnectionConfig) {
 	_init_.Initialize()
 

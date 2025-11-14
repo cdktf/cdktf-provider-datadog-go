@@ -63,6 +63,10 @@ func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateSetFiltersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }

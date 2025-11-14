@@ -7,7 +7,7 @@ package integrationawsaccount
 type IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig struct {
 	// tag_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
 	TagFilters interface{} `field:"optional" json:"tagFilters" yaml:"tagFilters"`
 }
 

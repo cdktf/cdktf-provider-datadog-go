@@ -24,7 +24,7 @@ type DataDatadogRumRetentionFiltersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// RUM application ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
 }
 

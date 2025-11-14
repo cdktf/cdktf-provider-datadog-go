@@ -7,11 +7,11 @@ package logscustompipeline
 type LogsCustomPipelineProcessorArrayProcessorOperationLength struct {
 	// Attribute path of the array to compute the length of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 	Source *string `field:"required" json:"source" yaml:"source"`
 	// Attribute that receives the computed length.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 }
 
