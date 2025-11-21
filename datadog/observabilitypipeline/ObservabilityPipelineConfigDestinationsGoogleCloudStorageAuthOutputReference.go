@@ -67,6 +67,7 @@ type ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetCredentialsFile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference) ResetCredentialsFile() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCredentialsFile",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

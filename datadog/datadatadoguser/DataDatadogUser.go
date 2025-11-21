@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user}.
 type DataDatadogUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,6 +33,9 @@ type DataDatadogUser interface {
 	ExactMatch() interface{}
 	SetExactMatch(val interface{})
 	ExactMatchInput() interface{}
+	ExcludeServiceAccounts() interface{}
+	SetExcludeServiceAccounts(val interface{})
+	ExcludeServiceAccountsInput() interface{}
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -100,6 +103,7 @@ type DataDatadogUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExactMatch()
+	ResetExcludeServiceAccounts()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DataDatadogUser) ExactMatchInput() interface{} {
 	_jsii_.Get(
 		j,
 		"exactMatchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) ExcludeServiceAccounts() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeServiceAccounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogUser) ExcludeServiceAccountsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeServiceAccountsInput",
 		&returns,
 	)
 	return returns
@@ -444,7 +468,7 @@ func (j *jsiiProxy_DataDatadogUser) Verified() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataDatadogUserConfig) DataDatadogUser {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewDataDatadogUser(scope constructs.Construct, id *string, config *DataData
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user} Data Source.
 func NewDataDatadogUser_Override(d DataDatadogUser, scope constructs.Construct, id *string, config *DataDatadogUserConfig) {
 	_init_.Initialize()
 
@@ -499,6 +523,17 @@ func (j *jsiiProxy_DataDatadogUser)SetExactMatch(val interface{}) {
 	_jsii_.Set(
 		j,
 		"exactMatch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogUser)SetExcludeServiceAccounts(val interface{}) {
+	if err := j.validateSetExcludeServiceAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeServiceAccounts",
 		val,
 	)
 }
@@ -841,6 +876,14 @@ func (d *jsiiProxy_DataDatadogUser) ResetExactMatch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExactMatch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogUser) ResetExcludeServiceAccounts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeServiceAccounts",
 		nil, // no parameters
 	)
 }

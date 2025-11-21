@@ -26,7 +26,7 @@ type DataDatadogSyntheticsGlobalVariableConfig struct {
 	//
 	// Must only match one global variable. Must be all uppercase with underscores.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

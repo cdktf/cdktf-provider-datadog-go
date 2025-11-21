@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
 type OnCallTeamRoutingRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRules) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource.
 func NewOnCallTeamRoutingRules(scope constructs.Construct, id *string, config *OnCallTeamRoutingRulesConfig) OnCallTeamRoutingRules {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewOnCallTeamRoutingRules(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource.
 func NewOnCallTeamRoutingRules_Override(o OnCallTeamRoutingRules, scope constructs.Construct, id *string, config *OnCallTeamRoutingRulesConfig) {
 	_init_.Initialize()
 

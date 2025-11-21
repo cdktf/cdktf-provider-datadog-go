@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
 type DataDatadogIpRanges interface {
 	cdktf.TerraformDataSource
 	AgentsIpv4() *[]*string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_DataDatadogIpRanges) WebhooksIpv6() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) DataDatadogIpRanges {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewDataDatadogIpRanges(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source.
 func NewDataDatadogIpRanges_Override(d DataDatadogIpRanges, scope constructs.Construct, id *string, config *DataDatadogIpRangesConfig) {
 	_init_.Initialize()
 

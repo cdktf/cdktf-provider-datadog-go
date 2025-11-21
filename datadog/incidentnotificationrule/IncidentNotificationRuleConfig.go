@@ -28,33 +28,33 @@ type IncidentNotificationRuleConfig struct {
 	Handles *[]*string `field:"required" json:"handles" yaml:"handles"`
 	// The ID of the incident type this notification rule is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
 	IncidentType *string `field:"required" json:"incidentType" yaml:"incidentType"`
 	// The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
 	Trigger *string `field:"required" json:"trigger" yaml:"trigger"`
 	// conditions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
 	Conditions interface{} `field:"optional" json:"conditions" yaml:"conditions"`
 	// Whether the notification rule is enabled. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// The ID of the notification template to use for this rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
 	NotificationTemplate *string `field:"optional" json:"notificationTemplate" yaml:"notificationTemplate"`
 	// List of incident fields that trigger re-notification when changed.
 	//
 	// Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
 	RenotifyOn *[]*string `field:"optional" json:"renotifyOn" yaml:"renotifyOn"`
 	// The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
 	Visibility *string `field:"optional" json:"visibility" yaml:"visibility"`
 }
 

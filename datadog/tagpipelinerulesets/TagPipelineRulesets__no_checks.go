@@ -103,6 +103,10 @@ func (j *jsiiProxy_TagPipelineRulesets) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_TagPipelineRulesets) validateSetOverrideUiDefinedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagPipelineRulesets) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited struct {
 	// A single ASCII character used as a delimiter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 	Delimiter *string `field:"optional" json:"delimiter" yaml:"delimiter"`
 }
 

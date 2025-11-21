@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
 type DataDatadogGcpUcConfig interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataDatadogGcpUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) DataDatadogGcpUcConfig {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig_Override(d DataDatadogGcpUcConfig, scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) {
 	_init_.Initialize()
 

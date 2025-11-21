@@ -139,6 +139,10 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetSuppressionQueryPar
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringSuppression) validateSetValidateParameters(val interface{}) error {
 	return nil
 }

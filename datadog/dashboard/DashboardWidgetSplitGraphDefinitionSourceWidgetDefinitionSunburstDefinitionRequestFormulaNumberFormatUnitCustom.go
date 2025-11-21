@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionRequestFormulaNumberFormatUnitCustom struct {
 	// Unit label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/dashboard#label Dashboard#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/dashboard#label Dashboard#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 

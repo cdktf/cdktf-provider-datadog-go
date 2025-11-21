@@ -5,9 +5,9 @@ package syntheticstest
 
 
 type SyntheticsTestMobileStepParamsElementRelativePosition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
 	X *float64 `field:"optional" json:"x" yaml:"x"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
 	Y *float64 `field:"optional" json:"y" yaml:"y"`
 }
 

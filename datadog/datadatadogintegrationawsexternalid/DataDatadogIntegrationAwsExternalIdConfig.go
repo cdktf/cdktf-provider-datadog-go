@@ -26,7 +26,7 @@ type DataDatadogIntegrationAwsExternalIdConfig struct {
 	//
 	// Must be a valid 12 digits AWS account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
 	AwsAccountId *string `field:"required" json:"awsAccountId" yaml:"awsAccountId"`
 }
 

@@ -24,11 +24,11 @@ type OrgConnectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Set of connection types to enable for this connection (., metrics, logs).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
 	ConnectionTypes *[]*string `field:"required" json:"connectionTypes" yaml:"connectionTypes"`
 	// UUID of the sink (destination) organization. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
 	SinkOrgId *string `field:"required" json:"sinkOrgId" yaml:"sinkOrgId"`
 }
 

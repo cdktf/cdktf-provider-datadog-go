@@ -41,6 +41,7 @@ type DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference interf
 	RuleQuery() *string
 	StartDate() *string
 	SuppressionQuery() *string
+	Tags() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -223,6 +224,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputRe
 	_jsii_.Get(
 		j,
 		"suppressionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

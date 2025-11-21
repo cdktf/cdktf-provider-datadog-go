@@ -82,6 +82,7 @@ type ObservabilityPipelineConfigSourcesGooglePubsubOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAuth(value *ObservabilityPipelineConfigSourcesGooglePubsubAuth)
 	PutTls(value *ObservabilityPipelineConfigSourcesGooglePubsubTls)
+	ResetAuth()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -620,6 +621,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourcesGooglePubsubOutputReference
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourcesGooglePubsubOutputReference) ResetAuth() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAuth",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
 type DataDatadogCustomAllocationRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRule) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) DataDatadogCustomAllocationRule {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule_Override(d DataDatadogCustomAllocationRule, scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) {
 	_init_.Initialize()
 

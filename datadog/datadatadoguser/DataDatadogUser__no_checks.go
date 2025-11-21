@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDatadogUser) validateSetExactMatchParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogUser) validateSetExcludeServiceAccountsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogUser) validateSetFilterParameters(val *string) error {
 	return nil
 }

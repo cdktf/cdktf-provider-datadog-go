@@ -88,6 +88,8 @@ type ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference in
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAuth(value *ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth)
 	PutMetadata(value interface{})
+	ResetAcl()
+	ResetAuth()
 	ResetKeyPrefix()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
@@ -689,6 +691,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutp
 		o,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference) ResetAcl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference) ResetAuth() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAuth",
+		nil, // no parameters
 	)
 }
 

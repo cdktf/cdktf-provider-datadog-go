@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
 type TagPipelineRulesets interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type TagPipelineRulesets interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OverrideUiDefinedResources() interface{}
+	SetOverrideUiDefinedResources(val interface{})
+	OverrideUiDefinedResourcesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -111,6 +114,7 @@ type TagPipelineRulesets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverrideUiDefinedResources()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_TagPipelineRulesets) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_TagPipelineRulesets) OverrideUiDefinedResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overrideUiDefinedResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagPipelineRulesets) OverrideUiDefinedResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overrideUiDefinedResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TagPipelineRulesets) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -320,7 +344,7 @@ func (j *jsiiProxy_TagPipelineRulesets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) TagPipelineRulesets {
 	_init_.Initialize()
 
@@ -338,7 +362,7 @@ func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets_Override(t TagPipelineRulesets, scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) {
 	_init_.Initialize()
 
@@ -394,6 +418,17 @@ func (j *jsiiProxy_TagPipelineRulesets)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TagPipelineRulesets)SetOverrideUiDefinedResources(val interface{}) {
+	if err := j.validateSetOverrideUiDefinedResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overrideUiDefinedResources",
 		val,
 	)
 }
@@ -785,6 +820,14 @@ func (t *jsiiProxy_TagPipelineRulesets) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TagPipelineRulesets) ResetOverrideUiDefinedResources() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOverrideUiDefinedResources",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package observabilitypipeline
 
 
 type ObservabilityPipelineConfigSourcesGooglePubsubAuth struct {
-	// Path to the GCP service account key file.
+	// Path to the GCP service account key file. Required when `auth` block is specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
-	CredentialsFile *string `field:"required" json:"credentialsFile" yaml:"credentialsFile"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+	CredentialsFile *string `field:"optional" json:"credentialsFile" yaml:"credentialsFile"`
 }
 
